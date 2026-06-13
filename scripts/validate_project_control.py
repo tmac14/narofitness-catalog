@@ -61,6 +61,40 @@ VALID_PROTOCOLS = {
     "IMPLEMENTATION",
     "NONE_SELECTED_FOR_NEXT_TASK",
 }
+VALID_TASK_RUNTIMES = {
+    "ONLY_CODEX",
+    "CODEX_PLUS_CURSOR",
+    "ONLY_CURSOR",
+}
+VALID_TASK_PROTOCOLS = {
+    "ORCHESTRATION",
+    "IMPLEMENTATION",
+    "NONE",
+}
+VALID_RUNTIME_PROTOCOL_PAIRS = {
+    ("ONLY_CODEX", "ORCHESTRATION"),
+    ("ONLY_CODEX", "IMPLEMENTATION"),
+    ("CODEX_PLUS_CURSOR", "ORCHESTRATION"),
+    ("CODEX_PLUS_CURSOR", "IMPLEMENTATION"),
+    ("ONLY_CURSOR", "ORCHESTRATION"),
+    ("ONLY_CURSOR", "IMPLEMENTATION"),
+}
+LEGACY_TASK_PROTOCOL = "CODEX_IMPLEMENTATION"
+REQUIRED_CURSOR_RULES = [
+    ".cursor/rules/narofitness-runtime-protocol-header.mdc",
+    ".cursor/rules/narofitness-recovery-bootstrap.mdc",
+    ".cursor/rules/narofitness-orchestration-mode.mdc",
+    ".cursor/rules/narofitness-implementation-mode.mdc",
+    ".cursor/rules/narofitness-permanent-guardrails.mdc",
+    ".cursor/rules/narofitness-coordination-docs.mdc",
+]
+REQUIRED_CURSOR_HOOKS = [
+    ".cursor/hooks.json",
+    ".cursor/hooks/session_start.py",
+    ".cursor/hooks/validate_runtime_header.py",
+    ".cursor/hooks/guard_mode_before_edit.py",
+    ".cursor/hooks/lib/control_context.py",
+]
 
 
 class UniqueKeySafeLoader(yaml.SafeLoader):
@@ -136,6 +170,41 @@ def markdown_table_ids(path: Path) -> set[str]:
     }
 
 
+def validate_task_runtime_protocol(task_id: str, task: dict[str, Any], result: Validation) -> None:
+    runtime = task.get("runtime")
+    protocol = task.get("protocol")
+
+    if protocol == LEGACY_TASK_PROTOCOL:
+        result.warn(
+            f"{task_id}: legacy protocol {LEGACY_TASK_PROTOCOL!r}; migrate to "
+            f"runtime: ONLY_CODEX and protocol: IMPLEMENTATION"
+        )
+        if not runtime:
+            runtime = "ONLY_CODEX"
+        protocol = "IMPLEMENTATION"
+
+    if not runtime:
+        result.error(f"{task_id}: missing runtime field")
+        return
+    if runtime not in VALID_TASK_RUNTIMES:
+        result.error(f"{task_id}: invalid runtime {runtime!r}")
+        return
+
+    if not protocol:
+        result.error(f"{task_id}: missing protocol field")
+        return
+    if protocol not in VALID_TASK_PROTOCOLS:
+        result.error(f"{task_id}: invalid protocol {protocol!r}")
+        return
+
+    if protocol == "NONE":
+        return
+
+    pair = (str(runtime), str(protocol))
+    if pair not in VALID_RUNTIME_PROTOCOL_PAIRS:
+        result.error(f"{task_id}: invalid runtime/protocol pair {pair}")
+
+
 def validate_tasks(registry: dict[str, Any], decision_ids: set[str], result: Validation) -> None:
     tasks = registry.get("tasks", [])
     if not isinstance(tasks, list):
@@ -171,6 +240,8 @@ def validate_tasks(registry: dict[str, Any], decision_ids: set[str], result: Val
         for decision in task.get("decisions_required", []):
             if DECISION_ID.match(str(decision)) and decision not in decision_ids:
                 result.error(f"{task_id}: unknown decision {decision}")
+
+        validate_task_runtime_protocol(task_id, task, result)
 
     queues = registry.get("queues", {})
     queued_tasks: dict[str, str] = {}
@@ -338,6 +409,29 @@ def validate_state(registry: dict[str, Any], decision_ids: set[str], result: Val
         result.error("Live state says Active task ID NONE while tasks are in flight")
     elif state_task != "NONE" and state_task not in in_flight:
         result.error(f"Live state active task {state_task} is not in the in-flight queue")
+
+
+def validate_cursor_workspace(result: Validation) -> None:
+    for relative_path in REQUIRED_CURSOR_RULES:
+        if not (ROOT / relative_path).is_file():
+            result.error(f"Missing required Cursor rule: {relative_path}")
+    for relative_path in REQUIRED_CURSOR_HOOKS:
+        if not (ROOT / relative_path).is_file():
+            result.error(f"Missing required Cursor hook: {relative_path}")
+    try:
+        import subprocess
+
+        tracked_output = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", ".cursor/session-protocol.json"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if tracked_output.returncode == 0:
+            result.warn(".cursor/session-protocol.json is tracked; it should remain gitignored")
+    except OSError:
+        pass
 
 
 def validate_inventory(result: Validation) -> None:

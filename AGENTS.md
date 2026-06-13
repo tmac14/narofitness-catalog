@@ -64,6 +64,7 @@ Protocol: ORCHESTRATION | IMPLEMENTATION
 Rules:
 
 - One runtime and one protocol per active task; do not mix without explicit user approval.
+- Canonical selection is documented in `CTRL-D009` (`DECISION_LOG.md`); legacy `CTRL-D001` remains historical.
 - If either is missing, ask before editing files or launching work.
 - `ORCHESTRATION` = control plane active; do not implement product code.
 - `IMPLEMENTATION` = executor active; do not orchestrate or update control documents unless explicitly in scope.

@@ -2,22 +2,34 @@
 
 This protocol applies when the user selects:
 
-`Protocol: CODEX_IMPLEMENTATION`
+```
+Runtime: ONLY_CODEX
+Protocol: IMPLEMENTATION
+```
 
 Codex acts directly as the technical implementer inside the workspace. It does
 not generate Cursor-agent prompts unless the user explicitly changes to
 `Protocol: ORCHESTRATION`.
 
-## 1. Mandatory Protocol Selection
+Legacy alias: `Protocol: CODEX_IMPLEMENTATION` means `Runtime: ONLY_CODEX` +
+`Protocol: IMPLEMENTATION`.
 
-Before any change-capable task, the user must select exactly one:
+## 1. Mandatory Runtime and Protocol Selection
 
-- `Protocol: ORCHESTRATION`
-- `Protocol: CODEX_IMPLEMENTATION`
+Before any change-capable task, the user must select exactly one runtime and
+one protocol:
 
-Do not mix both protocols inside one task without explicit user approval. If a
-change-capable request does not name a protocol, ask which protocol to use
-before editing files, implementing, or changing the workspace.
+```
+Runtime: ONLY_CODEX | CODEX_PLUS_CURSOR | ONLY_CURSOR
+Protocol: ORCHESTRATION | IMPLEMENTATION
+```
+
+For this document, the applicable pair is `Runtime: ONLY_CODEX` +
+`Protocol: IMPLEMENTATION` (or legacy `Protocol: CODEX_IMPLEMENTATION`).
+
+Do not mix orchestration and implementation inside one task without explicit
+user approval. If either runtime or protocol is missing, ask before editing
+files, implementing, or changing the workspace.
 
 ## 2. Objective
 

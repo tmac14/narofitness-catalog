@@ -29,6 +29,7 @@ Aplicación de escritorio para importar tarifas mayoristas PDF, gestionar produc
 Project control and engineering:
 
 - [Agent and runtime guide](AGENTS.md) — select `Runtime` + `Protocol` before each task
+- [Cursor workspace rules](.cursor/rules/) — enforced runtime, recovery, and guardrail behavior
 - [Engineering standards](docs/ENGINEERING_STANDARDS.md)
 - [Control plane recovery runbook](docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md)
 - [Live orchestration state](docs/coordination/ORCHESTRATION_STATE.md)

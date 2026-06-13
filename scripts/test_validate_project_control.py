@@ -1,6 +1,11 @@
 from unittest import TestCase, main
 
-from validate_project_control import Validation, parse_yaml_document, validate_runtime_fields
+from validate_project_control import (
+    Validation,
+    parse_yaml_document,
+    validate_runtime_fields,
+    validate_task_runtime_protocol,
+)
 
 
 class LoadYamlTests(TestCase):
@@ -50,6 +55,54 @@ class RuntimeFieldTests(TestCase):
         )
         validate_runtime_fields(text, set(), validation)
         self.assertTrue(any("control_plane_runtime is invalid" in error for error in validation.errors))
+
+
+class TaskRuntimeProtocolTests(TestCase):
+    def test_accepts_valid_runtime_protocol_pair(self) -> None:
+        validation = Validation()
+        validate_task_runtime_protocol(
+            "TEST-TASK",
+            {"runtime": "ONLY_CODEX", "protocol": "IMPLEMENTATION"},
+            validation,
+        )
+        self.assertEqual(validation.errors, [])
+
+    def test_warns_on_legacy_protocol(self) -> None:
+        validation = Validation()
+        validate_task_runtime_protocol(
+            "TEST-TASK",
+            {"protocol": "CODEX_IMPLEMENTATION"},
+            validation,
+        )
+        self.assertEqual(validation.errors, [])
+        self.assertTrue(any("legacy protocol" in warning for warning in validation.warnings))
+
+    def test_rejects_invalid_protocol(self) -> None:
+        validation = Validation()
+        validate_task_runtime_protocol(
+            "TEST-TASK",
+            {"runtime": "ONLY_CODEX", "protocol": "CODEX_ORCHESTRATION"},
+            validation,
+        )
+        self.assertTrue(any("invalid protocol" in error for error in validation.errors))
+
+    def test_rejects_missing_runtime(self) -> None:
+        validation = Validation()
+        validate_task_runtime_protocol(
+            "TEST-TASK",
+            {"protocol": "IMPLEMENTATION"},
+            validation,
+        )
+        self.assertTrue(any("missing runtime field" in error for error in validation.errors))
+
+    def test_allows_none_protocol_placeholder(self) -> None:
+        validation = Validation()
+        validate_task_runtime_protocol(
+            "TEST-TASK",
+            {"runtime": "ONLY_CODEX", "protocol": "NONE"},
+            validation,
+        )
+        self.assertEqual(validation.errors, [])
 
 
 if __name__ == "__main__":

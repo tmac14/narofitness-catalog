@@ -12,7 +12,7 @@ Do not mark QA-pending work as closed.
 
 ## 0. Active Execution Control
 
-This section is authoritative for recovering the current Codex task after
+This section is authoritative for recovering the current active task after
 context loss. It records execution control, not a silent change to project
 priorities or workstream status.
 
@@ -30,10 +30,10 @@ priorities or workstream status.
 - Blocked scope: all change-capable work outside the limited control update
   permission until the user selects the next task and protocol
 - Active locks: none
-- Work in flight by Codex: none
+- Work in flight by active control plane: none
 - Waiting for: explicit next task selection and protocol
 - Pending evidence: none
-- Last completed Codex task:
+- Last completed task:
   `PUBLIC-ASSETS-ROOT-AND-LOGO-PROMOTION` — `VALIDATED`
 - Last validated evidence: `EVID-PUBLIC-001` — root `public/` layout, promoted
   logos, Vite `publicDir`, `appAssets` registry; full desktop tests/build/control
@@ -44,11 +44,12 @@ priorities or workstream status.
 
 ### Limited Control-Update Permission
 
-Codex may update the limited control documents listed in `AGENTS.md` without
-separate documentation permission after a material task-state transition, and
-only for authorized execution-control facts. This permission does not authorize
-edits to other docs, code, tests, configuration, priorities, workstreams,
-inferred decisions, or QA closure.
+Authorized control plane (Codex or Cursor Control Plane under
+`Protocol: ORCHESTRATION`) may update the limited control documents listed in
+`AGENTS.md` without separate documentation permission after a material task-state
+transition, and only for authorized execution-control facts. This permission does
+not authorize edits to other docs, code, tests, configuration, priorities,
+workstreams, inferred decisions, or QA closure.
 
 ### Registry Control
 
@@ -222,9 +223,9 @@ Authoritative details: `docs/coordination/TASK_REGISTRY.yaml`.
 - For importer work, always record whether pages `11/12/13/14` were checked
 - When reporting metrics, keep naming precise and stable across updates
 
-## Prompting Rules For Codex
+## Prompting Rules For Control Plane
 
-When Codex prepares a Cursor prompt from this state:
+When the control plane prepares an executor prompt from this state:
 
 1. Restate the assigned agent role.
 2. Restate the exact approved objective.
