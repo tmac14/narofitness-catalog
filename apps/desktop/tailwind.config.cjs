@@ -25,6 +25,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", "Segoe UI", "system-ui", "sans-serif"],
+        rajdhani: ["Rajdhani", "system-ui", "sans-serif"],
       },
       colors: {
         narofitness: {
@@ -114,5 +115,17 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addVariant }) {
+      addVariant(
+        "tablet-portrait",
+        "@media (min-width: 640px) and (max-width: 1023px) and (orientation: portrait)",
+      );
+      addVariant(
+        "tablet-landscape",
+        "@media (min-width: 640px) and (max-width: 1023px) and (orientation: landscape)",
+      );
+    },
+  ],
 };

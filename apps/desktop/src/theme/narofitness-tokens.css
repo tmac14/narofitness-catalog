@@ -85,6 +85,17 @@
   --app-statusbar-height: var(--statusbar-height);
   --app-main-padding-y: 1.5rem;
 
+  /* App Chrome 3.0 — main top bar */
+  --topbar-height: 3.5rem;
+  --topbar-height-desktop: 4rem;
+  --topbar-bg: var(--nr-graphite);
+  --topbar-border: rgba(255, 255, 255, 0.06);
+  --topbar-glow: rgba(118, 184, 42, 0.04);
+  --brand-lockup-naro: #ffffff;
+  --brand-lockup-catalog: #76b82a;
+  --brand-lockup-by: #8a8f86;
+  --brand-lockup-narofitness: #c9d1c3;
+
   /* UX 3.0 responsive / touch foundations (Phase 0) — non-visual until consumed */
   --touch-target-min: 2.75rem; /* 44px — WCAG 2.5.5 recommended minimum */
   --touch-target-gap: 0.5rem; /* 8px — minimum separation between adjacent targets */

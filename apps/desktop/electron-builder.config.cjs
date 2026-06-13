@@ -4,7 +4,7 @@ module.exports = {
   productName: "NaroCatalog",
   directories: {
     output: "release",
-    buildResources: "build",
+    buildResources: "../../public/icons",
   },
   files: ["dist/**/*", "electron/**/*", "package.json"],
   // Phase 1b: add Playwright Chromium to extraResources and set PLAYWRIGHT_BROWSERS_PATH in runtime.cjs
@@ -21,6 +21,7 @@ module.exports = {
     },
   ],
   win: {
+    icon: "../../public/icons/app-mark.png",
     target: [{ target: "nsis", arch: ["x64"] }],
   },
   nsis: {

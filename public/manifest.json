@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "description": "Canonical runtime assets shared by web, desktop, and future mobile clients.",
+  "promoted_assets": [
+    {
+      "id": "brand.logos.full-lockup",
+      "path": "brand/logos/01_full_lockup_narocatalog_by_narofitness_initial.png",
+      "source": "wireframes/assets/logos/01_full_lockup_narocatalog_by_narofitness_initial.png"
+    },
+    {
+      "id": "brand.logos.one-line-lockup",
+      "path": "brand/logos/02_one_line_lockup_narocatalog_white_green.png",
+      "source": "wireframes/assets/logos/02_one_line_lockup_narocatalog_white_green.png"
+    },
+    {
+      "id": "brand.logos.mark-minimal",
+      "path": "brand/logos/03_nr_mark_minimal_flat_white_green.png",
+      "source": "wireframes/assets/logos/03_nr_mark_minimal_flat_white_green.png"
+    },
+    {
+      "id": "brand.logos.shield-metal-frame",
+      "path": "brand/logos/04_nr_shield_original_logo_with_metal_gym_frame.png",
+      "source": "wireframes/assets/logos/04_nr_shield_original_logo_with_metal_gym_frame.png"
+    },
+    {
+      "id": "brand.logos.dynamic-ring",
+      "path": "brand/logos/05_nr_dynamic_ring_mark.png",
+      "source": "wireframes/assets/logos/05_nr_dynamic_ring_mark.png"
+    },
+    {
+      "id": "brand.logos.futuristic-3d",
+      "path": "brand/logos/06_nr_futuristic_3d_mark.png",
+      "source": "wireframes/assets/logos/06_nr_futuristic_3d_mark.png"
+    },
+    {
+      "id": "brand.logos.wordmark-3d",
+      "path": "brand/logos/07_narofitness_3d_strong_wordmark_exploration.png",
+      "source": "wireframes/assets/logos/07_narofitness_3d_strong_wordmark_exploration.png"
+    },
+    {
+      "id": "brand.logos.armored-shield",
+      "path": "brand/logos/08_armored_shield_catalog_cards_and_dumbbell.png",
+      "source": "wireframes/assets/logos/08_armored_shield_catalog_cards_and_dumbbell.png"
+    },
+    {
+      "id": "brand.logos.catalog-grid",
+      "path": "brand/logos/09_catalog_grid_equipment_tiles_nr.png",
+      "source": "wireframes/assets/logos/09_catalog_grid_equipment_tiles_nr.png"
+    },
+    {
+      "id": "brand.logos.circular-tech-dial",
+      "path": "brand/logos/10_circular_tech_dial_gym_catalog_mark.png",
+      "source": "wireframes/assets/logos/10_circular_tech_dial_gym_catalog_mark.png"
+    },
+    {
+      "id": "brand.logos.horizontal-blueprint",
+      "path": "brand/logos/11_horizontal_equipment_blueprint_tag_nr.png",
+      "source": "wireframes/assets/logos/11_horizontal_equipment_blueprint_tag_nr.png"
+    },
+    {
+      "id": "brand.logos.rounded-card",
+      "path": "brand/logos/12_rounded_catalog_card_dumbbell_nr.png",
+      "source": "wireframes/assets/logos/12_rounded_catalog_card_dumbbell_nr.png"
+    },
+    {
+      "id": "brand.logos.document-shield",
+      "path": "brand/logos/13_document_shield_dumbbell_nr.png",
+      "source": "wireframes/assets/logos/13_document_shield_dumbbell_nr.png"
+    },
+    {
+      "id": "brand.logos.stacked-card",
+      "path": "brand/logos/14_stacked_catalog_card_dumbbell_badge_nr.png",
+      "source": "wireframes/assets/logos/14_stacked_catalog_card_dumbbell_badge_nr.png"
+    },
+    {
+      "id": "brand.logos.hex-plate",
+      "path": "brand/logos/15_hex_plate_dumbbell_interface_nr.png",
+      "source": "wireframes/assets/logos/15_hex_plate_dumbbell_interface_nr.png"
+    },
+    {
+      "id": "brand.logos.hex-machine",
+      "path": "brand/logos/16_hex_machine_catalog_cards_nr.png",
+      "source": "wireframes/assets/logos/16_hex_machine_catalog_cards_nr.png"
+    },
+    {
+      "id": "brand.logos.layered-card",
+      "path": "brand/logos/17_layered_catalog_card_barbell_nr.png",
+      "source": "wireframes/assets/logos/17_layered_catalog_card_barbell_nr.png"
+    },
+    {
+      "id": "icons.app-mark",
+      "path": "icons/app-mark.png",
+      "source": "wireframes/assets/logos/03_nr_mark_minimal_flat_white_green.png"
+    }
+  ]
+}

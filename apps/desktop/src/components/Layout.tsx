@@ -1,6 +1,5 @@
 ﻿import { useEffect, useRef, useState, type RefObject } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import type { LucideIcon } from "lucide-react";
 import {
   BookOpen,
   FileUp,
@@ -25,46 +24,19 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { TitleBar } from "@/components/TitleBar";
+import { AppTopBar } from "@/components/AppTopBar";
 import { StatusBarProvider } from "@/context/StatusBarContext";
 import { AppStatusBar } from "@/components/status-bar/AppStatusBar";
-
-type ShellNavItem = {
-  to: string;
-  label: string;
-  icon: LucideIcon;
-  mobileLabel?: string;
-};
-
-/** Single source of truth — all eight destinations, order preserved for desktop. */
-const SHELL_NAV_PRIMARY: ShellNavItem[] = [
-  { to: "/", label: "Inicio", icon: LayoutDashboard },
-  { to: "/import", label: "Importar tarifa", mobileLabel: "Importar", icon: FileUp },
-  { to: "/products", label: "Productos", icon: Package },
-  { to: "/catalogs", label: "Catálogos", icon: BookOpen },
-];
-
-const SHELL_NAV_SECONDARY: ShellNavItem[] = [
-  { to: "/suppliers", label: "Proveedores", icon: Truck },
-  { to: "/categories", label: "Categorías", icon: FolderTree },
-  { to: "/price-lists", label: "Comparar tarifas", icon: GitCompare },
-  { to: "/settings", label: "Configuración", icon: Settings },
-];
-
-const SHELL_NAV_ALL: ShellNavItem[] = [...SHELL_NAV_PRIMARY, ...SHELL_NAV_SECONDARY];
-
-function isNavActive(pathname: string, to: string): boolean {
-  if (to === "/") return pathname === "/";
-  return pathname === to || pathname.startsWith(`${to}/`);
-}
+import {
+  isNavActive,
+  SHELL_NAV_ALL,
+  SHELL_NAV_PRIMARY,
+  SHELL_NAV_SECONDARY,
+  type ShellNavItem,
+} from "@/lib/shellNav";
 
 function isMoreNavActive(pathname: string): boolean {
   return SHELL_NAV_SECONDARY.some((item) => isNavActive(pathname, item.to));
-}
-
-function resolveActiveNavLabel(pathname: string): string {
-  const active = SHELL_NAV_ALL.find((item) => isNavActive(pathname, item.to));
-  return active?.label ?? "NaroCatalog";
 }
 
 function ShellSheetAccessibleClose({
@@ -266,15 +238,13 @@ export default function Layout() {
     return () => window.clearTimeout(timer);
   }, [loc.pathname]);
 
-  const sectionLabel = resolveActiveNavLabel(loc.pathname);
-
   return (
     <StatusBarProvider>
       <div className="flex h-dvh min-w-[360px] flex-col overflow-hidden bg-background">
         <a href="#main-content" className="skip-link">
           Saltar al contenido principal
         </a>
-        <TitleBar />
+        <AppTopBar />
         <div className="flex min-h-0 flex-1 flex-col">
           <div className="flex min-h-0 flex-1 min-w-0">
             {/* Desktop / wide: full sidebar */}
@@ -292,7 +262,7 @@ export default function Layout() {
             {/* Tablet landscape: icon rail */}
             <nav
               aria-label="Navegación principal"
-              className="hidden w-[4.5rem] shrink-0 flex-col items-center gap-1 border-r border-border bg-card px-1.5 py-3 tablet:landscape:flex lg:hidden"
+              className="hidden w-[4.5rem] shrink-0 flex-col items-center gap-1 border-r border-border bg-card px-1.5 py-3 tablet-landscape:flex lg:hidden"
             >
               {SHELL_NAV_ALL.map((item) => (
                 <NavLinkRow key={item.to} item={item} pathname={loc.pathname} compact />
@@ -301,7 +271,7 @@ export default function Layout() {
 
             <div className="flex min-h-0 min-w-0 flex-1 flex-col">
               {/* Tablet portrait: section header + drawer trigger */}
-              <header className="hidden shrink-0 items-center gap-2 border-b border-border bg-card px-3 py-2 tablet:portrait:flex lg:hidden">
+              <header className="hidden shrink-0 items-center border-b border-border bg-card px-3 py-2 tablet-portrait:flex lg:hidden">
                 <Sheet open={drawerOpen} onOpenChange={setDrawerOpen}>
                   <SheetTrigger asChild>
                     <Button
@@ -343,9 +313,6 @@ export default function Layout() {
                     </div>
                   </SheetContent>
                 </Sheet>
-                <p className="min-w-0 truncate text-sm font-semibold text-foreground">
-                  {sectionLabel}
-                </p>
               </header>
 
               <main
