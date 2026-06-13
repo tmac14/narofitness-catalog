@@ -6,7 +6,7 @@ Cross-cutting workstreams outside catalogue API-X (API-1…API-8) and page-scope
 
 **Top priority:** [SOURCE_CATALOG_DUAL_PATH_PLAN.md](./SOURCE_CATALOG_DUAL_PATH_PLAN.md)
 
-**Snapshot:** [CODEX_ORCHESTRATION_STATE.md](./CODEX_ORCHESTRATION_STATE.md)
+**Snapshot:** [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md)
 
 ---
 
@@ -159,7 +159,7 @@ no productive page/SKU hardcodes.
 
 ## Related documents
 
-- [CODEX_ORCHESTRATION_STATE.md](./CODEX_ORCHESTRATION_STATE.md)
+- [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md)
 - [TASK_HISTORY.md](./TASK_HISTORY.md)
 - [IMPORT_PARSER_BACKLOG.md](./IMPORT_PARSER_BACKLOG.md)
 - [MEDIA_ENHANCEMENT_FUTURE_FEATURE.md](./contracts/MEDIA_ENHANCEMENT_FUTURE_FEATURE.md)

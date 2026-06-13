@@ -17,7 +17,7 @@ identifiers, commands, domain meaning, and source evidence.
 ## Proposed Batches
 
 1. `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
-2. `CODEX_PROMPTING_PROTOCOL.md`
+2. `CODEX_ORCHESTRATION_PROTOCOL.md`
 3. `IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md`
 4. remaining mixed technical docs
 
@@ -29,7 +29,7 @@ evidence remain Spanish.
 Migrate the canonical active protocols:
 
 1. `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
-2. `CODEX_PROMPTING_PROTOCOL.md`
+2. `CODEX_ORCHESTRATION_PROTOCOL.md`
 3. `IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md`
 
 Remaining mixed technical documentation belongs to later modernization PRs.
@@ -81,7 +81,7 @@ Remaining mixed technical documentation belongs to later modernization PRs.
 ## Actual Files
 
 - `docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
-- `docs/coordination/CODEX_PROMPTING_PROTOCOL.md`
+- `docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md`
 - `docs/coordination/IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md`
 - `docs/coordination/DOCUMENTATION_INVENTORY.md`
 - limited task/decision/evidence/history/registry/live-state control updates

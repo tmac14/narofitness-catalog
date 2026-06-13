@@ -16,6 +16,7 @@ current execution state.
 | Legacy context consolidation | Validated | `EVID-CTRL-006`; five legacy sources fully consolidated and preserved for PR-04 removal |
 | Legacy documentation cleanup | Validated | `EVID-CTRL-007`; approved five-file batch removed with zero residual references and valid canonical recovery |
 | Quality tooling foundations and baseline | Validated | `EVID-CTRL-008`; six audit-only quality checks configured, debt measured, strict YAML control added, PR-06 through PR-10 boundaries fixed |
+| Runtime symmetry (PR-11–PR-18) | Validated | `EVID-CTRL-010`; Only Codex / Codex+Cursor / Only Cursor; shared neutral docs; Cursor Control Plane; handoff protocol |
 
 ## Import / PIM Milestones
 
@@ -62,6 +63,8 @@ current execution state.
 | Phase 0 foundations | Validated | Breakpoints/tokens safe; locks released |
 | Phase 1 shell/navigation | Validated | Responsive navigation and accessibility correction complete |
 | Phase 2A Products | Validated | Responsive cards/sheet; focus restoration validated |
+| App Chrome 3.0 top bar | Validated | Brand lockup, local fonts, route context; `APP-CHROME-3.0-MAIN-TOPBAR-BRAND-SYSTEM` |
+| Root public assets + logo promotion | Validated | Canonical `public/` tree, 17 logos promoted; `PUBLIC-ASSETS-ROOT-AND-LOGO-PROMOTION` |
 | Next Phase 2 slice | Waiting for user decision | `UX30-D7`: Phase 2B vs Phase 2C |
 
 ## Paused / Recoverable Tracks

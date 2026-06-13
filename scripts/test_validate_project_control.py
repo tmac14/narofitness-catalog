@@ -1,6 +1,6 @@
 from unittest import TestCase, main
 
-from validate_project_control import Validation, parse_yaml_document
+from validate_project_control import Validation, parse_yaml_document, validate_runtime_fields
 
 
 class LoadYamlTests(TestCase):
@@ -20,6 +20,36 @@ class LoadYamlTests(TestCase):
         self.assertEqual(data, {})
         self.assertEqual(len(validation.errors), 1)
         self.assertIn("found duplicate key 'duplicate'", validation.errors[0])
+
+
+class RuntimeFieldTests(TestCase):
+    def test_accepts_neutral_runtime_fields(self) -> None:
+        validation = Validation()
+        text = "\n".join(
+            [
+                "- control_plane_runtime: `ONLY_CODEX`",
+                "- active_protocol: `ORCHESTRATION`",
+                "- handoff_from: `NONE`",
+                "- handoff_at: `NONE`",
+                "- handoff_reason: `NONE`",
+            ]
+        )
+        validate_runtime_fields(text, {"RUNTIME-D001"}, validation)
+        self.assertEqual(validation.errors, [])
+
+    def test_rejects_invalid_runtime(self) -> None:
+        validation = Validation()
+        text = "\n".join(
+            [
+                "- control_plane_runtime: `INVALID`",
+                "- active_protocol: `ORCHESTRATION`",
+                "- handoff_from: `NONE`",
+                "- handoff_at: `NONE`",
+                "- handoff_reason: `NONE`",
+            ]
+        )
+        validate_runtime_fields(text, set(), validation)
+        self.assertTrue(any("control_plane_runtime is invalid" in error for error in validation.errors))
 
 
 if __name__ == "__main__":

@@ -6,8 +6,8 @@ Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 
 - The approved five-file legacy coordination batch was fully consolidated and
   removed through validated PR-04.
-- Core control documents, including all canonical execution protocols, are
-  English.
+- Core control documents, including all canonical execution protocols and
+  runtime-symmetry protocols, are English.
 - Remaining active, paused-context, and archive-candidate documents require
   their own explicit lifecycle decisions.
 
@@ -15,9 +15,9 @@ Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 
 | Document | Lifecycle | Language | Required action |
 |---|---|---|---|
-| `CODEX_ORCHESTRATION_STATE.md` | CORE | English | Keep concise and aligned with registry |
-| `CODEX_RECOVERY_RUNBOOK.md` | CORE | English | Keep |
-| `CODEX_TASK_EXECUTION_PROTOCOL.md` | CORE | English | Keep |
+| `ORCHESTRATION_STATE.md` | CORE | English | Keep concise and aligned with registry |
+| `CONTROL_PLANE_RECOVERY_RUNBOOK.md` | CORE | English | Keep |
+| `TASK_EXECUTION_PROTOCOL.md` | CORE | English | Keep |
 | `TASK_REGISTRY.yaml` | CORE | English | Keep; validate automatically |
 | `DECISION_LOG.md` | CORE | English | Keep; backfill explicit decisions |
 | `EVIDENCE_INDEX.md` | CORE | English | Keep; backfill durable reports |
@@ -27,7 +27,10 @@ Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 | `AGENT_TOPOLOGY_REVIEW.md` | ACTIVE | English | Keep until topology decisions close |
 | `TASK_HISTORY.md` | CORE | English | Keep as durable milestone/recovery index |
 | `DOCUMENTATION_INVENTORY.md` | CORE | English | Keep; classify every coordination document |
-| `CODEX_PROMPTING_PROTOCOL.md` | CORE | English | Keep as canonical orchestration protocol |
+| `CODEX_ORCHESTRATION_PROTOCOL.md` | CORE | English | Keep as canonical Codex orchestration protocol |
+| `CURSOR_ORCHESTRATION_PROTOCOL.md` | CORE | English | Keep as canonical Cursor control-plane orchestration protocol |
+| `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` | CORE | English | Keep as canonical Cursor executor implementation protocol |
+| `RUNTIME_HANDOFF_PROTOCOL.md` | CORE | English | Keep as canonical runtime handoff protocol |
 | `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` | CORE | English | Keep as canonical direct-implementation protocol |
 | `LEGACY_CONTEXT_MIGRATION_MAP.md` | CORE | English | Keep as the PR-03/PR-04 consolidation and removal certificate |
 | `API_DEPENDENCY_BACKLOG.md` | ACTIVE | English | Keep until contracts/tasks are migrated |
@@ -54,11 +57,14 @@ decision, task packet, and validation plan.
 
 ## English Migration Order
 
-Canonical protocols completed in PR-02:
+Canonical protocols completed in PR-02 and RUNTIME-SYMMETRY (PR-11–PR-18):
 
 - `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
-- `CODEX_PROMPTING_PROTOCOL.md`
+- `CODEX_ORCHESTRATION_PROTOCOL.md` (formerly prompting protocol)
 - `IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md`
+- `TASK_EXECUTION_PROTOCOL.md`, `ORCHESTRATION_STATE.md`, `CONTROL_PLANE_RECOVERY_RUNBOOK.md`
+- `CURSOR_ORCHESTRATION_PROTOCOL.md`, `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md`
+- `RUNTIME_HANDOFF_PROTOCOL.md`
 
 Remaining mixed technical documents are handled after legacy-context
 consolidation and removal, so obsolete content is not translated unnecessarily.

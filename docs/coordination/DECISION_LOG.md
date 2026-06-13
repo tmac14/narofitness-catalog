@@ -30,6 +30,10 @@ scope, architecture, parallel execution, or validation.
 | AGENT-D002 | DECIDED | 2026-06-13 | Agent 3 is an on-demand governance and architecture auditor. | Codex and the registries own routine state, locks, dependencies, and next-action control. |
 | AGENT-D003 | DECIDED | 2026-06-13 | Trial Agent 2A/2B capability profiles under one permanent Agent 2 identity; do not split permanently yet. | Improves scope clarity while preserving one assignment slot and preventing unsafe same-identity parallel work. |
 | UX30-D7 | PENDING | 2026-06-12 | Select APP-PLATFORM-UX-3.0 Phase 2B or Phase 2C as the next UI slice. | Blocks planning and locks for the next Phase 2 implementation. |
+| RUNTIME-D001 | DECIDED | 2026-06-13 | Formalize the RUNTIME-SYMMETRY program (PR-11 through PR-18) and rename shared control documents to platform-neutral names. | Enables Only Codex, Codex+Cursor, and Only Cursor symmetry without breaking authority paths. |
+| RUNTIME-D002 | DECIDED | 2026-06-13 | Add explicit `Cursor Control Plane` identity; multi-chat is the default orchestration model for `ONLY_CURSOR`. | Separates control-plane runtimes from operational agents 1A–6. |
+| RUNTIME-D003 | DECIDED | 2026-06-13 | Formalize runtime handoff procedure between Codex and Cursor Control Plane. | Enables safe control-plane continuity without state reinterpretation. |
+| RUNTIME-D004 | DECIDED | 2026-06-13 | RUNTIME-SYMMETRY program (PR-11 through PR-18) validated and closed. | Project supports Only Codex, Codex+Cursor, and Only Cursor with symmetric protocols. |
 
 ## Recording Rules
 

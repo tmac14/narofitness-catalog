@@ -552,10 +552,10 @@ Use the dedicated **App-Wide Accessible UX/UI** ChatGPT chat (separate from Agen
 
 ## Related documents
 
-- [CODEX_ORCHESTRATION_STATE.md](./CODEX_ORCHESTRATION_STATE.md) — live state
+- [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md) — live state
 - [TRANSVERSAL_BACKLOG.md](./TRANSVERSAL_BACKLOG.md)
 - [AGENT_REGISTRY.yaml](./AGENT_REGISTRY.yaml) — role and ownership authority
-- [CODEX_TASK_EXECUTION_PROTOCOL.md](./CODEX_TASK_EXECUTION_PROTOCOL.md) — task and synchronization protocol
+- [TASK_EXECUTION_PROTOCOL.md](./TASK_EXECUTION_PROTOCOL.md) — task and synchronization protocol
 - [TASK_HISTORY.md](./TASK_HISTORY.md) — app-wide QA and completion history
 - [MANUAL_QA_APP_WIDE.md](../MANUAL_QA_APP_WIDE.md) — user manual QA (this pass)
 - [MANUAL_QA_BUILDER_UI.md](../MANUAL_QA_BUILDER_UI.md) — Agent 1A only

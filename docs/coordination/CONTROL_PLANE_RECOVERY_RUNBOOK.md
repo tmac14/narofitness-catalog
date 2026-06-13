@@ -1,28 +1,28 @@
-# CODEX Recovery Runbook
+# Control Plane Recovery Runbook
 
-Permanent bootstrap procedure for recovering Codex orchestration and direct
-implementation behavior after chat or context loss.
+Permanent bootstrap procedure for recovering control-plane orchestration and
+direct implementation behavior after chat or context loss.
 
 ## 1. Recovery Order
 
-1. Read `AGENTS.md`.
-2. Read `docs/coordination/CODEX_ORCHESTRATION_STATE.md`, starting with
+1. Read `AGENTS.md` — confirm active `Runtime` and `Protocol`.
+2. Read `docs/coordination/ORCHESTRATION_STATE.md`, starting with
    `Active Execution Control`.
 3. Read this runbook.
-4. Read `docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md`.
+4. Read `docs/coordination/TASK_EXECUTION_PROTOCOL.md`.
 5. Read `docs/coordination/TASK_REGISTRY.yaml`.
 6. Read `docs/coordination/AGENT_REGISTRY.yaml`.
-7. Read `docs/coordination/TASK_HISTORY.md` when recovering completed,
+7. Identify control-plane identity and protocol document:
+   - **Codex** + `Protocol: ORCHESTRATION` → `CODEX_ORCHESTRATION_PROTOCOL.md`
+   - **Codex** + `Protocol: IMPLEMENTATION` → `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
+   - **Cursor Control Plane** + `Protocol: ORCHESTRATION` → `CURSOR_ORCHESTRATION_PROTOCOL.md`
+   - **Cursor executor** + `Protocol: IMPLEMENTATION` → `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md`
+8. Read `docs/coordination/TASK_HISTORY.md` when recovering completed,
    paused, or resumable work.
-8. Read the active task packet under `docs/coordination/tasks/`, when one
+9. Read the active task packet under `docs/coordination/tasks/`, when one
    exists.
-9. Read the protocol selected for the active task:
-   - `docs/coordination/CODEX_PROMPTING_PROTOCOL.md` for
-     `Protocol: ORCHESTRATION`;
-   - `docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` for
-     `Protocol: CODEX_IMPLEMENTATION`.
 10. Read `docs/coordination/DECISION_LOG.md` and `EVIDENCE_INDEX.md` when the
-   task references decisions or evidence.
+    task references decisions or evidence.
 11. Read `docs/ENGINEERING_STANDARDS.md`.
 12. Read the relevant active contract, roadmap, or paused-task packet when
     deeper domain rationale is required.
@@ -44,7 +44,7 @@ A current explicit user instruction overrides all documentation.
 - Do not infer that an implementation, QA task, or agent report is complete.
 - Never mark QA-pending work as validated or closed.
 - If the active task is `NONE`, the next change-capable task requires the user
-  to select `Protocol: ORCHESTRATION` or `Protocol: CODEX_IMPLEMENTATION`.
+  to select `Runtime` and `Protocol` (see `AGENTS.md`).
 - If state, locks, reports, or user instructions conflict, stop and request a
   user decision before changing files or launching work.
 
@@ -64,8 +64,9 @@ intermediate commentary.
 
 ## 4. Limited Update Boundary
 
-Without separate documentation permission, Codex may update only the control
-documents and execution-control facts authorized in `AGENTS.md`.
+Without separate documentation permission, authorized control-plane sessions
+(Codex or Cursor Control Plane under `Protocol: ORCHESTRATION`) may update
+only the control documents and execution-control facts authorized in `AGENTS.md`.
 
 This permission never authorizes:
 
@@ -96,4 +97,16 @@ When the active task is fully validated:
 - record the completed task and evidence;
 - set active protocol and active task to `NONE`;
 - set the waiting state to the next required user decision or report;
-- do not carry the completed task's protocol into an unrelated future task.
+- do not carry the completed task's runtime or protocol into an unrelated future task.
+
+## 7. Runtime Handoff Recovery
+
+When `ORCHESTRATION_STATE.md` records a handoff (`handoff_from` is not `NONE`):
+
+1. Read `docs/coordination/RUNTIME_HANDOFF_PROTOCOL.md`.
+2. Confirm `handoff_from`, `handoff_at`, and `handoff_reason`.
+3. Do not resume `IN_FLIGHT` work until reconciliation passes.
+4. Ask the user to confirm the new `Runtime` and `Protocol` before acting.
+5. Run `npm run control:validate` after reconciliation.
+
+Use `RECOVERY_BLOCKED` when handoff fields contradict the registry or active locks.

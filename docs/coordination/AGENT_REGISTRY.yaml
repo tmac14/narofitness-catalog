@@ -5,15 +5,23 @@ authority:
   topology_protocol: "docs/coordination/AGENT_TOPOLOGY_PROTOCOL.md"
   topology_review: "docs/coordination/AGENT_TOPOLOGY_REVIEW.md"
 
-orchestrator:
-  id: "Codex"
-  role: "Primary control-plane orchestrator"
-  cursor_agent: false
+control_plane_runtimes:
+  - id: "Codex"
+    role: "Codex control-plane orchestrator"
+    cursor_agent: false
+    protocols:
+      - "docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md"
+  - id: "Cursor Control Plane"
+    role: "Cursor control-plane orchestrator"
+    cursor_agent: true
+    multi_chat: true
+    protocols:
+      - "docs/coordination/CURSOR_ORCHESTRATION_PROTOCOL.md"
 
 operational_identity_count: 7
 count_discrepancy:
   detected: false
-  resolution: "Seven Cursor operational identities are canonical. Codex is not counted as a Cursor agent."
+  resolution: "Seven Cursor operational identities are canonical. Control-plane runtimes (Codex, Cursor Control Plane) are separate from operational agents."
   decision: "AGENT-D001"
 
 identity_rules:

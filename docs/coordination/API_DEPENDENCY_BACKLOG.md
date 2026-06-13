@@ -12,7 +12,7 @@ Master backlog for backend/API work required by the Professional Builder UI/UX u
 
 **Status legend:** `OPEN` | `Pending Agent 2 validation` | `CONFIRMED` | `READY_FOR_AGENT4` | `INTEGRATED` | `QA_READY` | `PASS_WITH_WARNINGS` | `DONE`
 
-**Workflow:** See [CODEX_TASK_EXECUTION_PROTOCOL.md](./CODEX_TASK_EXECUTION_PROTOCOL.md).
+**Workflow:** See [TASK_EXECUTION_PROTOCOL.md](./TASK_EXECUTION_PROTOCOL.md).
 
 ---
 
@@ -54,7 +54,7 @@ Master backlog for backend/API work required by the Professional Builder UI/UX u
 
 **PDF export / print renderer (separate track):** **PDF-EXPORT** — Agent 6 — **`PDF_LAYOUT_VISUALLY_ACCEPTED`** · **`PDF_EXPORT_INTEGRATED`** · **`EXPORT_QA_PENDING`**. **PDF-TABLE-FIX-1** open. Contract: [PDF_EXPORT_CONTRACT_SUMMARY.md](./contracts/PDF_EXPORT_CONTRACT_SUMMARY.md).
 
-**Transversal (separate track):** [TRANSVERSAL_BACKLOG.md](./TRANSVERSAL_BACKLOG.md) · [CODEX_ORCHESTRATION_STATE.md](./CODEX_ORCHESTRATION_STATE.md).
+**Transversal (separate track):** [TRANSVERSAL_BACKLOG.md](./TRANSVERSAL_BACKLOG.md) · [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md).
 
 **TOP PRIORITY:** [SOURCE-CATALOG-DUAL-PATH-1](./SOURCE_CATALOG_DUAL_PATH_PLAN.md) — **`ACTIVE`**. Import baseline remains paused: 358 masters, 544 variants, **292 blocked**.
 

@@ -7,13 +7,13 @@ consolidated before PR-04 removal, and that removal completed safely.
 
 | Legacy responsibility | Canonical destination |
 |---|---|
-| Current priorities, baseline, paused tracks, next safe action | `CODEX_ORCHESTRATION_STATE.md` |
+| Current priorities, baseline, paused tracks, next safe action | `ORCHESTRATION_STATE.md` |
 | Tasks, queues, dependencies, locks, and parallel safety | `TASK_REGISTRY.yaml` |
 | Agent roles, capability profiles, and path boundaries | `AGENT_REGISTRY.yaml` |
 | Explicit decisions | `DECISION_LOG.md` |
 | Durable milestones and paused-track recovery | `TASK_HISTORY.md` and task packets |
 | Validation artifacts | `EVIDENCE_INDEX.md` |
-| Orchestration and prompting behavior | `CODEX_PROMPTING_PROTOCOL.md` |
+| Orchestration and prompting behavior | `CODEX_ORCHESTRATION_PROTOCOL.md` |
 | QA checklists that remain active | dedicated task packets, contracts, and manual QA documents |
 
 ## Source Consolidation

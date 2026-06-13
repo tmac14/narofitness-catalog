@@ -1,22 +1,24 @@
-# CODEX Task Execution Protocol
+# Task Execution Protocol
 
 Permanent control model for rigorous planning, dependency-aware multitasking,
 parallel execution, validation, and recovery.
 
-This protocol applies to both:
+This protocol applies to all runtimes and both protocol modes:
 
-- `Protocol: ORCHESTRATION`
-- `Protocol: CODEX_IMPLEMENTATION`
+- `Runtime: ONLY_CODEX`, `CODEX_PLUS_CURSOR`, or `ONLY_CURSOR`
+- `Protocol: ORCHESTRATION` or `IMPLEMENTATION`
 
-It does not replace either implementation protocol. It defines the shared task
-lifecycle and coordination gates both protocols must follow.
+It does not replace runtime-specific orchestration or self-implementation
+protocols. It defines the shared task lifecycle and coordination gates all
+runtimes must follow.
 
 ## 1. Sources of Truth
 
-Use this authority order:
+Use this authority order (all runtimes):
 
 1. Current explicit user instruction.
-2. `CODEX_ORCHESTRATION_STATE.md` for the current summary and next safe action.
+2. Active `Runtime` and `Protocol` selection for the session or task.
+3. `ORCHESTRATION_STATE.md` for the current summary and next safe action.
 3. `TASK_REGISTRY.yaml` for task status, dependencies, owners, write scopes,
    locks, and parallel safety.
 4. The active task packet under `tasks/` for diagnosis, approved plan, evidence,
@@ -178,7 +180,7 @@ After a material transition:
 1. update the task packet;
 2. update `TASK_REGISTRY.yaml`;
 3. update `EVIDENCE_INDEX.md` or `DECISION_LOG.md` when applicable;
-4. update the summary in `CODEX_ORCHESTRATION_STATE.md`.
+4. update the summary in `ORCHESTRATION_STATE.md`.
 
 These files require normal documentation permission except for the limited
 control-update permission explicitly defined in `AGENTS.md`.

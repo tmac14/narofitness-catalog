@@ -1,13 +1,14 @@
-# CODEX Orchestration State
+# Orchestration State
 
-Live coordination state for Codex as project orchestrator.
+Live coordination state for the active control plane.
 Update this file when the user asks for a coordination refresh and after
 material task-state transitions under the limited permission in `AGENTS.md`.
 Do not mark QA-pending work as closed.
 
 **Last updated:** 2026-06-13
-**Primary orchestrator:** Codex
-**Source docs:** `AGENTS.md`, `docs/coordination/CODEX_RECOVERY_RUNBOOK.md`, `docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md`, `docs/coordination/TASK_REGISTRY.yaml`, `docs/coordination/AGENT_REGISTRY.yaml`, `docs/coordination/DECISION_LOG.md`, `docs/coordination/EVIDENCE_INDEX.md`, selected execution protocol, `COMMANDS.md`
+**Primary control plane:** none selected (awaiting next task)
+**Program completed:** RUNTIME-SYMMETRY PR-11–PR-18 — `IMPLEMENTED_AND_VALIDATED`
+**Source docs:** `AGENTS.md`, `docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md`, `docs/coordination/TASK_EXECUTION_PROTOCOL.md`, `docs/coordination/TASK_REGISTRY.yaml`, `docs/coordination/AGENT_REGISTRY.yaml`, `docs/coordination/DECISION_LOG.md`, `docs/coordination/EVIDENCE_INDEX.md`, selected execution protocol, `COMMANDS.md`
 
 ## 0. Active Execution Control
 
@@ -16,6 +17,11 @@ context loss. It records execution control, not a silent change to project
 priorities or workstream status.
 
 - Recovery status: `RECOVERY_READY`
+- control_plane_runtime: `NONE_SELECTED_FOR_NEXT_TASK`
+- active_protocol: `NONE_SELECTED_FOR_NEXT_TASK`
+- handoff_from: `NONE`
+- handoff_at: `NONE`
+- handoff_reason: `NONE`
 - Active protocol: `NONE_SELECTED_FOR_NEXT_TASK`
 - Active task ID: `NONE`
 - Active task status: `READY_FOR_NEXT_SELECTION`
@@ -26,14 +32,15 @@ priorities or workstream status.
 - Active locks: none
 - Work in flight by Codex: none
 - Waiting for: explicit next task selection and protocol
-- Pending evidence: none for PR-06
+- Pending evidence: none
 - Last completed Codex task:
-  `FRONTEND-LINT-TYPE-FORMAT-REMEDIATION` -
-  `IMPLEMENTED_AND_VALIDATED`
-- Last validated evidence: `EVID-CTRL-009` - frontend lint, format, and type
-  remediation with passing tests, build, runtime smoke, and control validation
-- Next safe action: select the next explicit task and protocol; current open
-  choices are `UX30-D7` or the next `IMPORT-FDL-FULL-QUALITY` task
+  `PUBLIC-ASSETS-ROOT-AND-LOGO-PROMOTION` — `VALIDATED`
+- Last validated evidence: `EVID-PUBLIC-001` — root `public/` layout, promoted
+  logos, Vite `publicDir`, `appAssets` registry; full desktop tests/build/control
+  validation passed
+- Next safe action: select the next explicit task with `Runtime` + `Protocol`
+  per `AGENTS.md`; open choices include `UX30-D7` or the next
+  `IMPORT-FDL-FULL-QUALITY` task
 
 ### Limited Control-Update Permission
 
@@ -50,7 +57,7 @@ inferred decisions, or QA closure.
   `docs/coordination/AGENT_REGISTRY.yaml`
 - Active task packet: none
 - Planning and parallel-safety gate:
-  `docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md`
+  `docs/coordination/TASK_EXECUTION_PROTOCOL.md`
 - Active locks: none
 - Parallel execution: deny by default until registry checks pass
 - Canonical control check: `npm run control:validate`

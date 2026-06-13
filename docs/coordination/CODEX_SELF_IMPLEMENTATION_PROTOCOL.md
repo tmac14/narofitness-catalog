@@ -37,9 +37,9 @@ end-to-end whenever safe:
 
 Before implementation, read:
 
-1. `docs/coordination/CODEX_ORCHESTRATION_STATE.md`
-2. `docs/coordination/CODEX_RECOVERY_RUNBOOK.md`
-3. `docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md`
+1. `docs/coordination/ORCHESTRATION_STATE.md`
+2. `docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md`
+3. `docs/coordination/TASK_EXECUTION_PROTOCOL.md`
 4. `docs/coordination/TASK_REGISTRY.yaml`
 5. `docs/coordination/AGENT_REGISTRY.yaml`
 6. the active task packet, when one exists
@@ -69,7 +69,7 @@ Before editing, validate:
 - pending functional or commercial decisions.
 
 Do not implement before `APPROVED`, `LOCKS_CONFIRMED`, and
-`READY_FOR_IMPLEMENTATION` under `CODEX_TASK_EXECUTION_PROTOCOL.md`.
+`READY_FOR_IMPLEMENTATION` under `TASK_EXECUTION_PROTOCOL.md`.
 
 Run `npm run control:validate` before implementation. Do not implement while it
 reports errors.
@@ -264,15 +264,33 @@ Codex must report:
 8. Risks, follow-ups, and exact remaining work.
 9. Final waiting or completion state.
 
-## 15. Protocol Change
+## 15. Protocol and Runtime Change
 
-To delegate the next task to Cursor agents, the user selects:
+To delegate the next task to Cursor agents under Codex orchestration:
 
-`Protocol: ORCHESTRATION`
+```
+Runtime: CODEX_PLUS_CURSOR
+Protocol: ORCHESTRATION
+```
 
-To return to direct implementation:
+To return to direct Codex implementation:
 
-`Protocol: CODEX_IMPLEMENTATION`
+```
+Runtime: ONLY_CODEX
+Protocol: IMPLEMENTATION
+```
+
+Legacy alias: `Protocol: CODEX_IMPLEMENTATION` = `ONLY_CODEX` + `IMPLEMENTATION`.
+
+For full Cursor control plane:
+
+```
+Runtime: ONLY_CURSOR
+Protocol: ORCHESTRATION | IMPLEMENTATION
+```
+
+See `CURSOR_ORCHESTRATION_PROTOCOL.md`, `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md`,
+and `RUNTIME_HANDOFF_PROTOCOL.md`.
 
 The selection applies to the next named task and never authorizes mixing
 protocols inside an active task.

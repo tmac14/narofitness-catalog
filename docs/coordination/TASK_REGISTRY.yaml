@@ -2,8 +2,8 @@ schema_version: 1
 updated_at: "2026-06-13"
 authority:
   purpose: "Authoritative registry for task status, dependencies, owners, locks, and parallel safety."
-  summary_source: "docs/coordination/CODEX_ORCHESTRATION_STATE.md"
-  execution_protocol: "docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md"
+  summary_source: "docs/coordination/ORCHESTRATION_STATE.md"
+  execution_protocol: "docs/coordination/TASK_EXECUTION_PROTOCOL.md"
   task_packets_dir: "docs/coordination/tasks/"
   agent_registry: "docs/coordination/AGENT_REGISTRY.yaml"
   task_history: "docs/coordination/TASK_HISTORY.md"
@@ -179,6 +179,73 @@ tasks:
     waiting_for: null
     next_safe_action: "No action; locks released"
 
+  - id: "APP-CHROME-3.0-MAIN-TOPBAR-BRAND-SYSTEM"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "App Chrome 3.0 main top bar and brand lockup system"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Automated desktop tests/build and web visual smoke"
+    status: "VALIDATED"
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/APP-CHROME-3.0-MAIN-TOPBAR-BRAND-SYSTEM.md"
+    dependencies: []
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "apps/desktop/src/components/**"
+      - "apps/desktop/src/lib/shellNav.ts"
+      - "apps/desktop/src/index.css"
+      - "apps/desktop/src/theme/narofitness-tokens.css"
+      - "apps/desktop/tailwind.config.cjs"
+      - "apps/desktop/index.html"
+      - "public/assets/fonts/**"
+    blocked_paths:
+      - "apps/api/**"
+      - "migrations/**"
+      - "importer/**"
+    locks: []
+    parallel_safety: "SAFE_FRONTEND_CHROME_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; validated. Logo derivative optimization deferred."
+
+  - id: "PUBLIC-ASSETS-ROOT-AND-LOGO-PROMOTION"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "Root public assets directory and wireframe logo promotion"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Automated desktop tests/build and control validation"
+    status: "VALIDATED"
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/PUBLIC-ASSETS-ROOT-AND-LOGO-PROMOTION.md"
+    dependencies: []
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "public/**"
+      - "apps/desktop/vite.config.ts"
+      - "apps/desktop/index.html"
+      - "apps/desktop/electron-builder.config.cjs"
+      - "apps/desktop/src/lib/appAssets.ts"
+      - "apps/desktop/src/lib/appAssets.test.ts"
+    blocked_paths:
+      - "apps/api/**"
+      - "migrations/**"
+      - "importer/**"
+    locks: []
+    parallel_safety: "SAFE_FRONTEND_ASSETS_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; validated. Background/placeholder promotion deferred."
+
   - id: "IMPORT-FDL-FULL-QUALITY-NEXT"
     track: "IMPORT-FDL-FULL-QUALITY"
     title: "Next systemic import-quality or page-certification task"
@@ -280,7 +347,7 @@ tasks:
     decisions_required: []
     planned_write_paths:
       - "docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md"
-      - "docs/coordination/CODEX_PROMPTING_PROTOCOL.md"
+      - "docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md"
       - "docs/coordination/IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md"
       - "docs/coordination/DOCUMENTATION_INVENTORY.md"
     blocked_paths:

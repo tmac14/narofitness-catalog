@@ -8,11 +8,12 @@ Rigorous review of the current operational identities and recommended changes.
   (`Agent 1A`, `Agent 1B`, `Agent 2`, `Agent 3`, `Agent 4`, `Agent 5`,
   `Agent 6`).
 - Previous conversation sometimes referred to six agents.
-- Codex is the primary orchestrator/control plane and is not counted as a
-  Cursor implementation agent.
+- Control-plane runtimes: **Codex** and **Cursor Control Plane** (decision
+  `RUNTIME-D002`). Neither is counted as a Cursor operational agent.
 
-Decision `AGENT-D001` formalizes seven Cursor operational identities. Codex is
-the separate control-plane orchestrator and is not counted as a Cursor agent.
+Decision `AGENT-D001` formalizes seven Cursor operational identities.
+Decision `RUNTIME-D002` adds **Cursor Control Plane** as an explicit control-plane
+runtime for `ONLY_CURSOR` orchestration with multi-chat as the default model.
 
 ## Role Assessment
 

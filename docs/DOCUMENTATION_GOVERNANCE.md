@@ -33,12 +33,14 @@ The classification source is
 
 ## 3. Authority
 
-- Current summary: `CODEX_ORCHESTRATION_STATE.md`
+- Current summary: `ORCHESTRATION_STATE.md`
 - Tasks, dependencies, locks, queues: `TASK_REGISTRY.yaml`
 - Approved plan and task context: active task packet
 - Explicit decisions: `DECISION_LOG.md`
 - Validation evidence: `EVIDENCE_INDEX.md`
 - Agent capabilities and topology: `AGENT_REGISTRY.yaml`
+- Control-plane runtimes: `AGENT_REGISTRY.yaml` (`control_plane_runtimes`)
+- Runtime selection matrix: `AGENTS.md`
 
 Roadmaps, backlogs, handoffs, and checkpoints are supporting context unless
 explicitly designated otherwise.

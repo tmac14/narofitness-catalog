@@ -1,23 +1,23 @@
 # AGENTS
 
-## Codex Orchestrator
+## Project Control Plane
 
-Codex is the primary orchestrator for the Narofitness/PIM project.
-Before suggesting, launching, or reviewing any work, always read:
+The Narofitness/PIM project supports three runtimes. Before suggesting,
+launching, or reviewing any work, always read:
 
-1. `docs/coordination/CODEX_ORCHESTRATION_STATE.md` - live orchestration state
-2. `docs/coordination/CODEX_RECOVERY_RUNBOOK.md` - context-loss recovery and active-task bootstrap
-3. `docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md` - universal planning, dependency, lock, and validation gates
+1. `docs/coordination/ORCHESTRATION_STATE.md` - live orchestration state
+2. `docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md` - context-loss recovery and active-task bootstrap
+3. `docs/coordination/TASK_EXECUTION_PROTOCOL.md` - universal planning, dependency, lock, and validation gates
 4. `docs/coordination/TASK_REGISTRY.yaml` - authoritative task, dependency, lock, and parallel-safety registry
 5. `docs/coordination/AGENT_REGISTRY.yaml` - authoritative agent capability and topology registry
 6. The active task packet under `docs/coordination/tasks/`, when one exists
 7. `docs/ENGINEERING_STANDARDS.md` - code, naming, testing, and architecture standards
-8. The selected execution protocol: prompting or self-implementation
+8. The selected runtime protocol (see Runtime and Protocol Selection below)
 9. `COMMANDS.md` - canonical npm commands (required before QA, audit, validation, or environment setup prompts)
 
 For a quick terminal index use `npm run help` or `npm run help -- <command>`; `COMMANDS.md` remains the canonical reference for prompts and stop conditions.
 
-Treat `CODEX_ORCHESTRATION_STATE.md` as the current summary,
+Treat `ORCHESTRATION_STATE.md` as the current summary,
 `TASK_REGISTRY.yaml` as authoritative for tasks/locks/dependencies, and
 `AGENT_REGISTRY.yaml` as authoritative for agent ownership/topology.
 
@@ -25,22 +25,53 @@ When citing shell commands in prompts or stop conditions, use **only** commands 
 Run `npm run control:validate` before implementation and after material
 task-state transitions. Do not implement while it reports errors.
 
-## Protocol Selection
+## Runtime and Protocol Selection
 
-The user selects exactly one protocol before each task that may cause changes:
+Before each task or session that may cause changes, the user selects:
 
-- `Protocol: ORCHESTRATION` - Codex coordinates and creates prompts for Cursor agents; Codex does not implement.
-- `Protocol: CODEX_IMPLEMENTATION` - Codex implements the task directly, end-to-end, under the self-implementation protocol.
+```
+Runtime: ONLY_CODEX | CODEX_PLUS_CURSOR | ONLY_CURSOR
+Protocol: ORCHESTRATION | IMPLEMENTATION
+```
 
-Never mix protocols inside one task without explicit user approval.
-If a change-capable request does not name a protocol, ask which protocol to use before editing.
+| Runtime | Protocol | Control plane | Executor | Protocol document |
+|---|---|---|---|---|
+| `ONLY_CODEX` | `ORCHESTRATION` | Codex | Codex | `CODEX_ORCHESTRATION_PROTOCOL.md` |
+| `ONLY_CODEX` | `IMPLEMENTATION` | — | Codex | `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` |
+| `CODEX_PLUS_CURSOR` | `ORCHESTRATION` | Codex | Cursor Agents 1A–6 | `CODEX_ORCHESTRATION_PROTOCOL.md` |
+| `CODEX_PLUS_CURSOR` | `IMPLEMENTATION` | — | Codex | `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` |
+| `ONLY_CURSOR` | `ORCHESTRATION` | Cursor Control Plane | Cursor Agents 1A–6 (multi-chat) | `CURSOR_ORCHESTRATION_PROTOCOL.md` |
+| `ONLY_CURSOR` | `IMPLEMENTATION` | — | Cursor (assigned identity) | `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` |
+
+Rules:
+
+- One runtime and one protocol per active task; do not mix without explicit user approval.
+- If either is missing, ask before editing files or launching work.
+- `ORCHESTRATION` = control plane active; do not implement product code.
+- `IMPLEMENTATION` = executor active; do not orchestrate or update control documents unless explicitly in scope.
+
+Legacy alias: `Protocol: CODEX_IMPLEMENTATION` means `Runtime: ONLY_CODEX` +
+`Protocol: IMPLEMENTATION`.
+
+## Control Plane Authority
+
+Authorized control-plane identities may update the limited control documents
+listed below after material task-state transitions:
+
+- **Codex** — `Runtime: ONLY_CODEX` or `Runtime: CODEX_PLUS_CURSOR` with
+  `Protocol: ORCHESTRATION`
+- **Cursor Control Plane** — `Runtime: ONLY_CURSOR` with
+  `Protocol: ORCHESTRATION`
+
+Implementation agents (Agent 1A–6) must **not** update control documents unless
+explicitly in scope.
 
 ## Limited Control Update Permission
 
-After a material task-state transition, Codex may update only these control
-documents without requesting separate documentation permission:
+After a material task-state transition, authorized control-plane sessions may
+update only these documents without requesting separate documentation permission:
 
-- `docs/coordination/CODEX_ORCHESTRATION_STATE.md`;
+- `docs/coordination/ORCHESTRATION_STATE.md`;
 - `docs/coordination/TASK_REGISTRY.yaml`;
 - the active task packet under `docs/coordination/tasks/`;
 - `docs/coordination/EVIDENCE_INDEX.md` when durable evidence changes;
@@ -56,7 +87,7 @@ QA-pending work as closed, or change project decisions silently.
 
 - Active data/import track: `IMPORT-FDL-FULL-QUALITY`.
 - Active frontend UX track: `APP-PLATFORM-UX-3.0`.
-- Use `CODEX_ORCHESTRATION_STATE.md` and `TASK_REGISTRY.yaml` for the current
+- Use `ORCHESTRATION_STATE.md` and `TASK_REGISTRY.yaml` for the current
   priority and next safe task inside each track.
 - Do not reactivate paused workstreams unless the user explicitly says so.
 
@@ -78,7 +109,7 @@ Use `docs/coordination/AGENT_REGISTRY.yaml` as the authoritative role source.
   for Backend/API/Data Platform or `Agent 2B` for Import/PIM Intelligence;
   never run both profiles concurrently.
 - Agent 3: on-demand governance/architecture/contract/documentation-lifecycle
-  audit only; Codex and the registries own routine coordination state.
+  audit only; control-plane runtimes and the registries own routine coordination state.
 - Agent 4: frontend API integration, `api.ts`, hooks, contract wiring.
 - Agent 5: read-only importer audits and reporting.
 - Agent 6: PDF export, templates, print renderer, preview/export parity.

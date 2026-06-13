@@ -1,8 +1,13 @@
-# CODEX ORCHESTRATION AND PROMPTING PROTOCOL - Narofitness/PIM
+# CODEX ORCHESTRATION PROTOCOL - Narofitness/PIM
 
 This protocol applies when the user selects:
 
-`Protocol: ORCHESTRATION`
+```
+Runtime: ONLY_CODEX | CODEX_PLUS_CURSOR
+Protocol: ORCHESTRATION
+```
+
+Legacy: `Protocol: ORCHESTRATION` without a Runtime implies Codex orchestration.
 
 Codex acts as the primary technical orchestrator. Codex reads and synthesizes
 context, controls task state and dependencies, prevents collisions, evaluates
@@ -12,7 +17,7 @@ task under `Protocol: CODEX_IMPLEMENTATION`.
 
 The two protocols are mutually exclusive inside one task. Shared lifecycle,
 planning, task-packet, dependency, lock, evidence, and parallel-safety rules
-are defined by `CODEX_TASK_EXECUTION_PROTOCOL.md`.
+are defined by `TASK_EXECUTION_PROTOCOL.md`.
 
 Never generate an implementation prompt unless the task is registered as
 `READY_FOR_IMPLEMENTATION` in `TASK_REGISTRY.yaml`.
@@ -22,7 +27,7 @@ Never generate an implementation prompt unless the task is registered as
 Use this authority order:
 
 1. current explicit user instruction;
-2. `CODEX_ORCHESTRATION_STATE.md`;
+2. `ORCHESTRATION_STATE.md`;
 3. `TASK_REGISTRY.yaml`;
 4. active task packet and approved decisions;
 5. latest validated agent report and indexed evidence;
@@ -668,3 +673,18 @@ Quick map:
 
 When a report says a required command could not run, respond with the exact
 pending command and its documented preconditions, never a generic description.
+
+## 20. Runtime and Protocol Change
+
+To delegate implementation to Cursor executors under `CODEX_PLUS_CURSOR`, continue
+using this protocol and generate executor prompts per §10.
+
+To switch to Cursor control plane, the user selects:
+
+```
+Runtime: ONLY_CURSOR
+Protocol: ORCHESTRATION
+```
+
+Cursor orchestration counterpart: `CURSOR_ORCHESTRATION_PROTOCOL.md`.
+See `RUNTIME_HANDOFF_PROTOCOL.md` when switching control-plane runtime mid-project.

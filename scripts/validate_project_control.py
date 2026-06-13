@@ -26,7 +26,7 @@ COORDINATION = ROOT / "docs" / "coordination"
 TASK_REGISTRY_PATH = COORDINATION / "TASK_REGISTRY.yaml"
 AGENT_REGISTRY_PATH = COORDINATION / "AGENT_REGISTRY.yaml"
 DECISION_LOG_PATH = COORDINATION / "DECISION_LOG.md"
-STATE_PATH = COORDINATION / "CODEX_ORCHESTRATION_STATE.md"
+STATE_PATH = COORDINATION / "ORCHESTRATION_STATE.md"
 INVENTORY_PATH = COORDINATION / "DOCUMENTATION_INVENTORY.md"
 
 ACTIVE_STATUSES = {
@@ -50,6 +50,17 @@ QUEUE_STATUS = {
     "validation_pending": {"VALIDATION_PENDING"},
 }
 DECISION_ID = re.compile(r"^[A-Z][A-Z0-9-]*-D\d+$")
+VALID_RUNTIMES = {
+    "ONLY_CODEX",
+    "CODEX_PLUS_CURSOR",
+    "ONLY_CURSOR",
+    "NONE_SELECTED_FOR_NEXT_TASK",
+}
+VALID_PROTOCOLS = {
+    "ORCHESTRATION",
+    "IMPLEMENTATION",
+    "NONE_SELECTED_FOR_NEXT_TASK",
+}
 
 
 class UniqueKeySafeLoader(yaml.SafeLoader):
@@ -233,7 +244,16 @@ def validate_agents(
         result.error("operational_identity_count does not match the registered agent count")
 
     assignments = registry.get("agent_pool", {}).get("current_assignments", {})
-    valid_owners = set(ids) | {str(agent_registry.get("orchestrator", {}).get("id", "Codex"))}
+    control_plane_ids = {
+        str(runtime.get("id"))
+        for runtime in agent_registry.get("control_plane_runtimes", [])
+        if isinstance(runtime, dict) and runtime.get("id")
+    }
+    if not control_plane_ids:
+        legacy = agent_registry.get("orchestrator", {})
+        if isinstance(legacy, dict) and legacy.get("id"):
+            control_plane_ids = {str(legacy["id"])}
+    valid_owners = set(ids) | control_plane_ids
     task_ids = {str(task.get("id")) for task in registry.get("tasks", []) if isinstance(task, dict)}
     for owner, task_id in assignments.items():
         if owner not in valid_owners:
@@ -251,11 +271,66 @@ def validate_authority_paths(registry: dict[str, Any], agent_registry: dict[str,
                 result.error(f"{source} authority path is missing: {path}")
 
 
-def validate_state(registry: dict[str, Any], result: Validation) -> None:
+def validate_control_plane_protocols(agent_registry: dict[str, Any], result: Validation) -> None:
+    runtimes = agent_registry.get("control_plane_runtimes", [])
+    if not isinstance(runtimes, list):
+        result.error("AGENT_REGISTRY control_plane_runtimes must be a list")
+        return
+    for runtime in runtimes:
+        if not isinstance(runtime, dict):
+            result.error("Each control_plane_runtime must be a mapping")
+            continue
+        protocols = runtime.get("protocols", [])
+        if not isinstance(protocols, list):
+            result.error(f"control_plane_runtime {runtime.get('id')}: protocols must be a list")
+            continue
+        for path in protocols:
+            if isinstance(path, str) and not existing_repo_path(path):
+                result.error(f"control_plane_runtime {runtime.get('id')}: missing protocol {path}")
+
+
+def _state_field(text: str, field: str) -> str | None:
+    match = re.search(rf"- {re.escape(field)}: `([^`]+)`", text)
+    return match.group(1) if match else None
+
+
+def validate_runtime_fields(text: str, decision_ids: set[str], result: Validation) -> None:
+    runtime = _state_field(text, "control_plane_runtime")
+    protocol = _state_field(text, "active_protocol")
+    handoff_from = _state_field(text, "handoff_from")
+    handoff_at = _state_field(text, "handoff_at")
+    handoff_reason = _state_field(text, "handoff_reason")
+
+    for label, value in (
+        ("control_plane_runtime", runtime),
+        ("active_protocol", protocol),
+        ("handoff_from", handoff_from),
+        ("handoff_at", handoff_at),
+        ("handoff_reason", handoff_reason),
+    ):
+        if value is None:
+            result.error(f"ORCHESTRATION_STATE does not declare {label}")
+
+    if runtime and runtime not in VALID_RUNTIMES:
+        result.error(f"ORCHESTRATION_STATE control_plane_runtime is invalid: {runtime}")
+    if protocol and protocol not in VALID_PROTOCOLS:
+        result.error(f"ORCHESTRATION_STATE active_protocol is invalid: {protocol}")
+
+    if handoff_from and handoff_from != "NONE":
+        if not handoff_at or handoff_at == "NONE":
+            result.error("ORCHESTRATION_STATE handoff_from is set but handoff_at is missing")
+        if not handoff_reason or handoff_reason == "NONE":
+            result.error("ORCHESTRATION_STATE handoff_from is set but handoff_reason is missing")
+        if not any(decision_id.startswith("RUNTIME-D") for decision_id in decision_ids):
+            result.warn("ORCHESTRATION_STATE records a handoff but no RUNTIME-D decision is logged")
+
+
+def validate_state(registry: dict[str, Any], decision_ids: set[str], result: Validation) -> None:
     text = STATE_PATH.read_text(encoding="utf-8")
+    validate_runtime_fields(text, decision_ids, result)
     match = re.search(r"- Active task ID: `([^`]+)`", text)
     if not match:
-        result.error("CODEX_ORCHESTRATION_STATE does not declare Active task ID")
+        result.error("ORCHESTRATION_STATE does not declare Active task ID")
         return
     state_task = match.group(1)
     in_flight = registry.get("queues", {}).get("in_flight", [])
@@ -288,7 +363,8 @@ def main() -> int:
         validate_tasks(registry, decision_ids, result)
         validate_agents(registry, agent_registry, result)
         validate_authority_paths(registry, agent_registry, result)
-        validate_state(registry, result)
+        validate_control_plane_protocols(agent_registry, result)
+        validate_state(registry, decision_ids, result)
         validate_inventory(result)
 
     print("Project control validation")

@@ -337,7 +337,7 @@ Future Products responsive edits require a **new Agent 3 lock** per task.
 
 ## Related documents
 
-- [CODEX_ORCHESTRATION_STATE.md](./CODEX_ORCHESTRATION_STATE.md)
+- [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md)
 - [APP_WIDE_UX_SCOPE.md](./APP_WIDE_UX_SCOPE.md)
 - [AGENT_REGISTRY.yaml](./AGENT_REGISTRY.yaml)
 - [TASK_REGISTRY.yaml](./TASK_REGISTRY.yaml)

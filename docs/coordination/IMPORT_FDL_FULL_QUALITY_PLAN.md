@@ -9,7 +9,7 @@
 
 **Supersedes (temporarily):** page-by-page expansion as primary strategy. **65-page manual loop is last resort.**
 
-**Registry:** [IMPORT_PARSER_BACKLOG.md](./IMPORT_PARSER_BACKLOG.md) · [CODEX_ORCHESTRATION_STATE.md](./CODEX_ORCHESTRATION_STATE.md)
+**Registry:** [IMPORT_PARSER_BACKLOG.md](./IMPORT_PARSER_BACKLOG.md) · [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md)
 
 ---
 
@@ -172,7 +172,7 @@ npm run audit:full-catalog -- --format=both
 ## Related documents
 
 - [IMPORT_PARSER_BACKLOG.md](./IMPORT_PARSER_BACKLOG.md)
-- [CODEX_ORCHESTRATION_STATE.md](./CODEX_ORCHESTRATION_STATE.md)
+- [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md)
 - [TASK_REGISTRY.yaml](./TASK_REGISTRY.yaml)
 - [PR-FDL-FAMILY-BLOCK_CONTRACT_SUMMARY.md](./contracts/PR-FDL-FAMILY-BLOCK_CONTRACT_SUMMARY.md)
 - [PR-PAGE14-FDL_CONTRACT_SUMMARY.md](./contracts/PR-PAGE14-FDL_CONTRACT_SUMMARY.md)

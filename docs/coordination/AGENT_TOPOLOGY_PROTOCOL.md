@@ -5,7 +5,10 @@ retired, or on-demand roles as project complexity changes.
 
 ## 1. Principles
 
-- Codex is the control-plane orchestrator, not a Cursor implementation agent.
+- Two control-plane runtimes exist: **Codex** and **Cursor Control Plane**.
+  Neither is counted among the seven Cursor operational agents (1A–6).
+- Control-plane runtimes own routine task state, locks, dependencies, queues,
+  and next-action maintenance when operating under `Protocol: ORCHESTRATION`.
 - Agents are assigned by operational identity and capability, never by an
   assumed agent count.
 - A new agent or permanent role change requires explicit user approval.
@@ -15,8 +18,8 @@ retired, or on-demand roles as project complexity changes.
   slot. They cannot run concurrently unless a later approved topology decision
   creates separate operational identities.
 - Parallel capacity never overrides dependency, lock, or validation safety.
-- Codex and the control registries own routine task state, locks, dependencies,
-  queues, and next-action maintenance.
+- Control-plane runtimes and the registries own routine task state, locks,
+  dependencies, queues, and next-action maintenance.
 
 ## 2. Review Triggers
 

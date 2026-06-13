@@ -49,14 +49,14 @@ decisions, and evidence-based closure.
 - Probable write paths: control and coordination documentation only
 - Actual files changed:
   - `AGENTS.md`
-  - `docs/coordination/CODEX_ORCHESTRATION_STATE.md`
-  - `docs/coordination/CODEX_RECOVERY_RUNBOOK.md`
-  - `docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md`
+  - `docs/coordination/ORCHESTRATION_STATE.md`
+  - `docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md`
+  - `docs/coordination/TASK_EXECUTION_PROTOCOL.md`
   - `docs/coordination/TASK_REGISTRY.yaml`
   - `docs/coordination/DECISION_LOG.md`
   - `docs/coordination/EVIDENCE_INDEX.md`
   - `docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
-  - `docs/coordination/CODEX_PROMPTING_PROTOCOL.md`
+  - `docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md`
   - `docs/coordination/tasks/README.md`
   - `docs/coordination/tasks/TASK_PACKET_TEMPLATE.md`
   - this task packet
