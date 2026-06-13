@@ -5,6 +5,7 @@ from validate_project_control import (
     parse_yaml_document,
     validate_runtime_fields,
     validate_task_runtime_protocol,
+    validate_cursor_workspace,
 )
 
 
@@ -102,6 +103,13 @@ class TaskRuntimeProtocolTests(TestCase):
             {"runtime": "ONLY_CODEX", "protocol": "NONE"},
             validation,
         )
+        self.assertEqual(validation.errors, [])
+
+
+class CursorWorkspaceTests(TestCase):
+    def test_required_cursor_rules_and_hooks_exist(self) -> None:
+        validation = Validation()
+        validate_cursor_workspace(validation)
         self.assertEqual(validation.errors, [])
 
 

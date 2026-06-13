@@ -459,6 +459,7 @@ def main() -> int:
         validate_authority_paths(registry, agent_registry, result)
         validate_control_plane_protocols(agent_registry, result)
         validate_state(registry, decision_ids, result)
+        validate_cursor_workspace(result)
         validate_inventory(result)
 
     print("Project control validation")

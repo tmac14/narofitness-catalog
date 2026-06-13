@@ -28,6 +28,8 @@ Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 | `TASK_HISTORY.md` | CORE | English | Keep as durable milestone/recovery index |
 | `DOCUMENTATION_INVENTORY.md` | CORE | English | Keep; classify every coordination document |
 | `.cursor/rules/*.mdc` | CORE | English | Keep; Cursor workspace rules enforcing runtime protocols |
+| `.cursor/hooks.json` | CORE | English | Keep; project hooks for recovery context and Runtime/Protocol enforcement |
+| `.cursor/hooks/**` | CORE | English | Keep; hook scripts (sessionStart, beforeSubmitPrompt, preToolUse guard) |
 | `CODEX_ORCHESTRATION_PROTOCOL.md` | CORE | English | Keep as canonical Codex orchestration protocol |
 | `CURSOR_ORCHESTRATION_PROTOCOL.md` | CORE | English | Keep as canonical Cursor control-plane orchestration protocol |
 | `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` | CORE | English | Keep as canonical Cursor executor implementation protocol |
