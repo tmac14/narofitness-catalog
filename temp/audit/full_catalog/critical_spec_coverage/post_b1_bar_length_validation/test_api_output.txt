@@ -1,0 +1,18 @@
+...F.................................................................... [ 12%]
+........................................................................ [ 24%]
+........................................................................ [ 37%]
+............................................F........................... [ 49%]
+........................................................................ [ 61%]
+...........................................................FsFF......... [ 74%]
+........................................................................ [ 86%]
+.....................................FF................................. [ 98%]
+......                                                                   [100%]
+=========================== short test summary info ============================
+FAILED tests/test_background_jobs.py::test_migration_005_background_jobs_revision
+FAILED tests/test_import_grouping_explicit_one_per_sku.py::test_explicit_one_per_sku_negative_unit[numeric_sku_cro107nexo_negative.json]
+FAILED tests/test_import_spec_validate.py::test_dobnexo_extracts_common_specs_from_name
+FAILED tests/test_layout_selector.py::test_registry_has_three_layouts - Asser...
+FAILED tests/test_layout_selector.py::test_list_layouts_serializable - Assert...
+FAILED tests/test_spec_resolver.py::test_format_spec_display_without_unit - A...
+FAILED tests/test_spec_resolver.py::test_format_spec_display_other_unit - Ass...
+7 failed, 574 passed, 1 skipped, 249 deselected in 72.91s (0:01:12)

@@ -1,0 +1,123 @@
+{
+  "task_id": "IMPORT-FDL-SMART-CONNECT-SPEC-POST-VALIDATION",
+  "agent": "agent5",
+  "verdict": "SMART_CONNECT_SPEC_VALIDATION_PASS",
+  "generated_at": "2026-06-11T21:00:00+00:00",
+  "read_only_confirmation": true,
+  "commands_executed": [
+    {
+      "command": "npm run db:reset:full:wipe",
+      "status": "success",
+      "notes": "masters_created=534, variants=871, rows_blocked=0, catalog_items=871, spec_definitions includes smart_connect (16 specs)"
+    },
+    {
+      "command": "docker compose exec -T api sh -c \"mkdir -p /data/audit/xebex_smart_connect/post_validation && PYTHONPATH=/app python /temp/audit/bug_audits/xebex_smart_connect/post_validation/_smart_connect_spec_validation.py > /data/audit/xebex_smart_connect/post_validation/smart_connect_spec_validation.json\"",
+      "status": "success"
+    },
+    {
+      "command": "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/post_master_name_consistency/_run_full_catalog_audit.py --output-dir /data/audit/xebex_smart_connect/post_validation\"",
+      "status": "success",
+      "notes": "npm run audit:full-catalog does not exist"
+    },
+    {
+      "command": "docker compose exec -T api sh -c \"cd /app && python -m pytest tests/test_smart_connect_extract.py tests/test_import_grouping_smart_connect.py -q --tb=short\"",
+      "status": "success",
+      "notes": "35 passed, 5 skipped (integration profile tests)"
+    }
+  ],
+  "artifacts": [
+    "temp/audit/bug_audits/xebex_smart_connect/post_validation/smart_connect_spec_validation.json",
+    "temp/audit/bug_audits/xebex_smart_connect/post_validation/smart_connect_spec_post_validation_report.json",
+    "temp/audit/bug_audits/xebex_smart_connect/post_validation/full_catalog_import_audit.json",
+    "temp/audit/bug_audits/xebex_smart_connect/post_validation/_smart_connect_spec_validation.py"
+  ],
+  "matrix_final": {
+    "smart_connect_true": {
+      "count": 7,
+      "skus": ["BIC007", "BIC008", "REM004", "REM005", "CIN002", "SKI009", "ESC003"]
+    },
+    "smart_connect_false": {
+      "count": 3,
+      "skus": ["BIC010", "BIC002", "REM002"]
+    },
+    "absent_commercial_identity": {
+      "count": 2,
+      "skus": ["REPUESTO-805", "REPUESTO-806"],
+      "skip_reason": "smart_connect_commercial_identity"
+    },
+    "total_product_variant_specs": 10,
+    "implicit_false_on_other_skus": 0,
+    "unrelated_skus_with_spec": 0
+  },
+  "db_persistence": {
+    "spec_key": "smart_connect",
+    "value_boolean_true": 7,
+    "value_boolean_false": 3,
+    "repuesto_without_spec": true,
+    "names_preserved": true,
+    "examples": {
+      "SKI009": {
+        "display_name": "AirPlus Ski Trainer 200 Smart Connect",
+        "smart_connect": true,
+        "category_path": "CARDIO > SKI",
+        "mapped_category_slug": "cardio",
+        "extraction": "embedded numeric suffix (200) + CARDIO structural context"
+      }
+    }
+  },
+  "synthetic_negatives": {
+    "verdict": "PASS",
+    "cases": [
+      { "name": "Cardio Widget Smart Connect", "skip_reason": "ambiguous" },
+      { "name": "AirPlus Ski Trainer Smart Connect", "skip_reason": "ambiguous" },
+      { "name": "Smart Connect Adapter", "skip_reason": "commercial_identity" },
+      { "name": "Consola Bluetooth AB-1 Smart Connect", "skip_reason": "commercial_identity" },
+      { "name": "Model 200 Smart Connect", "skip_reason": "ambiguous", "note": "outside CARDIO" },
+      { "name": "REPUESTO-999 Consola Bluetooth (NO smart conect)", "skip_reason": "commercial_identity" }
+    ]
+  },
+  "profiles_visible": {
+    "cardio": true,
+    "bicicletas-estaticas": true,
+    "remos": true,
+    "cintas-de-correr": true
+  },
+  "focus_pages": {
+    "verdict": "PASS",
+    "3": { "matrix_skus": 6, "issues": 0 },
+    "4": { "matrix_skus": 4, "issues": 0 },
+    "5": { "matrix_skus": 2, "issues": 0 }
+  },
+  "regression_pages": {
+    "verdict": "PASS",
+    "11": { "importable": 30, "blocked": 0, "smart_connect_specs": 0 },
+    "12": { "importable": 39, "blocked": 0, "smart_connect_specs": 0 },
+    "13": { "importable": 30, "blocked": 0, "smart_connect_specs": 0 },
+    "14": { "importable": 22, "blocked": 0, "smart_connect_specs": 0 }
+  },
+  "full_catalog_metrics": {
+    "rows_importable": 871,
+    "rows_blocked": 0,
+    "masters_created": 534,
+    "variants_created": 871,
+    "price_entries": 871,
+    "catalog_items_created": 871,
+    "category_contamination": 0
+  },
+  "zero_drift_evidence": {
+    "master_key_drift": 0,
+    "grouping_reason_drift": 0,
+    "reason_counts_match_fixture": true,
+    "master_name_unchanged_on_matrix_rows": true
+  },
+  "remaining_risks": [
+    {
+      "severity": "P3",
+      "item": "Smart Connect text remains in display/master names by design; spec complements but does not replace name tokens"
+    },
+    {
+      "severity": "P3",
+      "item": "ESC003 on page 5 included in true matrix (parenthetical affirm); out of focus pages 3/4/5 scope but validated in full matrix"
+    }
+  ]
+}

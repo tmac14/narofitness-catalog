@@ -1,0 +1,40 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B3A-BARRAS-PROFILE-POST-VALIDATION",
+  "page": 13,
+  "command_exact": "npm run audit:page-import -- --page=13 --ensure-pim-seed --report-format=both",
+  "command_note": "npm warns Unknown cli config for --page; launcher still resolves page via npm_config or audit state. Positional form also works: npm run audit:page-import -- 13 both",
+  "reproduction_runs": [
+    {
+      "when": "2026-06-12 after db:reset:full:wipe + full catalog seed",
+      "exit_code": 0,
+      "status": "pass",
+      "parsed": 30,
+      "imported": 30,
+      "blocked": 0,
+      "isolated_db": true,
+      "categories": ["cross-training"],
+      "sample_skus": ["CRO069", "CRO070", "CRO083", "CRO127", "SOP055", "SOP063"]
+    }
+  ],
+  "page_content_analysis": {
+    "category": "cross-training",
+    "barras_skus_on_page": 0,
+    "b3a_touch_surface": "none — B3A only adds CategorySpecProfile row for barras/longitud_mm"
+  },
+  "failure_observed_during_audit": {
+    "page_with_error": 11,
+    "not_page_13": true,
+    "error_type": "sqlalchemy.exc.IntegrityError",
+    "error_message": "DELETE FROM product_masters violates FK product_variants_product_master_id_fkey",
+    "context": "Occurred once when running page-import batch immediately after test:api on full 871-variant catalog without intermediate wipe; not reproduced on clean wipe+seed",
+    "classification": "ENVIRONMENT_CONTAMINATION_OR_TRANSIENT",
+    "related_to_b3a": false
+  },
+  "conclusion": {
+    "page_13_fail_related_to_b3a": false,
+    "page_13_reproduces_pass_on_clean_env": true,
+    "existed_before_b3a": "no evidence of page 13 regression; historical audit temp/audit/pages/013/page_import_audit.json status=pass",
+    "regression_real": false,
+    "recommended_action": "If page-import fails with FK on reset, run db:reset:full:wipe before page audits; do not attribute to B3A"
+  }
+}

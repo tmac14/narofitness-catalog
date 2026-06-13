@@ -1,0 +1,30 @@
+{
+  "source": "cdp-titlebar-check.mjs via Electron --remote-debugging-port=9333",
+  "checkedAt": "2026-06-12T13:51:47.366Z",
+  "tablet768": {
+    "minimize": { "width": 44, "height": 44 },
+    "close": { "width": 44, "height": 44 },
+    "titleOverflow": false,
+    "pass": true
+  },
+  "desktop1024": {
+    "minimize": { "width": 32, "height": 32 },
+    "close": { "width": 32, "height": 32 },
+    "titleOverflow": false,
+    "pass": true
+  },
+  "wide1440": {
+    "minimize": { "width": 32, "height": 32 },
+    "close": { "width": 32, "height": 32 },
+    "titleOverflow": false,
+    "pass": true
+  },
+  "dragNoDrag": {
+    "titlebarDragClass": true,
+    "titlebarNoDragClass": true,
+    "note": "Verified via TitleBar.tsx + index.css; runtime IPC windowControls exposed in Electron preload"
+  },
+  "buttonClickRuntime": {
+    "note": "Minimize/close click not invoked during QA to avoid disrupting session; IPC handlers registered in electron/main.cjs"
+  }
+}

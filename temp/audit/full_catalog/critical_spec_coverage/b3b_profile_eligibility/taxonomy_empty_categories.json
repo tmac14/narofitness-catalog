@@ -1,0 +1,16 @@
+{
+  "note": "Taxonomy categories with zero FDL importables in full catalog (871 variants). No CategorySpecProfile needed until products map here.",
+  "empty_in_full_catalog": [
+    {"slug": "agarres", "parent": "top-level"},
+    {"slug": "boxeo", "parent": "top-level"},
+    {"slug": "home", "parent": "top-level"},
+    {"slug": "musculacion", "parent": "top-level", "subcategories": ["linea-a-placas", "linea-convergente-a-disco", "bancos-jaulas-y-soportes"]},
+    {"slug": "racks-y-estructuras", "parent": "top-level"},
+    {"slug": "repuestos", "parent": "top-level"},
+    {"slug": "suelos", "parent": "top-level"},
+    {"slug": "air-bike", "parent": "cardio"},
+    {"slug": "ciclo-indoor", "parent": "cardio"},
+    {"slug": "stepper", "parent": "cardio"}
+  ],
+  "musculacion_finding": "Previously cited as B3 candidate but has 0 masters/variants in FDL Tarifa 2026 full seed. Not eligible until taxonomy mapping assigns plate/convergent machines here."
+}

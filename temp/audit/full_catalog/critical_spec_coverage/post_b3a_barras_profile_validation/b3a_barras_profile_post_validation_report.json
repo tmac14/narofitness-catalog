@@ -1,0 +1,200 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B3A-BARRAS-PROFILE-POST-VALIDATION",
+  "status": "B3A_BARRAS_PROFILE_POST_VALIDATION_PASS",
+  "generated_at": "2026-06-12T13:40:49.148112+00:00",
+  "read_only_confirmation": {
+    "code_modified": false,
+    "database_modified": false,
+    "note": "idempotency check calls seed upsert only; no catalog/import changes"
+  },
+  "profile": {
+    "count": 1,
+    "category_slug": "barras",
+    "spec_key": "longitud_mm",
+    "is_variant_axis_candidate": true,
+    "is_required": false,
+    "is_highlight": false,
+    "sort_order": 11,
+    "print_group": "variant"
+  },
+  "idempotency": {
+    "first_seed": {
+      "created": 0,
+      "updated": 0
+    },
+    "second_seed": {
+      "created": 0,
+      "updated": 0
+    },
+    "profile_stable": true,
+    "count_after_second": 1
+  },
+  "category_profiles": {
+    "barras": [
+      "peso_kg",
+      "longitud_mm",
+      "material",
+      "acabado",
+      "diametro_mm"
+    ],
+    "bicicletas-estaticas": [
+      "smart_connect"
+    ],
+    "cardio": [
+      "peso_kg",
+      "smart_connect",
+      "color"
+    ],
+    "cintas-de-correr": [
+      "smart_connect"
+    ],
+    "cross-training": [
+      "peso_kg",
+      "peso_lb",
+      "color",
+      "material",
+      "acabado",
+      "unidades_pack",
+      "capacidad_balones"
+    ],
+    "discos": [
+      "peso_kg",
+      "color",
+      "material",
+      "casquillo",
+      "diametro_mm",
+      "acabado"
+    ],
+    "mancuernas": [
+      "peso_kg",
+      "color",
+      "material",
+      "acabado"
+    ],
+    "remos": [
+      "smart_connect"
+    ]
+  },
+  "spec_totals": {
+    "peso_lb": 4,
+    "color": 189,
+    "smart_connect": 10,
+    "longitud_mm": 20,
+    "capacidad_balones": 1,
+    "peso_kg": 431
+  },
+  "longitud_inventory": [
+    {
+      "sku": "BBP140",
+      "longitud_mm": 1400.0
+    },
+    {
+      "sku": "BBP140B",
+      "longitud_mm": 1400.0
+    },
+    {
+      "sku": "BN085",
+      "longitud_mm": 850.0
+    },
+    {
+      "sku": "BN120",
+      "longitud_mm": 1200.0
+    },
+    {
+      "sku": "BN120Z",
+      "longitud_mm": 1200.0
+    },
+    {
+      "sku": "BN150",
+      "longitud_mm": 1500.0
+    },
+    {
+      "sku": "BN180",
+      "longitud_mm": 1800.0
+    },
+    {
+      "sku": "BN220",
+      "longitud_mm": 2200.0
+    },
+    {
+      "sku": "BO085",
+      "longitud_mm": 850.0
+    },
+    {
+      "sku": "BO120",
+      "longitud_mm": 1200.0
+    },
+    {
+      "sku": "BO120Z",
+      "longitud_mm": 1200.0
+    },
+    {
+      "sku": "BO150",
+      "longitud_mm": 1500.0
+    },
+    {
+      "sku": "BO180",
+      "longitud_mm": 1800.0
+    },
+    {
+      "sku": "BO220",
+      "longitud_mm": 2200.0
+    },
+    {
+      "sku": "BOR120",
+      "longitud_mm": 1200.0
+    },
+    {
+      "sku": "BOR120Z",
+      "longitud_mm": 1200.0
+    },
+    {
+      "sku": "BOR150",
+      "longitud_mm": 1500.0
+    },
+    {
+      "sku": "BOR180",
+      "longitud_mm": 1800.0
+    },
+    {
+      "sku": "BOR220",
+      "longitud_mm": 2200.0
+    },
+    {
+      "sku": "BOR220A",
+      "longitud_mm": 2200.0
+    }
+  ],
+  "visibility": {
+    "printable_column_keys": [
+      "peso",
+      "longitud_mm",
+      "acabado"
+    ],
+    "peso_before_longitud": true,
+    "detail_format_sample_sku": "BN120",
+    "detail_longitud_value": "1200 mm",
+    "list_row_longitud_value": "1200",
+    "multi_variant_visible_keys": [
+      "longitud_mm"
+    ],
+    "accessory_var028_detail_keys": []
+  },
+  "unit_format_diagnosis": {
+    "detail_api": "1200 mm",
+    "list_printable_row": "1200",
+    "classification": "EXPECTED_BY_DESIGN",
+    "reason": "detail uses format_spec_display with unit symbol; list rows pass unit=None in build_variant_row_spec_values"
+  },
+  "global_metrics": {
+    "masters_total": {
+      "baseline": 534,
+      "current": 534
+    },
+    "variants_total": {
+      "baseline": 871,
+      "current": 871
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,634 @@
+schema_version: 1
+updated_at: "2026-06-13"
+authority:
+  purpose: "Authoritative registry for task status, dependencies, owners, locks, and parallel safety."
+  summary_source: "docs/coordination/CODEX_ORCHESTRATION_STATE.md"
+  execution_protocol: "docs/coordination/CODEX_TASK_EXECUTION_PROTOCOL.md"
+  task_packets_dir: "docs/coordination/tasks/"
+  agent_registry: "docs/coordination/AGENT_REGISTRY.yaml"
+  task_history: "docs/coordination/TASK_HISTORY.md"
+
+allowed_statuses:
+  - DISCOVERY
+  - PLAN_READY
+  - WAITING_FOR_USER_DECISION
+  - WAITING_FOR_AGENT_REPORT
+  - APPROVED
+  - LOCKS_PENDING
+  - LOCKS_CONFIRMED
+  - READY_FOR_IMPLEMENTATION
+  - IN_FLIGHT
+  - IMPLEMENTED
+  - VALIDATION_PENDING
+  - VALIDATED
+  - BLOCKED
+  - PAUSED
+  - CLOSED
+
+parallelization:
+  default: "DENY_UNTIL_PROVEN_SAFE"
+  required_checks:
+    - dependencies_validated
+    - decisions_resolved
+    - write_paths_known
+    - no_lock_conflict
+    - no_shared_unstable_contract
+    - no_same_agent_dependency
+    - validation_owner_available
+  active_parallel_groups: []
+
+agent_pool:
+  registry_source: "docs/coordination/AGENT_REGISTRY.yaml"
+  assignment_rule: "VERIFY_AVAILABILITY_SCOPE_AND_TOPOLOGY_BEFORE_ASSIGNMENT"
+  current_assignments: {}
+
+active_locks: []
+
+queues:
+  in_flight: []
+  ready_for_parallel: []
+  waiting_for_user_decision:
+    - "APP-PLATFORM-UX-3.0-PHASE-2-NEXT"
+    - "IMPORT-FDL-FULL-QUALITY-NEXT"
+    - "SOURCE-CATALOG-DUAL-PATH-1-PHASE-1A"
+    - "PRODUCT-DETAIL-UX-V2-QA"
+    - "VARIANT-REP-FRONTEND-QA"
+    - "PDF-EXPORT-PREVIEW-MANUAL-QA"
+    - "APP-STATUS-BAR-MANUAL-QA"
+    - "CATALOGUE-PRESENTATION-MANUAL-QA"
+    - "PR-PAGE15"
+    - "CATALOGUE-BUILDER-OPEN-QA"
+    - "MEDIA-ENHANCE-1"
+  waiting_for_agent_report: []
+  validation_pending: []
+
+tasks:
+  - id: "PROJECT-CONTROL-SYSTEM-HARDENING"
+    track: "PROJECT-CONTROL"
+    title: "Backfill, documentation cleanup, engineering standards, agent topology, and automated consistency validation"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Automated control checker plus documentation consistency audit"
+    status: "CLOSED"
+    priority: "CONTROL"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/PROJECT-CONTROL-SYSTEM-HARDENING.md"
+    dependencies:
+      - "CODEX-ROBUST-EXECUTION-CONTROL"
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "AGENTS.md"
+      - "COMMANDS.md"
+      - "README.md"
+      - "package.json"
+      - "scripts/requirements-control.txt"
+      - "scripts/validate_project_control.py"
+      - "docs/**"
+    blocked_paths:
+      - "apps/api/app/**"
+      - "apps/desktop/src/**"
+      - "migrations/**"
+      - "product data"
+    locks: []
+    parallel_safety: "SAFE_CONTROL_AND_TOOLING_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; hardening is implemented and validated"
+
+  - id: "CODEX-ROBUST-EXECUTION-CONTROL"
+    track: "PROJECT-CONTROL"
+    title: "Persistent task, dependency, planning, evidence, and parallel-safety controls"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Codex documentation consistency validation"
+    status: "CLOSED"
+    priority: "CONTROL"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/CODEX-ROBUST-EXECUTION-CONTROL.md"
+    dependencies: []
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "AGENTS.md"
+      - "docs/coordination/**"
+    blocked_paths:
+      - "apps/**"
+      - "tests/**"
+      - "migrations/**"
+    locks: []
+    parallel_safety: "SAFE_DOCUMENTATION_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; controls are active for future tasks"
+
+  - id: "APP-PLATFORM-UX-3.0-PHASE-2-NEXT"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "Select next Phase 2 slice"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "WAITING_FOR_USER_DECISION"
+    priority: "ACTIVE_UI_TRACK"
+    gates:
+      discovery: "NOT_STARTED"
+      plan: "NOT_STARTED"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_DECISION"
+    task_packet: "docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2-NEXT.md"
+    dependencies:
+      - "APP-PLATFORM-UX-3.0-PHASE-2A"
+    dependents: []
+    decisions_required:
+      - "UX30-D7"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "User decision: Phase 2B or Phase 2C"
+    next_safe_action: "Resolve UX30-D7, then create Plan Mode task packet"
+
+  - id: "APP-PLATFORM-UX-3.0-PHASE-2A"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "Products responsive cards and variant sheet"
+    protocol: "ORCHESTRATION"
+    owner: "Agent 1B - Global UX/UI"
+    validator: "Agent 1A - Catalogue UI QA"
+    status: "VALIDATED"
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "RELEASED_AFTER_VALIDATION"
+      ready_for_implementation: "PASSED"
+    task_packet: null
+    dependencies: []
+    dependents:
+      - "APP-PLATFORM-UX-3.0-PHASE-2-NEXT"
+    decisions_required: []
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "COMPLETE"
+    waiting_for: null
+    next_safe_action: "No action; locks released"
+
+  - id: "IMPORT-FDL-FULL-QUALITY-NEXT"
+    track: "IMPORT-FDL-FULL-QUALITY"
+    title: "Next systemic import-quality or page-certification task"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Agent 5 - FDL import audit"
+    status: "WAITING_FOR_USER_DECISION"
+    priority: "ACTIVE_DATA_TRACK"
+    gates:
+      discovery: "NOT_STARTED"
+      plan: "NOT_STARTED"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_TASK_SELECTION"
+    task_packet: "docs/coordination/tasks/IMPORT-FDL-FULL-QUALITY-NEXT.md"
+    dependencies: []
+    dependents: []
+    decisions_required: []
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "User selection of the next data/import task"
+    next_safe_action: "Define the next task, then run discovery and Plan Mode"
+
+  - id: "SOURCE-CATALOG-DUAL-PATH-1-PHASE-1A"
+    track: "SOURCE-CATALOG-DUAL-PATH-1"
+    title: "Private immutable SourceDocument Phase 1A"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "HISTORICAL_PLAN_REQUIRES_REVALIDATION"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/SOURCE-CATALOG-DUAL-PATH-1-PHASE-1A.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization to resume"
+    next_safe_action: "Wait; on resume perform fresh discovery before implementation"
+
+  - id: "DOCUMENTATION-LEGACY-CLEANUP"
+    track: "PROJECT-CONTROL"
+    title: "Archive and delete safely superseded coordination documentation"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Project-control checker"
+    status: "CLOSED"
+    priority: "CONTROL_FOLLOW_UP"
+    gates:
+      discovery: "COMPLETE"
+      plan: "PLAN_READY"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/DOCUMENTATION-LEGACY-CLEANUP.md"
+    dependencies:
+      - "PROJECT-CONTROL-SYSTEM-HARDENING"
+      - "DOCUMENTATION-ENGLISH-MIGRATION"
+      - "LEGACY-CONTEXT-CONSOLIDATION"
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "docs/coordination/**"
+    blocked_paths:
+      - "any deletion outside the approved five-file batch"
+      - "product code, tests, configuration, dependencies, migrations, and data"
+    locks: []
+    parallel_safety: "SAFE_CONTROL_DOCUMENTATION_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; PR-04 is implemented and validated"
+
+  - id: "DOCUMENTATION-ENGLISH-MIGRATION"
+    track: "PROJECT-CONTROL"
+    title: "Migrate active technical documentation to canonical English"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Semantic parity audit plus project-control checker"
+    status: "CLOSED"
+    priority: "CONTROL_FOLLOW_UP"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/DOCUMENTATION-ENGLISH-MIGRATION.md"
+    dependencies:
+      - "PROJECT-CONTROL-SYSTEM-HARDENING"
+      - "AGENT-TOPOLOGY-V2"
+    dependents:
+      - "DOCUMENTATION-LEGACY-CLEANUP"
+    decisions_required: []
+    planned_write_paths:
+      - "docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md"
+      - "docs/coordination/CODEX_PROMPTING_PROTOCOL.md"
+      - "docs/coordination/IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md"
+      - "docs/coordination/DOCUMENTATION_INVENTORY.md"
+    blocked_paths:
+      - "supplier evidence"
+      - "Spanish product UI copy"
+    locks: []
+    parallel_safety: "SAFE_CONTROL_DOCUMENTATION_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; PR-02 is implemented and validated"
+
+  - id: "ENGINEERING-QUALITY-TOOLING"
+    track: "PROJECT-CONTROL"
+    title: "Adopt lint, format, typecheck, and CI quality gates"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Independent tooling validation"
+    status: "CLOSED"
+    priority: "ENGINEERING_FOLLOW_UP"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/ENGINEERING-QUALITY-TOOLING.md"
+    dependencies:
+      - "PROJECT-CONTROL-SYSTEM-HARDENING"
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "package.json"
+      - "apps/desktop/package.json"
+      - "apps/api/requirements-dev.txt"
+      - "tool configuration"
+      - "CI configuration"
+    blocked_paths:
+      - "broad formatting changes before approval"
+    locks: []
+    parallel_safety: "SAFE_TOOLING_FOUNDATIONS_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; PR-05 is closed. Explicitly start PR-06 before frontend remediation"
+
+  - id: "FRONTEND-LINT-TYPE-FORMAT-REMEDIATION"
+    track: "PROJECT-CONTROL"
+    title: "Remediate frontend lint, type, and format debt"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Frontend quality commands, desktop tests/build, runtime smoke, and project-control validation"
+    status: "CLOSED"
+    priority: "SEQUENTIAL_MODERNIZATION_PR_06"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "RELEASED_AFTER_VALIDATION"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/FRONTEND-LINT-TYPE-FORMAT-REMEDIATION.md"
+    dependencies:
+      - "ENGINEERING-QUALITY-TOOLING"
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "apps/desktop/**"
+    blocked_paths:
+      - "apps/api/**"
+      - ".github/workflows/ci.yml"
+      - "quality rule weakening or broad suppressions"
+      - "paused feature work"
+    locks:
+      - "LOCK-PR06-DESKTOP-REMEDIATION"
+    parallel_safety: "SERIALIZED_FRONTEND_BASELINE"
+    waiting_for: null
+    next_safe_action: "No action; PR-06 is implemented and validated"
+
+  - id: "AGENT-TOPOLOGY-V2"
+    track: "PROJECT-CONTROL"
+    title: "Approve and trial adjusted adaptive agent topology"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Automated control checker plus authority consistency audit"
+    status: "CLOSED"
+    priority: "CONTROL_FOLLOW_UP"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/AGENT-TOPOLOGY-V2.md"
+    dependencies:
+      - "PROJECT-CONTROL-SYSTEM-HARDENING"
+    dependents:
+      - "DOCUMENTATION-ENGLISH-MIGRATION"
+    decisions_required: []
+    planned_write_paths:
+      - "AGENTS.md"
+      - "docs/coordination/AGENT_REGISTRY.yaml"
+      - "docs/coordination/AGENT_TOPOLOGY_PROTOCOL.md"
+      - "docs/coordination/AGENT_TOPOLOGY_REVIEW.md"
+      - "docs/coordination/DECISION_LOG.md"
+    blocked_paths:
+      - "product code"
+      - "permanent Agent 2 split"
+      - "legacy document deletion"
+    locks: []
+    parallel_safety: "SAFE_CONTROL_DOCUMENTATION_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; PR-01 is implemented and validated"
+
+  - id: "LEGACY-CONTEXT-CONSOLIDATION"
+    track: "PROJECT-CONTROL"
+    title: "Consolidate useful legacy coordination context into canonical authorities"
+    protocol: "CODEX_IMPLEMENTATION"
+    owner: "Codex"
+    validator: "Control checker plus legacy-context coverage audit"
+    status: "CLOSED"
+    priority: "CONTROL"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/LEGACY-CONTEXT-CONSOLIDATION.md"
+    dependencies:
+      - "DOCUMENTATION-ENGLISH-MIGRATION"
+    dependents:
+      - "DOCUMENTATION-LEGACY-CLEANUP"
+    decisions_required: []
+    planned_write_paths:
+      - "docs/coordination/**"
+      - "AGENTS.md"
+    blocked_paths:
+      - "legacy document deletion or moves"
+      - "broad inbound-link replacement"
+      - "product code"
+      - "tests"
+      - "configuration"
+    locks: []
+    parallel_safety: "SAFE_CONTROL_DOCUMENTATION_ONLY"
+    waiting_for: null
+    next_safe_action: "No action; PR-03 is implemented and validated"
+
+  - id: "PRODUCT-DETAIL-UX-V2-QA"
+    track: "PRODUCT-DETAIL"
+    title: "Final ProductDetail v2, media, price evolution, and B2 integration QA"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_ON_RESUME"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/PRODUCT-DETAIL-UX-V2-QA.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization and representative dataset"
+    next_safe_action: "Wait; on resume perform fresh discovery and QA planning"
+
+  - id: "VARIANT-REP-FRONTEND-QA"
+    track: "VARIANT-REPRESENTATION"
+    title: "Mixed-brand and variant-representation frontend QA"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_ON_RESUME"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/VARIANT-REP-FRONTEND-QA.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization and representative dataset"
+    next_safe_action: "Wait; on resume create a QA-mode task"
+
+  - id: "PDF-EXPORT-PREVIEW-MANUAL-QA"
+    track: "PDF-EXPORT"
+    title: "Pending PDF export and PDF-table manual sign-off"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_ON_RESUME"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/PDF-EXPORT-PREVIEW-MANUAL-QA.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization"
+    next_safe_action: "Wait; on resume create a PDF QA task"
+
+  - id: "APP-STATUS-BAR-MANUAL-QA"
+    track: "APP-WIDE-UX"
+    title: "Pending App Status Bar and Process Center visual QA"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_ON_RESUME"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/APP-STATUS-BAR-MANUAL-QA.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization"
+    next_safe_action: "Wait; on resume create a QA-mode task"
+
+  - id: "CATALOGUE-PRESENTATION-MANUAL-QA"
+    track: "CATALOGUE-PRESENTATION"
+    title: "Pending show_description_column visual QA"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_ON_RESUME"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/CATALOGUE-PRESENTATION-MANUAL-QA.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization"
+    next_safe_action: "Wait; on resume create a catalogue QA task"
+
+  - id: "PR-PAGE15"
+    track: "IMPORT-FDL-FULL-QUALITY"
+    title: "FDL page 15 audit and systemic correction if justified"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Agent 5 - FDL Import Audit"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_AFTER_AUDIT"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/PR-PAGE15.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization"
+    next_safe_action: "Wait; on resume start Agent 5 read-only page audit"
+
+  - id: "CATALOGUE-BUILDER-OPEN-QA"
+    track: "CATALOGUE-BUILDER"
+    title: "Recover remaining catalogue-builder QA and polish candidates"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_ON_RESUME"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/CATALOGUE-BUILDER-OPEN-QA.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization"
+    next_safe_action: "Wait; on resume perform fresh Agent 1A Plan Mode audit"
+
+  - id: "MEDIA-ENHANCE-1"
+    track: "PRODUCT-MEDIA"
+    title: "Cloud product-image enhancement pipeline"
+    protocol: "NONE"
+    owner: "Unassigned"
+    validator: "Unassigned"
+    status: "PAUSED"
+    priority: "RECOVERABLE_PAUSED_TRACK"
+    gates:
+      discovery: "REQUIRED_ON_RESUME"
+      plan: "REQUIRED_ON_RESUME"
+      locks: "NOT_STARTED"
+      ready_for_implementation: "BLOCKED_BY_EXPLICIT_RESUME"
+    task_packet: "docs/coordination/tasks/MEDIA-ENHANCE-1.md"
+    dependencies: []
+    dependents: []
+    decisions_required:
+      - "Explicit user resume approval"
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "NOT_READY"
+    waiting_for: "Explicit user authorization and architecture/security plan"
+    next_safe_action: "Wait; on resume perform architecture/security Plan Mode"
+
+paused_workstreams:
+  - "ProductDetail UX v2 QA final"
+  - "ProductMedia QA"
+  - "PriceEvolution QA"
+  - "VARIANT-REP frontend QA"
+  - "PDF/Preview QA"
+  - "PDF-TABLE-FIX-1 visual QA"
+  - "PR-PAGE15"
+  - "B2 backend integration tests"
+  - "SHARED-4 / PRES-1 / PDF-1 manual QA"
+  - "MEDIA-ENHANCE-1 cloud product-image enhancement pipeline"
+  - "SOURCE-CATALOG-DUAL-PATH-1 Phase 1A implementation"

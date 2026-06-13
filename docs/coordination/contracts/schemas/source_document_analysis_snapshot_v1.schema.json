@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narofitness.local/schemas/source-document-analysis-snapshot-v1.json",
+  "title": "DocumentAnalysisSnapshot v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "source_document",
+    "profile",
+    "analyzer",
+    "pages",
+    "diagnostics",
+    "confidence_summary",
+    "snapshot_fingerprint"
+  ],
+  "properties": {
+    "schema_version": {"const": "source-document-analysis/v1"},
+    "snapshot_id": {"$ref": "#/$defs/uuid"},
+    "source_document": {"$ref": "#/$defs/source_document"},
+    "profile": {"$ref": "#/$defs/profile"},
+    "analyzer": {"$ref": "#/$defs/analyzer"},
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/page"}
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/diagnostic"}
+    },
+    "confidence_summary": {"$ref": "#/$defs/confidence_summary"},
+    "snapshot_fingerprint": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "uuid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "stable_id": {
+      "type": "string",
+      "pattern": "^(section|block|row|price|image_group)_[a-f0-9]{16,64}$"
+    },
+    "bbox": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {"type": "number", "minimum": 0}
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount", "currency"],
+      "properties": {
+        "amount": {"type": "string", "pattern": "^-?\\d+\\.\\d{2}$"},
+        "currency": {"type": "string", "pattern": "^[A-Z]{3}$"}
+      }
+    },
+    "source_document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "sha256", "original_filename", "byte_size", "mime_type", "page_count"],
+      "properties": {
+        "id": {"$ref": "#/$defs/uuid"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "original_filename": {"type": "string", "minLength": 1, "maxLength": 512},
+        "byte_size": {"type": "integer", "minimum": 1},
+        "mime_type": {"const": "application/pdf"},
+        "page_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "version", "match_status", "match_confidence", "capabilities"],
+      "properties": {
+        "key": {"type": "string", "minLength": 1, "maxLength": 128},
+        "version": {"type": "string", "minLength": 1, "maxLength": 32},
+        "match_status": {
+          "enum": ["supported", "profile_not_supported", "profile_recalibration_required"]
+        },
+        "match_confidence": {"$ref": "#/$defs/confidence"},
+        "capabilities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^(direct|import)\\.[a-z0-9_.-]+$"}
+        }
+      }
+    },
+    "analyzer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "version", "config_fingerprint"],
+      "properties": {
+        "key": {"type": "string", "minLength": 1, "maxLength": 128},
+        "version": {"type": "string", "minLength": 1, "maxLength": 32},
+        "config_fingerprint": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "confidence_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overall", "page_roles", "product_rows", "price_slots", "image_groups"],
+      "properties": {
+        "overall": {"$ref": "#/$defs/confidence"},
+        "page_roles": {"$ref": "#/$defs/confidence"},
+        "product_rows": {"$ref": "#/$defs/confidence"},
+        "price_slots": {"$ref": "#/$defs/confidence"},
+        "image_groups": {"$ref": "#/$defs/confidence"}
+      }
+    },
+    "diagnostic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "severity", "message"],
+      "properties": {
+        "code": {"type": "string", "minLength": 1, "maxLength": 128},
+        "severity": {"enum": ["info", "warning", "blocking"]},
+        "message": {"type": "string", "minLength": 1, "maxLength": 2048},
+        "page_number": {"type": "integer", "minimum": 1},
+        "semantic_id": {"$ref": "#/$defs/stable_id"}
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "page_number",
+        "role",
+        "role_confidence",
+        "width_points",
+        "height_points",
+        "rotation",
+        "sections",
+        "product_blocks",
+        "diagnostics"
+      ],
+      "properties": {
+        "page_number": {"type": "integer", "minimum": 1},
+        "role": {
+          "enum": ["main_cover", "section_cover", "product_content", "legal_or_notes", "unknown"]
+        },
+        "role_confidence": {"$ref": "#/$defs/confidence"},
+        "width_points": {"type": "number", "exclusiveMinimum": 0},
+        "height_points": {"type": "number", "exclusiveMinimum": 0},
+        "rotation": {"enum": [0, 90, 180, 270]},
+        "sections": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/section"}
+        },
+        "product_blocks": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/product_block"}
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/diagnostic"}
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stable_section_id", "source_label", "bbox", "confidence"],
+      "properties": {
+        "stable_section_id": {"$ref": "#/$defs/stable_id"},
+        "source_label": {"type": "string", "minLength": 1},
+        "semantic_key": {"type": ["string", "null"]},
+        "bbox": {"$ref": "#/$defs/bbox"},
+        "confidence": {"$ref": "#/$defs/confidence"}
+      }
+    },
+    "product_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stable_block_id", "bbox", "rows", "price_slots", "image_groups", "confidence"],
+      "properties": {
+        "stable_block_id": {"$ref": "#/$defs/stable_id"},
+        "source_label": {"type": ["string", "null"]},
+        "bbox": {"$ref": "#/$defs/bbox"},
+        "rows": {"type": "array", "items": {"$ref": "#/$defs/product_row"}},
+        "price_slots": {"type": "array", "items": {"$ref": "#/$defs/price_slot"}},
+        "image_groups": {"type": "array", "items": {"$ref": "#/$defs/image_group"}},
+        "confidence": {"$ref": "#/$defs/confidence"}
+      }
+    },
+    "product_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stable_row_id", "source_name", "reference", "ean", "base_price", "bbox", "confidence"],
+      "properties": {
+        "stable_row_id": {"$ref": "#/$defs/stable_id"},
+        "source_name": {"type": "string"},
+        "reference": {"type": ["string", "null"]},
+        "ean": {"type": ["string", "null"]},
+        "base_price": {
+          "oneOf": [{"$ref": "#/$defs/money"}, {"type": "null"}]
+        },
+        "bbox": {"$ref": "#/$defs/bbox"},
+        "confidence": {"$ref": "#/$defs/confidence"}
+      }
+    },
+    "price_slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stable_price_slot_id", "stable_row_id", "source_price", "bbox", "confidence"],
+      "properties": {
+        "stable_price_slot_id": {"$ref": "#/$defs/stable_id"},
+        "stable_row_id": {"$ref": "#/$defs/stable_id"},
+        "source_price": {"$ref": "#/$defs/money"},
+        "bbox": {"$ref": "#/$defs/bbox"},
+        "confidence": {"$ref": "#/$defs/confidence"}
+      }
+    },
+    "image_group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stable_image_group_id",
+        "asset_hashes",
+        "associated_row_ids",
+        "association_type",
+        "bbox",
+        "confidence"
+      ],
+      "properties": {
+        "stable_image_group_id": {"$ref": "#/$defs/stable_id"},
+        "asset_hashes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/sha256"}
+        },
+        "associated_row_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/stable_id"}
+        },
+        "association_type": {
+          "enum": ["single_row", "shared_rows", "multi_image_collage_candidate", "unresolved"]
+        },
+        "bbox": {"$ref": "#/$defs/bbox"},
+        "confidence": {"$ref": "#/$defs/confidence"}
+      }
+    }
+  }
+}

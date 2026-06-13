@@ -1,0 +1,178 @@
+[
+  {
+    "variant_sku": "SOP028",
+    "variant_name": "Soporte Power Bag 5 sacos",
+    "master_key": "SOP028",
+    "master_name": "Soporte Power Bag 5 sacos",
+    "category_slug": "cross-training",
+    "price": "200.55"
+  },
+  {
+    "variant_sku": "SOP029",
+    "variant_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+    "master_key": "SOP029",
+    "master_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+    "category_slug": "cross-training",
+    "price": "256.56"
+  },
+  {
+    "variant_sku": "CRO107",
+    "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+    "master_key": "CRO-SACO-GUSANO",
+    "master_name": "Saco Gusano",
+    "category_slug": "cross-training",
+    "price": "184.65"
+  },
+  {
+    "variant_sku": "CRO131",
+    "variant_name": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+    "master_key": "CRO-SACO-GUSANO",
+    "master_name": "Saco Gusano",
+    "category_slug": "cross-training",
+    "price": "268.79"
+  },
+  {
+    "variant_sku": "CRO108",
+    "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+    "master_key": "CRO-SACO-GUSANO",
+    "master_name": "Saco Gusano",
+    "category_slug": "cross-training",
+    "price": "322.32"
+  },
+  {
+    "variant_sku": "CRO107NEXO",
+    "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+    "master_key": "CRO-SACO-GUSANO",
+    "master_name": "Saco Gusano",
+    "category_slug": "cross-training",
+    "price": "184.65"
+  },
+  {
+    "variant_sku": "CRO108NEXO",
+    "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO",
+    "master_key": "CRO-SACO-GUSANO",
+    "master_name": "Saco Gusano",
+    "category_slug": "cross-training",
+    "price": "322.32"
+  },
+  {
+    "variant_sku": "CRO133",
+    "variant_name": "Cinturon Lastrado (negro)",
+    "master_key": "CRO133",
+    "master_name": "Cinturon Lastrado (negro)",
+    "category_slug": "cross-training",
+    "price": "8.67"
+  },
+  {
+    "variant_sku": "BOC001",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "172.21"
+  },
+  {
+    "variant_sku": "BOC002",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "149.10"
+  },
+  {
+    "variant_sku": "BOC003",
+    "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "162.16"
+  },
+  {
+    "variant_sku": "BOC004",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "172.21"
+  },
+  {
+    "variant_sku": "BOC008",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "149.10"
+  },
+  {
+    "variant_sku": "BOC005",
+    "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "162.16"
+  },
+  {
+    "variant_sku": "BOC006",
+    "variant_name": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "93.11"
+  },
+  {
+    "variant_sku": "BOC007",
+    "variant_name": "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+    "master_key": "BOC-BARRAS-CROSSFIT",
+    "master_name": "Barras Crossfit",
+    "category_slug": "cross-training",
+    "price": "93.11"
+  },
+  {
+    "variant_sku": "BOC001NEXO",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+    "master_name": "Barras Crossfit - NEXO",
+    "category_slug": "cross-training",
+    "price": "175.80"
+  },
+  {
+    "variant_sku": "BOC002NEXO",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+    "master_name": "Barras Crossfit - NEXO",
+    "category_slug": "cross-training",
+    "price": "152.21"
+  },
+  {
+    "variant_sku": "BOC003NEXO",
+    "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+    "master_name": "Barras Crossfit - NEXO",
+    "category_slug": "cross-training",
+    "price": "165.54"
+  },
+  {
+    "variant_sku": "BOC004NEXO",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+    "master_name": "Barras Crossfit - NEXO",
+    "category_slug": "cross-training",
+    "price": "175.80"
+  },
+  {
+    "variant_sku": "BOC008NEXO",
+    "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+    "master_name": "Barras Crossfit - NEXO",
+    "category_slug": "cross-training",
+    "price": "152.21"
+  },
+  {
+    "variant_sku": "BOC005NEXO",
+    "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+    "master_name": "Barras Crossfit - NEXO",
+    "category_slug": "cross-training",
+    "price": "165.54"
+  }
+]

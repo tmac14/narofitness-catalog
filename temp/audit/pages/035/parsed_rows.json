@@ -1,0 +1,117 @@
+[
+  {
+    "page_number": 35,
+    "source_row_index": 439,
+    "raw_line_index": 1,
+    "raw_lines": [
+      "Soporte a pared para 6 barras",
+      "SOP042",
+      "8435657005832",
+      "87,67 €"
+    ],
+    "raw_sku": "SOP042",
+    "normalized_sku": "SOP042",
+    "raw_name": "Soporte Barras Horizontal Soporte a pared para 6 barras",
+    "normalized_name": "Soporte a pared para 6",
+    "price": "87.67",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 35,
+    "source_row_index": 440,
+    "raw_line_index": 6,
+    "raw_lines": [
+      "Protector de Cuello 45 cms, Funda Nylon",
+      "VAR028",
+      "8435657006280",
+      "8,86 €"
+    ],
+    "raw_sku": "VAR028",
+    "normalized_sku": "VAR028",
+    "raw_name": "Portector de Barra Hombro / Cuello Protector de Cuello 45 cms, Funda Nylon",
+    "normalized_name": "Protector de Cuello 45 cms, Funda Nylon",
+    "price": "8.86",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 35,
+    "source_row_index": 441,
+    "raw_line_index": 10,
+    "raw_lines": [
+      "Protector de Cuello ergonomico Azul",
+      "VAR113",
+      "8435657006938",
+      "6,77 €"
+    ],
+    "raw_sku": "VAR113",
+    "normalized_sku": "VAR113",
+    "raw_name": "Portector de Barra Hombro / Cuello Protector de Cuello ergonomico Azul",
+    "normalized_name": "Protector de Cuello ergonomico Azul",
+    "price": "6.77",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 35,
+    "source_row_index": 442,
+    "raw_line_index": 14,
+    "raw_lines": [
+      "Protector de cuello Rojo",
+      "VAR129",
+      "8435657007072",
+      "8,69 €"
+    ],
+    "raw_sku": "VAR129",
+    "normalized_sku": "VAR129",
+    "raw_name": "Portector de Barra Hombro / Cuello Protector de cuello Rojo",
+    "normalized_name": "Protector de cuello Rojo",
+    "price": "8.69",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 35,
+    "source_row_index": 443,
+    "raw_line_index": 18,
+    "raw_lines": [
+      "Protector de cuello Negro",
+      "VAR159",
+      "8435657018443",
+      "8,69 €"
+    ],
+    "raw_sku": "VAR159",
+    "normalized_sku": "VAR159",
+    "raw_name": "Portector de Barra Hombro / Cuello Protector de cuello Negro",
+    "normalized_name": "Protector de cuello Negro",
+    "price": "8.69",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  }
+]

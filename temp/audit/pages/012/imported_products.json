@@ -1,0 +1,314 @@
+[
+  {
+    "variant_sku": "DOBHT005",
+    "variant_name": "Disco Bumper Hi Temp 5 kgs (Numero Color)",
+    "master_key": "DOBHT",
+    "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "19.39"
+  },
+  {
+    "variant_sku": "DOBHT010",
+    "variant_name": "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+    "master_key": "DOBHT",
+    "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "28.98"
+  },
+  {
+    "variant_sku": "DOBHT015",
+    "variant_name": "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+    "master_key": "DOBHT",
+    "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "41.05"
+  },
+  {
+    "variant_sku": "DOBHT020",
+    "variant_name": "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+    "master_key": "DOBHT",
+    "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "48.53"
+  },
+  {
+    "variant_sku": "DOBHT025",
+    "variant_name": "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+    "master_key": "DOBHT",
+    "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "56.49"
+  },
+  {
+    "variant_sku": "DOBCC005",
+    "variant_name": "Disco Bumper Competicion 5 kgs",
+    "master_key": "DOBCC",
+    "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+    "category_slug": "discos",
+    "price": "34.04"
+  },
+  {
+    "variant_sku": "DOBCC010",
+    "variant_name": "Disco Bumper Competicion 10 kgs",
+    "master_key": "DOBCC",
+    "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+    "category_slug": "discos",
+    "price": "58.68"
+  },
+  {
+    "variant_sku": "DOBCC015",
+    "variant_name": "Disco Bumper Competicion 15 kgs",
+    "master_key": "DOBCC",
+    "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+    "category_slug": "discos",
+    "price": "79.94"
+  },
+  {
+    "variant_sku": "DOBCC020",
+    "variant_name": "Disco Bumper Competicion 20 kgs",
+    "master_key": "DOBCC",
+    "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+    "category_slug": "discos",
+    "price": "99.88"
+  },
+  {
+    "variant_sku": "DOBCC025",
+    "variant_name": "Disco Bumper Competicion 25 kgs",
+    "master_key": "DOBCC",
+    "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+    "category_slug": "discos",
+    "price": "115.84"
+  },
+  {
+    "variant_sku": "DOBF005",
+    "variant_name": "Disco Bumper Color Fraccional 0,5 kgs",
+    "master_key": "DOBF",
+    "master_name": "Disco Olimpico Bumper Color Fraccional",
+    "category_slug": "discos",
+    "price": "3.78"
+  },
+  {
+    "variant_sku": "DOBF010",
+    "variant_name": "Disco Bumper Color Fraccional 1 kg",
+    "master_key": "DOBF",
+    "master_name": "Disco Olimpico Bumper Color Fraccional",
+    "category_slug": "discos",
+    "price": "7.56"
+  },
+  {
+    "variant_sku": "DOBF015",
+    "variant_name": "Disco Bumper Color Fraccional 1,5 kgs",
+    "master_key": "DOBF",
+    "master_name": "Disco Olimpico Bumper Color Fraccional",
+    "category_slug": "discos",
+    "price": "11.33"
+  },
+  {
+    "variant_sku": "DOBF020",
+    "variant_name": "Disco Bumper Color Fraccional 2 kgs",
+    "master_key": "DOBF",
+    "master_name": "Disco Olimpico Bumper Color Fraccional",
+    "category_slug": "discos",
+    "price": "15.11"
+  },
+  {
+    "variant_sku": "DOBF025",
+    "variant_name": "Disco Bumper Color Fraccional 2,5 kgs",
+    "master_key": "DOBF",
+    "master_name": "Disco Olimpico Bumper Color Fraccional",
+    "category_slug": "discos",
+    "price": "18.89"
+  },
+  {
+    "variant_sku": "DOBF050",
+    "variant_name": "Disco Bumper Color Fraccional 5 kgs",
+    "master_key": "DOBF",
+    "master_name": "Disco Olimpico Bumper Color Fraccional",
+    "category_slug": "discos",
+    "price": "39.58"
+  },
+  {
+    "variant_sku": "SOP025",
+    "variant_name": "Soporte para juego de Discos Bumper",
+    "master_key": "SOP025",
+    "master_name": "Soporte para juego de Discos Bumper",
+    "category_slug": "soportes-y-mancuerneros",
+    "price": "92.77"
+  },
+  {
+    "variant_sku": "DOBMINI",
+    "variant_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+    "master_key": "DOBMINI",
+    "master_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+    "category_slug": "discos",
+    "price": "56.80"
+  },
+  {
+    "variant_sku": "CRO110",
+    "variant_name": "Slam Ball 6 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "10.78"
+  },
+  {
+    "variant_sku": "CRO118",
+    "variant_name": "Slam Ball 8 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "12.57"
+  },
+  {
+    "variant_sku": "CRO111",
+    "variant_name": "Slam Ball 10 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "15.02"
+  },
+  {
+    "variant_sku": "CRO112",
+    "variant_name": "Slam Ball 12 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "17.24"
+  },
+  {
+    "variant_sku": "CRO119",
+    "variant_name": "Slam Ball 15 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "23.91"
+  },
+  {
+    "variant_sku": "CRO113",
+    "variant_name": "Slam Ball 20 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "36.11"
+  },
+  {
+    "variant_sku": "CRO120",
+    "variant_name": "Slam Ball 25 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "42.58"
+  },
+  {
+    "variant_sku": "CRO114",
+    "variant_name": "Slam Ball 30 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "47.62"
+  },
+  {
+    "variant_sku": "CRO116",
+    "variant_name": "Slam Ball 35 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "55.30"
+  },
+  {
+    "variant_sku": "CRO122",
+    "variant_name": "Slam Ball 40 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "63.49"
+  },
+  {
+    "variant_sku": "CRO123",
+    "variant_name": "Slam Ball 45 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "71.42"
+  },
+  {
+    "variant_sku": "CRO124",
+    "variant_name": "Slam Ball 50 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "79.37"
+  },
+  {
+    "variant_sku": "CRO125",
+    "variant_name": "Slam Ball 55 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "87.29"
+  },
+  {
+    "variant_sku": "CRO117",
+    "variant_name": "Slam Ball 60 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "95.24"
+  },
+  {
+    "variant_sku": "CRO134",
+    "variant_name": "Slam Ball 70 kgs Negro",
+    "master_key": "CRO-SLAM-NEGRO",
+    "master_name": "Slam Ball - Negro",
+    "category_slug": "cross-training",
+    "price": "110.73"
+  },
+  {
+    "variant_sku": "CRO002",
+    "variant_name": "Wall Ball Doble costura 3 kgs Color",
+    "master_key": "CRO-WALL-COLOR",
+    "master_name": "Wall Balls Doble Costura Color",
+    "category_slug": "cross-training",
+    "price": "25.84"
+  },
+  {
+    "variant_sku": "CRO003",
+    "variant_name": "Wall Ball Doble costura 5 kgs Color",
+    "master_key": "CRO-WALL-COLOR",
+    "master_name": "Wall Balls Doble Costura Color",
+    "category_slug": "cross-training",
+    "price": "29.38"
+  },
+  {
+    "variant_sku": "CRO004",
+    "variant_name": "Wall Ball Doble costura 6 kgs Color",
+    "master_key": "CRO-WALL-COLOR",
+    "master_name": "Wall Balls Doble Costura Color",
+    "category_slug": "cross-training",
+    "price": "31.45"
+  },
+  {
+    "variant_sku": "CRO005",
+    "variant_name": "Wall Ball Doble costura 7 kgs Color",
+    "master_key": "CRO-WALL-COLOR",
+    "master_name": "Wall Balls Doble Costura Color",
+    "category_slug": "cross-training",
+    "price": "33.10"
+  },
+  {
+    "variant_sku": "CRO006",
+    "variant_name": "Wall Ball Doble costura 9 kgs Color",
+    "master_key": "CRO-WALL-COLOR",
+    "master_name": "Wall Balls Doble Costura Color",
+    "category_slug": "cross-training",
+    "price": "36.65"
+  },
+  {
+    "variant_sku": "CRO023",
+    "variant_name": "Wall Ball Doble costura 12 kgs Color",
+    "master_key": "CRO-WALL-COLOR",
+    "master_name": "Wall Balls Doble Costura Color",
+    "category_slug": "cross-training",
+    "price": "40.71"
+  }
+]

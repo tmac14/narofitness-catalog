@@ -1,0 +1,305 @@
+{
+  "verdict": "SMART_CONNECT_SPEC_VALIDATION_PASS",
+  "matrix_checks": {
+    "true_count": 7,
+    "false_count": 3,
+    "total_variant_specs": 10,
+    "true_skus_match": true,
+    "false_skus_match": true,
+    "absent_no_spec": true,
+    "implicit_false_outside_matrix": 0
+  },
+  "matrix_expected": {
+    "true": [
+      "BIC007",
+      "BIC008",
+      "REM004",
+      "REM005",
+      "CIN002",
+      "SKI009",
+      "ESC003"
+    ],
+    "false": [
+      "BIC010",
+      "BIC002",
+      "REM002"
+    ],
+    "absent": [
+      "REPUESTO-805",
+      "REPUESTO-806"
+    ]
+  },
+  "db_smart_connect_specs": [
+    {
+      "sku": "BIC010",
+      "display_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "master_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "smart_connect": false,
+      "page": 3,
+      "normalized_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "parsed_specs": {
+        "smart_connect": false
+      }
+    },
+    {
+      "sku": "BIC002",
+      "display_name": "Bicicleta Air Bike (NO smart conect)",
+      "master_name": "Bicicleta Air Bike (NO smart conect)",
+      "smart_connect": false,
+      "page": 3,
+      "normalized_name": "Bicicleta Air Bike (NO smart conect)",
+      "parsed_specs": {
+        "smart_connect": false
+      }
+    },
+    {
+      "sku": "BIC007",
+      "display_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "master_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "smart_connect": true,
+      "page": 3,
+      "normalized_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "parsed_specs": {
+        "smart_connect": true
+      }
+    },
+    {
+      "sku": "BIC008",
+      "display_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "master_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "smart_connect": true,
+      "page": 3,
+      "normalized_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "parsed_specs": {
+        "smart_connect": true
+      }
+    },
+    {
+      "sku": "REM002",
+      "display_name": "Air Rower 2,0 (NO smart conect)",
+      "master_name": "Air Rower 2,0 (NO smart conect)",
+      "smart_connect": false,
+      "page": 4,
+      "normalized_name": "Air Rower 2,0 (NO smart conect)",
+      "parsed_specs": {
+        "smart_connect": false
+      }
+    },
+    {
+      "sku": "REM004",
+      "display_name": "Air Rower 2,0 (SI smart conect)",
+      "master_name": "Air Rower 2,0 (SI smart conect)",
+      "smart_connect": true,
+      "page": 4,
+      "normalized_name": "Air Rower 2,0 (SI smart conect)",
+      "parsed_specs": {
+        "smart_connect": true
+      }
+    },
+    {
+      "sku": "REM005",
+      "display_name": "AirPlus Rower (Si Smart connect)",
+      "master_name": "AirPlus Rower (Si Smart connect)",
+      "smart_connect": true,
+      "page": 4,
+      "normalized_name": "AirPlus Rower (Si Smart connect)",
+      "parsed_specs": {
+        "smart_connect": true
+      }
+    },
+    {
+      "sku": "CIN002",
+      "display_name": "Air Plus Magnetic (Smart Conect)",
+      "master_name": "Air Plus Magnetic (Smart Conect)",
+      "smart_connect": true,
+      "page": 4,
+      "normalized_name": "Air Plus Magnetic (Smart Conect)",
+      "parsed_specs": {
+        "smart_connect": true
+      }
+    },
+    {
+      "sku": "SKI009",
+      "display_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "master_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "smart_connect": true,
+      "page": 5,
+      "normalized_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "parsed_specs": {
+        "smart_connect": true
+      }
+    },
+    {
+      "sku": "ESC003",
+      "display_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "master_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "smart_connect": true,
+      "page": 5,
+      "normalized_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "parsed_specs": {
+        "smart_connect": true
+      }
+    }
+  ],
+  "synthetic_negatives": [
+    {
+      "name": "Cardio Widget Smart Connect",
+      "expected_skip_reason": "ambiguous",
+      "actual_value": null,
+      "actual_skip_reason": "ambiguous",
+      "pass": true
+    },
+    {
+      "name": "AirPlus Ski Trainer Smart Connect",
+      "expected_skip_reason": "ambiguous",
+      "actual_value": null,
+      "actual_skip_reason": "ambiguous",
+      "pass": true
+    },
+    {
+      "name": "Smart Connect Adapter",
+      "expected_skip_reason": "commercial_identity",
+      "actual_value": null,
+      "actual_skip_reason": "commercial_identity",
+      "pass": true
+    },
+    {
+      "name": "Consola Bluetooth AB-1 Smart Connect",
+      "expected_skip_reason": "commercial_identity",
+      "actual_value": null,
+      "actual_skip_reason": "commercial_identity",
+      "pass": true
+    },
+    {
+      "name": "Model 200 Smart Connect",
+      "expected_skip_reason": "ambiguous",
+      "actual_value": null,
+      "actual_skip_reason": "ambiguous",
+      "pass": true
+    },
+    {
+      "name": "REPUESTO-999 Consola Bluetooth (NO smart conect)",
+      "expected_skip_reason": "commercial_identity",
+      "actual_value": null,
+      "actual_skip_reason": "commercial_identity",
+      "pass": true
+    }
+  ],
+  "profiles": {
+    "cardio": {
+      "visible": true,
+      "column_keys": [
+        "color",
+        "peso",
+        "smart_connect"
+      ]
+    },
+    "bicicletas-estaticas": {
+      "visible": true,
+      "column_keys": [
+        "smart_connect"
+      ]
+    },
+    "remos": {
+      "visible": true,
+      "column_keys": [
+        "smart_connect"
+      ]
+    },
+    "cintas-de-correr": {
+      "visible": true,
+      "column_keys": [
+        "smart_connect"
+      ]
+    }
+  },
+  "focus_pages": {
+    "pages": {
+      "3": [
+        "BIC002",
+        "BIC007",
+        "BIC008",
+        "BIC010",
+        "REPUESTO-805",
+        "REPUESTO-806"
+      ],
+      "4": [
+        "CIN002",
+        "REM002",
+        "REM004",
+        "REM005"
+      ],
+      "5": [
+        "ESC003",
+        "SKI009"
+      ]
+    },
+    "issues": [],
+    "pass": true,
+    "ski009": {
+      "name": "AirPlus Ski Trainer 200 Smart Connect",
+      "category_path": "CARDIO > SKI",
+      "mapped_category_slug": "cardio",
+      "extract_value": true,
+      "extract_skip_reason": null,
+      "parsed_spec": true
+    }
+  },
+  "regression_pages": {
+    "11": {
+      "rows_parsed": 30,
+      "rows_importable": 30,
+      "rows_blocked": 0,
+      "smart_connect_specs": [],
+      "pass": true
+    },
+    "12": {
+      "rows_parsed": 39,
+      "rows_importable": 39,
+      "rows_blocked": 0,
+      "smart_connect_specs": [],
+      "pass": true
+    },
+    "13": {
+      "rows_parsed": 30,
+      "rows_importable": 30,
+      "rows_blocked": 0,
+      "smart_connect_specs": [],
+      "pass": true
+    },
+    "14": {
+      "rows_parsed": 22,
+      "rows_importable": 22,
+      "rows_blocked": 0,
+      "smart_connect_specs": [],
+      "pass": true
+    }
+  },
+  "db_metrics": {
+    "masters_created": 534,
+    "variants_created": 871,
+    "price_entries": 871,
+    "catalog_items_created": 871
+  },
+  "pipeline_metrics": {
+    "rows_importable": 871,
+    "rows_blocked": 0
+  },
+  "grouping_identity": {
+    "identity_drift_count": 0,
+    "identity_drifts": [],
+    "reason_counts_match": true
+  },
+  "contamination_count": 0,
+  "checks": {
+    "metrics_pass": true,
+    "matrix_pass": true,
+    "synthetic_pass": true,
+    "profiles_pass": true,
+    "focus_pass": true,
+    "regression_pass": true,
+    "identity_pass": true,
+    "no_implicit_false": true,
+    "unrelated_skus_with_spec": 0
+  }
+}

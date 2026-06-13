@@ -1,0 +1,1728 @@
+{
+  "task_id": "IMPORT-FDL-CRITICAL-SPEC-COVERAGE-AUDIT",
+  "status": "CRITICAL_SPEC_COVERAGE_AUDIT_COMPLETE",
+  "read_only": true,
+  "global_metrics": {
+    "variants_total": 871,
+    "masters_total": 534,
+    "db_spec_rows_total": 649,
+    "variants_empty_db_specs": 411,
+    "variants_empty_db_specs_pct": 47.2,
+    "multi_variant_masters": 45,
+    "parser_coverage": {
+      "rows_parsed": 871,
+      "rows_importable": 871,
+      "rows_blocked": 0,
+      "parser_variants_with_specs": 544,
+      "parser_variants_empty_specs": 327
+    },
+    "p1_gap_count": 94,
+    "p2_gap_count": 278,
+    "p3_gap_count": 409,
+    "spec_definitions": [
+      "acabado",
+      "alto_mm",
+      "ancho_mm",
+      "capacidad_balones",
+      "carga_maxima_kg",
+      "casquillo",
+      "color",
+      "diametro_casquillo_mm",
+      "diametro_mm",
+      "longitud_mm",
+      "material",
+      "peso_kg",
+      "peso_lb",
+      "smart_connect",
+      "tipo_agarre",
+      "unidades_pack"
+    ]
+  },
+  "category_matrix": [
+    {
+      "category_slug": "barras",
+      "variants": 31,
+      "masters": 20,
+      "multi_variant_masters": 3,
+      "empty_spec_variants": 12,
+      "empty_spec_pct": 38.7,
+      "profile_specs": [
+        "peso_kg",
+        "material",
+        "acabado",
+        "diametro_mm"
+      ],
+      "critical_specs_expected": [
+        "peso_kg",
+        "longitud_mm"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 16.1,
+        "longitud_mm": 45.2
+      },
+      "top_db_specs": {
+        "longitud_mm": 14,
+        "peso_kg": 5
+      }
+    },
+    {
+      "category_slug": "bicicletas-estaticas",
+      "variants": 13,
+      "masters": 13,
+      "multi_variant_masters": 0,
+      "empty_spec_variants": 9,
+      "empty_spec_pct": 69.2,
+      "profile_specs": [
+        "smart_connect"
+      ],
+      "critical_specs_expected": [
+        "smart_connect"
+      ],
+      "critical_coverage_pct": {
+        "smart_connect": 30.8
+      },
+      "top_db_specs": {
+        "smart_connect": 4
+      }
+    },
+    {
+      "category_slug": "cardio",
+      "variants": 17,
+      "masters": 17,
+      "multi_variant_masters": 0,
+      "empty_spec_variants": 15,
+      "empty_spec_pct": 88.2,
+      "profile_specs": [
+        "peso_kg",
+        "color",
+        "smart_connect"
+      ],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "top_db_specs": {
+        "smart_connect": 2
+      }
+    },
+    {
+      "category_slug": "cintas-de-correr",
+      "variants": 13,
+      "masters": 13,
+      "multi_variant_masters": 0,
+      "empty_spec_variants": 12,
+      "empty_spec_pct": 92.3,
+      "profile_specs": [
+        "smart_connect"
+      ],
+      "critical_specs_expected": [
+        "smart_connect"
+      ],
+      "critical_coverage_pct": {
+        "smart_connect": 7.7
+      },
+      "top_db_specs": {
+        "smart_connect": 1
+      }
+    },
+    {
+      "category_slug": "cross-training",
+      "variants": 278,
+      "masters": 150,
+      "multi_variant_masters": 17,
+      "empty_spec_variants": 128,
+      "empty_spec_pct": 46.0,
+      "profile_specs": [
+        "peso_kg",
+        "peso_lb",
+        "color",
+        "material",
+        "acabado",
+        "unidades_pack",
+        "capacidad_balones"
+      ],
+      "critical_specs_expected": [
+        "peso_kg",
+        "peso_lb",
+        "color"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 52.2,
+        "peso_lb": 1.4,
+        "color": 0.0
+      },
+      "top_db_specs": {
+        "peso_kg": 145,
+        "peso_lb": 4,
+        "capacidad_balones": 1
+      }
+    },
+    {
+      "category_slug": "discos",
+      "variants": 81,
+      "masters": 20,
+      "multi_variant_masters": 13,
+      "empty_spec_variants": 6,
+      "empty_spec_pct": 7.4,
+      "profile_specs": [
+        "peso_kg",
+        "color",
+        "material",
+        "casquillo",
+        "diametro_mm",
+        "acabado"
+      ],
+      "critical_specs_expected": [
+        "peso_kg"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 92.6
+      },
+      "top_db_specs": {
+        "peso_kg": 75
+      }
+    },
+    {
+      "category_slug": "elipticas",
+      "variants": 5,
+      "masters": 5,
+      "multi_variant_masters": 0,
+      "empty_spec_variants": 5,
+      "empty_spec_pct": 100.0,
+      "profile_specs": [],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "top_db_specs": {}
+    },
+    {
+      "category_slug": "mancuernas",
+      "variants": 158,
+      "masters": 23,
+      "multi_variant_masters": 11,
+      "empty_spec_variants": 9,
+      "empty_spec_pct": 5.7,
+      "profile_specs": [
+        "peso_kg",
+        "color",
+        "material",
+        "acabado"
+      ],
+      "critical_specs_expected": [
+        "peso_kg"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 94.3
+      },
+      "top_db_specs": {
+        "peso_kg": 149
+      }
+    },
+    {
+      "category_slug": "material-de-estudio",
+      "variants": 269,
+      "masters": 267,
+      "multi_variant_masters": 1,
+      "empty_spec_variants": 212,
+      "empty_spec_pct": 78.8,
+      "profile_specs": [],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "top_db_specs": {
+        "peso_kg": 57
+      }
+    },
+    {
+      "category_slug": "remos",
+      "variants": 5,
+      "masters": 5,
+      "multi_variant_masters": 0,
+      "empty_spec_variants": 2,
+      "empty_spec_pct": 40.0,
+      "profile_specs": [
+        "smart_connect"
+      ],
+      "critical_specs_expected": [
+        "smart_connect"
+      ],
+      "critical_coverage_pct": {
+        "smart_connect": 60.0
+      },
+      "top_db_specs": {
+        "smart_connect": 3
+      }
+    },
+    {
+      "category_slug": "soportes-y-mancuerneros",
+      "variants": 1,
+      "masters": 1,
+      "multi_variant_masters": 0,
+      "empty_spec_variants": 1,
+      "empty_spec_pct": 100.0,
+      "profile_specs": [],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "top_db_specs": {}
+    }
+  ],
+  "prioritized_gaps": {
+    "P1": [
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C005",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 5 kgs Disco Bumper COLOR 3.0 - "
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C010",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 10 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C015",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 15 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C020",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 20 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C025",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 25 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "CRO107",
+        "master_key": "CRO-SACO-GUSANO",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs) Saco Gusano 2 personas - 160x30cms (60kgs) Saco Gusano 2 personas"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "CRO131",
+        "master_key": "CRO-SACO-GUSANO",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Saco Gusano Saco Gusano 3 personas - 240x30,5cms (100kgs) Saco Gusano 3 personas - 240x30,5cms (100kgs) Saco Gusano 3 pe"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "CRO108",
+        "master_key": "CRO-SACO-GUSANO",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Saco Gusano Saco Gusano 4 personas - 336x30,5cms (163kgs) Saco Gusano 4 personas - 336x30,5cms (163kgs) Saco Gusano 4 pe"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "CRO107NEXO",
+        "master_key": "CRO-SACO-GUSANO",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO Sac"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "CRO108NEXO",
+        "master_key": "CRO-SACO-GUSANO",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Saco Gusano Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO NEXO Saco Gusano 4 personas - 336x30,5cms (163kgs) - LO"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC001",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC001",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC002",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC002",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC003",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarr"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC003",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarr"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC004",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC004",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC008",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC008",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC005",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarr"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC005",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "category_slug": "cross-training",
+        "pages": [
+          14
+        ],
+        "evidence": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarr"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC001NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC001NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC002NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC002NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC003NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO NEXO Barra 2 Mts - 15 kgs - 100"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC003NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO NEXO Barra 2 Mts - 15 kgs - 100"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC004NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC004NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC008NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC008NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO NEXO Barra 2,20 Mts - 20 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_peso_lb_missing",
+        "sku": "BOC005NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO NEXO Barra 2 Mts - 15 kgs - 100"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_longitud_mm_missing",
+        "sku": "BOC005NEXO",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "evidence": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO NEXO Barra 2 Mts - 15 kgs - 100"
+      },
+      {
+        "classification": "P1_CRITICAL_SPEC_GAP",
+        "severity": "P1",
+        "pattern": "multi_variant_weight_family_missing_peso",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "category_slug": "cross-training",
+        "pages": [
+          14,
+          15
+        ],
+        "variant_count": 11,
+        "skus": [
+          "BOC009",
+          "BOC011"
+        ]
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "MKI004",
+        "master_key": "MKI",
+        "category_slug": "cross-training",
+        "pages": [
+          16
+        ],
+        "evidence": "Kettelbells Negro Crossfit Kettlebel Iron Kettlebel Iron 4 kgs Kettlebel Iron Kettlebel Iron 4 kgs Kettlebel Iron Kettle"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "MKI008",
+        "master_key": "MKI",
+        "category_slug": "cross-training",
+        "pages": [
+          16
+        ],
+        "evidence": "Kettelbells Negro Crossfit Kettlebel Iron 8 kgs Kettlebel Iron 8 kgs Kettlebel Iron 8 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "MKI012",
+        "master_key": "MKI",
+        "category_slug": "cross-training",
+        "pages": [
+          16
+        ],
+        "evidence": "Kettelbells Negro Crossfit Kettlebel Iron 12 kgs Kettlebel Iron 12 kgs Kettlebel Iron 12 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "MKI016",
+        "master_key": "MKI",
+        "category_slug": "cross-training",
+        "pages": [
+          16
+        ],
+        "evidence": "Kettelbells Negro Crossfit Kettlebel Iron 16 kgs Kettlebel Iron 16 kgs Kettlebel Iron 16 kgs"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "MKI020",
+        "master_key": "MKI",
+        "category_slug": "cross-training",
+        "pages": [
+          16
+        ],
+        "evidence": "Kettelbells Negro Crossfit Kettlebel Iron 20 kgs Kettlebel Iron 20 kgs Kettlebel Iron 20 kgs"
+      }
+    ],
+    "P2": [
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBNEXO05N",
+        "master_key": "DOBNEXON",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 5 kgs Disco Bumper Negro - 5 "
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBNEXO10N",
+        "master_key": "DOBNEXON",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 10 kgs Disco Bumper Negro - 1"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBNEXO15N",
+        "master_key": "DOBNEXON",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 15 kgs Disco Bumper Negro - 1"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBNEXO20N",
+        "master_key": "DOBNEXON",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 20 kgs Disco Bumper Negro - 2"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBNEXO25N",
+        "master_key": "DOBNEXON",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 25 kgs Disco Bumper Negro - 2"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBN005",
+        "master_key": "DOBN",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 5 kgs Disco Bumper Negro 3.0 - "
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBN010",
+        "master_key": "DOBN",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 10 kgs Disco Bumper Negro 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBN015",
+        "master_key": "DOBN",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 15 kgs Disco Bumper Negro 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBN020",
+        "master_key": "DOBN",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 20 kgs Disco Bumper Negro 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBN025",
+        "master_key": "DOBN",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 25 kgs Disco Bumper Negro 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOB005",
+        "master_key": "DOB",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 5 kgs Disco Bumper Negro 5 kgs Disco Bumper Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOB010",
+        "master_key": "DOB",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 10 kgs Disco Bumper Negro 10 kgs Disco Bumper Neg"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOB015",
+        "master_key": "DOB",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 15 kgs Disco Bumper Negro 15 kgs Disco Bumper Neg"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOB020",
+        "master_key": "DOB",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 20 kgs Disco Bumper Negro 20 kgs Disco Bumper Neg"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOB025",
+        "master_key": "DOB",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 25 kgs Disco Bumper Negro 25 kgs Disco Bumper Neg"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C005",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 5 kgs Disco Bumper COLOR 3.0 - "
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C010",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 10 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C015",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 15 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C020",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 20 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P1",
+        "pattern": "name_evidence_color_missing",
+        "sku": "DOB3C025",
+        "master_key": "DOB3C",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 25 kgs Disco Bumper COLOR 3.0 -"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBC005",
+        "master_key": "DOBC",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 5 kgs - Gris Disco Bumper Color 5 kgs - Gris Disco B"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBC010",
+        "master_key": "DOBC",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 10 kgs - Verde Disco Bumper Color 10 kgs - Verde Dis"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBC015",
+        "master_key": "DOBC",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 15 kgs - Amarillo Disco Bumper Color 15 kgs - Amaril"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBC020",
+        "master_key": "DOBC",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 20 kgs - Azul Disco Bumper Color 20 kgs - Azul Disco"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "DOBC025",
+        "master_key": "DOBC",
+        "category_slug": "discos",
+        "pages": [
+          11
+        ],
+        "evidence": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 25 kgs - Rojo Disco Bumper Color 25 kgs - Rojo Disco"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO110",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 6 kgs Negro Slam Ball 6 kgs Negro Slam Ball 6 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO118",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 8 kgs Negro Slam Ball 8 kgs Negro Slam Ball 8 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO111",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 10 kgs Negro Slam Ball 10 kgs Negro Slam Ball 10 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO112",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 12 kgs Negro Slam Ball 12 kgs Negro Slam Ball 12 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO119",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 15 kgs Negro Slam Ball 15 kgs Negro Slam Ball 15 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO113",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 20 kgs Negro Slam Ball 20 kgs Negro Slam Ball 20 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO120",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 25 kgs Negro Slam Ball 25 kgs Negro Slam Ball 25 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO114",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 30 kgs Negro Slam Ball 30 kgs Negro Slam Ball 30 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO116",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 35 kgs Negro Slam Ball 35 kgs Negro Slam Ball 35 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO122",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 40 kgs Negro Slam Ball 40 kgs Negro Slam Ball 40 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO123",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 45 kgs Negro Slam Ball 45 kgs Negro Slam Ball 45 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO124",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 50 kgs Negro Slam Ball 50 kgs Negro Slam Ball 50 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO125",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 55 kgs Negro Slam Ball 55 kgs Negro Slam Ball 55 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO117",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 60 kgs Negro Slam Ball 60 kgs Negro Slam Ball 60 kgs Negro"
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "parser_has_color_not_persisted",
+        "sku": "CRO134",
+        "master_key": "CRO-SLAM-NEGRO",
+        "category_slug": "cross-training",
+        "pages": [
+          12
+        ],
+        "evidence": "Slam Ball -  Negro Slam Ball 70 kgs Negro Slam Ball 70 kgs Negro Slam Ball 70 kgs Negro"
+      }
+    ],
+    "P3": [
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REPUESTO-806",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          3
+        ],
+        "sku": "REPUESTO-806",
+        "display_name": "Consola Bluetooth AB-1000 SMART CONECT"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REPUESTO-805",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          3
+        ],
+        "sku": "REPUESTO-805",
+        "display_name": "Consola Bluetooth AB-1 SMART CONECT"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "BIC006",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          3
+        ],
+        "sku": "BIC006",
+        "display_name": "Bicicleta AirPlus Performance Magnetica"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "BIC009",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          3
+        ],
+        "sku": "BIC009",
+        "display_name": "Bicicleta Eco Air Cycle"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REM003",
+        "category_slug": "remos",
+        "pages": [
+          4
+        ],
+        "sku": "REM003",
+        "display_name": "Air Rower 3,0"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "CIN001",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          4
+        ],
+        "sku": "CIN001",
+        "display_name": "Curva sin Motor"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "CIN003",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          4
+        ],
+        "sku": "CIN003",
+        "display_name": "ST-6000"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "CIN004",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          4
+        ],
+        "sku": "CIN004",
+        "display_name": "STL-5000"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "CIN005",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          4
+        ],
+        "sku": "CIN005",
+        "display_name": "TKR-4000"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "SKI002",
+        "category_slug": "cardio",
+        "pages": [
+          5
+        ],
+        "sku": "SKI002",
+        "display_name": "Soporte pared Ski"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "SKI004",
+        "category_slug": "cardio",
+        "pages": [
+          5
+        ],
+        "sku": "SKI004",
+        "display_name": "Bateria Ski"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "SKI005",
+        "category_slug": "cardio",
+        "pages": [
+          5
+        ],
+        "sku": "SKI005",
+        "display_name": "Pull Bar Ski"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "SKI008",
+        "category_slug": "cardio",
+        "pages": [
+          5
+        ],
+        "sku": "SKI008",
+        "display_name": "Air Ski Trainer Eco"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "SKI010",
+        "category_slug": "cardio",
+        "pages": [
+          5
+        ],
+        "sku": "SKI010",
+        "display_name": "Trainer Floor Stand"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "SKI011",
+        "category_slug": "cardio",
+        "pages": [
+          5
+        ],
+        "sku": "SKI011",
+        "display_name": "Trainer Wall-Mount Brackets"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "TRI001",
+        "category_slug": "cardio",
+        "pages": [
+          6
+        ],
+        "sku": "TRI001",
+        "display_name": "XT3 Trineo"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "TRI002",
+        "category_slug": "cardio",
+        "pages": [
+          6
+        ],
+        "sku": "TRI002",
+        "display_name": "XT3 Consola Trineo"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "TRI003",
+        "category_slug": "cardio",
+        "pages": [
+          6
+        ],
+        "sku": "TRI003",
+        "display_name": "XT3 Plus Trineo Multifuncional V2"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "TRI004",
+        "category_slug": "cardio",
+        "pages": [
+          6
+        ],
+        "sku": "TRI004",
+        "display_name": "XT4 Trineo Multifuncional"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "TRI005",
+        "category_slug": "cardio",
+        "pages": [
+          6
+        ],
+        "sku": "TRI005",
+        "display_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "TRI006",
+        "category_slug": "cardio",
+        "pages": [
+          6
+        ],
+        "sku": "TRI006",
+        "display_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "TRI007",
+        "category_slug": "cardio",
+        "pages": [
+          6
+        ],
+        "sku": "TRI007",
+        "display_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB199",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          7
+        ],
+        "sku": "REB199",
+        "display_name": "Jet 300 Series"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB204",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          7
+        ],
+        "sku": "REB204",
+        "display_name": "AR Sprint Bike"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB205",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          7
+        ],
+        "sku": "REB205",
+        "display_name": "Zjet 430 - Red"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB169",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          7
+        ],
+        "sku": "REB169",
+        "display_name": "Zjet 430 Black + Bluetooth"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB187",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          7
+        ],
+        "sku": "REB187",
+        "display_name": "SL 8.0 Treadmil (DC)"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB196",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          7
+        ],
+        "sku": "REB196",
+        "display_name": "A4,0 Teadmill + TFT - Silver"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB202",
+        "category_slug": "cintas-de-correr",
+        "pages": [
+          7
+        ],
+        "sku": "REB202",
+        "display_name": "Jet 300 Series Treadmill + Bluetooth"
+      },
+      {
+        "classification": "P3_OPTIONAL_SPEC_BACKLOG",
+        "severity": "P3",
+        "pattern": "singleton_empty_specs_name_distinguishable",
+        "master_key": "REB182",
+        "category_slug": "elipticas",
+        "pages": [
+          8
+        ],
+        "sku": "REB182",
+        "display_name": "GX50 One Series Black"
+      }
+    ]
+  },
+  "pattern_summary": {
+    "singleton_empty_specs_name_distinguishable": 409,
+    "parser_has_color_not_persisted": 182,
+    "name_evidence_color_missing": 46,
+    "name_evidence_longitud_mm_missing": 36,
+    "name_evidence_peso_lb_missing": 14,
+    "multi_variant_weight_family_missing_peso": 4
+  },
+  "classification_counts": {
+    "P3_OPTIONAL_SPEC_BACKLOG": 409,
+    "SPEC_EXTRACTION_BUG": 278,
+    "P1_CRITICAL_SPEC_GAP": 4
+  },
+  "source_unavailable_samples": [
+    {
+      "classification": "SOURCE_DATA_NOT_AVAILABLE",
+      "severity": "P3",
+      "sku": "REB046",
+      "pattern": "material_mentioned_not_structured",
+      "note": "Free-text mention only; no reliable enum without commercial taxonomy"
+    },
+    {
+      "classification": "SOURCE_DATA_NOT_AVAILABLE",
+      "severity": "P3",
+      "sku": "VAR014",
+      "pattern": "material_mentioned_not_structured",
+      "note": "Free-text mention only; no reliable enum without commercial taxonomy"
+    },
+    {
+      "classification": "SOURCE_DATA_NOT_AVAILABLE",
+      "severity": "P3",
+      "sku": "VAR015",
+      "pattern": "material_mentioned_not_structured",
+      "note": "Free-text mention only; no reliable enum without commercial taxonomy"
+    },
+    {
+      "classification": "SOURCE_DATA_NOT_AVAILABLE",
+      "severity": "P3",
+      "sku": "VAR029",
+      "pattern": "material_mentioned_not_structured",
+      "note": "Free-text mention only; no reliable enum without commercial taxonomy"
+    },
+    {
+      "classification": "SOURCE_DATA_NOT_AVAILABLE",
+      "severity": "P3",
+      "sku": "VAR069",
+      "pattern": "material_mentioned_not_structured",
+      "note": "Free-text mention only; no reliable enum without commercial taxonomy"
+    },
+    {
+      "classification": "SOURCE_DATA_NOT_AVAILABLE",
+      "severity": "P3",
+      "sku": "COL001",
+      "pattern": "material_mentioned_not_structured",
+      "note": "Free-text mention only; no reliable enum without commercial taxonomy"
+    }
+  ],
+  "recommended_batches": [
+    {
+      "batch_id": "SPEC-B1-WEIGHT-AXIS-COMPLETENESS",
+      "pattern": "name_evidence_color_missing",
+      "affected_count": 45,
+      "agent": "Agent 2 Plan Mode",
+      "scope": "Systemic weight/color axis extraction for numeric_suffix and bumper families — only where name/header evidence exists"
+    },
+    {
+      "batch_id": "SPEC-B2-CARDIO-PROFILE-ENRICHMENT",
+      "scope": "Optional dimension/feature specs for cardio where PDF has explicit tokens only",
+      "severity": "P3"
+    },
+    {
+      "batch_id": "SPEC-B3-MATERIAL-ACABADO",
+      "scope": "Commercial decision required before enum extraction",
+      "severity": "P3",
+      "note": "SOURCE_DATA_NOT_AVAILABLE for most rows"
+    }
+  ],
+  "answers": {
+    "categories_needing_variant_specs": [
+      "discos",
+      "cross-training",
+      "mancuernas",
+      "barras"
+    ],
+    "explicit_evidence_specs": [
+      "peso_kg",
+      "peso_lb",
+      "color",
+      "longitud_mm",
+      "capacidad_balones",
+      "smart_connect"
+    ],
+    "master_level_specs": [
+      "material",
+      "casquillo",
+      "carga_maxima_kg",
+      "diametro_casquillo_mm"
+    ],
+    "variant_level_specs": [
+      "peso_kg",
+      "peso_lb",
+      "color",
+      "smart_connect",
+      "unidades_pack",
+      "capacidad_balones"
+    ],
+    "variant_axis_specs": [
+      "peso_kg",
+      "peso_lb",
+      "color"
+    ],
+    "commercially_distinguishable_empty_specs": 411,
+    "regression_pages_safe": [
+      11,
+      12,
+      13,
+      14
+    ]
+  }
+}

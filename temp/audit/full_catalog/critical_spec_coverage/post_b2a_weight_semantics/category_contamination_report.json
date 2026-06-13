@@ -1,0 +1,8 @@
+{
+  "source": "npm run audit:category-contamination",
+  "generated_at": "2026-06-12T19:30:10.145484+00:00",
+  "unexpected_categories": [],
+  "category_contamination_count": 0,
+  "parser_creates_canonical_categories": false,
+  "confirm_creates_canonical_categories": false
+}

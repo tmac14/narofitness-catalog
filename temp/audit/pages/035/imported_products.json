@@ -1,0 +1,42 @@
+[
+  {
+    "variant_sku": "SOP042",
+    "variant_name": "Soporte a pared para 6",
+    "master_key": "SOP042",
+    "master_name": "Soporte a pared para 6",
+    "category_slug": "barras",
+    "price": "87.67"
+  },
+  {
+    "variant_sku": "VAR028",
+    "variant_name": "Protector de Cuello 45 cms, Funda Nylon",
+    "master_key": "VAR028",
+    "master_name": "Protector de Cuello 45 cms, Funda Nylon",
+    "category_slug": "barras",
+    "price": "8.86"
+  },
+  {
+    "variant_sku": "VAR113",
+    "variant_name": "Protector de Cuello ergonomico Azul",
+    "master_key": "VAR113",
+    "master_name": "Protector de Cuello ergonomico Azul",
+    "category_slug": "barras",
+    "price": "6.77"
+  },
+  {
+    "variant_sku": "VAR129",
+    "variant_name": "Protector de cuello Rojo",
+    "master_key": "VAR129",
+    "master_name": "Protector de cuello Rojo",
+    "category_slug": "barras",
+    "price": "8.69"
+  },
+  {
+    "variant_sku": "VAR159",
+    "variant_name": "Protector de cuello Negro",
+    "master_key": "VAR159",
+    "master_name": "Protector de cuello Negro",
+    "category_slug": "barras",
+    "price": "8.69"
+  }
+]

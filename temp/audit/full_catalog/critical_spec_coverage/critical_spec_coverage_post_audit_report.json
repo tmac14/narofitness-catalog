@@ -1,0 +1,841 @@
+{
+  "task_id": "IMPORT-FDL-CRITICAL-SPEC-COVERAGE-AUDIT",
+  "status": "CRITICAL_SPEC_COVERAGE_AUDIT_COMPLETE",
+  "read_only_confirmation": {
+    "code_modified": false,
+    "tests_modified": false,
+    "fixtures_modified": false,
+    "documentation_modified": false,
+    "database_modified": false
+  },
+  "global_metrics": {
+    "variants_total": 871,
+    "masters_total": 534,
+    "multi_variant_masters": 45,
+    "variant_spec_rows": 649,
+    "master_spec_rows": 54,
+    "variants_empty_effective_specs": 322,
+    "variants_empty_effective_specs_pct": 37.0,
+    "spec_totals_variant_level": {
+      "smart_connect": 10,
+      "color": 189,
+      "peso_kg": 431,
+      "peso_lb": 4,
+      "capacidad_balones": 1,
+      "longitud_mm": 14
+    },
+    "spec_totals_master_level": {
+      "casquillo": 21,
+      "material": 21,
+      "color": 12
+    },
+    "p1_gap_count": 0,
+    "p2_gap_count": 6,
+    "p3_gap_count": 375,
+    "classification_counts": {
+      "SOURCE_DATA_NOT_AVAILABLE": 54,
+      "SPEC_EXTRACTION_BUG": 3,
+      "P3_OPTIONAL_SPEC_BACKLOG": 320,
+      "PROFILE_VISIBILITY_GAP": 4
+    }
+  },
+  "category_matrix": [
+    {
+      "category_slug": "barras",
+      "variants": 31,
+      "masters": 20,
+      "multi_variant_masters": 3,
+      "empty_effective_specs_variants": 8,
+      "empty_effective_specs_pct": 25.8,
+      "profile_specs": [
+        "peso_kg",
+        "material",
+        "acabado",
+        "diametro_mm"
+      ],
+      "critical_specs_expected": [
+        "peso_kg",
+        "longitud_mm"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 16.1,
+        "longitud_mm": 45.2
+      },
+      "effective_spec_counts": {
+        "longitud_mm": 14,
+        "peso_kg": 5,
+        "color": 4
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 2,
+        "P3": 8
+      },
+      "severity": "P2"
+    },
+    {
+      "category_slug": "bicicletas-estaticas",
+      "variants": 13,
+      "masters": 13,
+      "multi_variant_masters": 0,
+      "empty_effective_specs_variants": 9,
+      "empty_effective_specs_pct": 69.2,
+      "profile_specs": [
+        "smart_connect"
+      ],
+      "critical_specs_expected": [
+        "smart_connect"
+      ],
+      "critical_coverage_pct": {
+        "smart_connect": 30.8
+      },
+      "effective_spec_counts": {
+        "smart_connect": 4
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 2,
+        "P3": 9
+      },
+      "severity": "P2"
+    },
+    {
+      "category_slug": "cardio",
+      "variants": 17,
+      "masters": 17,
+      "multi_variant_masters": 0,
+      "empty_effective_specs_variants": 15,
+      "empty_effective_specs_pct": 88.2,
+      "profile_specs": [
+        "peso_kg",
+        "color",
+        "smart_connect"
+      ],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "effective_spec_counts": {
+        "smart_connect": 2
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 15
+      },
+      "severity": "P3"
+    },
+    {
+      "category_slug": "cintas-de-correr",
+      "variants": 13,
+      "masters": 13,
+      "multi_variant_masters": 0,
+      "empty_effective_specs_variants": 12,
+      "empty_effective_specs_pct": 92.3,
+      "profile_specs": [
+        "smart_connect"
+      ],
+      "critical_specs_expected": [
+        "smart_connect"
+      ],
+      "critical_coverage_pct": {
+        "smart_connect": 7.7
+      },
+      "effective_spec_counts": {
+        "smart_connect": 1
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 12
+      },
+      "severity": "P3"
+    },
+    {
+      "category_slug": "cross-training",
+      "variants": 278,
+      "masters": 150,
+      "multi_variant_masters": 17,
+      "empty_effective_specs_variants": 113,
+      "empty_effective_specs_pct": 40.6,
+      "profile_specs": [
+        "peso_kg",
+        "peso_lb",
+        "color",
+        "material",
+        "acabado",
+        "unidades_pack",
+        "capacidad_balones"
+      ],
+      "critical_specs_expected": [
+        "peso_kg",
+        "peso_lb",
+        "color"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 52.2,
+        "peso_lb": 1.4,
+        "color": 32.4
+      },
+      "effective_spec_counts": {
+        "peso_kg": 145,
+        "color": 90,
+        "casquillo": 11,
+        "material": 11,
+        "peso_lb": 4,
+        "capacidad_balones": 1
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 112
+      },
+      "severity": "OK"
+    },
+    {
+      "category_slug": "discos",
+      "variants": 81,
+      "masters": 20,
+      "multi_variant_masters": 13,
+      "empty_effective_specs_variants": 6,
+      "empty_effective_specs_pct": 7.4,
+      "profile_specs": [
+        "peso_kg",
+        "color",
+        "material",
+        "casquillo",
+        "diametro_mm",
+        "acabado"
+      ],
+      "critical_specs_expected": [
+        "peso_kg",
+        "color"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 92.6,
+        "color": 30.9
+      },
+      "effective_spec_counts": {
+        "peso_kg": 75,
+        "casquillo": 61,
+        "material": 61,
+        "color": 25
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 13
+      },
+      "severity": "OK"
+    },
+    {
+      "category_slug": "elipticas",
+      "variants": 5,
+      "masters": 5,
+      "multi_variant_masters": 0,
+      "empty_effective_specs_variants": 5,
+      "empty_effective_specs_pct": 100.0,
+      "profile_specs": [],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "effective_spec_counts": {},
+      "gap_counts": {
+        "P1": 0,
+        "P2": 1,
+        "P3": 5
+      },
+      "severity": "P2"
+    },
+    {
+      "category_slug": "mancuernas",
+      "variants": 158,
+      "masters": 23,
+      "multi_variant_masters": 11,
+      "empty_effective_specs_variants": 4,
+      "empty_effective_specs_pct": 2.5,
+      "profile_specs": [
+        "peso_kg",
+        "color",
+        "material",
+        "acabado"
+      ],
+      "critical_specs_expected": [
+        "peso_kg",
+        "color"
+      ],
+      "critical_coverage_pct": {
+        "peso_kg": 94.3,
+        "color": 36.7
+      },
+      "effective_spec_counts": {
+        "peso_kg": 149,
+        "color": 58,
+        "casquillo": 54,
+        "material": 54
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 44
+      },
+      "severity": "OK"
+    },
+    {
+      "category_slug": "material-de-estudio",
+      "variants": 269,
+      "masters": 267,
+      "multi_variant_masters": 1,
+      "empty_effective_specs_variants": 147,
+      "empty_effective_specs_pct": 54.6,
+      "profile_specs": [],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "effective_spec_counts": {
+        "color": 65,
+        "peso_kg": 57,
+        "casquillo": 4,
+        "material": 4
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 1,
+        "P3": 153
+      },
+      "severity": "P2"
+    },
+    {
+      "category_slug": "remos",
+      "variants": 5,
+      "masters": 5,
+      "multi_variant_masters": 0,
+      "empty_effective_specs_variants": 2,
+      "empty_effective_specs_pct": 40.0,
+      "profile_specs": [
+        "smart_connect"
+      ],
+      "critical_specs_expected": [
+        "smart_connect"
+      ],
+      "critical_coverage_pct": {
+        "smart_connect": 60.0
+      },
+      "effective_spec_counts": {
+        "smart_connect": 3
+      },
+      "gap_counts": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 2
+      },
+      "severity": "OK"
+    },
+    {
+      "category_slug": "soportes-y-mancuerneros",
+      "variants": 1,
+      "masters": 1,
+      "multi_variant_masters": 0,
+      "empty_effective_specs_variants": 1,
+      "empty_effective_specs_pct": 100.0,
+      "profile_specs": [],
+      "critical_specs_expected": [],
+      "critical_coverage_pct": {},
+      "effective_spec_counts": {},
+      "gap_counts": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 2
+      },
+      "severity": "P3"
+    }
+  ],
+  "prioritized_gaps": {
+    "P1": [],
+    "P2": [
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "peso_lb_evidence_not_extracted",
+        "sku": "BOR220",
+        "master_key": "BOR",
+        "category_slug": "barras",
+        "pages": [
+          34
+        ],
+        "evidence": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 2,20 Mts "
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "smart_connect_evidence_missing",
+        "sku": "REPUESTO-806",
+        "master_key": "REPUESTO-806",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "classification": "SPEC_EXTRACTION_BUG",
+        "severity": "P2",
+        "pattern": "smart_connect_evidence_missing",
+        "sku": "REPUESTO-805",
+        "master_key": "REPUESTO-805",
+        "category_slug": "bicicletas-estaticas",
+        "pages": [
+          3
+        ]
+      },
+      {
+        "classification": "PROFILE_VISIBILITY_GAP",
+        "severity": "P2",
+        "category_slug": "elipticas",
+        "note": "No explicit category_spec_profile rows; specs may not surface in UI"
+      },
+      {
+        "classification": "PROFILE_VISIBILITY_GAP",
+        "severity": "P2",
+        "category_slug": "material-de-estudio",
+        "note": "No explicit category_spec_profile rows; specs may not surface in UI"
+      },
+      {
+        "classification": "PROFILE_VISIBILITY_GAP",
+        "severity": "P2",
+        "category_slug": "barras",
+        "missing": "longitud_mm",
+        "note": "longitud_mm extracted for some bars but not in profile"
+      }
+    ],
+    "P3": [
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "DNG001",
+        "category_slug": "discos"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "DNG002",
+        "category_slug": "discos"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "DNG005",
+        "category_slug": "discos"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "DNG010",
+        "category_slug": "discos"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "DNG015",
+        "category_slug": "discos"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "DNG020",
+        "category_slug": "discos"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "DNG025",
+        "category_slug": "discos"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01010",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01020",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01025",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01030",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01035",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01040",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01045",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "JMH01050",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH001",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH003",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH004",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH005",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH006",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH008",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH009",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH010",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH002",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH007",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH012",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH015",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH017",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH020",
+        "category_slug": "mancuernas"
+      },
+      {
+        "classification": "SOURCE_DATA_NOT_AVAILABLE",
+        "severity": "P3",
+        "pattern": "material_acabado_free_text_only",
+        "sku": "MH022",
+        "category_slug": "mancuernas"
+      }
+    ]
+  },
+  "false_positive_review": {
+    "name_evidence_color_missing_on_master_level": [
+      "DOB3C* (color Negro in parsed_common_specs → product_master_specs)",
+      "MKI* (color in common_specs → master)",
+      "DOBC* (color per variant via allowed_value_id — script missed enum)"
+    ],
+    "name_evidence_peso_missing_on_block_bars": [
+      "BOC009/BOC011 specialty bars grouped by block family — weight not variant axis"
+    ],
+    "multi_variant_weight_family_missing_peso_on_barras": [
+      "BN/BO/BOR families use longitud_mm axis (SKU suffix → mm); peso_kg not required — all variants have longitud_mm"
+    ],
+    "name_evidence_longitud_on_non_bar_products": [
+      "CRO-SACO-GUSANO dimensions in name but peso_kg distinguishes variants — longitud is P3 enrichment"
+    ]
+  },
+  "pattern_evidence": {
+    "peso_kg_numeric_suffix": {
+      "families": [
+        "numeric_suffix_family",
+        "cross_training_bumper_family",
+        "hyphen_suffix_family"
+      ],
+      "coverage": "431 variant rows; 0 multi-variant masters with weight-in-name missing peso",
+      "pages": "DISCOS Y BARRAS (11), MANCUERNAS (12), CROSSTRAINING bumpers (11)",
+      "false_positive_risk": "LOW"
+    },
+    "color_enum_master_or_variant": {
+      "families": [
+        "cross_training_bumper_family DOBC/DOB3C",
+        "numeric_suffix MKI"
+      ],
+      "coverage": "189 variant color + 12 master color rows",
+      "pages": [
+        11
+      ],
+      "false_positive_risk": "MEDIUM if script ignores allowed_value_id or master_specs"
+    },
+    "smart_connect_cardio": {
+      "families": [
+        "explicit_one_per_sku cardio SKUs"
+      ],
+      "coverage": "10 variant rows (validated matrix 7T/3F/2 absent)",
+      "pages": [
+        13,
+        14
+      ],
+      "false_positive_risk": "LOW for explicit tokens; HIGH if inferring from brand proximity"
+    },
+    "peso_lb_wall_ball": {
+      "families": [
+        "CRO083-CRO086 wall ball block"
+      ],
+      "coverage": "4 peso_lb rows; kg often primary axis",
+      "pages": [
+        14
+      ],
+      "false_positive_risk": "MEDIUM — dual kg/lb display needs commercial rule"
+    },
+    "longitud_mm_barras": {
+      "families": [
+        "numeric_suffix_family BN/BO/BOR"
+      ],
+      "coverage": "14/31 barras variants (~45%)",
+      "pages": [
+        11,
+        12
+      ],
+      "false_positive_risk": "LOW for SKU-encoded lengths; skip BOC block bars"
+    },
+    "material_acabado": {
+      "families": [
+        "all categories"
+      ],
+      "coverage": "0 structured rows — free text in PDF only",
+      "false_positive_risk": "HIGH if regex-mapping prose to enums"
+    }
+  },
+  "recommended_batches": [
+    {
+      "batch_id": "SPEC-B1-BARRAS-LENGTH-WEIGHT",
+      "agent": "Agent 2 Plan Mode",
+      "severity": "P2",
+      "scope": "Systemic longitud_mm + peso_kg for numeric_suffix_family barras (BN/BO/BOR) where SKU suffix or header encodes size/weight explicitly",
+      "evidence_pages": [
+        11,
+        12
+      ],
+      "false_positive_risk": "LOW — bar SKU numeric suffix is stable; skip block-family BOC bars",
+      "rationale": "No P1 gaps remain; barras has lowest critical-axis coverage (longitud_mm ~45%)"
+    },
+    {
+      "batch_id": "SPEC-B2-PESO-LB-AXIS",
+      "severity": "P2",
+      "scope": "Extend peso_lb extraction for cross-training SKUs with explicit lb tokens in name/header",
+      "false_positive_risk": "MEDIUM",
+      "commercial_decision": "Whether lb is variant axis or display-only when kg present"
+    },
+    {
+      "batch_id": "SPEC-B3-CATEGORY-PROFILE-COVERAGE",
+      "severity": "P2",
+      "scope": "Add profiles for material-de-estudio, musculacion, elipticas (optional peso_kg/smart_connect only with evidence)",
+      "false_positive_risk": "LOW"
+    },
+    {
+      "batch_id": "SPEC-B4-MATERIAL-ACABADO-ENUM",
+      "severity": "P3",
+      "scope": "Commercial taxonomy decision before any enum extraction",
+      "classification": "SOURCE_DATA_NOT_AVAILABLE",
+      "false_positive_risk": "HIGH"
+    }
+  ],
+  "mandatory_answers": {
+    "1_categories_families_needing_variant_specs": {
+      "variant_axis_required": [
+        "discos (peso_kg; color when DOBC multicolor)",
+        "mancuernas (peso_kg)",
+        "cross-training weight families (peso_kg; peso_lb for lb-native wall balls)",
+        "barras numeric_suffix (peso_kg, longitud_mm)"
+      ],
+      "name_sku_sufficient": [
+        "cardio/bicicletas/cintas/remos/elipticas (explicit_one_per_sku)",
+        "cross-training block families (CRO/BOC blocks, rigs, specialty bars)",
+        "material-de-estudio (267/269 singleton masters)",
+        "musculacion machines (model name distinguishes)"
+      ]
+    },
+    "2_critical_specs_with_explicit_evidence": [
+      "peso_kg (kgs in name/header/SKU suffix)",
+      "peso_lb (lbs in wall-ball and some CT headers)",
+      "color (header COLOR line or color word in bumper/dumbbell families)",
+      "longitud_mm (bar SKU size / explicit mm/cm in barras)",
+      "smart_connect (Smart Connect/Conect token in cardio headers)",
+      "capacidad_balones (SOP063 explicit balones count)"
+    ],
+    "3_critical_specs_missing_in_parser_preview_db": {
+      "P1_none_after_correction": [],
+      "P2": [
+        "longitud_mm partial on barras (~55% gap)",
+        "peso_lb under-extracted (4 rows vs lb evidence in wall-ball family)",
+        "smart_connect absent on some cardio rows without explicit token (not bug — source absent)"
+      ],
+      "PROFILE_VISIBILITY_GAP": [
+        "longitud_mm not in barras profile",
+        "material-de-estudio/musculacion/elipticas lack profiles"
+      ]
+    },
+    "4_severity_classification": {
+      "P1_CRITICAL_SPEC_GAP": 0,
+      "P2_SPEC_COVERAGE_IMPROVEMENT": 3,
+      "P3_OPTIONAL_SPEC_BACKLOG": 320,
+      "SOURCE_DATA_NOT_AVAILABLE": 54,
+      "PROFILE_VISIBILITY_GAP": 4,
+      "SPEC_EXTRACTION_BUG": 3
+    },
+    "5_commercially_distinguishable_empty_specs": {
+      "count": 322,
+      "pct": 37.0,
+      "note": "Mostly singleton masters; display_name/SKU unique per variant"
+    },
+    "6_spec_level_assignment": {
+      "master_level": [
+        "material",
+        "casquillo",
+        "carga_maxima_kg",
+        "diametro_casquillo_mm",
+        "color when uniform per master (DOB3C, MKI)"
+      ],
+      "variant_level": [
+        "peso_kg",
+        "peso_lb",
+        "color (DOBC per-variant)",
+        "smart_connect",
+        "unidades_pack",
+        "capacidad_balones",
+        "longitud_mm"
+      ],
+      "variant_axis": [
+        "peso_kg",
+        "peso_lb",
+        "color (when varies within master)"
+      ]
+    },
+    "7_category_profile_gaps": {
+      "missing_profiles": [
+        "elipticas",
+        "material-de-estudio",
+        "soportes-y-mancuerneros"
+      ],
+      "too_broad": [
+        "cardio profile lists peso_kg/color but most variants are singletons without evidence"
+      ],
+      "too_narrow": [
+        "barras profile omits longitud_mm despite extraction"
+      ]
+    },
+    "8_low_risk_systemic_patterns": [
+      "numeric_suffix → peso_kg (proven, 431 rows)",
+      "bumper header COLOR line → color enum (proven, 189+12 rows)",
+      "smart_connect explicit token → boolean (proven, validated)",
+      "bar BN/BO/BOR suffix → longitud_mm (partial, extendable)"
+    ],
+    "9_patterns_requiring_commercial_decision": [
+      "material/acabado enum mapping from free text",
+      "peso_lb as variant axis vs display when peso_kg exists",
+      "dimension specs (alto_mm/ancho_mm) for cardio machines",
+      "carga_maxima_kg for racks/structures"
+    ],
+    "10_source_data_not_available": [
+      "Structured material/acabado enums (prose only in PDF)",
+      "Machine dimensions for most cardio/musculacion",
+      "carga_maxima_kg systematic values",
+      "smart_connect when token absent (must remain unknown)"
+    ]
+  },
+  "regression_pages": [
+    11,
+    12,
+    13,
+    14
+  ],
+  "full_catalog_gate_pages": 65
+}

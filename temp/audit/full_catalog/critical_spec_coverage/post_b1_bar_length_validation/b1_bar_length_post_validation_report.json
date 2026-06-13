@@ -1,0 +1,498 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B1-BARRAS-LENGTH-POST-VALIDATION",
+  "status": "B1_BAR_LENGTH_POST_VALIDATION_PASS",
+  "generated_at": "2026-06-12T12:57:13.207187+00:00",
+  "read_only_confirmation": {
+    "code_modified": false,
+    "tests_modified": false,
+    "database_modified": false
+  },
+  "longitud_mm": {
+    "before_expected": 14,
+    "after_actual": 20,
+    "delta": 6,
+    "inventory": [
+      {
+        "sku": "BBP140",
+        "display_name": "Barra Body Pump 28mm - 1,40 Mts",
+        "master_key": "BBP140",
+        "longitud_mm": 1400.0
+      },
+      {
+        "sku": "BBP140B",
+        "display_name": "Barra Body Pump 30mm - 1,40 Mts",
+        "master_key": "BBPB",
+        "longitud_mm": 1400.0
+      },
+      {
+        "sku": "BN085",
+        "display_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+        "master_key": "BN",
+        "longitud_mm": 850.0
+      },
+      {
+        "sku": "BN120",
+        "display_name": "Barra 28mm Cromada - 1,20 Mts",
+        "master_key": "BN",
+        "longitud_mm": 1200.0
+      },
+      {
+        "sku": "BN120Z",
+        "display_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+        "master_key": "BNZ",
+        "longitud_mm": 1200.0
+      },
+      {
+        "sku": "BN150",
+        "display_name": "Barra 28mm Cromada - 1,50 Mts",
+        "master_key": "BN",
+        "longitud_mm": 1500.0
+      },
+      {
+        "sku": "BN180",
+        "display_name": "Barra 28mm Cromada - 1,80 Mts",
+        "master_key": "BN",
+        "longitud_mm": 1800.0
+      },
+      {
+        "sku": "BN220",
+        "display_name": "Barra 28mm Cromada - 2,20 Mts",
+        "master_key": "BN",
+        "longitud_mm": 2200.0
+      },
+      {
+        "sku": "BO085",
+        "display_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+        "master_key": "BO",
+        "longitud_mm": 850.0
+      },
+      {
+        "sku": "BO120",
+        "display_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+        "master_key": "BO",
+        "longitud_mm": 1200.0
+      },
+      {
+        "sku": "BO120Z",
+        "display_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+        "master_key": "BOZ",
+        "longitud_mm": 1200.0
+      },
+      {
+        "sku": "BO150",
+        "display_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+        "master_key": "BO",
+        "longitud_mm": 1500.0
+      },
+      {
+        "sku": "BO180",
+        "display_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+        "master_key": "BO",
+        "longitud_mm": 1800.0
+      },
+      {
+        "sku": "BO220",
+        "display_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+        "master_key": "BO",
+        "longitud_mm": 2200.0
+      },
+      {
+        "sku": "BOR120",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+        "master_key": "BOR",
+        "longitud_mm": 1200.0
+      },
+      {
+        "sku": "BOR120Z",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+        "master_key": "BORZ",
+        "longitud_mm": 1200.0
+      },
+      {
+        "sku": "BOR150",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+        "master_key": "BOR",
+        "longitud_mm": 1500.0
+      },
+      {
+        "sku": "BOR180",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+        "master_key": "BOR",
+        "longitud_mm": 1800.0
+      },
+      {
+        "sku": "BOR220",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+        "master_key": "BOR",
+        "longitud_mm": 2200.0
+      },
+      {
+        "sku": "BOR220A",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+        "master_key": "BORA",
+        "longitud_mm": 2200.0
+      }
+    ]
+  },
+  "positive_skus": [
+    {
+      "sku": "BBP140",
+      "expected": 1400,
+      "db": {
+        "sku": "BBP140",
+        "display_name": "Barra Body Pump 28mm - 1,40 Mts",
+        "master_key": "BBP140",
+        "longitud_mm": 1400.0
+      },
+      "parser": 1400
+    },
+    {
+      "sku": "BBP140B",
+      "expected": 1400,
+      "db": {
+        "sku": "BBP140B",
+        "display_name": "Barra Body Pump 30mm - 1,40 Mts",
+        "master_key": "BBPB",
+        "longitud_mm": 1400.0
+      },
+      "parser": 1400
+    },
+    {
+      "sku": "BN120Z",
+      "expected": 1200,
+      "db": {
+        "sku": "BN120Z",
+        "display_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+        "master_key": "BNZ",
+        "longitud_mm": 1200.0
+      },
+      "parser": 1200
+    },
+    {
+      "sku": "BO120Z",
+      "expected": 1200,
+      "db": {
+        "sku": "BO120Z",
+        "display_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+        "master_key": "BOZ",
+        "longitud_mm": 1200.0
+      },
+      "parser": 1200
+    },
+    {
+      "sku": "BOR120Z",
+      "expected": 1200,
+      "db": {
+        "sku": "BOR120Z",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+        "master_key": "BORZ",
+        "longitud_mm": 1200.0
+      },
+      "parser": 1200
+    },
+    {
+      "sku": "BOR220A",
+      "expected": 2200,
+      "db": {
+        "sku": "BOR220A",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+        "master_key": "BORA",
+        "longitud_mm": 2200.0
+      },
+      "parser": 2200
+    }
+  ],
+  "negative_skus": [
+    {
+      "sku": "BTN001",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "BTN002",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "BTO001",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "BTO003",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "BTO004",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "SOP033",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "SOP042",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "VAR028",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "VAR113",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "VAR129",
+      "db_absent": true,
+      "parser_absent": true
+    },
+    {
+      "sku": "VAR159",
+      "db_absent": true,
+      "parser_absent": true
+    }
+  ],
+  "core_14_bars": [
+    {
+      "sku": "BN120",
+      "expected": 1200,
+      "db": {
+        "sku": "BN120",
+        "display_name": "Barra 28mm Cromada - 1,20 Mts",
+        "master_key": "BN",
+        "longitud_mm": 1200.0
+      },
+      "parser": 1200
+    },
+    {
+      "sku": "BN150",
+      "expected": 1500,
+      "db": {
+        "sku": "BN150",
+        "display_name": "Barra 28mm Cromada - 1,50 Mts",
+        "master_key": "BN",
+        "longitud_mm": 1500.0
+      },
+      "parser": 1500
+    },
+    {
+      "sku": "BN180",
+      "expected": 1800,
+      "db": {
+        "sku": "BN180",
+        "display_name": "Barra 28mm Cromada - 1,80 Mts",
+        "master_key": "BN",
+        "longitud_mm": 1800.0
+      },
+      "parser": 1800
+    },
+    {
+      "sku": "BN220",
+      "expected": 2200,
+      "db": {
+        "sku": "BN220",
+        "display_name": "Barra 28mm Cromada - 2,20 Mts",
+        "master_key": "BN",
+        "longitud_mm": 2200.0
+      },
+      "parser": 2200
+    },
+    {
+      "sku": "BN085",
+      "expected": 850,
+      "db": {
+        "sku": "BN085",
+        "display_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+        "master_key": "BN",
+        "longitud_mm": 850.0
+      },
+      "parser": 850
+    },
+    {
+      "sku": "BO120",
+      "expected": 1200,
+      "db": {
+        "sku": "BO120",
+        "display_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+        "master_key": "BO",
+        "longitud_mm": 1200.0
+      },
+      "parser": 1200
+    },
+    {
+      "sku": "BO150",
+      "expected": 1500,
+      "db": {
+        "sku": "BO150",
+        "display_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+        "master_key": "BO",
+        "longitud_mm": 1500.0
+      },
+      "parser": 1500
+    },
+    {
+      "sku": "BO180",
+      "expected": 1800,
+      "db": {
+        "sku": "BO180",
+        "display_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+        "master_key": "BO",
+        "longitud_mm": 1800.0
+      },
+      "parser": 1800
+    },
+    {
+      "sku": "BO220",
+      "expected": 2200,
+      "db": {
+        "sku": "BO220",
+        "display_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+        "master_key": "BO",
+        "longitud_mm": 2200.0
+      },
+      "parser": 2200
+    },
+    {
+      "sku": "BO085",
+      "expected": 850,
+      "db": {
+        "sku": "BO085",
+        "display_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+        "master_key": "BO",
+        "longitud_mm": 850.0
+      },
+      "parser": 850
+    },
+    {
+      "sku": "BOR120",
+      "expected": 1200,
+      "db": {
+        "sku": "BOR120",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+        "master_key": "BOR",
+        "longitud_mm": 1200.0
+      },
+      "parser": 1200
+    },
+    {
+      "sku": "BOR150",
+      "expected": 1500,
+      "db": {
+        "sku": "BOR150",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+        "master_key": "BOR",
+        "longitud_mm": 1500.0
+      },
+      "parser": 1500
+    },
+    {
+      "sku": "BOR180",
+      "expected": 1800,
+      "db": {
+        "sku": "BOR180",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+        "master_key": "BOR",
+        "longitud_mm": 1800.0
+      },
+      "parser": 1800
+    },
+    {
+      "sku": "BOR220",
+      "expected": 2200,
+      "db": {
+        "sku": "BOR220",
+        "display_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+        "master_key": "BOR",
+        "longitud_mm": 2200.0
+      },
+      "parser": 2200
+    }
+  ],
+  "spec_totals": {
+    "before_baseline": {
+      "peso_kg": 431,
+      "color": 189,
+      "longitud_mm": 14,
+      "smart_connect": 10,
+      "peso_lb": 4,
+      "capacidad_balones": 1
+    },
+    "after_current": {
+      "smart_connect": 10,
+      "color": 189,
+      "peso_kg": 431,
+      "peso_lb": 4,
+      "capacidad_balones": 1,
+      "longitud_mm": 20
+    },
+    "drift": {}
+  },
+  "grouping_identity": {
+    "drift_count": 0,
+    "drift_samples": [],
+    "extra_skus": []
+  },
+  "global_metrics": {
+    "rows_importable": {
+      "baseline": 871,
+      "current": 871
+    },
+    "rows_blocked": {
+      "baseline": 0,
+      "current": 0
+    },
+    "masters_total": {
+      "baseline": 534,
+      "current": 534
+    },
+    "variants_total": {
+      "baseline": 871,
+      "current": 871
+    },
+    "singleton_masters": {
+      "baseline": 489,
+      "current": 489
+    },
+    "price_entries": {
+      "current": 871
+    },
+    "catalog_items_created": {
+      "current": 871
+    }
+  },
+  "page_metrics": {
+    "11": {
+      "rows": 30,
+      "with_longitud": 0
+    },
+    "12": {
+      "rows": 39,
+      "with_longitud": 0
+    },
+    "13": {
+      "rows": 30,
+      "with_longitud": 0
+    },
+    "14": {
+      "rows": 22,
+      "with_longitud": 0
+    },
+    "34": {
+      "rows": 26,
+      "with_longitud": 20
+    },
+    "35": {
+      "rows": 5,
+      "with_longitud": 0
+    }
+  },
+  "failures": [],
+  "recommendation": "B1 validated — proceed to profile visibility batch (longitud_mm in barras profile)"
+}

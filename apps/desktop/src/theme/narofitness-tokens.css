@@ -1,0 +1,107 @@
+/**
+ * Narofitness App Design System v2.0 â€” color tokens
+ * Agent 1B â€” dark-first theme (Phase A + B)
+ *
+ * Primitives are documented hex values. Semantic tokens use HSL triplets
+ * consumed by Tailwind via hsl(var(--token)).
+ */
+
+:root {
+  /* â”€â”€ Brand primitives (hex) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  --nr-black: #050504;
+  --nr-graphite: #111110;
+  --nr-surface: #1a1b1a;
+  --nr-surface-2: #272727;
+  --nr-border: #3b3d3e;
+  --nr-border-soft: #515456;
+  --nr-text: #f2f2f2;
+  --nr-text-muted: #aaabab;
+  --nr-text-subtle: #868786;
+  --nr-white: #f9f9f9;
+  --nr-green: #638b06;
+  --nr-green-bright: #699505;
+  --nr-green-dark: #2f4702;
+  --nr-green-soft-bg: #182208;
+
+  /* â”€â”€ Semantic tokens (HSL triplets for Tailwind/shadcn) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* background.app */
+  --background: 60 8% 2%;
+  /* text.primary */
+  --foreground: 0 0% 95%;
+  /* background.sidebar / elevated chrome */
+  --card: 60 4% 7%;
+  --card-foreground: 0 0% 95%;
+  /* accent.primary â€” controlled brand green (CTAs, active nav icon) */
+  --primary: 76 92% 28%;
+  --primary-foreground: 0 0% 98%;
+  /* button.secondary / steel surfaces */
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 95%;
+  /* muted panels, tab lists, table zebra base */
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 67%;
+  /* accent.soft â€” selected nav, soft highlights (not solid green fill) */
+  --accent: 78 67% 8%;
+  --accent-foreground: 74 94% 31%;
+  /* functional â€” never use brand green for destructive */
+  --destructive: 0 72% 58%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 210 2% 24%;
+  --input: 210 2% 24%;
+  --ring: 74 94% 40%;
+  /* success distinct from primary CTA green */
+  --success: 152 45% 42%;
+  --warning: 38 92% 50%;
+
+  /* â”€â”€ Row / state tokens (Phase C migration â€” defined, not yet wired) â”€â”€ */
+  --row-warning-bg: 38 40% 12%;
+  --row-error-bg: 0 45% 12%;
+  --row-info-a-bg: 25 45% 12%;
+  --row-info-b-bg: 210 18% 14%;
+  --row-selected-bg: 78 67% 10%;
+  --row-hover-bg: 0 0% 18%;
+
+  /* â”€â”€ Preview / print canvas (always light â€” not app dark theme) â”€â”€â”€â”€â”€â”€â”€ */
+  /* App Status Bar (SHARED-4 Phase 1 / 1.1 polish) */
+  --statusbar-height: 2rem;
+  --statusbar-bg: var(--nr-green);
+  --statusbar-zone-system-bg: var(--nr-green-dark);
+  --statusbar-fg: var(--nr-white);
+  --statusbar-outer-border: rgba(5, 5, 4, 0.92);
+  --statusbar-separator: rgba(255, 255, 255, 0.22);
+  --statusbar-highlight: rgba(255, 255, 255, 0.08);
+  /* legacy alias */
+  --statusbar-border: var(--statusbar-outer-border);
+
+  --preview-canvas: #ffffff;
+
+  /* â”€â”€ Layout (non-color) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  --radius: 0.625rem;
+  --builder-sidebar-width: 260px;
+  --table-min-height: 480px;
+  --editor-tab-min-height: 560px;
+  /* SCROLL-LAYOUT-1: legacy offset — preview no longer uses 100vh calc */
+  --builder-header-offset: 7.5rem;
+  --app-statusbar-height: var(--statusbar-height);
+  --app-main-padding-y: 1.5rem;
+
+  /* UX 3.0 responsive / touch foundations (Phase 0) — non-visual until consumed */
+  --touch-target-min: 2.75rem; /* 44px — WCAG 2.5.5 recommended minimum */
+  --touch-target-gap: 0.5rem; /* 8px — minimum separation between adjacent targets */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+
+  color-scheme: dark;
+}
+
+/*
+ * Rollback reference â€” pre-v2 light theme (do not delete until Phase E)
+ *
+ * --background: 210 20% 98%;
+ * --foreground: 222 20% 18%;
+ * --card: 0 0% 100%;
+ * --primary: 214 100% 55%;
+ * ...
+ */

@@ -1,0 +1,176 @@
+{
+  "generated_at": "2026-06-11T20:02:51.932214+00:00",
+  "count": 24,
+  "category_slugs": [
+    "agarres",
+    "air-bike",
+    "bancos-jaulas-y-soportes",
+    "barras",
+    "bicicletas-estaticas",
+    "boxeo",
+    "cardio",
+    "ciclo-indoor",
+    "cintas-de-correr",
+    "cross-training",
+    "discos",
+    "elipticas",
+    "home",
+    "linea-a-placas",
+    "linea-convergente-a-disco",
+    "mancuernas",
+    "material-de-estudio",
+    "musculacion",
+    "racks-y-estructuras",
+    "remos",
+    "repuestos",
+    "soportes-y-mancuerneros",
+    "stepper",
+    "suelos"
+  ],
+  "categories": [
+    {
+      "id": "043c9a75-e7f1-46df-b77c-cac64d2ca2a2",
+      "slug": "agarres",
+      "name": "Agarres",
+      "parent_slug": null
+    },
+    {
+      "id": "8642253e-35b0-4cb2-b552-0c48486cf1d1",
+      "slug": "air-bike",
+      "name": "Air Bike",
+      "parent_slug": "cardio"
+    },
+    {
+      "id": "ab8975c8-84f7-44da-9868-c530714f52f4",
+      "slug": "bancos-jaulas-y-soportes",
+      "name": "Bancos, jaulas y soportes",
+      "parent_slug": "musculacion"
+    },
+    {
+      "id": "fdf1030f-d7f1-4aa4-b551-96181de23bfb",
+      "slug": "barras",
+      "name": "Barras",
+      "parent_slug": null
+    },
+    {
+      "id": "38e1101b-9724-4fbf-9b02-d8f10c93eeef",
+      "slug": "bicicletas-estaticas",
+      "name": "Bicicletas Estáticas",
+      "parent_slug": "cardio"
+    },
+    {
+      "id": "df86d29e-c929-47d9-b976-3b8add325655",
+      "slug": "boxeo",
+      "name": "Boxeo",
+      "parent_slug": null
+    },
+    {
+      "id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "slug": "cardio",
+      "name": "Cardio",
+      "parent_slug": null
+    },
+    {
+      "id": "f88e179e-d569-4543-adf5-5997b22fb5fe",
+      "slug": "ciclo-indoor",
+      "name": "Ciclo Indoor",
+      "parent_slug": "cardio"
+    },
+    {
+      "id": "feab2a6e-e366-4ecd-a5cc-2586100644fc",
+      "slug": "cintas-de-correr",
+      "name": "Cintas de correr",
+      "parent_slug": "cardio"
+    },
+    {
+      "id": "49eb3301-bfd0-49b3-b409-eb045bebf32d",
+      "slug": "cross-training",
+      "name": "Cross Training",
+      "parent_slug": null
+    },
+    {
+      "id": "ef2ff281-931e-4df6-88c1-3098054e0f95",
+      "slug": "discos",
+      "name": "Discos",
+      "parent_slug": null
+    },
+    {
+      "id": "9eda5631-9b62-4c47-9ad7-c5bc1e9369e8",
+      "slug": "elipticas",
+      "name": "Elípticas",
+      "parent_slug": "cardio"
+    },
+    {
+      "id": "73df5058-2921-4e3b-8ffd-25c220346c84",
+      "slug": "home",
+      "name": "Home",
+      "parent_slug": null
+    },
+    {
+      "id": "8b0dcb92-3bf1-40f2-9542-24b155383e66",
+      "slug": "linea-a-placas",
+      "name": "Linea a placas",
+      "parent_slug": "musculacion"
+    },
+    {
+      "id": "d85f070d-a98e-4c9d-a73f-58509732153b",
+      "slug": "linea-convergente-a-disco",
+      "name": "Linea convergente a disco",
+      "parent_slug": "musculacion"
+    },
+    {
+      "id": "b6bebe83-8ea6-49d0-9171-f004d217584f",
+      "slug": "mancuernas",
+      "name": "Mancuernas",
+      "parent_slug": null
+    },
+    {
+      "id": "3d8eb816-b12d-4c44-bb0a-544491ec723a",
+      "slug": "material-de-estudio",
+      "name": "Material de estudio",
+      "parent_slug": null
+    },
+    {
+      "id": "6dfcce92-ef80-4993-89d1-c908c3bc8cfd",
+      "slug": "musculacion",
+      "name": "Musculación",
+      "parent_slug": null
+    },
+    {
+      "id": "c5847cd0-2a5a-47b7-9380-a474aebb7edf",
+      "slug": "racks-y-estructuras",
+      "name": "Racks y Estructuras",
+      "parent_slug": null
+    },
+    {
+      "id": "730ace22-e426-4038-8eac-e18ad7f7332d",
+      "slug": "remos",
+      "name": "Remos",
+      "parent_slug": "cardio"
+    },
+    {
+      "id": "55fb9f01-585f-422b-8fb2-572e45e5a6a5",
+      "slug": "repuestos",
+      "name": "Repuestos",
+      "parent_slug": null
+    },
+    {
+      "id": "0d60d4f2-afb0-4781-93fd-5361c70e6054",
+      "slug": "soportes-y-mancuerneros",
+      "name": "Soportes y Mancuerneros",
+      "parent_slug": null
+    },
+    {
+      "id": "6a159627-b79a-48b0-8987-a6edc9113139",
+      "slug": "stepper",
+      "name": "Stepper",
+      "parent_slug": "cardio"
+    },
+    {
+      "id": "2153c27b-0240-4526-be00-24b572033c06",
+      "slug": "suelos",
+      "name": "Suelos",
+      "parent_slug": null
+    }
+  ]
+}

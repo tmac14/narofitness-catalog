@@ -1,0 +1,35 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B3A-BARRAS-PROFILE-POST-VALIDATION",
+  "environment": "docker disposable (npm run db:reset:full:wipe x4)",
+  "commands": [
+    "npm run db:reset:full:wipe",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/.../post_b3a_barras_profile_validation/_b3a_post_validation.py\"",
+    "npm run audit:category-contamination",
+    "npm run audit:page-import -- --page=13 --ensure-pim-seed --report-format=both",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app pytest tests/test_category_spec_profiles_barras.py tests/test_fdl_bar_length_extract.py tests/test_import_grouping_bar_length.py -q\"",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app RUN_INTEGRATION=1 pytest tests/test_category_spec_profiles_barras.py -q\"",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app pytest tests/ -q -m 'not integration'\"",
+    "npm run audit:page-import -- --page=11|12|14|34|35 --ensure-pim-seed --report-format=both"
+  ],
+  "page_import_results": {
+    "11": "PASS (after wipe; one transient FK fail in batch run documented in page13_diagnosis.json)",
+    "12": "PASS",
+    "13": "PASS",
+    "14": "PASS",
+    "34": "PASS",
+    "35": "PASS"
+  },
+  "test_failures_unrelated_to_b3a": [
+    "tests/test_background_jobs.py::test_migration_005_background_jobs_revision",
+    "tests/test_import_grouping_explicit_one_per_sku.py::test_explicit_one_per_sku_negative_unit[numeric_sku_cro107nexo_negative.json]",
+    "tests/test_import_spec_validate.py::test_dobnexo_extracts_common_specs_from_name",
+    "tests/test_layout_selector.py::test_registry_has_three_layouts",
+    "tests/test_layout_selector.py::test_list_layouts_serializable",
+    "tests/test_spec_resolver.py::test_format_spec_display_without_unit",
+    "tests/test_spec_resolver.py::test_format_spec_display_other_unit"
+  ],
+  "b3a_tests": {
+    "unit_and_grouping": "54 passed, 8 skipped (integration marker)",
+    "integration_b3a_only": "9 passed"
+  }
+}

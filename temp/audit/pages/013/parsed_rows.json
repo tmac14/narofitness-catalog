@@ -1,0 +1,695 @@
+[
+  {
+    "page_number": 13,
+    "source_row_index": 122,
+    "raw_line_index": 1,
+    "raw_lines": [
+      "Wall Ball Doble costura 3 kgs Negro FDL",
+      "CRO095",
+      "8435657001537",
+      "24,79 €"
+    ],
+    "raw_sku": "CRO095",
+    "normalized_sku": "CRO095",
+    "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 3 kgs Negro FDL",
+    "normalized_name": "Wall Ball Doble costura 3 kgs Negro",
+    "price": "24.79",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 123,
+    "raw_line_index": 5,
+    "raw_lines": [
+      "Wall Ball Doble costura 4 kgs Negro FDL",
+      "CRO127",
+      "8435657018344",
+      "26,29 €"
+    ],
+    "raw_sku": "CRO127",
+    "normalized_sku": "CRO127",
+    "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 4 kgs Negro FDL",
+    "normalized_name": "Wall Ball Doble costura 4 kgs Negro",
+    "price": "26.29",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 124,
+    "raw_line_index": 9,
+    "raw_lines": [
+      "Wall Ball Doble costura 5 kgs Negro FDL",
+      "CRO096",
+      "8435657001544",
+      "28,42 €"
+    ],
+    "raw_sku": "CRO096",
+    "normalized_sku": "CRO096",
+    "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 5 kgs Negro FDL",
+    "normalized_name": "Wall Ball Doble costura 5 kgs Negro",
+    "price": "28.42",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 125,
+    "raw_line_index": 13,
+    "raw_lines": [
+      "Wall Ball Doble costura 6 kgs Negro FDL",
+      "CRO097",
+      "8435657001551",
+      "30,60 €"
+    ],
+    "raw_sku": "CRO097",
+    "normalized_sku": "CRO097",
+    "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 6 kgs Negro FDL",
+    "normalized_name": "Wall Ball Doble costura 6 kgs Negro",
+    "price": "30.60",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 126,
+    "raw_line_index": 17,
+    "raw_lines": [
+      "Wall Ball Doble costura 7 kgs Negro FDL",
+      "CRO098",
+      "8435657001568",
+      "32,80 €"
+    ],
+    "raw_sku": "CRO098",
+    "normalized_sku": "CRO098",
+    "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 7 kgs Negro FDL",
+    "normalized_name": "Wall Ball Doble costura 7 kgs Negro",
+    "price": "32.80",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 127,
+    "raw_line_index": 21,
+    "raw_lines": [
+      "Wall Ball Doble costura 9 kgs Negro FDL",
+      "CRO099",
+      "8435657001575",
+      "36,44 €"
+    ],
+    "raw_sku": "CRO099",
+    "normalized_sku": "CRO099",
+    "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 9 kgs Negro FDL",
+    "normalized_name": "Wall Ball Doble costura 9 kgs Negro",
+    "price": "36.44",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 128,
+    "raw_line_index": 25,
+    "raw_lines": [
+      "Wall Ball Doble costura 12 kgs Negro FDL",
+      "CRO100",
+      "8435657001582",
+      "40,60 €"
+    ],
+    "raw_sku": "CRO100",
+    "normalized_sku": "CRO100",
+    "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 12 kgs Negro FDL",
+    "normalized_name": "Wall Ball Doble costura 12 kgs Negro",
+    "price": "40.60",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 129,
+    "raw_line_index": 30,
+    "raw_lines": [
+      "Wall Ball Doble costura 3 kgs Negro NEXO",
+      "CRO136",
+      "8435657018641",
+      "24,79 €"
+    ],
+    "raw_sku": "CRO136",
+    "normalized_sku": "CRO136",
+    "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 3 kgs Negro NEXO",
+    "normalized_name": "Wall Ball Doble costura 3 kgs Negro",
+    "price": "24.79",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 130,
+    "raw_line_index": 34,
+    "raw_lines": [
+      "Wall Ball Doble costura 4 kgs Negro NEXO",
+      "CRO142",
+      "8435657018993",
+      "26,29 €"
+    ],
+    "raw_sku": "CRO142",
+    "normalized_sku": "CRO142",
+    "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 4 kgs Negro NEXO",
+    "normalized_name": "Wall Ball Doble costura 4 kgs Negro",
+    "price": "26.29",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 131,
+    "raw_line_index": 38,
+    "raw_lines": [
+      "Wall Ball Doble costura 5 kgs Negro NEXO",
+      "CRO137",
+      "8435657018658",
+      "28,42 €"
+    ],
+    "raw_sku": "CRO137",
+    "normalized_sku": "CRO137",
+    "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 5 kgs Negro NEXO",
+    "normalized_name": "Wall Ball Doble costura 5 kgs Negro",
+    "price": "28.42",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 132,
+    "raw_line_index": 42,
+    "raw_lines": [
+      "Wall Ball Doble costura 6 kgs Negro NEXO",
+      "CRO138",
+      "8435657018665",
+      "30,60 €"
+    ],
+    "raw_sku": "CRO138",
+    "normalized_sku": "CRO138",
+    "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 6 kgs Negro NEXO",
+    "normalized_name": "Wall Ball Doble costura 6 kgs Negro",
+    "price": "30.60",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 133,
+    "raw_line_index": 46,
+    "raw_lines": [
+      "Wall Ball Doble costura 7 kgs Negro NEXO",
+      "CRO139",
+      "8435657018672",
+      "32,80 €"
+    ],
+    "raw_sku": "CRO139",
+    "normalized_sku": "CRO139",
+    "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 7 kgs Negro NEXO",
+    "normalized_name": "Wall Ball Doble costura 7 kgs Negro",
+    "price": "32.80",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 134,
+    "raw_line_index": 50,
+    "raw_lines": [
+      "Wall Ball Doble costura 9 kgs Negro NEXO",
+      "CRO140",
+      "8435657018689",
+      "36,44 €"
+    ],
+    "raw_sku": "CRO140",
+    "normalized_sku": "CRO140",
+    "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 9 kgs Negro NEXO",
+    "normalized_name": "Wall Ball Doble costura 9 kgs Negro",
+    "price": "36.44",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 135,
+    "raw_line_index": 54,
+    "raw_lines": [
+      "Wall Ball Doble costura 12 kgs Negro NEXO",
+      "CRO141",
+      "8435657018696",
+      "40,60 €"
+    ],
+    "raw_sku": "CRO141",
+    "normalized_sku": "CRO141",
+    "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 12 kgs Negro NEXO",
+    "normalized_name": "Wall Ball Doble costura 12 kgs Negro",
+    "price": "40.60",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 136,
+    "raw_line_index": 59,
+    "raw_lines": [
+      "Wall Ball Doble costura 12& Negro",
+      "CRO083",
+      "8435657001445",
+      "28,30 €"
+    ],
+    "raw_sku": "CRO083",
+    "normalized_sku": "CRO083",
+    "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 12 lbs Negro",
+    "normalized_name": "Wall Ball Doble costura 12 lbs Negro",
+    "price": "28.30",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 137,
+    "raw_line_index": 63,
+    "raw_lines": [
+      "Wall Ball Doble costura 14& Negro",
+      "CRO084",
+      "8435657001452",
+      "29,65 €"
+    ],
+    "raw_sku": "CRO084",
+    "normalized_sku": "CRO084",
+    "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 14 lbs Negro",
+    "normalized_name": "Wall Ball Doble costura 14 lbs Negro",
+    "price": "29.65",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 138,
+    "raw_line_index": 67,
+    "raw_lines": [
+      "Wall Ball Doble costura 16& Negro",
+      "CRO085",
+      "8435657001469",
+      "32,34 €"
+    ],
+    "raw_sku": "CRO085",
+    "normalized_sku": "CRO085",
+    "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 16 lbs Negro",
+    "normalized_name": "Wall Ball Doble costura 16 lbs Negro",
+    "price": "32.34",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 139,
+    "raw_line_index": 71,
+    "raw_lines": [
+      "Wall Ball Doble costura 20& Negro",
+      "CRO086",
+      "8435657001476",
+      "33,70 €"
+    ],
+    "raw_sku": "CRO086",
+    "normalized_sku": "CRO086",
+    "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 20 lbs Negro",
+    "normalized_name": "Wall Ball Doble costura 20 lbs Negro",
+    "price": "33.70",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 140,
+    "raw_line_index": 76,
+    "raw_lines": [
+      "Soporte Wall Ball a pared",
+      "Medidas 148 x 27 x 10 cms",
+      "SOP055",
+      "8435657005955",
+      "72,89 €"
+    ],
+    "raw_sku": "SOP055",
+    "normalized_sku": "SOP055",
+    "raw_name": "Soporte Wall Ball Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+    "normalized_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+    "price": "72.89",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 141,
+    "raw_line_index": 81,
+    "raw_lines": [
+      "Balones no incluidos",
+      "Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "Capacidad para 12 balones",
+      "SOP063",
+      "8435657006037",
+      "114,08 €"
+    ],
+    "raw_sku": "SOP063",
+    "normalized_sku": "SOP063",
+    "raw_name": "Soporte Wall Ball Soporte Wall ball y Balon Medicinal (con ruedas)",
+    "normalized_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+    "price": "114.08",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 142,
+    "raw_line_index": 88,
+    "raw_lines": [
+      "Power Bag Color 5 kgs NARANJA",
+      "CRO069",
+      "8435657001315",
+      "24,56 €"
+    ],
+    "raw_sku": "CRO069",
+    "normalized_sku": "CRO069",
+    "raw_name": "Power Bags Color Power Bag Color 5 kgs NARANJA",
+    "normalized_name": "Power Bag Color 5 kgs NARANJA",
+    "price": "24.56",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 143,
+    "raw_line_index": 92,
+    "raw_lines": [
+      "Power Bag Color 10 kgs ROJO",
+      "CRO070",
+      "8435657001322",
+      "28,17 €"
+    ],
+    "raw_sku": "CRO070",
+    "normalized_sku": "CRO070",
+    "raw_name": "Power Bags Color Power Bag Color 10 kgs ROJO",
+    "normalized_name": "Power Bag Color 10 kgs ROJO",
+    "price": "28.17",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 144,
+    "raw_line_index": 96,
+    "raw_lines": [
+      "Power Bag Color 15 kgs AZUL",
+      "CRO071",
+      "8435657001339",
+      "34,18 €"
+    ],
+    "raw_sku": "CRO071",
+    "normalized_sku": "CRO071",
+    "raw_name": "Power Bags Color Power Bag Color 15 kgs AZUL",
+    "normalized_name": "Power Bag Color 15 kgs AZUL",
+    "price": "34.18",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 145,
+    "raw_line_index": 100,
+    "raw_lines": [
+      "Power Bag Color 20 kgs VERDE",
+      "CRO072",
+      "8435657001346",
+      "40,77 €"
+    ],
+    "raw_sku": "CRO072",
+    "normalized_sku": "CRO072",
+    "raw_name": "Power Bags Color Power Bag Color 20 kgs VERDE",
+    "normalized_name": "Power Bag Color 20 kgs VERDE",
+    "price": "40.77",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 146,
+    "raw_line_index": 104,
+    "raw_lines": [
+      "Power Bag Color 25 kgs NEGRO",
+      "CRO073",
+      "8435657001353",
+      "48,70 €"
+    ],
+    "raw_sku": "CRO073",
+    "normalized_sku": "CRO073",
+    "raw_name": "Power Bags Color Power Bag Color 25 kgs NEGRO",
+    "normalized_name": "Power Bag Color 25 kgs NEGRO",
+    "price": "48.70",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 147,
+    "raw_line_index": 108,
+    "raw_lines": [
+      "Power Bag Color 30 kgs",
+      "CRO143",
+      "8435657019006",
+      "57,95 €"
+    ],
+    "raw_sku": "CRO143",
+    "normalized_sku": "CRO143",
+    "raw_name": "Power Bags Color Power Bag Color 30 kgs",
+    "normalized_name": "Power Bag Color 30 kgs",
+    "price": "57.95",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 148,
+    "raw_line_index": 113,
+    "raw_lines": [
+      "Saco Bulgaro 5 kgs",
+      "CRO074",
+      "8435657001360",
+      "29,75 €"
+    ],
+    "raw_sku": "CRO074",
+    "normalized_sku": "CRO074",
+    "raw_name": "Saco Bulgaro Saco Bulgaro 5 kgs",
+    "normalized_name": "Saco Bulgaro 5 kgs",
+    "price": "29.75",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 149,
+    "raw_line_index": 117,
+    "raw_lines": [
+      "Saco Bulgaro 10 kgs",
+      "CRO075",
+      "8435657001377",
+      "34,66 €"
+    ],
+    "raw_sku": "CRO075",
+    "normalized_sku": "CRO075",
+    "raw_name": "Saco Bulgaro Saco Bulgaro 10 kgs",
+    "normalized_name": "Saco Bulgaro 10 kgs",
+    "price": "34.66",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 150,
+    "raw_line_index": 121,
+    "raw_lines": [
+      "Saco Bulgaro 15 kgs",
+      "CRO076",
+      "8435657001384",
+      "40,78 €"
+    ],
+    "raw_sku": "CRO076",
+    "normalized_sku": "CRO076",
+    "raw_name": "Saco Bulgaro Saco Bulgaro 15 kgs",
+    "normalized_name": "Saco Bulgaro 15 kgs",
+    "price": "40.78",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 13,
+    "source_row_index": 151,
+    "raw_line_index": 125,
+    "raw_lines": [
+      "Saco Bulgaro 20 kgs",
+      "CRO077",
+      "8435657001391",
+      "49,71 €"
+    ],
+    "raw_sku": "CRO077",
+    "normalized_sku": "CRO077",
+    "raw_name": "Saco Bulgaro Saco Bulgaro 20 kgs",
+    "normalized_name": "Saco Bulgaro 20 kgs",
+    "price": "49.71",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  }
+]

@@ -1,0 +1,6372 @@
+{
+  "audit_version": "1.2",
+  "agent": "agent5_page_import",
+  "workflow_mode": "manual_page_by_page",
+  "generated_at": "2026-06-12T19:31:09.550760+00:00",
+  "requested_page": 12,
+  "page_number": 12,
+  "output_dir": "temp/audit/pages/012",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "parsed_full_pdf": {
+    "parse_scope": "full_pdf",
+    "total_rows_parsed": 871,
+    "total_pages_with_rows": 56
+  },
+  "rows_filtered_to_page": {
+    "requested_page": 12,
+    "count": 39,
+    "source_row_indices": [
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121
+    ],
+    "expected_skus": [
+      "CRO002",
+      "CRO003",
+      "CRO004",
+      "CRO005",
+      "CRO006",
+      "CRO023",
+      "CRO110",
+      "CRO111",
+      "CRO112",
+      "CRO113",
+      "CRO114",
+      "CRO116",
+      "CRO117",
+      "CRO118",
+      "CRO119",
+      "CRO120",
+      "CRO122",
+      "CRO123",
+      "CRO124",
+      "CRO125",
+      "CRO134",
+      "DOBCC005",
+      "DOBCC010",
+      "DOBCC015",
+      "DOBCC020",
+      "DOBCC025",
+      "DOBF005",
+      "DOBF010",
+      "DOBF015",
+      "DOBF020",
+      "DOBF025",
+      "DOBF050",
+      "DOBHT005",
+      "DOBHT010",
+      "DOBHT015",
+      "DOBHT020",
+      "DOBHT025",
+      "DOBMINI",
+      "SOP025"
+    ]
+  },
+  "reset_before_page": true,
+  "cumulative_mode": false,
+  "confirm_executed": true,
+  "imported_pages": [
+    12
+  ],
+  "reset_summary": {
+    "tables_cleared": [
+      "catalog_exports",
+      "catalog_product_layouts",
+      "catalog_items",
+      "catalogs",
+      "supplier_price_entries",
+      "supplier_price_lists",
+      "import_rows",
+      "import_batches",
+      "product_master_specs",
+      "product_variant_specs",
+      "product_images",
+      "supplier_product_family_keys",
+      "product_variants",
+      "product_masters"
+    ],
+    "tables_preserved": [
+      "categories",
+      "taxonomy_mapping_rules",
+      "suppliers",
+      "import_profiles",
+      "spec_definitions",
+      "spec_allowed_values",
+      "units",
+      "category_spec_profiles",
+      "app_settings",
+      "brands"
+    ],
+    "categories_preserved": true,
+    "taxonomy_mapping_rules_preserved": true,
+    "reset_delete_counts": {
+      "catalog_exports": 0,
+      "catalog_product_layouts": 0,
+      "catalog_items": 0,
+      "catalogs": 0,
+      "supplier_price_entries": 30,
+      "supplier_price_lists": 1,
+      "import_rows": 30,
+      "import_batches": 1,
+      "product_master_specs": 16,
+      "product_variant_specs": 50,
+      "product_images": 0,
+      "supplier_product_family_keys": 6,
+      "product_variants": 30,
+      "product_masters": 6
+    },
+    "product_masters_count_before": 6,
+    "product_masters_count_after": 0,
+    "product_variants_count_before": 30,
+    "product_variants_count_after": 0,
+    "catalogue_items_count_before": 0,
+    "catalogue_items_count_after": 0
+  },
+  "baseline_before": {
+    "canonical_categories_count": 24,
+    "canonical_category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "mapping_rules_count": 28,
+    "product_masters_count": 0,
+    "product_variants_count": 0,
+    "catalogue_items_count": 0
+  },
+  "category_snapshot_before": {
+    "generated_at": "2026-06-12T19:31:02.966589+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "category_snapshot_after": {
+    "generated_at": "2026-06-12T19:31:09.550401+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "raw_extraction": {
+    "page_number": 12,
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "lines": [
+      {
+        "line_index": 0,
+        "text": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero)",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 1,
+        "text": "Disco Bumper Hi Temp 5  kgs  (Numero Color)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 2,
+        "text": "DOBHT005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 3,
+        "text": "8435657002817",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 4,
+        "text": "19,39 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 5,
+        "text": "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 6,
+        "text": "DOBHT010",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 7,
+        "text": "8435657002824",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 8,
+        "text": "28,98 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 9,
+        "text": "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 10,
+        "text": "DOBHT015",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 11,
+        "text": "8435657002831",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 12,
+        "text": "41,05 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 13,
+        "text": "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 14,
+        "text": "DOBHT020",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 15,
+        "text": "8435657002848",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 16,
+        "text": "48,53 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 17,
+        "text": "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 18,
+        "text": "DOBHT025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 19,
+        "text": "8435657002855",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 20,
+        "text": "56,49 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 21,
+        "text": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 22,
+        "text": "Disco Bumper Competicion 5 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 23,
+        "text": "DOBCC005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 24,
+        "text": "8435657002718",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 25,
+        "text": "34,04 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 26,
+        "text": "Disco Bumper Competicion 10 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 27,
+        "text": "DOBCC010",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 28,
+        "text": "8435657002725",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 29,
+        "text": "58,68 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 30,
+        "text": "Disco Bumper Competicion 15 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 31,
+        "text": "DOBCC015",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 32,
+        "text": "8435657002732",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 33,
+        "text": "79,94 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 34,
+        "text": "Disco Bumper Competicion 20 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 35,
+        "text": "DOBCC020",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 36,
+        "text": "8435657002749",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 37,
+        "text": "99,88 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 38,
+        "text": "Disco Bumper Competicion 25 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 39,
+        "text": "DOBCC025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 40,
+        "text": "8435657002756",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 41,
+        "text": "115,84 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 42,
+        "text": "Disco Olimpico Bumper Color Fraccional",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 43,
+        "text": "Disco Bumper Color Fraccional 0,5 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 44,
+        "text": "DOBF005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 45,
+        "text": "8435657002763",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 46,
+        "text": "3,78 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 47,
+        "text": "Disco Bumper Color Fraccional 1 kg",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 48,
+        "text": "DOBF010",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 49,
+        "text": "8435657002770",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 50,
+        "text": "7,56 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 51,
+        "text": "Disco Bumper Color Fraccional 1,5 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 52,
+        "text": "DOBF015",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 53,
+        "text": "8435657002787",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 54,
+        "text": "11,33 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 55,
+        "text": "Disco Bumper Color Fraccional 2 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 56,
+        "text": "DOBF020",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 57,
+        "text": "8435657002794",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 58,
+        "text": "15,11 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 59,
+        "text": "Disco Bumper Color Fraccional 2,5 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 60,
+        "text": "DOBF025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 61,
+        "text": "8435657002800",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 62,
+        "text": "18,89 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 63,
+        "text": "Disco Bumper Color Fraccional 5 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 64,
+        "text": "DOBF050",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 65,
+        "text": "8435657014094",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 66,
+        "text": "39,58 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 67,
+        "text": "Soporte Discos Bumper",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 68,
+        "text": "Sopote para juego de  Discos Bumper",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 69,
+        "text": "SOP025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 70,
+        "text": "8435657005689",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 71,
+        "text": "92,77 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 72,
+        "text": "el color del articulo puede variar",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 73,
+        "text": "Disco Olimpico Bumper Mini",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 74,
+        "text": "Juego Disco Olimpico Bumper Mini",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 75,
+        "text": "(2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 76,
+        "text": "DOBMINI",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 77,
+        "text": "8435657002862",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 78,
+        "text": "56,80 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 79,
+        "text": "Slam Ball -  Negro",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 80,
+        "text": "Slam Ball 6 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 81,
+        "text": "CRO110",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 82,
+        "text": "8435657018061",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 83,
+        "text": "10,78 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 84,
+        "text": "Slam Ball 8 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 85,
+        "text": "CRO118",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 86,
+        "text": "8435657018269",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 87,
+        "text": "12,57 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 88,
+        "text": "Slam Ball 10 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 89,
+        "text": "CRO111",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 90,
+        "text": "8435657018078",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 91,
+        "text": "15,02 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 92,
+        "text": "Slam Ball 12 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 93,
+        "text": "CRO112",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 94,
+        "text": "8435657018108",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 95,
+        "text": "17,24 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 96,
+        "text": "Slam Ball 15 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 97,
+        "text": "CRO119",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 98,
+        "text": "8435657018276",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 99,
+        "text": "23,91 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 100,
+        "text": "Slam Ball 20 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 101,
+        "text": "CRO113",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 102,
+        "text": "8435657018092",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 103,
+        "text": "36,11 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 104,
+        "text": "Slam Ball 25 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 105,
+        "text": "CRO120",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 106,
+        "text": "8435657018290",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 107,
+        "text": "42,58 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 108,
+        "text": "Slam Ball 30 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 109,
+        "text": "CRO114",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 110,
+        "text": "8435657018085",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 111,
+        "text": "47,62 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 112,
+        "text": "Slam Ball 35 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 113,
+        "text": "CRO116",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 114,
+        "text": "8435657018245",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 115,
+        "text": "55,30 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 116,
+        "text": "Slam Ball 40 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 117,
+        "text": "CRO122",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 118,
+        "text": "8435657018306",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 119,
+        "text": "63,49 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 120,
+        "text": "Slam Ball 45 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 121,
+        "text": "CRO123",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 122,
+        "text": "8435657018313",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 123,
+        "text": "71,42 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 124,
+        "text": "Slam Ball 50 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 125,
+        "text": "CRO124",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 126,
+        "text": "8435657018320",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 127,
+        "text": "79,37 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 128,
+        "text": "Slam Ball 55 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 129,
+        "text": "CRO125",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 130,
+        "text": "8435657018337",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 131,
+        "text": "87,29 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 132,
+        "text": "Slam Ball 60 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 133,
+        "text": "CRO117",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 134,
+        "text": "8435657018252",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 135,
+        "text": "95,24 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 136,
+        "text": "Slam Ball 70 kgs Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 137,
+        "text": "CRO134",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 138,
+        "text": "8435657018511",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 139,
+        "text": "110,73 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 140,
+        "text": "Wall Balls Doble Costura Color kgs",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 141,
+        "text": "Wall Ball Doble costura 3 kgs Color",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 142,
+        "text": "CRO002",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 143,
+        "text": "8435657000752",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 144,
+        "text": "25,84 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 145,
+        "text": "Wall Ball Doble costura 5 kgs Color",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 146,
+        "text": "CRO003",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 147,
+        "text": "8435657000769",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 148,
+        "text": "29,38 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 149,
+        "text": "Wall Ball Doble costura 6 kgs Color",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 150,
+        "text": "CRO004",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 151,
+        "text": "8435657000776",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 152,
+        "text": "31,45 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 153,
+        "text": "Wall Ball Doble costura 7 kgs Color",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 154,
+        "text": "CRO005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 155,
+        "text": "8435657000783",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 156,
+        "text": "33,10 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 157,
+        "text": "Wall Ball Doble costura 9 kgs Color",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 158,
+        "text": "CRO006",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 159,
+        "text": "8435657000790",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 160,
+        "text": "36,65 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 161,
+        "text": "Wall Ball Doble costura 12 kgs Color",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 162,
+        "text": "CRO023",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 163,
+        "text": "8435657000929",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 164,
+        "text": "40,71 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      }
+    ],
+    "unparsed_candidates": []
+  },
+  "parsed_rows": [
+    {
+      "page_number": 12,
+      "source_row_index": 83,
+      "raw_line_index": 1,
+      "raw_lines": [
+        "Disco Bumper Hi Temp 5  kgs  (Numero Color)",
+        "DOBHT005",
+        "8435657002817",
+        "19,39 €"
+      ],
+      "raw_sku": "DOBHT005",
+      "normalized_sku": "DOBHT005",
+      "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 5 kgs (Numero Color)",
+      "normalized_name": "Disco Bumper Hi Temp 5 kgs (Numero Color)",
+      "price": "19.39",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 84,
+      "raw_line_index": 5,
+      "raw_lines": [
+        "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+        "DOBHT010",
+        "8435657002824",
+        "28,98 €"
+      ],
+      "raw_sku": "DOBHT010",
+      "normalized_sku": "DOBHT010",
+      "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 10 kgs (Numero Color)",
+      "normalized_name": "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+      "price": "28.98",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 85,
+      "raw_line_index": 9,
+      "raw_lines": [
+        "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+        "DOBHT015",
+        "8435657002831",
+        "41,05 €"
+      ],
+      "raw_sku": "DOBHT015",
+      "normalized_sku": "DOBHT015",
+      "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 15 kgs (Numero Color)",
+      "normalized_name": "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+      "price": "41.05",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 86,
+      "raw_line_index": 13,
+      "raw_lines": [
+        "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+        "DOBHT020",
+        "8435657002848",
+        "48,53 €"
+      ],
+      "raw_sku": "DOBHT020",
+      "normalized_sku": "DOBHT020",
+      "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 20 kgs (Numero Color)",
+      "normalized_name": "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+      "price": "48.53",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 87,
+      "raw_line_index": 17,
+      "raw_lines": [
+        "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+        "DOBHT025",
+        "8435657002855",
+        "56,49 €"
+      ],
+      "raw_sku": "DOBHT025",
+      "normalized_sku": "DOBHT025",
+      "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 25 kgs (Numero Color)",
+      "normalized_name": "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+      "price": "56.49",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 88,
+      "raw_line_index": 22,
+      "raw_lines": [
+        "Disco Bumper Competicion 5 kgs",
+        "DOBCC005",
+        "8435657002718",
+        "34,04 €"
+      ],
+      "raw_sku": "DOBCC005",
+      "normalized_sku": "DOBCC005",
+      "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 5 kgs",
+      "normalized_name": "Disco Bumper Competicion 5 kgs",
+      "price": "34.04",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 89,
+      "raw_line_index": 26,
+      "raw_lines": [
+        "Disco Bumper Competicion 10 kgs",
+        "DOBCC010",
+        "8435657002725",
+        "58,68 €"
+      ],
+      "raw_sku": "DOBCC010",
+      "normalized_sku": "DOBCC010",
+      "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 10 kgs",
+      "normalized_name": "Disco Bumper Competicion 10 kgs",
+      "price": "58.68",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 90,
+      "raw_line_index": 30,
+      "raw_lines": [
+        "Disco Bumper Competicion 15 kgs",
+        "DOBCC015",
+        "8435657002732",
+        "79,94 €"
+      ],
+      "raw_sku": "DOBCC015",
+      "normalized_sku": "DOBCC015",
+      "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 15 kgs",
+      "normalized_name": "Disco Bumper Competicion 15 kgs",
+      "price": "79.94",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 91,
+      "raw_line_index": 34,
+      "raw_lines": [
+        "Disco Bumper Competicion 20 kgs",
+        "DOBCC020",
+        "8435657002749",
+        "99,88 €"
+      ],
+      "raw_sku": "DOBCC020",
+      "normalized_sku": "DOBCC020",
+      "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 20 kgs",
+      "normalized_name": "Disco Bumper Competicion 20 kgs",
+      "price": "99.88",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 92,
+      "raw_line_index": 38,
+      "raw_lines": [
+        "Disco Bumper Competicion 25 kgs",
+        "DOBCC025",
+        "8435657002756",
+        "115,84 €"
+      ],
+      "raw_sku": "DOBCC025",
+      "normalized_sku": "DOBCC025",
+      "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 25 kgs",
+      "normalized_name": "Disco Bumper Competicion 25 kgs",
+      "price": "115.84",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 93,
+      "raw_line_index": 43,
+      "raw_lines": [
+        "Disco Bumper Color Fraccional 0,5 kgs",
+        "DOBF005",
+        "8435657002763",
+        "3,78 €"
+      ],
+      "raw_sku": "DOBF005",
+      "normalized_sku": "DOBF005",
+      "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 0,5 kgs",
+      "normalized_name": "Disco Bumper Color Fraccional 0,5 kgs",
+      "price": "3.78",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 94,
+      "raw_line_index": 47,
+      "raw_lines": [
+        "Disco Bumper Color Fraccional 1 kg",
+        "DOBF010",
+        "8435657002770",
+        "7,56 €"
+      ],
+      "raw_sku": "DOBF010",
+      "normalized_sku": "DOBF010",
+      "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 1 kg",
+      "normalized_name": "Disco Bumper Color Fraccional 1 kg",
+      "price": "7.56",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 95,
+      "raw_line_index": 51,
+      "raw_lines": [
+        "Disco Bumper Color Fraccional 1,5 kgs",
+        "DOBF015",
+        "8435657002787",
+        "11,33 €"
+      ],
+      "raw_sku": "DOBF015",
+      "normalized_sku": "DOBF015",
+      "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 1,5 kgs",
+      "normalized_name": "Disco Bumper Color Fraccional 1,5 kgs",
+      "price": "11.33",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 96,
+      "raw_line_index": 55,
+      "raw_lines": [
+        "Disco Bumper Color Fraccional 2 kgs",
+        "DOBF020",
+        "8435657002794",
+        "15,11 €"
+      ],
+      "raw_sku": "DOBF020",
+      "normalized_sku": "DOBF020",
+      "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 2 kgs",
+      "normalized_name": "Disco Bumper Color Fraccional 2 kgs",
+      "price": "15.11",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 97,
+      "raw_line_index": 59,
+      "raw_lines": [
+        "Disco Bumper Color Fraccional 2,5 kgs",
+        "DOBF025",
+        "8435657002800",
+        "18,89 €"
+      ],
+      "raw_sku": "DOBF025",
+      "normalized_sku": "DOBF025",
+      "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 2,5 kgs",
+      "normalized_name": "Disco Bumper Color Fraccional 2,5 kgs",
+      "price": "18.89",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 98,
+      "raw_line_index": 63,
+      "raw_lines": [
+        "Disco Bumper Color Fraccional 5 kgs",
+        "DOBF050",
+        "8435657014094",
+        "39,58 €"
+      ],
+      "raw_sku": "DOBF050",
+      "normalized_sku": "DOBF050",
+      "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 5 kgs",
+      "normalized_name": "Disco Bumper Color Fraccional 5 kgs",
+      "price": "39.58",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 99,
+      "raw_line_index": 68,
+      "raw_lines": [
+        "Sopote para juego de  Discos Bumper",
+        "SOP025",
+        "8435657005689",
+        "92,77 €"
+      ],
+      "raw_sku": "SOP025",
+      "normalized_sku": "SOP025",
+      "raw_name": "Soporte Discos Bumper Soporte para juego de Discos Bumper",
+      "normalized_name": "Soporte para juego de Discos Bumper",
+      "price": "92.77",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 100,
+      "raw_line_index": 74,
+      "raw_lines": [
+        "Juego Disco Olimpico Bumper Mini",
+        "(2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+        "DOBMINI",
+        "8435657002862",
+        "56,80 €"
+      ],
+      "raw_sku": "DOBMINI",
+      "normalized_sku": "DOBMINI",
+      "raw_name": "Disco Olimpico Bumper Mini Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "normalized_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "price": "56.80",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 101,
+      "raw_line_index": 80,
+      "raw_lines": [
+        "Slam Ball 6 kgs Negro",
+        "CRO110",
+        "8435657018061",
+        "10,78 €"
+      ],
+      "raw_sku": "CRO110",
+      "normalized_sku": "CRO110",
+      "raw_name": "Slam Ball -  Negro Slam Ball 6 kgs Negro",
+      "normalized_name": "Slam Ball 6 kgs Negro",
+      "price": "10.78",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 102,
+      "raw_line_index": 84,
+      "raw_lines": [
+        "Slam Ball 8 kgs Negro",
+        "CRO118",
+        "8435657018269",
+        "12,57 €"
+      ],
+      "raw_sku": "CRO118",
+      "normalized_sku": "CRO118",
+      "raw_name": "Slam Ball -  Negro Slam Ball 8 kgs Negro",
+      "normalized_name": "Slam Ball 8 kgs Negro",
+      "price": "12.57",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 103,
+      "raw_line_index": 88,
+      "raw_lines": [
+        "Slam Ball 10 kgs Negro",
+        "CRO111",
+        "8435657018078",
+        "15,02 €"
+      ],
+      "raw_sku": "CRO111",
+      "normalized_sku": "CRO111",
+      "raw_name": "Slam Ball -  Negro Slam Ball 10 kgs Negro",
+      "normalized_name": "Slam Ball 10 kgs Negro",
+      "price": "15.02",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 104,
+      "raw_line_index": 92,
+      "raw_lines": [
+        "Slam Ball 12 kgs Negro",
+        "CRO112",
+        "8435657018108",
+        "17,24 €"
+      ],
+      "raw_sku": "CRO112",
+      "normalized_sku": "CRO112",
+      "raw_name": "Slam Ball -  Negro Slam Ball 12 kgs Negro",
+      "normalized_name": "Slam Ball 12 kgs Negro",
+      "price": "17.24",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 105,
+      "raw_line_index": 96,
+      "raw_lines": [
+        "Slam Ball 15 kgs Negro",
+        "CRO119",
+        "8435657018276",
+        "23,91 €"
+      ],
+      "raw_sku": "CRO119",
+      "normalized_sku": "CRO119",
+      "raw_name": "Slam Ball -  Negro Slam Ball 15 kgs Negro",
+      "normalized_name": "Slam Ball 15 kgs Negro",
+      "price": "23.91",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 106,
+      "raw_line_index": 100,
+      "raw_lines": [
+        "Slam Ball 20 kgs Negro",
+        "CRO113",
+        "8435657018092",
+        "36,11 €"
+      ],
+      "raw_sku": "CRO113",
+      "normalized_sku": "CRO113",
+      "raw_name": "Slam Ball -  Negro Slam Ball 20 kgs Negro",
+      "normalized_name": "Slam Ball 20 kgs Negro",
+      "price": "36.11",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 107,
+      "raw_line_index": 104,
+      "raw_lines": [
+        "Slam Ball 25 kgs Negro",
+        "CRO120",
+        "8435657018290",
+        "42,58 €"
+      ],
+      "raw_sku": "CRO120",
+      "normalized_sku": "CRO120",
+      "raw_name": "Slam Ball -  Negro Slam Ball 25 kgs Negro",
+      "normalized_name": "Slam Ball 25 kgs Negro",
+      "price": "42.58",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 108,
+      "raw_line_index": 108,
+      "raw_lines": [
+        "Slam Ball 30 kgs Negro",
+        "CRO114",
+        "8435657018085",
+        "47,62 €"
+      ],
+      "raw_sku": "CRO114",
+      "normalized_sku": "CRO114",
+      "raw_name": "Slam Ball -  Negro Slam Ball 30 kgs Negro",
+      "normalized_name": "Slam Ball 30 kgs Negro",
+      "price": "47.62",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 109,
+      "raw_line_index": 112,
+      "raw_lines": [
+        "Slam Ball 35 kgs Negro",
+        "CRO116",
+        "8435657018245",
+        "55,30 €"
+      ],
+      "raw_sku": "CRO116",
+      "normalized_sku": "CRO116",
+      "raw_name": "Slam Ball -  Negro Slam Ball 35 kgs Negro",
+      "normalized_name": "Slam Ball 35 kgs Negro",
+      "price": "55.30",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 110,
+      "raw_line_index": 116,
+      "raw_lines": [
+        "Slam Ball 40 kgs Negro",
+        "CRO122",
+        "8435657018306",
+        "63,49 €"
+      ],
+      "raw_sku": "CRO122",
+      "normalized_sku": "CRO122",
+      "raw_name": "Slam Ball -  Negro Slam Ball 40 kgs Negro",
+      "normalized_name": "Slam Ball 40 kgs Negro",
+      "price": "63.49",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 111,
+      "raw_line_index": 120,
+      "raw_lines": [
+        "Slam Ball 45 kgs Negro",
+        "CRO123",
+        "8435657018313",
+        "71,42 €"
+      ],
+      "raw_sku": "CRO123",
+      "normalized_sku": "CRO123",
+      "raw_name": "Slam Ball -  Negro Slam Ball 45 kgs Negro",
+      "normalized_name": "Slam Ball 45 kgs Negro",
+      "price": "71.42",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 112,
+      "raw_line_index": 124,
+      "raw_lines": [
+        "Slam Ball 50 kgs Negro",
+        "CRO124",
+        "8435657018320",
+        "79,37 €"
+      ],
+      "raw_sku": "CRO124",
+      "normalized_sku": "CRO124",
+      "raw_name": "Slam Ball -  Negro Slam Ball 50 kgs Negro",
+      "normalized_name": "Slam Ball 50 kgs Negro",
+      "price": "79.37",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 113,
+      "raw_line_index": 128,
+      "raw_lines": [
+        "Slam Ball 55 kgs Negro",
+        "CRO125",
+        "8435657018337",
+        "87,29 €"
+      ],
+      "raw_sku": "CRO125",
+      "normalized_sku": "CRO125",
+      "raw_name": "Slam Ball -  Negro Slam Ball 55 kgs Negro",
+      "normalized_name": "Slam Ball 55 kgs Negro",
+      "price": "87.29",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 114,
+      "raw_line_index": 132,
+      "raw_lines": [
+        "Slam Ball 60 kgs Negro",
+        "CRO117",
+        "8435657018252",
+        "95,24 €"
+      ],
+      "raw_sku": "CRO117",
+      "normalized_sku": "CRO117",
+      "raw_name": "Slam Ball -  Negro Slam Ball 60 kgs Negro",
+      "normalized_name": "Slam Ball 60 kgs Negro",
+      "price": "95.24",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 115,
+      "raw_line_index": 136,
+      "raw_lines": [
+        "Slam Ball 70 kgs Negro",
+        "CRO134",
+        "8435657018511",
+        "110,73 €"
+      ],
+      "raw_sku": "CRO134",
+      "normalized_sku": "CRO134",
+      "raw_name": "Slam Ball -  Negro Slam Ball 70 kgs Negro",
+      "normalized_name": "Slam Ball 70 kgs Negro",
+      "price": "110.73",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 116,
+      "raw_line_index": 141,
+      "raw_lines": [
+        "Wall Ball Doble costura 3 kgs Color",
+        "CRO002",
+        "8435657000752",
+        "25,84 €"
+      ],
+      "raw_sku": "CRO002",
+      "normalized_sku": "CRO002",
+      "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 3 kgs Color",
+      "normalized_name": "Wall Ball Doble costura 3 kgs Color",
+      "price": "25.84",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 117,
+      "raw_line_index": 145,
+      "raw_lines": [
+        "Wall Ball Doble costura 5 kgs Color",
+        "CRO003",
+        "8435657000769",
+        "29,38 €"
+      ],
+      "raw_sku": "CRO003",
+      "normalized_sku": "CRO003",
+      "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 5 kgs Color",
+      "normalized_name": "Wall Ball Doble costura 5 kgs Color",
+      "price": "29.38",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 118,
+      "raw_line_index": 149,
+      "raw_lines": [
+        "Wall Ball Doble costura 6 kgs Color",
+        "CRO004",
+        "8435657000776",
+        "31,45 €"
+      ],
+      "raw_sku": "CRO004",
+      "normalized_sku": "CRO004",
+      "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 6 kgs Color",
+      "normalized_name": "Wall Ball Doble costura 6 kgs Color",
+      "price": "31.45",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 119,
+      "raw_line_index": 153,
+      "raw_lines": [
+        "Wall Ball Doble costura 7 kgs Color",
+        "CRO005",
+        "8435657000783",
+        "33,10 €"
+      ],
+      "raw_sku": "CRO005",
+      "normalized_sku": "CRO005",
+      "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 7 kgs Color",
+      "normalized_name": "Wall Ball Doble costura 7 kgs Color",
+      "price": "33.10",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 120,
+      "raw_line_index": 157,
+      "raw_lines": [
+        "Wall Ball Doble costura 9 kgs Color",
+        "CRO006",
+        "8435657000790",
+        "36,65 €"
+      ],
+      "raw_sku": "CRO006",
+      "normalized_sku": "CRO006",
+      "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 9 kgs Color",
+      "normalized_name": "Wall Ball Doble costura 9 kgs Color",
+      "price": "36.65",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 12,
+      "source_row_index": 121,
+      "raw_line_index": 161,
+      "raw_lines": [
+        "Wall Ball Doble costura 12 kgs Color",
+        "CRO023",
+        "8435657000929",
+        "40,71 €"
+      ],
+      "raw_sku": "CRO023",
+      "normalized_sku": "CRO023",
+      "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 12 kgs Color",
+      "normalized_name": "Wall Ball Doble costura 12 kgs Color",
+      "price": "40.71",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    }
+  ],
+  "taxonomy_decision": [
+    {
+      "source_row_index": 83,
+      "normalized_sku": "DOBHT005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 84,
+      "normalized_sku": "DOBHT010",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 85,
+      "normalized_sku": "DOBHT015",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 86,
+      "normalized_sku": "DOBHT020",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 87,
+      "normalized_sku": "DOBHT025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 88,
+      "normalized_sku": "DOBCC005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 89,
+      "normalized_sku": "DOBCC010",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 90,
+      "normalized_sku": "DOBCC015",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 91,
+      "normalized_sku": "DOBCC020",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 92,
+      "normalized_sku": "DOBCC025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 93,
+      "normalized_sku": "DOBF005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 94,
+      "normalized_sku": "DOBF010",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 95,
+      "normalized_sku": "DOBF015",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 96,
+      "normalized_sku": "DOBF020",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 97,
+      "normalized_sku": "DOBF025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 98,
+      "normalized_sku": "DOBF050",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 99,
+      "normalized_sku": "SOP025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "630efc00-a004-4401-bc33-9a12fbbd2313",
+        "match_type": "section_keyword",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|bumper",
+        "priority": 24,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "soportes-y-mancuerneros",
+      "canonical_category_id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 100,
+      "normalized_sku": "DOBMINI",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 101,
+      "normalized_sku": "CRO110",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 102,
+      "normalized_sku": "CRO118",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 103,
+      "normalized_sku": "CRO111",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 104,
+      "normalized_sku": "CRO112",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 105,
+      "normalized_sku": "CRO119",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 106,
+      "normalized_sku": "CRO113",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 107,
+      "normalized_sku": "CRO120",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 108,
+      "normalized_sku": "CRO114",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 109,
+      "normalized_sku": "CRO116",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 110,
+      "normalized_sku": "CRO122",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 111,
+      "normalized_sku": "CRO123",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 112,
+      "normalized_sku": "CRO124",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 113,
+      "normalized_sku": "CRO125",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 114,
+      "normalized_sku": "CRO117",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 115,
+      "normalized_sku": "CRO134",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 116,
+      "normalized_sku": "CRO002",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 117,
+      "normalized_sku": "CRO003",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 118,
+      "normalized_sku": "CRO004",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 119,
+      "normalized_sku": "CRO005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 120,
+      "normalized_sku": "CRO006",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 121,
+      "normalized_sku": "CRO023",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    }
+  ],
+  "preview_decision": [
+    {
+      "source_row_index": 83,
+      "normalized_sku": "DOBHT005",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBHT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBHT",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 84,
+      "normalized_sku": "DOBHT010",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBHT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBHT",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 85,
+      "normalized_sku": "DOBHT015",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBHT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBHT",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 86,
+      "normalized_sku": "DOBHT020",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBHT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBHT",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 87,
+      "normalized_sku": "DOBHT025",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBHT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBHT",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 88,
+      "normalized_sku": "DOBCC005",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBCC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBCC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 89,
+      "normalized_sku": "DOBCC010",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBCC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBCC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 90,
+      "normalized_sku": "DOBCC015",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBCC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBCC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 91,
+      "normalized_sku": "DOBCC020",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBCC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBCC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 92,
+      "normalized_sku": "DOBCC025",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBCC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBCC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 93,
+      "normalized_sku": "DOBF005",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBF",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBF",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 94,
+      "normalized_sku": "DOBF010",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBF",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBF",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 95,
+      "normalized_sku": "DOBF015",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBF",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBF",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 96,
+      "normalized_sku": "DOBF020",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBF",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBF",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 97,
+      "normalized_sku": "DOBF025",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBF",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBF",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 98,
+      "normalized_sku": "DOBF050",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBF",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBF",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 99,
+      "normalized_sku": "SOP025",
+      "taxonomy": {
+        "canonical_category_slug": "soportes-y-mancuerneros",
+        "canonical_category_id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "SOP025",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 100,
+      "normalized_sku": "DOBMINI",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "DOBMINI",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": true,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 101,
+      "normalized_sku": "CRO110",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 102,
+      "normalized_sku": "CRO118",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 103,
+      "normalized_sku": "CRO111",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 104,
+      "normalized_sku": "CRO112",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 105,
+      "normalized_sku": "CRO119",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 106,
+      "normalized_sku": "CRO113",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 107,
+      "normalized_sku": "CRO120",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 108,
+      "normalized_sku": "CRO114",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 109,
+      "normalized_sku": "CRO116",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 110,
+      "normalized_sku": "CRO122",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 111,
+      "normalized_sku": "CRO123",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 112,
+      "normalized_sku": "CRO124",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 113,
+      "normalized_sku": "CRO125",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 114,
+      "normalized_sku": "CRO117",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 115,
+      "normalized_sku": "CRO134",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SLAM-NEGRO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 116,
+      "normalized_sku": "CRO002",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-COLOR",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 117,
+      "normalized_sku": "CRO003",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-COLOR",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 118,
+      "normalized_sku": "CRO004",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-COLOR",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 119,
+      "normalized_sku": "CRO005",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-COLOR",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 120,
+      "normalized_sku": "CRO006",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-COLOR",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 121,
+      "normalized_sku": "CRO023",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-COLOR",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    }
+  ],
+  "confirm_result": {
+    "executed": true,
+    "allow_needs_review": false,
+    "rows_imported": 39,
+    "rows_blocked": 0,
+    "rows_skipped": 0,
+    "masters_created": 7,
+    "variants_created": 39,
+    "variants_updated": 0,
+    "entries_created": 39,
+    "per_row": [
+      {
+        "source_row_index": 83,
+        "sku": "DOBHT005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 84,
+        "sku": "DOBHT010",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 85,
+        "sku": "DOBHT015",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 86,
+        "sku": "DOBHT020",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 87,
+        "sku": "DOBHT025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 88,
+        "sku": "DOBCC005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 89,
+        "sku": "DOBCC010",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 90,
+        "sku": "DOBCC015",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 91,
+        "sku": "DOBCC020",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 92,
+        "sku": "DOBCC025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 93,
+        "sku": "DOBF005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 94,
+        "sku": "DOBF010",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 95,
+        "sku": "DOBF015",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 96,
+        "sku": "DOBF020",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 97,
+        "sku": "DOBF025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 98,
+        "sku": "DOBF050",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 99,
+        "sku": "SOP025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 100,
+        "sku": "DOBMINI",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 101,
+        "sku": "CRO110",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 102,
+        "sku": "CRO118",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 103,
+        "sku": "CRO111",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 104,
+        "sku": "CRO112",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 105,
+        "sku": "CRO119",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 106,
+        "sku": "CRO113",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 107,
+        "sku": "CRO120",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 108,
+        "sku": "CRO114",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 109,
+        "sku": "CRO116",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 110,
+        "sku": "CRO122",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 111,
+        "sku": "CRO123",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 112,
+        "sku": "CRO124",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 113,
+        "sku": "CRO125",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 114,
+        "sku": "CRO117",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 115,
+        "sku": "CRO134",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 116,
+        "sku": "CRO002",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 117,
+        "sku": "CRO003",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 118,
+        "sku": "CRO004",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 119,
+        "sku": "CRO005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 120,
+        "sku": "CRO006",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 121,
+        "sku": "CRO023",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      }
+    ],
+    "batch_id": "dbbf485e-4a40-4776-aa21-231210472668"
+  },
+  "db_after": {
+    "masters": [
+      {
+        "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+        "master_key": "DOBHT",
+        "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+        "master_key": "DOBCC",
+        "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+        "master_key": "DOBF",
+        "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "9ee395b1-0617-41e2-ae69-6c8cc8f04416",
+        "master_key": "SOP025",
+        "product_master_name": "Soporte para juego de Discos Bumper",
+        "category_id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "category_slug": "soportes-y-mancuerneros"
+      },
+      {
+        "product_master_id": "3644cfd8-3973-476a-a4cb-87f91852da09",
+        "master_key": "DOBMINI",
+        "product_master_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "master_key": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+        "master_key": "CRO-WALL-COLOR",
+        "product_master_name": "Wall Balls Doble Costura Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      }
+    ],
+    "variants": [
+      {
+        "product_variant_id": "bab44e84-4d29-40fd-bb88-3bc23c205a08",
+        "variant_sku": "DOBHT005",
+        "variant_name": "Disco Bumper Hi Temp 5 kgs (Numero Color)",
+        "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+        "product_master_sku": "DOBHT",
+        "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "19.39"
+      },
+      {
+        "product_variant_id": "d8098fdf-64e2-45c7-9176-c8ef625cdc6e",
+        "variant_sku": "DOBHT010",
+        "variant_name": "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+        "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+        "product_master_sku": "DOBHT",
+        "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "28.98"
+      },
+      {
+        "product_variant_id": "3c1be616-d3c0-4361-a3d9-fb45206a079f",
+        "variant_sku": "DOBHT015",
+        "variant_name": "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+        "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+        "product_master_sku": "DOBHT",
+        "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "41.05"
+      },
+      {
+        "product_variant_id": "b1176901-ecd8-43dc-b09f-133a71990e32",
+        "variant_sku": "DOBHT020",
+        "variant_name": "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+        "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+        "product_master_sku": "DOBHT",
+        "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "48.53"
+      },
+      {
+        "product_variant_id": "7e361be3-0503-4e80-ae69-1d27440c169a",
+        "variant_sku": "DOBHT025",
+        "variant_name": "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+        "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+        "product_master_sku": "DOBHT",
+        "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "56.49"
+      },
+      {
+        "product_variant_id": "765d3c96-b026-4715-8098-2d3791e18238",
+        "variant_sku": "DOBCC005",
+        "variant_name": "Disco Bumper Competicion 5 kgs",
+        "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+        "product_master_sku": "DOBCC",
+        "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "34.04"
+      },
+      {
+        "product_variant_id": "42769b39-d33d-4092-8c19-dfffc54c8b28",
+        "variant_sku": "DOBCC010",
+        "variant_name": "Disco Bumper Competicion 10 kgs",
+        "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+        "product_master_sku": "DOBCC",
+        "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "58.68"
+      },
+      {
+        "product_variant_id": "23dd0aa1-39a1-4d8f-bb3b-017d037995bc",
+        "variant_sku": "DOBCC015",
+        "variant_name": "Disco Bumper Competicion 15 kgs",
+        "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+        "product_master_sku": "DOBCC",
+        "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "79.94"
+      },
+      {
+        "product_variant_id": "861a660f-5d2f-4b03-a5a2-14503b7db533",
+        "variant_sku": "DOBCC020",
+        "variant_name": "Disco Bumper Competicion 20 kgs",
+        "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+        "product_master_sku": "DOBCC",
+        "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "99.88"
+      },
+      {
+        "product_variant_id": "9c6b30d0-d3c4-4085-a336-b48e83e6856b",
+        "variant_sku": "DOBCC025",
+        "variant_name": "Disco Bumper Competicion 25 kgs",
+        "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+        "product_master_sku": "DOBCC",
+        "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "115.84"
+      },
+      {
+        "product_variant_id": "54f776af-af2a-411f-8355-f8fd0220a332",
+        "variant_sku": "DOBF005",
+        "variant_name": "Disco Bumper Color Fraccional 0,5 kgs",
+        "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+        "product_master_sku": "DOBF",
+        "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "3.78"
+      },
+      {
+        "product_variant_id": "d7d019f2-fe93-440d-8304-175f20f48218",
+        "variant_sku": "DOBF010",
+        "variant_name": "Disco Bumper Color Fraccional 1 kg",
+        "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+        "product_master_sku": "DOBF",
+        "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "7.56"
+      },
+      {
+        "product_variant_id": "7b277aaa-b51a-4a7b-a922-3f0088453d36",
+        "variant_sku": "DOBF015",
+        "variant_name": "Disco Bumper Color Fraccional 1,5 kgs",
+        "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+        "product_master_sku": "DOBF",
+        "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "11.33"
+      },
+      {
+        "product_variant_id": "b1eabc2e-6ba6-44d8-b21a-f1b1b0cff737",
+        "variant_sku": "DOBF020",
+        "variant_name": "Disco Bumper Color Fraccional 2 kgs",
+        "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+        "product_master_sku": "DOBF",
+        "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "15.11"
+      },
+      {
+        "product_variant_id": "cfb85ca8-58e6-45f7-a4e2-08b569a52458",
+        "variant_sku": "DOBF025",
+        "variant_name": "Disco Bumper Color Fraccional 2,5 kgs",
+        "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+        "product_master_sku": "DOBF",
+        "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "18.89"
+      },
+      {
+        "product_variant_id": "1f507f2b-bdb9-44a7-b293-c042212ce122",
+        "variant_sku": "DOBF050",
+        "variant_name": "Disco Bumper Color Fraccional 5 kgs",
+        "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+        "product_master_sku": "DOBF",
+        "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "39.58"
+      },
+      {
+        "product_variant_id": "f4711554-c11f-4b04-8f28-b55ce702a8ab",
+        "variant_sku": "SOP025",
+        "variant_name": "Soporte para juego de Discos Bumper",
+        "product_master_id": "9ee395b1-0617-41e2-ae69-6c8cc8f04416",
+        "product_master_sku": "SOP025",
+        "product_master_name": "Soporte para juego de Discos Bumper",
+        "category_id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "category_slug": "soportes-y-mancuerneros",
+        "price": "92.77"
+      },
+      {
+        "product_variant_id": "7bc26c7e-a2e7-4bd8-8cc8-430ce9f30d97",
+        "variant_sku": "DOBMINI",
+        "variant_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+        "product_master_id": "3644cfd8-3973-476a-a4cb-87f91852da09",
+        "product_master_sku": "DOBMINI",
+        "product_master_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "56.80"
+      },
+      {
+        "product_variant_id": "0d48749f-dd03-42b8-a4a6-71e069d089b4",
+        "variant_sku": "CRO110",
+        "variant_name": "Slam Ball 6 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "10.78"
+      },
+      {
+        "product_variant_id": "86c339fe-f382-4daa-8581-25ca2f20f0f4",
+        "variant_sku": "CRO118",
+        "variant_name": "Slam Ball 8 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "12.57"
+      },
+      {
+        "product_variant_id": "a6a781ad-0bc3-4822-ba69-9e26017597e9",
+        "variant_sku": "CRO111",
+        "variant_name": "Slam Ball 10 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "15.02"
+      },
+      {
+        "product_variant_id": "fa6e4c31-5536-45d9-a819-7df2cc3e415c",
+        "variant_sku": "CRO112",
+        "variant_name": "Slam Ball 12 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "17.24"
+      },
+      {
+        "product_variant_id": "127f89ea-575c-4bd6-a42f-fd31afc91b6c",
+        "variant_sku": "CRO119",
+        "variant_name": "Slam Ball 15 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "23.91"
+      },
+      {
+        "product_variant_id": "1945c880-0b02-4bfb-8eaf-04be72904910",
+        "variant_sku": "CRO113",
+        "variant_name": "Slam Ball 20 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "36.11"
+      },
+      {
+        "product_variant_id": "ce9d9003-4e9e-484b-ac3e-21992df27422",
+        "variant_sku": "CRO120",
+        "variant_name": "Slam Ball 25 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "42.58"
+      },
+      {
+        "product_variant_id": "e4be74e4-0ab3-465e-b7eb-7aa06a5992cc",
+        "variant_sku": "CRO114",
+        "variant_name": "Slam Ball 30 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "47.62"
+      },
+      {
+        "product_variant_id": "6c14756c-6110-412b-ad0b-20d9a4f47c0e",
+        "variant_sku": "CRO116",
+        "variant_name": "Slam Ball 35 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "55.30"
+      },
+      {
+        "product_variant_id": "4eee60ef-cdb4-470a-a389-1b8ac465eff4",
+        "variant_sku": "CRO122",
+        "variant_name": "Slam Ball 40 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "63.49"
+      },
+      {
+        "product_variant_id": "c6ed5822-07c3-4896-8e71-faea4da6bf76",
+        "variant_sku": "CRO123",
+        "variant_name": "Slam Ball 45 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "71.42"
+      },
+      {
+        "product_variant_id": "84d0306e-db95-4dc2-a3b5-82b7a81e93d2",
+        "variant_sku": "CRO124",
+        "variant_name": "Slam Ball 50 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "79.37"
+      },
+      {
+        "product_variant_id": "b8f6fbe9-8d6c-4b60-84fc-7b74c3877a8a",
+        "variant_sku": "CRO125",
+        "variant_name": "Slam Ball 55 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "87.29"
+      },
+      {
+        "product_variant_id": "c3fbab40-5e62-475d-bca2-b04e7d6b3ddc",
+        "variant_sku": "CRO117",
+        "variant_name": "Slam Ball 60 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "95.24"
+      },
+      {
+        "product_variant_id": "f85d9324-b71f-48c8-bbce-fb08318ca899",
+        "variant_sku": "CRO134",
+        "variant_name": "Slam Ball 70 kgs Negro",
+        "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+        "product_master_sku": "CRO-SLAM-NEGRO",
+        "product_master_name": "Slam Ball - Negro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "110.73"
+      },
+      {
+        "product_variant_id": "15821b3b-7eab-4b89-b03f-bf3ce534a40f",
+        "variant_sku": "CRO002",
+        "variant_name": "Wall Ball Doble costura 3 kgs Color",
+        "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+        "product_master_sku": "CRO-WALL-COLOR",
+        "product_master_name": "Wall Balls Doble Costura Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "25.84"
+      },
+      {
+        "product_variant_id": "75e0ee7e-cdbe-43a0-ad7f-7b44df581173",
+        "variant_sku": "CRO003",
+        "variant_name": "Wall Ball Doble costura 5 kgs Color",
+        "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+        "product_master_sku": "CRO-WALL-COLOR",
+        "product_master_name": "Wall Balls Doble Costura Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "29.38"
+      },
+      {
+        "product_variant_id": "06751e59-84af-47b9-a199-9a1187fcfe75",
+        "variant_sku": "CRO004",
+        "variant_name": "Wall Ball Doble costura 6 kgs Color",
+        "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+        "product_master_sku": "CRO-WALL-COLOR",
+        "product_master_name": "Wall Balls Doble Costura Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "31.45"
+      },
+      {
+        "product_variant_id": "4ec6d8ba-e22d-4e5d-a40c-fe01041f7fe3",
+        "variant_sku": "CRO005",
+        "variant_name": "Wall Ball Doble costura 7 kgs Color",
+        "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+        "product_master_sku": "CRO-WALL-COLOR",
+        "product_master_name": "Wall Balls Doble Costura Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "33.10"
+      },
+      {
+        "product_variant_id": "3a58bb85-f994-40ff-a050-1e88157133bc",
+        "variant_sku": "CRO006",
+        "variant_name": "Wall Ball Doble costura 9 kgs Color",
+        "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+        "product_master_sku": "CRO-WALL-COLOR",
+        "product_master_name": "Wall Balls Doble Costura Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "36.65"
+      },
+      {
+        "product_variant_id": "79f6fcbd-bee3-44cc-9c26-7f740ff7db5a",
+        "variant_sku": "CRO023",
+        "variant_name": "Wall Ball Doble costura 12 kgs Color",
+        "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+        "product_master_sku": "CRO-WALL-COLOR",
+        "product_master_name": "Wall Balls Doble Costura Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "40.71"
+      }
+    ],
+    "price_entries": [
+      {
+        "variant_sku": "DOBHT005",
+        "price": "19.39",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBHT010",
+        "price": "28.98",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBHT015",
+        "price": "41.05",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBHT020",
+        "price": "48.53",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBHT025",
+        "price": "56.49",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBCC005",
+        "price": "34.04",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBCC010",
+        "price": "58.68",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBCC015",
+        "price": "79.94",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBCC020",
+        "price": "99.88",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBCC025",
+        "price": "115.84",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBF005",
+        "price": "3.78",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBF010",
+        "price": "7.56",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBF015",
+        "price": "11.33",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBF020",
+        "price": "15.11",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBF025",
+        "price": "18.89",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBF050",
+        "price": "39.58",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "SOP025",
+        "price": "92.77",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "DOBMINI",
+        "price": "56.80",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO110",
+        "price": "10.78",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO118",
+        "price": "12.57",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO111",
+        "price": "15.02",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO112",
+        "price": "17.24",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO119",
+        "price": "23.91",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO113",
+        "price": "36.11",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO120",
+        "price": "42.58",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO114",
+        "price": "47.62",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO116",
+        "price": "55.30",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO122",
+        "price": "63.49",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO123",
+        "price": "71.42",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO124",
+        "price": "79.37",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO125",
+        "price": "87.29",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO117",
+        "price": "95.24",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO134",
+        "price": "110.73",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO002",
+        "price": "25.84",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO003",
+        "price": "29.38",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO004",
+        "price": "31.45",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO005",
+        "price": "33.10",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO006",
+        "price": "36.65",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      },
+      {
+        "variant_sku": "CRO023",
+        "price": "40.71",
+        "currency": "EUR",
+        "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+      }
+    ],
+    "specs": [],
+    "variant_skus": [
+      "CRO002",
+      "CRO003",
+      "CRO004",
+      "CRO005",
+      "CRO006",
+      "CRO023",
+      "CRO110",
+      "CRO111",
+      "CRO112",
+      "CRO113",
+      "CRO114",
+      "CRO116",
+      "CRO117",
+      "CRO118",
+      "CRO119",
+      "CRO120",
+      "CRO122",
+      "CRO123",
+      "CRO124",
+      "CRO125",
+      "CRO134",
+      "DOBCC005",
+      "DOBCC010",
+      "DOBCC015",
+      "DOBCC020",
+      "DOBCC025",
+      "DOBF005",
+      "DOBF010",
+      "DOBF015",
+      "DOBF020",
+      "DOBF025",
+      "DOBF050",
+      "DOBHT005",
+      "DOBHT010",
+      "DOBHT015",
+      "DOBHT020",
+      "DOBHT025",
+      "DOBMINI",
+      "SOP025"
+    ]
+  },
+  "db_after_contains_only_requested_page_products": true,
+  "unexpected_skus_from_other_pages": [],
+  "products_visible_in_app_count": 39,
+  "products_visible_in_app": [
+    {
+      "variant_sku": "DOBHT005",
+      "variant_name": "Disco Bumper Hi Temp 5 kgs (Numero Color)",
+      "master_key": "DOBHT",
+      "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "19.39"
+    },
+    {
+      "variant_sku": "DOBHT010",
+      "variant_name": "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+      "master_key": "DOBHT",
+      "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "28.98"
+    },
+    {
+      "variant_sku": "DOBHT015",
+      "variant_name": "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+      "master_key": "DOBHT",
+      "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "41.05"
+    },
+    {
+      "variant_sku": "DOBHT020",
+      "variant_name": "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+      "master_key": "DOBHT",
+      "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "48.53"
+    },
+    {
+      "variant_sku": "DOBHT025",
+      "variant_name": "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+      "master_key": "DOBHT",
+      "master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "56.49"
+    },
+    {
+      "variant_sku": "DOBCC005",
+      "variant_name": "Disco Bumper Competicion 5 kgs",
+      "master_key": "DOBCC",
+      "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_slug": "discos",
+      "price": "34.04"
+    },
+    {
+      "variant_sku": "DOBCC010",
+      "variant_name": "Disco Bumper Competicion 10 kgs",
+      "master_key": "DOBCC",
+      "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_slug": "discos",
+      "price": "58.68"
+    },
+    {
+      "variant_sku": "DOBCC015",
+      "variant_name": "Disco Bumper Competicion 15 kgs",
+      "master_key": "DOBCC",
+      "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_slug": "discos",
+      "price": "79.94"
+    },
+    {
+      "variant_sku": "DOBCC020",
+      "variant_name": "Disco Bumper Competicion 20 kgs",
+      "master_key": "DOBCC",
+      "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_slug": "discos",
+      "price": "99.88"
+    },
+    {
+      "variant_sku": "DOBCC025",
+      "variant_name": "Disco Bumper Competicion 25 kgs",
+      "master_key": "DOBCC",
+      "master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_slug": "discos",
+      "price": "115.84"
+    },
+    {
+      "variant_sku": "DOBF005",
+      "variant_name": "Disco Bumper Color Fraccional 0,5 kgs",
+      "master_key": "DOBF",
+      "master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_slug": "discos",
+      "price": "3.78"
+    },
+    {
+      "variant_sku": "DOBF010",
+      "variant_name": "Disco Bumper Color Fraccional 1 kg",
+      "master_key": "DOBF",
+      "master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_slug": "discos",
+      "price": "7.56"
+    },
+    {
+      "variant_sku": "DOBF015",
+      "variant_name": "Disco Bumper Color Fraccional 1,5 kgs",
+      "master_key": "DOBF",
+      "master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_slug": "discos",
+      "price": "11.33"
+    },
+    {
+      "variant_sku": "DOBF020",
+      "variant_name": "Disco Bumper Color Fraccional 2 kgs",
+      "master_key": "DOBF",
+      "master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_slug": "discos",
+      "price": "15.11"
+    },
+    {
+      "variant_sku": "DOBF025",
+      "variant_name": "Disco Bumper Color Fraccional 2,5 kgs",
+      "master_key": "DOBF",
+      "master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_slug": "discos",
+      "price": "18.89"
+    },
+    {
+      "variant_sku": "DOBF050",
+      "variant_name": "Disco Bumper Color Fraccional 5 kgs",
+      "master_key": "DOBF",
+      "master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_slug": "discos",
+      "price": "39.58"
+    },
+    {
+      "variant_sku": "SOP025",
+      "variant_name": "Soporte para juego de Discos Bumper",
+      "master_key": "SOP025",
+      "master_name": "Soporte para juego de Discos Bumper",
+      "category_slug": "soportes-y-mancuerneros",
+      "price": "92.77"
+    },
+    {
+      "variant_sku": "DOBMINI",
+      "variant_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "master_key": "DOBMINI",
+      "master_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "category_slug": "discos",
+      "price": "56.80"
+    },
+    {
+      "variant_sku": "CRO110",
+      "variant_name": "Slam Ball 6 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "10.78"
+    },
+    {
+      "variant_sku": "CRO118",
+      "variant_name": "Slam Ball 8 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "12.57"
+    },
+    {
+      "variant_sku": "CRO111",
+      "variant_name": "Slam Ball 10 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "15.02"
+    },
+    {
+      "variant_sku": "CRO112",
+      "variant_name": "Slam Ball 12 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "17.24"
+    },
+    {
+      "variant_sku": "CRO119",
+      "variant_name": "Slam Ball 15 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "23.91"
+    },
+    {
+      "variant_sku": "CRO113",
+      "variant_name": "Slam Ball 20 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "36.11"
+    },
+    {
+      "variant_sku": "CRO120",
+      "variant_name": "Slam Ball 25 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "42.58"
+    },
+    {
+      "variant_sku": "CRO114",
+      "variant_name": "Slam Ball 30 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "47.62"
+    },
+    {
+      "variant_sku": "CRO116",
+      "variant_name": "Slam Ball 35 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "55.30"
+    },
+    {
+      "variant_sku": "CRO122",
+      "variant_name": "Slam Ball 40 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "63.49"
+    },
+    {
+      "variant_sku": "CRO123",
+      "variant_name": "Slam Ball 45 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "71.42"
+    },
+    {
+      "variant_sku": "CRO124",
+      "variant_name": "Slam Ball 50 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "79.37"
+    },
+    {
+      "variant_sku": "CRO125",
+      "variant_name": "Slam Ball 55 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "87.29"
+    },
+    {
+      "variant_sku": "CRO117",
+      "variant_name": "Slam Ball 60 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "95.24"
+    },
+    {
+      "variant_sku": "CRO134",
+      "variant_name": "Slam Ball 70 kgs Negro",
+      "master_key": "CRO-SLAM-NEGRO",
+      "master_name": "Slam Ball - Negro",
+      "category_slug": "cross-training",
+      "price": "110.73"
+    },
+    {
+      "variant_sku": "CRO002",
+      "variant_name": "Wall Ball Doble costura 3 kgs Color",
+      "master_key": "CRO-WALL-COLOR",
+      "master_name": "Wall Balls Doble Costura Color",
+      "category_slug": "cross-training",
+      "price": "25.84"
+    },
+    {
+      "variant_sku": "CRO003",
+      "variant_name": "Wall Ball Doble costura 5 kgs Color",
+      "master_key": "CRO-WALL-COLOR",
+      "master_name": "Wall Balls Doble Costura Color",
+      "category_slug": "cross-training",
+      "price": "29.38"
+    },
+    {
+      "variant_sku": "CRO004",
+      "variant_name": "Wall Ball Doble costura 6 kgs Color",
+      "master_key": "CRO-WALL-COLOR",
+      "master_name": "Wall Balls Doble Costura Color",
+      "category_slug": "cross-training",
+      "price": "31.45"
+    },
+    {
+      "variant_sku": "CRO005",
+      "variant_name": "Wall Ball Doble costura 7 kgs Color",
+      "master_key": "CRO-WALL-COLOR",
+      "master_name": "Wall Balls Doble Costura Color",
+      "category_slug": "cross-training",
+      "price": "33.10"
+    },
+    {
+      "variant_sku": "CRO006",
+      "variant_name": "Wall Ball Doble costura 9 kgs Color",
+      "master_key": "CRO-WALL-COLOR",
+      "master_name": "Wall Balls Doble Costura Color",
+      "category_slug": "cross-training",
+      "price": "36.65"
+    },
+    {
+      "variant_sku": "CRO023",
+      "variant_name": "Wall Ball Doble costura 12 kgs Color",
+      "master_key": "CRO-WALL-COLOR",
+      "master_name": "Wall Balls Doble Costura Color",
+      "category_slug": "cross-training",
+      "price": "40.71"
+    }
+  ],
+  "blocked_rows_detail": [],
+  "status": "pass",
+  "fail_reasons": [],
+  "products_imported": [
+    "CRO002",
+    "CRO003",
+    "CRO004",
+    "CRO005",
+    "CRO006",
+    "CRO023",
+    "CRO110",
+    "CRO111",
+    "CRO112",
+    "CRO113",
+    "CRO114",
+    "CRO116",
+    "CRO117",
+    "CRO118",
+    "CRO119",
+    "CRO120",
+    "CRO122",
+    "CRO123",
+    "CRO124",
+    "CRO125",
+    "CRO134",
+    "DOBCC005",
+    "DOBCC010",
+    "DOBCC015",
+    "DOBCC020",
+    "DOBCC025",
+    "DOBF005",
+    "DOBF010",
+    "DOBF015",
+    "DOBF020",
+    "DOBF025",
+    "DOBF050",
+    "DOBHT005",
+    "DOBHT010",
+    "DOBHT015",
+    "DOBHT020",
+    "DOBHT025",
+    "DOBMINI",
+    "SOP025"
+  ],
+  "products_blocked": [],
+  "products_expected_but_not_imported": [],
+  "category_warnings": [],
+  "grouping_warnings": [
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT005",
+      "detail": "Taxonomy warning for DOBHT005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT010",
+      "detail": "Taxonomy warning for DOBHT010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT015",
+      "detail": "Taxonomy warning for DOBHT015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT020",
+      "detail": "Taxonomy warning for DOBHT020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT025",
+      "detail": "Taxonomy warning for DOBHT025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC005",
+      "detail": "Taxonomy warning for DOBCC005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC010",
+      "detail": "Taxonomy warning for DOBCC010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC015",
+      "detail": "Taxonomy warning for DOBCC015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC020",
+      "detail": "Taxonomy warning for DOBCC020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC025",
+      "detail": "Taxonomy warning for DOBCC025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF005",
+      "detail": "Taxonomy warning for DOBF005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF010",
+      "detail": "Taxonomy warning for DOBF010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF015",
+      "detail": "Taxonomy warning for DOBF015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF020",
+      "detail": "Taxonomy warning for DOBF020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF025",
+      "detail": "Taxonomy warning for DOBF025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF050",
+      "detail": "Taxonomy warning for DOBF050"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBMINI",
+      "detail": "Taxonomy warning for DOBMINI"
+    }
+  ],
+  "review_gate_warnings": [],
+  "app_visual_check": {
+    "products_page_should_show_only_requested_page": true,
+    "expected_visible_products_count": 39,
+    "actual_visible_products_count": 39,
+    "visible_skus": [
+      "CRO002",
+      "CRO003",
+      "CRO004",
+      "CRO005",
+      "CRO006",
+      "CRO023",
+      "CRO110",
+      "CRO111",
+      "CRO112",
+      "CRO113",
+      "CRO114",
+      "CRO116",
+      "CRO117",
+      "CRO118",
+      "CRO119",
+      "CRO120",
+      "CRO122",
+      "CRO123",
+      "CRO124",
+      "CRO125",
+      "CRO134",
+      "DOBCC005",
+      "DOBCC010",
+      "DOBCC015",
+      "DOBCC020",
+      "DOBCC025",
+      "DOBF005",
+      "DOBF010",
+      "DOBF015",
+      "DOBF020",
+      "DOBF025",
+      "DOBF050",
+      "DOBHT005",
+      "DOBHT010",
+      "DOBHT015",
+      "DOBHT020",
+      "DOBHT025",
+      "DOBMINI",
+      "SOP025"
+    ],
+    "visible_categories": [
+      "cross-training",
+      "discos",
+      "soportes-y-mancuerneros"
+    ],
+    "note": "Open Products page in the app after this run to visually inspect only page 12 products."
+  },
+  "diff": {
+    "inserted_masters": [
+      "DOBHT",
+      "DOBCC",
+      "DOBF",
+      "SOP025",
+      "DOBMINI",
+      "CRO-SLAM-NEGRO",
+      "CRO-WALL-COLOR"
+    ],
+    "inserted_variants": [
+      "CRO002",
+      "CRO003",
+      "CRO004",
+      "CRO005",
+      "CRO006",
+      "CRO023",
+      "CRO110",
+      "CRO111",
+      "CRO112",
+      "CRO113",
+      "CRO114",
+      "CRO116",
+      "CRO117",
+      "CRO118",
+      "CRO119",
+      "CRO120",
+      "CRO122",
+      "CRO123",
+      "CRO124",
+      "CRO125",
+      "CRO134",
+      "DOBCC005",
+      "DOBCC010",
+      "DOBCC015",
+      "DOBCC020",
+      "DOBCC025",
+      "DOBF005",
+      "DOBF010",
+      "DOBF015",
+      "DOBF020",
+      "DOBF025",
+      "DOBF050",
+      "DOBHT005",
+      "DOBHT010",
+      "DOBHT015",
+      "DOBHT020",
+      "DOBHT025",
+      "DOBMINI",
+      "SOP025"
+    ],
+    "skipped_rows": 0,
+    "blocked_rows": [],
+    "categories_created": [],
+    "mappings_created": [],
+    "unexpected_categories": [],
+    "products_imported_but_suspicious": [
+      "CRO002",
+      "CRO003",
+      "CRO004",
+      "CRO005",
+      "CRO006",
+      "CRO023",
+      "CRO110",
+      "CRO111",
+      "CRO112",
+      "CRO113",
+      "CRO114",
+      "CRO116",
+      "CRO117",
+      "CRO118",
+      "CRO119",
+      "CRO120",
+      "CRO122",
+      "CRO123",
+      "CRO124",
+      "CRO125",
+      "CRO134"
+    ]
+  },
+  "warnings": [
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT005",
+      "detail": "Taxonomy warning for DOBHT005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT010",
+      "detail": "Taxonomy warning for DOBHT010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT015",
+      "detail": "Taxonomy warning for DOBHT015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT020",
+      "detail": "Taxonomy warning for DOBHT020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBHT025",
+      "detail": "Taxonomy warning for DOBHT025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC005",
+      "detail": "Taxonomy warning for DOBCC005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC010",
+      "detail": "Taxonomy warning for DOBCC010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC015",
+      "detail": "Taxonomy warning for DOBCC015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC020",
+      "detail": "Taxonomy warning for DOBCC020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBCC025",
+      "detail": "Taxonomy warning for DOBCC025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF005",
+      "detail": "Taxonomy warning for DOBF005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF010",
+      "detail": "Taxonomy warning for DOBF010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF015",
+      "detail": "Taxonomy warning for DOBF015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF020",
+      "detail": "Taxonomy warning for DOBF020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF025",
+      "detail": "Taxonomy warning for DOBF025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBF050",
+      "detail": "Taxonomy warning for DOBF050"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBMINI",
+      "detail": "Taxonomy warning for DOBMINI"
+    }
+  ],
+  "suspicious_variant_candidates": [
+    {
+      "suspicion_id": "S-0001",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        12
+      ],
+      "skus": [
+        "CRO110",
+        "CRO118",
+        "CRO111",
+        "CRO112",
+        "CRO119",
+        "CRO113",
+        "CRO120",
+        "CRO114",
+        "CRO116",
+        "CRO122",
+        "CRO123",
+        "CRO124",
+        "CRO125",
+        "CRO117",
+        "CRO134",
+        "CRO002",
+        "CRO003",
+        "CRO004",
+        "CRO005",
+        "CRO006",
+        "CRO023"
+      ],
+      "current_master_keys": [
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-SLAM-NEGRO",
+        "CRO-WALL-COLOR",
+        "CRO-WALL-COLOR",
+        "CRO-WALL-COLOR",
+        "CRO-WALL-COLOR",
+        "CRO-WALL-COLOR",
+        "CRO-WALL-COLOR"
+      ],
+      "expected_master_key": "CRO",
+      "grouping_reasons": [
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-SLAM-NEGRO",
+        "cross_training_block_family:CRO-WALL-COLOR",
+        "cross_training_block_family:CRO-WALL-COLOR",
+        "cross_training_block_family:CRO-WALL-COLOR",
+        "cross_training_block_family:CRO-WALL-COLOR",
+        "cross_training_block_family:CRO-WALL-COLOR",
+        "cross_training_block_family:CRO-WALL-COLOR"
+      ],
+      "possible_false_negative": true
+    }
+  ],
+  "manual_approval": {
+    "page_approved": false,
+    "note": "Page is not approved until the user gives explicit OK. Do not advance to the next page automatically."
+  }
+}

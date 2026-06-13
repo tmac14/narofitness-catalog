@@ -1,0 +1,105 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  quality-baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install root tooling
+        run: npm ci
+      - name: Install desktop tooling
+        run: npm ci --prefix apps/desktop
+      - name: Install Python dependencies
+        run: pip install -r apps/api/requirements.txt -r apps/api/requirements-dev.txt -r scripts/requirements-control.txt
+      - name: Project control validation
+        run: npm run control:validate
+      - name: Project control tests
+        run: npm run control:test
+      - name: Frontend ESLint baseline
+        continue-on-error: true
+        run: npm run lint:frontend
+      - name: Frontend Prettier baseline
+        continue-on-error: true
+        run: npm run format:check:frontend
+      - name: Frontend TypeScript baseline
+        continue-on-error: true
+        run: npm run typecheck:frontend
+      - name: Python Ruff lint baseline
+        continue-on-error: true
+        run: npm run lint:python
+      - name: Python Ruff format baseline
+        continue-on-error: true
+        run: npm run format:check:python
+      - name: Python Pyright baseline
+        continue-on-error: true
+        run: npm run typecheck:python
+
+  api-tests:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: narocatalog
+          POSTGRES_PASSWORD: narocatalog
+          POSTGRES_DB: narocatalog
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install API deps
+        run: pip install -r apps/api/requirements.txt
+      - name: Run migrations
+        working-directory: apps/api
+        env:
+          DATABASE_URL: postgresql+asyncpg://narocatalog:narocatalog@localhost:5432/narocatalog
+        run: alembic upgrade head
+      - name: Unit tests
+        working-directory: apps/api
+        env:
+          PYTHONPATH: .
+        run: pytest tests/ -q -m "not integration"
+      - name: Integration tests
+        working-directory: apps/api
+        env:
+          RUN_INTEGRATION: "1"
+          DATABASE_URL: postgresql+asyncpg://narocatalog:narocatalog@localhost:5432/narocatalog
+          PYTHONPATH: .
+        run: pytest tests/ -q -m integration
+      - name: Full API suite (integration enabled)
+        working-directory: apps/api
+        env:
+          RUN_INTEGRATION: "1"
+          DATABASE_URL: postgresql+asyncpg://narocatalog:narocatalog@localhost:5432/narocatalog
+          PYTHONPATH: .
+        run: pytest tests/ -q
+
+  desktop-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build desktop
+        working-directory: apps/desktop
+        run: npm ci && npm run build

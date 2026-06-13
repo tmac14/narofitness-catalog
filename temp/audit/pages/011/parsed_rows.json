@@ -1,0 +1,692 @@
+[
+  {
+    "page_number": 11,
+    "source_row_index": 53,
+    "raw_line_index": 2,
+    "raw_lines": [
+      "Disco Bumper NEXO Negro -  5  kgs",
+      "DOBNEXO05N",
+      "8435657018573",
+      "19,55 €"
+    ],
+    "raw_sku": "DOBNEXO05N",
+    "normalized_sku": "DOBNEXO05N",
+    "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 5 kgs",
+    "normalized_name": "Disco Bumper Negro - 5 kgs",
+    "price": "19.55",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 54,
+    "raw_line_index": 6,
+    "raw_lines": [
+      "Disco Bumper NEXO Negro -  10  kgs",
+      "DOBNEXO10N",
+      "8435657018580",
+      "26,56 €"
+    ],
+    "raw_sku": "DOBNEXO10N",
+    "normalized_sku": "DOBNEXO10N",
+    "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 10 kgs",
+    "normalized_name": "Disco Bumper Negro - 10 kgs",
+    "price": "26.56",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 55,
+    "raw_line_index": 10,
+    "raw_lines": [
+      "Disco Bumper NEXO Negro -  15  kgs",
+      "DOBNEXO15N",
+      "8435657018597",
+      "36,84 €"
+    ],
+    "raw_sku": "DOBNEXO15N",
+    "normalized_sku": "DOBNEXO15N",
+    "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 15 kgs",
+    "normalized_name": "Disco Bumper Negro - 15 kgs",
+    "price": "36.84",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 56,
+    "raw_line_index": 14,
+    "raw_lines": [
+      "Disco Bumper NEXO Negro -  20  kgs",
+      "DOBNEXO20N",
+      "8435657018603",
+      "46,30 €"
+    ],
+    "raw_sku": "DOBNEXO20N",
+    "normalized_sku": "DOBNEXO20N",
+    "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 20 kgs",
+    "normalized_name": "Disco Bumper Negro - 20 kgs",
+    "price": "46.30",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 57,
+    "raw_line_index": 18,
+    "raw_lines": [
+      "Disco Bumper NEXO Negro -  25  kgs",
+      "DOBNEXO25N",
+      "8435657018610",
+      "55,10 €"
+    ],
+    "raw_sku": "DOBNEXO25N",
+    "normalized_sku": "DOBNEXO25N",
+    "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 25 kgs",
+    "normalized_name": "Disco Bumper Negro - 25 kgs",
+    "price": "55.10",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 58,
+    "raw_line_index": 23,
+    "raw_lines": [
+      "Disco Bumper Negro 3.0 -  5  kgs",
+      "DOBN005",
+      "8435657014100",
+      "18,80 €"
+    ],
+    "raw_sku": "DOBN005",
+    "normalized_sku": "DOBN005",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 5 kgs",
+    "normalized_name": "Disco Bumper Negro 3.0 - 5 kgs",
+    "price": "18.80",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 59,
+    "raw_line_index": 27,
+    "raw_lines": [
+      "Disco Bumper Negro 3.0 - 10 kgs",
+      "DOBN010",
+      "8435657014117",
+      "26,57 €"
+    ],
+    "raw_sku": "DOBN010",
+    "normalized_sku": "DOBN010",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 10 kgs",
+    "normalized_name": "Disco Bumper Negro 3.0 - 10 kgs",
+    "price": "26.57",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 60,
+    "raw_line_index": 31,
+    "raw_lines": [
+      "Disco Bumper Negro 3.0 - 15 kgs",
+      "DOBN015",
+      "8435657014124",
+      "36,84 €"
+    ],
+    "raw_sku": "DOBN015",
+    "normalized_sku": "DOBN015",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 15 kgs",
+    "normalized_name": "Disco Bumper Negro 3.0 - 15 kgs",
+    "price": "36.84",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 61,
+    "raw_line_index": 35,
+    "raw_lines": [
+      "Disco Bumper Negro 3.0 - 20 kgs",
+      "DOBN020",
+      "8435657014131",
+      "46,30 €"
+    ],
+    "raw_sku": "DOBN020",
+    "normalized_sku": "DOBN020",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 20 kgs",
+    "normalized_name": "Disco Bumper Negro 3.0 - 20 kgs",
+    "price": "46.30",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 62,
+    "raw_line_index": 39,
+    "raw_lines": [
+      "Disco Bumper Negro 3.0 - 25 kgs",
+      "DOBN025",
+      "8435657014148",
+      "55,10 €"
+    ],
+    "raw_sku": "DOBN025",
+    "normalized_sku": "DOBN025",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 25 kgs",
+    "normalized_name": "Disco Bumper Negro 3.0 - 25 kgs",
+    "price": "55.10",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 63,
+    "raw_line_index": 44,
+    "raw_lines": [
+      "Disco Bumper Negro 5  kgs",
+      "DOB005",
+      "8435657002619",
+      "19,17 €"
+    ],
+    "raw_sku": "DOB005",
+    "normalized_sku": "DOB005",
+    "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 5 kgs",
+    "normalized_name": "Disco Bumper Negro 5 kgs",
+    "price": "19.17",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 64,
+    "raw_line_index": 48,
+    "raw_lines": [
+      "Disco Bumper Negro 10 kgs",
+      "DOB010",
+      "8435657002626",
+      "27,10 €"
+    ],
+    "raw_sku": "DOB010",
+    "normalized_sku": "DOB010",
+    "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 10 kgs",
+    "normalized_name": "Disco Bumper Negro 10 kgs",
+    "price": "27.10",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 65,
+    "raw_line_index": 52,
+    "raw_lines": [
+      "Disco Bumper Negro 15 kgs",
+      "DOB015",
+      "8435657002633",
+      "39,67 €"
+    ],
+    "raw_sku": "DOB015",
+    "normalized_sku": "DOB015",
+    "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 15 kgs",
+    "normalized_name": "Disco Bumper Negro 15 kgs",
+    "price": "39.67",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 66,
+    "raw_line_index": 56,
+    "raw_lines": [
+      "Disco Bumper Negro 20 kgs",
+      "DOB020",
+      "8435657002640",
+      "52,79 €"
+    ],
+    "raw_sku": "DOB020",
+    "normalized_sku": "DOB020",
+    "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 20 kgs",
+    "normalized_name": "Disco Bumper Negro 20 kgs",
+    "price": "52.79",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 67,
+    "raw_line_index": 60,
+    "raw_lines": [
+      "Disco Bumper Negro 25 kgs",
+      "DOB025",
+      "8435657002657",
+      "66,77 €"
+    ],
+    "raw_sku": "DOB025",
+    "normalized_sku": "DOB025",
+    "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 25 kgs",
+    "normalized_name": "Disco Bumper Negro 25 kgs",
+    "price": "66.77",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 68,
+    "raw_line_index": 65,
+    "raw_lines": [
+      "Disco Bumper NEXO Color -  5  kgs",
+      "DOBNEXO05C",
+      "8435657018528",
+      "22,39 €"
+    ],
+    "raw_sku": "DOBNEXO05C",
+    "normalized_sku": "DOBNEXO05C",
+    "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 5 kgs",
+    "normalized_name": "Disco Bumper Color - 5 kgs",
+    "price": "22.39",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 69,
+    "raw_line_index": 69,
+    "raw_lines": [
+      "Disco Bumper NEXO Color - 10 kgs",
+      "DOBNEXO10C",
+      "8435657018535",
+      "29,72 €"
+    ],
+    "raw_sku": "DOBNEXO10C",
+    "normalized_sku": "DOBNEXO10C",
+    "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 10 kgs",
+    "normalized_name": "Disco Bumper Color - 10 kgs",
+    "price": "29.72",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 70,
+    "raw_line_index": 73,
+    "raw_lines": [
+      "Disco Bumper NEXO Color - 15 kgs",
+      "DOBNEXO15C",
+      "8435657018542",
+      "40,23 €"
+    ],
+    "raw_sku": "DOBNEXO15C",
+    "normalized_sku": "DOBNEXO15C",
+    "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 15 kgs",
+    "normalized_name": "Disco Bumper Color - 15 kgs",
+    "price": "40.23",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 71,
+    "raw_line_index": 77,
+    "raw_lines": [
+      "Disco Bumper NEXO Color - 20 kgs",
+      "DOBNEXO20C",
+      "8435657018559",
+      "51,16 €"
+    ],
+    "raw_sku": "DOBNEXO20C",
+    "normalized_sku": "DOBNEXO20C",
+    "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 20 kgs",
+    "normalized_name": "Disco Bumper Color - 20 kgs",
+    "price": "51.16",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 72,
+    "raw_line_index": 81,
+    "raw_lines": [
+      "Disco Bumper NEXO Color - 25 kgs",
+      "DOBNEXO25C",
+      "8435657018566",
+      "60,20 €"
+    ],
+    "raw_sku": "DOBNEXO25C",
+    "normalized_sku": "DOBNEXO25C",
+    "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 25 kgs",
+    "normalized_name": "Disco Bumper Color - 25 kgs",
+    "price": "60.20",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 73,
+    "raw_line_index": 86,
+    "raw_lines": [
+      "Disco Bumper COLOR 3.0 -  5  kgs",
+      "DOB3C005",
+      "8435657018184",
+      "23,30 €"
+    ],
+    "raw_sku": "DOB3C005",
+    "normalized_sku": "DOB3C005",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 5 kgs",
+    "normalized_name": "Disco Bumper COLOR 3.0 - 5 kgs",
+    "price": "23.30",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 74,
+    "raw_line_index": 90,
+    "raw_lines": [
+      "Disco Bumper COLOR 3.0 - 10 kgs",
+      "DOB3C010",
+      "8435657018181",
+      "31,25 €"
+    ],
+    "raw_sku": "DOB3C010",
+    "normalized_sku": "DOB3C010",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 10 kgs",
+    "normalized_name": "Disco Bumper COLOR 3.0 - 10 kgs",
+    "price": "31.25",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 75,
+    "raw_line_index": 94,
+    "raw_lines": [
+      "Disco Bumper COLOR 3.0 - 15 kgs",
+      "DOB3C015",
+      "8435657018160",
+      "44,61 €"
+    ],
+    "raw_sku": "DOB3C015",
+    "normalized_sku": "DOB3C015",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 15 kgs",
+    "normalized_name": "Disco Bumper COLOR 3.0 - 15 kgs",
+    "price": "44.61",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 76,
+    "raw_line_index": 98,
+    "raw_lines": [
+      "Disco Bumper COLOR 3.0 - 20 kgs",
+      "DOB3C020",
+      "8435657018207",
+      "57,97 €"
+    ],
+    "raw_sku": "DOB3C020",
+    "normalized_sku": "DOB3C020",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 20 kgs",
+    "normalized_name": "Disco Bumper COLOR 3.0 - 20 kgs",
+    "price": "57.97",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 77,
+    "raw_line_index": 102,
+    "raw_lines": [
+      "Disco Bumper COLOR 3.0 - 25 kgs",
+      "DOB3C025",
+      "8435657018177",
+      "63,65 €"
+    ],
+    "raw_sku": "DOB3C025",
+    "normalized_sku": "DOB3C025",
+    "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 25 kgs",
+    "normalized_name": "Disco Bumper COLOR 3.0 - 25 kgs",
+    "price": "63.65",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 78,
+    "raw_line_index": 107,
+    "raw_lines": [
+      "Disco Bumper Color 5 kgs - Gris",
+      "DOBC005",
+      "8435657002664",
+      "22,84 €"
+    ],
+    "raw_sku": "DOBC005",
+    "normalized_sku": "DOBC005",
+    "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 5 kgs - Gris",
+    "normalized_name": "Disco Bumper Color 5 kgs - Gris",
+    "price": "22.84",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 79,
+    "raw_line_index": 111,
+    "raw_lines": [
+      "Disco Bumper Color 10 kgs - Verde",
+      "DOBC010",
+      "8435657002671",
+      "29,69 €"
+    ],
+    "raw_sku": "DOBC010",
+    "normalized_sku": "DOBC010",
+    "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 10 kgs - Verde",
+    "normalized_name": "Disco Bumper Color 10 kgs - Verde",
+    "price": "29.69",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 80,
+    "raw_line_index": 115,
+    "raw_lines": [
+      "Disco Bumper Color 15 kgs - Amarillo",
+      "DOBC015",
+      "8435657002688",
+      "42,38 €"
+    ],
+    "raw_sku": "DOBC015",
+    "normalized_sku": "DOBC015",
+    "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 15 kgs - Amarillo",
+    "normalized_name": "Disco Bumper Color 15 kgs - Amarillo",
+    "price": "42.38",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 81,
+    "raw_line_index": 119,
+    "raw_lines": [
+      "Disco Bumper Color 20 kgs - Azul",
+      "DOBC020",
+      "8435657002695",
+      "55,07 €"
+    ],
+    "raw_sku": "DOBC020",
+    "normalized_sku": "DOBC020",
+    "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 20 kgs - Azul",
+    "normalized_name": "Disco Bumper Color 20 kgs - Azul",
+    "price": "55.07",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 11,
+    "source_row_index": 82,
+    "raw_line_index": 123,
+    "raw_lines": [
+      "Disco Bumper Color 25 kgs - Rojo",
+      "DOBC025",
+      "8435657002701",
+      "67,04 €"
+    ],
+    "raw_sku": "DOBC025",
+    "normalized_sku": "DOBC025",
+    "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 25 kgs - Rojo",
+    "normalized_name": "Disco Bumper Color 25 kgs - Rojo",
+    "price": "67.04",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  }
+]

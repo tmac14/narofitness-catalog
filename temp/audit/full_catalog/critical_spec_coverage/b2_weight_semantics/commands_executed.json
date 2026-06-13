@@ -1,0 +1,13 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B2-WEIGHT-SEMANTICS-AUDIT",
+  "commands": [
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/critical_spec_coverage/b2_weight_semantics/_b2_weight_semantics_audit.py\""
+  ],
+  "baseline_confirmed": {
+    "variants": 871,
+    "peso_kg": 431,
+    "peso_lb": 4,
+    "longitud_mm": 20
+  },
+  "read_only": true
+}

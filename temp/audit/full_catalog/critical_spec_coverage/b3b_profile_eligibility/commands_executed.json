@@ -1,0 +1,14 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B3B-CATEGORY-PROFILE-ELIGIBILITY-AUDIT",
+  "commands": [
+    "npm run db:reset:full:wipe",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/critical_spec_coverage/b3b_profile_eligibility/_b3b_profile_eligibility_audit.py\""
+  ],
+  "regression_pages": "11/12/13/14 unchanged — read-only audit, no code/profile modifications",
+  "baseline_confirmed": {
+    "variants": 871,
+    "masters": 534,
+    "longitud_mm": 20,
+    "blocked": 0
+  }
+}

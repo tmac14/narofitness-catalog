@@ -1,0 +1,1084 @@
+{
+  "parser": {
+    "total_parsed_skus": 871,
+    "xebex_brand_rows": 32,
+    "smart_connect_rows": 12,
+    "xebex_still_in_name_after_cleanup": 0,
+    "pages_with_xebex": {
+      "3": [
+        "BIC002",
+        "BIC006",
+        "BIC007",
+        "BIC008",
+        "BIC009",
+        "BIC010",
+        "REPUESTO-805",
+        "REPUESTO-806"
+      ],
+      "4": [
+        "CIN001",
+        "CIN002",
+        "CIN003",
+        "CIN004",
+        "CIN005",
+        "REM002",
+        "REM003",
+        "REM004",
+        "REM005"
+      ],
+      "5": [
+        "ESC003",
+        "SKI002",
+        "SKI004",
+        "SKI005",
+        "SKI008",
+        "SKI009",
+        "SKI010",
+        "SKI011"
+      ],
+      "6": [
+        "TRI001",
+        "TRI002",
+        "TRI003",
+        "TRI004",
+        "TRI005",
+        "TRI006",
+        "TRI007"
+      ]
+    },
+    "pages_with_smart": {
+      "3": [
+        "BIC002",
+        "BIC007",
+        "BIC008",
+        "BIC010",
+        "REPUESTO-805",
+        "REPUESTO-806"
+      ],
+      "4": [
+        "CIN002",
+        "REM002",
+        "REM004",
+        "REM005"
+      ],
+      "5": [
+        "ESC003",
+        "SKI009"
+      ]
+    },
+    "smart_token_variants": {
+      "(no smart conect)": 9,
+      "smart conect": 6,
+      "(si smart conect)": 6,
+      "(smart conect)": 9,
+      "(si smart connect)": 3,
+      "smart connect": 3
+    },
+    "xebex_master_leak_count": 17,
+    "xebex_master_leak": [
+      {
+        "page": 3,
+        "sku": "BIC010",
+        "normalized_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+        "variant_primary": "Bicileta Air Bike 1000 Eco Xebex (NO smart conect)"
+      },
+      {
+        "page": 3,
+        "sku": "REPUESTO-806",
+        "normalized_name": "Consola Bluetooth AB-1000 SMART CONECT",
+        "variant_primary": "XEBEX Consola Bluetooth AB-1000 SMART CONECT"
+      },
+      {
+        "page": 3,
+        "sku": "BIC002",
+        "normalized_name": "Bicicleta Air Bike (NO smart conect)",
+        "variant_primary": "Bicicleta Air Bike Xebex (NO smart conect)"
+      },
+      {
+        "page": 3,
+        "sku": "REPUESTO-805",
+        "normalized_name": "Consola Bluetooth AB-1 SMART CONECT",
+        "variant_primary": "XEBEX Consola Bluetooth AB-1 SMART CONECT"
+      },
+      {
+        "page": 3,
+        "sku": "BIC009",
+        "normalized_name": "Bicicleta Eco Air Cycle",
+        "variant_primary": "Bicicleta Eco Air Cycle Xebex"
+      },
+      {
+        "page": 4,
+        "sku": "CIN003",
+        "normalized_name": "ST-6000",
+        "variant_primary": "Cinta Xebex ST-6000"
+      },
+      {
+        "page": 4,
+        "sku": "CIN004",
+        "normalized_name": "STL-5000",
+        "variant_primary": "Cinta Xebex STL-5000"
+      },
+      {
+        "page": 4,
+        "sku": "CIN005",
+        "normalized_name": "TKR-4000",
+        "variant_primary": "Cinta Xebex TKR-4000"
+      },
+      {
+        "page": 5,
+        "sku": "SKI002",
+        "normalized_name": "Soporte pared Ski",
+        "variant_primary": "Soporte pared Ski - Xebex"
+      },
+      {
+        "page": 5,
+        "sku": "SKI004",
+        "normalized_name": "Bateria Ski",
+        "variant_primary": "Bateria Ski - Xebex"
+      },
+      {
+        "page": 5,
+        "sku": "SKI005",
+        "normalized_name": "Pull Bar Ski",
+        "variant_primary": "Pull Bar Ski - Xebex"
+      },
+      {
+        "page": 5,
+        "sku": "SKI008",
+        "normalized_name": "Air Ski Trainer Eco",
+        "variant_primary": "Air Ski Trainer Eco - Xebex"
+      },
+      {
+        "page": 6,
+        "sku": "TRI001",
+        "normalized_name": "XT3 Trineo",
+        "variant_primary": "XT3 Trineo Xebex"
+      },
+      {
+        "page": 6,
+        "sku": "TRI002",
+        "normalized_name": "XT3 Consola Trineo",
+        "variant_primary": "XT3 Consola Trineo Xebex"
+      },
+      {
+        "page": 6,
+        "sku": "TRI003",
+        "normalized_name": "XT3 Plus Trineo Multifuncional V2",
+        "variant_primary": "XT3 Plus Trineo Multifuncional Xebex V2"
+      },
+      {
+        "page": 6,
+        "sku": "TRI004",
+        "normalized_name": "XT4 Trineo Multifuncional",
+        "variant_primary": "XT4 Trineo Multifuncional Xebex"
+      },
+      {
+        "page": 6,
+        "sku": "TRI007",
+        "normalized_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+        "variant_primary": "Consola Trineo Xebex para SLD-XT3V2 y SLD-XT4"
+      }
+    ],
+    "category_prefix_in_primary_count": 25
+  },
+  "page4_focus": {
+    "xebex": [
+      {
+        "page": 4,
+        "sku": "REM002",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > REMO",
+        "raw_name": "Remo Air Rower 2,0 (NO smart conect)",
+        "parser_name": "Air Rower 2,0 (NO smart conect)",
+        "cleaned_name": "Air Rower 2,0 (NO smart conect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(NO smart conect)"
+        ]
+      },
+      {
+        "page": 4,
+        "sku": "REM004",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > REMO",
+        "raw_name": "Remo Air Rower 2,0 (SI smart conect)",
+        "parser_name": "Air Rower 2,0 (SI smart conect)",
+        "cleaned_name": "Air Rower 2,0 (SI smart conect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(SI smart conect)"
+        ]
+      },
+      {
+        "page": 4,
+        "sku": "REM003",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > REMO",
+        "raw_name": "Remo Air Rower 3,0",
+        "parser_name": "Air Rower 3,0",
+        "cleaned_name": "Air Rower 3,0",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": []
+      },
+      {
+        "page": 4,
+        "sku": "REM005",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > REMO",
+        "raw_name": "Remo AirPlus Rower (Si Smart connect)",
+        "parser_name": "AirPlus Rower (Si Smart connect)",
+        "cleaned_name": "AirPlus Rower (Si Smart connect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(Si Smart connect)"
+        ]
+      },
+      {
+        "page": 4,
+        "sku": "CIN001",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > CINTA",
+        "raw_name": "Cinta Curva sin Motor",
+        "parser_name": "Curva sin Motor",
+        "cleaned_name": "Curva sin Motor",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": []
+      },
+      {
+        "page": 4,
+        "sku": "CIN002",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > CINTA",
+        "raw_name": "Cinta Air Plus Magnetic (Smart Conect)",
+        "parser_name": "Air Plus Magnetic (Smart Conect)",
+        "cleaned_name": "Air Plus Magnetic (Smart Conect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(Smart Conect)"
+        ]
+      },
+      {
+        "page": 4,
+        "sku": "CIN003",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > CINTA",
+        "raw_name": "Cinta Xebex ST-6000",
+        "parser_name": "ST-6000",
+        "cleaned_name": "ST-6000",
+        "xebex_in_raw": true,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": []
+      },
+      {
+        "page": 4,
+        "sku": "CIN004",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > CINTA",
+        "raw_name": "Cinta Xebex STL-5000",
+        "parser_name": "STL-5000",
+        "cleaned_name": "STL-5000",
+        "xebex_in_raw": true,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": []
+      },
+      {
+        "page": 4,
+        "sku": "CIN005",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > CINTA",
+        "raw_name": "Cinta Xebex TKR-4000",
+        "parser_name": "TKR-4000",
+        "cleaned_name": "TKR-4000",
+        "xebex_in_raw": true,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": []
+      }
+    ],
+    "smart": [
+      {
+        "page": 4,
+        "sku": "REM002",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > REMO",
+        "raw_name": "Remo Air Rower 2,0 (NO smart conect)",
+        "parser_name": "Air Rower 2,0 (NO smart conect)",
+        "cleaned_name": "Air Rower 2,0 (NO smart conect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(NO smart conect)"
+        ]
+      },
+      {
+        "page": 4,
+        "sku": "REM004",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > REMO",
+        "raw_name": "Remo Air Rower 2,0 (SI smart conect)",
+        "parser_name": "Air Rower 2,0 (SI smart conect)",
+        "cleaned_name": "Air Rower 2,0 (SI smart conect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(SI smart conect)"
+        ]
+      },
+      {
+        "page": 4,
+        "sku": "REM005",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > REMO",
+        "raw_name": "Remo AirPlus Rower (Si Smart connect)",
+        "parser_name": "AirPlus Rower (Si Smart connect)",
+        "cleaned_name": "AirPlus Rower (Si Smart connect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(Si Smart connect)"
+        ]
+      },
+      {
+        "page": 4,
+        "sku": "CIN002",
+        "brand_parser": "XEBEX",
+        "category_path": "CARDIO > CINTA",
+        "raw_name": "Cinta Air Plus Magnetic (Smart Conect)",
+        "parser_name": "Air Plus Magnetic (Smart Conect)",
+        "cleaned_name": "Air Plus Magnetic (Smart Conect)",
+        "xebex_in_raw": false,
+        "xebex_in_cleaned": false,
+        "xebex_cleanup_gap": false,
+        "smart_tokens": [
+          "(Smart Conect)"
+        ]
+      }
+    ]
+  },
+  "db": {
+    "total_variants": 9,
+    "brand_xebex_count": 9,
+    "xebex_in_master_name": 3,
+    "xebex_in_display_when_brand_xebex": 0,
+    "smart_connect_in_db": 4,
+    "xebex_master_samples": [
+      {
+        "sku": "CIN003",
+        "page": 4,
+        "master_name": "Cinta Xebex ST-6000",
+        "display_name": "ST-6000",
+        "brand": "XEBEX"
+      },
+      {
+        "sku": "CIN004",
+        "page": 4,
+        "master_name": "Cinta Xebex STL-5000",
+        "display_name": "STL-5000",
+        "brand": "XEBEX"
+      },
+      {
+        "sku": "CIN005",
+        "page": 4,
+        "master_name": "Cinta Xebex TKR-4000",
+        "display_name": "TKR-4000",
+        "brand": "XEBEX"
+      }
+    ],
+    "xebex_display_samples": [],
+    "smart_db_samples": [
+      {
+        "sku": "REM002",
+        "page": 4,
+        "master_name": "Remo Air Rower 2,0 (NO smart conect)",
+        "display_name": "Air Rower 2,0 (NO smart conect)",
+        "brand": "XEBEX",
+        "smart_tokens": [
+          "(NO smart conect)"
+        ],
+        "specs": {}
+      },
+      {
+        "sku": "REM004",
+        "page": 4,
+        "master_name": "Remo Air Rower 2,0 (SI smart conect)",
+        "display_name": "Air Rower 2,0 (SI smart conect)",
+        "brand": "XEBEX",
+        "smart_tokens": [
+          "(SI smart conect)"
+        ],
+        "specs": {}
+      },
+      {
+        "sku": "REM005",
+        "page": 4,
+        "master_name": "Remo AirPlus Rower (Si Smart connect)",
+        "display_name": "AirPlus Rower (Si Smart connect)",
+        "brand": "XEBEX",
+        "smart_tokens": [
+          "(Si Smart connect)"
+        ],
+        "specs": {}
+      },
+      {
+        "sku": "CIN002",
+        "page": 4,
+        "master_name": "Cinta Air Plus Magnetic (Smart Conect)",
+        "display_name": "Air Plus Magnetic (Smart Conect)",
+        "brand": "XEBEX",
+        "smart_tokens": [
+          "(Smart Conect)"
+        ],
+        "specs": {}
+      }
+    ],
+    "smart_by_page": {
+      "4": [
+        "REM002",
+        "REM004",
+        "REM005",
+        "CIN002"
+      ]
+    }
+  },
+  "parser_xebex_full": [
+    {
+      "page": 3,
+      "sku": "BIC010",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicileta Air Bike 1000 Eco Xebex (NO smart conect)",
+      "parser_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "cleaned_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(NO smart conect)"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "REPUESTO-806",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "XEBEX Consola Bluetooth AB-1000 SMART CONECT",
+      "parser_name": "Consola Bluetooth AB-1000 SMART CONECT",
+      "cleaned_name": "Consola Bluetooth AB-1000 SMART CONECT",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "SMART CONECT"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "BIC002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta Air Bike Xebex (NO smart conect)",
+      "parser_name": "Bicicleta Air Bike (NO smart conect)",
+      "cleaned_name": "Bicicleta Air Bike (NO smart conect)",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(NO smart conect)"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "REPUESTO-805",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "XEBEX Consola Bluetooth AB-1 SMART CONECT",
+      "parser_name": "Consola Bluetooth AB-1 SMART CONECT",
+      "cleaned_name": "Consola Bluetooth AB-1 SMART CONECT",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "SMART CONECT"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "BIC006",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta AirPlus Performance Magnetica",
+      "parser_name": "Bicicleta AirPlus Performance Magnetica",
+      "cleaned_name": "Bicicleta AirPlus Performance Magnetica",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 3,
+      "sku": "BIC007",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "parser_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "cleaned_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Si Smart Conect)"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "BIC008",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "parser_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "cleaned_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Smart Conect)"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "BIC009",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta Eco Air Cycle Xebex",
+      "parser_name": "Bicicleta Eco Air Cycle",
+      "cleaned_name": "Bicicleta Eco Air Cycle",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 4,
+      "sku": "REM002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > REMO",
+      "raw_name": "Remo Air Rower 2,0 (NO smart conect)",
+      "parser_name": "Air Rower 2,0 (NO smart conect)",
+      "cleaned_name": "Air Rower 2,0 (NO smart conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(NO smart conect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "REM004",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > REMO",
+      "raw_name": "Remo Air Rower 2,0 (SI smart conect)",
+      "parser_name": "Air Rower 2,0 (SI smart conect)",
+      "cleaned_name": "Air Rower 2,0 (SI smart conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(SI smart conect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "REM003",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > REMO",
+      "raw_name": "Remo Air Rower 3,0",
+      "parser_name": "Air Rower 3,0",
+      "cleaned_name": "Air Rower 3,0",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 4,
+      "sku": "REM005",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > REMO",
+      "raw_name": "Remo AirPlus Rower (Si Smart connect)",
+      "parser_name": "AirPlus Rower (Si Smart connect)",
+      "cleaned_name": "AirPlus Rower (Si Smart connect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Si Smart connect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "CIN001",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CINTA",
+      "raw_name": "Cinta Curva sin Motor",
+      "parser_name": "Curva sin Motor",
+      "cleaned_name": "Curva sin Motor",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 4,
+      "sku": "CIN002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CINTA",
+      "raw_name": "Cinta Air Plus Magnetic (Smart Conect)",
+      "parser_name": "Air Plus Magnetic (Smart Conect)",
+      "cleaned_name": "Air Plus Magnetic (Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Smart Conect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "CIN003",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CINTA",
+      "raw_name": "Cinta Xebex ST-6000",
+      "parser_name": "ST-6000",
+      "cleaned_name": "ST-6000",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 4,
+      "sku": "CIN004",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CINTA",
+      "raw_name": "Cinta Xebex STL-5000",
+      "parser_name": "STL-5000",
+      "cleaned_name": "STL-5000",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 4,
+      "sku": "CIN005",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CINTA",
+      "raw_name": "Cinta Xebex TKR-4000",
+      "parser_name": "TKR-4000",
+      "cleaned_name": "TKR-4000",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 5,
+      "sku": "SKI002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "Soporte pared Ski - Xebex",
+      "parser_name": "Soporte pared Ski",
+      "cleaned_name": "Soporte pared Ski",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 5,
+      "sku": "SKI004",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "Bateria Ski - Xebex",
+      "parser_name": "Bateria Ski",
+      "cleaned_name": "Bateria Ski",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 5,
+      "sku": "SKI005",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "Pull Bar Ski - Xebex",
+      "parser_name": "Pull Bar Ski",
+      "cleaned_name": "Pull Bar Ski",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 5,
+      "sku": "SKI008",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "Air Ski Trainer Eco - Xebex",
+      "parser_name": "Air Ski Trainer Eco",
+      "cleaned_name": "Air Ski Trainer Eco",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 5,
+      "sku": "SKI009",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "parser_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "cleaned_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "Smart Connect"
+      ]
+    },
+    {
+      "page": 5,
+      "sku": "SKI010",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "Ski Trainer Floor Stand",
+      "parser_name": "Trainer Floor Stand",
+      "cleaned_name": "Trainer Floor Stand",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 5,
+      "sku": "SKI011",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "Ski Trainer Wall-Mount Brackets",
+      "parser_name": "Trainer Wall-Mount Brackets",
+      "cleaned_name": "Trainer Wall-Mount Brackets",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 5,
+      "sku": "ESC003",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CLIMBER",
+      "raw_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "parser_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "cleaned_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Smart Conect)"
+      ]
+    },
+    {
+      "page": 6,
+      "sku": "TRI001",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > TRINEO",
+      "raw_name": "XT3 Trineo Xebex",
+      "parser_name": "XT3 Trineo",
+      "cleaned_name": "XT3 Trineo",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 6,
+      "sku": "TRI002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > TRINEO",
+      "raw_name": "XT3 Consola Trineo Xebex",
+      "parser_name": "XT3 Consola Trineo",
+      "cleaned_name": "XT3 Consola Trineo",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 6,
+      "sku": "TRI003",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > TRINEO",
+      "raw_name": "XT3 Plus Trineo Multifuncional Xebex V2",
+      "parser_name": "XT3 Plus Trineo Multifuncional V2",
+      "cleaned_name": "XT3 Plus Trineo Multifuncional V2",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 6,
+      "sku": "TRI004",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > TRINEO",
+      "raw_name": "XT4 Trineo Multifuncional Xebex",
+      "parser_name": "XT4 Trineo Multifuncional",
+      "cleaned_name": "XT4 Trineo Multifuncional",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 6,
+      "sku": "TRI005",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > TRINEO",
+      "raw_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "parser_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "cleaned_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 6,
+      "sku": "TRI006",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > TRINEO",
+      "raw_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "parser_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "cleaned_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    },
+    {
+      "page": 6,
+      "sku": "TRI007",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > TRINEO",
+      "raw_name": "Consola Trineo Xebex para SLD-XT3V2 y SLD-XT4",
+      "parser_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "cleaned_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": []
+    }
+  ],
+  "parser_smart_full": [
+    {
+      "page": 3,
+      "sku": "BIC010",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicileta Air Bike 1000 Eco Xebex (NO smart conect)",
+      "parser_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "cleaned_name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(NO smart conect)"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "REPUESTO-806",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "XEBEX Consola Bluetooth AB-1000 SMART CONECT",
+      "parser_name": "Consola Bluetooth AB-1000 SMART CONECT",
+      "cleaned_name": "Consola Bluetooth AB-1000 SMART CONECT",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "SMART CONECT"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "BIC002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta Air Bike Xebex (NO smart conect)",
+      "parser_name": "Bicicleta Air Bike (NO smart conect)",
+      "cleaned_name": "Bicicleta Air Bike (NO smart conect)",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(NO smart conect)"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "REPUESTO-805",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "XEBEX Consola Bluetooth AB-1 SMART CONECT",
+      "parser_name": "Consola Bluetooth AB-1 SMART CONECT",
+      "cleaned_name": "Consola Bluetooth AB-1 SMART CONECT",
+      "xebex_in_raw": true,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "SMART CONECT"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "BIC007",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "parser_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "cleaned_name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Si Smart Conect)"
+      ]
+    },
+    {
+      "page": 3,
+      "sku": "BIC008",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > BICI",
+      "raw_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "parser_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "cleaned_name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Smart Conect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "REM002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > REMO",
+      "raw_name": "Remo Air Rower 2,0 (NO smart conect)",
+      "parser_name": "Air Rower 2,0 (NO smart conect)",
+      "cleaned_name": "Air Rower 2,0 (NO smart conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(NO smart conect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "REM004",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > REMO",
+      "raw_name": "Remo Air Rower 2,0 (SI smart conect)",
+      "parser_name": "Air Rower 2,0 (SI smart conect)",
+      "cleaned_name": "Air Rower 2,0 (SI smart conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(SI smart conect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "REM005",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > REMO",
+      "raw_name": "Remo AirPlus Rower (Si Smart connect)",
+      "parser_name": "AirPlus Rower (Si Smart connect)",
+      "cleaned_name": "AirPlus Rower (Si Smart connect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Si Smart connect)"
+      ]
+    },
+    {
+      "page": 4,
+      "sku": "CIN002",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CINTA",
+      "raw_name": "Cinta Air Plus Magnetic (Smart Conect)",
+      "parser_name": "Air Plus Magnetic (Smart Conect)",
+      "cleaned_name": "Air Plus Magnetic (Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Smart Conect)"
+      ]
+    },
+    {
+      "page": 5,
+      "sku": "SKI009",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > SKI",
+      "raw_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "parser_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "cleaned_name": "AirPlus Ski Trainer 200 Smart Connect",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "Smart Connect"
+      ]
+    },
+    {
+      "page": 5,
+      "sku": "ESC003",
+      "brand_parser": "XEBEX",
+      "category_path": "CARDIO > CLIMBER",
+      "raw_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "parser_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "cleaned_name": "Escaladora Climber 3.0 (Smart Conect)",
+      "xebex_in_raw": false,
+      "xebex_in_cleaned": false,
+      "xebex_cleanup_gap": false,
+      "smart_tokens": [
+        "(Smart Conect)"
+      ]
+    }
+  ]
+}

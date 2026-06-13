@@ -1,0 +1,57 @@
+{
+  "viewport": "390x844",
+  "search": {
+    "queryBarrasCrossfit": { "results": 3, "pass": true },
+    "queryCrossfitAlone": { "emptyState": "Sin productos / No hay resultados", "pass": true },
+    "queryBarras": { "results": 11, "pass": true }
+  },
+  "sort": {
+    "directionToggle": {
+      "beforeLabel": "Cambiar a orden descendente",
+      "afterLabel": "Cambiar a orden ascendente",
+      "firstProductChanged": true,
+      "pass": true
+    }
+  },
+  "pagination": {
+    "totalProducts": 534,
+    "pageSize": 50,
+    "nextPage": {
+      "rangeBefore": "1–50 de 534",
+      "rangeAfter": "51–100 de 534",
+      "firstProductChanged": true,
+      "pass": true
+    }
+  },
+  "navigationFicha": {
+    "singleVariantMenu": {
+      "product": "Barras Crossfit - NEXO (single CRO109)",
+      "url": "http://127.0.0.1:5173/products/b5cf4dd2-28e5-4b86-a596-7160d1c5e590",
+      "pass": true
+    },
+    "multiVariantSheetLink": {
+      "hrefPattern": "/products/ca44024f-be48-415e-9e91-7bc58b910985",
+      "presentInSheet": true,
+      "notNavigatedInSession": false
+    }
+  },
+  "pdfSource": {
+    "cardPdfButtonsVisible": true,
+    "sheetPdfButtonsVisible": true,
+    "desktopTablePdfButtonsVisible": true,
+    "pass": true
+  },
+  "emptyState": {
+    "provokedBySearch": "Crossfit",
+    "message": "No hay resultados para su búsqueda.",
+    "pass": true
+  },
+  "errorState": {
+    "provoked": false,
+    "note": "No se simuló fallo de API (read-only; no modificar backend)."
+  },
+  "loadingState": {
+    "observedOnReload": true,
+    "note": "Skeleton/pulse breve antes de cards; no capturado en screenshot dedicado."
+  }
+}

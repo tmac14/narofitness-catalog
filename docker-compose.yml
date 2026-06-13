@@ -1,0 +1,50 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    pids_limit: 256
+    environment:
+      POSTGRES_USER: narocatalog
+      POSTGRES_PASSWORD: narocatalog
+      POSTGRES_DB: narocatalog
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U narocatalog"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: ./apps/api
+    init: true
+    pids_limit: 512
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://narocatalog:narocatalog@postgres:5432/narocatalog
+      DATA_DIR: /data
+      CORS_ORIGINS: "*"
+    # Explicit prod command — never --reload (avoids multiprocessing fork storms).
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    volumes:
+      - api_data:/data
+      - ./temp:/temp:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health', timeout=5)\"",
+        ]
+      interval: 5s
+      timeout: 10s
+      retries: 12
+      start_period: 20s
+
+volumes:
+  pgdata:
+  api_data:

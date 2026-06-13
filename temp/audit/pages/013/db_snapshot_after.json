@@ -1,0 +1,600 @@
+{
+  "masters": [
+    {
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "master_key": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "master_key": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+      "master_key": "CRO-WALL-LBS",
+      "product_master_name": "Wall Balls Doble Costura Libras",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "dcd7a920-72fa-483a-94e1-3a84b89444b8",
+      "master_key": "SOP055",
+      "product_master_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "e3e90c10-0b97-45fd-9b5f-2673ddda4110",
+      "master_key": "SOP063",
+      "product_master_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+      "master_key": "CRO-POWER-BAGS-COLOR",
+      "product_master_name": "Power Bags Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+      "master_key": "CRO-SACO-BULGARO",
+      "product_master_name": "Saco Bulgaro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    }
+  ],
+  "variants": [
+    {
+      "product_variant_id": "53329bde-56e1-44d1-b698-191611bf1717",
+      "variant_sku": "CRO095",
+      "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "product_master_sku": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "24.79"
+    },
+    {
+      "product_variant_id": "165769da-19bb-4b2e-bed8-4781c8950527",
+      "variant_sku": "CRO127",
+      "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "product_master_sku": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "26.29"
+    },
+    {
+      "product_variant_id": "41ea3af7-cc95-497d-a330-5faa6b988ed8",
+      "variant_sku": "CRO096",
+      "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "product_master_sku": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "28.42"
+    },
+    {
+      "product_variant_id": "f6ed3a02-9fc0-4163-9a05-549187d380cb",
+      "variant_sku": "CRO097",
+      "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "product_master_sku": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "30.60"
+    },
+    {
+      "product_variant_id": "4794ce54-64d5-45fe-aa2b-0abfe02dce21",
+      "variant_sku": "CRO098",
+      "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "product_master_sku": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "32.80"
+    },
+    {
+      "product_variant_id": "5454f042-4b42-43dd-aa0f-5558b27daedc",
+      "variant_sku": "CRO099",
+      "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "product_master_sku": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "36.44"
+    },
+    {
+      "product_variant_id": "fa26d98e-c7ab-4660-9945-e048f95546ba",
+      "variant_sku": "CRO100",
+      "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+      "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+      "product_master_sku": "CRO-WALL-FDL",
+      "product_master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "40.60"
+    },
+    {
+      "product_variant_id": "c114cfdb-b663-4fa2-b3c7-68af94863351",
+      "variant_sku": "CRO136",
+      "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "product_master_sku": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "24.79"
+    },
+    {
+      "product_variant_id": "71127295-9ff3-4a35-ab12-f56ba1039043",
+      "variant_sku": "CRO142",
+      "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "product_master_sku": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "26.29"
+    },
+    {
+      "product_variant_id": "c0fdca8e-0107-4b61-a63b-3b38bb8ab8a5",
+      "variant_sku": "CRO137",
+      "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "product_master_sku": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "28.42"
+    },
+    {
+      "product_variant_id": "a989808f-2ecf-4833-ac37-88b8aaf8816e",
+      "variant_sku": "CRO138",
+      "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "product_master_sku": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "30.60"
+    },
+    {
+      "product_variant_id": "46d53244-a2c2-4c99-af42-605df77f42f3",
+      "variant_sku": "CRO139",
+      "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "product_master_sku": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "32.80"
+    },
+    {
+      "product_variant_id": "fcf17012-996a-400f-9298-2b2683f15789",
+      "variant_sku": "CRO140",
+      "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "product_master_sku": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "36.44"
+    },
+    {
+      "product_variant_id": "ecd0104d-677a-41a0-a413-28a5b9d22edf",
+      "variant_sku": "CRO141",
+      "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+      "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+      "product_master_sku": "CRO-WALL-NEXO",
+      "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "40.60"
+    },
+    {
+      "product_variant_id": "91a26377-5979-491c-a4c2-dd54d1404aa7",
+      "variant_sku": "CRO083",
+      "variant_name": "Wall Ball Doble costura 12 lbs Negro",
+      "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+      "product_master_sku": "CRO-WALL-LBS",
+      "product_master_name": "Wall Balls Doble Costura Libras",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "28.30"
+    },
+    {
+      "product_variant_id": "37421183-09b1-4caa-8b05-b3fa5d927ea6",
+      "variant_sku": "CRO084",
+      "variant_name": "Wall Ball Doble costura 14 lbs Negro",
+      "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+      "product_master_sku": "CRO-WALL-LBS",
+      "product_master_name": "Wall Balls Doble Costura Libras",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "29.65"
+    },
+    {
+      "product_variant_id": "604cf440-106d-4bc2-bda4-9d26c4a655ec",
+      "variant_sku": "CRO085",
+      "variant_name": "Wall Ball Doble costura 16 lbs Negro",
+      "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+      "product_master_sku": "CRO-WALL-LBS",
+      "product_master_name": "Wall Balls Doble Costura Libras",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "32.34"
+    },
+    {
+      "product_variant_id": "603072ae-b678-4c68-985c-58a19d816b06",
+      "variant_sku": "CRO086",
+      "variant_name": "Wall Ball Doble costura 20 lbs Negro",
+      "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+      "product_master_sku": "CRO-WALL-LBS",
+      "product_master_name": "Wall Balls Doble Costura Libras",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "33.70"
+    },
+    {
+      "product_variant_id": "16013a99-ab8e-4ad0-b42e-5dfb506275fa",
+      "variant_sku": "SOP055",
+      "variant_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "product_master_id": "dcd7a920-72fa-483a-94e1-3a84b89444b8",
+      "product_master_sku": "SOP055",
+      "product_master_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "72.89"
+    },
+    {
+      "product_variant_id": "46aae6fd-0fe0-4530-b454-23b6f6cfa96e",
+      "variant_sku": "SOP063",
+      "variant_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "product_master_id": "e3e90c10-0b97-45fd-9b5f-2673ddda4110",
+      "product_master_sku": "SOP063",
+      "product_master_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "114.08"
+    },
+    {
+      "product_variant_id": "3d2a30d9-74bc-44a7-9b93-a7437864b027",
+      "variant_sku": "CRO069",
+      "variant_name": "Power Bag Color 5 kgs NARANJA",
+      "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+      "product_master_sku": "CRO-POWER-BAGS-COLOR",
+      "product_master_name": "Power Bags Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "24.56"
+    },
+    {
+      "product_variant_id": "d09b6a83-7d0a-4b70-a2b5-f758a3e234cc",
+      "variant_sku": "CRO070",
+      "variant_name": "Power Bag Color 10 kgs ROJO",
+      "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+      "product_master_sku": "CRO-POWER-BAGS-COLOR",
+      "product_master_name": "Power Bags Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "28.17"
+    },
+    {
+      "product_variant_id": "4b11ffed-3bc3-41af-aa45-091556ab8ac6",
+      "variant_sku": "CRO071",
+      "variant_name": "Power Bag Color 15 kgs AZUL",
+      "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+      "product_master_sku": "CRO-POWER-BAGS-COLOR",
+      "product_master_name": "Power Bags Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "34.18"
+    },
+    {
+      "product_variant_id": "f1bba5c6-0559-44f3-8e75-15379740684c",
+      "variant_sku": "CRO072",
+      "variant_name": "Power Bag Color 20 kgs VERDE",
+      "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+      "product_master_sku": "CRO-POWER-BAGS-COLOR",
+      "product_master_name": "Power Bags Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "40.77"
+    },
+    {
+      "product_variant_id": "0c607647-2ba7-43df-a063-9657600146b3",
+      "variant_sku": "CRO073",
+      "variant_name": "Power Bag Color 25 kgs NEGRO",
+      "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+      "product_master_sku": "CRO-POWER-BAGS-COLOR",
+      "product_master_name": "Power Bags Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "48.70"
+    },
+    {
+      "product_variant_id": "6d5f3a77-23d3-4827-91a6-ef997b137792",
+      "variant_sku": "CRO143",
+      "variant_name": "Power Bag Color 30 kgs",
+      "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+      "product_master_sku": "CRO-POWER-BAGS-COLOR",
+      "product_master_name": "Power Bags Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "57.95"
+    },
+    {
+      "product_variant_id": "81fc3020-f56f-4f3d-800b-e22eac861439",
+      "variant_sku": "CRO074",
+      "variant_name": "Saco Bulgaro 5 kgs",
+      "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+      "product_master_sku": "CRO-SACO-BULGARO",
+      "product_master_name": "Saco Bulgaro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "29.75"
+    },
+    {
+      "product_variant_id": "e1582bcb-686e-4b22-a89d-9716e0ba566e",
+      "variant_sku": "CRO075",
+      "variant_name": "Saco Bulgaro 10 kgs",
+      "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+      "product_master_sku": "CRO-SACO-BULGARO",
+      "product_master_name": "Saco Bulgaro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "34.66"
+    },
+    {
+      "product_variant_id": "ffc7f6ed-6ad4-45f2-ba52-8c3a19bfd806",
+      "variant_sku": "CRO076",
+      "variant_name": "Saco Bulgaro 15 kgs",
+      "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+      "product_master_sku": "CRO-SACO-BULGARO",
+      "product_master_name": "Saco Bulgaro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "40.78"
+    },
+    {
+      "product_variant_id": "d7a0da0a-cc6a-4bd1-92ea-9b242178bcbc",
+      "variant_sku": "CRO077",
+      "variant_name": "Saco Bulgaro 20 kgs",
+      "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+      "product_master_sku": "CRO-SACO-BULGARO",
+      "product_master_name": "Saco Bulgaro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "49.71"
+    }
+  ],
+  "price_entries": [
+    {
+      "variant_sku": "CRO095",
+      "price": "24.79",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO127",
+      "price": "26.29",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO096",
+      "price": "28.42",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO097",
+      "price": "30.60",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO098",
+      "price": "32.80",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO099",
+      "price": "36.44",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO100",
+      "price": "40.60",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO136",
+      "price": "24.79",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO142",
+      "price": "26.29",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO137",
+      "price": "28.42",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO138",
+      "price": "30.60",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO139",
+      "price": "32.80",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO140",
+      "price": "36.44",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO141",
+      "price": "40.60",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO083",
+      "price": "28.30",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO084",
+      "price": "29.65",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO085",
+      "price": "32.34",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO086",
+      "price": "33.70",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "SOP055",
+      "price": "72.89",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "SOP063",
+      "price": "114.08",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO069",
+      "price": "24.56",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO070",
+      "price": "28.17",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO071",
+      "price": "34.18",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO072",
+      "price": "40.77",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO073",
+      "price": "48.70",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO143",
+      "price": "57.95",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO074",
+      "price": "29.75",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO075",
+      "price": "34.66",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO076",
+      "price": "40.78",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    },
+    {
+      "variant_sku": "CRO077",
+      "price": "49.71",
+      "currency": "EUR",
+      "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+    }
+  ],
+  "specs": [],
+  "variant_skus": [
+    "CRO069",
+    "CRO070",
+    "CRO071",
+    "CRO072",
+    "CRO073",
+    "CRO074",
+    "CRO075",
+    "CRO076",
+    "CRO077",
+    "CRO083",
+    "CRO084",
+    "CRO085",
+    "CRO086",
+    "CRO095",
+    "CRO096",
+    "CRO097",
+    "CRO098",
+    "CRO099",
+    "CRO100",
+    "CRO127",
+    "CRO136",
+    "CRO137",
+    "CRO138",
+    "CRO139",
+    "CRO140",
+    "CRO141",
+    "CRO142",
+    "CRO143",
+    "SOP055",
+    "SOP063"
+  ]
+}

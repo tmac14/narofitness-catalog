@@ -1,0 +1,521 @@
+[
+  {
+    "page_number": 14,
+    "source_row_index": 152,
+    "raw_line_index": 1,
+    "raw_lines": [
+      "Soporte Power Bag 5 sacos",
+      "SOP028",
+      "8435657005719",
+      "200,55 €"
+    ],
+    "raw_sku": "SOP028",
+    "normalized_sku": "SOP028",
+    "raw_name": "Soporte Power Bag / Saco Bulgaro Soporte Power Bag 5 sacos",
+    "normalized_name": "Soporte Power Bag 5 sacos",
+    "price": "200.55",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 153,
+    "raw_line_index": 5,
+    "raw_lines": [
+      "Rack Power Bag y Saco Bulgaro Premium",
+      "(Grande) - 10 Sacos",
+      "SOP029",
+      "8435657005726",
+      "256,56 €"
+    ],
+    "raw_sku": "SOP029",
+    "normalized_sku": "SOP029",
+    "raw_name": "Soporte Power Bag / Saco Bulgaro Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+    "normalized_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+    "price": "256.56",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 154,
+    "raw_line_index": 11,
+    "raw_lines": [
+      "Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "CRO107",
+      "8435657017620",
+      "184,65 €"
+    ],
+    "raw_sku": "CRO107",
+    "normalized_sku": "CRO107",
+    "raw_name": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs)",
+    "normalized_name": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+    "price": "184.65",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 155,
+    "raw_line_index": 15,
+    "raw_lines": [
+      "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "CRO131",
+      "8435657018368",
+      "268,79 €"
+    ],
+    "raw_sku": "CRO131",
+    "normalized_sku": "CRO131",
+    "raw_name": "Saco Gusano Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+    "normalized_name": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+    "price": "268.79",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 156,
+    "raw_line_index": 19,
+    "raw_lines": [
+      "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "CRO108",
+      "8435657017583",
+      "322,32 €"
+    ],
+    "raw_sku": "CRO108",
+    "normalized_sku": "CRO108",
+    "raw_name": "Saco Gusano Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+    "normalized_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+    "price": "322.32",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 157,
+    "raw_line_index": 23,
+    "raw_lines": [
+      "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+      "CRO107NEXO",
+      "8435657018979",
+      "184,65 €"
+    ],
+    "raw_sku": "CRO107NEXO",
+    "normalized_sku": "CRO107NEXO",
+    "raw_name": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+    "normalized_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+    "price": "184.65",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 158,
+    "raw_line_index": 27,
+    "raw_lines": [
+      "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO NEXO",
+      "CRO108NEXO",
+      "8435657018986",
+      "322,32 €"
+    ],
+    "raw_sku": "CRO108NEXO",
+    "normalized_sku": "CRO108NEXO",
+    "raw_name": "Saco Gusano Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO NEXO",
+    "normalized_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO",
+    "price": "322.32",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 159,
+    "raw_line_index": 32,
+    "raw_lines": [
+      "Cinturon Lastrado (negro)",
+      "CRO133",
+      "8435657018504",
+      "8,67 €"
+    ],
+    "raw_sku": "CRO133",
+    "normalized_sku": "CRO133",
+    "raw_name": "Cinturon Lastrado Cinturon Lastrado (negro)",
+    "normalized_name": "Cinturon Lastrado (negro)",
+    "price": "8.67",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 160,
+    "raw_line_index": 37,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+      "Agarre 28 mm PLATA",
+      "BOC001",
+      "8435657000288",
+      "172,21 €"
+    ],
+    "raw_sku": "BOC001",
+    "normalized_sku": "BOC001",
+    "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+    "price": "172.21",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 161,
+    "raw_line_index": 42,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+      "Agarre 28 mm PLATA",
+      "BOC002",
+      "8435657000295",
+      "149,10 €"
+    ],
+    "raw_sku": "BOC002",
+    "normalized_sku": "BOC002",
+    "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+    "price": "149.10",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 162,
+    "raw_line_index": 47,
+    "raw_lines": [
+      "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+      "Agarre 25 mm PLATA",
+      "BOC003",
+      "8435657000301",
+      "162,16 €"
+    ],
+    "raw_sku": "BOC003",
+    "normalized_sku": "BOC003",
+    "raw_name": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+    "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+    "price": "162.16",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 163,
+    "raw_line_index": 37,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+      "Agarre 28 mm NEGRA",
+      "BOC004",
+      "8435657000318",
+      "172,21 €"
+    ],
+    "raw_sku": "BOC004",
+    "normalized_sku": "BOC004",
+    "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+    "price": "172.21",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 164,
+    "raw_line_index": 42,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+      "Agarre 28 mm NEGRA",
+      "BOC008",
+      "8435657000356",
+      "149,10 €"
+    ],
+    "raw_sku": "BOC008",
+    "normalized_sku": "BOC008",
+    "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+    "price": "149.10",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 165,
+    "raw_line_index": 47,
+    "raw_lines": [
+      "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+      "Agarre 25 mm NEGRA",
+      "BOC005",
+      "8435657000325",
+      "162,16 €"
+    ],
+    "raw_sku": "BOC005",
+    "normalized_sku": "BOC005",
+    "raw_name": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+    "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+    "price": "162.16",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 166,
+    "raw_line_index": 67,
+    "raw_lines": [
+      "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+      "BOC006",
+      "8435657000332",
+      "93,11 €"
+    ],
+    "raw_sku": "BOC006",
+    "normalized_sku": "BOC006",
+    "raw_name": "Barras Crossfit Barra Tecnica 10 Kgs - 2 Mts AZUL",
+    "normalized_name": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+    "price": "93.11",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 167,
+    "raw_line_index": 71,
+    "raw_lines": [
+      "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+      "BOC007",
+      "8435657000349",
+      "93,11 €"
+    ],
+    "raw_sku": "BOC007",
+    "normalized_sku": "BOC007",
+    "raw_name": "Barras Crossfit Barra Tecnica 10 Kgs - 2 Mts ROSA",
+    "normalized_name": "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+    "price": "93.11",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 168,
+    "raw_line_index": 37,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+      "Agarre 28 mm PLATA  - LOGO NEXO",
+      "BOC001NEXO",
+      "8435657018870",
+      "175,80 €"
+    ],
+    "raw_sku": "BOC001NEXO",
+    "normalized_sku": "BOC001NEXO",
+    "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO NEXO",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO",
+    "price": "175.80",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 169,
+    "raw_line_index": 42,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+      "Agarre 28 mm PLATA - LOGO NEXO",
+      "BOC002NEXO",
+      "8435657018887",
+      "152,21 €"
+    ],
+    "raw_sku": "BOC002NEXO",
+    "normalized_sku": "BOC002NEXO",
+    "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO NEXO",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO",
+    "price": "152.21",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 170,
+    "raw_line_index": 47,
+    "raw_lines": [
+      "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+      "Agarre 25 mm PLATA - LOGO NEXO",
+      "BOC003NEXO",
+      "8435657018894",
+      "165,54 €"
+    ],
+    "raw_sku": "BOC003NEXO",
+    "normalized_sku": "BOC003NEXO",
+    "raw_name": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO NEXO",
+    "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO",
+    "price": "165.54",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 171,
+    "raw_line_index": 37,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+      "Agarre 28 mm NEGRA - LOGO NEXO",
+      "BOC004NEXO",
+      "8435657018900",
+      "175,80 €"
+    ],
+    "raw_sku": "BOC004NEXO",
+    "normalized_sku": "BOC004NEXO",
+    "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO NEXO",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO",
+    "price": "175.80",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 172,
+    "raw_line_index": 42,
+    "raw_lines": [
+      "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+      "Agarre 28 mm NEGRA - LOGO NEXO",
+      "BOC008NEXO",
+      "8435657018917",
+      "152,21 €"
+    ],
+    "raw_sku": "BOC008NEXO",
+    "normalized_sku": "BOC008NEXO",
+    "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO NEXO",
+    "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO",
+    "price": "152.21",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 14,
+    "source_row_index": 173,
+    "raw_line_index": 47,
+    "raw_lines": [
+      "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+      "Agarre 25 mm NEGRA - LOGO NEXO",
+      "BOC005NEXO",
+      "8435657018924",
+      "165,54 €"
+    ],
+    "raw_sku": "BOC005NEXO",
+    "normalized_sku": "BOC005NEXO",
+    "raw_name": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO NEXO",
+    "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO",
+    "price": "165.54",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  }
+]

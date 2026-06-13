@@ -1,0 +1,900 @@
+[
+  {
+    "page_number": 12,
+    "source_row_index": 83,
+    "raw_line_index": 1,
+    "raw_lines": [
+      "Disco Bumper Hi Temp 5  kgs  (Numero Color)",
+      "DOBHT005",
+      "8435657002817",
+      "19,39 €"
+    ],
+    "raw_sku": "DOBHT005",
+    "normalized_sku": "DOBHT005",
+    "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 5 kgs (Numero Color)",
+    "normalized_name": "Disco Bumper Hi Temp 5 kgs (Numero Color)",
+    "price": "19.39",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 84,
+    "raw_line_index": 5,
+    "raw_lines": [
+      "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+      "DOBHT010",
+      "8435657002824",
+      "28,98 €"
+    ],
+    "raw_sku": "DOBHT010",
+    "normalized_sku": "DOBHT010",
+    "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 10 kgs (Numero Color)",
+    "normalized_name": "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+    "price": "28.98",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 85,
+    "raw_line_index": 9,
+    "raw_lines": [
+      "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+      "DOBHT015",
+      "8435657002831",
+      "41,05 €"
+    ],
+    "raw_sku": "DOBHT015",
+    "normalized_sku": "DOBHT015",
+    "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 15 kgs (Numero Color)",
+    "normalized_name": "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+    "price": "41.05",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 86,
+    "raw_line_index": 13,
+    "raw_lines": [
+      "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+      "DOBHT020",
+      "8435657002848",
+      "48,53 €"
+    ],
+    "raw_sku": "DOBHT020",
+    "normalized_sku": "DOBHT020",
+    "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 20 kgs (Numero Color)",
+    "normalized_name": "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+    "price": "48.53",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 87,
+    "raw_line_index": 17,
+    "raw_lines": [
+      "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+      "DOBHT025",
+      "8435657002855",
+      "56,49 €"
+    ],
+    "raw_sku": "DOBHT025",
+    "normalized_sku": "DOBHT025",
+    "raw_name": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero) Disco Bumper Hi Temp 25 kgs (Numero Color)",
+    "normalized_name": "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+    "price": "56.49",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 88,
+    "raw_line_index": 22,
+    "raw_lines": [
+      "Disco Bumper Competicion 5 kgs",
+      "DOBCC005",
+      "8435657002718",
+      "34,04 €"
+    ],
+    "raw_sku": "DOBCC005",
+    "normalized_sku": "DOBCC005",
+    "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 5 kgs",
+    "normalized_name": "Disco Bumper Competicion 5 kgs",
+    "price": "34.04",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 89,
+    "raw_line_index": 26,
+    "raw_lines": [
+      "Disco Bumper Competicion 10 kgs",
+      "DOBCC010",
+      "8435657002725",
+      "58,68 €"
+    ],
+    "raw_sku": "DOBCC010",
+    "normalized_sku": "DOBCC010",
+    "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 10 kgs",
+    "normalized_name": "Disco Bumper Competicion 10 kgs",
+    "price": "58.68",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 90,
+    "raw_line_index": 30,
+    "raw_lines": [
+      "Disco Bumper Competicion 15 kgs",
+      "DOBCC015",
+      "8435657002732",
+      "79,94 €"
+    ],
+    "raw_sku": "DOBCC015",
+    "normalized_sku": "DOBCC015",
+    "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 15 kgs",
+    "normalized_name": "Disco Bumper Competicion 15 kgs",
+    "price": "79.94",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 91,
+    "raw_line_index": 34,
+    "raw_lines": [
+      "Disco Bumper Competicion 20 kgs",
+      "DOBCC020",
+      "8435657002749",
+      "99,88 €"
+    ],
+    "raw_sku": "DOBCC020",
+    "normalized_sku": "DOBCC020",
+    "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 20 kgs",
+    "normalized_name": "Disco Bumper Competicion 20 kgs",
+    "price": "99.88",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 92,
+    "raw_line_index": 38,
+    "raw_lines": [
+      "Disco Bumper Competicion 25 kgs",
+      "DOBCC025",
+      "8435657002756",
+      "115,84 €"
+    ],
+    "raw_sku": "DOBCC025",
+    "normalized_sku": "DOBCC025",
+    "raw_name": "Disco Olimpico Bumper Competicion Casquillo de Acero Disco Bumper Competicion 25 kgs",
+    "normalized_name": "Disco Bumper Competicion 25 kgs",
+    "price": "115.84",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 93,
+    "raw_line_index": 43,
+    "raw_lines": [
+      "Disco Bumper Color Fraccional 0,5 kgs",
+      "DOBF005",
+      "8435657002763",
+      "3,78 €"
+    ],
+    "raw_sku": "DOBF005",
+    "normalized_sku": "DOBF005",
+    "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 0,5 kgs",
+    "normalized_name": "Disco Bumper Color Fraccional 0,5 kgs",
+    "price": "3.78",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 94,
+    "raw_line_index": 47,
+    "raw_lines": [
+      "Disco Bumper Color Fraccional 1 kg",
+      "DOBF010",
+      "8435657002770",
+      "7,56 €"
+    ],
+    "raw_sku": "DOBF010",
+    "normalized_sku": "DOBF010",
+    "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 1 kg",
+    "normalized_name": "Disco Bumper Color Fraccional 1 kg",
+    "price": "7.56",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 95,
+    "raw_line_index": 51,
+    "raw_lines": [
+      "Disco Bumper Color Fraccional 1,5 kgs",
+      "DOBF015",
+      "8435657002787",
+      "11,33 €"
+    ],
+    "raw_sku": "DOBF015",
+    "normalized_sku": "DOBF015",
+    "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 1,5 kgs",
+    "normalized_name": "Disco Bumper Color Fraccional 1,5 kgs",
+    "price": "11.33",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 96,
+    "raw_line_index": 55,
+    "raw_lines": [
+      "Disco Bumper Color Fraccional 2 kgs",
+      "DOBF020",
+      "8435657002794",
+      "15,11 €"
+    ],
+    "raw_sku": "DOBF020",
+    "normalized_sku": "DOBF020",
+    "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 2 kgs",
+    "normalized_name": "Disco Bumper Color Fraccional 2 kgs",
+    "price": "15.11",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 97,
+    "raw_line_index": 59,
+    "raw_lines": [
+      "Disco Bumper Color Fraccional 2,5 kgs",
+      "DOBF025",
+      "8435657002800",
+      "18,89 €"
+    ],
+    "raw_sku": "DOBF025",
+    "normalized_sku": "DOBF025",
+    "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 2,5 kgs",
+    "normalized_name": "Disco Bumper Color Fraccional 2,5 kgs",
+    "price": "18.89",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 98,
+    "raw_line_index": 63,
+    "raw_lines": [
+      "Disco Bumper Color Fraccional 5 kgs",
+      "DOBF050",
+      "8435657014094",
+      "39,58 €"
+    ],
+    "raw_sku": "DOBF050",
+    "normalized_sku": "DOBF050",
+    "raw_name": "Disco Olimpico Bumper Color Fraccional Disco Bumper Color Fraccional 5 kgs",
+    "normalized_name": "Disco Bumper Color Fraccional 5 kgs",
+    "price": "39.58",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 99,
+    "raw_line_index": 68,
+    "raw_lines": [
+      "Sopote para juego de  Discos Bumper",
+      "SOP025",
+      "8435657005689",
+      "92,77 €"
+    ],
+    "raw_sku": "SOP025",
+    "normalized_sku": "SOP025",
+    "raw_name": "Soporte Discos Bumper Soporte para juego de Discos Bumper",
+    "normalized_name": "Soporte para juego de Discos Bumper",
+    "price": "92.77",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 100,
+    "raw_line_index": 74,
+    "raw_lines": [
+      "Juego Disco Olimpico Bumper Mini",
+      "(2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "DOBMINI",
+      "8435657002862",
+      "56,80 €"
+    ],
+    "raw_sku": "DOBMINI",
+    "normalized_sku": "DOBMINI",
+    "raw_name": "Disco Olimpico Bumper Mini Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+    "normalized_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+    "price": "56.80",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 101,
+    "raw_line_index": 80,
+    "raw_lines": [
+      "Slam Ball 6 kgs Negro",
+      "CRO110",
+      "8435657018061",
+      "10,78 €"
+    ],
+    "raw_sku": "CRO110",
+    "normalized_sku": "CRO110",
+    "raw_name": "Slam Ball -  Negro Slam Ball 6 kgs Negro",
+    "normalized_name": "Slam Ball 6 kgs Negro",
+    "price": "10.78",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 102,
+    "raw_line_index": 84,
+    "raw_lines": [
+      "Slam Ball 8 kgs Negro",
+      "CRO118",
+      "8435657018269",
+      "12,57 €"
+    ],
+    "raw_sku": "CRO118",
+    "normalized_sku": "CRO118",
+    "raw_name": "Slam Ball -  Negro Slam Ball 8 kgs Negro",
+    "normalized_name": "Slam Ball 8 kgs Negro",
+    "price": "12.57",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 103,
+    "raw_line_index": 88,
+    "raw_lines": [
+      "Slam Ball 10 kgs Negro",
+      "CRO111",
+      "8435657018078",
+      "15,02 €"
+    ],
+    "raw_sku": "CRO111",
+    "normalized_sku": "CRO111",
+    "raw_name": "Slam Ball -  Negro Slam Ball 10 kgs Negro",
+    "normalized_name": "Slam Ball 10 kgs Negro",
+    "price": "15.02",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 104,
+    "raw_line_index": 92,
+    "raw_lines": [
+      "Slam Ball 12 kgs Negro",
+      "CRO112",
+      "8435657018108",
+      "17,24 €"
+    ],
+    "raw_sku": "CRO112",
+    "normalized_sku": "CRO112",
+    "raw_name": "Slam Ball -  Negro Slam Ball 12 kgs Negro",
+    "normalized_name": "Slam Ball 12 kgs Negro",
+    "price": "17.24",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 105,
+    "raw_line_index": 96,
+    "raw_lines": [
+      "Slam Ball 15 kgs Negro",
+      "CRO119",
+      "8435657018276",
+      "23,91 €"
+    ],
+    "raw_sku": "CRO119",
+    "normalized_sku": "CRO119",
+    "raw_name": "Slam Ball -  Negro Slam Ball 15 kgs Negro",
+    "normalized_name": "Slam Ball 15 kgs Negro",
+    "price": "23.91",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 106,
+    "raw_line_index": 100,
+    "raw_lines": [
+      "Slam Ball 20 kgs Negro",
+      "CRO113",
+      "8435657018092",
+      "36,11 €"
+    ],
+    "raw_sku": "CRO113",
+    "normalized_sku": "CRO113",
+    "raw_name": "Slam Ball -  Negro Slam Ball 20 kgs Negro",
+    "normalized_name": "Slam Ball 20 kgs Negro",
+    "price": "36.11",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 107,
+    "raw_line_index": 104,
+    "raw_lines": [
+      "Slam Ball 25 kgs Negro",
+      "CRO120",
+      "8435657018290",
+      "42,58 €"
+    ],
+    "raw_sku": "CRO120",
+    "normalized_sku": "CRO120",
+    "raw_name": "Slam Ball -  Negro Slam Ball 25 kgs Negro",
+    "normalized_name": "Slam Ball 25 kgs Negro",
+    "price": "42.58",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 108,
+    "raw_line_index": 108,
+    "raw_lines": [
+      "Slam Ball 30 kgs Negro",
+      "CRO114",
+      "8435657018085",
+      "47,62 €"
+    ],
+    "raw_sku": "CRO114",
+    "normalized_sku": "CRO114",
+    "raw_name": "Slam Ball -  Negro Slam Ball 30 kgs Negro",
+    "normalized_name": "Slam Ball 30 kgs Negro",
+    "price": "47.62",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 109,
+    "raw_line_index": 112,
+    "raw_lines": [
+      "Slam Ball 35 kgs Negro",
+      "CRO116",
+      "8435657018245",
+      "55,30 €"
+    ],
+    "raw_sku": "CRO116",
+    "normalized_sku": "CRO116",
+    "raw_name": "Slam Ball -  Negro Slam Ball 35 kgs Negro",
+    "normalized_name": "Slam Ball 35 kgs Negro",
+    "price": "55.30",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 110,
+    "raw_line_index": 116,
+    "raw_lines": [
+      "Slam Ball 40 kgs Negro",
+      "CRO122",
+      "8435657018306",
+      "63,49 €"
+    ],
+    "raw_sku": "CRO122",
+    "normalized_sku": "CRO122",
+    "raw_name": "Slam Ball -  Negro Slam Ball 40 kgs Negro",
+    "normalized_name": "Slam Ball 40 kgs Negro",
+    "price": "63.49",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 111,
+    "raw_line_index": 120,
+    "raw_lines": [
+      "Slam Ball 45 kgs Negro",
+      "CRO123",
+      "8435657018313",
+      "71,42 €"
+    ],
+    "raw_sku": "CRO123",
+    "normalized_sku": "CRO123",
+    "raw_name": "Slam Ball -  Negro Slam Ball 45 kgs Negro",
+    "normalized_name": "Slam Ball 45 kgs Negro",
+    "price": "71.42",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 112,
+    "raw_line_index": 124,
+    "raw_lines": [
+      "Slam Ball 50 kgs Negro",
+      "CRO124",
+      "8435657018320",
+      "79,37 €"
+    ],
+    "raw_sku": "CRO124",
+    "normalized_sku": "CRO124",
+    "raw_name": "Slam Ball -  Negro Slam Ball 50 kgs Negro",
+    "normalized_name": "Slam Ball 50 kgs Negro",
+    "price": "79.37",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 113,
+    "raw_line_index": 128,
+    "raw_lines": [
+      "Slam Ball 55 kgs Negro",
+      "CRO125",
+      "8435657018337",
+      "87,29 €"
+    ],
+    "raw_sku": "CRO125",
+    "normalized_sku": "CRO125",
+    "raw_name": "Slam Ball -  Negro Slam Ball 55 kgs Negro",
+    "normalized_name": "Slam Ball 55 kgs Negro",
+    "price": "87.29",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 114,
+    "raw_line_index": 132,
+    "raw_lines": [
+      "Slam Ball 60 kgs Negro",
+      "CRO117",
+      "8435657018252",
+      "95,24 €"
+    ],
+    "raw_sku": "CRO117",
+    "normalized_sku": "CRO117",
+    "raw_name": "Slam Ball -  Negro Slam Ball 60 kgs Negro",
+    "normalized_name": "Slam Ball 60 kgs Negro",
+    "price": "95.24",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 115,
+    "raw_line_index": 136,
+    "raw_lines": [
+      "Slam Ball 70 kgs Negro",
+      "CRO134",
+      "8435657018511",
+      "110,73 €"
+    ],
+    "raw_sku": "CRO134",
+    "normalized_sku": "CRO134",
+    "raw_name": "Slam Ball -  Negro Slam Ball 70 kgs Negro",
+    "normalized_name": "Slam Ball 70 kgs Negro",
+    "price": "110.73",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 116,
+    "raw_line_index": 141,
+    "raw_lines": [
+      "Wall Ball Doble costura 3 kgs Color",
+      "CRO002",
+      "8435657000752",
+      "25,84 €"
+    ],
+    "raw_sku": "CRO002",
+    "normalized_sku": "CRO002",
+    "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 3 kgs Color",
+    "normalized_name": "Wall Ball Doble costura 3 kgs Color",
+    "price": "25.84",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 117,
+    "raw_line_index": 145,
+    "raw_lines": [
+      "Wall Ball Doble costura 5 kgs Color",
+      "CRO003",
+      "8435657000769",
+      "29,38 €"
+    ],
+    "raw_sku": "CRO003",
+    "normalized_sku": "CRO003",
+    "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 5 kgs Color",
+    "normalized_name": "Wall Ball Doble costura 5 kgs Color",
+    "price": "29.38",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 118,
+    "raw_line_index": 149,
+    "raw_lines": [
+      "Wall Ball Doble costura 6 kgs Color",
+      "CRO004",
+      "8435657000776",
+      "31,45 €"
+    ],
+    "raw_sku": "CRO004",
+    "normalized_sku": "CRO004",
+    "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 6 kgs Color",
+    "normalized_name": "Wall Ball Doble costura 6 kgs Color",
+    "price": "31.45",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 119,
+    "raw_line_index": 153,
+    "raw_lines": [
+      "Wall Ball Doble costura 7 kgs Color",
+      "CRO005",
+      "8435657000783",
+      "33,10 €"
+    ],
+    "raw_sku": "CRO005",
+    "normalized_sku": "CRO005",
+    "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 7 kgs Color",
+    "normalized_name": "Wall Ball Doble costura 7 kgs Color",
+    "price": "33.10",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 120,
+    "raw_line_index": 157,
+    "raw_lines": [
+      "Wall Ball Doble costura 9 kgs Color",
+      "CRO006",
+      "8435657000790",
+      "36,65 €"
+    ],
+    "raw_sku": "CRO006",
+    "normalized_sku": "CRO006",
+    "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 9 kgs Color",
+    "normalized_name": "Wall Ball Doble costura 9 kgs Color",
+    "price": "36.65",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 12,
+    "source_row_index": 121,
+    "raw_line_index": 161,
+    "raw_lines": [
+      "Wall Ball Doble costura 12 kgs Color",
+      "CRO023",
+      "8435657000929",
+      "40,71 €"
+    ],
+    "raw_sku": "CRO023",
+    "normalized_sku": "CRO023",
+    "raw_name": "Wall Balls Doble Costura Color kgs Wall Ball Doble costura 12 kgs Color",
+    "normalized_name": "Wall Ball Doble costura 12 kgs Color",
+    "price": "40.71",
+    "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  }
+]

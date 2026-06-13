@@ -1,0 +1,5825 @@
+[
+  {
+    "candidate_id": "FC-0107",
+    "source_heuristic": "SamePageSkuFamily",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "name_similarity:0.79",
+      "spec_axis_variation"
+    ],
+    "pages": [
+      12
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO-SLAM-NEGRO",
+      "CRO-WALL-COLOR"
+    ],
+    "skus": [
+      "CRO002",
+      "CRO003",
+      "CRO004",
+      "CRO005",
+      "CRO006",
+      "CRO023",
+      "CRO110",
+      "CRO111",
+      "CRO112",
+      "CRO113",
+      "CRO114",
+      "CRO116",
+      "CRO117",
+      "CRO118",
+      "CRO119",
+      "CRO120",
+      "CRO122",
+      "CRO123",
+      "CRO124",
+      "CRO125",
+      "CRO134"
+    ],
+    "sku_count": 21,
+    "possible_master_name": "Slam Ball",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Slam Ball 6 kgs Negro",
+      "Slam Ball 8 kgs Negro",
+      "Slam Ball 10 kgs Negro",
+      "Slam Ball 12 kgs Negro"
+    ]
+  },
+  {
+    "candidate_id": "FC-0046",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:MVC",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      46
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "MVC000",
+      "MVC001",
+      "MVC002",
+      "MVC003",
+      "MVC004",
+      "MVC005",
+      "MVC006",
+      "MVC007",
+      "MVC008",
+      "MVC009",
+      "MVC010",
+      "MVC015"
+    ],
+    "skus": [
+      "MVC000",
+      "MVC001",
+      "MVC002",
+      "MVC003",
+      "MVC004",
+      "MVC005",
+      "MVC006",
+      "MVC007",
+      "MVC008",
+      "MVC009",
+      "MVC010",
+      "MVC015"
+    ],
+    "sku_count": 12,
+    "possible_master_name": "Mancuerna De Vinilo",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Mancuerna de Vinilo 0,5 kgs",
+      "Mancuerna de Vinilo 1 kg",
+      "Mancuerna de Vinilo 1,5 kgs",
+      "Mancuerna de Vinilo 2 kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0065",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REB",
+      "name_similarity:0.89",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      58
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB149",
+      "REB150",
+      "REB151",
+      "REB152",
+      "REB153",
+      "REB154",
+      "REB155",
+      "REB156",
+      "REB219",
+      "REB220"
+    ],
+    "skus": [
+      "REB149",
+      "REB150",
+      "REB151",
+      "REB152",
+      "REB153",
+      "REB154",
+      "REB155",
+      "REB156",
+      "REB219",
+      "REB220"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Colchoneta Entrenamiento 1830X610X10Mm",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Colchoneta Entrenamiento 1830x610x10mm Rojo",
+      "Colchoneta Entrenamiento 1830x8010x1,5mm Gris",
+      "Colchoneta Entrenamiento 1730x610x7mm Negra",
+      "Colchoneta Entrenamiento 1730x610x7mm Gris"
+    ]
+  },
+  {
+    "candidate_id": "FC-0106",
+    "source_heuristic": "SamePageSkuFamily",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:DOBC",
+      "name_similarity:0.93",
+      "spec_axis_variation"
+    ],
+    "pages": [
+      11
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "discos",
+    "current_master_keys": [
+      "DOB3C",
+      "DOBC"
+    ],
+    "skus": [
+      "DOB3C005",
+      "DOB3C010",
+      "DOB3C015",
+      "DOB3C020",
+      "DOB3C025",
+      "DOBC005",
+      "DOBC010",
+      "DOBC015",
+      "DOBC020",
+      "DOBC025"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Disco Bumper Color 3.0 -",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Disco Bumper COLOR 3.0 - 5 kgs",
+      "Disco Bumper COLOR 3.0 - 10 kgs",
+      "Disco Bumper COLOR 3.0 - 15 kgs",
+      "Disco Bumper COLOR 3.0 - 20 kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0117",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      45
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR101",
+      "VAR102",
+      "VAR103",
+      "VAR104",
+      "VAR105",
+      "VAR106",
+      "VAR107",
+      "VAR108",
+      "VAR109",
+      "VAR110"
+    ],
+    "skus": [
+      "VAR101",
+      "VAR102",
+      "VAR103",
+      "VAR104",
+      "VAR105",
+      "VAR106",
+      "VAR107",
+      "VAR108",
+      "VAR109",
+      "VAR110"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Balon Medicinal Premium",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Balon Medicinal Premium 1 kg",
+      "Balon Medicinal Premium 2 kgs",
+      "Balon Medicinal Premium 3 kgs",
+      "Balon Medicinal Premium 4 kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0116",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      45
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR091",
+      "VAR092",
+      "VAR093",
+      "VAR094",
+      "VAR095",
+      "VAR096",
+      "VAR097",
+      "VAR098"
+    ],
+    "skus": [
+      "VAR091",
+      "VAR092",
+      "VAR093",
+      "VAR094",
+      "VAR095",
+      "VAR096",
+      "VAR097",
+      "VAR098"
+    ],
+    "sku_count": 8,
+    "possible_master_name": "Balon Medicinal Con Agarre",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Balon Medicinal Con Agarre 3 kgs",
+      "Balon Medicinal Con Agarre 4 kgs",
+      "Balon Medicinal Con Agarre 5 kgs",
+      "Balon Medicinal Con Agarre 6 kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0035",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "name_similarity:0.83",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      38
+    ],
+    "section_path": "MANCUERNAS",
+    "category_slug": "mancuernas",
+    "current_master_keys": [
+      "SOP007",
+      "SOP008",
+      "SOP009",
+      "SOP038",
+      "SOP039"
+    ],
+    "skus": [
+      "SOP007",
+      "SOP008",
+      "SOP009",
+      "SOP038",
+      "SOP039"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Soporte Mancuernas Para 6 Pares (Medidas 1,50 X 0,84 X 0,60 Mts)",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte mancuernas para 6 Pares NEGRO (Medidas 1,50 x 0,84 x 0,60 Mts)",
+      "Soporte mancuernas para 10 Pares NEGRO (Medidas 2,50 x 0,84 x 0,60 Mts)",
+      "Soporte mancuernas para 12 Pares NEGRO (Medidas 3,00 x 0,84 x 0,60 Mts)",
+      "Mancuernero con Cunas para 10 pares NEGRO (Medidas 240 x 60 x 80cms)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0003",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REM",
+      "name_similarity:0.76",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      4
+    ],
+    "section_path": "CARDIO > CINTA > XEBEX",
+    "category_slug": "remos",
+    "current_master_keys": [
+      "REM002",
+      "REM003",
+      "REM004",
+      "REM005"
+    ],
+    "skus": [
+      "REM002",
+      "REM003",
+      "REM004",
+      "REM005"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Air Rower 2,0 (No Smart Conect)",
+    "expected_specs": [],
+    "sample_names": [
+      "Air Rower 2,0 (NO smart conect)",
+      "Air Rower 2,0 (SI smart conect)",
+      "Air Rower 3,0",
+      "AirPlus Rower (Si Smart connect)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0022",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:FDRIG",
+      "name_similarity:0.89",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      24
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDRIG-3",
+      "FDRIG-4",
+      "FDRIG-6",
+      "FDRIG-7"
+    ],
+    "skus": [
+      "FDRIG-3",
+      "FDRIG-4",
+      "FDRIG-6",
+      "FDRIG-7"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Jaula Central - 3 Mts - Largo 3,11 M - 2 Racks - 6/9 Puestos Dominadas",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA CENTRAL - 3 Mts - Largo 3,11 m - 2 Racks - 6/9 puestos dominadas",
+      "JAULA CENTRAL - 4 Mts - Largo 4,28 m - 4 Racks - 8/12 puestos dominadas",
+      "JAULA CENTRAL - 6 Mts - Largo 6,12 m - 4 Racks - 12/17 puestos dominadas",
+      "JAULA CENTRAL - 7 Mts - Largo 7,32 m - 6 Racks - 14/20 puestos dominadas"
+    ]
+  },
+  {
+    "candidate_id": "FC-0024",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:FDMONKEY",
+      "name_similarity:0.93",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      25
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDMONKEY-3",
+      "FDMONKEY-4",
+      "FDMONKEY-6",
+      "FDMONKEY-7"
+    ],
+    "skus": [
+      "FDMONKEY-3",
+      "FDMONKEY-4",
+      "FDMONKEY-6",
+      "FDMONKEY-7"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Jaula Central Con Monkey - 3 Mts - Largo 3,11 M - 2 Rack - 6 Puestos Dominadas Min",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA CENTRAL CON MONKEY - 3 Mts - Largo 3,11 m - 2 Rack - 6 Puestos dominadas min",
+      "JAULA CENTRAL CON MONKEY - 4 Mts - Largo 4,28 m - 4 Rack - 8 Puestos dominadas min",
+      "JAULA CENTRAL CON MONKEY - 6 Mts - Largo 6,15 m - 4 Rack - 12 Puestos dominadas min",
+      "JAULA CENTRAL CON MONKEY - 7 Mts - Largo 7,32 m - 6 Rack - 14 Puestos dominadas min"
+    ]
+  },
+  {
+    "candidate_id": "FC-0027",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:FDMONKEY",
+      "name_similarity:0.93",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      27
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDMONKEY.WM-3",
+      "FDMONKEY.WM-4",
+      "FDMONKEY.WM-6",
+      "FDMONKEY.WM-7"
+    ],
+    "skus": [
+      "FDMONKEY.WM-3",
+      "FDMONKEY.WM-4",
+      "FDMONKEY.WM-6",
+      "FDMONKEY.WM-7"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Jaula A Pared Con Monkey - 3 Mts - Largo 3,11 M - 2 Rack - 6 Puestos Dominadas Min",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA A PARED CON MONKEY - 3 Mts - Largo 3,11 m - 2 Rack - 6 Puestos dominadas min",
+      "JAULA A PARED CON MONKEY - 4 Mts - Largo 4,28 m - 4 Rack - 8 Puestos dominadas min",
+      "JAULA A PARED CON MONKEY - 6 Mts - Largo 6,15 m - 4 Rack - 12 Puestos dominadas min",
+      "JAULA A PARED CON MONKEY - 7 Mts - Largo 7,32 m - 6 Rack - 14 Puestos dominadas min"
+    ]
+  },
+  {
+    "candidate_id": "FC-0118",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      47
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR003",
+      "VAR004",
+      "VAR127",
+      "VAR128"
+    ],
+    "skus": [
+      "VAR003",
+      "VAR004",
+      "VAR127",
+      "VAR128"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Bola De Tonificacion De (Unidad)",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Bola de Tonificacion de 0,5 kgs (Unidad)",
+      "Bola de Tonificacion de 1 kg (Unidad)",
+      "Bola de Tonificacion de 1,5 kg (Unidad)",
+      "Bola de Tonificacion de 2 kg (Unidad)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0020",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:BOD",
+      "name_similarity:0.87",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      22
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "BOD001",
+      "BOD002",
+      "BOD003"
+    ],
+    "skus": [
+      "BOD001",
+      "BOD002",
+      "BOD003"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Barra Para Dominadas 110 X 17 X 27 Cms",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Barra para Dominadas 110 x 17 x 27 cms",
+      "Barra para Dominadas 152 x 41 x 38 cms",
+      "Barra para Dominadas 131 x 58 x 60 cms"
+    ]
+  },
+  {
+    "candidate_id": "FC-0025",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:FDRIGWM",
+      "name_similarity:0.92",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      26
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDRIG.WM-4",
+      "FDRIG.WM-6",
+      "FDRIG.WM-7"
+    ],
+    "skus": [
+      "FDRIG.WM-4",
+      "FDRIG.WM-6",
+      "FDRIG.WM-7"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Jaula A Pared - 4 Mts - Largo 4,28 M - 2 Rack - 8 Puestos Dominadas",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA A PARED - 4 Mts - Largo 4,28 m - 2 Rack - 8 Puestos dominadas",
+      "JAULA A PARED - 6 Mts - Largo 6,15 m - 2 Rack - 11 Puestos dominadas",
+      "JAULA A PARED - 7 Mts - Largo 7,32 m - 3 Rack - 13 Puestos dominadas"
+    ]
+  },
+  {
+    "candidate_id": "FC-0026",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:FDTORREW",
+      "name_similarity:0.94",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      26
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDTORRE.WM-4",
+      "FDTORRE.WM-6",
+      "FDTORRE.WM-7"
+    ],
+    "skus": [
+      "FDTORRE.WM-4",
+      "FDTORRE.WM-6",
+      "FDTORRE.WM-7"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Jaula A Pared Con Torre - 4 Mts - Largo 4,28 M - 2 Rack - 4/6 Puestos Dominadas - 4/6 Puestos Altos Anillas / Cuerda",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA A PARED CON TORRE - 4 Mts - Largo 4,28 m - 2 Rack - 4/6 puestos dominadas - 4/6 puestos altos anillas / cuerda",
+      "JAULA A PARED CON TORRE - 6 Mts - Largo 6,15 m - 2 Rack - 6/9 puestos dominadas - 4/6 puestos altos anillas / cuerda",
+      "JAULA A PARED CON TORRE - 7 Mts - Largo 7,32 m - 3 Rack - 7/10 puestos dominadas - 6/9 puestos altos anillas / cuerda"
+    ]
+  },
+  {
+    "candidate_id": "FC-0040",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:DBP",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      43
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "DBP001",
+      "DBP002",
+      "DBP005"
+    ],
+    "skus": [
+      "DBP001",
+      "DBP002",
+      "DBP005"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Disco 28 Mm Body Pump - 28Mm",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Disco 28 mm Body Pump 1,25 kgs - 28mm",
+      "Disco 28 mm Body Pump 2,50 kgs - 28mm",
+      "Disco 28 mm Body Pump 5 kgs - 28mm"
+    ]
+  },
+  {
+    "candidate_id": "FC-0049",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "name_similarity:0.80",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      47
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP020",
+      "SOP021",
+      "SOP064"
+    ],
+    "skus": [
+      "SOP020",
+      "SOP021",
+      "SOP064"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Soporte Para 9 Fitball - Arbol",
+    "expected_specs": [],
+    "sample_names": [
+      "Soporte Para 9 Fitball - Arbol",
+      "Soporte Para 3 Fitball - Arbol",
+      "Soporte Fitball (unidad)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0120",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      49
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR164",
+      "VAR165",
+      "VAR166"
+    ],
+    "skus": [
+      "VAR164",
+      "VAR165",
+      "VAR166"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Tobillera Lastrada (Par) Logo (Con 1 Correa)",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Tobillera lastrada 0,5 kgs (Par) Logo (con 1 correa)",
+      "Tobillera lastrada 1 kg (Par) Logo (con 1 correa)",
+      "Tobillera lastrada 1,5 kgs (Par) Logo (con 1 correa)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0121",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      50
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR168",
+      "VAR169",
+      "VAR170"
+    ],
+    "skus": [
+      "VAR168",
+      "VAR169",
+      "VAR170"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Tobillera Lastrada (Par) Logo (Con 2 Correas)",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Tobillera lastrada 3 kgs (Par) Logo (con 2 correas)",
+      "Tobillera lastrada 4 kgs (Par) Logo (con 2 correas)",
+      "Tobillera lastrada 5 kgs (Par) Logo (con 2 correas)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0002",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REPUESTO",
+      "name_similarity:0.96",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      3
+    ],
+    "section_path": "CARDIO > BICI > XEBEX",
+    "category_slug": "bicicletas-estaticas",
+    "current_master_keys": [
+      "REPUESTO-805",
+      "REPUESTO-806"
+    ],
+    "skus": [
+      "REPUESTO-805",
+      "REPUESTO-806"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Consola Bluetooth Ab-1000 Smart Conect",
+    "expected_specs": [],
+    "sample_names": [
+      "Consola Bluetooth AB-1000 SMART CONECT",
+      "Consola Bluetooth AB-1 SMART CONECT"
+    ]
+  },
+  {
+    "candidate_id": "FC-0013",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "name_similarity:0.89",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      17
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "SOP012",
+      "SOP041"
+    ],
+    "skus": [
+      "SOP012",
+      "SOP041"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Soporte Kettelbells 2 Alturas (Medidas 77X70X143 Cms)",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte Kettelbells 2 Alturas (Medidas 77x70x143 cms)",
+      "Soporte Kettelbells 3 Alturas (Medidas 92x64x137 cms)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0023",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:FDTORRE",
+      "name_similarity:0.96",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      24
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDTORRE-4",
+      "FDTORRE-6"
+    ],
+    "skus": [
+      "FDTORRE-4",
+      "FDTORRE-6"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Jaula Central Con Torre - 4 Mts - Largo 4,28 M - 4 Rack - 8/10 Puestos Dominadas - 6/8 Puestros Altaod Anillas/Cuerdas Compuesto De Las Referencias",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA CENTRAL CON TORRE - 4 Mts - Largo 4,28 m - 4 Rack - 8/10 puestos dominadas - 6/8 puestros altaod anillas/cuerdas Compuesto de las referencias",
+      "JAULA CENTRAL CON TORRE - 6 Mts - Largo 6,15 m - 4 Rack - 12/15 puestos dominadas - 6/8 puestros altaod anillas/cuerdas Compuesto de las referencias"
+    ]
+  },
+  {
+    "candidate_id": "FC-0028",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "name_similarity:0.90",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      28
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "SOP048",
+      "SOP049"
+    ],
+    "skus": [
+      "SOP048",
+      "SOP049"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Rack Sentadilla Medidas 2,20 X 1,50 X1,80 Mts",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Rack Sentadilla Medidas 2,20 x 1,50 x1,80 mts",
+      "Half Rack Sentadilla Medidas 2,20 x 1,20 x 1,20 mts"
+    ]
+  },
+  {
+    "candidate_id": "FC-0036",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "name_similarity:0.96",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      39
+    ],
+    "section_path": "MANCUERNAS",
+    "category_slug": "mancuernas",
+    "current_master_keys": [
+      "SOP030",
+      "SOP036"
+    ],
+    "skus": [
+      "SOP030",
+      "SOP036"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Soporte Para Mancuernas Hexagonales 2 Alturas Medidas 143X75X60 Cms",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte para Mancuernas Hexagonales 2 Alturas Medidas 143x75x60 cms",
+      "Soporte para Mancuernas Hexagonales 3 Alturas Medidas 140x85x60 cms"
+    ]
+  },
+  {
+    "candidate_id": "FC-0038",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:JBP",
+      "name_similarity:0.97",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      43
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "JBP28",
+      "JBP30"
+    ],
+    "skus": [
+      "JBP28",
+      "JBP30"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Juego Completo De Body Pump De 28Mm Se Compone De Las Referencias: Bbp140 X1 (Barra 1,40 Mts) Btn001 X 2 (Topes) Dbp001 X 2 (Discos De ) Dbp002 X 2 (Discos De ) Dbp005 X 2 (Discos De )",
+    "expected_specs": [
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Juego Completo de Body pump de 28mm Se compone de las referencias: BBP140 x1 (Barra 1,40 mts) BTN001 x 2 (Topes) DBP001 x 2 (Discos de 1,25 kgs) DBP002 x 2 (Discos de 2,50 kgs) DBP005 x 2 (Discos de 5 kgs)",
+      "Juego Completo de Body pump de 30mm Se compone de las referencias: BBP140B x1 (Barra 1,40 mts) BTN002 x 2 (Topes) DBP001B x 2 (Discos de 1,25 kgs) DBP002B x 2 (Discos de 2,50 kgs) DBP005B x 2 (Discos de 5 kgs)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0039",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:JBPL",
+      "name_similarity:0.97",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      43
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "JBPL28",
+      "JBPL30"
+    ],
+    "skus": [
+      "JBPL28",
+      "JBPL30"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Juego Completo De Body Pump De 28Mm Se Compone De Las Referencias: Bbp140 X1 (Barra 1,40 Mts) Btn001 X 2 (Topes) Dbp001 X 2 (Discos De ) Dbp002 X 2 (Discos De )",
+    "expected_specs": [
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Juego Completo de Body pump de 28mm Se compone de las referencias: BBP140 x1 (Barra 1,40 mts) BTN001 x 2 (Topes) DBP001 x 2 (Discos de 1,25 kgs) DBP002 x 2 (Discos de 2,50 kgs)",
+      "Juego Completo de Body pump de 30mm Se compone de las referencias: BBP140B x1 (Barra 1,40 mts) BTN002 x 2 (Topes) DBP001B x 2 (Discos de 1,25 kgs) DBP002B x 2 (Discos de 2,50 kgs)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0111",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      19
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO014",
+      "CRO015"
+    ],
+    "skus": [
+      "CRO014",
+      "CRO015"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Chaleco Peso",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Chaleco Negro Peso 10 Kgs",
+      "Chaleco Negro Peso 20 Kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0112",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      21
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO102",
+      "CRO103"
+    ],
+    "skus": [
+      "CRO102",
+      "CRO103"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Rueda Entrenamiento",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Rueda Entrenamiento 60 Kgs",
+      "Rueda Entrenamiento 80 Kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0119",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 1.0,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "name_similarity:1.00",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      49
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR014",
+      "VAR015"
+    ],
+    "skus": [
+      "VAR014",
+      "VAR015"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Tobillera / Muñequera Par - Material Eva - Color",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Tobillera / Muñequera Par 0,5 kgs - Material Eva - Color Gris",
+      "Tobillera / Muñequera Par 1 kg - Material Eva - Color Gris"
+    ]
+  },
+  {
+    "candidate_id": "FC-0058",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:ELA",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      54
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "ELA001",
+      "ELA002",
+      "ELA003",
+      "ELA004",
+      "ELA005",
+      "ELA006",
+      "ELA007",
+      "ELA008",
+      "ELA009",
+      "ELA010",
+      "ELA011",
+      "ELA015",
+      "ELA016",
+      "ELA017",
+      "ELA018",
+      "ELA019",
+      "ELA020",
+      "ELA021",
+      "ELA022",
+      "ELA055",
+      "ELA056",
+      "ELA060",
+      "ELA061",
+      "ELA062",
+      "ELA063"
+    ],
+    "skus": [
+      "ELA001",
+      "ELA002",
+      "ELA003",
+      "ELA004",
+      "ELA005",
+      "ELA006",
+      "ELA007",
+      "ELA008",
+      "ELA009",
+      "ELA010",
+      "ELA011",
+      "ELA015",
+      "ELA016",
+      "ELA017",
+      "ELA018",
+      "ELA019",
+      "ELA020",
+      "ELA021",
+      "ELA022",
+      "ELA055",
+      "ELA056",
+      "ELA060",
+      "ELA061",
+      "ELA062",
+      "ELA063"
+    ],
+    "sku_count": 25,
+    "possible_master_name": "Tensión Media",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Tensión Media",
+      "Tensión Alta",
+      "Tensión Extra-Fuerte",
+      "Banda Latex 25 Mts - TPE - Tension Media 3,5 mm"
+    ]
+  },
+  {
+    "candidate_id": "FC-0043",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      45
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR043",
+      "VAR044",
+      "VAR091",
+      "VAR092",
+      "VAR093",
+      "VAR094",
+      "VAR095",
+      "VAR096",
+      "VAR097",
+      "VAR098",
+      "VAR099",
+      "VAR101",
+      "VAR102",
+      "VAR103",
+      "VAR104",
+      "VAR105",
+      "VAR106",
+      "VAR107",
+      "VAR108",
+      "VAR109",
+      "VAR110",
+      "VAR145"
+    ],
+    "skus": [
+      "VAR043",
+      "VAR044",
+      "VAR091",
+      "VAR092",
+      "VAR093",
+      "VAR094",
+      "VAR095",
+      "VAR096",
+      "VAR097",
+      "VAR098",
+      "VAR099",
+      "VAR101",
+      "VAR102",
+      "VAR103",
+      "VAR104",
+      "VAR105",
+      "VAR106",
+      "VAR107",
+      "VAR108",
+      "VAR109",
+      "VAR110",
+      "VAR145"
+    ],
+    "sku_count": 22,
+    "possible_master_name": "Anclaje Pared Kit De Suspension",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Anclaje Pared Kit de Suspension",
+      "Kit Entrenamiento en Suspension 1 Amarillo /Negro",
+      "Kit de Entrenamiento en suspension 4 - Azul",
+      "Kit Entrenamiento en Suspension 5 - ROSA"
+    ]
+  },
+  {
+    "candidate_id": "FC-0056",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      52
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR034",
+      "VAR035",
+      "VAR059",
+      "VAR061",
+      "VAR100",
+      "VAR117",
+      "VAR118",
+      "VAR130",
+      "VAR131",
+      "VAR142",
+      "VAR144",
+      "VAR153",
+      "VAR155",
+      "VAR163"
+    ],
+    "skus": [
+      "VAR034",
+      "VAR035",
+      "VAR059",
+      "VAR061",
+      "VAR100",
+      "VAR117",
+      "VAR118",
+      "VAR130",
+      "VAR131",
+      "VAR142",
+      "VAR144",
+      "VAR153",
+      "VAR155",
+      "VAR163"
+    ],
+    "sku_count": 14,
+    "possible_master_name": "Ladrillo Yoga Corcho",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Ladrillo Yoga Corcho",
+      "Yoga Wheel 33x13cms - Naranja/Azul",
+      "Yoga Wheel 33x13cms - Gris",
+      "Conos y Vallas Cono Naranja 2\" de altura"
+    ]
+  },
+  {
+    "candidate_id": "FC-0059",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:ELA",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      55
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "ELA023",
+      "ELA024",
+      "ELA025",
+      "ELA026",
+      "ELA027",
+      "ELA028",
+      "ELA029",
+      "ELA030",
+      "ELA032",
+      "ELA033",
+      "ELA034",
+      "ELA057",
+      "ELA058",
+      "ELA059"
+    ],
+    "skus": [
+      "ELA023",
+      "ELA024",
+      "ELA025",
+      "ELA026",
+      "ELA027",
+      "ELA028",
+      "ELA029",
+      "ELA030",
+      "ELA032",
+      "ELA033",
+      "ELA034",
+      "ELA057",
+      "ELA058",
+      "ELA059"
+    ],
+    "sku_count": 14,
+    "possible_master_name": "Tubo Resistencia Recubierto Tpr - Tension Baja",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Tubo Resistencia Recubierto TPR - Tension Baja",
+      "Tubo Resistencia Recubierto TPR - Tension Media",
+      "Tubo Resistencia Recubierto TPR - Tension Alta",
+      "Resistencia Muy Baja 9mm x1,5mmx125cms AMARILLO"
+    ]
+  },
+  {
+    "candidate_id": "FC-0051",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      49
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR014",
+      "VAR015",
+      "VAR016",
+      "VAR022",
+      "VAR023",
+      "VAR042",
+      "VAR088",
+      "VAR089",
+      "VAR164",
+      "VAR165",
+      "VAR166",
+      "VAR171"
+    ],
+    "skus": [
+      "VAR014",
+      "VAR015",
+      "VAR016",
+      "VAR022",
+      "VAR023",
+      "VAR042",
+      "VAR088",
+      "VAR089",
+      "VAR164",
+      "VAR165",
+      "VAR166",
+      "VAR171"
+    ],
+    "sku_count": 12,
+    "possible_master_name": "Colocado, No Incluido Rulo Hueco 33 Cms",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "colocado, no incluido Rulo Hueco 33 cms",
+      "Rulo Hueco (Eva + Pvc) Negro",
+      "Rulo Hueco (Eva + Abs) Negro",
+      "Aro Pilates"
+    ]
+  },
+  {
+    "candidate_id": "FC-0047",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      47
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR001",
+      "VAR002",
+      "VAR003",
+      "VAR004",
+      "VAR005",
+      "VAR006",
+      "VAR007",
+      "VAR008",
+      "VAR055",
+      "VAR127",
+      "VAR128"
+    ],
+    "skus": [
+      "VAR001",
+      "VAR002",
+      "VAR003",
+      "VAR004",
+      "VAR005",
+      "VAR006",
+      "VAR007",
+      "VAR008",
+      "VAR055",
+      "VAR127",
+      "VAR128"
+    ],
+    "sku_count": 11,
+    "possible_master_name": "Pelota Pilates - 20 Cms",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Pelota Pilates - 20 cms",
+      "Pelota Pilates - 25 cms",
+      "Bola de Lacrosse",
+      "Bola de Tonificacion de 0,5 kgs (Unidad)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0015",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      18
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO013",
+      "CRO016",
+      "CRO017",
+      "CRO042",
+      "CRO058",
+      "CRO059",
+      "CRO094",
+      "CRO105",
+      "CRO106",
+      "CRO126"
+    ],
+    "skus": [
+      "CRO013",
+      "CRO016",
+      "CRO017",
+      "CRO042",
+      "CRO058",
+      "CRO059",
+      "CRO094",
+      "CRO105",
+      "CRO106",
+      "CRO126"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Cuerda De Arrastre Para Trineo De Poliester Alta Tenacidad 38Mm X 17Mts Con Anclaje + Mosqueton Bombero Inox 10Mm",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Cuerda de Arrastre para Trineo De poliester alta tenacidad 38mm x 17mts con anclaje + mosqueton bombero inox 10mm",
+      "Anillas PVC Con 5 Mts de Cinta",
+      "Anillas de Madera con 5 mts de Cinta",
+      "Peg Board Peg Board Tabla vertical de escalada"
+    ]
+  },
+  {
+    "candidate_id": "FC-0017",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      20
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO019",
+      "CRO020",
+      "CRO027",
+      "CRO028",
+      "CRO051",
+      "CRO052",
+      "CRO061",
+      "CRO062",
+      "CRO089",
+      "CRO101"
+    ],
+    "skus": [
+      "CRO019",
+      "CRO020",
+      "CRO027",
+      "CRO028",
+      "CRO051",
+      "CRO052",
+      "CRO061",
+      "CRO062",
+      "CRO089",
+      "CRO101"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Cuerda De Salto Nornal",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Cuerda de Salto Nornal",
+      "Comba de Salto Pvc Negra",
+      "Cuerda de Salto Pesada",
+      "Comba de Velocidad Profesional - Azul"
+    ]
+  },
+  {
+    "candidate_id": "FC-0016",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      19
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO014",
+      "CRO015",
+      "CRO018",
+      "CRO021",
+      "CRO022",
+      "CRO060",
+      "CRO063",
+      "CRO080",
+      "CRO132"
+    ],
+    "skus": [
+      "CRO014",
+      "CRO015",
+      "CRO018",
+      "CRO021",
+      "CRO022",
+      "CRO060",
+      "CRO063",
+      "CRO080",
+      "CRO132"
+    ],
+    "sku_count": 9,
+    "possible_master_name": "Escalera Y Rampa De Plyo Suave",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Escalera y Rampa de Plyo Suave",
+      "Juego Cajones Jerk 90x51x6 cms 90x51x15,50 cms 90x51x30,50 cms 90x51x38 cms",
+      "Plataforma Halterofilia Profesional",
+      "Chaleco Negro Peso 10 Kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0042",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      44
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR024",
+      "VAR062",
+      "VAR063",
+      "VAR064",
+      "VAR065",
+      "VAR111",
+      "VAR133",
+      "VAR136",
+      "VAR141"
+    ],
+    "skus": [
+      "VAR024",
+      "VAR062",
+      "VAR063",
+      "VAR064",
+      "VAR065",
+      "VAR111",
+      "VAR133",
+      "VAR136",
+      "VAR141"
+    ],
+    "sku_count": 9,
+    "possible_master_name": "Balance Step 59X26 Cms (Sin Aagarre)",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Balance Step Rojo 59x26 cms (Sin Aagarre)",
+      "Balance Step Rojo 59x26 cms Con Tubo de Resistencia",
+      "Balance Step GRIS 59x21 cms Con Plataforma Anti Slip",
+      "Balance Step NEGRO 59x21 cms Con Plataforma Anti Slip"
+    ]
+  },
+  {
+    "candidate_id": "FC-0052",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      50
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR026",
+      "VAR031",
+      "VAR032",
+      "VAR036",
+      "VAR037",
+      "VAR167",
+      "VAR168",
+      "VAR169",
+      "VAR170"
+    ],
+    "skus": [
+      "VAR026",
+      "VAR031",
+      "VAR032",
+      "VAR036",
+      "VAR037",
+      "VAR167",
+      "VAR168",
+      "VAR169",
+      "VAR170"
+    ],
+    "sku_count": 9,
+    "possible_master_name": "Tobillera Lastrada (Par) Logo (Con 1 Correa)",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Tobillera lastrada 2 kgs (Par) Logo (con 1 correa)",
+      "Tobillera lastrada 3 kgs (Par) Logo (con 2 correas)",
+      "Tobillera lastrada 4 kgs (Par) Logo (con 2 correas)",
+      "Tobillera lastrada 5 kgs (Par) Logo (con 2 correas)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0029",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      30
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "VAR060",
+      "VAR087",
+      "VAR137",
+      "VAR138",
+      "VAR151",
+      "VAR152",
+      "VAR154",
+      "VAR172"
+    ],
+    "skus": [
+      "VAR060",
+      "VAR087",
+      "VAR137",
+      "VAR138",
+      "VAR151",
+      "VAR152",
+      "VAR154",
+      "VAR172"
+    ],
+    "sku_count": 8,
+    "possible_master_name": "1000X1000X15 Mm - Con Moteado",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "1000x1000x15 mm - Negro Con Moteado Azul",
+      "1000x1000x15 mm - Negro Con Moteado Rojo",
+      "1000x1000x15 mm - Negro Liso Sellado",
+      "1000x500x40 mm - Negro *PAR* (Granulado Grueso) Union tipo Puzzle, Con Huevera"
+    ]
+  },
+  {
+    "candidate_id": "FC-0050",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      48
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR013",
+      "VAR018",
+      "VAR020",
+      "VAR021",
+      "VAR090",
+      "VAR125",
+      "VAR126",
+      "VAR157"
+    ],
+    "skus": [
+      "VAR013",
+      "VAR018",
+      "VAR020",
+      "VAR021",
+      "VAR090",
+      "VAR125",
+      "VAR126",
+      "VAR157"
+    ],
+    "sku_count": 8,
+    "possible_master_name": "Push Up Bars Acero",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Push Up Bars Acero",
+      "Espaldera Madera 1mts ancho x 2,40 mts de alto",
+      "Espaldera Acero 1,08 mts de alto x 2,60 mts de alto",
+      "Foam Roller 90 cms Azul"
+    ]
+  },
+  {
+    "candidate_id": "FC-0054",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REB",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      51
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB050",
+      "REB053",
+      "REB054",
+      "REB203",
+      "REB213",
+      "REB216",
+      "REB217"
+    ],
+    "skus": [
+      "REB050",
+      "REB053",
+      "REB054",
+      "REB203",
+      "REB213",
+      "REB216",
+      "REB217"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "The Orifinal Step - Turquesa",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "The Orifinal Step - Turquesa",
+      "Mini Step",
+      "Step Clip",
+      "Step Feet"
+    ]
+  },
+  {
+    "candidate_id": "FC-0057",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      53
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP022",
+      "SOP026",
+      "SOP027",
+      "SOP044",
+      "SOP059",
+      "SOP062",
+      "SOP065"
+    ],
+    "skus": [
+      "SOP022",
+      "SOP026",
+      "SOP027",
+      "SOP044",
+      "SOP059",
+      "SOP062",
+      "SOP065"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Banco Regulable 0 A 90º (Medidas 123 X 43 X 60 Cms)",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Banco Regulable 0 a 90º (Medidas 123 x 43 x 60 cms)",
+      "Banco Declinable -10 a 90º (Medidas 142 x 47 x 68 cms)",
+      "Banco Plano (Medidas 110 x 47 x 68 cms)",
+      "Banco Plano Home"
+    ]
+  },
+  {
+    "candidate_id": "FC-0062",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:COL",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      56
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "COL001",
+      "COL002",
+      "COL004",
+      "COL005",
+      "COL015",
+      "COL016",
+      "COL017"
+    ],
+    "skus": [
+      "COL001",
+      "COL002",
+      "COL004",
+      "COL005",
+      "COL015",
+      "COL016",
+      "COL017"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Colchoneta Yoga (Material Eva) 1730 X 610 X 6 Mm",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Colchoneta Yoga (material Eva) 1730 x 610 x 6 Mm",
+      "Colchoneta Yoga Pvc 1730x610x5 mm - Azul",
+      "Colchoneta Yoga Pvc 1730x610x6 mm - Verde",
+      "Colchoneta Yoga Pvc1730x610x7 mm - Purpura"
+    ]
+  },
+  {
+    "candidate_id": "FC-0068",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REB",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      62
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB031",
+      "REB032",
+      "REB033",
+      "REB190",
+      "REB191",
+      "REB192",
+      "REB194"
+    ],
+    "skus": [
+      "REB031",
+      "REB032",
+      "REB033",
+      "REB190",
+      "REB191",
+      "REB192",
+      "REB194"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Saco Boxeo Nylon",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Saco Boxeo Nylon",
+      "Chaleco Protector Pecho Piel",
+      "Pera de Velocidad",
+      "Saco Boxeo PU 20 kgs (1,25 Mts)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0001",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:BIC",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      3
+    ],
+    "section_path": "CARDIO > BICI > XEBEX",
+    "category_slug": "bicicletas-estaticas",
+    "current_master_keys": [
+      "BIC002",
+      "BIC006",
+      "BIC007",
+      "BIC008",
+      "BIC009",
+      "BIC010"
+    ],
+    "skus": [
+      "BIC002",
+      "BIC006",
+      "BIC007",
+      "BIC008",
+      "BIC009",
+      "BIC010"
+    ],
+    "sku_count": 6,
+    "possible_master_name": "Bicileta Air Bike 1000 Eco (No Smart Conect)",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "Bicicleta Air Bike (NO smart conect)",
+      "Bicicleta AirPlus Performance Magnetica",
+      "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0045",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      46
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR017",
+      "VAR071",
+      "VAR114",
+      "VAR115",
+      "VAR116",
+      "VAR132"
+    ],
+    "skus": [
+      "VAR017",
+      "VAR071",
+      "VAR114",
+      "VAR115",
+      "VAR116",
+      "VAR132"
+    ],
+    "sku_count": 6,
+    "possible_master_name": "Reboteador Balon Medicinal",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Reboteador Balon Medicinal Gris",
+      "Escalera de Agilidad Negra 4,60 mts",
+      "Escalera de Agilidad Premium ROJA",
+      "Escalera de Agilidad 6 mts (12 peldaños)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0066",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REB",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      59
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB005",
+      "REB161",
+      "REB162",
+      "REB164",
+      "REB165",
+      "REB214"
+    ],
+    "skus": [
+      "REB005",
+      "REB161",
+      "REB162",
+      "REB164",
+      "REB165",
+      "REB214"
+    ],
+    "sku_count": 6,
+    "possible_master_name": "Colchoneta Entrenamieno 1830X610X7Mm Addidas",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Colchoneta Entrenamieno 1830x610x7mm Gris Addidas",
+      "Conchoneta Antideslizante Love Gris 1730x610x4mm",
+      "Conchoneta Antideslizante Love Azul 1730x6104mm",
+      "Colchoneta traspirable Naranja 1730x610x5mm"
+    ]
+  },
+  {
+    "candidate_id": "FC-0030",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      31
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "VAR073",
+      "VAR085",
+      "VAR124",
+      "VAR139",
+      "VAR146"
+    ],
+    "skus": [
+      "VAR073",
+      "VAR085",
+      "VAR124",
+      "VAR139",
+      "VAR146"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Suelo Puzzle Suelo Puzzle Eva Mat 1000X1000X25Mm / (Baja Densidad)",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Suelo Puzzle Suelo Puzzle Eva Mat 1000x1000x25mm rojo/azul (baja densidad)",
+      "Suelo Puzzle Eva Mat 1000x1000x25mm rojo/azul (alta densidad)",
+      "Suelo de Cesped 30 mm Rollo de 20m2 - 2x10 mts",
+      "Cesped Artificial Rojo/Negro Marcado 10mx2mx1,3cm"
+    ]
+  },
+  {
+    "candidate_id": "FC-0067",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:BOX",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      61
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "BOX001",
+      "BOX002",
+      "BOX003",
+      "BOX004",
+      "BOX005"
+    ],
+    "skus": [
+      "BOX001",
+      "BOX002",
+      "BOX003",
+      "BOX004",
+      "BOX005"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Saco Boxeo 1,00 Mts ()",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Saco Boxeo 1,00 Mts (30 kgs) ROJO",
+      "Saco Boxeo Thai (Pvc) 180 x 40 cms",
+      "Saco Boxeo Thai (Pvc) 180 x 35 cms",
+      "Saco Boxeo Upper Cut"
+    ]
+  },
+  {
+    "candidate_id": "FC-0012",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:BOH",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      15
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "BOH000",
+      "BOH140",
+      "BOH160",
+      "BOH200"
+    ],
+    "skus": [
+      "BOH000",
+      "BOH140",
+      "BOH160",
+      "BOH200"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Barra Olimpica Hexagonal Desmontada 1,60 Mts",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Barra Olimpica Hexagonal Desmontada 1,60 Mts",
+      "Barra Olimpica Hexagonal Fija Negra 2 Mts",
+      "Barra Hexagonal MONTADA 1,40 Mts",
+      "Barra Hexagonal Abierta"
+    ]
+  },
+  {
+    "candidate_id": "FC-0034",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      35
+    ],
+    "section_path": "DISCOS Y BARRAS",
+    "category_slug": "barras",
+    "current_master_keys": [
+      "VAR028",
+      "VAR113",
+      "VAR129",
+      "VAR159"
+    ],
+    "skus": [
+      "VAR028",
+      "VAR113",
+      "VAR129",
+      "VAR159"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Protector De Cuello 45 Cms, Funda Nylon",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Protector de Cuello 45 cms, Funda Nylon",
+      "Protector de Cuello ergonomico Azul",
+      "Protector de cuello Rojo",
+      "Protector de cuello Negro"
+    ]
+  },
+  {
+    "candidate_id": "FC-0037",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      40
+    ],
+    "section_path": "MANCUERNAS",
+    "category_slug": "mancuernas",
+    "current_master_keys": [
+      "SOP013",
+      "SOP034",
+      "SOP035",
+      "SOP067"
+    ],
+    "skus": [
+      "SOP013",
+      "SOP034",
+      "SOP035",
+      "SOP067"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Soporte Para Mancuernas Hexagonales 3 Alturas Para Juego De 2,5 A Medidas 1215*595*877 Mm",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Soporte para Mancuernas Hexagonales 3 Alturas Para Juego de 2,5 a 30 kgs medidas 1215*595*877 mm",
+      "Para 5 Barras Montadas Premium",
+      "Para 10 Barras Montadas Premium",
+      "Soporte Mancuernas de 1 a 10 kgs - 10 Pares Soporte Mancuernas de 1 a 10 kgs- 10 Pares NEGRO (Medidas 46 x 46 x 120 cms)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0055",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      51
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR029",
+      "VAR030",
+      "VAR086",
+      "VAR143"
+    ],
+    "skus": [
+      "VAR029",
+      "VAR030",
+      "VAR086",
+      "VAR143"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Deck Step",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Deck Step",
+      "Cinturon de Yoga 1,83 x 3,8 cms",
+      "Ladrillos Yoga Ladrillo Yoga Azul (Material Eva)",
+      "Ladrillo Yoga Negro"
+    ]
+  },
+  {
+    "candidate_id": "FC-0033",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:BTO",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      34
+    ],
+    "section_path": "DISCOS Y BARRAS",
+    "category_slug": "barras",
+    "current_master_keys": [
+      "BTO001",
+      "BTO003",
+      "BTO004"
+    ],
+    "skus": [
+      "BTO001",
+      "BTO003",
+      "BTO004"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Tope Barra Olímpica",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Tope Barra Olímpica",
+      "Tope Barra Olimpica Crossfit",
+      "Tope Olimpico Crossfit Rojo"
+    ]
+  },
+  {
+    "candidate_id": "FC-0060",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:VAR",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      55
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "VAR069",
+      "VAR070",
+      "VAR072"
+    ],
+    "skus": [
+      "VAR069",
+      "VAR070",
+      "VAR072"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Cinturon De Resistencia (2 Cinturon + 1 Goma)",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Cinturon de Resistencia (2 cinturon + 1 goma) AZUL",
+      "Cinturon de Resistencia (1chaleco + 1cinituron + 1goma) AZUL",
+      "Ponteciador de Salto Vertical"
+    ]
+  },
+  {
+    "candidate_id": "FC-0064",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      57
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP045",
+      "SOP046",
+      "SOP050"
+    ],
+    "skus": [
+      "SOP045",
+      "SOP046",
+      "SOP050"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Soporte Colchonetas Con Patas Ajustable (Medidas 196 X 76 X 18 Cms=",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte colchonetas con patas Ajustable (medidas 196 x 76 x 18 cms=",
+      "Soporte Colchonetas a pared (65 cms) para colchonetas con distancia entre agujeros de 37 y 52 cms",
+      "Soporte Colchonetas a pared MADERA para colchonetas con distancia entre agujeros de 30 y 50 cms"
+    ]
+  },
+  {
+    "candidate_id": "FC-0010",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      13
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "SOP055",
+      "SOP063"
+    ],
+    "skus": [
+      "SOP055",
+      "SOP063"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Soporte Wall Ball A Pared Medidas 148 X 27 X 10 Cms",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "Soporte Wall ball y Balon Medicinal (con ruedas)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0041",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      44
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP004",
+      "SOP056"
+    ],
+    "skus": [
+      "SOP004",
+      "SOP056"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Soporte Body Pump Para 25 Juegos (Medidas 1,50 X 1,54 X0,70 Mts)",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte Body Pump Para 25 Juegos (Medidas 1,50 x 1,54 x0,70 Mts)",
+      "Soporte Bosu (5 uds)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0053",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REB",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      50
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB208",
+      "REB209"
+    ],
+    "skus": [
+      "REB208",
+      "REB209"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Step + Bluetooth Counter - Red",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Step + Bluetooth Counter - Red",
+      "The Orifinal Step - Rojo"
+    ]
+  },
+  {
+    "candidate_id": "FC-0070",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.95,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      65
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP023",
+      "SOP068"
+    ],
+    "skus": [
+      "SOP023",
+      "SOP068"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Soporte Para Agarres",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Soporte para Agarres NEGRO",
+      "Soporte para Juego Agarres Deluxe (AGA011)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0110",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 0.9,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "name_similarity:1.00"
+    ],
+    "pages": [
+      13
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO-WALL-FDL",
+      "CRO-WALL-NEXO"
+    ],
+    "skus": [
+      "CRO095",
+      "CRO096",
+      "CRO097",
+      "CRO098",
+      "CRO099",
+      "CRO100",
+      "CRO127",
+      "CRO136",
+      "CRO137",
+      "CRO138",
+      "CRO139",
+      "CRO140",
+      "CRO141",
+      "CRO142"
+    ],
+    "sku_count": 14,
+    "possible_master_name": "Wall Ball Doble Costura",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Wall Ball Doble costura 3 kgs Negro",
+      "Wall Ball Doble costura 4 kgs Negro",
+      "Wall Ball Doble costura 5 kgs Negro",
+      "Wall Ball Doble costura 6 kgs Negro"
+    ]
+  },
+  {
+    "candidate_id": "FC-0108",
+    "source_heuristic": "SamePageSkuFamily",
+    "confidence": "high",
+    "score": 0.85,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "spec_axis_variation"
+    ],
+    "pages": [
+      13
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO-POWER-BAGS-COLOR",
+      "CRO-SACO-BULGARO",
+      "CRO-WALL-FDL",
+      "CRO-WALL-LBS",
+      "CRO-WALL-NEXO"
+    ],
+    "skus": [
+      "CRO069",
+      "CRO070",
+      "CRO071",
+      "CRO072",
+      "CRO073",
+      "CRO074",
+      "CRO075",
+      "CRO076",
+      "CRO077",
+      "CRO083",
+      "CRO084",
+      "CRO085",
+      "CRO086",
+      "CRO095",
+      "CRO096",
+      "CRO097",
+      "CRO098",
+      "CRO099",
+      "CRO100",
+      "CRO127",
+      "CRO136",
+      "CRO137",
+      "CRO138",
+      "CRO139",
+      "CRO140",
+      "CRO141",
+      "CRO142",
+      "CRO143"
+    ],
+    "sku_count": 28,
+    "possible_master_name": "Wall Ball Doble Costura",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Wall Ball Doble costura 3 kgs Negro",
+      "Wall Ball Doble costura 4 kgs Negro",
+      "Wall Ball Doble costura 5 kgs Negro",
+      "Wall Ball Doble costura 6 kgs Negro"
+    ]
+  },
+  {
+    "candidate_id": "FC-0019",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.85,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "common_sku_prefix:CRO",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      21
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO024",
+      "CRO025",
+      "CRO029",
+      "CRO030",
+      "CRO031",
+      "CRO081",
+      "CRO102",
+      "CRO103",
+      "CRO104",
+      "CRO115"
+    ],
+    "skus": [
+      "CRO024",
+      "CRO025",
+      "CRO029",
+      "CRO030",
+      "CRO031",
+      "CRO081",
+      "CRO102",
+      "CRO103",
+      "CRO104",
+      "CRO115"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Rueda Entrenamiento",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Rueda Entrenamiento 60 Kgs",
+      "Rueda Entrenamiento 80 Kgs",
+      "Core Trainers Core Trainer",
+      "Discos no inluidos Doble Core Trainer"
+    ]
+  },
+  {
+    "candidate_id": "FC-0109",
+    "source_heuristic": "SamePageSkuFamily",
+    "confidence": "high",
+    "score": 0.85,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "spec_axis_variation"
+    ],
+    "pages": [
+      14
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO-SACO-GUSANO",
+      "CRO133"
+    ],
+    "skus": [
+      "CRO107",
+      "CRO108",
+      "CRO131",
+      "CRO133"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Saco Gusano 2 Personas - 160X30Cms ()",
+    "expected_specs": [
+      "color",
+      "medida",
+      "personas",
+      "peso"
+    ],
+    "sample_names": [
+      "Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "Cinturon Lastrado (negro)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0069",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:AGA",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      64
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "AGA001",
+      "AGA002",
+      "AGA003",
+      "AGA004",
+      "AGA005",
+      "AGA006",
+      "AGA007",
+      "AGA008",
+      "AGA009",
+      "AGA010",
+      "AGA011",
+      "AGA012",
+      "AGA013"
+    ],
+    "skus": [
+      "AGA001",
+      "AGA002",
+      "AGA003",
+      "AGA004",
+      "AGA005",
+      "AGA006",
+      "AGA007",
+      "AGA008",
+      "AGA009",
+      "AGA010",
+      "AGA011",
+      "AGA012",
+      "AGA013"
+    ],
+    "sku_count": 13,
+    "possible_master_name": "Jalón Dorsal Grande",
+    "expected_specs": [],
+    "sample_names": [
+      "Jalón Dorsal Grande",
+      "Recto Paralelas con Agarre",
+      "Recto Biceps",
+      "Triceps Curvo Tope Arandela"
+    ]
+  },
+  {
+    "candidate_id": "FC-0061",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:ELA",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      56
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "ELA036",
+      "ELA039",
+      "ELA040",
+      "ELA044",
+      "ELA045",
+      "ELA046",
+      "ELA047",
+      "ELA048",
+      "ELA049",
+      "ELA051",
+      "ELA053",
+      "ELA054"
+    ],
+    "skus": [
+      "ELA036",
+      "ELA039",
+      "ELA040",
+      "ELA044",
+      "ELA045",
+      "ELA046",
+      "ELA047",
+      "ELA048",
+      "ELA049",
+      "ELA051",
+      "ELA053",
+      "ELA054"
+    ],
+    "sku_count": 12,
+    "possible_master_name": "Gun.Ex Pro Kit 300",
+    "expected_specs": [],
+    "sample_names": [
+      "Gun.ex Pro Kit 300",
+      "Gun-ex Quattro Pro",
+      "Gun-es Mini Cobra Kit",
+      "Gun-es Unisex x Harness"
+    ]
+  },
+  {
+    "candidate_id": "FC-0014",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CRO",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      17
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO001",
+      "CRO007",
+      "CRO008",
+      "CRO050",
+      "CRO054",
+      "CRO055",
+      "CRO056",
+      "CRO057",
+      "CRO090",
+      "CRO128"
+    ],
+    "skus": [
+      "CRO001",
+      "CRO007",
+      "CRO008",
+      "CRO050",
+      "CRO054",
+      "CRO055",
+      "CRO056",
+      "CRO057",
+      "CRO090",
+      "CRO128"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Reloj Crossfit Reloj Crossfit",
+    "expected_specs": [],
+    "sample_names": [
+      "Reloj Crossfit Reloj Crossfit",
+      "Reloj Crossfit Profesional",
+      "Cuerda Golpeo Largo 15 Mts. Ancho 50 mm Funda Nylon",
+      "Cuerda Golpeo Largo 12 Mts. Ancho 38 mm Funda Nylon"
+    ]
+  },
+  {
+    "candidate_id": "FC-0005",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SKI",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      5
+    ],
+    "section_path": "CARDIO > CLIMBER > XEBEX",
+    "category_slug": "cardio",
+    "current_master_keys": [
+      "SKI002",
+      "SKI004",
+      "SKI005",
+      "SKI008",
+      "SKI009",
+      "SKI010",
+      "SKI011"
+    ],
+    "skus": [
+      "SKI002",
+      "SKI004",
+      "SKI005",
+      "SKI008",
+      "SKI009",
+      "SKI010",
+      "SKI011"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Soporte Pared Ski",
+    "expected_specs": [],
+    "sample_names": [
+      "Soporte pared Ski",
+      "Bateria Ski",
+      "Pull Bar Ski",
+      "Air Ski Trainer Eco"
+    ]
+  },
+  {
+    "candidate_id": "FC-0006",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:TRI",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      6
+    ],
+    "section_path": "CARDIO > TRINEO > XEBEX",
+    "category_slug": "cardio",
+    "current_master_keys": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ],
+    "skus": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Xt3 Trineo",
+    "expected_specs": [],
+    "sample_names": [
+      "XT3 Trineo",
+      "XT3 Consola Trineo",
+      "XT3 Plus Trineo Multifuncional V2",
+      "XT4 Trineo Multifuncional"
+    ]
+  },
+  {
+    "candidate_id": "FC-0081",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "name_similarity:0.77",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      24
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDRIG-3",
+      "FDRIG-4",
+      "FDRIG-6",
+      "FDRIG-7",
+      "FDTORRE-4",
+      "FDTORRE-6"
+    ],
+    "skus": [
+      "FDRIG-3",
+      "FDRIG-4",
+      "FDRIG-6",
+      "FDRIG-7",
+      "FDTORRE-4",
+      "FDTORRE-6"
+    ],
+    "sku_count": 6,
+    "possible_master_name": "Jaula Central - 3 Mts - Largo 3,11 M - 2 Racks - 6/9 Puestos Dominadas",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA CENTRAL - 3 Mts - Largo 3,11 m - 2 Racks - 6/9 puestos dominadas",
+      "JAULA CENTRAL - 4 Mts - Largo 4,28 m - 4 Racks - 8/12 puestos dominadas",
+      "JAULA CENTRAL - 6 Mts - Largo 6,12 m - 4 Racks - 12/17 puestos dominadas",
+      "JAULA CENTRAL - 7 Mts - Largo 7,32 m - 6 Racks - 14/20 puestos dominadas"
+    ]
+  },
+  {
+    "candidate_id": "FC-0083",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "name_similarity:0.78",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      26
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDRIG.WM-4",
+      "FDRIG.WM-6",
+      "FDRIG.WM-7",
+      "FDTORRE.WM-4",
+      "FDTORRE.WM-6",
+      "FDTORRE.WM-7"
+    ],
+    "skus": [
+      "FDRIG.WM-4",
+      "FDRIG.WM-6",
+      "FDRIG.WM-7",
+      "FDTORRE.WM-4",
+      "FDTORRE.WM-6",
+      "FDTORRE.WM-7"
+    ],
+    "sku_count": 6,
+    "possible_master_name": "Jaula A Pared - 4 Mts - Largo 4,28 M - 2 Rack - 8 Puestos Dominadas",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA A PARED - 4 Mts - Largo 4,28 m - 2 Rack - 8 Puestos dominadas",
+      "JAULA A PARED - 6 Mts - Largo 6,15 m - 2 Rack - 11 Puestos dominadas",
+      "JAULA A PARED - 7 Mts - Largo 7,32 m - 3 Rack - 13 Puestos dominadas",
+      "JAULA A PARED CON TORRE - 4 Mts - Largo 4,28 m - 2 Rack - 4/6 puestos dominadas - 4/6 puestos altos anillas / cuerda"
+    ]
+  },
+  {
+    "candidate_id": "FC-0004",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:CIN",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      4
+    ],
+    "section_path": "CARDIO > CINTA > XEBEX",
+    "category_slug": "cintas-de-correr",
+    "current_master_keys": [
+      "CIN001",
+      "CIN002",
+      "CIN003",
+      "CIN004",
+      "CIN005"
+    ],
+    "skus": [
+      "CIN001",
+      "CIN002",
+      "CIN003",
+      "CIN004",
+      "CIN005"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Curva Sin Motor",
+    "expected_specs": [],
+    "sample_names": [
+      "Curva sin Motor",
+      "Air Plus Magnetic (Smart Conect)",
+      "ST-6000",
+      "STL-5000"
+    ]
+  },
+  {
+    "candidate_id": "FC-0063",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:COL",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      57
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "COL008",
+      "COL009",
+      "COL013",
+      "COL018",
+      "COL019"
+    ],
+    "skus": [
+      "COL008",
+      "COL009",
+      "COL013",
+      "COL018",
+      "COL019"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Colchoneta Nbr Colchoneta Nbr 1800 X 580 X 15 Mm -",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Colchoneta NBR Colchoneta Nbr 1800 x 580 x 15 mm - Azul",
+      "Colchoneta Nbr 1400 x 580 x 15 mm - Azul",
+      "Colchoneta Nbr 1800 x 600 x 12,5 mm - Gris (Troqueladas)",
+      "Colchoneta Recubierta PVC 1020x530x12 mm Gris/Negro (Troquelada)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0084",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "name_similarity:0.77",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      27
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDMONKEY.WM-3",
+      "FDMONKEY.WM-4",
+      "FDMONKEY.WM-6",
+      "FDMONKEY.WM-7",
+      "PK036"
+    ],
+    "skus": [
+      "FDMONKEY.WM-3",
+      "FDMONKEY.WM-4",
+      "FDMONKEY.WM-6",
+      "FDMONKEY.WM-7",
+      "PK036"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Jaula A Pared Con Monkey - 3 Mts - Largo 3,11 M - 2 Rack - 6 Puestos Dominadas Min",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA A PARED CON MONKEY - 3 Mts - Largo 3,11 m - 2 Rack - 6 Puestos dominadas min",
+      "JAULA A PARED CON MONKEY - 4 Mts - Largo 4,28 m - 4 Rack - 8 Puestos dominadas min",
+      "JAULA A PARED CON MONKEY - 6 Mts - Largo 6,15 m - 4 Rack - 12 Puestos dominadas min",
+      "JAULA A PARED CON MONKEY - 7 Mts - Largo 7,32 m - 6 Rack - 14 Puestos dominadas min"
+    ]
+  },
+  {
+    "candidate_id": "FC-0031",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      33
+    ],
+    "section_path": "DISCOS Y BARRAS",
+    "category_slug": "discos",
+    "current_master_keys": [
+      "SOP052",
+      "SOP053",
+      "SOP060",
+      "SOP061"
+    ],
+    "skus": [
+      "SOP052",
+      "SOP053",
+      "SOP060",
+      "SOP061"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Soporte De Discos Y Barras Olimpico (Nuevo)",
+    "expected_specs": [],
+    "sample_names": [
+      "Soporte de Discos Y Barras Olimpico (NUEVO)",
+      "Soporte de Discos Olimpico (NUEVO)",
+      "Soporte Disco Olimpicos Piramidal (pequeño)",
+      "Soporte Disco Olimpicos Piramidal (grande)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0048",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REB",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      47
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB042",
+      "REB043",
+      "REB044",
+      "REB045"
+    ],
+    "skus": [
+      "REB042",
+      "REB043",
+      "REB044",
+      "REB045"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Fitball Fitball 55 Cms",
+    "expected_specs": [],
+    "sample_names": [
+      "Fitball Fitball 55 cms",
+      "Fitball 65 cms",
+      "Fitball 75 cms",
+      "Rack para 9 Fitball"
+    ]
+  },
+  {
+    "candidate_id": "FC-0011",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      14
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "SOP028",
+      "SOP029"
+    ],
+    "skus": [
+      "SOP028",
+      "SOP029"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Soporte Power Bag 5 Sacos",
+    "expected_specs": [],
+    "sample_names": [
+      "Soporte Power Bag 5 sacos",
+      "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos"
+    ]
+  },
+  {
+    "candidate_id": "FC-0018",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:REB",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      20
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "REB046",
+      "REB221"
+    ],
+    "skus": [
+      "REB046",
+      "REB221"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Comba De Cuero",
+    "expected_specs": [],
+    "sample_names": [
+      "Comba de Cuero",
+      "Comba de salto 88565202265"
+    ]
+  },
+  {
+    "candidate_id": "FC-0032",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:BTN",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      34
+    ],
+    "section_path": "DISCOS Y BARRAS",
+    "category_slug": "barras",
+    "current_master_keys": [
+      "BTN001",
+      "BTN002"
+    ],
+    "skus": [
+      "BTN001",
+      "BTN002"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Topes Barra Tope Barra 28 Mm",
+    "expected_specs": [],
+    "sample_names": [
+      "Topes Barra Tope Barra 28 Mm",
+      "Tope Barra 30 Mm"
+    ]
+  },
+  {
+    "candidate_id": "FC-0044",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "common_sku_prefix:SOP",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      46
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP002",
+      "SOP054"
+    ],
+    "skus": [
+      "SOP002",
+      "SOP054"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Carro Para Accesorios / Cesta Multiusos (Medidas 127 X 62 X 100 Cms)",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Carro para accesorios / Cesta Multiusos (Medidas 127 x 62 x 100 cms)",
+      "Capacidad de 20-40 paress Aproximadamente (Medidas 1,06 x 0,90 Mts)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0114",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "name_similarity:0.93",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      43
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "JBP28",
+      "JBPL28"
+    ],
+    "skus": [
+      "JBP28",
+      "JBPL28"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Juego Completo De Body Pump De 28Mm Se Compone De Las Referencias: Bbp140 X1 (Barra 1,40 Mts) Btn001 X 2 (Topes) Dbp001 X 2 (Discos De ) Dbp002 X 2 (Discos De ) Dbp005 X 2 (Discos De )",
+    "expected_specs": [
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Juego Completo de Body pump de 28mm Se compone de las referencias: BBP140 x1 (Barra 1,40 mts) BTN001 x 2 (Topes) DBP001 x 2 (Discos de 1,25 kgs) DBP002 x 2 (Discos de 2,50 kgs) DBP005 x 2 (Discos de 5 kgs)",
+      "Juego Completo de Body pump de 28mm Se compone de las referencias: BBP140 x1 (Barra 1,40 mts) BTN001 x 2 (Topes) DBP001 x 2 (Discos de 1,25 kgs) DBP002 x 2 (Discos de 2,50 kgs)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0115",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 0.8,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "name_similarity:0.93",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      43
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "JBP30",
+      "JBPL30"
+    ],
+    "skus": [
+      "JBP30",
+      "JBPL30"
+    ],
+    "sku_count": 2,
+    "possible_master_name": "Juego Completo De Body Pump De 30Mm Se Compone De Las Referencias: Bbp140B X1 (Barra 1,40 Mts) Btn002 X 2 (Topes) Dbp001B X 2 (Discos De ) Dbp002B X 2 (Discos De ) Dbp005B X 2 (Discos De )",
+    "expected_specs": [
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Juego Completo de Body pump de 30mm Se compone de las referencias: BBP140B x1 (Barra 1,40 mts) BTN002 x 2 (Topes) DBP001B x 2 (Discos de 1,25 kgs) DBP002B x 2 (Discos de 2,50 kgs) DBP005B x 2 (Discos de 5 kgs)",
+      "Juego Completo de Body pump de 30mm Se compone de las referencias: BBP140B x1 (Barra 1,40 mts) BTN002 x 2 (Topes) DBP001B x 2 (Discos de 1,25 kgs) DBP002B x 2 (Discos de 2,50 kgs)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0100",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      54
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "ELA001",
+      "ELA002",
+      "ELA003",
+      "ELA004",
+      "ELA005",
+      "ELA006",
+      "ELA007",
+      "ELA008",
+      "ELA009",
+      "ELA010",
+      "ELA011",
+      "ELA015",
+      "ELA016",
+      "ELA017",
+      "ELA018",
+      "ELA019",
+      "ELA020",
+      "ELA021",
+      "ELA022",
+      "ELA055",
+      "ELA056",
+      "ELA060",
+      "ELA061",
+      "ELA062",
+      "ELA063",
+      "REB163"
+    ],
+    "skus": [
+      "ELA001",
+      "ELA002",
+      "ELA003",
+      "ELA004",
+      "ELA005",
+      "ELA006",
+      "ELA007",
+      "ELA008",
+      "ELA009",
+      "ELA010",
+      "ELA011",
+      "ELA015",
+      "ELA016",
+      "ELA017",
+      "ELA018",
+      "ELA019",
+      "ELA020",
+      "ELA021",
+      "ELA022",
+      "ELA055",
+      "ELA056",
+      "ELA060",
+      "ELA061",
+      "ELA062",
+      "ELA063",
+      "REB163"
+    ],
+    "sku_count": 26,
+    "possible_master_name": "Tensión Media",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Tensión Media",
+      "Tensión Alta",
+      "Tensión Extra-Fuerte",
+      "Banda Latex 25 Mts - TPE - Tension Media 3,5 mm"
+    ]
+  },
+  {
+    "candidate_id": "FC-0091",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      45
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP019",
+      "VAR043",
+      "VAR044",
+      "VAR091",
+      "VAR092",
+      "VAR093",
+      "VAR094",
+      "VAR095",
+      "VAR096",
+      "VAR097",
+      "VAR098",
+      "VAR099",
+      "VAR101",
+      "VAR102",
+      "VAR103",
+      "VAR104",
+      "VAR105",
+      "VAR106",
+      "VAR107",
+      "VAR108",
+      "VAR109",
+      "VAR110",
+      "VAR145"
+    ],
+    "skus": [
+      "SOP019",
+      "VAR043",
+      "VAR044",
+      "VAR091",
+      "VAR092",
+      "VAR093",
+      "VAR094",
+      "VAR095",
+      "VAR096",
+      "VAR097",
+      "VAR098",
+      "VAR099",
+      "VAR101",
+      "VAR102",
+      "VAR103",
+      "VAR104",
+      "VAR105",
+      "VAR106",
+      "VAR107",
+      "VAR108",
+      "VAR109",
+      "VAR110",
+      "VAR145"
+    ],
+    "sku_count": 23,
+    "possible_master_name": "Anclaje Pared Kit De Suspension",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Anclaje Pared Kit de Suspension",
+      "Kit Entrenamiento en Suspension 1 Amarillo /Negro",
+      "Kit de Entrenamiento en suspension 4 - Azul",
+      "Kit Entrenamiento en Suspension 5 - ROSA"
+    ]
+  },
+  {
+    "candidate_id": "FC-0092",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      46
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "MVC000",
+      "MVC001",
+      "MVC002",
+      "MVC003",
+      "MVC004",
+      "MVC005",
+      "MVC006",
+      "MVC007",
+      "MVC008",
+      "MVC009",
+      "MVC010",
+      "MVC015",
+      "SOP002",
+      "SOP054",
+      "VAR017",
+      "VAR071",
+      "VAR114",
+      "VAR115",
+      "VAR116",
+      "VAR132"
+    ],
+    "skus": [
+      "MVC000",
+      "MVC001",
+      "MVC002",
+      "MVC003",
+      "MVC004",
+      "MVC005",
+      "MVC006",
+      "MVC007",
+      "MVC008",
+      "MVC009",
+      "MVC010",
+      "MVC015",
+      "SOP002",
+      "SOP054",
+      "VAR017",
+      "VAR071",
+      "VAR114",
+      "VAR115",
+      "VAR116",
+      "VAR132"
+    ],
+    "sku_count": 20,
+    "possible_master_name": "Carro Para Accesorios / Cesta Multiusos (Medidas 127 X 62 X 100 Cms)",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Carro para accesorios / Cesta Multiusos (Medidas 127 x 62 x 100 cms)",
+      "Reboteador Balon Medicinal Gris",
+      "Mancuerna de Vinilo 0,5 kgs",
+      "Mancuerna de Vinilo 1 kg"
+    ]
+  },
+  {
+    "candidate_id": "FC-0102",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      56
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "COL001",
+      "COL002",
+      "COL004",
+      "COL005",
+      "COL015",
+      "COL016",
+      "COL017",
+      "ELA036",
+      "ELA039",
+      "ELA040",
+      "ELA044",
+      "ELA045",
+      "ELA046",
+      "ELA047",
+      "ELA048",
+      "ELA049",
+      "ELA051",
+      "ELA053",
+      "ELA054"
+    ],
+    "skus": [
+      "COL001",
+      "COL002",
+      "COL004",
+      "COL005",
+      "COL015",
+      "COL016",
+      "COL017",
+      "ELA036",
+      "ELA039",
+      "ELA040",
+      "ELA044",
+      "ELA045",
+      "ELA046",
+      "ELA047",
+      "ELA048",
+      "ELA049",
+      "ELA051",
+      "ELA053",
+      "ELA054"
+    ],
+    "sku_count": 19,
+    "possible_master_name": "Gun.Ex Pro Kit 300",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Gun.ex Pro Kit 300",
+      "Gun-ex Quattro Pro",
+      "Gun-es Mini Cobra Kit",
+      "Gun-es Unisex x Harness"
+    ]
+  },
+  {
+    "candidate_id": "FC-0093",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      47
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB042",
+      "REB043",
+      "REB044",
+      "REB045",
+      "SOP020",
+      "SOP021",
+      "SOP064",
+      "VAR001",
+      "VAR002",
+      "VAR003",
+      "VAR004",
+      "VAR005",
+      "VAR006",
+      "VAR007",
+      "VAR008",
+      "VAR055",
+      "VAR127",
+      "VAR128"
+    ],
+    "skus": [
+      "REB042",
+      "REB043",
+      "REB044",
+      "REB045",
+      "SOP020",
+      "SOP021",
+      "SOP064",
+      "VAR001",
+      "VAR002",
+      "VAR003",
+      "VAR004",
+      "VAR005",
+      "VAR006",
+      "VAR007",
+      "VAR008",
+      "VAR055",
+      "VAR127",
+      "VAR128"
+    ],
+    "sku_count": 18,
+    "possible_master_name": "Pelota Pilates - 20 Cms",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Pelota Pilates - 20 cms",
+      "Pelota Pilates - 25 cms",
+      "Bola de Lacrosse",
+      "Bola de Tonificacion de 0,5 kgs (Unidad)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0101",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      55
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "ELA023",
+      "ELA024",
+      "ELA025",
+      "ELA026",
+      "ELA027",
+      "ELA028",
+      "ELA029",
+      "ELA030",
+      "ELA032",
+      "ELA033",
+      "ELA034",
+      "ELA057",
+      "ELA058",
+      "ELA059",
+      "SOP047",
+      "VAR069",
+      "VAR070",
+      "VAR072"
+    ],
+    "skus": [
+      "ELA023",
+      "ELA024",
+      "ELA025",
+      "ELA026",
+      "ELA027",
+      "ELA028",
+      "ELA029",
+      "ELA030",
+      "ELA032",
+      "ELA033",
+      "ELA034",
+      "ELA057",
+      "ELA058",
+      "ELA059",
+      "SOP047",
+      "VAR069",
+      "VAR070",
+      "VAR072"
+    ],
+    "sku_count": 18,
+    "possible_master_name": "Tubo Resistencia Recubierto Tpr - Tension Baja",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Tubo Resistencia Recubierto TPR - Tension Baja",
+      "Tubo Resistencia Recubierto TPR - Tension Media",
+      "Tubo Resistencia Recubierto TPR - Tension Alta",
+      "Resistencia Muy Baja 9mm x1,5mmx125cms AMARILLO"
+    ]
+  },
+  {
+    "candidate_id": "FC-0098",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      52
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB215",
+      "VAR034",
+      "VAR035",
+      "VAR059",
+      "VAR061",
+      "VAR100",
+      "VAR117",
+      "VAR118",
+      "VAR130",
+      "VAR131",
+      "VAR142",
+      "VAR144",
+      "VAR153",
+      "VAR155",
+      "VAR163"
+    ],
+    "skus": [
+      "REB215",
+      "VAR034",
+      "VAR035",
+      "VAR059",
+      "VAR061",
+      "VAR100",
+      "VAR117",
+      "VAR118",
+      "VAR130",
+      "VAR131",
+      "VAR142",
+      "VAR144",
+      "VAR153",
+      "VAR155",
+      "VAR163"
+    ],
+    "sku_count": 15,
+    "possible_master_name": "Ladrillo De Yoga - Addidas",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Ladrillo de Yoga - Addidas",
+      "Ladrillo Yoga Corcho",
+      "Yoga Wheel 33x13cms - Naranja/Azul",
+      "Yoga Wheel 33x13cms - Gris"
+    ]
+  },
+  {
+    "candidate_id": "FC-0095",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      49
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP058",
+      "VAR014",
+      "VAR015",
+      "VAR016",
+      "VAR022",
+      "VAR023",
+      "VAR042",
+      "VAR088",
+      "VAR089",
+      "VAR164",
+      "VAR165",
+      "VAR166",
+      "VAR171"
+    ],
+    "skus": [
+      "SOP058",
+      "VAR014",
+      "VAR015",
+      "VAR016",
+      "VAR022",
+      "VAR023",
+      "VAR042",
+      "VAR088",
+      "VAR089",
+      "VAR164",
+      "VAR165",
+      "VAR166",
+      "VAR171"
+    ],
+    "sku_count": 13,
+    "possible_master_name": "Soporte Foam Roller A Pared",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Soporte Foam Roller a Pared",
+      "colocado, no incluido Rulo Hueco 33 cms",
+      "Rulo Hueco (Eva + Pvc) Negro",
+      "Rulo Hueco (Eva + Abs) Negro"
+    ]
+  },
+  {
+    "candidate_id": "FC-0076",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      17
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO001",
+      "CRO007",
+      "CRO008",
+      "CRO050",
+      "CRO054",
+      "CRO055",
+      "CRO056",
+      "CRO057",
+      "CRO090",
+      "CRO128",
+      "SOP012",
+      "SOP041"
+    ],
+    "skus": [
+      "CRO001",
+      "CRO007",
+      "CRO008",
+      "CRO050",
+      "CRO054",
+      "CRO055",
+      "CRO056",
+      "CRO057",
+      "CRO090",
+      "CRO128",
+      "SOP012",
+      "SOP041"
+    ],
+    "sku_count": 12,
+    "possible_master_name": "Soporte Kettelbells 2 Alturas (Medidas 77X70X143 Cms)",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte Kettelbells 2 Alturas (Medidas 77x70x143 cms)",
+      "Soporte Kettelbells 3 Alturas (Medidas 92x64x137 cms)",
+      "Reloj Crossfit Reloj Crossfit",
+      "Reloj Crossfit Profesional"
+    ]
+  },
+  {
+    "candidate_id": "FC-0079",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      20
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO019",
+      "CRO020",
+      "CRO027",
+      "CRO028",
+      "CRO051",
+      "CRO052",
+      "CRO061",
+      "CRO062",
+      "CRO089",
+      "CRO101",
+      "REB046",
+      "REB221"
+    ],
+    "skus": [
+      "CRO019",
+      "CRO020",
+      "CRO027",
+      "CRO028",
+      "CRO051",
+      "CRO052",
+      "CRO061",
+      "CRO062",
+      "CRO089",
+      "CRO101",
+      "REB046",
+      "REB221"
+    ],
+    "sku_count": 12,
+    "possible_master_name": "Cuerda De Salto Nornal",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Cuerda de Salto Nornal",
+      "Comba de Salto Pvc Negra",
+      "Cuerda de Salto Pesada",
+      "Comba de Velocidad Profesional - Azul"
+    ]
+  },
+  {
+    "candidate_id": "FC-0096",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      50
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB208",
+      "REB209",
+      "SOP057",
+      "VAR026",
+      "VAR031",
+      "VAR032",
+      "VAR036",
+      "VAR037",
+      "VAR167",
+      "VAR168",
+      "VAR169",
+      "VAR170"
+    ],
+    "skus": [
+      "REB208",
+      "REB209",
+      "SOP057",
+      "VAR026",
+      "VAR031",
+      "VAR032",
+      "VAR036",
+      "VAR037",
+      "VAR167",
+      "VAR168",
+      "VAR169",
+      "VAR170"
+    ],
+    "sku_count": 12,
+    "possible_master_name": "Tobillera Lastrada (Par) Logo (Con 1 Correa)",
+    "expected_specs": [
+      "color",
+      "peso"
+    ],
+    "sample_names": [
+      "Tobillera lastrada 2 kgs (Par) Logo (con 1 correa)",
+      "Tobillera lastrada 3 kgs (Par) Logo (con 2 correas)",
+      "Tobillera lastrada 4 kgs (Par) Logo (con 2 correas)",
+      "Tobillera lastrada 5 kgs (Par) Logo (con 2 correas)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0077",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      18
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO013",
+      "CRO016",
+      "CRO017",
+      "CRO042",
+      "CRO058",
+      "CRO059",
+      "CRO094",
+      "CRO105",
+      "CRO106",
+      "CRO106NEXO",
+      "CRO126"
+    ],
+    "skus": [
+      "CRO013",
+      "CRO016",
+      "CRO017",
+      "CRO042",
+      "CRO058",
+      "CRO059",
+      "CRO094",
+      "CRO105",
+      "CRO106",
+      "CRO106NEXO",
+      "CRO126"
+    ],
+    "sku_count": 11,
+    "possible_master_name": "Cuerda De Arrastre Para Trineo De Poliester Alta Tenacidad 38Mm X 17Mts Con Anclaje + Mosqueton Bombero Inox 10Mm",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Cuerda de Arrastre para Trineo De poliester alta tenacidad 38mm x 17mts con anclaje + mosqueton bombero inox 10mm",
+      "Anillas PVC Con 5 Mts de Cinta",
+      "Anillas de Madera con 5 mts de Cinta",
+      "Peg Board Peg Board Tabla vertical de escalada"
+    ]
+  },
+  {
+    "candidate_id": "FC-0090",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      44
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP004",
+      "SOP056",
+      "VAR024",
+      "VAR062",
+      "VAR063",
+      "VAR064",
+      "VAR065",
+      "VAR111",
+      "VAR133",
+      "VAR136",
+      "VAR141"
+    ],
+    "skus": [
+      "SOP004",
+      "SOP056",
+      "VAR024",
+      "VAR062",
+      "VAR063",
+      "VAR064",
+      "VAR065",
+      "VAR111",
+      "VAR133",
+      "VAR136",
+      "VAR141"
+    ],
+    "sku_count": 11,
+    "possible_master_name": "Soporte Body Pump Para 25 Juegos (Medidas 1,50 X 1,54 X0,70 Mts)",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte Body Pump Para 25 Juegos (Medidas 1,50 x 1,54 x0,70 Mts)",
+      "Balance Step Rojo 59x26 cms (Sin Aagarre)",
+      "Balance Step Rojo 59x26 cms Con Tubo de Resistencia",
+      "Balance Step GRIS 59x21 cms Con Plataforma Anti Slip"
+    ]
+  },
+  {
+    "candidate_id": "FC-0097",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      51
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB050",
+      "REB053",
+      "REB054",
+      "REB203",
+      "REB213",
+      "REB216",
+      "REB217",
+      "VAR029",
+      "VAR030",
+      "VAR086",
+      "VAR143"
+    ],
+    "skus": [
+      "REB050",
+      "REB053",
+      "REB054",
+      "REB203",
+      "REB213",
+      "REB216",
+      "REB217",
+      "VAR029",
+      "VAR030",
+      "VAR086",
+      "VAR143"
+    ],
+    "sku_count": 11,
+    "possible_master_name": "The Orifinal Step - Turquesa",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "The Orifinal Step - Turquesa",
+      "Mini Step",
+      "Step Clip",
+      "Step Feet"
+    ]
+  },
+  {
+    "candidate_id": "FC-0078",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      19
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO014",
+      "CRO015",
+      "CRO018",
+      "CRO021",
+      "CRO022",
+      "CRO060",
+      "CRO063",
+      "CRO080",
+      "CRO132",
+      "REB222"
+    ],
+    "skus": [
+      "CRO014",
+      "CRO015",
+      "CRO018",
+      "CRO021",
+      "CRO022",
+      "CRO060",
+      "CRO063",
+      "CRO080",
+      "CRO132",
+      "REB222"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Escalera Y Rampa De Plyo Suave",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Escalera y Rampa de Plyo Suave",
+      "Juego Cajones Jerk 90x51x6 cms 90x51x15,50 cms 90x51x30,50 cms 90x51x38 cms",
+      "Plataforma Halterofilia Profesional",
+      "Chaleco Negro Peso 10 Kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0086",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      30
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CORNER40",
+      "RAMPA40-1",
+      "VAR060",
+      "VAR087",
+      "VAR137",
+      "VAR138",
+      "VAR151",
+      "VAR152",
+      "VAR154",
+      "VAR172"
+    ],
+    "skus": [
+      "CORNER40",
+      "RAMPA40-1",
+      "VAR060",
+      "VAR087",
+      "VAR137",
+      "VAR138",
+      "VAR151",
+      "VAR152",
+      "VAR154",
+      "VAR172"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "1000X1000X15 Mm - Con Moteado",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "1000x1000x15 mm - Negro Con Moteado Azul",
+      "1000x1000x15 mm - Negro Con Moteado Rojo",
+      "1000x1000x15 mm - Negro Liso Sellado",
+      "1000x500x40 mm - Negro *PAR* (Granulado Grueso) Union tipo Puzzle, Con Huevera"
+    ]
+  },
+  {
+    "candidate_id": "FC-0094",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      48
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "REB157",
+      "SOP043",
+      "VAR013",
+      "VAR018",
+      "VAR020",
+      "VAR021",
+      "VAR090",
+      "VAR125",
+      "VAR126",
+      "VAR157"
+    ],
+    "skus": [
+      "REB157",
+      "SOP043",
+      "VAR013",
+      "VAR018",
+      "VAR020",
+      "VAR021",
+      "VAR090",
+      "VAR125",
+      "VAR126",
+      "VAR157"
+    ],
+    "sku_count": 10,
+    "possible_master_name": "Soporte Fitball (Mueble 12 Und) (Medidas 239X77X195 Cms)",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Soporte Fitball (Mueble 12 und) (Medidas 239x77x195 cms)",
+      "Push Up Bars Acero",
+      "Push up",
+      "Espaldera Madera 1mts ancho x 2,40 mts de alto"
+    ]
+  },
+  {
+    "candidate_id": "FC-0103",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      57
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "COL008",
+      "COL009",
+      "COL013",
+      "COL018",
+      "COL019",
+      "REB218",
+      "SOP045",
+      "SOP046",
+      "SOP050"
+    ],
+    "skus": [
+      "COL008",
+      "COL009",
+      "COL013",
+      "COL018",
+      "COL019",
+      "REB218",
+      "SOP045",
+      "SOP046",
+      "SOP050"
+    ],
+    "sku_count": 9,
+    "possible_master_name": "Colchoneta Nbr Colchoneta Nbr 1800 X 580 X 15 Mm -",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Colchoneta NBR Colchoneta Nbr 1800 x 580 x 15 mm - Azul",
+      "Colchoneta Nbr 1400 x 580 x 15 mm - Azul",
+      "Colchoneta Nbr 1800 x 600 x 12,5 mm - Gris (Troqueladas)",
+      "Colchoneta Recubierta PVC 1020x530x12 mm Gris/Negro (Troquelada)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0071",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      3
+    ],
+    "section_path": "CARDIO > BICI > XEBEX",
+    "category_slug": "bicicletas-estaticas",
+    "current_master_keys": [
+      "BIC002",
+      "BIC006",
+      "BIC007",
+      "BIC008",
+      "BIC009",
+      "BIC010",
+      "REPUESTO-805",
+      "REPUESTO-806"
+    ],
+    "skus": [
+      "BIC002",
+      "BIC006",
+      "BIC007",
+      "BIC008",
+      "BIC009",
+      "BIC010",
+      "REPUESTO-805",
+      "REPUESTO-806"
+    ],
+    "sku_count": 8,
+    "possible_master_name": "Bicileta Air Bike 1000 Eco (No Smart Conect)",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "Consola Bluetooth AB-1000 SMART CONECT",
+      "Bicicleta Air Bike (NO smart conect)",
+      "Consola Bluetooth AB-1 SMART CONECT"
+    ]
+  },
+  {
+    "candidate_id": "FC-0089",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      43
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "DBP001",
+      "DBP002",
+      "DBP005",
+      "JBP28",
+      "JBP30",
+      "JBPL28",
+      "JBPL30",
+      "SOP003"
+    ],
+    "skus": [
+      "DBP001",
+      "DBP002",
+      "DBP005",
+      "JBP28",
+      "JBP30",
+      "JBPL28",
+      "JBPL30",
+      "SOP003"
+    ],
+    "sku_count": 8,
+    "possible_master_name": "Juego Completo De Body Pump De 28Mm Se Compone De Las Referencias: Bbp140 X1 (Barra 1,40 Mts) Btn001 X 2 (Topes) Dbp001 X 2 (Discos De ) Dbp002 X 2 (Discos De ) Dbp005 X 2 (Discos De )",
+    "expected_specs": [
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Juego Completo de Body pump de 28mm Se compone de las referencias: BBP140 x1 (Barra 1,40 mts) BTN001 x 2 (Topes) DBP001 x 2 (Discos de 1,25 kgs) DBP002 x 2 (Discos de 2,50 kgs) DBP005 x 2 (Discos de 5 kgs)",
+      "Juego Completo de Body pump de 30mm Se compone de las referencias: BBP140B x1 (Barra 1,40 mts) BTN002 x 2 (Topes) DBP001B x 2 (Discos de 1,25 kgs) DBP002B x 2 (Discos de 2,50 kgs) DBP005B x 2 (Discos de 5 kgs)",
+      "Juego Completo de Body pump de 28mm Se compone de las referencias: BBP140 x1 (Barra 1,40 mts) BTN001 x 2 (Topes) DBP001 x 2 (Discos de 1,25 kgs) DBP002 x 2 (Discos de 2,50 kgs)",
+      "Juego Completo de Body pump de 30mm Se compone de las referencias: BBP140B x1 (Barra 1,40 mts) BTN002 x 2 (Topes) DBP001B x 2 (Discos de 1,25 kgs) DBP002B x 2 (Discos de 2,50 kgs)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0099",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      53
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "SOP022",
+      "SOP026",
+      "SOP027",
+      "SOP044",
+      "SOP059",
+      "SOP062",
+      "SOP065",
+      "VAR140"
+    ],
+    "skus": [
+      "SOP022",
+      "SOP026",
+      "SOP027",
+      "SOP044",
+      "SOP059",
+      "SOP062",
+      "SOP065",
+      "VAR140"
+    ],
+    "sku_count": 8,
+    "possible_master_name": "Pistola De Masaje",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Pistola de Masaje",
+      "Banco Regulable 0 a 90º (Medidas 123 x 43 x 60 cms)",
+      "Banco Declinable -10 a 90º (Medidas 142 x 47 x 68 cms)",
+      "Banco Plano (Medidas 110 x 47 x 68 cms)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0087",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      34
+    ],
+    "section_path": "DISCOS Y BARRAS",
+    "category_slug": "barras",
+    "current_master_keys": [
+      "BBP140",
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004",
+      "SOP033"
+    ],
+    "skus": [
+      "BBP140",
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004",
+      "SOP033"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Barra Body Pump 28Mm - 1,40 Mts",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Barra Body Pump 28mm - 1,40 Mts",
+      "Topes Barra Tope Barra 28 Mm",
+      "Tope Barra 30 Mm",
+      "Tope Barra Olímpica"
+    ]
+  },
+  {
+    "candidate_id": "FC-0104",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      59
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "COL007",
+      "REB005",
+      "REB161",
+      "REB162",
+      "REB164",
+      "REB165",
+      "REB214"
+    ],
+    "skus": [
+      "COL007",
+      "REB005",
+      "REB161",
+      "REB162",
+      "REB164",
+      "REB165",
+      "REB214"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Colchoneta Entrenamieno 1830X610X7Mm Addidas",
+    "expected_specs": [
+      "color",
+      "medida"
+    ],
+    "sample_names": [
+      "Colchoneta Entrenamieno 1830x610x7mm Gris Addidas",
+      "Conchoneta Antideslizante Love Gris 1730x610x4mm",
+      "Conchoneta Antideslizante Love Azul 1730x6104mm",
+      "Colchoneta traspirable Naranja 1730x610x5mm"
+    ]
+  },
+  {
+    "candidate_id": "FC-0105",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      61
+    ],
+    "section_path": "MATERIAL DE ESTUDIO",
+    "category_slug": "material-de-estudio",
+    "current_master_keys": [
+      "BOX001",
+      "BOX002",
+      "BOX003",
+      "BOX004",
+      "BOX005",
+      "REB189"
+    ],
+    "skus": [
+      "BOX001",
+      "BOX002",
+      "BOX003",
+      "BOX004",
+      "BOX005",
+      "REB189"
+    ],
+    "sku_count": 6,
+    "possible_master_name": "Saco Boxeo 1,00 Mts ()",
+    "expected_specs": [
+      "color",
+      "medida",
+      "peso"
+    ],
+    "sample_names": [
+      "Saco Boxeo 1,00 Mts (30 kgs) ROJO",
+      "Saco Boxeo Thai (Pvc) 180 x 40 cms",
+      "Saco Boxeo Thai (Pvc) 180 x 35 cms",
+      "Saco Boxeo Upper Cut"
+    ]
+  },
+  {
+    "candidate_id": "FC-0075",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      15
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "BOH000",
+      "BOH140",
+      "BOH160",
+      "BOH200",
+      "BOH200NEXO"
+    ],
+    "skus": [
+      "BOH000",
+      "BOH140",
+      "BOH160",
+      "BOH200",
+      "BOH200NEXO"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Barra Olimpica Hexagonal Desmontada 1,60 Mts",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Barra Olimpica Hexagonal Desmontada 1,60 Mts",
+      "Barra Olimpica Hexagonal Fija Negra 2 Mts",
+      "Barra Olimpica Hexagonal Fija Negra 2 Mts Logo",
+      "Barra Hexagonal MONTADA 1,40 Mts"
+    ]
+  },
+  {
+    "candidate_id": "FC-0088",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      35
+    ],
+    "section_path": "DISCOS Y BARRAS",
+    "category_slug": "barras",
+    "current_master_keys": [
+      "SOP042",
+      "VAR028",
+      "VAR113",
+      "VAR129",
+      "VAR159"
+    ],
+    "skus": [
+      "SOP042",
+      "VAR028",
+      "VAR113",
+      "VAR129",
+      "VAR159"
+    ],
+    "sku_count": 5,
+    "possible_master_name": "Soporte A Pared Para 6",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Soporte a pared para 6",
+      "Protector de Cuello 45 cms, Funda Nylon",
+      "Protector de Cuello ergonomico Azul",
+      "Protector de cuello Rojo"
+    ]
+  },
+  {
+    "candidate_id": "FC-0080",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      22
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "BOD001",
+      "BOD002",
+      "BOD003",
+      "CRO088"
+    ],
+    "skus": [
+      "BOD001",
+      "BOD002",
+      "BOD003",
+      "CRO088"
+    ],
+    "sku_count": 4,
+    "possible_master_name": "Trineo (Nuevo)",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Trineo (NUEVO)",
+      "Barra para Dominadas 110 x 17 x 27 cms",
+      "Barra para Dominadas 152 x 41 x 38 cms",
+      "Barra para Dominadas 131 x 58 x 60 cms"
+    ]
+  },
+  {
+    "candidate_id": "FC-0074",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      14
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "CRO133",
+      "SOP028",
+      "SOP029"
+    ],
+    "skus": [
+      "CRO133",
+      "SOP028",
+      "SOP029"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Soporte Power Bag 5 Sacos",
+    "expected_specs": [
+      "color"
+    ],
+    "sample_names": [
+      "Soporte Power Bag 5 sacos",
+      "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "Cinturon Lastrado (negro)"
+    ]
+  },
+  {
+    "candidate_id": "FC-0085",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "high",
+    "score": 0.75,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "spec_axis_variation",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      28
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "REB172",
+      "SOP048",
+      "SOP049"
+    ],
+    "skus": [
+      "REB172",
+      "SOP048",
+      "SOP049"
+    ],
+    "sku_count": 3,
+    "possible_master_name": "Rack Sentadilla Medidas 2,20 X 1,50 X1,80 Mts",
+    "expected_specs": [
+      "medida"
+    ],
+    "sample_names": [
+      "Rack Sentadilla Medidas 2,20 x 1,50 x1,80 mts",
+      "Half Rack Sentadilla Medidas 2,20 x 1,20 x 1,20 mts",
+      "Torre Multiposicion Adidas"
+    ]
+  },
+  {
+    "candidate_id": "FC-0113",
+    "source_heuristic": "NameWeightLadder",
+    "confidence": "high",
+    "score": 0.7,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "name_similarity:1.00"
+    ],
+    "pages": [
+      39
+    ],
+    "section_path": "MANCUERNAS",
+    "category_slug": "mancuernas",
+    "current_master_keys": [
+      "MH",
+      "MHA"
+    ],
+    "skus": [
+      "MH001",
+      "MH002",
+      "MH002A",
+      "MH003",
+      "MH004",
+      "MH005",
+      "MH006",
+      "MH007",
+      "MH007A",
+      "MH008",
+      "MH009",
+      "MH010",
+      "MH012",
+      "MH015",
+      "MH017",
+      "MH020",
+      "MH022",
+      "MH025",
+      "MH027",
+      "MH030",
+      "MH032",
+      "MH035",
+      "MH037",
+      "MH040",
+      "MH042",
+      "MH045",
+      "MH047",
+      "MH050",
+      "MH052",
+      "MH055",
+      "MH057",
+      "MH060"
+    ],
+    "sku_count": 32,
+    "possible_master_name": "Mancuerna Hexagonal",
+    "expected_specs": [
+      "peso"
+    ],
+    "sample_names": [
+      "Mancuerna Hexagonal 1 kg",
+      "Mancuerna Hexagonal 2 kgs",
+      "Mancuerna Hexagonal 3 kgs",
+      "Mancuerna Hexagonal 4 kgs"
+    ]
+  },
+  {
+    "candidate_id": "FC-0021",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.7,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "common_sku_prefix:PK",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      23
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "PK001",
+      "PK002",
+      "PK003",
+      "PK004",
+      "PK005",
+      "PK006",
+      "PK007",
+      "PK008",
+      "PK009",
+      "PK010",
+      "PK011",
+      "PK012",
+      "PK013",
+      "PK015",
+      "PK018",
+      "PK019",
+      "PK022",
+      "PK026",
+      "PK027",
+      "PK028",
+      "PK030",
+      "PK032",
+      "PK033"
+    ],
+    "skus": [
+      "PK001",
+      "PK002",
+      "PK003",
+      "PK004",
+      "PK005",
+      "PK006",
+      "PK007",
+      "PK008",
+      "PK009",
+      "PK010",
+      "PK011",
+      "PK012",
+      "PK013",
+      "PK015",
+      "PK018",
+      "PK019",
+      "PK022",
+      "PK026",
+      "PK027",
+      "PK028",
+      "PK030",
+      "PK032",
+      "PK033"
+    ],
+    "sku_count": 23,
+    "possible_master_name": "Columna 2,70 Mts",
+    "expected_specs": [],
+    "sample_names": [
+      "Columna 2,70 Mts",
+      "Columna 3,80 Mts",
+      "Union Doble 1,10 Mts",
+      "Union Doble 1,80 Mts"
+    ]
+  },
+  {
+    "candidate_id": "FC-0007",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.7,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "common_sku_prefix:REB",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      7
+    ],
+    "section_path": "CARDIO > CINTA > REEBOK",
+    "category_slug": "bicicletas-estaticas",
+    "current_master_keys": [
+      "REB169",
+      "REB187",
+      "REB196",
+      "REB199",
+      "REB202",
+      "REB204",
+      "REB205"
+    ],
+    "skus": [
+      "REB169",
+      "REB187",
+      "REB196",
+      "REB199",
+      "REB202",
+      "REB204",
+      "REB205"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Jet 300 Series",
+    "expected_specs": [],
+    "sample_names": [
+      "Jet 300 Series",
+      "AR Sprint Bike",
+      "Zjet 430 - Red",
+      "Zjet 430 Black + Bluetooth"
+    ]
+  },
+  {
+    "candidate_id": "FC-0008",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.7,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "common_sku_prefix:REB",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      8
+    ],
+    "section_path": "CARDIO > CINTAS > ADIDAS",
+    "category_slug": "elipticas",
+    "current_master_keys": [
+      "REB182",
+      "REB195",
+      "REB201",
+      "REB207",
+      "REB210",
+      "REB211",
+      "REB212"
+    ],
+    "skus": [
+      "REB182",
+      "REB195",
+      "REB201",
+      "REB207",
+      "REB210",
+      "REB211",
+      "REB212"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Gx50 One Series Black",
+    "expected_specs": [],
+    "sample_names": [
+      "GX50 One Series Black",
+      "Zjet 430 Cross Trainer - Red",
+      "SL8",
+      "C-21x"
+    ]
+  },
+  {
+    "candidate_id": "FC-0009",
+    "source_heuristic": "same_page_sku_prefix",
+    "confidence": "high",
+    "score": 0.7,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "common_sku_prefix:MTX",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      9
+    ],
+    "section_path": "CARDIO > MULTIESTACION > HORIZON",
+    "category_slug": "bicicletas-estaticas",
+    "current_master_keys": [
+      "MTX001",
+      "MTX002",
+      "MTX003",
+      "MTX004",
+      "MTX005",
+      "MTX006",
+      "MTX007"
+    ],
+    "skus": [
+      "MTX001",
+      "MTX002",
+      "MTX003",
+      "MTX004",
+      "MTX005",
+      "MTX006",
+      "MTX007"
+    ],
+    "sku_count": 7,
+    "possible_master_name": "Bicicleta Paros Pro",
+    "expected_specs": [],
+    "sample_names": [
+      "Bicicleta Paros Pro",
+      "Eliptica Syros Pro",
+      "Cinta de Correr Treadmill T101-06",
+      "Cinta de Correr Treadmill T202-05"
+    ]
+  },
+  {
+    "candidate_id": "FC-0073",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "medium",
+    "score": 0.6,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      5
+    ],
+    "section_path": "CARDIO > CLIMBER > XEBEX",
+    "category_slug": "cardio",
+    "current_master_keys": [
+      "ESC003",
+      "SKI002",
+      "SKI004",
+      "SKI005",
+      "SKI008",
+      "SKI009",
+      "SKI010",
+      "SKI011"
+    ],
+    "skus": [
+      "ESC003",
+      "SKI002",
+      "SKI004",
+      "SKI005",
+      "SKI008",
+      "SKI009",
+      "SKI010",
+      "SKI011"
+    ],
+    "sku_count": 8,
+    "possible_master_name": "Soporte Pared Ski",
+    "expected_specs": [],
+    "sample_names": [
+      "Soporte pared Ski",
+      "Bateria Ski",
+      "Pull Bar Ski",
+      "Air Ski Trainer Eco"
+    ]
+  },
+  {
+    "candidate_id": "FC-0082",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "medium",
+    "score": 0.6,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "same_category",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      25
+    ],
+    "section_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "category_slug": "cross-training",
+    "current_master_keys": [
+      "FDMONKEY-3",
+      "FDMONKEY-4",
+      "FDMONKEY-6",
+      "FDMONKEY-7",
+      "FDRIG.WM-3",
+      "FDTORRE-7"
+    ],
+    "skus": [
+      "FDMONKEY-3",
+      "FDMONKEY-4",
+      "FDMONKEY-6",
+      "FDMONKEY-7",
+      "FDRIG.WM-3",
+      "FDTORRE-7"
+    ],
+    "sku_count": 6,
+    "possible_master_name": "Jaula Central Con Torre - 7 Mts - Largo 7,32 M - 6 Rack - 17 Puestos Dominadas - 9/12 Puestros Altaod Anillas/Cuerdas Compuesto De Las Referencias",
+    "expected_specs": [],
+    "sample_names": [
+      "JAULA CENTRAL CON TORRE - 7 Mts - Largo 7,32 m - 6 Rack - 17 puestos dominadas - 9/12 puestros altaod anillas/cuerdas Compuesto de las referencias",
+      "JAULA CENTRAL CON MONKEY - 3 Mts - Largo 3,11 m - 2 Rack - 6 Puestos dominadas min",
+      "JAULA CENTRAL CON MONKEY - 4 Mts - Largo 4,28 m - 4 Rack - 8 Puestos dominadas min",
+      "JAULA CENTRAL CON MONKEY - 6 Mts - Largo 6,15 m - 4 Rack - 12 Puestos dominadas min"
+    ]
+  },
+  {
+    "candidate_id": "FC-0072",
+    "source_heuristic": "same_page_section_cluster",
+    "confidence": "medium",
+    "score": 0.5,
+    "score_reasons": [
+      "same_page",
+      "same_section",
+      "all_singleton_masters"
+    ],
+    "pages": [
+      4
+    ],
+    "section_path": "CARDIO > CINTA > XEBEX",
+    "category_slug": "remos",
+    "current_master_keys": [
+      "CIN001",
+      "CIN002",
+      "CIN003",
+      "CIN004",
+      "CIN005",
+      "REM002",
+      "REM003",
+      "REM004",
+      "REM005"
+    ],
+    "skus": [
+      "CIN001",
+      "CIN002",
+      "CIN003",
+      "CIN004",
+      "CIN005",
+      "REM002",
+      "REM003",
+      "REM004",
+      "REM005"
+    ],
+    "sku_count": 9,
+    "possible_master_name": "Air Rower 2,0 (No Smart Conect)",
+    "expected_specs": [],
+    "sample_names": [
+      "Air Rower 2,0 (NO smart conect)",
+      "Air Rower 2,0 (SI smart conect)",
+      "Air Rower 3,0",
+      "AirPlus Rower (Si Smart connect)"
+    ]
+  }
+]

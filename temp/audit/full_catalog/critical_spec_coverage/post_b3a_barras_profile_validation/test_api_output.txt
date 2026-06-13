@@ -1,0 +1,54 @@
+...F.................................................................... [ 12%]
+........................................................................ [ 24%]
+........................................................................ [ 37%]
+.............................................F.......................... [ 49%]
+........................................................................ [ 61%]
+............................................................FsFF........ [ 74%]
+........................................................................ [ 86%]
+......................................FF................................ [ 98%]
+.......                                                                  [100%]
+=================================== FAILURES ===================================
+E   AssertionError: assert ['007_product_image_source'] == ['006_variant_brand_id']
+      
+      At index 0 diff: '007_product_image_source' != '006_variant_brand_id'
+      Use -v to get more diff
+/app/tests/test_background_jobs.py:89: AssertionError: assert ['007_product_image_source'] == ['006_variant_brand_id']
+E   AssertionError: assert ('explicit_one_per_sku' and False)
+     +  where 'explicit_one_per_sku' = ImportRow(row_index=0, status=<RowStatus.OK: 'ok'>, sku='CRO107NEXO', name='Saco Gusano 2 personas - 160x30cms (60kgs)...w=None, product_capacity_raw=None, product_capacity_count=None, color_candidate_raw=None, color_extraction_source=None).grouping_reason
+     +  and   False = <built-in method startswith of str object at 0x773eb3a232b0>('false_family:')
+     +    where <built-in method startswith of str object at 0x773eb3a232b0> = 'explicit_one_per_sku'.startswith
+     +      where 'explicit_one_per_sku' = ImportRow(row_index=0, status=<RowStatus.OK: 'ok'>, sku='CRO107NEXO', name='Saco Gusano 2 personas - 160x30cms (60kgs)...w=None, product_capacity_raw=None, product_capacity_count=None, color_candidate_raw=None, color_extraction_source=None).grouping_reason
+/app/tests/test_import_grouping_explicit_one_per_sku.py:75: AssertionError: assert ('explicit_one_per_sku' and False)
+E   AssertionError: assert None == 'Negro'
+     +  where None = <built-in method get of dict object at 0x773eb25d8380>('color')
+     +    where <built-in method get of dict object at 0x773eb25d8380> = {'casquillo': 'Acero', 'material': 'Goma maciza'}.get
+     +      where {'casquillo': 'Acero', 'material': 'Goma maciza'} = ImportRow(row_index=0, status=<RowStatus.OK: 'ok'>, sku='DOBNEXO05N', name='Disco Bumper NEXO Negro - 5 kgs (Goma maci...t_capacity_raw=None, product_capacity_count=None, color_candidate_raw='Negro', color_extraction_source='word_boundary').parsed_common_specs_raw
+/app/tests/test_import_spec_validate.py:66: AssertionError: assert None == 'Negro'
+E   AssertionError: assert {'family_vari...ant_row_wide'} == {'single_stan...ant_row_wide'}
+      
+      Extra items in the left set:
+      'family_variant_table'
+      Use -v to get more diff
+/app/tests/test_layout_selector.py:21: AssertionError: assert {'family_vari...ant_row_wide'} == {'single_stan...ant_row_wide'}
+E   AssertionError: assert 4 == 3
+     +  where 4 = len([{'auto_enabled': True, 'auto_priority': 100, 'compatible_with': 'single', 'description': 'Fila ancha en dos zonas: tí...arifa proveedor: cabecera roja de sección, cabecera gris de familia y filas de variantes con imagen compartida.', ...}])
+/app/tests/test_layout_selector.py:30: AssertionError: assert 4 == 3
+E   AssertionError: assert '0.5 kg' == '0.5'
+      
+      - 0.5
+      + 0.5 kg
+/app/tests/test_spec_resolver.py:59: AssertionError: assert '0.5 kg' == '0.5'
+E   AssertionError: assert '12.5 kg' == '12.5 mm'
+      
+      - 12.5 mm
+      + 12.5 kg
+/app/tests/test_spec_resolver.py:65: AssertionError: assert '12.5 kg' == '12.5 mm'
+=========================== short test summary info ============================
+FAILED tests/test_background_jobs.py::test_migration_005_background_jobs_revision
+FAILED tests/test_import_grouping_explicit_one_per_sku.py::test_explicit_one_per_sku_negative_unit[numeric_sku_cro107nexo_negative.json]
+FAILED tests/test_import_spec_validate.py::test_dobnexo_extracts_common_specs_from_name
+FAILED tests/test_layout_selector.py::test_registry_has_three_layouts - Asser...
+FAILED tests/test_layout_selector.py::test_list_layouts_serializable - Assert...
+FAILED tests/test_spec_resolver.py::test_format_spec_display_without_unit - A...
+FAILED tests/test_spec_resolver.py::test_format_spec_display_other_unit - Ass...
+7 failed, 575 passed, 1 skipped, 257 deselected in 82.12s (0:01:22)

@@ -1,0 +1,687 @@
+{
+  "generated_at": "2026-06-12T12:52:37.575708+00:00",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "baseline_before": {
+    "categories": {
+      "count": 24,
+      "slugs": [
+        "agarres",
+        "air-bike",
+        "bancos-jaulas-y-soportes",
+        "barras",
+        "bicicletas-estaticas",
+        "boxeo",
+        "cardio",
+        "ciclo-indoor",
+        "cintas-de-correr",
+        "cross-training",
+        "discos",
+        "elipticas",
+        "home",
+        "linea-a-placas",
+        "linea-convergente-a-disco",
+        "mancuernas",
+        "material-de-estudio",
+        "musculacion",
+        "racks-y-estructuras",
+        "remos",
+        "repuestos",
+        "soportes-y-mancuerneros",
+        "stepper",
+        "suelos"
+      ],
+      "ids": [
+        "02302c49-18f7-4503-a445-a00de5fb305c",
+        "05da673b-d131-42c6-a4c7-478b63819304",
+        "06a457fe-8e0d-4104-b2bf-5d1f65cabce4",
+        "0c787102-411f-4f22-95ed-322f7f571855",
+        "10a0b00c-5a7b-42b5-9210-e771958b995b",
+        "1a494c63-0009-48c6-8d99-3c8f85bf818d",
+        "252d5cea-47b0-4115-81cb-da3e0839578c",
+        "3a113211-be4b-4f3f-9b27-f4d7d3672c6f",
+        "401a0bdf-37b6-4984-882b-db6209a90aff",
+        "52ee0ed6-cf27-470d-91c7-ad5a15cd99e3",
+        "57d5d276-6f60-4049-9b09-1ccd5fac9476",
+        "5c164e1a-f0dc-48b2-90d7-21c1f3bdcf93",
+        "61be23b5-c8c3-46ca-bd4b-eb911fc79609",
+        "6dcd2e06-233b-409e-b905-fc9e4f2b7559",
+        "80ecda7b-af09-44b1-ae08-7b6e541d21e1",
+        "89db1682-35b2-4a3f-a506-401051ebaa09",
+        "8a7d454b-b3f9-4807-bb8a-3f5ea94b6855",
+        "aeea22e2-f5d3-4d96-bdd3-6bf24d19da86",
+        "b1effa73-12da-4c9a-9eb4-654c6f93e350",
+        "b4f7d312-9596-4f27-9912-2824eac97b1d",
+        "b79ce8e8-4dba-496c-bf1b-34566019733c",
+        "e4519a48-36c3-437b-b116-fdd164d0e25f",
+        "e7c7d8b1-6a73-4612-be56-c105289825f9",
+        "f075f682-a57a-4a55-a8e7-64ee655e81a0"
+      ]
+    },
+    "mapping_rules": {
+      "count": 28,
+      "active_count": 28,
+      "rules": [
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBNEXO",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOB3C",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBC",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBN",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOB",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|soporte discos",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|sopote",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|slam ball",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|wall ball",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|bumper",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|disco",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > BICI",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > REMO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CINTA",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CINTAS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > ELIPTICA",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > BICIS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > SKI",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > TRINEO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CLIMBER",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > MULTIESTACION",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MANCUERNAS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MUSCULACION",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MATERIAL DE ESTUDIO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|mancuerna",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|disco",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|barra",
+          "is_active": true
+        }
+      ]
+    },
+    "counts": {
+      "canonical_categories": 24,
+      "taxonomy_mapping_rules": 28,
+      "product_masters": 534,
+      "product_variants": 871,
+      "catalogs": 1,
+      "catalogue_items": 871,
+      "taxonomy_mapping_rules_active": 28
+    }
+  },
+  "after_preview": {
+    "categories": {
+      "count": 24,
+      "slugs": [
+        "agarres",
+        "air-bike",
+        "bancos-jaulas-y-soportes",
+        "barras",
+        "bicicletas-estaticas",
+        "boxeo",
+        "cardio",
+        "ciclo-indoor",
+        "cintas-de-correr",
+        "cross-training",
+        "discos",
+        "elipticas",
+        "home",
+        "linea-a-placas",
+        "linea-convergente-a-disco",
+        "mancuernas",
+        "material-de-estudio",
+        "musculacion",
+        "racks-y-estructuras",
+        "remos",
+        "repuestos",
+        "soportes-y-mancuerneros",
+        "stepper",
+        "suelos"
+      ],
+      "ids": [
+        "02302c49-18f7-4503-a445-a00de5fb305c",
+        "05da673b-d131-42c6-a4c7-478b63819304",
+        "06a457fe-8e0d-4104-b2bf-5d1f65cabce4",
+        "0c787102-411f-4f22-95ed-322f7f571855",
+        "10a0b00c-5a7b-42b5-9210-e771958b995b",
+        "1a494c63-0009-48c6-8d99-3c8f85bf818d",
+        "252d5cea-47b0-4115-81cb-da3e0839578c",
+        "3a113211-be4b-4f3f-9b27-f4d7d3672c6f",
+        "401a0bdf-37b6-4984-882b-db6209a90aff",
+        "52ee0ed6-cf27-470d-91c7-ad5a15cd99e3",
+        "57d5d276-6f60-4049-9b09-1ccd5fac9476",
+        "5c164e1a-f0dc-48b2-90d7-21c1f3bdcf93",
+        "61be23b5-c8c3-46ca-bd4b-eb911fc79609",
+        "6dcd2e06-233b-409e-b905-fc9e4f2b7559",
+        "80ecda7b-af09-44b1-ae08-7b6e541d21e1",
+        "89db1682-35b2-4a3f-a506-401051ebaa09",
+        "8a7d454b-b3f9-4807-bb8a-3f5ea94b6855",
+        "aeea22e2-f5d3-4d96-bdd3-6bf24d19da86",
+        "b1effa73-12da-4c9a-9eb4-654c6f93e350",
+        "b4f7d312-9596-4f27-9912-2824eac97b1d",
+        "b79ce8e8-4dba-496c-bf1b-34566019733c",
+        "e4519a48-36c3-437b-b116-fdd164d0e25f",
+        "e7c7d8b1-6a73-4612-be56-c105289825f9",
+        "f075f682-a57a-4a55-a8e7-64ee655e81a0"
+      ]
+    },
+    "mapping_rules": {
+      "count": 28,
+      "active_count": 28,
+      "rules": [
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBNEXO",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOB3C",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBC",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBN",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOB",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|soporte discos",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|sopote",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|slam ball",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|wall ball",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|bumper",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|disco",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > BICI",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > REMO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CINTA",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CINTAS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > ELIPTICA",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > BICIS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > SKI",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > TRINEO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CLIMBER",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > MULTIESTACION",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MANCUERNAS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MUSCULACION",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MATERIAL DE ESTUDIO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|mancuerna",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|disco",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|barra",
+          "is_active": true
+        }
+      ]
+    },
+    "counts": {
+      "canonical_categories": 24,
+      "taxonomy_mapping_rules": 28,
+      "product_masters": 534,
+      "product_variants": 871,
+      "catalogs": 1,
+      "catalogue_items": 871,
+      "taxonomy_mapping_rules_active": 28
+    },
+    "category_diff": {
+      "added": [],
+      "removed": []
+    },
+    "rules_count_delta": 0
+  },
+  "after_confirm": {
+    "categories": {
+      "count": 24,
+      "slugs": [
+        "agarres",
+        "air-bike",
+        "bancos-jaulas-y-soportes",
+        "barras",
+        "bicicletas-estaticas",
+        "boxeo",
+        "cardio",
+        "ciclo-indoor",
+        "cintas-de-correr",
+        "cross-training",
+        "discos",
+        "elipticas",
+        "home",
+        "linea-a-placas",
+        "linea-convergente-a-disco",
+        "mancuernas",
+        "material-de-estudio",
+        "musculacion",
+        "racks-y-estructuras",
+        "remos",
+        "repuestos",
+        "soportes-y-mancuerneros",
+        "stepper",
+        "suelos"
+      ],
+      "ids": [
+        "02302c49-18f7-4503-a445-a00de5fb305c",
+        "05da673b-d131-42c6-a4c7-478b63819304",
+        "06a457fe-8e0d-4104-b2bf-5d1f65cabce4",
+        "0c787102-411f-4f22-95ed-322f7f571855",
+        "10a0b00c-5a7b-42b5-9210-e771958b995b",
+        "1a494c63-0009-48c6-8d99-3c8f85bf818d",
+        "252d5cea-47b0-4115-81cb-da3e0839578c",
+        "3a113211-be4b-4f3f-9b27-f4d7d3672c6f",
+        "401a0bdf-37b6-4984-882b-db6209a90aff",
+        "52ee0ed6-cf27-470d-91c7-ad5a15cd99e3",
+        "57d5d276-6f60-4049-9b09-1ccd5fac9476",
+        "5c164e1a-f0dc-48b2-90d7-21c1f3bdcf93",
+        "61be23b5-c8c3-46ca-bd4b-eb911fc79609",
+        "6dcd2e06-233b-409e-b905-fc9e4f2b7559",
+        "80ecda7b-af09-44b1-ae08-7b6e541d21e1",
+        "89db1682-35b2-4a3f-a506-401051ebaa09",
+        "8a7d454b-b3f9-4807-bb8a-3f5ea94b6855",
+        "aeea22e2-f5d3-4d96-bdd3-6bf24d19da86",
+        "b1effa73-12da-4c9a-9eb4-654c6f93e350",
+        "b4f7d312-9596-4f27-9912-2824eac97b1d",
+        "b79ce8e8-4dba-496c-bf1b-34566019733c",
+        "e4519a48-36c3-437b-b116-fdd164d0e25f",
+        "e7c7d8b1-6a73-4612-be56-c105289825f9",
+        "f075f682-a57a-4a55-a8e7-64ee655e81a0"
+      ]
+    },
+    "mapping_rules": {
+      "count": 28,
+      "active_count": 28,
+      "rules": [
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBNEXO",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOB3C",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBC",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOBN",
+          "is_active": true
+        },
+        {
+          "match_type": "sku_prefix",
+          "match_value": "DOB",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|soporte discos",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|sopote",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|slam ball",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|wall ball",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|bumper",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL|disco",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > BICI",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > REMO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CINTA",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CINTAS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > ELIPTICA",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > BICIS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > SKI",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > TRINEO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > CLIMBER",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CARDIO > MULTIESTACION",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MANCUERNAS",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MUSCULACION",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "MATERIAL DE ESTUDIO",
+          "is_active": true
+        },
+        {
+          "match_type": "section_path",
+          "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|mancuerna",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|disco",
+          "is_active": true
+        },
+        {
+          "match_type": "section_keyword",
+          "match_value": "DISCOS Y BARRAS|barra",
+          "is_active": true
+        }
+      ]
+    },
+    "counts": {
+      "canonical_categories": 24,
+      "taxonomy_mapping_rules": 28,
+      "product_masters": 534,
+      "product_variants": 871,
+      "catalogs": 1,
+      "catalogue_items": 871,
+      "taxonomy_mapping_rules_active": 28
+    },
+    "category_diff": {
+      "added": [],
+      "removed": []
+    },
+    "rules_count_delta": 0,
+    "confirm_result": {
+      "rows_imported": 871,
+      "rows_blocked": 0,
+      "rows_skipped": 0,
+      "masters_created": 0,
+      "variants_created": 0
+    }
+  },
+  "answers": {
+    "parser_creates_canonical_categories": false,
+    "confirm_creates_canonical_categories": false,
+    "only_source_taxonomy_in_rows": true,
+    "creates_mapping_rules": false,
+    "auto_create_category_fallback": false,
+    "default_sku_prefix_mapping_exists": true,
+    "active_sku_prefix_rules": [
+      "DOBNEXO",
+      "DOB3C",
+      "DOBC",
+      "DOBN",
+      "DOB"
+    ],
+    "retired_sku_prefix_rules": [
+      "REPUESTO-"
+    ]
+  },
+  "unexpected_categories": [],
+  "repuesto_rule_check": {
+    "rule_exists": false,
+    "match_type": "sku_prefix",
+    "match_value": "REPUESTO-",
+    "target_category_slug": null,
+    "is_active": false,
+    "priority": null,
+    "confidence": null,
+    "retired_in_code": true,
+    "warning": null
+  }
+}

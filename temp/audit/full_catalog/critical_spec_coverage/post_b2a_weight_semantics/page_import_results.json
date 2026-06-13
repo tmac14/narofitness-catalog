@@ -1,0 +1,17 @@
+{
+  "focus_page": {
+    "page": 34,
+    "status": "pass",
+    "parsed": 26,
+    "imported": 26,
+    "blocked": 0,
+    "isolated": true,
+    "output_dir": "temp/audit/pages/034"
+  },
+  "regression_pages": [
+    {"page": 11, "status": "pass", "parsed": 30, "imported": 30, "blocked": 0, "isolated": true},
+    {"page": 12, "status": "pass", "parsed": 39, "imported": 39, "blocked": 0, "isolated": true},
+    {"page": 13, "status": "pass", "parsed": 30, "imported": 30, "blocked": 0, "isolated": true},
+    {"page": 14, "status": "pass", "parsed": 22, "imported": 22, "blocked": 0, "isolated": true}
+  ]
+}

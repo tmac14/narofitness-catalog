@@ -1,0 +1,5213 @@
+{
+  "audit_version": "1.2",
+  "agent": "agent5_page_import",
+  "workflow_mode": "manual_page_by_page",
+  "generated_at": "2026-06-12T19:30:50.221386+00:00",
+  "requested_page": 11,
+  "page_number": 11,
+  "output_dir": "temp/audit/pages/011",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "parsed_full_pdf": {
+    "parse_scope": "full_pdf",
+    "total_rows_parsed": 871,
+    "total_pages_with_rows": 56
+  },
+  "rows_filtered_to_page": {
+    "requested_page": 11,
+    "count": 30,
+    "source_row_indices": [
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82
+    ],
+    "expected_skus": [
+      "DOB005",
+      "DOB010",
+      "DOB015",
+      "DOB020",
+      "DOB025",
+      "DOB3C005",
+      "DOB3C010",
+      "DOB3C015",
+      "DOB3C020",
+      "DOB3C025",
+      "DOBC005",
+      "DOBC010",
+      "DOBC015",
+      "DOBC020",
+      "DOBC025",
+      "DOBN005",
+      "DOBN010",
+      "DOBN015",
+      "DOBN020",
+      "DOBN025",
+      "DOBNEXO05C",
+      "DOBNEXO05N",
+      "DOBNEXO10C",
+      "DOBNEXO10N",
+      "DOBNEXO15C",
+      "DOBNEXO15N",
+      "DOBNEXO20C",
+      "DOBNEXO20N",
+      "DOBNEXO25C",
+      "DOBNEXO25N"
+    ]
+  },
+  "reset_before_page": true,
+  "cumulative_mode": false,
+  "confirm_executed": true,
+  "imported_pages": [
+    11
+  ],
+  "reset_summary": {
+    "tables_cleared": [
+      "catalog_exports",
+      "catalog_product_layouts",
+      "catalog_items",
+      "catalogs",
+      "supplier_price_entries",
+      "supplier_price_lists",
+      "import_rows",
+      "import_batches",
+      "product_master_specs",
+      "product_variant_specs",
+      "product_images",
+      "supplier_product_family_keys",
+      "product_variants",
+      "product_masters"
+    ],
+    "tables_preserved": [
+      "categories",
+      "taxonomy_mapping_rules",
+      "suppliers",
+      "import_profiles",
+      "spec_definitions",
+      "spec_allowed_values",
+      "units",
+      "category_spec_profiles",
+      "app_settings",
+      "brands"
+    ],
+    "categories_preserved": true,
+    "taxonomy_mapping_rules_preserved": true,
+    "reset_delete_counts": {
+      "catalog_exports": 0,
+      "catalog_product_layouts": 0,
+      "catalog_items": 0,
+      "catalogs": 0,
+      "supplier_price_entries": 26,
+      "supplier_price_lists": 1,
+      "import_rows": 26,
+      "import_batches": 1,
+      "product_master_specs": 0,
+      "product_variant_specs": 21,
+      "product_images": 0,
+      "supplier_product_family_keys": 15,
+      "product_variants": 26,
+      "product_masters": 15
+    },
+    "product_masters_count_before": 15,
+    "product_masters_count_after": 0,
+    "product_variants_count_before": 26,
+    "product_variants_count_after": 0,
+    "catalogue_items_count_before": 0,
+    "catalogue_items_count_after": 0
+  },
+  "baseline_before": {
+    "canonical_categories_count": 24,
+    "canonical_category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "mapping_rules_count": 28,
+    "product_masters_count": 0,
+    "product_variants_count": 0,
+    "catalogue_items_count": 0
+  },
+  "category_snapshot_before": {
+    "generated_at": "2026-06-12T19:30:46.002436+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "category_snapshot_after": {
+    "generated_at": "2026-06-12T19:30:50.221188+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "raw_extraction": {
+    "page_number": 11,
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "lines": [
+      {
+        "line_index": 0,
+        "text": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "font_size": 20.760000228881836,
+        "line_kind": "section_header"
+      },
+      {
+        "line_index": 1,
+        "text": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 2,
+        "text": "Disco Bumper NEXO Negro -  5  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 3,
+        "text": "DOBNEXO05N",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 4,
+        "text": "8435657018573",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 5,
+        "text": "19,55 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 6,
+        "text": "Disco Bumper NEXO Negro -  10  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 7,
+        "text": "DOBNEXO10N",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 8,
+        "text": "8435657018580",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 9,
+        "text": "26,56 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 10,
+        "text": "Disco Bumper NEXO Negro -  15  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 11,
+        "text": "DOBNEXO15N",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 12,
+        "text": "8435657018597",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 13,
+        "text": "36,84 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 14,
+        "text": "Disco Bumper NEXO Negro -  20  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 15,
+        "text": "DOBNEXO20N",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 16,
+        "text": "8435657018603",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 17,
+        "text": "46,30 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 18,
+        "text": "Disco Bumper NEXO Negro -  25  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 19,
+        "text": "DOBNEXO25N",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 20,
+        "text": "8435657018610",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 21,
+        "text": "55,10 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 22,
+        "text": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 23,
+        "text": "Disco Bumper Negro 3.0 -  5  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 24,
+        "text": "DOBN005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 25,
+        "text": "8435657014100",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 26,
+        "text": "18,80 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 27,
+        "text": "Disco Bumper Negro 3.0 - 10 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 28,
+        "text": "DOBN010",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 29,
+        "text": "8435657014117",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 30,
+        "text": "26,57 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 31,
+        "text": "Disco Bumper Negro 3.0 - 15 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 32,
+        "text": "DOBN015",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 33,
+        "text": "8435657014124",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 34,
+        "text": "36,84 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 35,
+        "text": "Disco Bumper Negro 3.0 - 20 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 36,
+        "text": "DOBN020",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 37,
+        "text": "8435657014131",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 38,
+        "text": "46,30 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 39,
+        "text": "Disco Bumper Negro 3.0 - 25 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 40,
+        "text": "DOBN025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 41,
+        "text": "8435657014148",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 42,
+        "text": "55,10 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 43,
+        "text": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 44,
+        "text": "Disco Bumper Negro 5  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 45,
+        "text": "DOB005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 46,
+        "text": "8435657002619",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 47,
+        "text": "19,17 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 48,
+        "text": "Disco Bumper Negro 10 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 49,
+        "text": "DOB010",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 50,
+        "text": "8435657002626",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 51,
+        "text": "27,10 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 52,
+        "text": "Disco Bumper Negro 15 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 53,
+        "text": "DOB015",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 54,
+        "text": "8435657002633",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 55,
+        "text": "39,67 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 56,
+        "text": "Disco Bumper Negro 20 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 57,
+        "text": "DOB020",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 58,
+        "text": "8435657002640",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 59,
+        "text": "52,79 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 60,
+        "text": "Disco Bumper Negro 25 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 61,
+        "text": "DOB025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 62,
+        "text": "8435657002657",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 63,
+        "text": "66,77 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 64,
+        "text": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 65,
+        "text": "Disco Bumper NEXO Color -  5  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 66,
+        "text": "DOBNEXO05C",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 67,
+        "text": "8435657018528",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 68,
+        "text": "22,39 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 69,
+        "text": "Disco Bumper NEXO Color - 10 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 70,
+        "text": "DOBNEXO10C",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 71,
+        "text": "8435657018535",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 72,
+        "text": "29,72 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 73,
+        "text": "Disco Bumper NEXO Color - 15 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 74,
+        "text": "DOBNEXO15C",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 75,
+        "text": "8435657018542",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 76,
+        "text": "40,23 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 77,
+        "text": "Disco Bumper NEXO Color - 20 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 78,
+        "text": "DOBNEXO20C",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 79,
+        "text": "8435657018559",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 80,
+        "text": "51,16 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 81,
+        "text": "Disco Bumper NEXO Color - 25 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 82,
+        "text": "DOBNEXO25C",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 83,
+        "text": "8435657018566",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 84,
+        "text": "60,20 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 85,
+        "text": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 86,
+        "text": "Disco Bumper COLOR 3.0 -  5  kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 87,
+        "text": "DOB3C005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 88,
+        "text": "8435657018184",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 89,
+        "text": "23,30 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 90,
+        "text": "Disco Bumper COLOR 3.0 - 10 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 91,
+        "text": "DOB3C010",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 92,
+        "text": "8435657018181",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 93,
+        "text": "31,25 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 94,
+        "text": "Disco Bumper COLOR 3.0 - 15 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 95,
+        "text": "DOB3C015",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 96,
+        "text": "8435657018160",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 97,
+        "text": "44,61 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 98,
+        "text": "Disco Bumper COLOR 3.0 - 20 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 99,
+        "text": "DOB3C020",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 100,
+        "text": "8435657018207",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 101,
+        "text": "57,97 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 102,
+        "text": "Disco Bumper COLOR 3.0 - 25 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 103,
+        "text": "DOB3C025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 104,
+        "text": "8435657018177",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 105,
+        "text": "63,65 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 106,
+        "text": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 107,
+        "text": "Disco Bumper Color 5 kgs - Gris",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 108,
+        "text": "DOBC005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 109,
+        "text": "8435657002664",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 110,
+        "text": "22,84 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 111,
+        "text": "Disco Bumper Color 10 kgs - Verde",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 112,
+        "text": "DOBC010",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 113,
+        "text": "8435657002671",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 114,
+        "text": "29,69 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 115,
+        "text": "Disco Bumper Color 15 kgs - Amarillo",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 116,
+        "text": "DOBC015",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 117,
+        "text": "8435657002688",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 118,
+        "text": "42,38 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 119,
+        "text": "Disco Bumper Color 20 kgs - Azul",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 120,
+        "text": "DOBC020",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 121,
+        "text": "8435657002695",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 122,
+        "text": "55,07 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 123,
+        "text": "Disco Bumper Color 25 kgs - Rojo",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 124,
+        "text": "DOBC025",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 125,
+        "text": "8435657002701",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 126,
+        "text": "67,04 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      }
+    ],
+    "unparsed_candidates": []
+  },
+  "parsed_rows": [
+    {
+      "page_number": 11,
+      "source_row_index": 53,
+      "raw_line_index": 2,
+      "raw_lines": [
+        "Disco Bumper NEXO Negro -  5  kgs",
+        "DOBNEXO05N",
+        "8435657018573",
+        "19,55 €"
+      ],
+      "raw_sku": "DOBNEXO05N",
+      "normalized_sku": "DOBNEXO05N",
+      "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 5 kgs",
+      "normalized_name": "Disco Bumper Negro - 5 kgs",
+      "price": "19.55",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 54,
+      "raw_line_index": 6,
+      "raw_lines": [
+        "Disco Bumper NEXO Negro -  10  kgs",
+        "DOBNEXO10N",
+        "8435657018580",
+        "26,56 €"
+      ],
+      "raw_sku": "DOBNEXO10N",
+      "normalized_sku": "DOBNEXO10N",
+      "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 10 kgs",
+      "normalized_name": "Disco Bumper Negro - 10 kgs",
+      "price": "26.56",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 55,
+      "raw_line_index": 10,
+      "raw_lines": [
+        "Disco Bumper NEXO Negro -  15  kgs",
+        "DOBNEXO15N",
+        "8435657018597",
+        "36,84 €"
+      ],
+      "raw_sku": "DOBNEXO15N",
+      "normalized_sku": "DOBNEXO15N",
+      "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 15 kgs",
+      "normalized_name": "Disco Bumper Negro - 15 kgs",
+      "price": "36.84",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 56,
+      "raw_line_index": 14,
+      "raw_lines": [
+        "Disco Bumper NEXO Negro -  20  kgs",
+        "DOBNEXO20N",
+        "8435657018603",
+        "46,30 €"
+      ],
+      "raw_sku": "DOBNEXO20N",
+      "normalized_sku": "DOBNEXO20N",
+      "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 20 kgs",
+      "normalized_name": "Disco Bumper Negro - 20 kgs",
+      "price": "46.30",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 57,
+      "raw_line_index": 18,
+      "raw_lines": [
+        "Disco Bumper NEXO Negro -  25  kgs",
+        "DOBNEXO25N",
+        "8435657018610",
+        "55,10 €"
+      ],
+      "raw_sku": "DOBNEXO25N",
+      "normalized_sku": "DOBNEXO25N",
+      "raw_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero) Disco Bumper NEXO Negro - 25 kgs",
+      "normalized_name": "Disco Bumper Negro - 25 kgs",
+      "price": "55.10",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 58,
+      "raw_line_index": 23,
+      "raw_lines": [
+        "Disco Bumper Negro 3.0 -  5  kgs",
+        "DOBN005",
+        "8435657014100",
+        "18,80 €"
+      ],
+      "raw_sku": "DOBN005",
+      "normalized_sku": "DOBN005",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 5 kgs",
+      "normalized_name": "Disco Bumper Negro 3.0 - 5 kgs",
+      "price": "18.80",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 59,
+      "raw_line_index": 27,
+      "raw_lines": [
+        "Disco Bumper Negro 3.0 - 10 kgs",
+        "DOBN010",
+        "8435657014117",
+        "26,57 €"
+      ],
+      "raw_sku": "DOBN010",
+      "normalized_sku": "DOBN010",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 10 kgs",
+      "normalized_name": "Disco Bumper Negro 3.0 - 10 kgs",
+      "price": "26.57",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 60,
+      "raw_line_index": 31,
+      "raw_lines": [
+        "Disco Bumper Negro 3.0 - 15 kgs",
+        "DOBN015",
+        "8435657014124",
+        "36,84 €"
+      ],
+      "raw_sku": "DOBN015",
+      "normalized_sku": "DOBN015",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 15 kgs",
+      "normalized_name": "Disco Bumper Negro 3.0 - 15 kgs",
+      "price": "36.84",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 61,
+      "raw_line_index": 35,
+      "raw_lines": [
+        "Disco Bumper Negro 3.0 - 20 kgs",
+        "DOBN020",
+        "8435657014131",
+        "46,30 €"
+      ],
+      "raw_sku": "DOBN020",
+      "normalized_sku": "DOBN020",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 20 kgs",
+      "normalized_name": "Disco Bumper Negro 3.0 - 20 kgs",
+      "price": "46.30",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 62,
+      "raw_line_index": 39,
+      "raw_lines": [
+        "Disco Bumper Negro 3.0 - 25 kgs",
+        "DOBN025",
+        "8435657014148",
+        "55,10 €"
+      ],
+      "raw_sku": "DOBN025",
+      "normalized_sku": "DOBN025",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 3.0 - 25 kgs",
+      "normalized_name": "Disco Bumper Negro 3.0 - 25 kgs",
+      "price": "55.10",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 63,
+      "raw_line_index": 44,
+      "raw_lines": [
+        "Disco Bumper Negro 5  kgs",
+        "DOB005",
+        "8435657002619",
+        "19,17 €"
+      ],
+      "raw_sku": "DOB005",
+      "normalized_sku": "DOB005",
+      "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 5 kgs",
+      "normalized_name": "Disco Bumper Negro 5 kgs",
+      "price": "19.17",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 64,
+      "raw_line_index": 48,
+      "raw_lines": [
+        "Disco Bumper Negro 10 kgs",
+        "DOB010",
+        "8435657002626",
+        "27,10 €"
+      ],
+      "raw_sku": "DOB010",
+      "normalized_sku": "DOB010",
+      "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 10 kgs",
+      "normalized_name": "Disco Bumper Negro 10 kgs",
+      "price": "27.10",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 65,
+      "raw_line_index": 52,
+      "raw_lines": [
+        "Disco Bumper Negro 15 kgs",
+        "DOB015",
+        "8435657002633",
+        "39,67 €"
+      ],
+      "raw_sku": "DOB015",
+      "normalized_sku": "DOB015",
+      "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 15 kgs",
+      "normalized_name": "Disco Bumper Negro 15 kgs",
+      "price": "39.67",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 66,
+      "raw_line_index": 56,
+      "raw_lines": [
+        "Disco Bumper Negro 20 kgs",
+        "DOB020",
+        "8435657002640",
+        "52,79 €"
+      ],
+      "raw_sku": "DOB020",
+      "normalized_sku": "DOB020",
+      "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 20 kgs",
+      "normalized_name": "Disco Bumper Negro 20 kgs",
+      "price": "52.79",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 67,
+      "raw_line_index": 60,
+      "raw_lines": [
+        "Disco Bumper Negro 25 kgs",
+        "DOB025",
+        "8435657002657",
+        "66,77 €"
+      ],
+      "raw_sku": "DOB025",
+      "normalized_sku": "DOB025",
+      "raw_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero) Disco Bumper Negro 25 kgs",
+      "normalized_name": "Disco Bumper Negro 25 kgs",
+      "price": "66.77",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 68,
+      "raw_line_index": 65,
+      "raw_lines": [
+        "Disco Bumper NEXO Color -  5  kgs",
+        "DOBNEXO05C",
+        "8435657018528",
+        "22,39 €"
+      ],
+      "raw_sku": "DOBNEXO05C",
+      "normalized_sku": "DOBNEXO05C",
+      "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 5 kgs",
+      "normalized_name": "Disco Bumper Color - 5 kgs",
+      "price": "22.39",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 69,
+      "raw_line_index": 69,
+      "raw_lines": [
+        "Disco Bumper NEXO Color - 10 kgs",
+        "DOBNEXO10C",
+        "8435657018535",
+        "29,72 €"
+      ],
+      "raw_sku": "DOBNEXO10C",
+      "normalized_sku": "DOBNEXO10C",
+      "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 10 kgs",
+      "normalized_name": "Disco Bumper Color - 10 kgs",
+      "price": "29.72",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 70,
+      "raw_line_index": 73,
+      "raw_lines": [
+        "Disco Bumper NEXO Color - 15 kgs",
+        "DOBNEXO15C",
+        "8435657018542",
+        "40,23 €"
+      ],
+      "raw_sku": "DOBNEXO15C",
+      "normalized_sku": "DOBNEXO15C",
+      "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 15 kgs",
+      "normalized_name": "Disco Bumper Color - 15 kgs",
+      "price": "40.23",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 71,
+      "raw_line_index": 77,
+      "raw_lines": [
+        "Disco Bumper NEXO Color - 20 kgs",
+        "DOBNEXO20C",
+        "8435657018559",
+        "51,16 €"
+      ],
+      "raw_sku": "DOBNEXO20C",
+      "normalized_sku": "DOBNEXO20C",
+      "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 20 kgs",
+      "normalized_name": "Disco Bumper Color - 20 kgs",
+      "price": "51.16",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 72,
+      "raw_line_index": 81,
+      "raw_lines": [
+        "Disco Bumper NEXO Color - 25 kgs",
+        "DOBNEXO25C",
+        "8435657018566",
+        "60,20 €"
+      ],
+      "raw_sku": "DOBNEXO25C",
+      "normalized_sku": "DOBNEXO25C",
+      "raw_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero) Disco Bumper NEXO Color - 25 kgs",
+      "normalized_name": "Disco Bumper Color - 25 kgs",
+      "price": "60.20",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 73,
+      "raw_line_index": 86,
+      "raw_lines": [
+        "Disco Bumper COLOR 3.0 -  5  kgs",
+        "DOB3C005",
+        "8435657018184",
+        "23,30 €"
+      ],
+      "raw_sku": "DOB3C005",
+      "normalized_sku": "DOB3C005",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 5 kgs",
+      "normalized_name": "Disco Bumper COLOR 3.0 - 5 kgs",
+      "price": "23.30",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 74,
+      "raw_line_index": 90,
+      "raw_lines": [
+        "Disco Bumper COLOR 3.0 - 10 kgs",
+        "DOB3C010",
+        "8435657018181",
+        "31,25 €"
+      ],
+      "raw_sku": "DOB3C010",
+      "normalized_sku": "DOB3C010",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 10 kgs",
+      "normalized_name": "Disco Bumper COLOR 3.0 - 10 kgs",
+      "price": "31.25",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 75,
+      "raw_line_index": 94,
+      "raw_lines": [
+        "Disco Bumper COLOR 3.0 - 15 kgs",
+        "DOB3C015",
+        "8435657018160",
+        "44,61 €"
+      ],
+      "raw_sku": "DOB3C015",
+      "normalized_sku": "DOB3C015",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 15 kgs",
+      "normalized_name": "Disco Bumper COLOR 3.0 - 15 kgs",
+      "price": "44.61",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 76,
+      "raw_line_index": 98,
+      "raw_lines": [
+        "Disco Bumper COLOR 3.0 - 20 kgs",
+        "DOB3C020",
+        "8435657018207",
+        "57,97 €"
+      ],
+      "raw_sku": "DOB3C020",
+      "normalized_sku": "DOB3C020",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 20 kgs",
+      "normalized_name": "Disco Bumper COLOR 3.0 - 20 kgs",
+      "price": "57.97",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 77,
+      "raw_line_index": 102,
+      "raw_lines": [
+        "Disco Bumper COLOR 3.0 - 25 kgs",
+        "DOB3C025",
+        "8435657018177",
+        "63,65 €"
+      ],
+      "raw_sku": "DOB3C025",
+      "normalized_sku": "DOB3C025",
+      "raw_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 25 kgs",
+      "normalized_name": "Disco Bumper COLOR 3.0 - 25 kgs",
+      "price": "63.65",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 78,
+      "raw_line_index": 107,
+      "raw_lines": [
+        "Disco Bumper Color 5 kgs - Gris",
+        "DOBC005",
+        "8435657002664",
+        "22,84 €"
+      ],
+      "raw_sku": "DOBC005",
+      "normalized_sku": "DOBC005",
+      "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 5 kgs - Gris",
+      "normalized_name": "Disco Bumper Color 5 kgs - Gris",
+      "price": "22.84",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 79,
+      "raw_line_index": 111,
+      "raw_lines": [
+        "Disco Bumper Color 10 kgs - Verde",
+        "DOBC010",
+        "8435657002671",
+        "29,69 €"
+      ],
+      "raw_sku": "DOBC010",
+      "normalized_sku": "DOBC010",
+      "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 10 kgs - Verde",
+      "normalized_name": "Disco Bumper Color 10 kgs - Verde",
+      "price": "29.69",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 80,
+      "raw_line_index": 115,
+      "raw_lines": [
+        "Disco Bumper Color 15 kgs - Amarillo",
+        "DOBC015",
+        "8435657002688",
+        "42,38 €"
+      ],
+      "raw_sku": "DOBC015",
+      "normalized_sku": "DOBC015",
+      "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 15 kgs - Amarillo",
+      "normalized_name": "Disco Bumper Color 15 kgs - Amarillo",
+      "price": "42.38",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 81,
+      "raw_line_index": 119,
+      "raw_lines": [
+        "Disco Bumper Color 20 kgs - Azul",
+        "DOBC020",
+        "8435657002695",
+        "55,07 €"
+      ],
+      "raw_sku": "DOBC020",
+      "normalized_sku": "DOBC020",
+      "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 20 kgs - Azul",
+      "normalized_name": "Disco Bumper Color 20 kgs - Azul",
+      "price": "55.07",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 11,
+      "source_row_index": 82,
+      "raw_line_index": 123,
+      "raw_lines": [
+        "Disco Bumper Color 25 kgs - Rojo",
+        "DOBC025",
+        "8435657002701",
+        "67,04 €"
+      ],
+      "raw_sku": "DOBC025",
+      "normalized_sku": "DOBC025",
+      "raw_name": "Disco Olimpico Bumper Color (Casquillo de Acero) Disco Bumper Color 25 kgs - Rojo",
+      "normalized_name": "Disco Bumper Color 25 kgs - Rojo",
+      "price": "67.04",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    }
+  ],
+  "taxonomy_decision": [
+    {
+      "source_row_index": 53,
+      "normalized_sku": "DOBNEXO05N",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 54,
+      "normalized_sku": "DOBNEXO10N",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 55,
+      "normalized_sku": "DOBNEXO15N",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 56,
+      "normalized_sku": "DOBNEXO20N",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 57,
+      "normalized_sku": "DOBNEXO25N",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 58,
+      "normalized_sku": "DOBN005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "82addbc8-eda5-468b-b76f-879afbadb75d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBN",
+        "priority": 18,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 59,
+      "normalized_sku": "DOBN010",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "82addbc8-eda5-468b-b76f-879afbadb75d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBN",
+        "priority": 18,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 60,
+      "normalized_sku": "DOBN015",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "82addbc8-eda5-468b-b76f-879afbadb75d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBN",
+        "priority": 18,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 61,
+      "normalized_sku": "DOBN020",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "82addbc8-eda5-468b-b76f-879afbadb75d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBN",
+        "priority": 18,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 62,
+      "normalized_sku": "DOBN025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "82addbc8-eda5-468b-b76f-879afbadb75d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBN",
+        "priority": 18,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 63,
+      "normalized_sku": "DOB005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 64,
+      "normalized_sku": "DOB010",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 65,
+      "normalized_sku": "DOB015",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 66,
+      "normalized_sku": "DOB020",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 67,
+      "normalized_sku": "DOB025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "b54cd997-8293-42fa-a76b-e48ce517be3e",
+        "match_type": "sku_prefix",
+        "match_value": "DOB",
+        "priority": 19,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 68,
+      "normalized_sku": "DOBNEXO05C",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 69,
+      "normalized_sku": "DOBNEXO10C",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 70,
+      "normalized_sku": "DOBNEXO15C",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 71,
+      "normalized_sku": "DOBNEXO20C",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 72,
+      "normalized_sku": "DOBNEXO25C",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "40a6518d-3360-476a-be85-690ab7c77e9d",
+        "match_type": "sku_prefix",
+        "match_value": "DOBNEXO",
+        "priority": 15,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 73,
+      "normalized_sku": "DOB3C005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "3646b729-e870-4199-b234-22220aeb7064",
+        "match_type": "sku_prefix",
+        "match_value": "DOB3C",
+        "priority": 16,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 74,
+      "normalized_sku": "DOB3C010",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "3646b729-e870-4199-b234-22220aeb7064",
+        "match_type": "sku_prefix",
+        "match_value": "DOB3C",
+        "priority": 16,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 75,
+      "normalized_sku": "DOB3C015",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "3646b729-e870-4199-b234-22220aeb7064",
+        "match_type": "sku_prefix",
+        "match_value": "DOB3C",
+        "priority": 16,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 76,
+      "normalized_sku": "DOB3C020",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "3646b729-e870-4199-b234-22220aeb7064",
+        "match_type": "sku_prefix",
+        "match_value": "DOB3C",
+        "priority": 16,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 77,
+      "normalized_sku": "DOB3C025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "3646b729-e870-4199-b234-22220aeb7064",
+        "match_type": "sku_prefix",
+        "match_value": "DOB3C",
+        "priority": 16,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 78,
+      "normalized_sku": "DOBC005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 79,
+      "normalized_sku": "DOBC010",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 80,
+      "normalized_sku": "DOBC015",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 81,
+      "normalized_sku": "DOBC020",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    },
+    {
+      "source_row_index": 82,
+      "normalized_sku": "DOBC025",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "d9cd68ed-8c34-42b1-a539-e548d17cb48e",
+        "match_type": "sku_prefix",
+        "match_value": "DOBC",
+        "priority": 17,
+        "is_active": true,
+        "target_category_slug": "discos",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "sku_prefix",
+      "canonical_category_slug": "discos",
+      "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": [
+        "mapped_by_sku_prefix"
+      ]
+    }
+  ],
+  "preview_decision": [
+    {
+      "source_row_index": 53,
+      "normalized_sku": "DOBNEXO05N",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXON",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXON",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 54,
+      "normalized_sku": "DOBNEXO10N",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXON",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXON",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 55,
+      "normalized_sku": "DOBNEXO15N",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXON",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXON",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 56,
+      "normalized_sku": "DOBNEXO20N",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXON",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXON",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 57,
+      "normalized_sku": "DOBNEXO25N",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXON",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXON",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 58,
+      "normalized_sku": "DOBN005",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBN",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 59,
+      "normalized_sku": "DOBN010",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBN",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 60,
+      "normalized_sku": "DOBN015",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBN",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 61,
+      "normalized_sku": "DOBN020",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBN",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 62,
+      "normalized_sku": "DOBN025",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBN",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 63,
+      "normalized_sku": "DOB005",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 64,
+      "normalized_sku": "DOB010",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 65,
+      "normalized_sku": "DOB015",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 66,
+      "normalized_sku": "DOB020",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 67,
+      "normalized_sku": "DOB025",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 68,
+      "normalized_sku": "DOBNEXO05C",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXOC",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXOC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 69,
+      "normalized_sku": "DOBNEXO10C",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXOC",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXOC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 70,
+      "normalized_sku": "DOBNEXO15C",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXOC",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXOC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 71,
+      "normalized_sku": "DOBNEXO20C",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXOC",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXOC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 72,
+      "normalized_sku": "DOBNEXO25C",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:DOBNEXOC",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "DOBNEXOC",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 73,
+      "normalized_sku": "DOB3C005",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB3C",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB3C",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 74,
+      "normalized_sku": "DOB3C010",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB3C",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB3C",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 75,
+      "normalized_sku": "DOB3C015",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB3C",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB3C",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 76,
+      "normalized_sku": "DOB3C020",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB3C",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB3C",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 77,
+      "normalized_sku": "DOB3C025",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOB3C",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOB3C",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 78,
+      "normalized_sku": "DOBC005",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBC",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 79,
+      "normalized_sku": "DOBC010",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBC",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 80,
+      "normalized_sku": "DOBC015",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBC",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 81,
+      "normalized_sku": "DOBC020",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBC",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 82,
+      "normalized_sku": "DOBC025",
+      "taxonomy": {
+        "canonical_category_slug": "discos",
+        "canonical_category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_bumper_family:DOBC",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "DOBC",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    }
+  ],
+  "confirm_result": {
+    "executed": true,
+    "allow_needs_review": false,
+    "rows_imported": 30,
+    "rows_blocked": 0,
+    "rows_skipped": 0,
+    "masters_created": 6,
+    "variants_created": 30,
+    "variants_updated": 0,
+    "entries_created": 30,
+    "per_row": [
+      {
+        "source_row_index": 53,
+        "sku": "DOBNEXO05N",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 54,
+        "sku": "DOBNEXO10N",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 55,
+        "sku": "DOBNEXO15N",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 56,
+        "sku": "DOBNEXO20N",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 57,
+        "sku": "DOBNEXO25N",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 58,
+        "sku": "DOBN005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 59,
+        "sku": "DOBN010",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 60,
+        "sku": "DOBN015",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 61,
+        "sku": "DOBN020",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 62,
+        "sku": "DOBN025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 63,
+        "sku": "DOB005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 64,
+        "sku": "DOB010",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 65,
+        "sku": "DOB015",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 66,
+        "sku": "DOB020",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 67,
+        "sku": "DOB025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 68,
+        "sku": "DOBNEXO05C",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 69,
+        "sku": "DOBNEXO10C",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 70,
+        "sku": "DOBNEXO15C",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 71,
+        "sku": "DOBNEXO20C",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 72,
+        "sku": "DOBNEXO25C",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 73,
+        "sku": "DOB3C005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 74,
+        "sku": "DOB3C010",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 75,
+        "sku": "DOB3C015",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 76,
+        "sku": "DOB3C020",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 77,
+        "sku": "DOB3C025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 78,
+        "sku": "DOBC005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 79,
+        "sku": "DOBC010",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 80,
+        "sku": "DOBC015",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 81,
+        "sku": "DOBC020",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 82,
+        "sku": "DOBC025",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      }
+    ],
+    "batch_id": "f8fda4ef-5dcf-4330-a84b-bf515bb7b257"
+  },
+  "db_after": {
+    "masters": [
+      {
+        "product_master_id": "df9701e0-de05-4678-a2d0-3d58c146c397",
+        "master_key": "DOBNEXON",
+        "product_master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "c2b28a79-d8d8-4f3c-b231-f7d8532642bf",
+        "master_key": "DOBN",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "0a2ad44a-b272-42aa-a1ac-d6fd1c58c41f",
+        "master_key": "DOB",
+        "product_master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "04fb1129-1b2f-4276-bc35-5edcc6bf9ec6",
+        "master_key": "DOBNEXOC",
+        "product_master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "e5ca2667-b9c4-459d-af32-7d68caeee95f",
+        "master_key": "DOB3C",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      },
+      {
+        "product_master_id": "b1bcca74-e910-4dea-bd93-1abc9c40f0f1",
+        "master_key": "DOBC",
+        "product_master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos"
+      }
+    ],
+    "variants": [
+      {
+        "product_variant_id": "4c670b2c-6692-4b77-98b9-8cf0a897948d",
+        "variant_sku": "DOBNEXO05N",
+        "variant_name": "Disco Bumper Negro - 5 kgs",
+        "product_master_id": "df9701e0-de05-4678-a2d0-3d58c146c397",
+        "product_master_sku": "DOBNEXON",
+        "product_master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "19.55"
+      },
+      {
+        "product_variant_id": "7f85e048-125a-44e1-a8b6-97289896fbc1",
+        "variant_sku": "DOBNEXO10N",
+        "variant_name": "Disco Bumper Negro - 10 kgs",
+        "product_master_id": "df9701e0-de05-4678-a2d0-3d58c146c397",
+        "product_master_sku": "DOBNEXON",
+        "product_master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "26.56"
+      },
+      {
+        "product_variant_id": "82b4b4b2-33d7-435a-8011-d9e192c70cf8",
+        "variant_sku": "DOBNEXO15N",
+        "variant_name": "Disco Bumper Negro - 15 kgs",
+        "product_master_id": "df9701e0-de05-4678-a2d0-3d58c146c397",
+        "product_master_sku": "DOBNEXON",
+        "product_master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "36.84"
+      },
+      {
+        "product_variant_id": "afc38458-a886-4a16-be33-af14e66bbf54",
+        "variant_sku": "DOBNEXO20N",
+        "variant_name": "Disco Bumper Negro - 20 kgs",
+        "product_master_id": "df9701e0-de05-4678-a2d0-3d58c146c397",
+        "product_master_sku": "DOBNEXON",
+        "product_master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "46.30"
+      },
+      {
+        "product_variant_id": "17d8fcc8-1b7c-4801-b15b-1c4b0d5ae7a2",
+        "variant_sku": "DOBNEXO25N",
+        "variant_name": "Disco Bumper Negro - 25 kgs",
+        "product_master_id": "df9701e0-de05-4678-a2d0-3d58c146c397",
+        "product_master_sku": "DOBNEXON",
+        "product_master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "55.10"
+      },
+      {
+        "product_variant_id": "ada2f850-2376-4c8b-95c2-049cb106bb76",
+        "variant_sku": "DOBN005",
+        "variant_name": "Disco Bumper Negro 3.0 - 5 kgs",
+        "product_master_id": "c2b28a79-d8d8-4f3c-b231-f7d8532642bf",
+        "product_master_sku": "DOBN",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "18.80"
+      },
+      {
+        "product_variant_id": "fb69e8f8-ffbf-4647-ad22-8bcc155368e3",
+        "variant_sku": "DOBN010",
+        "variant_name": "Disco Bumper Negro 3.0 - 10 kgs",
+        "product_master_id": "c2b28a79-d8d8-4f3c-b231-f7d8532642bf",
+        "product_master_sku": "DOBN",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "26.57"
+      },
+      {
+        "product_variant_id": "2e484a5a-d45c-440c-8d61-4ea81eff359a",
+        "variant_sku": "DOBN015",
+        "variant_name": "Disco Bumper Negro 3.0 - 15 kgs",
+        "product_master_id": "c2b28a79-d8d8-4f3c-b231-f7d8532642bf",
+        "product_master_sku": "DOBN",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "36.84"
+      },
+      {
+        "product_variant_id": "f7d9c12b-5314-4899-a374-7e3791c5d9ea",
+        "variant_sku": "DOBN020",
+        "variant_name": "Disco Bumper Negro 3.0 - 20 kgs",
+        "product_master_id": "c2b28a79-d8d8-4f3c-b231-f7d8532642bf",
+        "product_master_sku": "DOBN",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "46.30"
+      },
+      {
+        "product_variant_id": "7a542e63-2227-4084-a430-9f6d071ca431",
+        "variant_sku": "DOBN025",
+        "variant_name": "Disco Bumper Negro 3.0 - 25 kgs",
+        "product_master_id": "c2b28a79-d8d8-4f3c-b231-f7d8532642bf",
+        "product_master_sku": "DOBN",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "55.10"
+      },
+      {
+        "product_variant_id": "2561988a-86b7-424e-b279-b1231354522b",
+        "variant_sku": "DOB005",
+        "variant_name": "Disco Bumper Negro 5 kgs",
+        "product_master_id": "0a2ad44a-b272-42aa-a1ac-d6fd1c58c41f",
+        "product_master_sku": "DOB",
+        "product_master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "19.17"
+      },
+      {
+        "product_variant_id": "9a268cae-7c9c-49a8-89d8-3e078a209832",
+        "variant_sku": "DOB010",
+        "variant_name": "Disco Bumper Negro 10 kgs",
+        "product_master_id": "0a2ad44a-b272-42aa-a1ac-d6fd1c58c41f",
+        "product_master_sku": "DOB",
+        "product_master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "27.10"
+      },
+      {
+        "product_variant_id": "c8ba5a51-abbb-41cd-a85d-10dea46904b8",
+        "variant_sku": "DOB015",
+        "variant_name": "Disco Bumper Negro 15 kgs",
+        "product_master_id": "0a2ad44a-b272-42aa-a1ac-d6fd1c58c41f",
+        "product_master_sku": "DOB",
+        "product_master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "39.67"
+      },
+      {
+        "product_variant_id": "59d00929-fd6a-499b-bab8-d8f1efb6606d",
+        "variant_sku": "DOB020",
+        "variant_name": "Disco Bumper Negro 20 kgs",
+        "product_master_id": "0a2ad44a-b272-42aa-a1ac-d6fd1c58c41f",
+        "product_master_sku": "DOB",
+        "product_master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "52.79"
+      },
+      {
+        "product_variant_id": "54c3030e-8cde-4a7b-a64f-3506d0cd5c1a",
+        "variant_sku": "DOB025",
+        "variant_name": "Disco Bumper Negro 25 kgs",
+        "product_master_id": "0a2ad44a-b272-42aa-a1ac-d6fd1c58c41f",
+        "product_master_sku": "DOB",
+        "product_master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "66.77"
+      },
+      {
+        "product_variant_id": "d57c9baf-146a-43c0-b6e9-779ad8feb9c6",
+        "variant_sku": "DOBNEXO05C",
+        "variant_name": "Disco Bumper Color - 5 kgs",
+        "product_master_id": "04fb1129-1b2f-4276-bc35-5edcc6bf9ec6",
+        "product_master_sku": "DOBNEXOC",
+        "product_master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "22.39"
+      },
+      {
+        "product_variant_id": "39f714ad-e7da-4ca8-92a0-141f4b7e563a",
+        "variant_sku": "DOBNEXO10C",
+        "variant_name": "Disco Bumper Color - 10 kgs",
+        "product_master_id": "04fb1129-1b2f-4276-bc35-5edcc6bf9ec6",
+        "product_master_sku": "DOBNEXOC",
+        "product_master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "29.72"
+      },
+      {
+        "product_variant_id": "9d097439-6cee-492c-8115-5a5d2dc5ac2e",
+        "variant_sku": "DOBNEXO15C",
+        "variant_name": "Disco Bumper Color - 15 kgs",
+        "product_master_id": "04fb1129-1b2f-4276-bc35-5edcc6bf9ec6",
+        "product_master_sku": "DOBNEXOC",
+        "product_master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "40.23"
+      },
+      {
+        "product_variant_id": "cf6a2020-abd5-476f-ae2f-7496a639a5fd",
+        "variant_sku": "DOBNEXO20C",
+        "variant_name": "Disco Bumper Color - 20 kgs",
+        "product_master_id": "04fb1129-1b2f-4276-bc35-5edcc6bf9ec6",
+        "product_master_sku": "DOBNEXOC",
+        "product_master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "51.16"
+      },
+      {
+        "product_variant_id": "7b1814a5-44c8-48d2-8ca8-137f0de58d5b",
+        "variant_sku": "DOBNEXO25C",
+        "variant_name": "Disco Bumper Color - 25 kgs",
+        "product_master_id": "04fb1129-1b2f-4276-bc35-5edcc6bf9ec6",
+        "product_master_sku": "DOBNEXOC",
+        "product_master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "60.20"
+      },
+      {
+        "product_variant_id": "2f71310f-d0c2-4c75-a2de-1cb47772fd4c",
+        "variant_sku": "DOB3C005",
+        "variant_name": "Disco Bumper COLOR 3.0 - 5 kgs",
+        "product_master_id": "e5ca2667-b9c4-459d-af32-7d68caeee95f",
+        "product_master_sku": "DOB3C",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "23.30"
+      },
+      {
+        "product_variant_id": "82d4d0fc-75c1-44f1-8613-998cf9d07947",
+        "variant_sku": "DOB3C010",
+        "variant_name": "Disco Bumper COLOR 3.0 - 10 kgs",
+        "product_master_id": "e5ca2667-b9c4-459d-af32-7d68caeee95f",
+        "product_master_sku": "DOB3C",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "31.25"
+      },
+      {
+        "product_variant_id": "06d3f377-e71f-42da-a097-ca9469a6d63c",
+        "variant_sku": "DOB3C015",
+        "variant_name": "Disco Bumper COLOR 3.0 - 15 kgs",
+        "product_master_id": "e5ca2667-b9c4-459d-af32-7d68caeee95f",
+        "product_master_sku": "DOB3C",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "44.61"
+      },
+      {
+        "product_variant_id": "a0638eeb-97b5-40a8-ba60-0bdadf7de803",
+        "variant_sku": "DOB3C020",
+        "variant_name": "Disco Bumper COLOR 3.0 - 20 kgs",
+        "product_master_id": "e5ca2667-b9c4-459d-af32-7d68caeee95f",
+        "product_master_sku": "DOB3C",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "57.97"
+      },
+      {
+        "product_variant_id": "4c4c1088-9397-444d-bd54-7fb97a854ded",
+        "variant_sku": "DOB3C025",
+        "variant_name": "Disco Bumper COLOR 3.0 - 25 kgs",
+        "product_master_id": "e5ca2667-b9c4-459d-af32-7d68caeee95f",
+        "product_master_sku": "DOB3C",
+        "product_master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "63.65"
+      },
+      {
+        "product_variant_id": "e96c9f3d-7cf9-474b-b135-2de4eb16791c",
+        "variant_sku": "DOBC005",
+        "variant_name": "Disco Bumper Color 5 kgs - Gris",
+        "product_master_id": "b1bcca74-e910-4dea-bd93-1abc9c40f0f1",
+        "product_master_sku": "DOBC",
+        "product_master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "22.84"
+      },
+      {
+        "product_variant_id": "d163c7fd-854e-40c0-9b93-fb51d4f97a91",
+        "variant_sku": "DOBC010",
+        "variant_name": "Disco Bumper Color 10 kgs - Verde",
+        "product_master_id": "b1bcca74-e910-4dea-bd93-1abc9c40f0f1",
+        "product_master_sku": "DOBC",
+        "product_master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "29.69"
+      },
+      {
+        "product_variant_id": "ae78727a-aabf-4b73-a659-3754ef8c10e1",
+        "variant_sku": "DOBC015",
+        "variant_name": "Disco Bumper Color 15 kgs - Amarillo",
+        "product_master_id": "b1bcca74-e910-4dea-bd93-1abc9c40f0f1",
+        "product_master_sku": "DOBC",
+        "product_master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "42.38"
+      },
+      {
+        "product_variant_id": "69da7528-9868-4d76-b015-fac9a8de21ad",
+        "variant_sku": "DOBC020",
+        "variant_name": "Disco Bumper Color 20 kgs - Azul",
+        "product_master_id": "b1bcca74-e910-4dea-bd93-1abc9c40f0f1",
+        "product_master_sku": "DOBC",
+        "product_master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "55.07"
+      },
+      {
+        "product_variant_id": "833bfc47-be84-4dbb-9c2b-38b1d8d038c5",
+        "variant_sku": "DOBC025",
+        "variant_name": "Disco Bumper Color 25 kgs - Rojo",
+        "product_master_id": "b1bcca74-e910-4dea-bd93-1abc9c40f0f1",
+        "product_master_sku": "DOBC",
+        "product_master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+        "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "category_slug": "discos",
+        "price": "67.04"
+      }
+    ],
+    "price_entries": [
+      {
+        "variant_sku": "DOBNEXO05N",
+        "price": "19.55",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO10N",
+        "price": "26.56",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO15N",
+        "price": "36.84",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO20N",
+        "price": "46.30",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO25N",
+        "price": "55.10",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBN005",
+        "price": "18.80",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBN010",
+        "price": "26.57",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBN015",
+        "price": "36.84",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBN020",
+        "price": "46.30",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBN025",
+        "price": "55.10",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB005",
+        "price": "19.17",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB010",
+        "price": "27.10",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB015",
+        "price": "39.67",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB020",
+        "price": "52.79",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB025",
+        "price": "66.77",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO05C",
+        "price": "22.39",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO10C",
+        "price": "29.72",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO15C",
+        "price": "40.23",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO20C",
+        "price": "51.16",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBNEXO25C",
+        "price": "60.20",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB3C005",
+        "price": "23.30",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB3C010",
+        "price": "31.25",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB3C015",
+        "price": "44.61",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB3C020",
+        "price": "57.97",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOB3C025",
+        "price": "63.65",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBC005",
+        "price": "22.84",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBC010",
+        "price": "29.69",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBC015",
+        "price": "42.38",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBC020",
+        "price": "55.07",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      },
+      {
+        "variant_sku": "DOBC025",
+        "price": "67.04",
+        "currency": "EUR",
+        "price_list_id": "98ee2e8c-1536-4611-b268-31f659c14131"
+      }
+    ],
+    "specs": [],
+    "variant_skus": [
+      "DOB005",
+      "DOB010",
+      "DOB015",
+      "DOB020",
+      "DOB025",
+      "DOB3C005",
+      "DOB3C010",
+      "DOB3C015",
+      "DOB3C020",
+      "DOB3C025",
+      "DOBC005",
+      "DOBC010",
+      "DOBC015",
+      "DOBC020",
+      "DOBC025",
+      "DOBN005",
+      "DOBN010",
+      "DOBN015",
+      "DOBN020",
+      "DOBN025",
+      "DOBNEXO05C",
+      "DOBNEXO05N",
+      "DOBNEXO10C",
+      "DOBNEXO10N",
+      "DOBNEXO15C",
+      "DOBNEXO15N",
+      "DOBNEXO20C",
+      "DOBNEXO20N",
+      "DOBNEXO25C",
+      "DOBNEXO25N"
+    ]
+  },
+  "db_after_contains_only_requested_page_products": true,
+  "unexpected_skus_from_other_pages": [],
+  "products_visible_in_app_count": 30,
+  "products_visible_in_app": [
+    {
+      "variant_sku": "DOBNEXO05N",
+      "variant_name": "Disco Bumper Negro - 5 kgs",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "19.55"
+    },
+    {
+      "variant_sku": "DOBNEXO10N",
+      "variant_name": "Disco Bumper Negro - 10 kgs",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "26.56"
+    },
+    {
+      "variant_sku": "DOBNEXO15N",
+      "variant_name": "Disco Bumper Negro - 15 kgs",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "36.84"
+    },
+    {
+      "variant_sku": "DOBNEXO20N",
+      "variant_name": "Disco Bumper Negro - 20 kgs",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "46.30"
+    },
+    {
+      "variant_sku": "DOBNEXO25N",
+      "variant_name": "Disco Bumper Negro - 25 kgs",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "55.10"
+    },
+    {
+      "variant_sku": "DOBN005",
+      "variant_name": "Disco Bumper Negro 3.0 - 5 kgs",
+      "master_key": "DOBN",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "18.80"
+    },
+    {
+      "variant_sku": "DOBN010",
+      "variant_name": "Disco Bumper Negro 3.0 - 10 kgs",
+      "master_key": "DOBN",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "26.57"
+    },
+    {
+      "variant_sku": "DOBN015",
+      "variant_name": "Disco Bumper Negro 3.0 - 15 kgs",
+      "master_key": "DOBN",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "36.84"
+    },
+    {
+      "variant_sku": "DOBN020",
+      "variant_name": "Disco Bumper Negro 3.0 - 20 kgs",
+      "master_key": "DOBN",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "46.30"
+    },
+    {
+      "variant_sku": "DOBN025",
+      "variant_name": "Disco Bumper Negro 3.0 - 25 kgs",
+      "master_key": "DOBN",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "55.10"
+    },
+    {
+      "variant_sku": "DOB005",
+      "variant_name": "Disco Bumper Negro 5 kgs",
+      "master_key": "DOB",
+      "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "19.17"
+    },
+    {
+      "variant_sku": "DOB010",
+      "variant_name": "Disco Bumper Negro 10 kgs",
+      "master_key": "DOB",
+      "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "27.10"
+    },
+    {
+      "variant_sku": "DOB015",
+      "variant_name": "Disco Bumper Negro 15 kgs",
+      "master_key": "DOB",
+      "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "39.67"
+    },
+    {
+      "variant_sku": "DOB020",
+      "variant_name": "Disco Bumper Negro 20 kgs",
+      "master_key": "DOB",
+      "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "52.79"
+    },
+    {
+      "variant_sku": "DOB025",
+      "variant_name": "Disco Bumper Negro 25 kgs",
+      "master_key": "DOB",
+      "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "66.77"
+    },
+    {
+      "variant_sku": "DOBNEXO05C",
+      "variant_name": "Disco Bumper Color - 5 kgs",
+      "master_key": "DOBNEXOC",
+      "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "22.39"
+    },
+    {
+      "variant_sku": "DOBNEXO10C",
+      "variant_name": "Disco Bumper Color - 10 kgs",
+      "master_key": "DOBNEXOC",
+      "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "29.72"
+    },
+    {
+      "variant_sku": "DOBNEXO15C",
+      "variant_name": "Disco Bumper Color - 15 kgs",
+      "master_key": "DOBNEXOC",
+      "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "40.23"
+    },
+    {
+      "variant_sku": "DOBNEXO20C",
+      "variant_name": "Disco Bumper Color - 20 kgs",
+      "master_key": "DOBNEXOC",
+      "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "51.16"
+    },
+    {
+      "variant_sku": "DOBNEXO25C",
+      "variant_name": "Disco Bumper Color - 25 kgs",
+      "master_key": "DOBNEXOC",
+      "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "60.20"
+    },
+    {
+      "variant_sku": "DOB3C005",
+      "variant_name": "Disco Bumper COLOR 3.0 - 5 kgs",
+      "master_key": "DOB3C",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "23.30"
+    },
+    {
+      "variant_sku": "DOB3C010",
+      "variant_name": "Disco Bumper COLOR 3.0 - 10 kgs",
+      "master_key": "DOB3C",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "31.25"
+    },
+    {
+      "variant_sku": "DOB3C015",
+      "variant_name": "Disco Bumper COLOR 3.0 - 15 kgs",
+      "master_key": "DOB3C",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "44.61"
+    },
+    {
+      "variant_sku": "DOB3C020",
+      "variant_name": "Disco Bumper COLOR 3.0 - 20 kgs",
+      "master_key": "DOB3C",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "57.97"
+    },
+    {
+      "variant_sku": "DOB3C025",
+      "variant_name": "Disco Bumper COLOR 3.0 - 25 kgs",
+      "master_key": "DOB3C",
+      "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+      "category_slug": "discos",
+      "price": "63.65"
+    },
+    {
+      "variant_sku": "DOBC005",
+      "variant_name": "Disco Bumper Color 5 kgs - Gris",
+      "master_key": "DOBC",
+      "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "22.84"
+    },
+    {
+      "variant_sku": "DOBC010",
+      "variant_name": "Disco Bumper Color 10 kgs - Verde",
+      "master_key": "DOBC",
+      "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "29.69"
+    },
+    {
+      "variant_sku": "DOBC015",
+      "variant_name": "Disco Bumper Color 15 kgs - Amarillo",
+      "master_key": "DOBC",
+      "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "42.38"
+    },
+    {
+      "variant_sku": "DOBC020",
+      "variant_name": "Disco Bumper Color 20 kgs - Azul",
+      "master_key": "DOBC",
+      "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "55.07"
+    },
+    {
+      "variant_sku": "DOBC025",
+      "variant_name": "Disco Bumper Color 25 kgs - Rojo",
+      "master_key": "DOBC",
+      "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+      "category_slug": "discos",
+      "price": "67.04"
+    }
+  ],
+  "blocked_rows_detail": [],
+  "status": "pass",
+  "fail_reasons": [],
+  "products_imported": [
+    "DOB005",
+    "DOB010",
+    "DOB015",
+    "DOB020",
+    "DOB025",
+    "DOB3C005",
+    "DOB3C010",
+    "DOB3C015",
+    "DOB3C020",
+    "DOB3C025",
+    "DOBC005",
+    "DOBC010",
+    "DOBC015",
+    "DOBC020",
+    "DOBC025",
+    "DOBN005",
+    "DOBN010",
+    "DOBN015",
+    "DOBN020",
+    "DOBN025",
+    "DOBNEXO05C",
+    "DOBNEXO05N",
+    "DOBNEXO10C",
+    "DOBNEXO10N",
+    "DOBNEXO15C",
+    "DOBNEXO15N",
+    "DOBNEXO20C",
+    "DOBNEXO20N",
+    "DOBNEXO25C",
+    "DOBNEXO25N"
+  ],
+  "products_blocked": [],
+  "products_expected_but_not_imported": [],
+  "category_warnings": [],
+  "grouping_warnings": [
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO05N",
+      "detail": "Taxonomy warning for DOBNEXO05N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO10N",
+      "detail": "Taxonomy warning for DOBNEXO10N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO15N",
+      "detail": "Taxonomy warning for DOBNEXO15N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO20N",
+      "detail": "Taxonomy warning for DOBNEXO20N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO25N",
+      "detail": "Taxonomy warning for DOBNEXO25N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN005",
+      "detail": "Taxonomy warning for DOBN005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN010",
+      "detail": "Taxonomy warning for DOBN010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN015",
+      "detail": "Taxonomy warning for DOBN015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN020",
+      "detail": "Taxonomy warning for DOBN020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN025",
+      "detail": "Taxonomy warning for DOBN025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB005",
+      "detail": "Taxonomy warning for DOB005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB010",
+      "detail": "Taxonomy warning for DOB010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB015",
+      "detail": "Taxonomy warning for DOB015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB020",
+      "detail": "Taxonomy warning for DOB020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB025",
+      "detail": "Taxonomy warning for DOB025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO05C",
+      "detail": "Taxonomy warning for DOBNEXO05C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO10C",
+      "detail": "Taxonomy warning for DOBNEXO10C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO15C",
+      "detail": "Taxonomy warning for DOBNEXO15C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO20C",
+      "detail": "Taxonomy warning for DOBNEXO20C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO25C",
+      "detail": "Taxonomy warning for DOBNEXO25C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C005",
+      "detail": "Taxonomy warning for DOB3C005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C010",
+      "detail": "Taxonomy warning for DOB3C010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C015",
+      "detail": "Taxonomy warning for DOB3C015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C020",
+      "detail": "Taxonomy warning for DOB3C020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C025",
+      "detail": "Taxonomy warning for DOB3C025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC005",
+      "detail": "Taxonomy warning for DOBC005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC010",
+      "detail": "Taxonomy warning for DOBC010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC015",
+      "detail": "Taxonomy warning for DOBC015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC020",
+      "detail": "Taxonomy warning for DOBC020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC025",
+      "detail": "Taxonomy warning for DOBC025"
+    }
+  ],
+  "review_gate_warnings": [],
+  "app_visual_check": {
+    "products_page_should_show_only_requested_page": true,
+    "expected_visible_products_count": 30,
+    "actual_visible_products_count": 30,
+    "visible_skus": [
+      "DOB005",
+      "DOB010",
+      "DOB015",
+      "DOB020",
+      "DOB025",
+      "DOB3C005",
+      "DOB3C010",
+      "DOB3C015",
+      "DOB3C020",
+      "DOB3C025",
+      "DOBC005",
+      "DOBC010",
+      "DOBC015",
+      "DOBC020",
+      "DOBC025",
+      "DOBN005",
+      "DOBN010",
+      "DOBN015",
+      "DOBN020",
+      "DOBN025",
+      "DOBNEXO05C",
+      "DOBNEXO05N",
+      "DOBNEXO10C",
+      "DOBNEXO10N",
+      "DOBNEXO15C",
+      "DOBNEXO15N",
+      "DOBNEXO20C",
+      "DOBNEXO20N",
+      "DOBNEXO25C",
+      "DOBNEXO25N"
+    ],
+    "visible_categories": [
+      "discos"
+    ],
+    "note": "Open Products page in the app after this run to visually inspect only page 11 products."
+  },
+  "diff": {
+    "inserted_masters": [
+      "DOBNEXON",
+      "DOBN",
+      "DOB",
+      "DOBNEXOC",
+      "DOB3C",
+      "DOBC"
+    ],
+    "inserted_variants": [
+      "DOB005",
+      "DOB010",
+      "DOB015",
+      "DOB020",
+      "DOB025",
+      "DOB3C005",
+      "DOB3C010",
+      "DOB3C015",
+      "DOB3C020",
+      "DOB3C025",
+      "DOBC005",
+      "DOBC010",
+      "DOBC015",
+      "DOBC020",
+      "DOBC025",
+      "DOBN005",
+      "DOBN010",
+      "DOBN015",
+      "DOBN020",
+      "DOBN025",
+      "DOBNEXO05C",
+      "DOBNEXO05N",
+      "DOBNEXO10C",
+      "DOBNEXO10N",
+      "DOBNEXO15C",
+      "DOBNEXO15N",
+      "DOBNEXO20C",
+      "DOBNEXO20N",
+      "DOBNEXO25C",
+      "DOBNEXO25N"
+    ],
+    "skipped_rows": 0,
+    "blocked_rows": [],
+    "categories_created": [],
+    "mappings_created": [],
+    "unexpected_categories": [],
+    "products_imported_but_suspicious": [
+      "DOB3C005",
+      "DOB3C010",
+      "DOB3C015",
+      "DOB3C020",
+      "DOB3C025",
+      "DOBC005",
+      "DOBC010",
+      "DOBC015",
+      "DOBC020",
+      "DOBC025"
+    ]
+  },
+  "warnings": [
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO05N",
+      "detail": "Taxonomy warning for DOBNEXO05N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO10N",
+      "detail": "Taxonomy warning for DOBNEXO10N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO15N",
+      "detail": "Taxonomy warning for DOBNEXO15N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO20N",
+      "detail": "Taxonomy warning for DOBNEXO20N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO25N",
+      "detail": "Taxonomy warning for DOBNEXO25N"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN005",
+      "detail": "Taxonomy warning for DOBN005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN010",
+      "detail": "Taxonomy warning for DOBN010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN015",
+      "detail": "Taxonomy warning for DOBN015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN020",
+      "detail": "Taxonomy warning for DOBN020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBN025",
+      "detail": "Taxonomy warning for DOBN025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB005",
+      "detail": "Taxonomy warning for DOB005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB010",
+      "detail": "Taxonomy warning for DOB010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB015",
+      "detail": "Taxonomy warning for DOB015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB020",
+      "detail": "Taxonomy warning for DOB020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB025",
+      "detail": "Taxonomy warning for DOB025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO05C",
+      "detail": "Taxonomy warning for DOBNEXO05C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO10C",
+      "detail": "Taxonomy warning for DOBNEXO10C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO15C",
+      "detail": "Taxonomy warning for DOBNEXO15C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO20C",
+      "detail": "Taxonomy warning for DOBNEXO20C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBNEXO25C",
+      "detail": "Taxonomy warning for DOBNEXO25C"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C005",
+      "detail": "Taxonomy warning for DOB3C005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C010",
+      "detail": "Taxonomy warning for DOB3C010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C015",
+      "detail": "Taxonomy warning for DOB3C015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C020",
+      "detail": "Taxonomy warning for DOB3C020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOB3C025",
+      "detail": "Taxonomy warning for DOB3C025"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC005",
+      "detail": "Taxonomy warning for DOBC005"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC010",
+      "detail": "Taxonomy warning for DOBC010"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC015",
+      "detail": "Taxonomy warning for DOBC015"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC020",
+      "detail": "Taxonomy warning for DOBC020"
+    },
+    {
+      "code": "mapped_by_sku_prefix",
+      "sku": "DOBC025",
+      "detail": "Taxonomy warning for DOBC025"
+    }
+  ],
+  "suspicious_variant_candidates": [
+    {
+      "suspicion_id": "S-0001",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        11
+      ],
+      "skus": [
+        "DOB3C005",
+        "DOB3C010",
+        "DOB3C015",
+        "DOB3C020",
+        "DOB3C025",
+        "DOBC005",
+        "DOBC010",
+        "DOBC015",
+        "DOBC020",
+        "DOBC025"
+      ],
+      "current_master_keys": [
+        "DOB3C",
+        "DOB3C",
+        "DOB3C",
+        "DOB3C",
+        "DOB3C",
+        "DOBC",
+        "DOBC",
+        "DOBC",
+        "DOBC",
+        "DOBC"
+      ],
+      "expected_master_key": "DOBC",
+      "grouping_reasons": [
+        "cross_training_bumper_family:DOB3C",
+        "cross_training_bumper_family:DOB3C",
+        "cross_training_bumper_family:DOB3C",
+        "cross_training_bumper_family:DOB3C",
+        "cross_training_bumper_family:DOB3C",
+        "cross_training_bumper_family:DOBC",
+        "cross_training_bumper_family:DOBC",
+        "cross_training_bumper_family:DOBC",
+        "cross_training_bumper_family:DOBC",
+        "cross_training_bumper_family:DOBC"
+      ],
+      "possible_false_negative": true
+    }
+  ],
+  "manual_approval": {
+    "page_approved": false,
+    "note": "Page is not approved until the user gives explicit OK. Do not advance to the next page automatically."
+  }
+}

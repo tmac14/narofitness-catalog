@@ -1,0 +1,75 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B2A-BAR-SUFFIX-LETTER-PESO-POST-VALIDATION",
+  "auditor": "agent5",
+  "read_only": true,
+  "executed_at": "2026-06-12T19:30:00Z",
+  "sequence": [
+    {
+      "step": 1,
+      "command": "npm run db:reset:full",
+      "cwd": "f:/projects/narofitness",
+      "exit_code": 0,
+      "notes": "Clean full seed; masters=534, variants=871, price_entries=871, rows_blocked=0"
+    },
+    {
+      "step": 2,
+      "command": "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/post_master_name_consistency/_run_full_catalog_audit.py --output-dir /data/audit/full_catalog/critical_spec_coverage/post_b2a_weight_semantics\"",
+      "exit_code": 0,
+      "artifact": "full_catalog_import_audit.json"
+    },
+    {
+      "step": 3,
+      "command": "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/critical_spec_coverage/b2_weight_semantics/_b2_weight_semantics_audit.py\"",
+      "exit_code": 0,
+      "notes": "B2 audit reproducible; baseline_ok=false post-B2A (peso_kg 431→426 expected); WEIGHT_SPEC_FALSE_POSITIVE=0"
+    },
+    {
+      "step": 4,
+      "command": "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/critical_spec_coverage/post_b2a_weight_semantics/_b2a_post_validation.py\"",
+      "exit_code": 0,
+      "artifact": "b2a_weight_post_validation_report.json"
+    },
+    {
+      "step": 5,
+      "command": "npm run audit:category-contamination",
+      "exit_code": 0,
+      "notes": "unexpected_categories=[]"
+    },
+    {
+      "step": 6,
+      "command": "npm run audit:page-import (npm_config_page=34, ensure_pim_seed, report_format=both)",
+      "exit_code": 0,
+      "result": "PASS",
+      "artifact": "temp/audit/pages/034/"
+    },
+    {
+      "step": 7,
+      "command": "npm run audit:page-import (npm_config_page=11)",
+      "exit_code": 0,
+      "result": "PASS",
+      "artifact": "temp/audit/pages/011/"
+    },
+    {
+      "step": 8,
+      "command": "npm run audit:page-import (npm_config_page=12)",
+      "exit_code": 0,
+      "result": "PASS",
+      "artifact": "temp/audit/pages/012/"
+    },
+    {
+      "step": 9,
+      "command": "npm run audit:page-import (npm_config_page=13, sequential re-run)",
+      "exit_code": 0,
+      "result": "PASS",
+      "artifact": "temp/audit/pages/013/",
+      "notes": "Initial parallel run with page 14 produced transient cross-page contamination exit=1; JSON artifacts and sequential re-run both PASS"
+    },
+    {
+      "step": 10,
+      "command": "npm run audit:page-import (npm_config_page=14, sequential re-run)",
+      "exit_code": 0,
+      "result": "PASS",
+      "artifact": "temp/audit/pages/014/"
+    }
+  ]
+}

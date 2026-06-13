@@ -1,0 +1,4301 @@
+{
+  "audit_version": "1.2",
+  "agent": "agent5_page_import",
+  "workflow_mode": "manual_page_by_page",
+  "generated_at": "2026-06-12T19:30:28.554323+00:00",
+  "requested_page": 34,
+  "page_number": 34,
+  "output_dir": "temp/audit/pages/034",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "parsed_full_pdf": {
+    "parse_scope": "full_pdf",
+    "total_rows_parsed": 871,
+    "total_pages_with_rows": 56
+  },
+  "rows_filtered_to_page": {
+    "requested_page": 34,
+    "count": 26,
+    "source_row_indices": [
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438
+    ],
+    "expected_skus": [
+      "BBP140",
+      "BBP140B",
+      "BN085",
+      "BN120",
+      "BN120Z",
+      "BN150",
+      "BN180",
+      "BN220",
+      "BO085",
+      "BO120",
+      "BO120Z",
+      "BO150",
+      "BO180",
+      "BO220",
+      "BOR120",
+      "BOR120Z",
+      "BOR150",
+      "BOR180",
+      "BOR220",
+      "BOR220A",
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004",
+      "SOP033"
+    ]
+  },
+  "reset_before_page": true,
+  "cumulative_mode": false,
+  "confirm_executed": true,
+  "imported_pages": [
+    34
+  ],
+  "reset_summary": {
+    "tables_cleared": [
+      "catalog_exports",
+      "catalog_product_layouts",
+      "catalog_items",
+      "catalogs",
+      "supplier_price_entries",
+      "supplier_price_lists",
+      "import_rows",
+      "import_batches",
+      "product_master_specs",
+      "product_variant_specs",
+      "product_images",
+      "supplier_product_family_keys",
+      "product_variants",
+      "product_masters"
+    ],
+    "tables_preserved": [
+      "categories",
+      "taxonomy_mapping_rules",
+      "suppliers",
+      "import_profiles",
+      "spec_definitions",
+      "spec_allowed_values",
+      "units",
+      "category_spec_profiles",
+      "app_settings",
+      "brands"
+    ],
+    "categories_preserved": true,
+    "taxonomy_mapping_rules_preserved": true,
+    "reset_delete_counts": {
+      "catalog_exports": 0,
+      "catalog_product_layouts": 0,
+      "catalog_items": 871,
+      "catalogs": 1,
+      "supplier_price_entries": 1742,
+      "supplier_price_lists": 2,
+      "import_rows": 1742,
+      "import_batches": 2,
+      "product_master_specs": 54,
+      "product_variant_specs": 650,
+      "product_images": 0,
+      "supplier_product_family_keys": 534,
+      "product_variants": 871,
+      "product_masters": 534
+    },
+    "product_masters_count_before": 534,
+    "product_masters_count_after": 0,
+    "product_variants_count_before": 871,
+    "product_variants_count_after": 0,
+    "catalogue_items_count_before": 871,
+    "catalogue_items_count_after": 0
+  },
+  "baseline_before": {
+    "canonical_categories_count": 24,
+    "canonical_category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "mapping_rules_count": 28,
+    "product_masters_count": 0,
+    "product_variants_count": 0,
+    "catalogue_items_count": 0
+  },
+  "category_snapshot_before": {
+    "generated_at": "2026-06-12T19:30:24.119839+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "category_snapshot_after": {
+    "generated_at": "2026-06-12T19:30:28.554106+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "raw_extraction": {
+    "page_number": 34,
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "lines": [
+      {
+        "line_index": 0,
+        "text": "Barra 28 MM Cromada",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 1,
+        "text": "Barra 28mm Cromada - 1,20 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 2,
+        "text": "BN120",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 3,
+        "text": "8435657000172",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 4,
+        "text": "24,03 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 5,
+        "text": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 6,
+        "text": "BN120Z",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 7,
+        "text": "8435657000189",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 8,
+        "text": "24,03 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 9,
+        "text": "Barra 28mm Cromada - 1,50 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 10,
+        "text": "BN150",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 11,
+        "text": "8435657000196",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 12,
+        "text": "24,59 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 13,
+        "text": "Barra 28mm Cromada - 1,80 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 14,
+        "text": "BN180",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 15,
+        "text": "8435657000202",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 16,
+        "text": "33,87 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 17,
+        "text": "Barra 28mm Cromada - 2,20 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 18,
+        "text": "BN220",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 19,
+        "text": "8435657000219",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 20,
+        "text": "39,76 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 21,
+        "text": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 22,
+        "text": "BN085",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 23,
+        "text": "8435657000165",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 24,
+        "text": "34,55 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 25,
+        "text": "Barra Olímpica Cromada - HOME",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 26,
+        "text": "Barra Olimpica Cromada Home - 1,20 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 27,
+        "text": "BO120",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 28,
+        "text": "8435657000233",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 29,
+        "text": "47,35 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 30,
+        "text": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 31,
+        "text": "BO120Z",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 32,
+        "text": "8435657000240",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 33,
+        "text": "50,13 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 34,
+        "text": "Barra Olimpica Cromada Home - 1,50 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 35,
+        "text": "BO150",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 36,
+        "text": "8435657000257",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 37,
+        "text": "54,31 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 38,
+        "text": "Barra Olimpica Cromada Home - 1,80 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 39,
+        "text": "BO180",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 40,
+        "text": "8435657000264",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 41,
+        "text": "59,87 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 42,
+        "text": "Barra Olimpica Cromada Home - 2,20 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 43,
+        "text": "BO220",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 44,
+        "text": "8435657000271",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 45,
+        "text": "71,16 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 46,
+        "text": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 47,
+        "text": "BO085",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 48,
+        "text": "8435657000226",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 49,
+        "text": "62,13 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 50,
+        "text": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 51,
+        "text": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 52,
+        "text": "BOR120",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 53,
+        "text": "8435657000424",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 54,
+        "text": "69,03 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 55,
+        "text": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 56,
+        "text": "BOR120Z",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 57,
+        "text": "8435657000431",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 58,
+        "text": "72,93 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 59,
+        "text": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 60,
+        "text": "BOR150",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 61,
+        "text": "8435657000448",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 62,
+        "text": "81,94 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 63,
+        "text": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 64,
+        "text": "BOR180",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 65,
+        "text": "8435657000455",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 66,
+        "text": "92,47 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 67,
+        "text": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 68,
+        "text": "BOR220",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 69,
+        "text": "8435657000462",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 70,
+        "text": "132,14 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 71,
+        "text": "Barra Olimpica Cromada Alta Carga -  2,20 Mts 1000&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 72,
+        "text": "BOR220A",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 73,
+        "text": "8435657000479",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 74,
+        "text": "106,25 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 75,
+        "text": "Barras Body Pump",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 76,
+        "text": "Barra Body Pump  28mm - 1,40 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 77,
+        "text": "BBP140",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 78,
+        "text": "8435657000103",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 79,
+        "text": "11,53 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 80,
+        "text": "Barra Body Pump  30mm - 1,40 Mts",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 81,
+        "text": "BBP140B",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 82,
+        "text": "8435657000110",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 83,
+        "text": "11,53 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 84,
+        "text": "Topes Barra",
+        "font_size": 8.279999732971191,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 85,
+        "text": "Tope Barra 28 Mm",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 86,
+        "text": "BTN001",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 87,
+        "text": "8435657000523",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 88,
+        "text": "0,93 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 89,
+        "text": "Tope Barra 30 Mm",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 90,
+        "text": "BTN002",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 91,
+        "text": "8435657000530",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 92,
+        "text": "0,93 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 93,
+        "text": "Tope Barra Olímpica",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 94,
+        "text": "BTO001",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 95,
+        "text": "8435657000547",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 96,
+        "text": "2,10 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 97,
+        "text": "Tope Barra Olimpica Crossfit",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 98,
+        "text": "BTO003",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 99,
+        "text": "8435657000554",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 100,
+        "text": "4,92 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 101,
+        "text": "Tope Olimpico Crossfit Rojo",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 102,
+        "text": "BTO004",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 103,
+        "text": "8435657000561",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 104,
+        "text": "6,17 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 105,
+        "text": "Soportes Vertical Barras Olímpicas",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 106,
+        "text": "Soporte Para 8 Barras",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 107,
+        "text": "SOP033",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 108,
+        "text": "8435657005740",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 109,
+        "text": "116,48 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      }
+    ],
+    "unparsed_candidates": []
+  },
+  "parsed_rows": [
+    {
+      "page_number": 34,
+      "source_row_index": 413,
+      "raw_line_index": 1,
+      "raw_lines": [
+        "Barra 28mm Cromada - 1,20 Mts",
+        "BN120",
+        "8435657000172",
+        "24,03 €"
+      ],
+      "raw_sku": "BN120",
+      "normalized_sku": "BN120",
+      "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,20 Mts",
+      "normalized_name": "Barra 28mm Cromada - 1,20 Mts",
+      "price": "24.03",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 414,
+      "raw_line_index": 5,
+      "raw_lines": [
+        "Barra 28mm Cromada - 1,20 Mts Curl Z",
+        "BN120Z",
+        "8435657000189",
+        "24,03 €"
+      ],
+      "raw_sku": "BN120Z",
+      "normalized_sku": "BN120Z",
+      "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,20 Mts Curl Z",
+      "normalized_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+      "price": "24.03",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 415,
+      "raw_line_index": 9,
+      "raw_lines": [
+        "Barra 28mm Cromada - 1,50 Mts",
+        "BN150",
+        "8435657000196",
+        "24,59 €"
+      ],
+      "raw_sku": "BN150",
+      "normalized_sku": "BN150",
+      "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,50 Mts",
+      "normalized_name": "Barra 28mm Cromada - 1,50 Mts",
+      "price": "24.59",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 416,
+      "raw_line_index": 13,
+      "raw_lines": [
+        "Barra 28mm Cromada - 1,80 Mts",
+        "BN180",
+        "8435657000202",
+        "33,87 €"
+      ],
+      "raw_sku": "BN180",
+      "normalized_sku": "BN180",
+      "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,80 Mts",
+      "normalized_name": "Barra 28mm Cromada - 1,80 Mts",
+      "price": "33.87",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 417,
+      "raw_line_index": 17,
+      "raw_lines": [
+        "Barra 28mm Cromada - 2,20 Mts",
+        "BN220",
+        "8435657000219",
+        "39,76 €"
+      ],
+      "raw_sku": "BN220",
+      "normalized_sku": "BN220",
+      "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 2,20 Mts",
+      "normalized_name": "Barra 28mm Cromada - 2,20 Mts",
+      "price": "39.76",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 418,
+      "raw_line_index": 21,
+      "raw_lines": [
+        "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+        "BN085",
+        "8435657000165",
+        "34,55 €"
+      ],
+      "raw_sku": "BN085",
+      "normalized_sku": "BN085",
+      "raw_name": "Barra 28 MM Cromada Baraa 28mm Cromada - Triceps Romana 85 Cms",
+      "normalized_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+      "price": "34.55",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 419,
+      "raw_line_index": 26,
+      "raw_lines": [
+        "Barra Olimpica Cromada Home - 1,20 Mts",
+        "BO120",
+        "8435657000233",
+        "47,35 €"
+      ],
+      "raw_sku": "BO120",
+      "normalized_sku": "BO120",
+      "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,20 Mts",
+      "normalized_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+      "price": "47.35",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 420,
+      "raw_line_index": 30,
+      "raw_lines": [
+        "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+        "BO120Z",
+        "8435657000240",
+        "50,13 €"
+      ],
+      "raw_sku": "BO120Z",
+      "normalized_sku": "BO120Z",
+      "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+      "normalized_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+      "price": "50.13",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 421,
+      "raw_line_index": 34,
+      "raw_lines": [
+        "Barra Olimpica Cromada Home - 1,50 Mts",
+        "BO150",
+        "8435657000257",
+        "54,31 €"
+      ],
+      "raw_sku": "BO150",
+      "normalized_sku": "BO150",
+      "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,50 Mts",
+      "normalized_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+      "price": "54.31",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 422,
+      "raw_line_index": 38,
+      "raw_lines": [
+        "Barra Olimpica Cromada Home - 1,80 Mts",
+        "BO180",
+        "8435657000264",
+        "59,87 €"
+      ],
+      "raw_sku": "BO180",
+      "normalized_sku": "BO180",
+      "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,80 Mts",
+      "normalized_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+      "price": "59.87",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 423,
+      "raw_line_index": 42,
+      "raw_lines": [
+        "Barra Olimpica Cromada Home - 2,20 Mts",
+        "BO220",
+        "8435657000271",
+        "71,16 €"
+      ],
+      "raw_sku": "BO220",
+      "normalized_sku": "BO220",
+      "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 2,20 Mts",
+      "normalized_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+      "price": "71.16",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 424,
+      "raw_line_index": 46,
+      "raw_lines": [
+        "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+        "BO085",
+        "8435657000226",
+        "62,13 €"
+      ],
+      "raw_sku": "BO085",
+      "normalized_sku": "BO085",
+      "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+      "normalized_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+      "price": "62.13",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 425,
+      "raw_line_index": 51,
+      "raw_lines": [
+        "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+        "BOR120",
+        "8435657000424",
+        "69,03 €"
+      ],
+      "raw_sku": "BOR120",
+      "normalized_sku": "BOR120",
+      "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+      "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+      "price": "69.03",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 426,
+      "raw_line_index": 55,
+      "raw_lines": [
+        "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+        "BOR120Z",
+        "8435657000431",
+        "72,93 €"
+      ],
+      "raw_sku": "BOR120Z",
+      "normalized_sku": "BOR120Z",
+      "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+      "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+      "price": "72.93",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 427,
+      "raw_line_index": 59,
+      "raw_lines": [
+        "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+        "BOR150",
+        "8435657000448",
+        "81,94 €"
+      ],
+      "raw_sku": "BOR150",
+      "normalized_sku": "BOR150",
+      "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+      "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+      "price": "81.94",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 428,
+      "raw_line_index": 63,
+      "raw_lines": [
+        "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+        "BOR180",
+        "8435657000455",
+        "92,47 €"
+      ],
+      "raw_sku": "BOR180",
+      "normalized_sku": "BOR180",
+      "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+      "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+      "price": "92.47",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 429,
+      "raw_line_index": 67,
+      "raw_lines": [
+        "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500&",
+        "BOR220",
+        "8435657000462",
+        "132,14 €"
+      ],
+      "raw_sku": "BOR220",
+      "normalized_sku": "BOR220",
+      "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+      "normalized_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+      "price": "132.14",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 430,
+      "raw_line_index": 71,
+      "raw_lines": [
+        "Barra Olimpica Cromada Alta Carga -  2,20 Mts 1000&",
+        "BOR220A",
+        "8435657000479",
+        "106,25 €"
+      ],
+      "raw_sku": "BOR220A",
+      "normalized_sku": "BOR220A",
+      "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+      "normalized_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+      "price": "106.25",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 431,
+      "raw_line_index": 76,
+      "raw_lines": [
+        "Barra Body Pump  28mm - 1,40 Mts",
+        "BBP140",
+        "8435657000103",
+        "11,53 €"
+      ],
+      "raw_sku": "BBP140",
+      "normalized_sku": "BBP140",
+      "raw_name": "Barras Body Pump Barra Body Pump 28mm - 1,40 Mts",
+      "normalized_name": "Barra Body Pump 28mm - 1,40 Mts",
+      "price": "11.53",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 432,
+      "raw_line_index": 80,
+      "raw_lines": [
+        "Barra Body Pump  30mm - 1,40 Mts",
+        "BBP140B",
+        "8435657000110",
+        "11,53 €"
+      ],
+      "raw_sku": "BBP140B",
+      "normalized_sku": "BBP140B",
+      "raw_name": "Barras Body Pump Barra Body Pump 30mm - 1,40 Mts",
+      "normalized_name": "Barra Body Pump 30mm - 1,40 Mts",
+      "price": "11.53",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 433,
+      "raw_line_index": 84,
+      "raw_lines": [
+        "Topes Barra",
+        "Tope Barra 28 Mm",
+        "BTN001",
+        "8435657000523",
+        "0,93 €"
+      ],
+      "raw_sku": "BTN001",
+      "normalized_sku": "BTN001",
+      "raw_name": "Barras Body Pump Topes Barra Tope Barra 28 Mm",
+      "normalized_name": "Topes Barra Tope Barra 28 Mm",
+      "price": "0.93",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 434,
+      "raw_line_index": 89,
+      "raw_lines": [
+        "Tope Barra 30 Mm",
+        "BTN002",
+        "8435657000530",
+        "0,93 €"
+      ],
+      "raw_sku": "BTN002",
+      "normalized_sku": "BTN002",
+      "raw_name": "Barras Body Pump Tope Barra 30 Mm",
+      "normalized_name": "Tope Barra 30 Mm",
+      "price": "0.93",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 435,
+      "raw_line_index": 93,
+      "raw_lines": [
+        "Tope Barra Olímpica",
+        "BTO001",
+        "8435657000547",
+        "2,10 €"
+      ],
+      "raw_sku": "BTO001",
+      "normalized_sku": "BTO001",
+      "raw_name": "Barras Body Pump Tope Barra Olímpica",
+      "normalized_name": "Tope Barra Olímpica",
+      "price": "2.10",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 436,
+      "raw_line_index": 97,
+      "raw_lines": [
+        "Tope Barra Olimpica Crossfit",
+        "BTO003",
+        "8435657000554",
+        "4,92 €"
+      ],
+      "raw_sku": "BTO003",
+      "normalized_sku": "BTO003",
+      "raw_name": "Barras Body Pump Tope Barra Olimpica Crossfit",
+      "normalized_name": "Tope Barra Olimpica Crossfit",
+      "price": "4.92",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 437,
+      "raw_line_index": 101,
+      "raw_lines": [
+        "Tope Olimpico Crossfit Rojo",
+        "BTO004",
+        "8435657000561",
+        "6,17 €"
+      ],
+      "raw_sku": "BTO004",
+      "normalized_sku": "BTO004",
+      "raw_name": "Barras Body Pump Tope Olimpico Crossfit Rojo",
+      "normalized_name": "Tope Olimpico Crossfit Rojo",
+      "price": "6.17",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 34,
+      "source_row_index": 438,
+      "raw_line_index": 106,
+      "raw_lines": [
+        "Soporte Para 8 Barras",
+        "SOP033",
+        "8435657005740",
+        "116,48 €"
+      ],
+      "raw_sku": "SOP033",
+      "normalized_sku": "SOP033",
+      "raw_name": "Soportes Vertical Barras Olímpicas Soporte Para 8 Barras",
+      "normalized_name": "Soporte Para 8",
+      "price": "116.48",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    }
+  ],
+  "taxonomy_decision": [
+    {
+      "source_row_index": 413,
+      "normalized_sku": "BN120",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 414,
+      "normalized_sku": "BN120Z",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 415,
+      "normalized_sku": "BN150",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 416,
+      "normalized_sku": "BN180",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 417,
+      "normalized_sku": "BN220",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 418,
+      "normalized_sku": "BN085",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": null,
+      "mapping_rule_type": null,
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 419,
+      "normalized_sku": "BO120",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 420,
+      "normalized_sku": "BO120Z",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 421,
+      "normalized_sku": "BO150",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 422,
+      "normalized_sku": "BO180",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 423,
+      "normalized_sku": "BO220",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 424,
+      "normalized_sku": "BO085",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 425,
+      "normalized_sku": "BOR120",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 426,
+      "normalized_sku": "BOR120Z",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 427,
+      "normalized_sku": "BOR150",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 428,
+      "normalized_sku": "BOR180",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 429,
+      "normalized_sku": "BOR220",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 430,
+      "normalized_sku": "BOR220A",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 431,
+      "normalized_sku": "BBP140",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 432,
+      "normalized_sku": "BBP140B",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 433,
+      "normalized_sku": "BTN001",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 434,
+      "normalized_sku": "BTN002",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 435,
+      "normalized_sku": "BTO001",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 436,
+      "normalized_sku": "BTO003",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": {
+        "id": "065fb25c-0a81-424c-bb14-d084f06f18c1",
+        "match_type": "section_keyword",
+        "match_value": "DISCOS Y BARRAS|barra",
+        "priority": 45,
+        "is_active": true,
+        "target_category_slug": "barras",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_keyword",
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 437,
+      "normalized_sku": "BTO004",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": null,
+      "mapping_rule_type": null,
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 438,
+      "normalized_sku": "SOP033",
+      "source_taxonomy_path": "DISCOS Y BARRAS",
+      "matched_mapping_rule": null,
+      "mapping_rule_type": null,
+      "canonical_category_slug": "barras",
+      "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    }
+  ],
+  "preview_decision": [
+    {
+      "source_row_index": 413,
+      "normalized_sku": "BN120",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BN",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 414,
+      "normalized_sku": "BN120Z",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:BNZ",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "BNZ",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 415,
+      "normalized_sku": "BN150",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BN",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 416,
+      "normalized_sku": "BN180",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BN",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 417,
+      "normalized_sku": "BN220",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BN",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 418,
+      "normalized_sku": "BN085",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BN",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BN",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 419,
+      "normalized_sku": "BO120",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BO",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 420,
+      "normalized_sku": "BO120Z",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:BOZ",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "BOZ",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 421,
+      "normalized_sku": "BO150",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BO",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 422,
+      "normalized_sku": "BO180",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BO",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 423,
+      "normalized_sku": "BO220",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BO",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 424,
+      "normalized_sku": "BO085",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BO",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 425,
+      "normalized_sku": "BOR120",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOR",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 426,
+      "normalized_sku": "BOR120Z",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:BORZ",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "BORZ",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 427,
+      "normalized_sku": "BOR150",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOR",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 428,
+      "normalized_sku": "BOR180",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOR",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 429,
+      "normalized_sku": "BOR220",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "numeric_suffix_family:BOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOR",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 430,
+      "normalized_sku": "BOR220A",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:BORA",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "BORA",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 431,
+      "normalized_sku": "BBP140",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "BBP140",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": true,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 432,
+      "normalized_sku": "BBP140B",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "fdl_sku_family:BBPB",
+        "grouping_confidence": 0.95,
+        "proposed_master_key": "BBPB",
+        "variant_axes": [
+          "longitud_mm"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 433,
+      "normalized_sku": "BTN001",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "BTN001",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 434,
+      "normalized_sku": "BTN002",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "BTN002",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 435,
+      "normalized_sku": "BTO001",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "BTO001",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 436,
+      "normalized_sku": "BTO003",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "BTO003",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 437,
+      "normalized_sku": "BTO004",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "BTO004",
+        "variant_axes": [
+          "color"
+        ],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 438,
+      "normalized_sku": "SOP033",
+      "taxonomy": {
+        "canonical_category_slug": "barras",
+        "canonical_category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "SOP033",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    }
+  ],
+  "confirm_result": {
+    "executed": true,
+    "allow_needs_review": false,
+    "rows_imported": 26,
+    "rows_blocked": 0,
+    "rows_skipped": 0,
+    "masters_created": 15,
+    "variants_created": 26,
+    "variants_updated": 0,
+    "entries_created": 26,
+    "per_row": [
+      {
+        "source_row_index": 413,
+        "sku": "BN120",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 414,
+        "sku": "BN120Z",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 415,
+        "sku": "BN150",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 416,
+        "sku": "BN180",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 417,
+        "sku": "BN220",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 418,
+        "sku": "BN085",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 419,
+        "sku": "BO120",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 420,
+        "sku": "BO120Z",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 421,
+        "sku": "BO150",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 422,
+        "sku": "BO180",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 423,
+        "sku": "BO220",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 424,
+        "sku": "BO085",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 425,
+        "sku": "BOR120",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 426,
+        "sku": "BOR120Z",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 427,
+        "sku": "BOR150",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 428,
+        "sku": "BOR180",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 429,
+        "sku": "BOR220",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 430,
+        "sku": "BOR220A",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 431,
+        "sku": "BBP140",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 432,
+        "sku": "BBP140B",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 433,
+        "sku": "BTN001",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 434,
+        "sku": "BTN002",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 435,
+        "sku": "BTO001",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 436,
+        "sku": "BTO003",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 437,
+        "sku": "BTO004",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 438,
+        "sku": "SOP033",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      }
+    ],
+    "batch_id": "eefba143-a7f0-4f25-837d-589288fff751"
+  },
+  "db_after": {
+    "masters": [
+      {
+        "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+        "master_key": "BN",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "26bef071-708f-48bf-9383-abc2fabc172d",
+        "master_key": "BNZ",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+        "master_key": "BO",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "853a5031-e92c-43ed-b126-367c3f8a5264",
+        "master_key": "BOZ",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+        "master_key": "BOR",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "71f06ad7-673b-40f2-b467-5944a54c2a43",
+        "master_key": "BORZ",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "5d939b8d-e4a7-4440-8a0a-c6246ef2b6f5",
+        "master_key": "BORA",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "15605179-b41b-4723-b3b8-15bd75a390ad",
+        "master_key": "BBP140",
+        "product_master_name": "Barra Body Pump 28mm - 1,40 Mts",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "1f248e9c-397b-4d0d-9328-226a38b31089",
+        "master_key": "BBPB",
+        "product_master_name": "Barras Body Pump",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "9f5656ab-1d9d-4da1-ad7b-5b7c824cd68a",
+        "master_key": "BTN001",
+        "product_master_name": "Topes Barra Tope Barra 28 Mm",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "7e892d73-a682-451c-a1d7-d62de1191e22",
+        "master_key": "BTN002",
+        "product_master_name": "Tope Barra 30 Mm",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "cc297ecf-d289-433b-b438-1b5ceca40b68",
+        "master_key": "BTO001",
+        "product_master_name": "Tope Barra Olímpica",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "b982bfa9-3a9d-4790-9706-91aa2fe99106",
+        "master_key": "BTO003",
+        "product_master_name": "Tope Barra Olimpica Crossfit",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "9cedec55-2024-448c-8f39-109678509d84",
+        "master_key": "BTO004",
+        "product_master_name": "Tope Olimpico Crossfit Rojo",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      },
+      {
+        "product_master_id": "5cdb3bc4-9b1b-40f9-bba4-942fea66c81e",
+        "master_key": "SOP033",
+        "product_master_name": "Soporte Para 8",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras"
+      }
+    ],
+    "variants": [
+      {
+        "product_variant_id": "dbd91209-0bf0-43f7-bb45-5bf76a9eea8d",
+        "variant_sku": "BN120",
+        "variant_name": "Barra 28mm Cromada - 1,20 Mts",
+        "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+        "product_master_sku": "BN",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "24.03"
+      },
+      {
+        "product_variant_id": "afd911cd-4fc3-4402-a83a-792ac7643d78",
+        "variant_sku": "BN120Z",
+        "variant_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+        "product_master_id": "26bef071-708f-48bf-9383-abc2fabc172d",
+        "product_master_sku": "BNZ",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "24.03"
+      },
+      {
+        "product_variant_id": "b6b7fec9-da7c-4651-ad16-91a2250f3c1f",
+        "variant_sku": "BN150",
+        "variant_name": "Barra 28mm Cromada - 1,50 Mts",
+        "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+        "product_master_sku": "BN",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "24.59"
+      },
+      {
+        "product_variant_id": "57587740-c87e-4e8d-b443-290e2b519cd3",
+        "variant_sku": "BN180",
+        "variant_name": "Barra 28mm Cromada - 1,80 Mts",
+        "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+        "product_master_sku": "BN",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "33.87"
+      },
+      {
+        "product_variant_id": "cf102523-a978-4532-bfc5-5cc0d5a2c14d",
+        "variant_sku": "BN220",
+        "variant_name": "Barra 28mm Cromada - 2,20 Mts",
+        "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+        "product_master_sku": "BN",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "39.76"
+      },
+      {
+        "product_variant_id": "b1bc7fdb-6401-4ac9-ad94-0ba1d4d0b2c8",
+        "variant_sku": "BN085",
+        "variant_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+        "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+        "product_master_sku": "BN",
+        "product_master_name": "Barra 28 MM Cromada",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "34.55"
+      },
+      {
+        "product_variant_id": "6efaacde-b8a2-4754-98d0-66dc27cdfb2b",
+        "variant_sku": "BO120",
+        "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+        "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+        "product_master_sku": "BO",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "47.35"
+      },
+      {
+        "product_variant_id": "2d60af0f-4ad5-45f3-ae6e-05f10ff82566",
+        "variant_sku": "BO120Z",
+        "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+        "product_master_id": "853a5031-e92c-43ed-b126-367c3f8a5264",
+        "product_master_sku": "BOZ",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "50.13"
+      },
+      {
+        "product_variant_id": "de2b4319-628a-42a2-bbc1-0d129824a63f",
+        "variant_sku": "BO150",
+        "variant_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+        "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+        "product_master_sku": "BO",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "54.31"
+      },
+      {
+        "product_variant_id": "80b643b4-b7cc-43ae-ac5c-c53759be307c",
+        "variant_sku": "BO180",
+        "variant_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+        "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+        "product_master_sku": "BO",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "59.87"
+      },
+      {
+        "product_variant_id": "6c57469a-9841-44cd-9d74-a312664f4762",
+        "variant_sku": "BO220",
+        "variant_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+        "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+        "product_master_sku": "BO",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "71.16"
+      },
+      {
+        "product_variant_id": "e3178388-b10b-4e5b-b292-df6ef9968485",
+        "variant_sku": "BO085",
+        "variant_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+        "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+        "product_master_sku": "BO",
+        "product_master_name": "Barra Olímpica Cromada - HOME",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "62.13"
+      },
+      {
+        "product_variant_id": "b8ec985c-d1d2-4c47-973c-25af8892cc7f",
+        "variant_sku": "BOR120",
+        "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+        "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+        "product_master_sku": "BOR",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "69.03"
+      },
+      {
+        "product_variant_id": "5ad606eb-73ea-498c-8964-456b5d103cbe",
+        "variant_sku": "BOR120Z",
+        "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+        "product_master_id": "71f06ad7-673b-40f2-b467-5944a54c2a43",
+        "product_master_sku": "BORZ",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "72.93"
+      },
+      {
+        "product_variant_id": "662512c7-fc73-42ae-a7b8-7edd98bd13c8",
+        "variant_sku": "BOR150",
+        "variant_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+        "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+        "product_master_sku": "BOR",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "81.94"
+      },
+      {
+        "product_variant_id": "8f2c9607-7e65-4c7f-801c-2063619ca3e0",
+        "variant_sku": "BOR180",
+        "variant_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+        "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+        "product_master_sku": "BOR",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "92.47"
+      },
+      {
+        "product_variant_id": "4e6eb3f3-fd37-4a7b-b05e-c4c32dbe68a8",
+        "variant_sku": "BOR220",
+        "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+        "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+        "product_master_sku": "BOR",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "132.14"
+      },
+      {
+        "product_variant_id": "94f3ee7d-a3fc-4ba2-a66c-63f3bbb5b061",
+        "variant_sku": "BOR220A",
+        "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+        "product_master_id": "5d939b8d-e4a7-4440-8a0a-c6246ef2b6f5",
+        "product_master_sku": "BORA",
+        "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "106.25"
+      },
+      {
+        "product_variant_id": "e39c87ce-09e0-4a61-b959-a602c49f3c3c",
+        "variant_sku": "BBP140",
+        "variant_name": "Barra Body Pump 28mm - 1,40 Mts",
+        "product_master_id": "15605179-b41b-4723-b3b8-15bd75a390ad",
+        "product_master_sku": "BBP140",
+        "product_master_name": "Barra Body Pump 28mm - 1,40 Mts",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "11.53"
+      },
+      {
+        "product_variant_id": "059931cb-1982-4fd4-a4f3-e2c050d79b1c",
+        "variant_sku": "BBP140B",
+        "variant_name": "Barra Body Pump 30mm - 1,40 Mts",
+        "product_master_id": "1f248e9c-397b-4d0d-9328-226a38b31089",
+        "product_master_sku": "BBPB",
+        "product_master_name": "Barras Body Pump",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "11.53"
+      },
+      {
+        "product_variant_id": "92e5a013-4497-426b-95a1-ec4e4bf548cc",
+        "variant_sku": "BTN001",
+        "variant_name": "Topes Barra Tope Barra 28 Mm",
+        "product_master_id": "9f5656ab-1d9d-4da1-ad7b-5b7c824cd68a",
+        "product_master_sku": "BTN001",
+        "product_master_name": "Topes Barra Tope Barra 28 Mm",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "0.93"
+      },
+      {
+        "product_variant_id": "9cc6c815-7103-4054-8f1b-b3a345d5a76e",
+        "variant_sku": "BTN002",
+        "variant_name": "Tope Barra 30 Mm",
+        "product_master_id": "7e892d73-a682-451c-a1d7-d62de1191e22",
+        "product_master_sku": "BTN002",
+        "product_master_name": "Tope Barra 30 Mm",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "0.93"
+      },
+      {
+        "product_variant_id": "3e5b8aff-6255-4d89-b75b-aa99e485937c",
+        "variant_sku": "BTO001",
+        "variant_name": "Tope Barra Olímpica",
+        "product_master_id": "cc297ecf-d289-433b-b438-1b5ceca40b68",
+        "product_master_sku": "BTO001",
+        "product_master_name": "Tope Barra Olímpica",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "2.10"
+      },
+      {
+        "product_variant_id": "71be5208-8fa1-485d-a992-edf4793c29e0",
+        "variant_sku": "BTO003",
+        "variant_name": "Tope Barra Olimpica Crossfit",
+        "product_master_id": "b982bfa9-3a9d-4790-9706-91aa2fe99106",
+        "product_master_sku": "BTO003",
+        "product_master_name": "Tope Barra Olimpica Crossfit",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "4.92"
+      },
+      {
+        "product_variant_id": "8bea8941-9421-48bf-8430-6c7f660e35cc",
+        "variant_sku": "BTO004",
+        "variant_name": "Tope Olimpico Crossfit Rojo",
+        "product_master_id": "9cedec55-2024-448c-8f39-109678509d84",
+        "product_master_sku": "BTO004",
+        "product_master_name": "Tope Olimpico Crossfit Rojo",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "6.17"
+      },
+      {
+        "product_variant_id": "2de8dafa-6329-4afa-8e51-f49d7eae5bd2",
+        "variant_sku": "SOP033",
+        "variant_name": "Soporte Para 8",
+        "product_master_id": "5cdb3bc4-9b1b-40f9-bba4-942fea66c81e",
+        "product_master_sku": "SOP033",
+        "product_master_name": "Soporte Para 8",
+        "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "category_slug": "barras",
+        "price": "116.48"
+      }
+    ],
+    "price_entries": [
+      {
+        "variant_sku": "BN120",
+        "price": "24.03",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BN120Z",
+        "price": "24.03",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BN150",
+        "price": "24.59",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BN180",
+        "price": "33.87",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BN220",
+        "price": "39.76",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BN085",
+        "price": "34.55",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BO120",
+        "price": "47.35",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BO120Z",
+        "price": "50.13",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BO150",
+        "price": "54.31",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BO180",
+        "price": "59.87",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BO220",
+        "price": "71.16",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BO085",
+        "price": "62.13",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BOR120",
+        "price": "69.03",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BOR120Z",
+        "price": "72.93",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BOR150",
+        "price": "81.94",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BOR180",
+        "price": "92.47",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BOR220",
+        "price": "132.14",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BOR220A",
+        "price": "106.25",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BBP140",
+        "price": "11.53",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BBP140B",
+        "price": "11.53",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BTN001",
+        "price": "0.93",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BTN002",
+        "price": "0.93",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BTO001",
+        "price": "2.10",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BTO003",
+        "price": "4.92",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "BTO004",
+        "price": "6.17",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      },
+      {
+        "variant_sku": "SOP033",
+        "price": "116.48",
+        "currency": "EUR",
+        "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+      }
+    ],
+    "specs": [],
+    "variant_skus": [
+      "BBP140",
+      "BBP140B",
+      "BN085",
+      "BN120",
+      "BN120Z",
+      "BN150",
+      "BN180",
+      "BN220",
+      "BO085",
+      "BO120",
+      "BO120Z",
+      "BO150",
+      "BO180",
+      "BO220",
+      "BOR120",
+      "BOR120Z",
+      "BOR150",
+      "BOR180",
+      "BOR220",
+      "BOR220A",
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004",
+      "SOP033"
+    ]
+  },
+  "db_after_contains_only_requested_page_products": true,
+  "unexpected_skus_from_other_pages": [],
+  "products_visible_in_app_count": 26,
+  "products_visible_in_app": [
+    {
+      "variant_sku": "BN120",
+      "variant_name": "Barra 28mm Cromada - 1,20 Mts",
+      "master_key": "BN",
+      "master_name": "Barra 28 MM Cromada",
+      "category_slug": "barras",
+      "price": "24.03"
+    },
+    {
+      "variant_sku": "BN120Z",
+      "variant_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+      "master_key": "BNZ",
+      "master_name": "Barra 28 MM Cromada",
+      "category_slug": "barras",
+      "price": "24.03"
+    },
+    {
+      "variant_sku": "BN150",
+      "variant_name": "Barra 28mm Cromada - 1,50 Mts",
+      "master_key": "BN",
+      "master_name": "Barra 28 MM Cromada",
+      "category_slug": "barras",
+      "price": "24.59"
+    },
+    {
+      "variant_sku": "BN180",
+      "variant_name": "Barra 28mm Cromada - 1,80 Mts",
+      "master_key": "BN",
+      "master_name": "Barra 28 MM Cromada",
+      "category_slug": "barras",
+      "price": "33.87"
+    },
+    {
+      "variant_sku": "BN220",
+      "variant_name": "Barra 28mm Cromada - 2,20 Mts",
+      "master_key": "BN",
+      "master_name": "Barra 28 MM Cromada",
+      "category_slug": "barras",
+      "price": "39.76"
+    },
+    {
+      "variant_sku": "BN085",
+      "variant_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+      "master_key": "BN",
+      "master_name": "Barra 28 MM Cromada",
+      "category_slug": "barras",
+      "price": "34.55"
+    },
+    {
+      "variant_sku": "BO120",
+      "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+      "master_key": "BO",
+      "master_name": "Barra Olímpica Cromada - HOME",
+      "category_slug": "barras",
+      "price": "47.35"
+    },
+    {
+      "variant_sku": "BO120Z",
+      "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+      "master_key": "BOZ",
+      "master_name": "Barra Olímpica Cromada - HOME",
+      "category_slug": "barras",
+      "price": "50.13"
+    },
+    {
+      "variant_sku": "BO150",
+      "variant_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+      "master_key": "BO",
+      "master_name": "Barra Olímpica Cromada - HOME",
+      "category_slug": "barras",
+      "price": "54.31"
+    },
+    {
+      "variant_sku": "BO180",
+      "variant_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+      "master_key": "BO",
+      "master_name": "Barra Olímpica Cromada - HOME",
+      "category_slug": "barras",
+      "price": "59.87"
+    },
+    {
+      "variant_sku": "BO220",
+      "variant_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+      "master_key": "BO",
+      "master_name": "Barra Olímpica Cromada - HOME",
+      "category_slug": "barras",
+      "price": "71.16"
+    },
+    {
+      "variant_sku": "BO085",
+      "variant_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+      "master_key": "BO",
+      "master_name": "Barra Olímpica Cromada - HOME",
+      "category_slug": "barras",
+      "price": "62.13"
+    },
+    {
+      "variant_sku": "BOR120",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+      "master_key": "BOR",
+      "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_slug": "barras",
+      "price": "69.03"
+    },
+    {
+      "variant_sku": "BOR120Z",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+      "master_key": "BORZ",
+      "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_slug": "barras",
+      "price": "72.93"
+    },
+    {
+      "variant_sku": "BOR150",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+      "master_key": "BOR",
+      "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_slug": "barras",
+      "price": "81.94"
+    },
+    {
+      "variant_sku": "BOR180",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+      "master_key": "BOR",
+      "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_slug": "barras",
+      "price": "92.47"
+    },
+    {
+      "variant_sku": "BOR220",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+      "master_key": "BOR",
+      "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_slug": "barras",
+      "price": "132.14"
+    },
+    {
+      "variant_sku": "BOR220A",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+      "master_key": "BORA",
+      "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_slug": "barras",
+      "price": "106.25"
+    },
+    {
+      "variant_sku": "BBP140",
+      "variant_name": "Barra Body Pump 28mm - 1,40 Mts",
+      "master_key": "BBP140",
+      "master_name": "Barra Body Pump 28mm - 1,40 Mts",
+      "category_slug": "barras",
+      "price": "11.53"
+    },
+    {
+      "variant_sku": "BBP140B",
+      "variant_name": "Barra Body Pump 30mm - 1,40 Mts",
+      "master_key": "BBPB",
+      "master_name": "Barras Body Pump",
+      "category_slug": "barras",
+      "price": "11.53"
+    },
+    {
+      "variant_sku": "BTN001",
+      "variant_name": "Topes Barra Tope Barra 28 Mm",
+      "master_key": "BTN001",
+      "master_name": "Topes Barra Tope Barra 28 Mm",
+      "category_slug": "barras",
+      "price": "0.93"
+    },
+    {
+      "variant_sku": "BTN002",
+      "variant_name": "Tope Barra 30 Mm",
+      "master_key": "BTN002",
+      "master_name": "Tope Barra 30 Mm",
+      "category_slug": "barras",
+      "price": "0.93"
+    },
+    {
+      "variant_sku": "BTO001",
+      "variant_name": "Tope Barra Olímpica",
+      "master_key": "BTO001",
+      "master_name": "Tope Barra Olímpica",
+      "category_slug": "barras",
+      "price": "2.10"
+    },
+    {
+      "variant_sku": "BTO003",
+      "variant_name": "Tope Barra Olimpica Crossfit",
+      "master_key": "BTO003",
+      "master_name": "Tope Barra Olimpica Crossfit",
+      "category_slug": "barras",
+      "price": "4.92"
+    },
+    {
+      "variant_sku": "BTO004",
+      "variant_name": "Tope Olimpico Crossfit Rojo",
+      "master_key": "BTO004",
+      "master_name": "Tope Olimpico Crossfit Rojo",
+      "category_slug": "barras",
+      "price": "6.17"
+    },
+    {
+      "variant_sku": "SOP033",
+      "variant_name": "Soporte Para 8",
+      "master_key": "SOP033",
+      "master_name": "Soporte Para 8",
+      "category_slug": "barras",
+      "price": "116.48"
+    }
+  ],
+  "blocked_rows_detail": [],
+  "status": "pass",
+  "fail_reasons": [],
+  "products_imported": [
+    "BBP140",
+    "BBP140B",
+    "BN085",
+    "BN120",
+    "BN120Z",
+    "BN150",
+    "BN180",
+    "BN220",
+    "BO085",
+    "BO120",
+    "BO120Z",
+    "BO150",
+    "BO180",
+    "BO220",
+    "BOR120",
+    "BOR120Z",
+    "BOR150",
+    "BOR180",
+    "BOR220",
+    "BOR220A",
+    "BTN001",
+    "BTN002",
+    "BTO001",
+    "BTO003",
+    "BTO004",
+    "SOP033"
+  ],
+  "products_blocked": [],
+  "products_expected_but_not_imported": [],
+  "category_warnings": [],
+  "grouping_warnings": [],
+  "review_gate_warnings": [],
+  "app_visual_check": {
+    "products_page_should_show_only_requested_page": true,
+    "expected_visible_products_count": 26,
+    "actual_visible_products_count": 26,
+    "visible_skus": [
+      "BBP140",
+      "BBP140B",
+      "BN085",
+      "BN120",
+      "BN120Z",
+      "BN150",
+      "BN180",
+      "BN220",
+      "BO085",
+      "BO120",
+      "BO120Z",
+      "BO150",
+      "BO180",
+      "BO220",
+      "BOR120",
+      "BOR120Z",
+      "BOR150",
+      "BOR180",
+      "BOR220",
+      "BOR220A",
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004",
+      "SOP033"
+    ],
+    "visible_categories": [
+      "barras"
+    ],
+    "note": "Open Products page in the app after this run to visually inspect only page 34 products."
+  },
+  "diff": {
+    "inserted_masters": [
+      "BN",
+      "BNZ",
+      "BO",
+      "BOZ",
+      "BOR",
+      "BORZ",
+      "BORA",
+      "BBP140",
+      "BBPB",
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004",
+      "SOP033"
+    ],
+    "inserted_variants": [
+      "BBP140",
+      "BBP140B",
+      "BN085",
+      "BN120",
+      "BN120Z",
+      "BN150",
+      "BN180",
+      "BN220",
+      "BO085",
+      "BO120",
+      "BO120Z",
+      "BO150",
+      "BO180",
+      "BO220",
+      "BOR120",
+      "BOR120Z",
+      "BOR150",
+      "BOR180",
+      "BOR220",
+      "BOR220A",
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004",
+      "SOP033"
+    ],
+    "skipped_rows": 0,
+    "blocked_rows": [],
+    "categories_created": [],
+    "mappings_created": [],
+    "unexpected_categories": [],
+    "products_imported_but_suspicious": [
+      "BTN001",
+      "BTN002",
+      "BTO001",
+      "BTO003",
+      "BTO004"
+    ]
+  },
+  "warnings": [],
+  "suspicious_variant_candidates": [
+    {
+      "suspicion_id": "S-0001",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        34
+      ],
+      "skus": [
+        "BTN001",
+        "BTN002"
+      ],
+      "current_master_keys": [
+        "BTN001",
+        "BTN002"
+      ],
+      "expected_master_key": "BTN",
+      "grouping_reasons": [
+        "explicit_one_per_sku",
+        "explicit_one_per_sku"
+      ],
+      "possible_false_negative": true
+    },
+    {
+      "suspicion_id": "S-0002",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        34
+      ],
+      "skus": [
+        "BTO001",
+        "BTO003",
+        "BTO004"
+      ],
+      "current_master_keys": [
+        "BTO001",
+        "BTO003",
+        "BTO004"
+      ],
+      "expected_master_key": "BTO",
+      "grouping_reasons": [
+        "explicit_one_per_sku",
+        "explicit_one_per_sku",
+        "explicit_one_per_sku"
+      ],
+      "possible_false_negative": true
+    }
+  ],
+  "manual_approval": {
+    "page_approved": false,
+    "note": "Page is not approved until the user gives explicit OK. Do not advance to the next page automatically."
+  }
+}

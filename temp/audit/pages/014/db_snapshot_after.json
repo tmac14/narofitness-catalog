@@ -1,0 +1,449 @@
+{
+  "masters": [
+    {
+      "product_master_id": "9e01e826-b353-41c8-b1ea-b21043d216cc",
+      "master_key": "SOP028",
+      "product_master_name": "Soporte Power Bag 5 sacos",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "56ad3588-67c1-4c0c-85d9-2db733e65435",
+      "master_key": "SOP029",
+      "product_master_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+      "master_key": "CRO-SACO-GUSANO",
+      "product_master_name": "Saco Gusano",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "56574224-0ed1-43a7-a19d-daa96dd8a7df",
+      "master_key": "CRO133",
+      "product_master_name": "Cinturon Lastrado (negro)",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "product_master_name": "Barras Crossfit - NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    }
+  ],
+  "variants": [
+    {
+      "product_variant_id": "4abd87ea-521a-4608-ad13-15b5e16697ab",
+      "variant_sku": "SOP028",
+      "variant_name": "Soporte Power Bag 5 sacos",
+      "product_master_id": "9e01e826-b353-41c8-b1ea-b21043d216cc",
+      "product_master_sku": "SOP028",
+      "product_master_name": "Soporte Power Bag 5 sacos",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "200.55"
+    },
+    {
+      "product_variant_id": "d19cd925-19ab-43f9-9270-0fe9a3ecd2da",
+      "variant_sku": "SOP029",
+      "variant_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "product_master_id": "56ad3588-67c1-4c0c-85d9-2db733e65435",
+      "product_master_sku": "SOP029",
+      "product_master_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "256.56"
+    },
+    {
+      "product_variant_id": "e60886ad-3f46-4f3b-902e-6a6644a96444",
+      "variant_sku": "CRO107",
+      "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+      "product_master_sku": "CRO-SACO-GUSANO",
+      "product_master_name": "Saco Gusano",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "184.65"
+    },
+    {
+      "product_variant_id": "31a64af0-702d-431d-969c-906fcbb4dedc",
+      "variant_sku": "CRO131",
+      "variant_name": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+      "product_master_sku": "CRO-SACO-GUSANO",
+      "product_master_name": "Saco Gusano",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "268.79"
+    },
+    {
+      "product_variant_id": "2a1971b5-cdcd-4140-81d5-97b3e87db888",
+      "variant_sku": "CRO108",
+      "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+      "product_master_sku": "CRO-SACO-GUSANO",
+      "product_master_name": "Saco Gusano",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "322.32"
+    },
+    {
+      "product_variant_id": "a2929c3b-771e-430e-83bd-23a4f5b20362",
+      "variant_sku": "CRO107NEXO",
+      "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+      "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+      "product_master_sku": "CRO-SACO-GUSANO",
+      "product_master_name": "Saco Gusano",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "184.65"
+    },
+    {
+      "product_variant_id": "3999dc43-cb0b-4014-8314-9d036448779a",
+      "variant_sku": "CRO108NEXO",
+      "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO",
+      "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+      "product_master_sku": "CRO-SACO-GUSANO",
+      "product_master_name": "Saco Gusano",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "322.32"
+    },
+    {
+      "product_variant_id": "408ca4d1-8091-414a-a516-e05697cf4b78",
+      "variant_sku": "CRO133",
+      "variant_name": "Cinturon Lastrado (negro)",
+      "product_master_id": "56574224-0ed1-43a7-a19d-daa96dd8a7df",
+      "product_master_sku": "CRO133",
+      "product_master_name": "Cinturon Lastrado (negro)",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "8.67"
+    },
+    {
+      "product_variant_id": "b76ea722-11f9-4350-92ef-ca3096de5d44",
+      "variant_sku": "BOC001",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "172.21"
+    },
+    {
+      "product_variant_id": "d1f37bb1-f1c3-4994-bacb-2dd744adae0f",
+      "variant_sku": "BOC002",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "149.10"
+    },
+    {
+      "product_variant_id": "7849efb6-fb98-4c73-8456-1a0b928650b5",
+      "variant_sku": "BOC003",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "162.16"
+    },
+    {
+      "product_variant_id": "ce53aa61-5321-479e-982e-ad472468c151",
+      "variant_sku": "BOC004",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "172.21"
+    },
+    {
+      "product_variant_id": "1a97bd6e-6903-4420-932a-0bed832aabd7",
+      "variant_sku": "BOC008",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "149.10"
+    },
+    {
+      "product_variant_id": "1084b625-5b98-4b0c-80d2-df4837fc24d9",
+      "variant_sku": "BOC005",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "162.16"
+    },
+    {
+      "product_variant_id": "3e96d64a-c1a1-45f1-9bb5-98e0058f2215",
+      "variant_sku": "BOC006",
+      "variant_name": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "93.11"
+    },
+    {
+      "product_variant_id": "2ad9567d-d8d5-4380-bb35-db41edddbce4",
+      "variant_sku": "BOC007",
+      "variant_name": "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+      "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT",
+      "product_master_name": "Barras Crossfit",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "93.11"
+    },
+    {
+      "product_variant_id": "bc2dbe62-b90f-4aae-8ecd-611c0307717e",
+      "variant_sku": "BOC001NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO",
+      "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+      "product_master_name": "Barras Crossfit - NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "175.80"
+    },
+    {
+      "product_variant_id": "55cec443-9c9c-4dd2-9bda-33650ba11bb4",
+      "variant_sku": "BOC002NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO",
+      "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+      "product_master_name": "Barras Crossfit - NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "152.21"
+    },
+    {
+      "product_variant_id": "daf9afd1-bf25-44cd-8ba0-38f0b004cc4e",
+      "variant_sku": "BOC003NEXO",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO",
+      "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+      "product_master_name": "Barras Crossfit - NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "165.54"
+    },
+    {
+      "product_variant_id": "c50bb017-d6e6-4bc3-8f02-62dca7caa50e",
+      "variant_sku": "BOC004NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO",
+      "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+      "product_master_name": "Barras Crossfit - NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "175.80"
+    },
+    {
+      "product_variant_id": "136a73b8-c8d8-495f-bf7e-bfcbf6d26822",
+      "variant_sku": "BOC008NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO",
+      "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+      "product_master_name": "Barras Crossfit - NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "152.21"
+    },
+    {
+      "product_variant_id": "43b5282b-5f94-475b-991e-1b2df4968552",
+      "variant_sku": "BOC005NEXO",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO",
+      "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+      "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+      "product_master_name": "Barras Crossfit - NEXO",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "165.54"
+    }
+  ],
+  "price_entries": [
+    {
+      "variant_sku": "SOP028",
+      "price": "200.55",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "SOP029",
+      "price": "256.56",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "CRO107",
+      "price": "184.65",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "CRO131",
+      "price": "268.79",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "CRO108",
+      "price": "322.32",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "CRO107NEXO",
+      "price": "184.65",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "CRO108NEXO",
+      "price": "322.32",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "CRO133",
+      "price": "8.67",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC001",
+      "price": "172.21",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC002",
+      "price": "149.10",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC003",
+      "price": "162.16",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC004",
+      "price": "172.21",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC008",
+      "price": "149.10",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC005",
+      "price": "162.16",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC006",
+      "price": "93.11",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC007",
+      "price": "93.11",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC001NEXO",
+      "price": "175.80",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC002NEXO",
+      "price": "152.21",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC003NEXO",
+      "price": "165.54",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC004NEXO",
+      "price": "175.80",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC008NEXO",
+      "price": "152.21",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    },
+    {
+      "variant_sku": "BOC005NEXO",
+      "price": "165.54",
+      "currency": "EUR",
+      "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+    }
+  ],
+  "specs": [],
+  "variant_skus": [
+    "BOC001",
+    "BOC001NEXO",
+    "BOC002",
+    "BOC002NEXO",
+    "BOC003",
+    "BOC003NEXO",
+    "BOC004",
+    "BOC004NEXO",
+    "BOC005",
+    "BOC005NEXO",
+    "BOC006",
+    "BOC007",
+    "BOC008",
+    "BOC008NEXO",
+    "CRO107",
+    "CRO107NEXO",
+    "CRO108",
+    "CRO108NEXO",
+    "CRO131",
+    "CRO133",
+    "SOP028",
+    "SOP029"
+  ]
+}

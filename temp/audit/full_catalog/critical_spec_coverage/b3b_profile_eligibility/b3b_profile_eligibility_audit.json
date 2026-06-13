@@ -1,0 +1,664 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B3B-CATEGORY-PROFILE-ELIGIBILITY-AUDIT",
+  "status": "B3B_PROFILE_ELIGIBILITY_AUDIT_COMPLETE",
+  "generated_at": "2026-06-12T13:52:44.083411+00:00",
+  "read_only_confirmation": {
+    "code_modified": false,
+    "database_modified": false
+  },
+  "baseline": {
+    "expected": {
+      "variants_total": 871,
+      "masters_total": 534,
+      "rows_blocked": 0,
+      "longitud_mm": 20
+    },
+    "actual": {
+      "variants_total": 871,
+      "masters_total": 534,
+      "longitud_mm": 20
+    },
+    "baseline_ok": true
+  },
+  "categories_with_profile": {
+    "barras": [
+      "peso_kg",
+      "longitud_mm",
+      "material",
+      "acabado",
+      "diametro_mm"
+    ],
+    "bicicletas-estaticas": [
+      "smart_connect"
+    ],
+    "cardio": [
+      "peso_kg",
+      "smart_connect",
+      "color"
+    ],
+    "cintas-de-correr": [
+      "smart_connect"
+    ],
+    "cross-training": [
+      "peso_kg",
+      "peso_lb",
+      "color",
+      "material",
+      "acabado",
+      "unidades_pack",
+      "capacidad_balones"
+    ],
+    "discos": [
+      "peso_kg",
+      "color",
+      "material",
+      "casquillo",
+      "diametro_mm",
+      "acabado"
+    ],
+    "mancuernas": [
+      "peso_kg",
+      "color",
+      "material",
+      "acabado"
+    ],
+    "remos": [
+      "smart_connect"
+    ]
+  },
+  "categories_without_profile": [
+    {
+      "slug": "material-de-estudio",
+      "masters": 267,
+      "variants": 269,
+      "pages": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        64,
+        65
+      ],
+      "classification": "PROFILE_READY_LOW_RISK"
+    },
+    {
+      "slug": "elipticas",
+      "masters": 5,
+      "variants": 5,
+      "pages": [
+        8,
+        9
+      ],
+      "classification": "PROFILE_NOT_USEFUL"
+    },
+    {
+      "slug": "soportes-y-mancuerneros",
+      "masters": 1,
+      "variants": 1,
+      "pages": [
+        12
+      ],
+      "classification": "PROFILE_NOT_USEFUL"
+    }
+  ],
+  "inventory_by_category": [
+    {
+      "slug": "cross-training",
+      "name": "Cross Training",
+      "masters": 150,
+      "variants": 278,
+      "singleton_masters": 133,
+      "multi_variant_masters": 17
+    },
+    {
+      "slug": "material-de-estudio",
+      "name": "Material de estudio",
+      "masters": 267,
+      "variants": 269,
+      "singleton_masters": 266,
+      "multi_variant_masters": 1
+    },
+    {
+      "slug": "mancuernas",
+      "name": "Mancuernas",
+      "masters": 23,
+      "variants": 158,
+      "singleton_masters": 12,
+      "multi_variant_masters": 11
+    },
+    {
+      "slug": "discos",
+      "name": "Discos",
+      "masters": 20,
+      "variants": 81,
+      "singleton_masters": 7,
+      "multi_variant_masters": 13
+    },
+    {
+      "slug": "barras",
+      "name": "Barras",
+      "masters": 20,
+      "variants": 31,
+      "singleton_masters": 17,
+      "multi_variant_masters": 3
+    },
+    {
+      "slug": "cardio",
+      "name": "Cardio",
+      "masters": 17,
+      "variants": 17,
+      "singleton_masters": 17,
+      "multi_variant_masters": 0
+    },
+    {
+      "slug": "bicicletas-estaticas",
+      "name": "Bicicletas Estáticas",
+      "masters": 13,
+      "variants": 13,
+      "singleton_masters": 13,
+      "multi_variant_masters": 0
+    },
+    {
+      "slug": "cintas-de-correr",
+      "name": "Cintas de correr",
+      "masters": 13,
+      "variants": 13,
+      "singleton_masters": 13,
+      "multi_variant_masters": 0
+    },
+    {
+      "slug": "elipticas",
+      "name": "Elípticas",
+      "masters": 5,
+      "variants": 5,
+      "singleton_masters": 5,
+      "multi_variant_masters": 0
+    },
+    {
+      "slug": "remos",
+      "name": "Remos",
+      "masters": 5,
+      "variants": 5,
+      "singleton_masters": 5,
+      "multi_variant_masters": 0
+    },
+    {
+      "slug": "soportes-y-mancuerneros",
+      "name": "Soportes y Mancuerneros",
+      "masters": 1,
+      "variants": 1,
+      "singleton_masters": 1,
+      "multi_variant_masters": 0
+    }
+  ],
+  "specs_by_category": {
+    "cross-training": {
+      "variant": {
+        "capacidad_balones": 1,
+        "peso_kg": 145,
+        "peso_lb": 4,
+        "color": 82
+      },
+      "master": {
+        "casquillo": 2,
+        "material": 2,
+        "color": 5
+      }
+    },
+    "discos": {
+      "variant": {
+        "peso_kg": 75,
+        "color": 20
+      },
+      "master": {
+        "casquillo": 11,
+        "material": 11,
+        "color": 4
+      }
+    },
+    "barras": {
+      "variant": {
+        "peso_kg": 5,
+        "longitud_mm": 20,
+        "color": 4
+      },
+      "master": {}
+    },
+    "cintas-de-correr": {
+      "variant": {
+        "smart_connect": 1
+      },
+      "master": {}
+    },
+    "mancuernas": {
+      "variant": {
+        "color": 18,
+        "peso_kg": 149
+      },
+      "master": {
+        "material": 4,
+        "color": 3,
+        "casquillo": 4
+      }
+    },
+    "material-de-estudio": {
+      "variant": {
+        "color": 65,
+        "peso_kg": 57
+      },
+      "master": {
+        "casquillo": 4,
+        "material": 4
+      }
+    },
+    "remos": {
+      "variant": {
+        "smart_connect": 3
+      },
+      "master": {}
+    },
+    "cardio": {
+      "variant": {
+        "smart_connect": 2
+      },
+      "master": {}
+    },
+    "bicicletas-estaticas": {
+      "variant": {
+        "smart_connect": 4
+      },
+      "master": {}
+    }
+  },
+  "pages_by_category": {
+    "cintas-de-correr": [
+      4,
+      7,
+      8,
+      9
+    ],
+    "material-de-estudio": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      61,
+      62,
+      64,
+      65
+    ],
+    "cardio": [
+      5,
+      6,
+      9
+    ],
+    "elipticas": [
+      8,
+      9
+    ],
+    "mancuernas": [
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "cross-training": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31
+    ],
+    "discos": [
+      11,
+      12,
+      21,
+      23,
+      33
+    ],
+    "remos": [
+      4,
+      8
+    ],
+    "bicicletas-estaticas": [
+      3,
+      7,
+      8,
+      9
+    ],
+    "soportes-y-mancuerneros": [
+      12
+    ],
+    "barras": [
+      34,
+      35
+    ]
+  },
+  "classifications": {
+    "material-de-estudio": {
+      "slug": "material-de-estudio",
+      "name": "Material de estudio",
+      "masters": 267,
+      "variants": 269,
+      "singleton_masters": 266,
+      "multi_variant_masters": 1,
+      "classification": "PROFILE_READY_LOW_RISK",
+      "reason": "peso_kg persisted on 57/269 variants (21.2%)",
+      "proposed_profile_rows": [
+        {
+          "category_slug": "material-de-estudio",
+          "spec_key": "peso_kg",
+          "is_variant_axis_candidate": true,
+          "is_required": false,
+          "is_highlight": false,
+          "sort_order": 10,
+          "print_group": "variant"
+        }
+      ],
+      "persisted_variant_specs": {
+        "color": 65,
+        "peso_kg": 57
+      },
+      "persisted_master_specs": {
+        "casquillo": 4,
+        "material": 4
+      },
+      "pages": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        64,
+        65
+      ],
+      "singleton_pct": 99.6,
+      "empty_column_risk": [],
+      "spec_role_notes": {
+        "peso_kg": "variant_axis",
+        "color": "material/variant axis when multi-variant"
+      },
+      "visibility_simulation": {
+        "variant_count": 269,
+        "has_profile_today": false,
+        "column_keys_current": [
+          "peso"
+        ],
+        "visible_column_keys_multi_variant": [
+          "peso"
+        ],
+        "variants_with_any_spec": 118,
+        "variants_with_value_by_column": {
+          "peso": 57
+        },
+        "multi_variant_master_count": 1,
+        "discovery_only_columns": [
+          "peso"
+        ]
+      }
+    },
+    "elipticas": {
+      "slug": "elipticas",
+      "name": "Elípticas",
+      "masters": 5,
+      "variants": 5,
+      "singleton_masters": 5,
+      "multi_variant_masters": 0,
+      "classification": "PROFILE_NOT_USEFUL",
+      "reason": "Zero persisted specs; profile would be empty columns only",
+      "proposed_profile_rows": [],
+      "persisted_variant_specs": {},
+      "persisted_master_specs": {},
+      "pages": [
+        8,
+        9
+      ],
+      "singleton_pct": 100.0,
+      "empty_column_risk": [],
+      "spec_role_notes": {},
+      "visibility_simulation": {
+        "variant_count": 5,
+        "has_profile_today": false,
+        "column_keys_current": [],
+        "visible_column_keys_multi_variant": [],
+        "variants_with_any_spec": 0,
+        "variants_with_value_by_column": {},
+        "multi_variant_master_count": 0,
+        "discovery_only_columns": []
+      }
+    },
+    "soportes-y-mancuerneros": {
+      "slug": "soportes-y-mancuerneros",
+      "name": "Soportes y Mancuerneros",
+      "masters": 1,
+      "variants": 1,
+      "singleton_masters": 1,
+      "multi_variant_masters": 0,
+      "classification": "PROFILE_NOT_USEFUL",
+      "reason": "Zero persisted specs; profile would be empty columns only",
+      "proposed_profile_rows": [],
+      "persisted_variant_specs": {},
+      "persisted_master_specs": {},
+      "pages": [
+        12
+      ],
+      "singleton_pct": 100.0,
+      "empty_column_risk": [],
+      "spec_role_notes": {},
+      "visibility_simulation": {
+        "variant_count": 1,
+        "has_profile_today": false,
+        "column_keys_current": [],
+        "visible_column_keys_multi_variant": [],
+        "variants_with_any_spec": 0,
+        "variants_with_value_by_column": {},
+        "multi_variant_master_count": 0,
+        "discovery_only_columns": []
+      }
+    }
+  },
+  "low_risk_candidates": [
+    {
+      "slug": "material-de-estudio",
+      "name": "Material de estudio",
+      "masters": 267,
+      "variants": 269,
+      "singleton_masters": 266,
+      "multi_variant_masters": 1,
+      "classification": "PROFILE_READY_LOW_RISK",
+      "reason": "peso_kg persisted on 57/269 variants (21.2%)",
+      "proposed_profile_rows": [
+        {
+          "category_slug": "material-de-estudio",
+          "spec_key": "peso_kg",
+          "is_variant_axis_candidate": true,
+          "is_required": false,
+          "is_highlight": false,
+          "sort_order": 10,
+          "print_group": "variant"
+        }
+      ],
+      "persisted_variant_specs": {
+        "color": 65,
+        "peso_kg": 57
+      },
+      "persisted_master_specs": {
+        "casquillo": 4,
+        "material": 4
+      },
+      "pages": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        64,
+        65
+      ],
+      "singleton_pct": 99.6,
+      "empty_column_risk": [],
+      "spec_role_notes": {
+        "peso_kg": "variant_axis",
+        "color": "material/variant axis when multi-variant"
+      },
+      "visibility_simulation": {
+        "variant_count": 269,
+        "has_profile_today": false,
+        "column_keys_current": [
+          "peso"
+        ],
+        "visible_column_keys_multi_variant": [
+          "peso"
+        ],
+        "variants_with_any_spec": 118,
+        "variants_with_value_by_column": {
+          "peso": 57
+        },
+        "multi_variant_master_count": 1,
+        "discovery_only_columns": [
+          "peso"
+        ]
+      }
+    }
+  ],
+  "mandatory_answers": {
+    "1_categories_without_profile": [
+      "material-de-estudio",
+      "elipticas",
+      "soportes-y-mancuerneros"
+    ],
+    "2_counts": {
+      "material-de-estudio": {
+        "masters": 267,
+        "variants": 269
+      },
+      "elipticas": {
+        "masters": 5,
+        "variants": 5
+      },
+      "soportes-y-mancuerneros": {
+        "masters": 1,
+        "variants": 1
+      }
+    },
+    "3_persisted_specs": {
+      "material-de-estudio": {
+        "variant": {
+          "color": 65,
+          "peso_kg": 57
+        },
+        "master": {
+          "casquillo": 4,
+          "material": 4
+        }
+      },
+      "elipticas": {},
+      "soportes-y-mancuerneros": {}
+    },
+    "4_visibility_gain": {
+      "material-de-estudio": {
+        "variants_with_any_spec": 118,
+        "columns_today": [
+          "peso"
+        ]
+      },
+      "elipticas": {
+        "variants_with_any_spec": 0,
+        "columns_today": []
+      },
+      "soportes-y-mancuerneros": {
+        "variants_with_any_spec": 0,
+        "columns_today": []
+      }
+    },
+    "8_remain_without_profile": [
+      "elipticas",
+      "soportes-y-mancuerneros"
+    ],
+    "9_needs_extraction_first": [],
+    "10_api_frontend_pdf_impact": "List/detail use load_printable_variant_columns(category_id, variants): without profile, discovery from variant.specs still surfaces persisted variant_axis specs when variants passed. Adding profile adds explicit column order/labels; empty profile keys may appear as columns before visible_variant_columns filters. PDF catalog_builder uses same resolver — profile affects column headers in family tables."
+  },
+  "risks": {
+    "empty_columns": [],
+    "discovery_occlusion": "Low risk: _discover_columns_from_variants appends specs not in profile when variants provided. Profile does not hide discovered specs. Risk is noise from profile keys with 0% fill."
+  },
+  "recommendation": {
+    "agent_2_plan_mode": "SPEC-B3B-MATERIAL-ESTUDIO-PESO-PROFILE",
+    "commercial_decision": [],
+    "no_fix": [
+      "elipticas",
+      "soportes-y-mancuerneros"
+    ]
+  }
+}

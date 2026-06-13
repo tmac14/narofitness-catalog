@@ -1,0 +1,242 @@
+[
+  {
+    "variant_sku": "DOBNEXO05N",
+    "variant_name": "Disco Bumper Negro - 5 kgs",
+    "master_key": "DOBNEXON",
+    "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "19.55"
+  },
+  {
+    "variant_sku": "DOBNEXO10N",
+    "variant_name": "Disco Bumper Negro - 10 kgs",
+    "master_key": "DOBNEXON",
+    "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "26.56"
+  },
+  {
+    "variant_sku": "DOBNEXO15N",
+    "variant_name": "Disco Bumper Negro - 15 kgs",
+    "master_key": "DOBNEXON",
+    "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "36.84"
+  },
+  {
+    "variant_sku": "DOBNEXO20N",
+    "variant_name": "Disco Bumper Negro - 20 kgs",
+    "master_key": "DOBNEXON",
+    "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "46.30"
+  },
+  {
+    "variant_sku": "DOBNEXO25N",
+    "variant_name": "Disco Bumper Negro - 25 kgs",
+    "master_key": "DOBNEXON",
+    "master_name": "Disco Bumper Negro NEXO - Goma Mazica Negro (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "55.10"
+  },
+  {
+    "variant_sku": "DOBN005",
+    "variant_name": "Disco Bumper Negro 3.0 - 5 kgs",
+    "master_key": "DOBN",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "18.80"
+  },
+  {
+    "variant_sku": "DOBN010",
+    "variant_name": "Disco Bumper Negro 3.0 - 10 kgs",
+    "master_key": "DOBN",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "26.57"
+  },
+  {
+    "variant_sku": "DOBN015",
+    "variant_name": "Disco Bumper Negro 3.0 - 15 kgs",
+    "master_key": "DOBN",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "36.84"
+  },
+  {
+    "variant_sku": "DOBN020",
+    "variant_name": "Disco Bumper Negro 3.0 - 20 kgs",
+    "master_key": "DOBN",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "46.30"
+  },
+  {
+    "variant_sku": "DOBN025",
+    "variant_name": "Disco Bumper Negro 3.0 - 25 kgs",
+    "master_key": "DOBN",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "55.10"
+  },
+  {
+    "variant_sku": "DOB005",
+    "variant_name": "Disco Bumper Negro 5 kgs",
+    "master_key": "DOB",
+    "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "19.17"
+  },
+  {
+    "variant_sku": "DOB010",
+    "variant_name": "Disco Bumper Negro 10 kgs",
+    "master_key": "DOB",
+    "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "27.10"
+  },
+  {
+    "variant_sku": "DOB015",
+    "variant_name": "Disco Bumper Negro 15 kgs",
+    "master_key": "DOB",
+    "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "39.67"
+  },
+  {
+    "variant_sku": "DOB020",
+    "variant_name": "Disco Bumper Negro 20 kgs",
+    "master_key": "DOB",
+    "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "52.79"
+  },
+  {
+    "variant_sku": "DOB025",
+    "variant_name": "Disco Bumper Negro 25 kgs",
+    "master_key": "DOB",
+    "master_name": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "66.77"
+  },
+  {
+    "variant_sku": "DOBNEXO05C",
+    "variant_name": "Disco Bumper Color - 5 kgs",
+    "master_key": "DOBNEXOC",
+    "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "22.39"
+  },
+  {
+    "variant_sku": "DOBNEXO10C",
+    "variant_name": "Disco Bumper Color - 10 kgs",
+    "master_key": "DOBNEXOC",
+    "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "29.72"
+  },
+  {
+    "variant_sku": "DOBNEXO15C",
+    "variant_name": "Disco Bumper Color - 15 kgs",
+    "master_key": "DOBNEXOC",
+    "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "40.23"
+  },
+  {
+    "variant_sku": "DOBNEXO20C",
+    "variant_name": "Disco Bumper Color - 20 kgs",
+    "master_key": "DOBNEXOC",
+    "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "51.16"
+  },
+  {
+    "variant_sku": "DOBNEXO25C",
+    "variant_name": "Disco Bumper Color - 25 kgs",
+    "master_key": "DOBNEXOC",
+    "master_name": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "60.20"
+  },
+  {
+    "variant_sku": "DOB3C005",
+    "variant_name": "Disco Bumper COLOR 3.0 - 5 kgs",
+    "master_key": "DOB3C",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "23.30"
+  },
+  {
+    "variant_sku": "DOB3C010",
+    "variant_name": "Disco Bumper COLOR 3.0 - 10 kgs",
+    "master_key": "DOB3C",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "31.25"
+  },
+  {
+    "variant_sku": "DOB3C015",
+    "variant_name": "Disco Bumper COLOR 3.0 - 15 kgs",
+    "master_key": "DOB3C",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "44.61"
+  },
+  {
+    "variant_sku": "DOB3C020",
+    "variant_name": "Disco Bumper COLOR 3.0 - 20 kgs",
+    "master_key": "DOB3C",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "57.97"
+  },
+  {
+    "variant_sku": "DOB3C025",
+    "variant_name": "Disco Bumper COLOR 3.0 - 25 kgs",
+    "master_key": "DOB3C",
+    "master_name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+    "category_slug": "discos",
+    "price": "63.65"
+  },
+  {
+    "variant_sku": "DOBC005",
+    "variant_name": "Disco Bumper Color 5 kgs - Gris",
+    "master_key": "DOBC",
+    "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "22.84"
+  },
+  {
+    "variant_sku": "DOBC010",
+    "variant_name": "Disco Bumper Color 10 kgs - Verde",
+    "master_key": "DOBC",
+    "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "29.69"
+  },
+  {
+    "variant_sku": "DOBC015",
+    "variant_name": "Disco Bumper Color 15 kgs - Amarillo",
+    "master_key": "DOBC",
+    "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "42.38"
+  },
+  {
+    "variant_sku": "DOBC020",
+    "variant_name": "Disco Bumper Color 20 kgs - Azul",
+    "master_key": "DOBC",
+    "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "55.07"
+  },
+  {
+    "variant_sku": "DOBC025",
+    "variant_name": "Disco Bumper Color 25 kgs - Rojo",
+    "master_key": "DOBC",
+    "master_name": "Disco Olimpico Bumper Color (Casquillo de Acero)",
+    "category_slug": "discos",
+    "price": "67.04"
+  }
+]

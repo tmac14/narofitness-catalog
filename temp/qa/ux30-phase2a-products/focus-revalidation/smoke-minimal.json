@@ -1,0 +1,24 @@
+{
+  "viewport390": {
+    "mode": "cards",
+    "cardCount": 6,
+    "tableVisible": false,
+    "dualMode": false,
+    "pass": true
+  },
+  "viewport1024": {
+    "mode": "table",
+    "cardCount": 0,
+    "tableVisible": true,
+    "dualMode": false,
+    "pass": true
+  },
+  "sheetContent390": {
+    "master": "Saco Gusano",
+    "variantCards": 5,
+    "nestedVariantTable": false,
+    "pdfButtonsInSheet": 5,
+    "fichaLinksInSheet": 5,
+    "pass": true
+  }
+}

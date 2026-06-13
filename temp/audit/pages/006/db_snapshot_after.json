@@ -1,0 +1,186 @@
+{
+  "masters": [
+    {
+      "product_master_id": "72ec4d82-4bf5-4ab6-a7fd-515b4492b221",
+      "master_key": "TRI001",
+      "product_master_name": "XT3 Trineo",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio"
+    },
+    {
+      "product_master_id": "020bb9e8-f91b-4fda-966e-4eac65381c10",
+      "master_key": "TRI002",
+      "product_master_name": "XT3 Consola Trineo",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio"
+    },
+    {
+      "product_master_id": "7cc3edb3-9ed2-4314-9a81-1416408b3908",
+      "master_key": "TRI003",
+      "product_master_name": "XT3 Plus Trineo Multifuncional V2",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio"
+    },
+    {
+      "product_master_id": "da5bd4c1-bf8a-4828-80a3-65bf5979f5a6",
+      "master_key": "TRI004",
+      "product_master_name": "XT4 Trineo Multifuncional",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio"
+    },
+    {
+      "product_master_id": "3c444b6d-465c-4bac-8083-e673fdead6cd",
+      "master_key": "TRI005",
+      "product_master_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio"
+    },
+    {
+      "product_master_id": "22fe738d-f933-4d90-ab8a-bdef3113140d",
+      "master_key": "TRI006",
+      "product_master_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio"
+    },
+    {
+      "product_master_id": "1271b943-fb02-46bc-af28-f1f4b4677611",
+      "master_key": "TRI007",
+      "product_master_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio"
+    }
+  ],
+  "variants": [
+    {
+      "product_variant_id": "9a4a15a3-bef2-4653-b5f6-4af8fc07e754",
+      "variant_sku": "TRI001",
+      "variant_name": "XT3 Trineo",
+      "product_master_id": "72ec4d82-4bf5-4ab6-a7fd-515b4492b221",
+      "product_master_sku": "TRI001",
+      "product_master_name": "XT3 Trineo",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio",
+      "price": "736.29"
+    },
+    {
+      "product_variant_id": "eab9b04a-215a-4b4c-a012-7cddebe2d642",
+      "variant_sku": "TRI002",
+      "variant_name": "XT3 Consola Trineo",
+      "product_master_id": "020bb9e8-f91b-4fda-966e-4eac65381c10",
+      "product_master_sku": "TRI002",
+      "product_master_name": "XT3 Consola Trineo",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio",
+      "price": "102.26"
+    },
+    {
+      "product_variant_id": "71475f34-4ac5-440b-847e-38244f2e348d",
+      "variant_sku": "TRI003",
+      "variant_name": "XT3 Plus Trineo Multifuncional V2",
+      "product_master_id": "7cc3edb3-9ed2-4314-9a81-1416408b3908",
+      "product_master_sku": "TRI003",
+      "product_master_name": "XT3 Plus Trineo Multifuncional V2",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio",
+      "price": "736.29"
+    },
+    {
+      "product_variant_id": "8e1296c2-e8ca-4274-81bd-fc456bf3a01f",
+      "variant_sku": "TRI004",
+      "variant_name": "XT4 Trineo Multifuncional",
+      "product_master_id": "da5bd4c1-bf8a-4828-80a3-65bf5979f5a6",
+      "product_master_sku": "TRI004",
+      "product_master_name": "XT4 Trineo Multifuncional",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio",
+      "price": "756.49"
+    },
+    {
+      "product_variant_id": "6803bc23-06b1-4d6c-a551-06dafa06caec",
+      "variant_sku": "TRI005",
+      "variant_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "product_master_id": "3c444b6d-465c-4bac-8083-e673fdead6cd",
+      "product_master_sku": "TRI005",
+      "product_master_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio",
+      "price": "154.53"
+    },
+    {
+      "product_variant_id": "da29eecc-3252-469a-932f-7f869e71ac98",
+      "variant_sku": "TRI006",
+      "variant_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "product_master_id": "22fe738d-f933-4d90-ab8a-bdef3113140d",
+      "product_master_sku": "TRI006",
+      "product_master_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio",
+      "price": "48.48"
+    },
+    {
+      "product_variant_id": "8527c54d-41eb-4bbe-8b7a-a45a96af5302",
+      "variant_sku": "TRI007",
+      "variant_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "product_master_id": "1271b943-fb02-46bc-af28-f1f4b4677611",
+      "product_master_sku": "TRI007",
+      "product_master_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "category_slug": "cardio",
+      "price": "102.26"
+    }
+  ],
+  "price_entries": [
+    {
+      "variant_sku": "TRI001",
+      "price": "736.29",
+      "currency": "EUR",
+      "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+    },
+    {
+      "variant_sku": "TRI002",
+      "price": "102.26",
+      "currency": "EUR",
+      "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+    },
+    {
+      "variant_sku": "TRI003",
+      "price": "736.29",
+      "currency": "EUR",
+      "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+    },
+    {
+      "variant_sku": "TRI004",
+      "price": "756.49",
+      "currency": "EUR",
+      "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+    },
+    {
+      "variant_sku": "TRI005",
+      "price": "154.53",
+      "currency": "EUR",
+      "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+    },
+    {
+      "variant_sku": "TRI006",
+      "price": "48.48",
+      "currency": "EUR",
+      "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+    },
+    {
+      "variant_sku": "TRI007",
+      "price": "102.26",
+      "currency": "EUR",
+      "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+    }
+  ],
+  "specs": [],
+  "variant_skus": [
+    "TRI001",
+    "TRI002",
+    "TRI003",
+    "TRI004",
+    "TRI005",
+    "TRI006",
+    "TRI007"
+  ]
+}

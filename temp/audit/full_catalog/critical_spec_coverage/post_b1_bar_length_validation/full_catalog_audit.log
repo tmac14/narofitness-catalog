@@ -1,0 +1,13 @@
+{
+  "output": "/data/audit/full_catalog/critical_spec_coverage/post_b1_bar_length_validation/full_catalog_import_audit.json",
+  "metrics": {
+    "total_rows_parsed": 871,
+    "rows_importable": 871,
+    "rows_blocked": 0,
+    "masters_in_db": 5,
+    "variants_in_db": 5,
+    "singleton_masters_in_db": 5,
+    "family_candidates": 0,
+    "high_confidence_family_candidates": 0
+  }
+}

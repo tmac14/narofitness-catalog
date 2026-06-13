@@ -1,0 +1,58 @@
+[
+  {
+    "variant_sku": "TRI001",
+    "variant_name": "XT3 Trineo",
+    "master_key": "TRI001",
+    "master_name": "XT3 Trineo",
+    "category_slug": "cardio",
+    "price": "736.29"
+  },
+  {
+    "variant_sku": "TRI002",
+    "variant_name": "XT3 Consola Trineo",
+    "master_key": "TRI002",
+    "master_name": "XT3 Consola Trineo",
+    "category_slug": "cardio",
+    "price": "102.26"
+  },
+  {
+    "variant_sku": "TRI003",
+    "variant_name": "XT3 Plus Trineo Multifuncional V2",
+    "master_key": "TRI003",
+    "master_name": "XT3 Plus Trineo Multifuncional V2",
+    "category_slug": "cardio",
+    "price": "736.29"
+  },
+  {
+    "variant_sku": "TRI004",
+    "variant_name": "XT4 Trineo Multifuncional",
+    "master_key": "TRI004",
+    "master_name": "XT4 Trineo Multifuncional",
+    "category_slug": "cardio",
+    "price": "756.49"
+  },
+  {
+    "variant_sku": "TRI005",
+    "variant_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+    "master_key": "TRI005",
+    "master_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+    "category_slug": "cardio",
+    "price": "154.53"
+  },
+  {
+    "variant_sku": "TRI006",
+    "variant_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+    "master_key": "TRI006",
+    "master_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+    "category_slug": "cardio",
+    "price": "48.48"
+  },
+  {
+    "variant_sku": "TRI007",
+    "variant_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+    "master_key": "TRI007",
+    "master_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+    "category_slug": "cardio",
+    "price": "102.26"
+  }
+]

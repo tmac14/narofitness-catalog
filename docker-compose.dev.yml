@@ -1,0 +1,54 @@
+# Desarrollo local: monta código + uvicorn --reload.
+
+# Usar con: npm run docker:up  o  npm run dev  (desktop-run-local.ps1)
+
+#
+
+# En Windows con unidad F: puede fallar el bind mount; usa perfil prod-like:
+
+#   npm run docker:down && npm run docker:rebuild:prod
+
+#
+
+# Nota: --reload y Playwright pueden acumular subprocesos. Si la API se vuelve lenta o
+
+# Postgres deja de arrancar (resource temporarily unavailable), reinicia la stack:
+
+#   npm run docker:down && npm run docker:up
+
+services:
+
+  api:
+
+    init: true
+
+    pids_limit: 1024
+
+    command:
+
+      - uvicorn
+
+      - app.main:app
+
+      - --host
+
+      - 0.0.0.0
+
+      - --port
+
+      - "8000"
+
+      - --reload
+
+      - --reload-dir
+
+      - /app
+
+    volumes:
+
+      - ./apps/api:/app
+
+      - api_data:/data
+
+      - ./temp:/temp:ro
+

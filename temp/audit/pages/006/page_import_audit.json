@@ -1,0 +1,1585 @@
+{
+  "audit_version": "1.2",
+  "agent": "agent5_page_import",
+  "workflow_mode": "manual_page_by_page",
+  "generated_at": "2026-06-11T20:02:55.638142+00:00",
+  "requested_page": 6,
+  "page_number": 6,
+  "output_dir": "temp/audit/pages/006",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "parsed_full_pdf": {
+    "parse_scope": "full_pdf",
+    "total_rows_parsed": 871,
+    "total_pages_with_rows": 56
+  },
+  "rows_filtered_to_page": {
+    "requested_page": 6,
+    "count": 7,
+    "source_row_indices": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "expected_skus": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ]
+  },
+  "reset_before_page": true,
+  "cumulative_mode": false,
+  "confirm_executed": true,
+  "imported_pages": [
+    6
+  ],
+  "reset_summary": {
+    "tables_cleared": [
+      "catalog_exports",
+      "catalog_product_layouts",
+      "catalog_items",
+      "catalogs",
+      "supplier_price_entries",
+      "supplier_price_lists",
+      "import_rows",
+      "import_batches",
+      "product_master_specs",
+      "product_variant_specs",
+      "product_images",
+      "supplier_product_family_keys",
+      "product_variants",
+      "product_masters"
+    ],
+    "tables_preserved": [
+      "categories",
+      "taxonomy_mapping_rules",
+      "suppliers",
+      "import_profiles",
+      "spec_definitions",
+      "spec_allowed_values",
+      "units",
+      "category_spec_profiles",
+      "app_settings",
+      "brands"
+    ],
+    "categories_preserved": true,
+    "taxonomy_mapping_rules_preserved": true,
+    "reset_delete_counts": {
+      "catalog_exports": 0,
+      "catalog_product_layouts": 0,
+      "catalog_items": 0,
+      "catalogs": 0,
+      "supplier_price_entries": 8,
+      "supplier_price_lists": 1,
+      "import_rows": 8,
+      "import_batches": 1,
+      "product_master_specs": 0,
+      "product_variant_specs": 0,
+      "product_images": 0,
+      "supplier_product_family_keys": 8,
+      "product_variants": 8,
+      "product_masters": 8
+    },
+    "product_masters_count_before": 8,
+    "product_masters_count_after": 0,
+    "product_variants_count_before": 8,
+    "product_variants_count_after": 0,
+    "catalogue_items_count_before": 0,
+    "catalogue_items_count_after": 0
+  },
+  "baseline_before": {
+    "canonical_categories_count": 24,
+    "canonical_category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "mapping_rules_count": 28,
+    "product_masters_count": 0,
+    "product_variants_count": 0,
+    "catalogue_items_count": 0
+  },
+  "category_snapshot_before": {
+    "generated_at": "2026-06-11T20:02:51.932214+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "043c9a75-e7f1-46df-b77c-cac64d2ca2a2",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "8642253e-35b0-4cb2-b552-0c48486cf1d1",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ab8975c8-84f7-44da-9868-c530714f52f4",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "fdf1030f-d7f1-4aa4-b551-96181de23bfb",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "38e1101b-9724-4fbf-9b02-d8f10c93eeef",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "df86d29e-c929-47d9-b976-3b8add325655",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "f88e179e-d569-4543-adf5-5997b22fb5fe",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "feab2a6e-e366-4ecd-a5cc-2586100644fc",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "49eb3301-bfd0-49b3-b409-eb045bebf32d",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "ef2ff281-931e-4df6-88c1-3098054e0f95",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "9eda5631-9b62-4c47-9ad7-c5bc1e9369e8",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "73df5058-2921-4e3b-8ffd-25c220346c84",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "8b0dcb92-3bf1-40f2-9542-24b155383e66",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "d85f070d-a98e-4c9d-a73f-58509732153b",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b6bebe83-8ea6-49d0-9171-f004d217584f",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3d8eb816-b12d-4c44-bb0a-544491ec723a",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "6dfcce92-ef80-4993-89d1-c908c3bc8cfd",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "c5847cd0-2a5a-47b7-9380-a474aebb7edf",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "730ace22-e426-4038-8eac-e18ad7f7332d",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "55fb9f01-585f-422b-8fb2-572e45e5a6a5",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "0d60d4f2-afb0-4781-93fd-5361c70e6054",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "6a159627-b79a-48b0-8987-a6edc9113139",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "2153c27b-0240-4526-be00-24b572033c06",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "category_snapshot_after": {
+    "generated_at": "2026-06-11T20:02:55.638043+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "043c9a75-e7f1-46df-b77c-cac64d2ca2a2",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "8642253e-35b0-4cb2-b552-0c48486cf1d1",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ab8975c8-84f7-44da-9868-c530714f52f4",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "fdf1030f-d7f1-4aa4-b551-96181de23bfb",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "38e1101b-9724-4fbf-9b02-d8f10c93eeef",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "df86d29e-c929-47d9-b976-3b8add325655",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "f88e179e-d569-4543-adf5-5997b22fb5fe",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "feab2a6e-e366-4ecd-a5cc-2586100644fc",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "49eb3301-bfd0-49b3-b409-eb045bebf32d",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "ef2ff281-931e-4df6-88c1-3098054e0f95",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "9eda5631-9b62-4c47-9ad7-c5bc1e9369e8",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "73df5058-2921-4e3b-8ffd-25c220346c84",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "8b0dcb92-3bf1-40f2-9542-24b155383e66",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "d85f070d-a98e-4c9d-a73f-58509732153b",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b6bebe83-8ea6-49d0-9171-f004d217584f",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3d8eb816-b12d-4c44-bb0a-544491ec723a",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "6dfcce92-ef80-4993-89d1-c908c3bc8cfd",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "c5847cd0-2a5a-47b7-9380-a474aebb7edf",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "730ace22-e426-4038-8eac-e18ad7f7332d",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "55fb9f01-585f-422b-8fb2-572e45e5a6a5",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "0d60d4f2-afb0-4781-93fd-5361c70e6054",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "6a159627-b79a-48b0-8987-a6edc9113139",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "2153c27b-0240-4526-be00-24b572033c06",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "raw_extraction": {
+    "page_number": 6,
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "lines": [
+      {
+        "line_index": 0,
+        "text": "TRINEO XEBEX",
+        "font_size": 8.279999732971191,
+        "line_kind": "subheader"
+      },
+      {
+        "line_index": 1,
+        "text": "XT3 Trineo Xebex",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 2,
+        "text": "TRI001",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 3,
+        "text": "736,29 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 4,
+        "text": "XT3 Consola Trineo Xebex",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 5,
+        "text": "TRI002",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 6,
+        "text": "102,26 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 7,
+        "text": "XT3 Plus Trineo Multifuncional Xebex V2",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 8,
+        "text": "TRI003",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 9,
+        "text": "736,29 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 10,
+        "text": "XT4 Trineo Multifuncional Xebex",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 11,
+        "text": "TRI004",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 12,
+        "text": "756,49 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 13,
+        "text": "Accesorio Trineo para XT3V2 (TRI003)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 14,
+        "text": "(Marco Trasero con Ruedas giratorias 360º)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 15,
+        "text": "TRI005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 16,
+        "text": "154,53 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 17,
+        "text": "Accesotrio Trineo para XT3V2 (TRI003)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 18,
+        "text": "(Manillar)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 19,
+        "text": "TRI006",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 20,
+        "text": "48,48 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 21,
+        "text": "Consola Trineo Xebex para SLD-XT3V2 y SLD-XT4",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 22,
+        "text": "TRI007",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 23,
+        "text": "102,26 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      }
+    ],
+    "unparsed_candidates": []
+  },
+  "parsed_rows": [
+    {
+      "page_number": 6,
+      "source_row_index": 25,
+      "raw_line_index": 1,
+      "raw_lines": [
+        "XT3 Trineo Xebex",
+        "TRI001",
+        "736,29 €"
+      ],
+      "raw_sku": "TRI001",
+      "normalized_sku": "TRI001",
+      "raw_name": "XT3 Trineo Xebex",
+      "normalized_name": "XT3 Trineo",
+      "price": "736.29",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "TRINEO",
+        "section_brand": "XEBEX"
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 6,
+      "source_row_index": 26,
+      "raw_line_index": 4,
+      "raw_lines": [
+        "XT3 Consola Trineo Xebex",
+        "TRI002",
+        "102,26 €"
+      ],
+      "raw_sku": "TRI002",
+      "normalized_sku": "TRI002",
+      "raw_name": "XT3 Consola Trineo Xebex",
+      "normalized_name": "XT3 Consola Trineo",
+      "price": "102.26",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "TRINEO",
+        "section_brand": "XEBEX"
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 6,
+      "source_row_index": 27,
+      "raw_line_index": 7,
+      "raw_lines": [
+        "XT3 Plus Trineo Multifuncional Xebex V2",
+        "TRI003",
+        "736,29 €"
+      ],
+      "raw_sku": "TRI003",
+      "normalized_sku": "TRI003",
+      "raw_name": "XT3 Plus Trineo Multifuncional Xebex V2",
+      "normalized_name": "XT3 Plus Trineo Multifuncional V2",
+      "price": "736.29",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "TRINEO",
+        "section_brand": "XEBEX"
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 6,
+      "source_row_index": 28,
+      "raw_line_index": 10,
+      "raw_lines": [
+        "XT4 Trineo Multifuncional Xebex",
+        "TRI004",
+        "756,49 €"
+      ],
+      "raw_sku": "TRI004",
+      "normalized_sku": "TRI004",
+      "raw_name": "XT4 Trineo Multifuncional Xebex",
+      "normalized_name": "XT4 Trineo Multifuncional",
+      "price": "756.49",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "TRINEO",
+        "section_brand": "XEBEX"
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 6,
+      "source_row_index": 29,
+      "raw_line_index": 13,
+      "raw_lines": [
+        "Accesorio Trineo para XT3V2 (TRI003)",
+        "(Marco Trasero con Ruedas giratorias 360º)",
+        "TRI005",
+        "154,53 €"
+      ],
+      "raw_sku": "TRI005",
+      "normalized_sku": "TRI005",
+      "raw_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "normalized_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "price": "154.53",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "TRINEO",
+        "section_brand": "XEBEX"
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 6,
+      "source_row_index": 30,
+      "raw_line_index": 17,
+      "raw_lines": [
+        "Accesotrio Trineo para XT3V2 (TRI003)",
+        "(Manillar)",
+        "TRI006",
+        "48,48 €"
+      ],
+      "raw_sku": "TRI006",
+      "normalized_sku": "TRI006",
+      "raw_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "normalized_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "price": "48.48",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "TRINEO",
+        "section_brand": "XEBEX"
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 6,
+      "source_row_index": 31,
+      "raw_line_index": 21,
+      "raw_lines": [
+        "Consola Trineo Xebex para SLD-XT3V2 y SLD-XT4",
+        "TRI007",
+        "102,26 €"
+      ],
+      "raw_sku": "TRI007",
+      "normalized_sku": "TRI007",
+      "raw_name": "Consola Trineo Xebex para SLD-XT3V2 y SLD-XT4",
+      "normalized_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "price": "102.26",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "TRINEO",
+        "section_brand": "XEBEX"
+      },
+      "parser_status": "ok"
+    }
+  ],
+  "taxonomy_decision": [
+    {
+      "source_row_index": 25,
+      "normalized_sku": "TRI001",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "matched_mapping_rule": {
+        "id": "0813295a-c7bd-40eb-9924-2d507a57e691",
+        "match_type": "section_path",
+        "match_value": "CARDIO > TRINEO",
+        "priority": 27,
+        "is_active": true,
+        "target_category_slug": "cardio",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cardio",
+      "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 26,
+      "normalized_sku": "TRI002",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "matched_mapping_rule": {
+        "id": "0813295a-c7bd-40eb-9924-2d507a57e691",
+        "match_type": "section_path",
+        "match_value": "CARDIO > TRINEO",
+        "priority": 27,
+        "is_active": true,
+        "target_category_slug": "cardio",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cardio",
+      "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 27,
+      "normalized_sku": "TRI003",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "matched_mapping_rule": {
+        "id": "0813295a-c7bd-40eb-9924-2d507a57e691",
+        "match_type": "section_path",
+        "match_value": "CARDIO > TRINEO",
+        "priority": 27,
+        "is_active": true,
+        "target_category_slug": "cardio",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cardio",
+      "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 28,
+      "normalized_sku": "TRI004",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "matched_mapping_rule": {
+        "id": "0813295a-c7bd-40eb-9924-2d507a57e691",
+        "match_type": "section_path",
+        "match_value": "CARDIO > TRINEO",
+        "priority": 27,
+        "is_active": true,
+        "target_category_slug": "cardio",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cardio",
+      "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 29,
+      "normalized_sku": "TRI005",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "matched_mapping_rule": {
+        "id": "0813295a-c7bd-40eb-9924-2d507a57e691",
+        "match_type": "section_path",
+        "match_value": "CARDIO > TRINEO",
+        "priority": 27,
+        "is_active": true,
+        "target_category_slug": "cardio",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cardio",
+      "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 30,
+      "normalized_sku": "TRI006",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "matched_mapping_rule": {
+        "id": "0813295a-c7bd-40eb-9924-2d507a57e691",
+        "match_type": "section_path",
+        "match_value": "CARDIO > TRINEO",
+        "priority": 27,
+        "is_active": true,
+        "target_category_slug": "cardio",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cardio",
+      "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 31,
+      "normalized_sku": "TRI007",
+      "source_taxonomy_path": "CARDIO > TRINEO",
+      "matched_mapping_rule": {
+        "id": "0813295a-c7bd-40eb-9924-2d507a57e691",
+        "match_type": "section_path",
+        "match_value": "CARDIO > TRINEO",
+        "priority": 27,
+        "is_active": true,
+        "target_category_slug": "cardio",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cardio",
+      "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    }
+  ],
+  "preview_decision": [
+    {
+      "source_row_index": 25,
+      "normalized_sku": "TRI001",
+      "taxonomy": {
+        "canonical_category_slug": "cardio",
+        "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "TRI001",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 26,
+      "normalized_sku": "TRI002",
+      "taxonomy": {
+        "canonical_category_slug": "cardio",
+        "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "TRI002",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 27,
+      "normalized_sku": "TRI003",
+      "taxonomy": {
+        "canonical_category_slug": "cardio",
+        "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "TRI003",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 28,
+      "normalized_sku": "TRI004",
+      "taxonomy": {
+        "canonical_category_slug": "cardio",
+        "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "TRI004",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 29,
+      "normalized_sku": "TRI005",
+      "taxonomy": {
+        "canonical_category_slug": "cardio",
+        "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "TRI005",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 30,
+      "normalized_sku": "TRI006",
+      "taxonomy": {
+        "canonical_category_slug": "cardio",
+        "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "TRI006",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 31,
+      "normalized_sku": "TRI007",
+      "taxonomy": {
+        "canonical_category_slug": "cardio",
+        "canonical_category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "TRI007",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    }
+  ],
+  "confirm_result": {
+    "executed": true,
+    "allow_needs_review": false,
+    "rows_imported": 7,
+    "rows_blocked": 0,
+    "rows_skipped": 0,
+    "masters_created": 7,
+    "variants_created": 7,
+    "variants_updated": 0,
+    "entries_created": 7,
+    "per_row": [
+      {
+        "source_row_index": 25,
+        "sku": "TRI001",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 26,
+        "sku": "TRI002",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 27,
+        "sku": "TRI003",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 28,
+        "sku": "TRI004",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 29,
+        "sku": "TRI005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 30,
+        "sku": "TRI006",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 31,
+        "sku": "TRI007",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      }
+    ],
+    "batch_id": "b95bc81b-8051-4d71-8b32-cc240b9f53ec"
+  },
+  "db_after": {
+    "masters": [
+      {
+        "product_master_id": "72ec4d82-4bf5-4ab6-a7fd-515b4492b221",
+        "master_key": "TRI001",
+        "product_master_name": "XT3 Trineo",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio"
+      },
+      {
+        "product_master_id": "020bb9e8-f91b-4fda-966e-4eac65381c10",
+        "master_key": "TRI002",
+        "product_master_name": "XT3 Consola Trineo",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio"
+      },
+      {
+        "product_master_id": "7cc3edb3-9ed2-4314-9a81-1416408b3908",
+        "master_key": "TRI003",
+        "product_master_name": "XT3 Plus Trineo Multifuncional V2",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio"
+      },
+      {
+        "product_master_id": "da5bd4c1-bf8a-4828-80a3-65bf5979f5a6",
+        "master_key": "TRI004",
+        "product_master_name": "XT4 Trineo Multifuncional",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio"
+      },
+      {
+        "product_master_id": "3c444b6d-465c-4bac-8083-e673fdead6cd",
+        "master_key": "TRI005",
+        "product_master_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio"
+      },
+      {
+        "product_master_id": "22fe738d-f933-4d90-ab8a-bdef3113140d",
+        "master_key": "TRI006",
+        "product_master_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio"
+      },
+      {
+        "product_master_id": "1271b943-fb02-46bc-af28-f1f4b4677611",
+        "master_key": "TRI007",
+        "product_master_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio"
+      }
+    ],
+    "variants": [
+      {
+        "product_variant_id": "9a4a15a3-bef2-4653-b5f6-4af8fc07e754",
+        "variant_sku": "TRI001",
+        "variant_name": "XT3 Trineo",
+        "product_master_id": "72ec4d82-4bf5-4ab6-a7fd-515b4492b221",
+        "product_master_sku": "TRI001",
+        "product_master_name": "XT3 Trineo",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio",
+        "price": "736.29"
+      },
+      {
+        "product_variant_id": "eab9b04a-215a-4b4c-a012-7cddebe2d642",
+        "variant_sku": "TRI002",
+        "variant_name": "XT3 Consola Trineo",
+        "product_master_id": "020bb9e8-f91b-4fda-966e-4eac65381c10",
+        "product_master_sku": "TRI002",
+        "product_master_name": "XT3 Consola Trineo",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio",
+        "price": "102.26"
+      },
+      {
+        "product_variant_id": "71475f34-4ac5-440b-847e-38244f2e348d",
+        "variant_sku": "TRI003",
+        "variant_name": "XT3 Plus Trineo Multifuncional V2",
+        "product_master_id": "7cc3edb3-9ed2-4314-9a81-1416408b3908",
+        "product_master_sku": "TRI003",
+        "product_master_name": "XT3 Plus Trineo Multifuncional V2",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio",
+        "price": "736.29"
+      },
+      {
+        "product_variant_id": "8e1296c2-e8ca-4274-81bd-fc456bf3a01f",
+        "variant_sku": "TRI004",
+        "variant_name": "XT4 Trineo Multifuncional",
+        "product_master_id": "da5bd4c1-bf8a-4828-80a3-65bf5979f5a6",
+        "product_master_sku": "TRI004",
+        "product_master_name": "XT4 Trineo Multifuncional",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio",
+        "price": "756.49"
+      },
+      {
+        "product_variant_id": "6803bc23-06b1-4d6c-a551-06dafa06caec",
+        "variant_sku": "TRI005",
+        "variant_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+        "product_master_id": "3c444b6d-465c-4bac-8083-e673fdead6cd",
+        "product_master_sku": "TRI005",
+        "product_master_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio",
+        "price": "154.53"
+      },
+      {
+        "product_variant_id": "da29eecc-3252-469a-932f-7f869e71ac98",
+        "variant_sku": "TRI006",
+        "variant_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+        "product_master_id": "22fe738d-f933-4d90-ab8a-bdef3113140d",
+        "product_master_sku": "TRI006",
+        "product_master_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio",
+        "price": "48.48"
+      },
+      {
+        "product_variant_id": "8527c54d-41eb-4bbe-8b7a-a45a96af5302",
+        "variant_sku": "TRI007",
+        "variant_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+        "product_master_id": "1271b943-fb02-46bc-af28-f1f4b4677611",
+        "product_master_sku": "TRI007",
+        "product_master_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+        "category_id": "6d219b76-83d2-45ba-a743-c80010511b49",
+        "category_slug": "cardio",
+        "price": "102.26"
+      }
+    ],
+    "price_entries": [
+      {
+        "variant_sku": "TRI001",
+        "price": "736.29",
+        "currency": "EUR",
+        "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+      },
+      {
+        "variant_sku": "TRI002",
+        "price": "102.26",
+        "currency": "EUR",
+        "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+      },
+      {
+        "variant_sku": "TRI003",
+        "price": "736.29",
+        "currency": "EUR",
+        "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+      },
+      {
+        "variant_sku": "TRI004",
+        "price": "756.49",
+        "currency": "EUR",
+        "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+      },
+      {
+        "variant_sku": "TRI005",
+        "price": "154.53",
+        "currency": "EUR",
+        "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+      },
+      {
+        "variant_sku": "TRI006",
+        "price": "48.48",
+        "currency": "EUR",
+        "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+      },
+      {
+        "variant_sku": "TRI007",
+        "price": "102.26",
+        "currency": "EUR",
+        "price_list_id": "14163439-7650-48b3-a981-a052981bcb17"
+      }
+    ],
+    "specs": [],
+    "variant_skus": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ]
+  },
+  "db_after_contains_only_requested_page_products": true,
+  "unexpected_skus_from_other_pages": [],
+  "products_visible_in_app_count": 7,
+  "products_visible_in_app": [
+    {
+      "variant_sku": "TRI001",
+      "variant_name": "XT3 Trineo",
+      "master_key": "TRI001",
+      "master_name": "XT3 Trineo",
+      "category_slug": "cardio",
+      "price": "736.29"
+    },
+    {
+      "variant_sku": "TRI002",
+      "variant_name": "XT3 Consola Trineo",
+      "master_key": "TRI002",
+      "master_name": "XT3 Consola Trineo",
+      "category_slug": "cardio",
+      "price": "102.26"
+    },
+    {
+      "variant_sku": "TRI003",
+      "variant_name": "XT3 Plus Trineo Multifuncional V2",
+      "master_key": "TRI003",
+      "master_name": "XT3 Plus Trineo Multifuncional V2",
+      "category_slug": "cardio",
+      "price": "736.29"
+    },
+    {
+      "variant_sku": "TRI004",
+      "variant_name": "XT4 Trineo Multifuncional",
+      "master_key": "TRI004",
+      "master_name": "XT4 Trineo Multifuncional",
+      "category_slug": "cardio",
+      "price": "756.49"
+    },
+    {
+      "variant_sku": "TRI005",
+      "variant_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "master_key": "TRI005",
+      "master_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+      "category_slug": "cardio",
+      "price": "154.53"
+    },
+    {
+      "variant_sku": "TRI006",
+      "variant_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "master_key": "TRI006",
+      "master_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+      "category_slug": "cardio",
+      "price": "48.48"
+    },
+    {
+      "variant_sku": "TRI007",
+      "variant_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "master_key": "TRI007",
+      "master_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+      "category_slug": "cardio",
+      "price": "102.26"
+    }
+  ],
+  "blocked_rows_detail": [],
+  "status": "pass",
+  "fail_reasons": [],
+  "products_imported": [
+    "TRI001",
+    "TRI002",
+    "TRI003",
+    "TRI004",
+    "TRI005",
+    "TRI006",
+    "TRI007"
+  ],
+  "products_blocked": [],
+  "products_expected_but_not_imported": [],
+  "category_warnings": [],
+  "grouping_warnings": [],
+  "review_gate_warnings": [],
+  "app_visual_check": {
+    "products_page_should_show_only_requested_page": true,
+    "expected_visible_products_count": 7,
+    "actual_visible_products_count": 7,
+    "visible_skus": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ],
+    "visible_categories": [
+      "cardio"
+    ],
+    "note": "Open Products page in the app after this run to visually inspect only page 6 products."
+  },
+  "diff": {
+    "inserted_masters": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ],
+    "inserted_variants": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ],
+    "skipped_rows": 0,
+    "blocked_rows": [],
+    "categories_created": [],
+    "mappings_created": [],
+    "unexpected_categories": [],
+    "products_imported_but_suspicious": [
+      "TRI001",
+      "TRI002",
+      "TRI003",
+      "TRI004",
+      "TRI005",
+      "TRI006",
+      "TRI007"
+    ]
+  },
+  "warnings": [],
+  "suspicious_variant_candidates": [
+    {
+      "suspicion_id": "S-0001",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        6
+      ],
+      "skus": [
+        "TRI001",
+        "TRI002",
+        "TRI003",
+        "TRI004",
+        "TRI005",
+        "TRI006",
+        "TRI007"
+      ],
+      "current_master_keys": [
+        "TRI001",
+        "TRI002",
+        "TRI003",
+        "TRI004",
+        "TRI005",
+        "TRI006",
+        "TRI007"
+      ],
+      "expected_master_key": "TRI",
+      "grouping_reasons": [
+        "explicit_one_per_sku",
+        "explicit_one_per_sku",
+        "explicit_one_per_sku",
+        "explicit_one_per_sku",
+        "explicit_one_per_sku",
+        "explicit_one_per_sku",
+        "explicit_one_per_sku"
+      ],
+      "possible_false_negative": true
+    }
+  ],
+  "manual_approval": {
+    "page_approved": false,
+    "note": "Page is not approved until the user gives explicit OK. Do not advance to the next page automatically."
+  }
+}

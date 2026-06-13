@@ -1,0 +1,136 @@
+{
+  "masters": [
+    {
+      "product_master_id": "0a01019e-6677-48bf-bfe9-3f2c208c3b21",
+      "master_key": "SOP042",
+      "product_master_name": "Soporte a pared para 6",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "caff5307-a7ce-4f76-b318-66fb2a0f33d6",
+      "master_key": "VAR028",
+      "product_master_name": "Protector de Cuello 45 cms, Funda Nylon",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "590f2bdd-037f-4824-a881-3f59b7d87b0e",
+      "master_key": "VAR113",
+      "product_master_name": "Protector de Cuello ergonomico Azul",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "1074b0e5-7967-4b03-b767-792c2634eab8",
+      "master_key": "VAR129",
+      "product_master_name": "Protector de cuello Rojo",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "87a771e3-b445-4a16-bf92-18b624b94756",
+      "master_key": "VAR159",
+      "product_master_name": "Protector de cuello Negro",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras"
+    }
+  ],
+  "variants": [
+    {
+      "product_variant_id": "c1876b30-550a-4d17-8775-ceae3873df4b",
+      "variant_sku": "SOP042",
+      "variant_name": "Soporte a pared para 6",
+      "product_master_id": "0a01019e-6677-48bf-bfe9-3f2c208c3b21",
+      "product_master_sku": "SOP042",
+      "product_master_name": "Soporte a pared para 6",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras",
+      "price": "87.67"
+    },
+    {
+      "product_variant_id": "ece199ee-7bb0-4a5d-a2ad-8a71c82d0d99",
+      "variant_sku": "VAR028",
+      "variant_name": "Protector de Cuello 45 cms, Funda Nylon",
+      "product_master_id": "caff5307-a7ce-4f76-b318-66fb2a0f33d6",
+      "product_master_sku": "VAR028",
+      "product_master_name": "Protector de Cuello 45 cms, Funda Nylon",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras",
+      "price": "8.86"
+    },
+    {
+      "product_variant_id": "f588de37-0a8b-42c3-b2f2-f9bbbc755088",
+      "variant_sku": "VAR113",
+      "variant_name": "Protector de Cuello ergonomico Azul",
+      "product_master_id": "590f2bdd-037f-4824-a881-3f59b7d87b0e",
+      "product_master_sku": "VAR113",
+      "product_master_name": "Protector de Cuello ergonomico Azul",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras",
+      "price": "6.77"
+    },
+    {
+      "product_variant_id": "23b05fcb-8872-461d-948d-c8c42add492f",
+      "variant_sku": "VAR129",
+      "variant_name": "Protector de cuello Rojo",
+      "product_master_id": "1074b0e5-7967-4b03-b767-792c2634eab8",
+      "product_master_sku": "VAR129",
+      "product_master_name": "Protector de cuello Rojo",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras",
+      "price": "8.69"
+    },
+    {
+      "product_variant_id": "c2a17228-3cda-4e16-a4e4-4a69fa2a91cc",
+      "variant_sku": "VAR159",
+      "variant_name": "Protector de cuello Negro",
+      "product_master_id": "87a771e3-b445-4a16-bf92-18b624b94756",
+      "product_master_sku": "VAR159",
+      "product_master_name": "Protector de cuello Negro",
+      "category_id": "28f81fca-9121-42c3-8068-23326abeed79",
+      "category_slug": "barras",
+      "price": "8.69"
+    }
+  ],
+  "price_entries": [
+    {
+      "variant_sku": "SOP042",
+      "price": "87.67",
+      "currency": "EUR",
+      "price_list_id": "84703b10-12f5-4210-b5e0-075a1fcd2e75"
+    },
+    {
+      "variant_sku": "VAR028",
+      "price": "8.86",
+      "currency": "EUR",
+      "price_list_id": "84703b10-12f5-4210-b5e0-075a1fcd2e75"
+    },
+    {
+      "variant_sku": "VAR113",
+      "price": "6.77",
+      "currency": "EUR",
+      "price_list_id": "84703b10-12f5-4210-b5e0-075a1fcd2e75"
+    },
+    {
+      "variant_sku": "VAR129",
+      "price": "8.69",
+      "currency": "EUR",
+      "price_list_id": "84703b10-12f5-4210-b5e0-075a1fcd2e75"
+    },
+    {
+      "variant_sku": "VAR159",
+      "price": "8.69",
+      "currency": "EUR",
+      "price_list_id": "84703b10-12f5-4210-b5e0-075a1fcd2e75"
+    }
+  ],
+  "specs": [],
+  "variant_skus": [
+    "SOP042",
+    "VAR028",
+    "VAR113",
+    "VAR129",
+    "VAR159"
+  ]
+}

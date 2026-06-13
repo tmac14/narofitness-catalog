@@ -1,0 +1,76 @@
+{
+  "audit_version": "1.0",
+  "agent": "agent5_full_catalog",
+  "generated_at": "2026-06-12T04:08:46.338332+00:00",
+  "workflow": "IMPORT-FDL-MASTER-NAME-CONSISTENCY-POST-VALIDATION",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "db_snapshot": {
+    "masters_total": 534,
+    "variants_total": 871,
+    "singleton_masters_count": 489
+  },
+  "metrics": {
+    "total_rows_parsed": 871,
+    "rows_importable": 871,
+    "rows_blocked": 0,
+    "masters_in_db": 534,
+    "variants_in_db": 871,
+    "singleton_masters_in_db": 489,
+    "family_candidates": 0,
+    "high_confidence_family_candidates": 0
+  },
+  "pipeline_metrics": {
+    "total_pages_analyzed": 65,
+    "total_pages_in_filter": 65,
+    "rows_extracted": 871,
+    "rows_in_filter": 871,
+    "rows_with_sku": 871,
+    "rows_without_sku": 0,
+    "rows_with_price": 871,
+    "detected_groups": 45,
+    "one_per_sku_rows": 482,
+    "blocked_rows": 0,
+    "needs_review_rows": 24,
+    "unmapped_categories": 0,
+    "suspicious_variant_candidates": 107,
+    "possible_false_negatives": 107,
+    "failure_domain_counts": {
+      "extraction_failure": 0,
+      "normalization_failure": 468,
+      "taxonomy_failure": 0,
+      "grouping_failure": 243,
+      "gate_correct_block": 0,
+      "visual_false_positive": 3
+    },
+    "top_suspicion_heuristics": [
+      [
+        "SamePageSkuFamily",
+        72
+      ],
+      [
+        "OrphanSibling",
+        19
+      ],
+      [
+        "NameWeightLadder",
+        14
+      ],
+      [
+        "RegexFamilyMismatch",
+        2
+      ]
+    ],
+    "filtered": {
+      "rows_extracted": 871,
+      "rows_with_sku": 871,
+      "rows_without_sku": 0,
+      "rows_with_price": 871,
+      "one_per_sku_rows": 482,
+      "blocked_rows": 0,
+      "needs_review_rows": 24,
+      "unmapped_categories": 0
+    }
+  },
+  "profile": {},
+  "suspicious_candidates": []
+}

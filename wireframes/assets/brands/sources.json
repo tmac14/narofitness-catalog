@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "xebex",
+    "filename": "xebex.png",
+    "url": "https://xebexfitness.com/wp-content/uploads/xebex.png",
+    "source": "xebexfitness.com",
+    "status": "ok",
+    "error": "",
+    "bytes": 66712
+  },
+  {
+    "slug": "reebok",
+    "filename": "reebok.png",
+    "url": "https://www.reebok.eu/cdn/shop/files/Reebok-Logo-300x300.png",
+    "source": "reebok.eu",
+    "status": "ok",
+    "error": "",
+    "bytes": 20677
+  },
+  {
+    "slug": "reebok",
+    "filename": "reebok.svg",
+    "url": "https://news.reebok.com/dist/images/reebok-logo-header.svg",
+    "source": "news.reebok.com",
+    "status": "ok",
+    "error": "",
+    "bytes": 3312
+  },
+  {
+    "slug": "adidas",
+    "filename": "adidas.svg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Adidas_2022_logo.svg",
+    "source": "wikimedia-commons (vector basado en adidas.com; sin kit de prensa público directo)",
+    "status": "ok",
+    "error": "",
+    "bytes": 337
+  },
+  {
+    "slug": "horizon",
+    "filename": "horizon.png",
+    "url": "https://www.horizonfitness.com/cdn/shop/files/Type_Lockup_Color_White_35e324c8-6b1a-426c-8af0-6d10a4bf23d7.png?v=1749684038&width=1100",
+    "source": "horizonfitness.com",
+    "status": "ok",
+    "error": "",
+    "bytes": 10415
+  },
+  {
+    "slug": "nexo",
+    "filename": "nexo.png",
+    "url": "https://nexostrength.com/wp-content/uploads/2025/01/NEXO_st_ultimo.png",
+    "source": "nexostrength.com",
+    "status": "ok",
+    "error": "",
+    "bytes": 6222
+  },
+  {
+    "slug": "fdl",
+    "filename": "fdl.png",
+    "url": "https://fitnessdeluxe.es/wp-content/uploads/2021/02/fdl-logo-pie01.png",
+    "source": "fitnessdeluxe.es",
+    "status": "ok",
+    "error": "",
+    "bytes": 3787
+  }
+]

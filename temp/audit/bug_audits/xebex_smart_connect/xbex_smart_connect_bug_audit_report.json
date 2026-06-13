@@ -1,0 +1,115 @@
+{
+  "task_id": "IMPORT-FDL-BUG-AUDIT-XEBEX-SMART-CONNECT",
+  "agent": "agent5",
+  "status": "BUG_AUDIT_COMPLETE",
+  "generated_at": "2026-06-11T08:00:00+00:00",
+  "read_only_confirmation": true,
+  "commands_executed": [
+    {
+      "command": "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/bug_audits/xebex_smart_connect/_xebex_smart_connect_audit.py\"",
+      "status": "success"
+    },
+    {
+      "command": "Evidence: test_import_name_cleanup.py, import_grouping._explicit_one_per_sku_master_name, fdl_pdf_v1 clean_product_name",
+      "status": "success"
+    }
+  ],
+  "artifacts": [
+    "temp/audit/bug_audits/xebex_smart_connect/xebex_smart_connect_audit.json",
+    "temp/audit/bug_audits/xebex_smart_connect/_xebex_smart_connect_audit.py"
+  ],
+  "scope_summary": {
+    "total_catalog_skus": 871,
+    "xebex_brand_skus": 32,
+    "smart_connect_skus": 12,
+    "affected_pages_xebex": [3, 4, 5, 6],
+    "affected_pages_smart_connect": [3, 4, 5],
+    "sections": ["CARDIO > BICI", "CARDIO > REMO", "CARDIO > CINTA", "CARDIO > SKI", "CARDIO > CLIMBER", "CARDIO > TRINEO"]
+  },
+  "root_cause": {
+    "xebex_display_clean": "clean_product_name() strips XEBEX from normalized_name/display_name when brand=XEBEX — works (0 SKUs with XEBEX after cleanup on variant name).",
+    "xebex_master_leak": "explicit_one_per_sku uses variant_primary_name_raw (pre-cleanup PDF text) for master_name via _row_primary_product_name(), bypassing clean_product_name.",
+    "category_prefix_leak": "Same path retains subcategory tokens (Remo, Cinta, Bici, Ski…) in master_name while variant display strips them.",
+    "smart_connect": "No spec key; parenthetical/suffix tokens remain in names with 6 spelling variants; not extracted to boolean feature."
+  },
+  "affected_inventory": {
+    "xebex_master_leak_skus": {
+      "count": 17,
+      "pages": { "3": ["BIC002", "BIC009", "BIC010", "REPUESTO-805", "REPUESTO-806"], "4": ["CIN003", "CIN004", "CIN005"], "5": ["SKI002", "SKI004", "SKI005", "SKI008"], "6": ["TRI001", "TRI002", "TRI003", "TRI004", "TRI007"] }
+    },
+    "category_prefix_in_primary_skus": { "count": 25, "note": "Includes REM002-005, CIN001-002, SKI*, etc. — master_name carries subcategory prefix" },
+    "smart_connect_skus": {
+      "count": 12,
+      "by_page": {
+        "3": ["BIC002", "BIC007", "BIC008", "BIC010", "REPUESTO-805", "REPUESTO-806"],
+        "4": ["REM002", "REM004", "REM005", "CIN002"],
+        "5": ["SKI009", "ESC003"]
+      },
+      "spelling_variants": ["(no smart conect)", "(si smart conect)", "(smart conect)", "(si smart connect)", "smart connect", "SMART CONECT"]
+    }
+  },
+  "page4_evidence": {
+    "display_names_clean": true,
+    "master_name_issues": [
+      { "sku": "CIN003", "display": "ST-6000", "master": "Cinta Xebex ST-6000", "issue": "XEBEX + Cinta prefix in master" },
+      { "sku": "REM002", "display": "Air Rower 2,0 (NO smart conect)", "master": "Remo Air Rower 2,0 (NO smart conect)", "issue": "Remo prefix + smart text in master" }
+    ],
+    "brand_field": "XEBEX on all 9 variants — correct"
+  },
+  "questions_answered": {
+    "systemic_xebex_removal": {
+      "answer": "Yes, with bounded fix: apply clean_product_name (or normalized_name) to explicit_one_per_sku master_name when commercial brand is resolved.",
+      "false_positive_risk": "Low — tests already cover leading XEBEX, inline Xebex, Cinta Xebex; REPUESTO leading XEBEX becomes product descriptor only.",
+      "do_not_merge_with_brand_field": "Brand stays on variant/master entity; only display/master text cleanup."
+    },
+    "smart_connect_representation": {
+      "answer": "Hybrid post-MVP: boolean spec smart_connect (si/no) for feature variants; keep literal 'SMART CONECT' in REPUESTO console product names (product identity, not feature flag).",
+      "mvp_acceptable": "Parenthetical in name is commercially distinguishable for 12 SKUs."
+    },
+    "similar_patterns": [
+      { "pattern": "Subcategory prefix in master (Remo/Cinta/Bici/Ski/Trineo)", "count": 25, "classification": "NAME_CLEANUP_BUG" },
+      { "pattern": "Inline brand suffix '- Xebex'", "pages": [5], "skus": ["SKI002", "SKI004", "SKI005", "SKI008"] },
+      { "pattern": "Bluetooth in REPUESTO product names", "skus": ["REPUESTO-805", "REPUESTO-806"], "note": "Product type, not noise" }
+    ]
+  },
+  "classifications": [
+    {
+      "bug_type": "NAME_CLEANUP_BUG",
+      "severity": "P2",
+      "description": "master_name uses uncleaned variant_primary_name_raw; XEBEX/category tokens leak into master while display_name is clean.",
+      "systemic": true,
+      "mvp_pages_impact": "Pages 3-6 (CARDIO/XEBEX); page 4 already PAGE_MVP_PASS_WITH_NOTES"
+    },
+    {
+      "bug_type": "SPEC_EXTRACTION_BUG",
+      "severity": "P2",
+      "description": "Smart Connect feature variants not modeled as spec; 6 spelling variants in free text.",
+      "systemic": true,
+      "mvp_pages_impact": "Pages 3, 4, 5 — does not block import or distinguish variants incorrectly"
+    },
+    {
+      "bug_type": "SOURCE_PRESENTATION_GAP",
+      "severity": "P3",
+      "description": "PDF typos (conect vs connect, Bicileta) preserved in source names.",
+      "systemic": false
+    }
+  ],
+  "severity_summary": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 2,
+    "P3": 1
+  },
+  "mvp_impact": {
+    "blocks_mvp": false,
+    "pages_already_accepted": "P1/P2/P3/P4 not invalidated — importable, SKUs/prices/categories correct; master display inconsistency is cosmetic/PIM presentation",
+    "regression_risk_if_fixed": "Pages 11-14 unaffected (no XEBEX CARDIO); fix must target explicit_one_per_sku master naming only"
+  },
+  "recommendation": {
+    "verdict": "follow-up_post_mvp",
+    "systemic_fix_proposal": "Agent 2 Plan Mode: align explicit_one_per_sku master_name with normalized_name (or run clean_product_name on primary); add smart_connect boolean spec for CARDIO feature parentheticals; exclude REPUESTO console SKUs from spec extraction.",
+    "no_fix_now": "MVP import gate not blocked; variant display names acceptable; brand entity correct"
+  },
+  "recommended_agent": "Agent 2 (Plan Mode then Agent mode if approved)",
+  "recommended_prompt": "IMPORT-FDL-NAME-CLEANUP-MASTER-ALIGN + optional SMART-CONNECT-SPEC for CARDIO XEBEX pages 3-6"
+}

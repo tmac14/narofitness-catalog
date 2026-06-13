@@ -1,0 +1,242 @@
+[
+  {
+    "variant_sku": "CRO095",
+    "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+    "master_key": "CRO-WALL-FDL",
+    "master_name": "Wall Balls Doble Costura Negro FDL",
+    "category_slug": "cross-training",
+    "price": "24.79"
+  },
+  {
+    "variant_sku": "CRO127",
+    "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+    "master_key": "CRO-WALL-FDL",
+    "master_name": "Wall Balls Doble Costura Negro FDL",
+    "category_slug": "cross-training",
+    "price": "26.29"
+  },
+  {
+    "variant_sku": "CRO096",
+    "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+    "master_key": "CRO-WALL-FDL",
+    "master_name": "Wall Balls Doble Costura Negro FDL",
+    "category_slug": "cross-training",
+    "price": "28.42"
+  },
+  {
+    "variant_sku": "CRO097",
+    "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+    "master_key": "CRO-WALL-FDL",
+    "master_name": "Wall Balls Doble Costura Negro FDL",
+    "category_slug": "cross-training",
+    "price": "30.60"
+  },
+  {
+    "variant_sku": "CRO098",
+    "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+    "master_key": "CRO-WALL-FDL",
+    "master_name": "Wall Balls Doble Costura Negro FDL",
+    "category_slug": "cross-training",
+    "price": "32.80"
+  },
+  {
+    "variant_sku": "CRO099",
+    "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+    "master_key": "CRO-WALL-FDL",
+    "master_name": "Wall Balls Doble Costura Negro FDL",
+    "category_slug": "cross-training",
+    "price": "36.44"
+  },
+  {
+    "variant_sku": "CRO100",
+    "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+    "master_key": "CRO-WALL-FDL",
+    "master_name": "Wall Balls Doble Costura Negro FDL",
+    "category_slug": "cross-training",
+    "price": "40.60"
+  },
+  {
+    "variant_sku": "CRO136",
+    "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+    "master_key": "CRO-WALL-NEXO",
+    "master_name": "Wall Balls Doble Costura Negro NEXO",
+    "category_slug": "cross-training",
+    "price": "24.79"
+  },
+  {
+    "variant_sku": "CRO142",
+    "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+    "master_key": "CRO-WALL-NEXO",
+    "master_name": "Wall Balls Doble Costura Negro NEXO",
+    "category_slug": "cross-training",
+    "price": "26.29"
+  },
+  {
+    "variant_sku": "CRO137",
+    "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+    "master_key": "CRO-WALL-NEXO",
+    "master_name": "Wall Balls Doble Costura Negro NEXO",
+    "category_slug": "cross-training",
+    "price": "28.42"
+  },
+  {
+    "variant_sku": "CRO138",
+    "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+    "master_key": "CRO-WALL-NEXO",
+    "master_name": "Wall Balls Doble Costura Negro NEXO",
+    "category_slug": "cross-training",
+    "price": "30.60"
+  },
+  {
+    "variant_sku": "CRO139",
+    "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+    "master_key": "CRO-WALL-NEXO",
+    "master_name": "Wall Balls Doble Costura Negro NEXO",
+    "category_slug": "cross-training",
+    "price": "32.80"
+  },
+  {
+    "variant_sku": "CRO140",
+    "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+    "master_key": "CRO-WALL-NEXO",
+    "master_name": "Wall Balls Doble Costura Negro NEXO",
+    "category_slug": "cross-training",
+    "price": "36.44"
+  },
+  {
+    "variant_sku": "CRO141",
+    "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+    "master_key": "CRO-WALL-NEXO",
+    "master_name": "Wall Balls Doble Costura Negro NEXO",
+    "category_slug": "cross-training",
+    "price": "40.60"
+  },
+  {
+    "variant_sku": "CRO083",
+    "variant_name": "Wall Ball Doble costura 12 lbs Negro",
+    "master_key": "CRO-WALL-LBS",
+    "master_name": "Wall Balls Doble Costura Libras",
+    "category_slug": "cross-training",
+    "price": "28.30"
+  },
+  {
+    "variant_sku": "CRO084",
+    "variant_name": "Wall Ball Doble costura 14 lbs Negro",
+    "master_key": "CRO-WALL-LBS",
+    "master_name": "Wall Balls Doble Costura Libras",
+    "category_slug": "cross-training",
+    "price": "29.65"
+  },
+  {
+    "variant_sku": "CRO085",
+    "variant_name": "Wall Ball Doble costura 16 lbs Negro",
+    "master_key": "CRO-WALL-LBS",
+    "master_name": "Wall Balls Doble Costura Libras",
+    "category_slug": "cross-training",
+    "price": "32.34"
+  },
+  {
+    "variant_sku": "CRO086",
+    "variant_name": "Wall Ball Doble costura 20 lbs Negro",
+    "master_key": "CRO-WALL-LBS",
+    "master_name": "Wall Balls Doble Costura Libras",
+    "category_slug": "cross-training",
+    "price": "33.70"
+  },
+  {
+    "variant_sku": "SOP055",
+    "variant_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+    "master_key": "SOP055",
+    "master_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+    "category_slug": "cross-training",
+    "price": "72.89"
+  },
+  {
+    "variant_sku": "SOP063",
+    "variant_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+    "master_key": "SOP063",
+    "master_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+    "category_slug": "cross-training",
+    "price": "114.08"
+  },
+  {
+    "variant_sku": "CRO069",
+    "variant_name": "Power Bag Color 5 kgs NARANJA",
+    "master_key": "CRO-POWER-BAGS-COLOR",
+    "master_name": "Power Bags Color",
+    "category_slug": "cross-training",
+    "price": "24.56"
+  },
+  {
+    "variant_sku": "CRO070",
+    "variant_name": "Power Bag Color 10 kgs ROJO",
+    "master_key": "CRO-POWER-BAGS-COLOR",
+    "master_name": "Power Bags Color",
+    "category_slug": "cross-training",
+    "price": "28.17"
+  },
+  {
+    "variant_sku": "CRO071",
+    "variant_name": "Power Bag Color 15 kgs AZUL",
+    "master_key": "CRO-POWER-BAGS-COLOR",
+    "master_name": "Power Bags Color",
+    "category_slug": "cross-training",
+    "price": "34.18"
+  },
+  {
+    "variant_sku": "CRO072",
+    "variant_name": "Power Bag Color 20 kgs VERDE",
+    "master_key": "CRO-POWER-BAGS-COLOR",
+    "master_name": "Power Bags Color",
+    "category_slug": "cross-training",
+    "price": "40.77"
+  },
+  {
+    "variant_sku": "CRO073",
+    "variant_name": "Power Bag Color 25 kgs NEGRO",
+    "master_key": "CRO-POWER-BAGS-COLOR",
+    "master_name": "Power Bags Color",
+    "category_slug": "cross-training",
+    "price": "48.70"
+  },
+  {
+    "variant_sku": "CRO143",
+    "variant_name": "Power Bag Color 30 kgs",
+    "master_key": "CRO-POWER-BAGS-COLOR",
+    "master_name": "Power Bags Color",
+    "category_slug": "cross-training",
+    "price": "57.95"
+  },
+  {
+    "variant_sku": "CRO074",
+    "variant_name": "Saco Bulgaro 5 kgs",
+    "master_key": "CRO-SACO-BULGARO",
+    "master_name": "Saco Bulgaro",
+    "category_slug": "cross-training",
+    "price": "29.75"
+  },
+  {
+    "variant_sku": "CRO075",
+    "variant_name": "Saco Bulgaro 10 kgs",
+    "master_key": "CRO-SACO-BULGARO",
+    "master_name": "Saco Bulgaro",
+    "category_slug": "cross-training",
+    "price": "34.66"
+  },
+  {
+    "variant_sku": "CRO076",
+    "variant_name": "Saco Bulgaro 15 kgs",
+    "master_key": "CRO-SACO-BULGARO",
+    "master_name": "Saco Bulgaro",
+    "category_slug": "cross-training",
+    "price": "40.78"
+  },
+  {
+    "variant_sku": "CRO077",
+    "variant_name": "Saco Bulgaro 20 kgs",
+    "master_key": "CRO-SACO-BULGARO",
+    "master_name": "Saco Bulgaro",
+    "category_slug": "cross-training",
+    "price": "49.71"
+  }
+]

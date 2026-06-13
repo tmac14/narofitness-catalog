@@ -1,0 +1,3812 @@
+{
+  "audit_version": "1.2",
+  "agent": "agent5_page_import",
+  "workflow_mode": "manual_page_by_page",
+  "generated_at": "2026-06-12T19:32:53.598054+00:00",
+  "requested_page": 14,
+  "page_number": 14,
+  "output_dir": "temp/audit/pages/014",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "parsed_full_pdf": {
+    "parse_scope": "full_pdf",
+    "total_rows_parsed": 871,
+    "total_pages_with_rows": 56
+  },
+  "rows_filtered_to_page": {
+    "requested_page": 14,
+    "count": 22,
+    "source_row_indices": [
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173
+    ],
+    "expected_skus": [
+      "BOC001",
+      "BOC001NEXO",
+      "BOC002",
+      "BOC002NEXO",
+      "BOC003",
+      "BOC003NEXO",
+      "BOC004",
+      "BOC004NEXO",
+      "BOC005",
+      "BOC005NEXO",
+      "BOC006",
+      "BOC007",
+      "BOC008",
+      "BOC008NEXO",
+      "CRO107",
+      "CRO107NEXO",
+      "CRO108",
+      "CRO108NEXO",
+      "CRO131",
+      "CRO133",
+      "SOP028",
+      "SOP029"
+    ]
+  },
+  "reset_before_page": true,
+  "cumulative_mode": false,
+  "confirm_executed": true,
+  "imported_pages": [
+    14
+  ],
+  "reset_summary": {
+    "tables_cleared": [
+      "catalog_exports",
+      "catalog_product_layouts",
+      "catalog_items",
+      "catalogs",
+      "supplier_price_entries",
+      "supplier_price_lists",
+      "import_rows",
+      "import_batches",
+      "product_master_specs",
+      "product_variant_specs",
+      "product_images",
+      "supplier_product_family_keys",
+      "product_variants",
+      "product_masters"
+    ],
+    "tables_preserved": [
+      "categories",
+      "taxonomy_mapping_rules",
+      "suppliers",
+      "import_profiles",
+      "spec_definitions",
+      "spec_allowed_values",
+      "units",
+      "category_spec_profiles",
+      "app_settings",
+      "brands"
+    ],
+    "categories_preserved": true,
+    "taxonomy_mapping_rules_preserved": true,
+    "reset_delete_counts": {
+      "catalog_exports": 0,
+      "catalog_product_layouts": 0,
+      "catalog_items": 0,
+      "catalogs": 0,
+      "supplier_price_entries": 30,
+      "supplier_price_lists": 1,
+      "import_rows": 30,
+      "import_batches": 1,
+      "product_master_specs": 2,
+      "product_variant_specs": 52,
+      "product_images": 0,
+      "supplier_product_family_keys": 7,
+      "product_variants": 30,
+      "product_masters": 7
+    },
+    "product_masters_count_before": 7,
+    "product_masters_count_after": 0,
+    "product_variants_count_before": 30,
+    "product_variants_count_after": 0,
+    "catalogue_items_count_before": 0,
+    "catalogue_items_count_after": 0
+  },
+  "baseline_before": {
+    "canonical_categories_count": 24,
+    "canonical_category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "mapping_rules_count": 28,
+    "product_masters_count": 0,
+    "product_variants_count": 0,
+    "catalogue_items_count": 0
+  },
+  "category_snapshot_before": {
+    "generated_at": "2026-06-12T19:32:48.649515+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "category_snapshot_after": {
+    "generated_at": "2026-06-12T19:32:53.597871+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "raw_extraction": {
+    "page_number": 14,
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "lines": [
+      {
+        "line_index": 0,
+        "text": "Soporte Power Bag / Saco Bulgaro",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 1,
+        "text": "Soporte Power Bag 5 sacos",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 2,
+        "text": "SOP028",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 3,
+        "text": "8435657005719",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 4,
+        "text": "200,55 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 5,
+        "text": "Rack Power Bag y Saco Bulgaro Premium",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 6,
+        "text": "(Grande) - 10 Sacos",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 7,
+        "text": "SOP029",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 8,
+        "text": "8435657005726",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 9,
+        "text": "256,56 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 10,
+        "text": "Saco Gusano",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 11,
+        "text": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 12,
+        "text": "CRO107",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 13,
+        "text": "8435657017620",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 14,
+        "text": "184,65 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 15,
+        "text": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 16,
+        "text": "CRO131",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 17,
+        "text": "8435657018368",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 18,
+        "text": "268,79 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 19,
+        "text": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 20,
+        "text": "CRO108",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 21,
+        "text": "8435657017583",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 22,
+        "text": "322,32 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 23,
+        "text": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 24,
+        "text": "CRO107NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 25,
+        "text": "8435657018979",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 26,
+        "text": "184,65 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 27,
+        "text": "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 28,
+        "text": "CRO108NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 29,
+        "text": "8435657018986",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 30,
+        "text": "322,32 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 31,
+        "text": "Cinturon Lastrado",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 32,
+        "text": "Cinturon Lastrado (negro)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 33,
+        "text": "CRO133",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 34,
+        "text": "8435657018504",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 35,
+        "text": "8,67 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 36,
+        "text": "Barras Crossfit",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 37,
+        "text": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 38,
+        "text": "Agarre 28 mm PLATA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 39,
+        "text": "BOC001",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 40,
+        "text": "8435657000288",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 41,
+        "text": "172,21 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 42,
+        "text": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 43,
+        "text": "Agarre 28 mm PLATA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 44,
+        "text": "BOC002",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 45,
+        "text": "8435657000295",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 46,
+        "text": "149,10 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 47,
+        "text": "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 48,
+        "text": "Agarre 25 mm PLATA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 49,
+        "text": "BOC003",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 50,
+        "text": "8435657000301",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 51,
+        "text": "162,16 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 52,
+        "text": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 53,
+        "text": "Agarre 28 mm NEGRA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 54,
+        "text": "BOC004",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 55,
+        "text": "8435657000318",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 56,
+        "text": "172,21 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 57,
+        "text": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 58,
+        "text": "Agarre 28 mm NEGRA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 59,
+        "text": "BOC008",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 60,
+        "text": "8435657000356",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 61,
+        "text": "149,10 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 62,
+        "text": "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 63,
+        "text": "Agarre 25 mm NEGRA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 64,
+        "text": "BOC005",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 65,
+        "text": "8435657000325",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 66,
+        "text": "162,16 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 67,
+        "text": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 68,
+        "text": "BOC006",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 69,
+        "text": "8435657000332",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 70,
+        "text": "93,11 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 71,
+        "text": "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 72,
+        "text": "BOC007",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 73,
+        "text": "8435657000349",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 74,
+        "text": "93,11 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 75,
+        "text": "Barras Crossfit - NEXO",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 76,
+        "text": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 77,
+        "text": "Agarre 28 mm PLATA  - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 78,
+        "text": "BOC001NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 79,
+        "text": "8435657018870",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 80,
+        "text": "175,80 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 81,
+        "text": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 82,
+        "text": "Agarre 28 mm PLATA - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 83,
+        "text": "BOC002NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 84,
+        "text": "8435657018887",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 85,
+        "text": "152,21 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 86,
+        "text": "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 87,
+        "text": "Agarre 25 mm PLATA - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 88,
+        "text": "BOC003NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 89,
+        "text": "8435657018894",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 90,
+        "text": "165,54 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 91,
+        "text": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 92,
+        "text": "Agarre 28 mm NEGRA - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 93,
+        "text": "BOC004NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 94,
+        "text": "8435657018900",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 95,
+        "text": "175,80 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 96,
+        "text": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 97,
+        "text": "Agarre 28 mm NEGRA - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 98,
+        "text": "BOC008NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 99,
+        "text": "8435657018917",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 100,
+        "text": "152,21 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 101,
+        "text": "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 102,
+        "text": "Agarre 25 mm NEGRA - LOGO NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 103,
+        "text": "BOC005NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 104,
+        "text": "8435657018924",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 105,
+        "text": "165,54 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      }
+    ],
+    "unparsed_candidates": []
+  },
+  "parsed_rows": [
+    {
+      "page_number": 14,
+      "source_row_index": 152,
+      "raw_line_index": 1,
+      "raw_lines": [
+        "Soporte Power Bag 5 sacos",
+        "SOP028",
+        "8435657005719",
+        "200,55 €"
+      ],
+      "raw_sku": "SOP028",
+      "normalized_sku": "SOP028",
+      "raw_name": "Soporte Power Bag / Saco Bulgaro Soporte Power Bag 5 sacos",
+      "normalized_name": "Soporte Power Bag 5 sacos",
+      "price": "200.55",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 153,
+      "raw_line_index": 5,
+      "raw_lines": [
+        "Rack Power Bag y Saco Bulgaro Premium",
+        "(Grande) - 10 Sacos",
+        "SOP029",
+        "8435657005726",
+        "256,56 €"
+      ],
+      "raw_sku": "SOP029",
+      "normalized_sku": "SOP029",
+      "raw_name": "Soporte Power Bag / Saco Bulgaro Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "normalized_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "price": "256.56",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 154,
+      "raw_line_index": 11,
+      "raw_lines": [
+        "Saco Gusano 2 personas - 160x30cms (60kgs)",
+        "CRO107",
+        "8435657017620",
+        "184,65 €"
+      ],
+      "raw_sku": "CRO107",
+      "normalized_sku": "CRO107",
+      "raw_name": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "normalized_name": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "price": "184.65",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 155,
+      "raw_line_index": 15,
+      "raw_lines": [
+        "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+        "CRO131",
+        "8435657018368",
+        "268,79 €"
+      ],
+      "raw_sku": "CRO131",
+      "normalized_sku": "CRO131",
+      "raw_name": "Saco Gusano Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "normalized_name": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "price": "268.79",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 156,
+      "raw_line_index": 19,
+      "raw_lines": [
+        "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+        "CRO108",
+        "8435657017583",
+        "322,32 €"
+      ],
+      "raw_sku": "CRO108",
+      "normalized_sku": "CRO108",
+      "raw_name": "Saco Gusano Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "normalized_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "price": "322.32",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 157,
+      "raw_line_index": 23,
+      "raw_lines": [
+        "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+        "CRO107NEXO",
+        "8435657018979",
+        "184,65 €"
+      ],
+      "raw_sku": "CRO107NEXO",
+      "normalized_sku": "CRO107NEXO",
+      "raw_name": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+      "normalized_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+      "price": "184.65",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 158,
+      "raw_line_index": 27,
+      "raw_lines": [
+        "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO NEXO",
+        "CRO108NEXO",
+        "8435657018986",
+        "322,32 €"
+      ],
+      "raw_sku": "CRO108NEXO",
+      "normalized_sku": "CRO108NEXO",
+      "raw_name": "Saco Gusano Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO NEXO",
+      "normalized_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO",
+      "price": "322.32",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 159,
+      "raw_line_index": 32,
+      "raw_lines": [
+        "Cinturon Lastrado (negro)",
+        "CRO133",
+        "8435657018504",
+        "8,67 €"
+      ],
+      "raw_sku": "CRO133",
+      "normalized_sku": "CRO133",
+      "raw_name": "Cinturon Lastrado Cinturon Lastrado (negro)",
+      "normalized_name": "Cinturon Lastrado (negro)",
+      "price": "8.67",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 160,
+      "raw_line_index": 37,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "Agarre 28 mm PLATA",
+        "BOC001",
+        "8435657000288",
+        "172,21 €"
+      ],
+      "raw_sku": "BOC001",
+      "normalized_sku": "BOC001",
+      "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+      "price": "172.21",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 161,
+      "raw_line_index": 42,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "Agarre 28 mm PLATA",
+        "BOC002",
+        "8435657000295",
+        "149,10 €"
+      ],
+      "raw_sku": "BOC002",
+      "normalized_sku": "BOC002",
+      "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+      "price": "149.10",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 162,
+      "raw_line_index": 47,
+      "raw_lines": [
+        "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "Agarre 25 mm PLATA",
+        "BOC003",
+        "8435657000301",
+        "162,16 €"
+      ],
+      "raw_sku": "BOC003",
+      "normalized_sku": "BOC003",
+      "raw_name": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+      "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+      "price": "162.16",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 163,
+      "raw_line_index": 37,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "Agarre 28 mm NEGRA",
+        "BOC004",
+        "8435657000318",
+        "172,21 €"
+      ],
+      "raw_sku": "BOC004",
+      "normalized_sku": "BOC004",
+      "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+      "price": "172.21",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 164,
+      "raw_line_index": 42,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "Agarre 28 mm NEGRA",
+        "BOC008",
+        "8435657000356",
+        "149,10 €"
+      ],
+      "raw_sku": "BOC008",
+      "normalized_sku": "BOC008",
+      "raw_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+      "price": "149.10",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 165,
+      "raw_line_index": 47,
+      "raw_lines": [
+        "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "Agarre 25 mm NEGRA",
+        "BOC005",
+        "8435657000325",
+        "162,16 €"
+      ],
+      "raw_sku": "BOC005",
+      "normalized_sku": "BOC005",
+      "raw_name": "Barras Crossfit Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+      "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+      "price": "162.16",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 166,
+      "raw_line_index": 67,
+      "raw_lines": [
+        "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+        "BOC006",
+        "8435657000332",
+        "93,11 €"
+      ],
+      "raw_sku": "BOC006",
+      "normalized_sku": "BOC006",
+      "raw_name": "Barras Crossfit Barra Tecnica 10 Kgs - 2 Mts AZUL",
+      "normalized_name": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+      "price": "93.11",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 167,
+      "raw_line_index": 71,
+      "raw_lines": [
+        "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+        "BOC007",
+        "8435657000349",
+        "93,11 €"
+      ],
+      "raw_sku": "BOC007",
+      "normalized_sku": "BOC007",
+      "raw_name": "Barras Crossfit Barra Tecnica 10 Kgs - 2 Mts ROSA",
+      "normalized_name": "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+      "price": "93.11",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 168,
+      "raw_line_index": 37,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "Agarre 28 mm PLATA  - LOGO NEXO",
+        "BOC001NEXO",
+        "8435657018870",
+        "175,80 €"
+      ],
+      "raw_sku": "BOC001NEXO",
+      "normalized_sku": "BOC001NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO NEXO",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO",
+      "price": "175.80",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 169,
+      "raw_line_index": 42,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "Agarre 28 mm PLATA - LOGO NEXO",
+        "BOC002NEXO",
+        "8435657018887",
+        "152,21 €"
+      ],
+      "raw_sku": "BOC002NEXO",
+      "normalized_sku": "BOC002NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO NEXO",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO",
+      "price": "152.21",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 170,
+      "raw_line_index": 47,
+      "raw_lines": [
+        "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "Agarre 25 mm PLATA - LOGO NEXO",
+        "BOC003NEXO",
+        "8435657018894",
+        "165,54 €"
+      ],
+      "raw_sku": "BOC003NEXO",
+      "normalized_sku": "BOC003NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO NEXO",
+      "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO",
+      "price": "165.54",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 171,
+      "raw_line_index": 37,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500&",
+        "Agarre 28 mm NEGRA - LOGO NEXO",
+        "BOC004NEXO",
+        "8435657018900",
+        "175,80 €"
+      ],
+      "raw_sku": "BOC004NEXO",
+      "normalized_sku": "BOC004NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO NEXO",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO",
+      "price": "175.80",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 172,
+      "raw_line_index": 42,
+      "raw_lines": [
+        "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000&",
+        "Agarre 28 mm NEGRA - LOGO NEXO",
+        "BOC008NEXO",
+        "8435657018917",
+        "152,21 €"
+      ],
+      "raw_sku": "BOC008NEXO",
+      "normalized_sku": "BOC008NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO NEXO",
+      "normalized_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO",
+      "price": "152.21",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 14,
+      "source_row_index": 173,
+      "raw_line_index": 47,
+      "raw_lines": [
+        "Barra 2 Mts - 15 kgs - 1000& - 6 Rod",
+        "Agarre 25 mm NEGRA - LOGO NEXO",
+        "BOC005NEXO",
+        "8435657018924",
+        "165,54 €"
+      ],
+      "raw_sku": "BOC005NEXO",
+      "normalized_sku": "BOC005NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO NEXO",
+      "normalized_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO",
+      "price": "165.54",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    }
+  ],
+  "taxonomy_decision": [
+    {
+      "source_row_index": 152,
+      "normalized_sku": "SOP028",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 153,
+      "normalized_sku": "SOP029",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 154,
+      "normalized_sku": "CRO107",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 155,
+      "normalized_sku": "CRO131",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 156,
+      "normalized_sku": "CRO108",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 157,
+      "normalized_sku": "CRO107NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 158,
+      "normalized_sku": "CRO108NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 159,
+      "normalized_sku": "CRO133",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 160,
+      "normalized_sku": "BOC001",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 161,
+      "normalized_sku": "BOC002",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 162,
+      "normalized_sku": "BOC003",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 163,
+      "normalized_sku": "BOC004",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 164,
+      "normalized_sku": "BOC008",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 165,
+      "normalized_sku": "BOC005",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 166,
+      "normalized_sku": "BOC006",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 167,
+      "normalized_sku": "BOC007",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 168,
+      "normalized_sku": "BOC001NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 169,
+      "normalized_sku": "BOC002NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 170,
+      "normalized_sku": "BOC003NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 171,
+      "normalized_sku": "BOC004NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 172,
+      "normalized_sku": "BOC008NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 173,
+      "normalized_sku": "BOC005NEXO",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    }
+  ],
+  "preview_decision": [
+    {
+      "source_row_index": 152,
+      "normalized_sku": "SOP028",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "SOP028",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 153,
+      "normalized_sku": "SOP029",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "SOP029",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 154,
+      "normalized_sku": "CRO107",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-GUSANO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 155,
+      "normalized_sku": "CRO131",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-GUSANO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 156,
+      "normalized_sku": "CRO108",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-GUSANO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 157,
+      "normalized_sku": "CRO107NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-GUSANO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 158,
+      "normalized_sku": "CRO108NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-GUSANO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 159,
+      "normalized_sku": "CRO133",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "CRO133",
+        "variant_axes": [
+          "color"
+        ],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 160,
+      "normalized_sku": "BOC001",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 161,
+      "normalized_sku": "BOC002",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 162,
+      "normalized_sku": "BOC003",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 163,
+      "normalized_sku": "BOC004",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 164,
+      "normalized_sku": "BOC008",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 165,
+      "normalized_sku": "BOC005",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 166,
+      "normalized_sku": "BOC006",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 167,
+      "normalized_sku": "BOC007",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 168,
+      "normalized_sku": "BOC001NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 169,
+      "normalized_sku": "BOC002NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 170,
+      "normalized_sku": "BOC003NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 171,
+      "normalized_sku": "BOC004NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 172,
+      "normalized_sku": "BOC008NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 173,
+      "normalized_sku": "BOC005NEXO",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": false,
+        "suspicion_flags": []
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    }
+  ],
+  "confirm_result": {
+    "executed": true,
+    "allow_needs_review": false,
+    "rows_imported": 22,
+    "rows_blocked": 0,
+    "rows_skipped": 0,
+    "masters_created": 6,
+    "variants_created": 22,
+    "variants_updated": 0,
+    "entries_created": 22,
+    "per_row": [
+      {
+        "source_row_index": 152,
+        "sku": "SOP028",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 153,
+        "sku": "SOP029",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 154,
+        "sku": "CRO107",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 155,
+        "sku": "CRO131",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 156,
+        "sku": "CRO108",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 157,
+        "sku": "CRO107NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 158,
+        "sku": "CRO108NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 159,
+        "sku": "CRO133",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 160,
+        "sku": "BOC001",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 161,
+        "sku": "BOC002",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 162,
+        "sku": "BOC003",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 163,
+        "sku": "BOC004",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 164,
+        "sku": "BOC008",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 165,
+        "sku": "BOC005",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 166,
+        "sku": "BOC006",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 167,
+        "sku": "BOC007",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 168,
+        "sku": "BOC001NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 169,
+        "sku": "BOC002NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 170,
+        "sku": "BOC003NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 171,
+        "sku": "BOC004NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 172,
+        "sku": "BOC008NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 173,
+        "sku": "BOC005NEXO",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      }
+    ],
+    "batch_id": "e1495ac0-890f-40a5-ad0d-6763bdff6fc2"
+  },
+  "db_after": {
+    "masters": [
+      {
+        "product_master_id": "9e01e826-b353-41c8-b1ea-b21043d216cc",
+        "master_key": "SOP028",
+        "product_master_name": "Soporte Power Bag 5 sacos",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "56ad3588-67c1-4c0c-85d9-2db733e65435",
+        "master_key": "SOP029",
+        "product_master_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+        "master_key": "CRO-SACO-GUSANO",
+        "product_master_name": "Saco Gusano",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "56574224-0ed1-43a7-a19d-daa96dd8a7df",
+        "master_key": "CRO133",
+        "product_master_name": "Cinturon Lastrado (negro)",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "product_master_name": "Barras Crossfit - NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      }
+    ],
+    "variants": [
+      {
+        "product_variant_id": "4abd87ea-521a-4608-ad13-15b5e16697ab",
+        "variant_sku": "SOP028",
+        "variant_name": "Soporte Power Bag 5 sacos",
+        "product_master_id": "9e01e826-b353-41c8-b1ea-b21043d216cc",
+        "product_master_sku": "SOP028",
+        "product_master_name": "Soporte Power Bag 5 sacos",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "200.55"
+      },
+      {
+        "product_variant_id": "d19cd925-19ab-43f9-9270-0fe9a3ecd2da",
+        "variant_sku": "SOP029",
+        "variant_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+        "product_master_id": "56ad3588-67c1-4c0c-85d9-2db733e65435",
+        "product_master_sku": "SOP029",
+        "product_master_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "256.56"
+      },
+      {
+        "product_variant_id": "e60886ad-3f46-4f3b-902e-6a6644a96444",
+        "variant_sku": "CRO107",
+        "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+        "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+        "product_master_sku": "CRO-SACO-GUSANO",
+        "product_master_name": "Saco Gusano",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "184.65"
+      },
+      {
+        "product_variant_id": "31a64af0-702d-431d-969c-906fcbb4dedc",
+        "variant_sku": "CRO131",
+        "variant_name": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+        "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+        "product_master_sku": "CRO-SACO-GUSANO",
+        "product_master_name": "Saco Gusano",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "268.79"
+      },
+      {
+        "product_variant_id": "2a1971b5-cdcd-4140-81d5-97b3e87db888",
+        "variant_sku": "CRO108",
+        "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+        "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+        "product_master_sku": "CRO-SACO-GUSANO",
+        "product_master_name": "Saco Gusano",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "322.32"
+      },
+      {
+        "product_variant_id": "a2929c3b-771e-430e-83bd-23a4f5b20362",
+        "variant_sku": "CRO107NEXO",
+        "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+        "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+        "product_master_sku": "CRO-SACO-GUSANO",
+        "product_master_name": "Saco Gusano",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "184.65"
+      },
+      {
+        "product_variant_id": "3999dc43-cb0b-4014-8314-9d036448779a",
+        "variant_sku": "CRO108NEXO",
+        "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO",
+        "product_master_id": "11f2d112-3f9c-4422-9aff-0dc76a1015e5",
+        "product_master_sku": "CRO-SACO-GUSANO",
+        "product_master_name": "Saco Gusano",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "322.32"
+      },
+      {
+        "product_variant_id": "408ca4d1-8091-414a-a516-e05697cf4b78",
+        "variant_sku": "CRO133",
+        "variant_name": "Cinturon Lastrado (negro)",
+        "product_master_id": "56574224-0ed1-43a7-a19d-daa96dd8a7df",
+        "product_master_sku": "CRO133",
+        "product_master_name": "Cinturon Lastrado (negro)",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "8.67"
+      },
+      {
+        "product_variant_id": "b76ea722-11f9-4350-92ef-ca3096de5d44",
+        "variant_sku": "BOC001",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "172.21"
+      },
+      {
+        "product_variant_id": "d1f37bb1-f1c3-4994-bacb-2dd744adae0f",
+        "variant_sku": "BOC002",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "149.10"
+      },
+      {
+        "product_variant_id": "7849efb6-fb98-4c73-8456-1a0b928650b5",
+        "variant_sku": "BOC003",
+        "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "162.16"
+      },
+      {
+        "product_variant_id": "ce53aa61-5321-479e-982e-ad472468c151",
+        "variant_sku": "BOC004",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "172.21"
+      },
+      {
+        "product_variant_id": "1a97bd6e-6903-4420-932a-0bed832aabd7",
+        "variant_sku": "BOC008",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "149.10"
+      },
+      {
+        "product_variant_id": "1084b625-5b98-4b0c-80d2-df4837fc24d9",
+        "variant_sku": "BOC005",
+        "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "162.16"
+      },
+      {
+        "product_variant_id": "3e96d64a-c1a1-45f1-9bb5-98e0058f2215",
+        "variant_sku": "BOC006",
+        "variant_name": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "93.11"
+      },
+      {
+        "product_variant_id": "2ad9567d-d8d5-4380-bb35-db41edddbce4",
+        "variant_sku": "BOC007",
+        "variant_name": "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+        "product_master_id": "96271802-5439-4d22-a3c6-f2f730caf818",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT",
+        "product_master_name": "Barras Crossfit",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "93.11"
+      },
+      {
+        "product_variant_id": "bc2dbe62-b90f-4aae-8ecd-611c0307717e",
+        "variant_sku": "BOC001NEXO",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO",
+        "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+        "product_master_name": "Barras Crossfit - NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "175.80"
+      },
+      {
+        "product_variant_id": "55cec443-9c9c-4dd2-9bda-33650ba11bb4",
+        "variant_sku": "BOC002NEXO",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO",
+        "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+        "product_master_name": "Barras Crossfit - NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "152.21"
+      },
+      {
+        "product_variant_id": "daf9afd1-bf25-44cd-8ba0-38f0b004cc4e",
+        "variant_sku": "BOC003NEXO",
+        "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO",
+        "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+        "product_master_name": "Barras Crossfit - NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "165.54"
+      },
+      {
+        "product_variant_id": "c50bb017-d6e6-4bc3-8f02-62dca7caa50e",
+        "variant_sku": "BOC004NEXO",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO",
+        "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+        "product_master_name": "Barras Crossfit - NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "175.80"
+      },
+      {
+        "product_variant_id": "136a73b8-c8d8-495f-bf7e-bfcbf6d26822",
+        "variant_sku": "BOC008NEXO",
+        "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO",
+        "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+        "product_master_name": "Barras Crossfit - NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "152.21"
+      },
+      {
+        "product_variant_id": "43b5282b-5f94-475b-991e-1b2df4968552",
+        "variant_sku": "BOC005NEXO",
+        "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO",
+        "product_master_id": "6c7ca05b-1f27-41f4-a28b-b248d64bbfcb",
+        "product_master_sku": "BOC-BARRAS-CROSSFIT-NEXO",
+        "product_master_name": "Barras Crossfit - NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "165.54"
+      }
+    ],
+    "price_entries": [
+      {
+        "variant_sku": "SOP028",
+        "price": "200.55",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "SOP029",
+        "price": "256.56",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "CRO107",
+        "price": "184.65",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "CRO131",
+        "price": "268.79",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "CRO108",
+        "price": "322.32",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "CRO107NEXO",
+        "price": "184.65",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "CRO108NEXO",
+        "price": "322.32",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "CRO133",
+        "price": "8.67",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC001",
+        "price": "172.21",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC002",
+        "price": "149.10",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC003",
+        "price": "162.16",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC004",
+        "price": "172.21",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC008",
+        "price": "149.10",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC005",
+        "price": "162.16",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC006",
+        "price": "93.11",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC007",
+        "price": "93.11",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC001NEXO",
+        "price": "175.80",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC002NEXO",
+        "price": "152.21",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC003NEXO",
+        "price": "165.54",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC004NEXO",
+        "price": "175.80",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC008NEXO",
+        "price": "152.21",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      },
+      {
+        "variant_sku": "BOC005NEXO",
+        "price": "165.54",
+        "currency": "EUR",
+        "price_list_id": "ed69fb6a-4a7e-44b6-9995-b092b32db388"
+      }
+    ],
+    "specs": [],
+    "variant_skus": [
+      "BOC001",
+      "BOC001NEXO",
+      "BOC002",
+      "BOC002NEXO",
+      "BOC003",
+      "BOC003NEXO",
+      "BOC004",
+      "BOC004NEXO",
+      "BOC005",
+      "BOC005NEXO",
+      "BOC006",
+      "BOC007",
+      "BOC008",
+      "BOC008NEXO",
+      "CRO107",
+      "CRO107NEXO",
+      "CRO108",
+      "CRO108NEXO",
+      "CRO131",
+      "CRO133",
+      "SOP028",
+      "SOP029"
+    ]
+  },
+  "db_after_contains_only_requested_page_products": true,
+  "unexpected_skus_from_other_pages": [],
+  "products_visible_in_app_count": 22,
+  "products_visible_in_app": [
+    {
+      "variant_sku": "SOP028",
+      "variant_name": "Soporte Power Bag 5 sacos",
+      "master_key": "SOP028",
+      "master_name": "Soporte Power Bag 5 sacos",
+      "category_slug": "cross-training",
+      "price": "200.55"
+    },
+    {
+      "variant_sku": "SOP029",
+      "variant_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "master_key": "SOP029",
+      "master_name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "category_slug": "cross-training",
+      "price": "256.56"
+    },
+    {
+      "variant_sku": "CRO107",
+      "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "master_key": "CRO-SACO-GUSANO",
+      "master_name": "Saco Gusano",
+      "category_slug": "cross-training",
+      "price": "184.65"
+    },
+    {
+      "variant_sku": "CRO131",
+      "variant_name": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "master_key": "CRO-SACO-GUSANO",
+      "master_name": "Saco Gusano",
+      "category_slug": "cross-training",
+      "price": "268.79"
+    },
+    {
+      "variant_sku": "CRO108",
+      "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "master_key": "CRO-SACO-GUSANO",
+      "master_name": "Saco Gusano",
+      "category_slug": "cross-training",
+      "price": "322.32"
+    },
+    {
+      "variant_sku": "CRO107NEXO",
+      "variant_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+      "master_key": "CRO-SACO-GUSANO",
+      "master_name": "Saco Gusano",
+      "category_slug": "cross-training",
+      "price": "184.65"
+    },
+    {
+      "variant_sku": "CRO108NEXO",
+      "variant_name": "Saco Gusano 4 personas - 336x30,5cms (163kgs) - LOGO",
+      "master_key": "CRO-SACO-GUSANO",
+      "master_name": "Saco Gusano",
+      "category_slug": "cross-training",
+      "price": "322.32"
+    },
+    {
+      "variant_sku": "CRO133",
+      "variant_name": "Cinturon Lastrado (negro)",
+      "master_key": "CRO133",
+      "master_name": "Cinturon Lastrado (negro)",
+      "category_slug": "cross-training",
+      "price": "8.67"
+    },
+    {
+      "variant_sku": "BOC001",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "172.21"
+    },
+    {
+      "variant_sku": "BOC002",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "149.10"
+    },
+    {
+      "variant_sku": "BOC003",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "162.16"
+    },
+    {
+      "variant_sku": "BOC004",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "172.21"
+    },
+    {
+      "variant_sku": "BOC008",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "149.10"
+    },
+    {
+      "variant_sku": "BOC005",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "162.16"
+    },
+    {
+      "variant_sku": "BOC006",
+      "variant_name": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "93.11"
+    },
+    {
+      "variant_sku": "BOC007",
+      "variant_name": "Barra Tecnica 10 Kgs - 2 Mts ROSA",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "master_name": "Barras Crossfit",
+      "category_slug": "cross-training",
+      "price": "93.11"
+    },
+    {
+      "variant_sku": "BOC001NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "master_name": "Barras Crossfit - NEXO",
+      "category_slug": "cross-training",
+      "price": "175.80"
+    },
+    {
+      "variant_sku": "BOC002NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm PLATA - LOGO",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "master_name": "Barras Crossfit - NEXO",
+      "category_slug": "cross-training",
+      "price": "152.21"
+    },
+    {
+      "variant_sku": "BOC003NEXO",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm PLATA - LOGO",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "master_name": "Barras Crossfit - NEXO",
+      "category_slug": "cross-training",
+      "price": "165.54"
+    },
+    {
+      "variant_sku": "BOC004NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "master_name": "Barras Crossfit - NEXO",
+      "category_slug": "cross-training",
+      "price": "175.80"
+    },
+    {
+      "variant_sku": "BOC008NEXO",
+      "variant_name": "Barra 2,20 Mts - 20 kgs - 4 Rod - 1000 lbs Agarre 28 mm NEGRA - LOGO",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "master_name": "Barras Crossfit - NEXO",
+      "category_slug": "cross-training",
+      "price": "152.21"
+    },
+    {
+      "variant_sku": "BOC005NEXO",
+      "variant_name": "Barra 2 Mts - 15 kgs - 1000 lbs - 6 Rod Agarre 25 mm NEGRA - LOGO",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "master_name": "Barras Crossfit - NEXO",
+      "category_slug": "cross-training",
+      "price": "165.54"
+    }
+  ],
+  "blocked_rows_detail": [],
+  "status": "pass",
+  "fail_reasons": [],
+  "products_imported": [
+    "BOC001",
+    "BOC001NEXO",
+    "BOC002",
+    "BOC002NEXO",
+    "BOC003",
+    "BOC003NEXO",
+    "BOC004",
+    "BOC004NEXO",
+    "BOC005",
+    "BOC005NEXO",
+    "BOC006",
+    "BOC007",
+    "BOC008",
+    "BOC008NEXO",
+    "CRO107",
+    "CRO107NEXO",
+    "CRO108",
+    "CRO108NEXO",
+    "CRO131",
+    "CRO133",
+    "SOP028",
+    "SOP029"
+  ],
+  "products_blocked": [],
+  "products_expected_but_not_imported": [],
+  "category_warnings": [],
+  "grouping_warnings": [],
+  "review_gate_warnings": [],
+  "app_visual_check": {
+    "products_page_should_show_only_requested_page": true,
+    "expected_visible_products_count": 22,
+    "actual_visible_products_count": 22,
+    "visible_skus": [
+      "BOC001",
+      "BOC001NEXO",
+      "BOC002",
+      "BOC002NEXO",
+      "BOC003",
+      "BOC003NEXO",
+      "BOC004",
+      "BOC004NEXO",
+      "BOC005",
+      "BOC005NEXO",
+      "BOC006",
+      "BOC007",
+      "BOC008",
+      "BOC008NEXO",
+      "CRO107",
+      "CRO107NEXO",
+      "CRO108",
+      "CRO108NEXO",
+      "CRO131",
+      "CRO133",
+      "SOP028",
+      "SOP029"
+    ],
+    "visible_categories": [
+      "cross-training"
+    ],
+    "note": "Open Products page in the app after this run to visually inspect only page 14 products."
+  },
+  "diff": {
+    "inserted_masters": [
+      "SOP028",
+      "SOP029",
+      "CRO-SACO-GUSANO",
+      "CRO133",
+      "BOC-BARRAS-CROSSFIT",
+      "BOC-BARRAS-CROSSFIT-NEXO"
+    ],
+    "inserted_variants": [
+      "BOC001",
+      "BOC001NEXO",
+      "BOC002",
+      "BOC002NEXO",
+      "BOC003",
+      "BOC003NEXO",
+      "BOC004",
+      "BOC004NEXO",
+      "BOC005",
+      "BOC005NEXO",
+      "BOC006",
+      "BOC007",
+      "BOC008",
+      "BOC008NEXO",
+      "CRO107",
+      "CRO107NEXO",
+      "CRO108",
+      "CRO108NEXO",
+      "CRO131",
+      "CRO133",
+      "SOP028",
+      "SOP029"
+    ],
+    "skipped_rows": 0,
+    "blocked_rows": [],
+    "categories_created": [],
+    "mappings_created": [],
+    "unexpected_categories": [],
+    "products_imported_but_suspicious": [
+      "CRO107",
+      "CRO108",
+      "CRO131",
+      "CRO133",
+      "SOP028",
+      "SOP029"
+    ]
+  },
+  "warnings": [],
+  "suspicious_variant_candidates": [
+    {
+      "suspicion_id": "S-0001",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        14
+      ],
+      "skus": [
+        "SOP028",
+        "SOP029"
+      ],
+      "current_master_keys": [
+        "SOP028",
+        "SOP029"
+      ],
+      "expected_master_key": "SOP",
+      "grouping_reasons": [
+        "explicit_one_per_sku",
+        "explicit_one_per_sku"
+      ],
+      "possible_false_negative": true
+    },
+    {
+      "suspicion_id": "S-0002",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        14
+      ],
+      "skus": [
+        "CRO107",
+        "CRO131",
+        "CRO108",
+        "CRO133"
+      ],
+      "current_master_keys": [
+        "CRO-SACO-GUSANO",
+        "CRO-SACO-GUSANO",
+        "CRO-SACO-GUSANO",
+        "CRO133"
+      ],
+      "expected_master_key": "CRO",
+      "grouping_reasons": [
+        "cross_training_block_family:CRO-SACO-GUSANO",
+        "cross_training_block_family:CRO-SACO-GUSANO",
+        "cross_training_block_family:CRO-SACO-GUSANO",
+        "explicit_one_per_sku"
+      ],
+      "possible_false_negative": true
+    }
+  ],
+  "manual_approval": {
+    "page_approved": false,
+    "note": "Page is not approved until the user gives explicit OK. Do not advance to the next page automatically."
+  }
+}

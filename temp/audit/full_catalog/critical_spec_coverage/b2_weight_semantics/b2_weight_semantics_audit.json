@@ -1,0 +1,2018 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B2-WEIGHT-SEMANTICS-AUDIT",
+  "status": "B2_WEIGHT_SEMANTICS_AUDIT_COMPLETE",
+  "generated_at": "2026-06-12T18:47:18.483907+00:00",
+  "read_only_confirmation": {
+    "code_modified": false,
+    "database_modified": false
+  },
+  "baseline": {
+    "expected": {
+      "variants": 871,
+      "masters": 534,
+      "peso_kg": 431,
+      "peso_lb": 4
+    },
+    "actual": {
+      "variants": 871,
+      "peso_kg_rows": 431,
+      "peso_lb_rows": 4
+    },
+    "baseline_ok": true
+  },
+  "counts": {
+    "peso_kg_variants": 431,
+    "peso_lb_variants": 4,
+    "by_category": {
+      "barras": {
+        "peso_kg": 5,
+        "peso_lb": 0
+      },
+      "bicicletas-estaticas": {
+        "peso_kg": 0,
+        "peso_lb": 0
+      },
+      "cardio": {
+        "peso_kg": 0,
+        "peso_lb": 0
+      },
+      "cintas-de-correr": {
+        "peso_kg": 0,
+        "peso_lb": 0
+      },
+      "cross-training": {
+        "peso_kg": 145,
+        "peso_lb": 4
+      },
+      "discos": {
+        "peso_kg": 75,
+        "peso_lb": 0
+      },
+      "elipticas": {
+        "peso_kg": 0,
+        "peso_lb": 0
+      },
+      "mancuernas": {
+        "peso_kg": 149,
+        "peso_lb": 0
+      },
+      "material-de-estudio": {
+        "peso_kg": 57,
+        "peso_lb": 0
+      },
+      "remos": {
+        "peso_kg": 0,
+        "peso_lb": 0
+      },
+      "soportes-y-mancuerneros": {
+        "peso_kg": 0,
+        "peso_lb": 0
+      }
+    },
+    "by_classification": {
+      "WEIGHT_SPEC_FALSE_POSITIVE": 5,
+      "WEIGHT_SPEC_CORRECT": 430,
+      "WEIGHT_SPEC_MISSING": 12,
+      "WEIGHT_UNIT_DECISION_REQUIRED": 14
+    }
+  },
+  "pages_with_weight_evidence": {
+    "kg_pages": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      33,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43,
+      45,
+      46,
+      47,
+      49,
+      50,
+      56,
+      61,
+      62
+    ],
+    "lb_pages": [
+      13,
+      14,
+      34
+    ]
+  },
+  "false_positives": [
+    {
+      "sku": "BBP140B",
+      "category_slug": "barras",
+      "master_key": "BBPB",
+      "grouping_reason": "fdl_sku_family:BBPB",
+      "source_page": 34,
+      "peso_kg": 140.0,
+      "peso_lb": null,
+      "parser_peso_kg": 140,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 140.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1400
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+        "spec": "peso_kg",
+        "value": 140.0,
+        "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+        "evidence": "sku_size_fallback",
+        "longitud_mm": 1400
+      }
+    },
+    {
+      "sku": "BN120Z",
+      "category_slug": "barras",
+      "master_key": "BNZ",
+      "grouping_reason": "fdl_sku_family:BNZ",
+      "source_page": 34,
+      "peso_kg": 120.0,
+      "peso_lb": null,
+      "parser_peso_kg": 120,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 120.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1200
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+        "spec": "peso_kg",
+        "value": 120.0,
+        "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+        "evidence": "sku_size_fallback",
+        "longitud_mm": 1200
+      }
+    },
+    {
+      "sku": "BO120Z",
+      "category_slug": "barras",
+      "master_key": "BOZ",
+      "grouping_reason": "fdl_sku_family:BOZ",
+      "source_page": 34,
+      "peso_kg": 120.0,
+      "peso_lb": null,
+      "parser_peso_kg": 120,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 120.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1200
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+        "spec": "peso_kg",
+        "value": 120.0,
+        "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+        "evidence": "sku_size_fallback",
+        "longitud_mm": 1200
+      }
+    },
+    {
+      "sku": "BOR120Z",
+      "category_slug": "barras",
+      "master_key": "BORZ",
+      "grouping_reason": "fdl_sku_family:BORZ",
+      "source_page": 34,
+      "peso_kg": 120.0,
+      "peso_lb": null,
+      "parser_peso_kg": 120,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 120.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1200
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+        "spec": "peso_kg",
+        "value": 120.0,
+        "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+        "evidence": "sku_size_fallback",
+        "longitud_mm": 1200
+      }
+    },
+    {
+      "sku": "BOR220A",
+      "category_slug": "barras",
+      "master_key": "BORA",
+      "grouping_reason": "fdl_sku_family:BORA",
+      "source_page": 34,
+      "peso_kg": 220.0,
+      "peso_lb": null,
+      "parser_peso_kg": 220,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 220.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 2200
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "bar load rating in lbs (BOR220); not variant axis",
+          "evidence": "name_lbs_load_rating"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+        "spec": "peso_kg",
+        "value": 220.0,
+        "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+        "evidence": "sku_size_fallback",
+        "longitud_mm": 2200
+      }
+    }
+  ],
+  "missing_specs": [
+    {
+      "sku": "BOC001",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1500.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC001NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1500.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC002",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC002NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC003",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC003NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC004",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1500.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC004NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1500.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC005",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC005NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC008",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    },
+    {
+      "sku": "BOC008NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_SPEC_MISSING",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "explicit lbs in name/header",
+        "evidence": "name_lbs"
+      }
+    }
+  ],
+  "unit_decisions": [
+    {
+      "sku": "BOC001",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC001NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC002",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC002NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC003",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC003NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC004",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC004NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC005",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC005NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 15.0,
+      "peso_lb": null,
+      "parser_peso_kg": 15.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 15.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC008",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOC008NEXO",
+      "category_slug": "cross-training",
+      "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+      "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+      "source_page": 14,
+      "peso_kg": 20.0,
+      "peso_lb": null,
+      "parser_peso_kg": 20.0,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_CORRECT",
+          "spec": "peso_kg",
+          "value": 20.0,
+          "evidence": "name_kg"
+        },
+        {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "partial_dual",
+          "reason": "source has both units; only one persisted"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "partial_dual",
+        "reason": "source has both units; only one persisted"
+      }
+    },
+    {
+      "sku": "BOR220",
+      "category_slug": "barras",
+      "master_key": "BOR",
+      "grouping_reason": "numeric_suffix_family:BOR",
+      "source_page": 34,
+      "peso_kg": null,
+      "peso_lb": null,
+      "parser_peso_kg": null,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "bar load rating in lbs (BOR220); not variant axis",
+          "evidence": "name_lbs_load_rating"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "peso_lb",
+        "expected": 1500.0,
+        "reason": "bar load rating in lbs (BOR220); not variant axis",
+        "evidence": "name_lbs_load_rating"
+      }
+    },
+    {
+      "sku": "BOR220A",
+      "category_slug": "barras",
+      "master_key": "BORA",
+      "grouping_reason": "fdl_sku_family:BORA",
+      "source_page": 34,
+      "peso_kg": 220.0,
+      "peso_lb": null,
+      "parser_peso_kg": 220,
+      "parser_peso_lb": null,
+      "findings": [
+        {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 220.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 2200
+        },
+        {
+          "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "bar load rating in lbs (BOR220); not variant axis",
+          "evidence": "name_lbs_load_rating"
+        }
+      ],
+      "finding": {
+        "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+        "spec": "peso_lb",
+        "expected": 1000.0,
+        "reason": "bar load rating in lbs (BOR220); not variant axis",
+        "evidence": "name_lbs_load_rating"
+      }
+    }
+  ],
+  "family_stats": {
+    "fdl_sku_family": {
+      "peso_kg": 26,
+      "peso_lb": 0,
+      "false_positive": 5,
+      "skus": [
+        "BBP140B",
+        "BN120Z",
+        "BO120Z",
+        "BOR120Z",
+        "BOR220A"
+      ]
+    },
+    "cross_training_block_family": {
+      "peso_kg": 67,
+      "peso_lb": 4,
+      "false_positive": 0,
+      "skus": []
+    },
+    "explicit_one_per_sku": {
+      "peso_kg": 63,
+      "peso_lb": 0,
+      "false_positive": 0,
+      "skus": []
+    },
+    "numeric_suffix_family": {
+      "peso_kg": 205,
+      "peso_lb": 0,
+      "false_positive": 0,
+      "skus": []
+    },
+    "cross_training_bumper_family": {
+      "peso_kg": 36,
+      "peso_lb": 0,
+      "false_positive": 0,
+      "skus": []
+    },
+    "numeric_compound_suffix_family": {
+      "peso_kg": 22,
+      "peso_lb": 0,
+      "false_positive": 0,
+      "skus": []
+    },
+    "hyphen_suffix_family": {
+      "peso_kg": 12,
+      "peso_lb": 0,
+      "false_positive": 0,
+      "skus": []
+    }
+  },
+  "weight_axis_families": [
+    "numeric_suffix_family (discos/mancuernas/CT bumpers)",
+    "numeric_compound_suffix_family (JMU/JMP/JMH)",
+    "hyphen_suffix_family (MPS-R)",
+    "cross_training_bumper_family",
+    "fdl_sku_family (suffix-letter mancuernas MH*A etc — weight when size=kg)",
+    "cross_training_block wall-ball (peso_lb axis when extracted)"
+  ],
+  "commercial_decisions": [
+    "Wall balls: peso_lb as sole variant axis vs dual kg+lb display",
+    "Bar load ratings (1500 lbs, 1000 lbs): store as spec or ignore (not variant axis)",
+    "material-de-estudio peso_kg: discovery works; profile optional per B3B"
+  ],
+  "recommended_sub_batches": [
+    {
+      "batch_id": "B2-A-BAR-SUFFIX-LETTER-PESO-REMOVAL",
+      "scope": "Remove peso_kg from fdl_sku_family barras suffix-letter (BNZ/BOZ/BORZ/BBPB/BORA) where size=length cm",
+      "skus": [
+        "BBP140B",
+        "BN120Z",
+        "BO120Z",
+        "BOR120Z",
+        "BOR220A"
+      ],
+      "risk": "LOW — does not touch numeric_suffix_family weight families",
+      "grouping_impact": "none"
+    },
+    {
+      "batch_id": "B2-B-WALL-BALL-PESO-LB",
+      "scope": "Extend peso_lb extraction for cross-training wall-ball block where lbs explicit",
+      "skus": [
+        "BOC001",
+        "BOC001NEXO",
+        "BOC002",
+        "BOC002NEXO",
+        "BOC003",
+        "BOC003NEXO",
+        "BOC004",
+        "BOC004NEXO",
+        "BOC005",
+        "BOC005NEXO",
+        "BOC008",
+        "BOC008NEXO"
+      ],
+      "risk": "MEDIUM — commercial rule: lb as primary axis vs kg",
+      "grouping_impact": "none"
+    },
+    {
+      "batch_id": "B2-C-BAR-LOAD-RATING-LBS",
+      "scope": "BOR220/BOR220A load-rating lbs — commercial decision only, not variant axis",
+      "risk": "HIGH if auto-extracted as peso_lb",
+      "grouping_impact": "none"
+    }
+  ],
+  "agent_2_plan_mode_prompt": "SPEC-B2-A-BAR-SUFFIX-LETTER-PESO-REMOVAL: In fdl_sku_family grouping for barras suffix-letter masters (BNZ/BOZ/BORZ/BBPB/BORA), skip attr_from_sku peso_kg when bar length extractor applies; do not modify numeric_suffix_family weight paths.",
+  "inventory_sample": {
+    "peso_lb_all": [
+      {
+        "sku": "CRO083",
+        "category_slug": "cross-training",
+        "master_key": "CRO-WALL-LBS",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "source_page": 13,
+        "peso_kg": null,
+        "peso_lb": 12.0,
+        "parser_peso_kg": null,
+        "parser_peso_lb": 12.0,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_lb",
+            "value": 12.0,
+            "evidence": "name_lbs"
+          }
+        ]
+      },
+      {
+        "sku": "CRO084",
+        "category_slug": "cross-training",
+        "master_key": "CRO-WALL-LBS",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "source_page": 13,
+        "peso_kg": null,
+        "peso_lb": 14.0,
+        "parser_peso_kg": null,
+        "parser_peso_lb": 14.0,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_lb",
+            "value": 14.0,
+            "evidence": "name_lbs"
+          }
+        ]
+      },
+      {
+        "sku": "CRO085",
+        "category_slug": "cross-training",
+        "master_key": "CRO-WALL-LBS",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "source_page": 13,
+        "peso_kg": null,
+        "peso_lb": 16.0,
+        "parser_peso_kg": null,
+        "parser_peso_lb": 16.0,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_lb",
+            "value": 16.0,
+            "evidence": "name_lbs"
+          }
+        ]
+      },
+      {
+        "sku": "CRO086",
+        "category_slug": "cross-training",
+        "master_key": "CRO-WALL-LBS",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "source_page": 13,
+        "peso_kg": null,
+        "peso_lb": 20.0,
+        "parser_peso_kg": null,
+        "parser_peso_lb": 20.0,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_lb",
+            "value": 20.0,
+            "evidence": "name_lbs"
+          }
+        ]
+      }
+    ],
+    "false_positive_all": [
+      {
+        "sku": "BBP140B",
+        "category_slug": "barras",
+        "master_key": "BBPB",
+        "grouping_reason": "fdl_sku_family:BBPB",
+        "source_page": 34,
+        "peso_kg": 140.0,
+        "peso_lb": null,
+        "parser_peso_kg": 140,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+            "spec": "peso_kg",
+            "value": 140.0,
+            "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+            "evidence": "sku_size_fallback",
+            "longitud_mm": 1400
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 140.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1400
+        }
+      },
+      {
+        "sku": "BN120Z",
+        "category_slug": "barras",
+        "master_key": "BNZ",
+        "grouping_reason": "fdl_sku_family:BNZ",
+        "source_page": 34,
+        "peso_kg": 120.0,
+        "peso_lb": null,
+        "parser_peso_kg": 120,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+            "spec": "peso_kg",
+            "value": 120.0,
+            "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+            "evidence": "sku_size_fallback",
+            "longitud_mm": 1200
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 120.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1200
+        }
+      },
+      {
+        "sku": "BO120Z",
+        "category_slug": "barras",
+        "master_key": "BOZ",
+        "grouping_reason": "fdl_sku_family:BOZ",
+        "source_page": 34,
+        "peso_kg": 120.0,
+        "peso_lb": null,
+        "parser_peso_kg": 120,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+            "spec": "peso_kg",
+            "value": 120.0,
+            "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+            "evidence": "sku_size_fallback",
+            "longitud_mm": 1200
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 120.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1200
+        }
+      },
+      {
+        "sku": "BOR120Z",
+        "category_slug": "barras",
+        "master_key": "BORZ",
+        "grouping_reason": "fdl_sku_family:BORZ",
+        "source_page": 34,
+        "peso_kg": 120.0,
+        "peso_lb": null,
+        "parser_peso_kg": 120,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+            "spec": "peso_kg",
+            "value": 120.0,
+            "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+            "evidence": "sku_size_fallback",
+            "longitud_mm": 1200
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 120.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 1200
+        }
+      },
+      {
+        "sku": "BOR220A",
+        "category_slug": "barras",
+        "master_key": "BORA",
+        "grouping_reason": "fdl_sku_family:BORA",
+        "source_page": 34,
+        "peso_kg": 220.0,
+        "peso_lb": null,
+        "parser_peso_kg": 220,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+            "spec": "peso_kg",
+            "value": 220.0,
+            "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+            "evidence": "sku_size_fallback",
+            "longitud_mm": 2200
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "bar load rating in lbs (BOR220); not variant axis",
+            "evidence": "name_lbs_load_rating"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_FALSE_POSITIVE",
+          "spec": "peso_kg",
+          "value": 220.0,
+          "reason": "SKU size digits mapped to peso_kg; bar axis is longitud_mm",
+          "evidence": "sku_size_fallback",
+          "longitud_mm": 2200
+        }
+      }
+    ],
+    "missing_top": [
+      {
+        "sku": "BOC001",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1500.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC001NEXO",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1500.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC002",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC002NEXO",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC003",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "source_page": 14,
+        "peso_kg": 15.0,
+        "peso_lb": null,
+        "parser_peso_kg": 15.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 15.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC003NEXO",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "source_page": 14,
+        "peso_kg": 15.0,
+        "peso_lb": null,
+        "parser_peso_kg": 15.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 15.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC004",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1500.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC004NEXO",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1500.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1500.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC005",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "source_page": 14,
+        "peso_kg": 15.0,
+        "peso_lb": null,
+        "parser_peso_kg": 15.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 15.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC005NEXO",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "source_page": 14,
+        "peso_kg": 15.0,
+        "peso_lb": null,
+        "parser_peso_kg": 15.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 15.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC008",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      },
+      {
+        "sku": "BOC008NEXO",
+        "category_slug": "cross-training",
+        "master_key": "BOC-BARRAS-CROSSFIT-NEXO",
+        "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+        "source_page": 14,
+        "peso_kg": 20.0,
+        "peso_lb": null,
+        "parser_peso_kg": 20.0,
+        "parser_peso_lb": null,
+        "findings": [
+          {
+            "classification": "WEIGHT_SPEC_CORRECT",
+            "spec": "peso_kg",
+            "value": 20.0,
+            "evidence": "name_kg"
+          },
+          {
+            "classification": "WEIGHT_SPEC_MISSING",
+            "spec": "peso_lb",
+            "expected": 1000.0,
+            "reason": "explicit lbs in name/header",
+            "evidence": "name_lbs"
+          },
+          {
+            "classification": "WEIGHT_UNIT_DECISION_REQUIRED",
+            "spec": "partial_dual",
+            "reason": "source has both units; only one persisted"
+          }
+        ],
+        "finding": {
+          "classification": "WEIGHT_SPEC_MISSING",
+          "spec": "peso_lb",
+          "expected": 1000.0,
+          "reason": "explicit lbs in name/header",
+          "evidence": "name_lbs"
+        }
+      }
+    ]
+  }
+}

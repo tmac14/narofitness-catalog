@@ -1,0 +1,210 @@
+[
+  {
+    "variant_sku": "BN120",
+    "variant_name": "Barra 28mm Cromada - 1,20 Mts",
+    "master_key": "BN",
+    "master_name": "Barra 28 MM Cromada",
+    "category_slug": "barras",
+    "price": "24.03"
+  },
+  {
+    "variant_sku": "BN120Z",
+    "variant_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+    "master_key": "BNZ",
+    "master_name": "Barra 28 MM Cromada",
+    "category_slug": "barras",
+    "price": "24.03"
+  },
+  {
+    "variant_sku": "BN150",
+    "variant_name": "Barra 28mm Cromada - 1,50 Mts",
+    "master_key": "BN",
+    "master_name": "Barra 28 MM Cromada",
+    "category_slug": "barras",
+    "price": "24.59"
+  },
+  {
+    "variant_sku": "BN180",
+    "variant_name": "Barra 28mm Cromada - 1,80 Mts",
+    "master_key": "BN",
+    "master_name": "Barra 28 MM Cromada",
+    "category_slug": "barras",
+    "price": "33.87"
+  },
+  {
+    "variant_sku": "BN220",
+    "variant_name": "Barra 28mm Cromada - 2,20 Mts",
+    "master_key": "BN",
+    "master_name": "Barra 28 MM Cromada",
+    "category_slug": "barras",
+    "price": "39.76"
+  },
+  {
+    "variant_sku": "BN085",
+    "variant_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+    "master_key": "BN",
+    "master_name": "Barra 28 MM Cromada",
+    "category_slug": "barras",
+    "price": "34.55"
+  },
+  {
+    "variant_sku": "BO120",
+    "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+    "master_key": "BO",
+    "master_name": "Barra Olímpica Cromada - HOME",
+    "category_slug": "barras",
+    "price": "47.35"
+  },
+  {
+    "variant_sku": "BO120Z",
+    "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+    "master_key": "BOZ",
+    "master_name": "Barra Olímpica Cromada - HOME",
+    "category_slug": "barras",
+    "price": "50.13"
+  },
+  {
+    "variant_sku": "BO150",
+    "variant_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+    "master_key": "BO",
+    "master_name": "Barra Olímpica Cromada - HOME",
+    "category_slug": "barras",
+    "price": "54.31"
+  },
+  {
+    "variant_sku": "BO180",
+    "variant_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+    "master_key": "BO",
+    "master_name": "Barra Olímpica Cromada - HOME",
+    "category_slug": "barras",
+    "price": "59.87"
+  },
+  {
+    "variant_sku": "BO220",
+    "variant_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+    "master_key": "BO",
+    "master_name": "Barra Olímpica Cromada - HOME",
+    "category_slug": "barras",
+    "price": "71.16"
+  },
+  {
+    "variant_sku": "BO085",
+    "variant_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+    "master_key": "BO",
+    "master_name": "Barra Olímpica Cromada - HOME",
+    "category_slug": "barras",
+    "price": "62.13"
+  },
+  {
+    "variant_sku": "BOR120",
+    "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+    "master_key": "BOR",
+    "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+    "category_slug": "barras",
+    "price": "69.03"
+  },
+  {
+    "variant_sku": "BOR120Z",
+    "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+    "master_key": "BORZ",
+    "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+    "category_slug": "barras",
+    "price": "72.93"
+  },
+  {
+    "variant_sku": "BOR150",
+    "variant_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+    "master_key": "BOR",
+    "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+    "category_slug": "barras",
+    "price": "81.94"
+  },
+  {
+    "variant_sku": "BOR180",
+    "variant_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+    "master_key": "BOR",
+    "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+    "category_slug": "barras",
+    "price": "92.47"
+  },
+  {
+    "variant_sku": "BOR220",
+    "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+    "master_key": "BOR",
+    "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+    "category_slug": "barras",
+    "price": "132.14"
+  },
+  {
+    "variant_sku": "BOR220A",
+    "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+    "master_key": "BORA",
+    "master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+    "category_slug": "barras",
+    "price": "106.25"
+  },
+  {
+    "variant_sku": "BBP140",
+    "variant_name": "Barra Body Pump 28mm - 1,40 Mts",
+    "master_key": "BBP140",
+    "master_name": "Barra Body Pump 28mm - 1,40 Mts",
+    "category_slug": "barras",
+    "price": "11.53"
+  },
+  {
+    "variant_sku": "BBP140B",
+    "variant_name": "Barra Body Pump 30mm - 1,40 Mts",
+    "master_key": "BBPB",
+    "master_name": "Barras Body Pump",
+    "category_slug": "barras",
+    "price": "11.53"
+  },
+  {
+    "variant_sku": "BTN001",
+    "variant_name": "Topes Barra Tope Barra 28 Mm",
+    "master_key": "BTN001",
+    "master_name": "Topes Barra Tope Barra 28 Mm",
+    "category_slug": "barras",
+    "price": "0.93"
+  },
+  {
+    "variant_sku": "BTN002",
+    "variant_name": "Tope Barra 30 Mm",
+    "master_key": "BTN002",
+    "master_name": "Tope Barra 30 Mm",
+    "category_slug": "barras",
+    "price": "0.93"
+  },
+  {
+    "variant_sku": "BTO001",
+    "variant_name": "Tope Barra Olímpica",
+    "master_key": "BTO001",
+    "master_name": "Tope Barra Olímpica",
+    "category_slug": "barras",
+    "price": "2.10"
+  },
+  {
+    "variant_sku": "BTO003",
+    "variant_name": "Tope Barra Olimpica Crossfit",
+    "master_key": "BTO003",
+    "master_name": "Tope Barra Olimpica Crossfit",
+    "category_slug": "barras",
+    "price": "4.92"
+  },
+  {
+    "variant_sku": "BTO004",
+    "variant_name": "Tope Olimpico Crossfit Rojo",
+    "master_key": "BTO004",
+    "master_name": "Tope Olimpico Crossfit Rojo",
+    "category_slug": "barras",
+    "price": "6.17"
+  },
+  {
+    "variant_sku": "SOP033",
+    "variant_name": "Soporte Para 8",
+    "master_key": "SOP033",
+    "master_name": "Soporte Para 8",
+    "category_slug": "barras",
+    "price": "116.48"
+  }
+]

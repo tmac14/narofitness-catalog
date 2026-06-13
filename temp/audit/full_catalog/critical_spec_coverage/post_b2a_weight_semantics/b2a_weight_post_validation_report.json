@@ -1,0 +1,152 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B2A-BAR-SUFFIX-LETTER-PESO-POST-VALIDATION",
+  "status": "B2A_WEIGHT_POST_VALIDATION_PASS",
+  "generated_at": "2026-06-12T19:29:53.977615+00:00",
+  "read_only_confirmation": {
+    "code_modified": false,
+    "tests_modified": false,
+    "database_modified": false
+  },
+  "metrics_before_after": {
+    "before_b2a": {
+      "peso_kg": 431,
+      "longitud_mm": 20,
+      "peso_lb": 4,
+      "WEIGHT_SPEC_FALSE_POSITIVE": 5
+    },
+    "after_b2a": {
+      "peso_kg": 426,
+      "longitud_mm": 20,
+      "peso_lb": 4,
+      "barras_peso_kg": 0,
+      "WEIGHT_SPEC_FALSE_POSITIVE": 0
+    },
+    "spec_drift": {}
+  },
+  "global_metrics": {
+    "rows_importable": 871,
+    "rows_blocked": 0,
+    "masters_created": 534,
+    "variants_created": 871,
+    "price_entries": 871,
+    "catalog_items_created": 871,
+    "singleton_masters": 489
+  },
+  "five_targets": [
+    {
+      "sku": "BBP140B",
+      "db_peso_kg": null,
+      "db_longitud_mm": 1400.0,
+      "parser_peso_kg": null,
+      "parser_longitud_mm": 1400,
+      "expected_longitud": 1400,
+      "pass": true
+    },
+    {
+      "sku": "BN120Z",
+      "db_peso_kg": null,
+      "db_longitud_mm": 1200.0,
+      "parser_peso_kg": null,
+      "parser_longitud_mm": 1200,
+      "expected_longitud": 1200,
+      "pass": true
+    },
+    {
+      "sku": "BO120Z",
+      "db_peso_kg": null,
+      "db_longitud_mm": 1200.0,
+      "parser_peso_kg": null,
+      "parser_longitud_mm": 1200,
+      "expected_longitud": 1200,
+      "pass": true
+    },
+    {
+      "sku": "BOR120Z",
+      "db_peso_kg": null,
+      "db_longitud_mm": 1200.0,
+      "parser_peso_kg": null,
+      "parser_longitud_mm": 1200,
+      "expected_longitud": 1200,
+      "pass": true
+    },
+    {
+      "sku": "BOR220A",
+      "db_peso_kg": null,
+      "db_longitud_mm": 2200.0,
+      "parser_peso_kg": null,
+      "parser_longitud_mm": 2200,
+      "expected_longitud": 2200,
+      "pass": true
+    }
+  ],
+  "preserved_legitimate": [
+    {
+      "sku": "MH002A",
+      "db": {
+        "peso_kg": 2.0
+      },
+      "parser": {
+        "peso_kg": 2
+      },
+      "pass": true
+    },
+    {
+      "sku": "DBP001B",
+      "db": {
+        "peso_kg": 1.0
+      },
+      "parser": {
+        "peso_kg": 1
+      },
+      "pass": true
+    },
+    {
+      "sku": "BBP140",
+      "db": {
+        "longitud_mm": 1400.0
+      },
+      "parser": {
+        "longitud_mm": 1400
+      },
+      "pass": true
+    },
+    {
+      "sku": "CRO083",
+      "db_peso_lb": 12.0,
+      "db_peso_kg": null,
+      "parser_peso_lb": 12.0,
+      "parser_peso_kg": null,
+      "pass": true
+    },
+    {
+      "sku": "CRO084",
+      "db_peso_lb": 14.0,
+      "db_peso_kg": null,
+      "parser_peso_lb": 14.0,
+      "parser_peso_kg": null,
+      "pass": true
+    },
+    {
+      "sku": "CRO085",
+      "db_peso_lb": 16.0,
+      "db_peso_kg": null,
+      "parser_peso_lb": 16.0,
+      "parser_peso_kg": null,
+      "pass": true
+    },
+    {
+      "sku": "CRO086",
+      "db_peso_lb": 20.0,
+      "db_peso_kg": null,
+      "parser_peso_lb": 20.0,
+      "parser_peso_kg": null,
+      "pass": true
+    }
+  ],
+  "grouping_identity": {
+    "drift_count": 0,
+    "drift_samples": []
+  },
+  "failures": [],
+  "recommendation": "B2A validated — bar suffix-letter peso_kg gate removes exactly 5 false positives with no collateral drift"
+}

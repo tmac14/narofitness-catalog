@@ -1,0 +1,601 @@
+[
+  {
+    "page_number": 34,
+    "source_row_index": 413,
+    "raw_line_index": 1,
+    "raw_lines": [
+      "Barra 28mm Cromada - 1,20 Mts",
+      "BN120",
+      "8435657000172",
+      "24,03 €"
+    ],
+    "raw_sku": "BN120",
+    "normalized_sku": "BN120",
+    "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,20 Mts",
+    "normalized_name": "Barra 28mm Cromada - 1,20 Mts",
+    "price": "24.03",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 414,
+    "raw_line_index": 5,
+    "raw_lines": [
+      "Barra 28mm Cromada - 1,20 Mts Curl Z",
+      "BN120Z",
+      "8435657000189",
+      "24,03 €"
+    ],
+    "raw_sku": "BN120Z",
+    "normalized_sku": "BN120Z",
+    "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,20 Mts Curl Z",
+    "normalized_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+    "price": "24.03",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 415,
+    "raw_line_index": 9,
+    "raw_lines": [
+      "Barra 28mm Cromada - 1,50 Mts",
+      "BN150",
+      "8435657000196",
+      "24,59 €"
+    ],
+    "raw_sku": "BN150",
+    "normalized_sku": "BN150",
+    "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,50 Mts",
+    "normalized_name": "Barra 28mm Cromada - 1,50 Mts",
+    "price": "24.59",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 416,
+    "raw_line_index": 13,
+    "raw_lines": [
+      "Barra 28mm Cromada - 1,80 Mts",
+      "BN180",
+      "8435657000202",
+      "33,87 €"
+    ],
+    "raw_sku": "BN180",
+    "normalized_sku": "BN180",
+    "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 1,80 Mts",
+    "normalized_name": "Barra 28mm Cromada - 1,80 Mts",
+    "price": "33.87",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 417,
+    "raw_line_index": 17,
+    "raw_lines": [
+      "Barra 28mm Cromada - 2,20 Mts",
+      "BN220",
+      "8435657000219",
+      "39,76 €"
+    ],
+    "raw_sku": "BN220",
+    "normalized_sku": "BN220",
+    "raw_name": "Barra 28 MM Cromada Barra 28mm Cromada - 2,20 Mts",
+    "normalized_name": "Barra 28mm Cromada - 2,20 Mts",
+    "price": "39.76",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 418,
+    "raw_line_index": 21,
+    "raw_lines": [
+      "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+      "BN085",
+      "8435657000165",
+      "34,55 €"
+    ],
+    "raw_sku": "BN085",
+    "normalized_sku": "BN085",
+    "raw_name": "Barra 28 MM Cromada Baraa 28mm Cromada - Triceps Romana 85 Cms",
+    "normalized_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+    "price": "34.55",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 419,
+    "raw_line_index": 26,
+    "raw_lines": [
+      "Barra Olimpica Cromada Home - 1,20 Mts",
+      "BO120",
+      "8435657000233",
+      "47,35 €"
+    ],
+    "raw_sku": "BO120",
+    "normalized_sku": "BO120",
+    "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,20 Mts",
+    "normalized_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+    "price": "47.35",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 420,
+    "raw_line_index": 30,
+    "raw_lines": [
+      "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+      "BO120Z",
+      "8435657000240",
+      "50,13 €"
+    ],
+    "raw_sku": "BO120Z",
+    "normalized_sku": "BO120Z",
+    "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+    "normalized_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+    "price": "50.13",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 421,
+    "raw_line_index": 34,
+    "raw_lines": [
+      "Barra Olimpica Cromada Home - 1,50 Mts",
+      "BO150",
+      "8435657000257",
+      "54,31 €"
+    ],
+    "raw_sku": "BO150",
+    "normalized_sku": "BO150",
+    "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,50 Mts",
+    "normalized_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+    "price": "54.31",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 422,
+    "raw_line_index": 38,
+    "raw_lines": [
+      "Barra Olimpica Cromada Home - 1,80 Mts",
+      "BO180",
+      "8435657000264",
+      "59,87 €"
+    ],
+    "raw_sku": "BO180",
+    "normalized_sku": "BO180",
+    "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 1,80 Mts",
+    "normalized_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+    "price": "59.87",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 423,
+    "raw_line_index": 42,
+    "raw_lines": [
+      "Barra Olimpica Cromada Home - 2,20 Mts",
+      "BO220",
+      "8435657000271",
+      "71,16 €"
+    ],
+    "raw_sku": "BO220",
+    "normalized_sku": "BO220",
+    "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - 2,20 Mts",
+    "normalized_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+    "price": "71.16",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 424,
+    "raw_line_index": 46,
+    "raw_lines": [
+      "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+      "BO085",
+      "8435657000226",
+      "62,13 €"
+    ],
+    "raw_sku": "BO085",
+    "normalized_sku": "BO085",
+    "raw_name": "Barra Olímpica Cromada - HOME Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+    "normalized_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+    "price": "62.13",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 425,
+    "raw_line_index": 51,
+    "raw_lines": [
+      "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+      "BOR120",
+      "8435657000424",
+      "69,03 €"
+    ],
+    "raw_sku": "BOR120",
+    "normalized_sku": "BOR120",
+    "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+    "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+    "price": "69.03",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 426,
+    "raw_line_index": 55,
+    "raw_lines": [
+      "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+      "BOR120Z",
+      "8435657000431",
+      "72,93 €"
+    ],
+    "raw_sku": "BOR120Z",
+    "normalized_sku": "BOR120Z",
+    "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+    "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+    "price": "72.93",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 427,
+    "raw_line_index": 59,
+    "raw_lines": [
+      "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+      "BOR150",
+      "8435657000448",
+      "81,94 €"
+    ],
+    "raw_sku": "BOR150",
+    "normalized_sku": "BOR150",
+    "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+    "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+    "price": "81.94",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 428,
+    "raw_line_index": 63,
+    "raw_lines": [
+      "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+      "BOR180",
+      "8435657000455",
+      "92,47 €"
+    ],
+    "raw_sku": "BOR180",
+    "normalized_sku": "BOR180",
+    "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+    "normalized_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+    "price": "92.47",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 429,
+    "raw_line_index": 67,
+    "raw_lines": [
+      "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500&",
+      "BOR220",
+      "8435657000462",
+      "132,14 €"
+    ],
+    "raw_sku": "BOR220",
+    "normalized_sku": "BOR220",
+    "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+    "normalized_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+    "price": "132.14",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 430,
+    "raw_line_index": 71,
+    "raw_lines": [
+      "Barra Olimpica Cromada Alta Carga -  2,20 Mts 1000&",
+      "BOR220A",
+      "8435657000479",
+      "106,25 €"
+    ],
+    "raw_sku": "BOR220A",
+    "normalized_sku": "BOR220A",
+    "raw_name": "Barra Olímpica Cromada -  Con Rodaminetos y Alta carga Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+    "normalized_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+    "price": "106.25",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 431,
+    "raw_line_index": 76,
+    "raw_lines": [
+      "Barra Body Pump  28mm - 1,40 Mts",
+      "BBP140",
+      "8435657000103",
+      "11,53 €"
+    ],
+    "raw_sku": "BBP140",
+    "normalized_sku": "BBP140",
+    "raw_name": "Barras Body Pump Barra Body Pump 28mm - 1,40 Mts",
+    "normalized_name": "Barra Body Pump 28mm - 1,40 Mts",
+    "price": "11.53",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 432,
+    "raw_line_index": 80,
+    "raw_lines": [
+      "Barra Body Pump  30mm - 1,40 Mts",
+      "BBP140B",
+      "8435657000110",
+      "11,53 €"
+    ],
+    "raw_sku": "BBP140B",
+    "normalized_sku": "BBP140B",
+    "raw_name": "Barras Body Pump Barra Body Pump 30mm - 1,40 Mts",
+    "normalized_name": "Barra Body Pump 30mm - 1,40 Mts",
+    "price": "11.53",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 433,
+    "raw_line_index": 84,
+    "raw_lines": [
+      "Topes Barra",
+      "Tope Barra 28 Mm",
+      "BTN001",
+      "8435657000523",
+      "0,93 €"
+    ],
+    "raw_sku": "BTN001",
+    "normalized_sku": "BTN001",
+    "raw_name": "Barras Body Pump Topes Barra Tope Barra 28 Mm",
+    "normalized_name": "Topes Barra Tope Barra 28 Mm",
+    "price": "0.93",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 434,
+    "raw_line_index": 89,
+    "raw_lines": [
+      "Tope Barra 30 Mm",
+      "BTN002",
+      "8435657000530",
+      "0,93 €"
+    ],
+    "raw_sku": "BTN002",
+    "normalized_sku": "BTN002",
+    "raw_name": "Barras Body Pump Tope Barra 30 Mm",
+    "normalized_name": "Tope Barra 30 Mm",
+    "price": "0.93",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 435,
+    "raw_line_index": 93,
+    "raw_lines": [
+      "Tope Barra Olímpica",
+      "BTO001",
+      "8435657000547",
+      "2,10 €"
+    ],
+    "raw_sku": "BTO001",
+    "normalized_sku": "BTO001",
+    "raw_name": "Barras Body Pump Tope Barra Olímpica",
+    "normalized_name": "Tope Barra Olímpica",
+    "price": "2.10",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 436,
+    "raw_line_index": 97,
+    "raw_lines": [
+      "Tope Barra Olimpica Crossfit",
+      "BTO003",
+      "8435657000554",
+      "4,92 €"
+    ],
+    "raw_sku": "BTO003",
+    "normalized_sku": "BTO003",
+    "raw_name": "Barras Body Pump Tope Barra Olimpica Crossfit",
+    "normalized_name": "Tope Barra Olimpica Crossfit",
+    "price": "4.92",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 437,
+    "raw_line_index": 101,
+    "raw_lines": [
+      "Tope Olimpico Crossfit Rojo",
+      "BTO004",
+      "8435657000561",
+      "6,17 €"
+    ],
+    "raw_sku": "BTO004",
+    "normalized_sku": "BTO004",
+    "raw_name": "Barras Body Pump Tope Olimpico Crossfit Rojo",
+    "normalized_name": "Tope Olimpico Crossfit Rojo",
+    "price": "6.17",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 34,
+    "source_row_index": 438,
+    "raw_line_index": 106,
+    "raw_lines": [
+      "Soporte Para 8 Barras",
+      "SOP033",
+      "8435657005740",
+      "116,48 €"
+    ],
+    "raw_sku": "SOP033",
+    "normalized_sku": "SOP033",
+    "raw_name": "Soportes Vertical Barras Olímpicas Soporte Para 8 Barras",
+    "normalized_name": "Soporte Para 8",
+    "price": "116.48",
+    "source_taxonomy_path": "DISCOS Y BARRAS",
+    "source_section": {
+      "category_main": "DISCOS Y BARRAS",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "parser_status": "ok"
+  }
+]

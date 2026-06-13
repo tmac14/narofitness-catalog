@@ -1,0 +1,66 @@
+{
+  "task_id": "IMPORT-FDL-SPEC-B1-BARRAS-LENGTH-POST-VALIDATION",
+  "environment": "docker disposable (npm run db:reset:full:wipe x2)",
+  "commands": [
+    "npm run db:reset:full:wipe",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/critical_spec_coverage/post_b1_bar_length_validation/_b1_post_validation.py\"",
+    "npm run audit:category-contamination",
+    "npm run audit:page-import (pages 11,12,13,14,34,35 — isolated DB per page)",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app pytest tests/test_fdl_bar_length_extract.py tests/test_import_grouping_bar_length.py -q\"",
+    "npm run db:reset:full:wipe (re-wipe after page-import pollution)",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/post_master_name_consistency/_run_full_catalog_audit.py --output-dir /data/audit/full_catalog/critical_spec_coverage/post_b1_bar_length_validation\"",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app pytest tests/ -q -m 'not integration'\"",
+    "docker compose exec -T api sh -c \"PYTHONPATH=/app pytest tests/ -q\" (test:api:full equivalent)"
+  ],
+  "test_failures_classification": [
+    {
+      "node_id": "tests/test_background_jobs.py::test_migration_005_background_jobs_revision",
+      "related_to_b1": false,
+      "pre_existing": true,
+      "reason": "Alembic head is 007_product_image_source; test expects 006_variant_brand_id"
+    },
+    {
+      "node_id": "tests/test_import_grouping_explicit_one_per_sku.py::test_explicit_one_per_sku_negative_unit[numeric_sku_cro107nexo_negative.json]",
+      "related_to_b1": false,
+      "pre_existing": true,
+      "reason": "CRO107NEXO grouping_reason explicit_one_per_sku vs expected false_family"
+    },
+    {
+      "node_id": "tests/test_import_spec_validate.py::test_dobnexo_extracts_common_specs_from_name",
+      "related_to_b1": false,
+      "pre_existing": true,
+      "reason": "DOBNEXO color not in parsed_common_specs (unrelated to bar length)"
+    },
+    {
+      "node_id": "tests/test_layout_selector.py::test_registry_has_three_layouts",
+      "related_to_b1": false,
+      "pre_existing": true,
+      "reason": "Registry now has 4 layouts (family_variant_table added)"
+    },
+    {
+      "node_id": "tests/test_layout_selector.py::test_list_layouts_serializable",
+      "related_to_b1": false,
+      "pre_existing": true,
+      "reason": "Same layout count drift"
+    },
+    {
+      "node_id": "tests/test_spec_resolver.py::test_format_spec_display_without_unit",
+      "related_to_b1": false,
+      "pre_existing": true,
+      "reason": "Display format now appends unit symbol (0.5 kg vs 0.5)"
+    },
+    {
+      "node_id": "tests/test_spec_resolver.py::test_format_spec_display_other_unit",
+      "related_to_b1": false,
+      "pre_existing": true,
+      "reason": "Same display format change"
+    }
+  ],
+  "b1_specific_tests": {
+    "suites": [
+      "tests/test_fdl_bar_length_extract.py",
+      "tests/test_import_grouping_bar_length.py"
+    ],
+    "result": "53 passed, 0 failed"
+  }
+}

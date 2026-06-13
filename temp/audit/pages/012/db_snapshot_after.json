@@ -1,0 +1,762 @@
+{
+  "masters": [
+    {
+      "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+      "master_key": "DOBHT",
+      "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos"
+    },
+    {
+      "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+      "master_key": "DOBCC",
+      "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos"
+    },
+    {
+      "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+      "master_key": "DOBF",
+      "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos"
+    },
+    {
+      "product_master_id": "9ee395b1-0617-41e2-ae69-6c8cc8f04416",
+      "master_key": "SOP025",
+      "product_master_name": "Soporte para juego de Discos Bumper",
+      "category_id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+      "category_slug": "soportes-y-mancuerneros"
+    },
+    {
+      "product_master_id": "3644cfd8-3973-476a-a4cb-87f91852da09",
+      "master_key": "DOBMINI",
+      "product_master_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos"
+    },
+    {
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "master_key": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    },
+    {
+      "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+      "master_key": "CRO-WALL-COLOR",
+      "product_master_name": "Wall Balls Doble Costura Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training"
+    }
+  ],
+  "variants": [
+    {
+      "product_variant_id": "bab44e84-4d29-40fd-bb88-3bc23c205a08",
+      "variant_sku": "DOBHT005",
+      "variant_name": "Disco Bumper Hi Temp 5 kgs (Numero Color)",
+      "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+      "product_master_sku": "DOBHT",
+      "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "19.39"
+    },
+    {
+      "product_variant_id": "d8098fdf-64e2-45c7-9176-c8ef625cdc6e",
+      "variant_sku": "DOBHT010",
+      "variant_name": "Disco Bumper Hi Temp 10 kgs (Numero Color)",
+      "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+      "product_master_sku": "DOBHT",
+      "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "28.98"
+    },
+    {
+      "product_variant_id": "3c1be616-d3c0-4361-a3d9-fb45206a079f",
+      "variant_sku": "DOBHT015",
+      "variant_name": "Disco Bumper Hi Temp 15 kgs (Numero Color)",
+      "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+      "product_master_sku": "DOBHT",
+      "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "41.05"
+    },
+    {
+      "product_variant_id": "b1176901-ecd8-43dc-b09f-133a71990e32",
+      "variant_sku": "DOBHT020",
+      "variant_name": "Disco Bumper Hi Temp 20 kgs (Numero Color)",
+      "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+      "product_master_sku": "DOBHT",
+      "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "48.53"
+    },
+    {
+      "product_variant_id": "7e361be3-0503-4e80-ae69-1d27440c169a",
+      "variant_sku": "DOBHT025",
+      "variant_name": "Disco Bumper Hi Temp 25 kgs (Numero Color)",
+      "product_master_id": "ec319f65-e949-4f82-8730-93bf134f2b0f",
+      "product_master_sku": "DOBHT",
+      "product_master_name": "Disco Olimpico Bumper Hi-Temp (Casquillo de Acero)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "56.49"
+    },
+    {
+      "product_variant_id": "765d3c96-b026-4715-8098-2d3791e18238",
+      "variant_sku": "DOBCC005",
+      "variant_name": "Disco Bumper Competicion 5 kgs",
+      "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+      "product_master_sku": "DOBCC",
+      "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "34.04"
+    },
+    {
+      "product_variant_id": "42769b39-d33d-4092-8c19-dfffc54c8b28",
+      "variant_sku": "DOBCC010",
+      "variant_name": "Disco Bumper Competicion 10 kgs",
+      "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+      "product_master_sku": "DOBCC",
+      "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "58.68"
+    },
+    {
+      "product_variant_id": "23dd0aa1-39a1-4d8f-bb3b-017d037995bc",
+      "variant_sku": "DOBCC015",
+      "variant_name": "Disco Bumper Competicion 15 kgs",
+      "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+      "product_master_sku": "DOBCC",
+      "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "79.94"
+    },
+    {
+      "product_variant_id": "861a660f-5d2f-4b03-a5a2-14503b7db533",
+      "variant_sku": "DOBCC020",
+      "variant_name": "Disco Bumper Competicion 20 kgs",
+      "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+      "product_master_sku": "DOBCC",
+      "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "99.88"
+    },
+    {
+      "product_variant_id": "9c6b30d0-d3c4-4085-a336-b48e83e6856b",
+      "variant_sku": "DOBCC025",
+      "variant_name": "Disco Bumper Competicion 25 kgs",
+      "product_master_id": "7be9acfa-ad9c-4ae9-9fc5-db2d6f0be35f",
+      "product_master_sku": "DOBCC",
+      "product_master_name": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "115.84"
+    },
+    {
+      "product_variant_id": "54f776af-af2a-411f-8355-f8fd0220a332",
+      "variant_sku": "DOBF005",
+      "variant_name": "Disco Bumper Color Fraccional 0,5 kgs",
+      "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+      "product_master_sku": "DOBF",
+      "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "3.78"
+    },
+    {
+      "product_variant_id": "d7d019f2-fe93-440d-8304-175f20f48218",
+      "variant_sku": "DOBF010",
+      "variant_name": "Disco Bumper Color Fraccional 1 kg",
+      "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+      "product_master_sku": "DOBF",
+      "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "7.56"
+    },
+    {
+      "product_variant_id": "7b277aaa-b51a-4a7b-a922-3f0088453d36",
+      "variant_sku": "DOBF015",
+      "variant_name": "Disco Bumper Color Fraccional 1,5 kgs",
+      "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+      "product_master_sku": "DOBF",
+      "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "11.33"
+    },
+    {
+      "product_variant_id": "b1eabc2e-6ba6-44d8-b21a-f1b1b0cff737",
+      "variant_sku": "DOBF020",
+      "variant_name": "Disco Bumper Color Fraccional 2 kgs",
+      "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+      "product_master_sku": "DOBF",
+      "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "15.11"
+    },
+    {
+      "product_variant_id": "cfb85ca8-58e6-45f7-a4e2-08b569a52458",
+      "variant_sku": "DOBF025",
+      "variant_name": "Disco Bumper Color Fraccional 2,5 kgs",
+      "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+      "product_master_sku": "DOBF",
+      "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "18.89"
+    },
+    {
+      "product_variant_id": "1f507f2b-bdb9-44a7-b293-c042212ce122",
+      "variant_sku": "DOBF050",
+      "variant_name": "Disco Bumper Color Fraccional 5 kgs",
+      "product_master_id": "43f4bfd8-94c6-451e-b012-327bab0360ef",
+      "product_master_sku": "DOBF",
+      "product_master_name": "Disco Olimpico Bumper Color Fraccional",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "39.58"
+    },
+    {
+      "product_variant_id": "f4711554-c11f-4b04-8f28-b55ce702a8ab",
+      "variant_sku": "SOP025",
+      "variant_name": "Soporte para juego de Discos Bumper",
+      "product_master_id": "9ee395b1-0617-41e2-ae69-6c8cc8f04416",
+      "product_master_sku": "SOP025",
+      "product_master_name": "Soporte para juego de Discos Bumper",
+      "category_id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+      "category_slug": "soportes-y-mancuerneros",
+      "price": "92.77"
+    },
+    {
+      "product_variant_id": "7bc26c7e-a2e7-4bd8-8cc8-430ce9f30d97",
+      "variant_sku": "DOBMINI",
+      "variant_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "product_master_id": "3644cfd8-3973-476a-a4cb-87f91852da09",
+      "product_master_sku": "DOBMINI",
+      "product_master_name": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "category_id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+      "category_slug": "discos",
+      "price": "56.80"
+    },
+    {
+      "product_variant_id": "0d48749f-dd03-42b8-a4a6-71e069d089b4",
+      "variant_sku": "CRO110",
+      "variant_name": "Slam Ball 6 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "10.78"
+    },
+    {
+      "product_variant_id": "86c339fe-f382-4daa-8581-25ca2f20f0f4",
+      "variant_sku": "CRO118",
+      "variant_name": "Slam Ball 8 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "12.57"
+    },
+    {
+      "product_variant_id": "a6a781ad-0bc3-4822-ba69-9e26017597e9",
+      "variant_sku": "CRO111",
+      "variant_name": "Slam Ball 10 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "15.02"
+    },
+    {
+      "product_variant_id": "fa6e4c31-5536-45d9-a819-7df2cc3e415c",
+      "variant_sku": "CRO112",
+      "variant_name": "Slam Ball 12 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "17.24"
+    },
+    {
+      "product_variant_id": "127f89ea-575c-4bd6-a42f-fd31afc91b6c",
+      "variant_sku": "CRO119",
+      "variant_name": "Slam Ball 15 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "23.91"
+    },
+    {
+      "product_variant_id": "1945c880-0b02-4bfb-8eaf-04be72904910",
+      "variant_sku": "CRO113",
+      "variant_name": "Slam Ball 20 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "36.11"
+    },
+    {
+      "product_variant_id": "ce9d9003-4e9e-484b-ac3e-21992df27422",
+      "variant_sku": "CRO120",
+      "variant_name": "Slam Ball 25 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "42.58"
+    },
+    {
+      "product_variant_id": "e4be74e4-0ab3-465e-b7eb-7aa06a5992cc",
+      "variant_sku": "CRO114",
+      "variant_name": "Slam Ball 30 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "47.62"
+    },
+    {
+      "product_variant_id": "6c14756c-6110-412b-ad0b-20d9a4f47c0e",
+      "variant_sku": "CRO116",
+      "variant_name": "Slam Ball 35 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "55.30"
+    },
+    {
+      "product_variant_id": "4eee60ef-cdb4-470a-a389-1b8ac465eff4",
+      "variant_sku": "CRO122",
+      "variant_name": "Slam Ball 40 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "63.49"
+    },
+    {
+      "product_variant_id": "c6ed5822-07c3-4896-8e71-faea4da6bf76",
+      "variant_sku": "CRO123",
+      "variant_name": "Slam Ball 45 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "71.42"
+    },
+    {
+      "product_variant_id": "84d0306e-db95-4dc2-a3b5-82b7a81e93d2",
+      "variant_sku": "CRO124",
+      "variant_name": "Slam Ball 50 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "79.37"
+    },
+    {
+      "product_variant_id": "b8f6fbe9-8d6c-4b60-84fc-7b74c3877a8a",
+      "variant_sku": "CRO125",
+      "variant_name": "Slam Ball 55 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "87.29"
+    },
+    {
+      "product_variant_id": "c3fbab40-5e62-475d-bca2-b04e7d6b3ddc",
+      "variant_sku": "CRO117",
+      "variant_name": "Slam Ball 60 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "95.24"
+    },
+    {
+      "product_variant_id": "f85d9324-b71f-48c8-bbce-fb08318ca899",
+      "variant_sku": "CRO134",
+      "variant_name": "Slam Ball 70 kgs Negro",
+      "product_master_id": "746cf969-02b1-4764-81de-7e6c82f5920d",
+      "product_master_sku": "CRO-SLAM-NEGRO",
+      "product_master_name": "Slam Ball - Negro",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "110.73"
+    },
+    {
+      "product_variant_id": "15821b3b-7eab-4b89-b03f-bf3ce534a40f",
+      "variant_sku": "CRO002",
+      "variant_name": "Wall Ball Doble costura 3 kgs Color",
+      "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+      "product_master_sku": "CRO-WALL-COLOR",
+      "product_master_name": "Wall Balls Doble Costura Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "25.84"
+    },
+    {
+      "product_variant_id": "75e0ee7e-cdbe-43a0-ad7f-7b44df581173",
+      "variant_sku": "CRO003",
+      "variant_name": "Wall Ball Doble costura 5 kgs Color",
+      "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+      "product_master_sku": "CRO-WALL-COLOR",
+      "product_master_name": "Wall Balls Doble Costura Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "29.38"
+    },
+    {
+      "product_variant_id": "06751e59-84af-47b9-a199-9a1187fcfe75",
+      "variant_sku": "CRO004",
+      "variant_name": "Wall Ball Doble costura 6 kgs Color",
+      "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+      "product_master_sku": "CRO-WALL-COLOR",
+      "product_master_name": "Wall Balls Doble Costura Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "31.45"
+    },
+    {
+      "product_variant_id": "4ec6d8ba-e22d-4e5d-a40c-fe01041f7fe3",
+      "variant_sku": "CRO005",
+      "variant_name": "Wall Ball Doble costura 7 kgs Color",
+      "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+      "product_master_sku": "CRO-WALL-COLOR",
+      "product_master_name": "Wall Balls Doble Costura Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "33.10"
+    },
+    {
+      "product_variant_id": "3a58bb85-f994-40ff-a050-1e88157133bc",
+      "variant_sku": "CRO006",
+      "variant_name": "Wall Ball Doble costura 9 kgs Color",
+      "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+      "product_master_sku": "CRO-WALL-COLOR",
+      "product_master_name": "Wall Balls Doble Costura Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "36.65"
+    },
+    {
+      "product_variant_id": "79f6fcbd-bee3-44cc-9c26-7f740ff7db5a",
+      "variant_sku": "CRO023",
+      "variant_name": "Wall Ball Doble costura 12 kgs Color",
+      "product_master_id": "6e230f4a-5900-4174-8ca1-a504ae118c29",
+      "product_master_sku": "CRO-WALL-COLOR",
+      "product_master_name": "Wall Balls Doble Costura Color",
+      "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "category_slug": "cross-training",
+      "price": "40.71"
+    }
+  ],
+  "price_entries": [
+    {
+      "variant_sku": "DOBHT005",
+      "price": "19.39",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBHT010",
+      "price": "28.98",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBHT015",
+      "price": "41.05",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBHT020",
+      "price": "48.53",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBHT025",
+      "price": "56.49",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBCC005",
+      "price": "34.04",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBCC010",
+      "price": "58.68",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBCC015",
+      "price": "79.94",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBCC020",
+      "price": "99.88",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBCC025",
+      "price": "115.84",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBF005",
+      "price": "3.78",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBF010",
+      "price": "7.56",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBF015",
+      "price": "11.33",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBF020",
+      "price": "15.11",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBF025",
+      "price": "18.89",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBF050",
+      "price": "39.58",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "SOP025",
+      "price": "92.77",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "DOBMINI",
+      "price": "56.80",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO110",
+      "price": "10.78",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO118",
+      "price": "12.57",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO111",
+      "price": "15.02",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO112",
+      "price": "17.24",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO119",
+      "price": "23.91",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO113",
+      "price": "36.11",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO120",
+      "price": "42.58",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO114",
+      "price": "47.62",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO116",
+      "price": "55.30",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO122",
+      "price": "63.49",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO123",
+      "price": "71.42",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO124",
+      "price": "79.37",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO125",
+      "price": "87.29",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO117",
+      "price": "95.24",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO134",
+      "price": "110.73",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO002",
+      "price": "25.84",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO003",
+      "price": "29.38",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO004",
+      "price": "31.45",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO005",
+      "price": "33.10",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO006",
+      "price": "36.65",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    },
+    {
+      "variant_sku": "CRO023",
+      "price": "40.71",
+      "currency": "EUR",
+      "price_list_id": "2998a0c2-9e24-4381-8cf9-754a64e8550a"
+    }
+  ],
+  "specs": [],
+  "variant_skus": [
+    "CRO002",
+    "CRO003",
+    "CRO004",
+    "CRO005",
+    "CRO006",
+    "CRO023",
+    "CRO110",
+    "CRO111",
+    "CRO112",
+    "CRO113",
+    "CRO114",
+    "CRO116",
+    "CRO117",
+    "CRO118",
+    "CRO119",
+    "CRO120",
+    "CRO122",
+    "CRO123",
+    "CRO124",
+    "CRO125",
+    "CRO134",
+    "DOBCC005",
+    "DOBCC010",
+    "DOBCC015",
+    "DOBCC020",
+    "DOBCC025",
+    "DOBF005",
+    "DOBF010",
+    "DOBF015",
+    "DOBF020",
+    "DOBF025",
+    "DOBF050",
+    "DOBHT005",
+    "DOBHT010",
+    "DOBHT015",
+    "DOBHT020",
+    "DOBHT025",
+    "DOBMINI",
+    "SOP025"
+  ]
+}

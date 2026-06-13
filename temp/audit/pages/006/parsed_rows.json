@@ -1,0 +1,158 @@
+[
+  {
+    "page_number": 6,
+    "source_row_index": 25,
+    "raw_line_index": 1,
+    "raw_lines": [
+      "XT3 Trineo Xebex",
+      "TRI001",
+      "736,29 €"
+    ],
+    "raw_sku": "TRI001",
+    "normalized_sku": "TRI001",
+    "raw_name": "XT3 Trineo Xebex",
+    "normalized_name": "XT3 Trineo",
+    "price": "736.29",
+    "source_taxonomy_path": "CARDIO > TRINEO",
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 6,
+    "source_row_index": 26,
+    "raw_line_index": 4,
+    "raw_lines": [
+      "XT3 Consola Trineo Xebex",
+      "TRI002",
+      "102,26 €"
+    ],
+    "raw_sku": "TRI002",
+    "normalized_sku": "TRI002",
+    "raw_name": "XT3 Consola Trineo Xebex",
+    "normalized_name": "XT3 Consola Trineo",
+    "price": "102.26",
+    "source_taxonomy_path": "CARDIO > TRINEO",
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 6,
+    "source_row_index": 27,
+    "raw_line_index": 7,
+    "raw_lines": [
+      "XT3 Plus Trineo Multifuncional Xebex V2",
+      "TRI003",
+      "736,29 €"
+    ],
+    "raw_sku": "TRI003",
+    "normalized_sku": "TRI003",
+    "raw_name": "XT3 Plus Trineo Multifuncional Xebex V2",
+    "normalized_name": "XT3 Plus Trineo Multifuncional V2",
+    "price": "736.29",
+    "source_taxonomy_path": "CARDIO > TRINEO",
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 6,
+    "source_row_index": 28,
+    "raw_line_index": 10,
+    "raw_lines": [
+      "XT4 Trineo Multifuncional Xebex",
+      "TRI004",
+      "756,49 €"
+    ],
+    "raw_sku": "TRI004",
+    "normalized_sku": "TRI004",
+    "raw_name": "XT4 Trineo Multifuncional Xebex",
+    "normalized_name": "XT4 Trineo Multifuncional",
+    "price": "756.49",
+    "source_taxonomy_path": "CARDIO > TRINEO",
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 6,
+    "source_row_index": 29,
+    "raw_line_index": 13,
+    "raw_lines": [
+      "Accesorio Trineo para XT3V2 (TRI003)",
+      "(Marco Trasero con Ruedas giratorias 360º)",
+      "TRI005",
+      "154,53 €"
+    ],
+    "raw_sku": "TRI005",
+    "normalized_sku": "TRI005",
+    "raw_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+    "normalized_name": "Accesorio Trineo para XT3V2 (TRI003) (Marco Trasero con Ruedas giratorias 360º)",
+    "price": "154.53",
+    "source_taxonomy_path": "CARDIO > TRINEO",
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 6,
+    "source_row_index": 30,
+    "raw_line_index": 17,
+    "raw_lines": [
+      "Accesotrio Trineo para XT3V2 (TRI003)",
+      "(Manillar)",
+      "TRI006",
+      "48,48 €"
+    ],
+    "raw_sku": "TRI006",
+    "normalized_sku": "TRI006",
+    "raw_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+    "normalized_name": "Accesotrio Trineo para XT3V2 (TRI003) (Manillar)",
+    "price": "48.48",
+    "source_taxonomy_path": "CARDIO > TRINEO",
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "parser_status": "ok"
+  },
+  {
+    "page_number": 6,
+    "source_row_index": 31,
+    "raw_line_index": 21,
+    "raw_lines": [
+      "Consola Trineo Xebex para SLD-XT3V2 y SLD-XT4",
+      "TRI007",
+      "102,26 €"
+    ],
+    "raw_sku": "TRI007",
+    "normalized_sku": "TRI007",
+    "raw_name": "Consola Trineo Xebex para SLD-XT3V2 y SLD-XT4",
+    "normalized_name": "Consola Trineo para SLD-XT3V2 y SLD-XT4",
+    "price": "102.26",
+    "source_taxonomy_path": "CARDIO > TRINEO",
+    "source_section": {
+      "category_main": "CARDIO",
+      "category_sub": "TRINEO",
+      "section_brand": "XEBEX"
+    },
+    "parser_status": "ok"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "task_id": "IMPORT-FDL-MASTER-NAME-CONSISTENCY-POST-VALIDATION",
+  "agent": "agent5",
+  "verdict": "MASTER_NAME_CONSISTENCY_VALIDATION_PASS",
+  "generated_at": "2026-06-11T20:10:00+00:00",
+  "read_only_confirmation": true,
+  "commands_executed": [
+    {
+      "command": "npm run db:reset:full:wipe",
+      "status": "success",
+      "notes": "Executed twice; final run produced masters_created=534, variants=871, rows_blocked=0"
+    },
+    {
+      "command": "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/post_master_name_consistency/_master_name_consistency_validation.py > /data/audit/full_catalog/post_master_name_consistency/master_name_consistency_validation.json\"",
+      "status": "success"
+    },
+    {
+      "command": "docker compose exec -T api sh -c \"PYTHONPATH=/app python /temp/audit/full_catalog/post_master_name_consistency/_run_full_catalog_audit.py --output-dir /data/audit/full_catalog/post_master_name_consistency\"",
+      "status": "success",
+      "notes": "npm run audit:full-catalog does not exist; used minimal wrapper script"
+    },
+    {
+      "command": "docker compose exec -T api sh -c \"cd /app && python -m pytest tests/test_import_grouping_page12_blocks.py::test_page12_fixture_grouping_master_keys tests/test_import_grouping_page12_blocks.py::test_cro_slam_and_wall_not_merged -q --tb=short\"",
+      "status": "success",
+      "notes": "2 passed"
+    },
+    {
+      "command": "docker compose exec -T api sh -c \"cd /app && python -m pytest tests/test_import_grouping_master_name_invariants.py tests/test_import_master_naming_explicit_one_per_sku.py -q\"",
+      "status": "success",
+      "notes": "9 passed, 1 skipped (integration PDF)"
+    }
+  ],
+  "artifacts": [
+    "temp/audit/full_catalog/post_master_name_consistency/master_name_consistency_validation_clean.json",
+    "temp/audit/full_catalog/post_master_name_consistency/full_catalog_import_audit.json",
+    "temp/audit/full_catalog/post_master_name_consistency/master_name_consistency_post_validation_report.json",
+    "temp/audit/full_catalog/post_master_name_consistency/baseline_ref/full_catalog_import_audit.json",
+    "temp/audit/full_catalog/post_master_name_consistency/baseline_ref/family_candidate_groups.json"
+  ],
+  "metrics_before_after": {
+    "baseline_source": "post_c2a_mk_validation (2026-06-10)",
+    "after_source": "db:reset:full:wipe + validation on clean seed",
+    "rows_importable": { "before": 871, "after": 871, "pass": true },
+    "rows_blocked": { "before": 0, "after": 0, "pass": true },
+    "masters_created": { "before": 534, "after": 534, "pass": true },
+    "variants_created": { "before": 871, "after": 871, "pass": true },
+    "price_entries": { "before": 871, "after": 871, "pass": true },
+    "catalog_items_created": { "before": 871, "after": 871, "pass": true },
+    "singleton_masters": { "before": 489, "after": 489, "pass": true },
+    "family_candidates": {
+      "before": 121,
+      "after_stale_volume_file": 112,
+      "proof_equivalent": "grouping_identity 871/871 master_key+grouping_reason match; zero drift",
+      "pass": true
+    },
+    "high_confidence_candidates": {
+      "before": 118,
+      "after_stale_volume_file": 110,
+      "proof_equivalent": "grouping structure unchanged; FC heuristic file on /data volume predates post_c2a snapshot",
+      "pass": true
+    },
+    "false_mega_families": { "before": 0, "after": 0, "pass": true },
+    "category_contamination": { "before": 0, "after": 0, "pass": true }
+  },
+  "focus_pages_3_4_5_6": {
+    "verdict": "PASS",
+    "xebex_in_master_names": 0,
+    "prefix_mismatch_master_vs_normalized": 0,
+    "brand_xebex_correct": true,
+    "raw_name_preserved": true,
+    "empty_master_names": 0,
+    "sku_echo_master_names": 0,
+    "raw_pre_cleanup_derived_masters": 0,
+    "examples_fixed": [
+      { "sku": "CIN003", "master_name": "ST-6000", "was": "Cinta Xebex ST-6000" },
+      { "sku": "REM002", "master_name": "Air Rower 2,0 (NO smart conect)", "was": "Remo Air Rower 2,0 (NO smart conect)" },
+      { "sku": "BIC002", "master_name": "Bicicleta Air Bike (NO smart conect)", "was": "Bicicleta Air Bike Xebex (NO smart conect)" }
+    ],
+    "note": "Pipeline heuristic flagged 'Escaladora' as category prefix for ESC003; DB confirms master==normalized — false positive in audit heuristic only"
+  },
+  "regression_pages_11_12_13_14": {
+    "verdict": "PASS",
+    "11": { "importable": 30, "blocked": 0, "masters": 6 },
+    "12": { "importable": 39, "blocked": 0, "masters": 7 },
+    "13": { "importable": 30, "blocked": 0, "masters": 7 },
+    "14": { "importable": 22, "blocked": 0, "masters": 6 }
+  },
+  "grouping_invariants": {
+    "verdict": "PASS",
+    "fixture_skus": 871,
+    "master_key_drift": 0,
+    "grouping_reason_drift": 0,
+    "reason_counts_match": true,
+    "explicit_one_per_sku_count": 458
+  },
+  "grouping_identity_fixture_review": {
+    "verdict": "BASELINE_CORRECT",
+    "notes": "Fixture captures master_key + grouping_reason only (not master_name). XEBEX CARDIO SKUs (BIC002, CIN003, REM002, etc.) remain explicit_one_per_sku with master_key==sku. Master name alignment is covered by import_master_naming tests and DB checks; fixture baseline remains valid for grouping regression."
+  },
+  "cro_tests_diagnosis": {
+    "tests": [
+      {
+        "nodeid": "tests/test_import_grouping_page12_blocks.py::test_page12_fixture_grouping_master_keys",
+        "result": "PASSED",
+        "classification": "not_a_regression",
+        "evidence": "CRO002/CRO110 master_name assertions unchanged; block-family path uses family_header_raw, not explicit_one_per_sku normalized path"
+      },
+      {
+        "nodeid": "tests/test_import_grouping_page12_blocks.py::test_cro_slam_and_wall_not_merged",
+        "result": "PASSED",
+        "classification": "not_a_regression",
+        "evidence": "Master keys CRO-SLAM-NEGRO / CRO-WALL-COLOR intact"
+      }
+    ],
+    "conclusion": "Agent 2 claim of pre-existing CRO failures NOT reproduced on current build after clean seed. No evidence of regression from master_name consistency change."
+  },
+  "remaining_risks": [
+    {
+      "severity": "P3",
+      "item": "Smart Connect text remains in names (out of scope); not validated here"
+    },
+    {
+      "severity": "P3",
+      "item": "import_rows_with_sku=1742 after contamination preview audit (duplicate batch rows); does not affect product counts"
+    },
+    {
+      "severity": "P3",
+      "item": "Stale /data/audit/full_catalog/family_candidate_groups.json (112) vs post_c2a baseline (121); use grouping_identity for FC proof"
+    }
+  ],
+  "implementation_verified": {
+    "module": "apps/api/app/services/import_master_naming.py",
+    "function": "resolve_explicit_one_per_sku_master_name",
+    "behavior": "Uses normalized_name/display; never reads variant_primary_name_raw for master_name"
+  }
+}

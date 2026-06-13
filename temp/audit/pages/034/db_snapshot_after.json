@@ -1,0 +1,584 @@
+{
+  "masters": [
+    {
+      "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+      "master_key": "BN",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "26bef071-708f-48bf-9383-abc2fabc172d",
+      "master_key": "BNZ",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+      "master_key": "BO",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "853a5031-e92c-43ed-b126-367c3f8a5264",
+      "master_key": "BOZ",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+      "master_key": "BOR",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "71f06ad7-673b-40f2-b467-5944a54c2a43",
+      "master_key": "BORZ",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "5d939b8d-e4a7-4440-8a0a-c6246ef2b6f5",
+      "master_key": "BORA",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "15605179-b41b-4723-b3b8-15bd75a390ad",
+      "master_key": "BBP140",
+      "product_master_name": "Barra Body Pump 28mm - 1,40 Mts",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "1f248e9c-397b-4d0d-9328-226a38b31089",
+      "master_key": "BBPB",
+      "product_master_name": "Barras Body Pump",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "9f5656ab-1d9d-4da1-ad7b-5b7c824cd68a",
+      "master_key": "BTN001",
+      "product_master_name": "Topes Barra Tope Barra 28 Mm",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "7e892d73-a682-451c-a1d7-d62de1191e22",
+      "master_key": "BTN002",
+      "product_master_name": "Tope Barra 30 Mm",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "cc297ecf-d289-433b-b438-1b5ceca40b68",
+      "master_key": "BTO001",
+      "product_master_name": "Tope Barra Olímpica",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "b982bfa9-3a9d-4790-9706-91aa2fe99106",
+      "master_key": "BTO003",
+      "product_master_name": "Tope Barra Olimpica Crossfit",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "9cedec55-2024-448c-8f39-109678509d84",
+      "master_key": "BTO004",
+      "product_master_name": "Tope Olimpico Crossfit Rojo",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    },
+    {
+      "product_master_id": "5cdb3bc4-9b1b-40f9-bba4-942fea66c81e",
+      "master_key": "SOP033",
+      "product_master_name": "Soporte Para 8",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras"
+    }
+  ],
+  "variants": [
+    {
+      "product_variant_id": "dbd91209-0bf0-43f7-bb45-5bf76a9eea8d",
+      "variant_sku": "BN120",
+      "variant_name": "Barra 28mm Cromada - 1,20 Mts",
+      "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+      "product_master_sku": "BN",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "24.03"
+    },
+    {
+      "product_variant_id": "afd911cd-4fc3-4402-a83a-792ac7643d78",
+      "variant_sku": "BN120Z",
+      "variant_name": "Barra 28mm Cromada - 1,20 Mts Curl Z",
+      "product_master_id": "26bef071-708f-48bf-9383-abc2fabc172d",
+      "product_master_sku": "BNZ",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "24.03"
+    },
+    {
+      "product_variant_id": "b6b7fec9-da7c-4651-ad16-91a2250f3c1f",
+      "variant_sku": "BN150",
+      "variant_name": "Barra 28mm Cromada - 1,50 Mts",
+      "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+      "product_master_sku": "BN",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "24.59"
+    },
+    {
+      "product_variant_id": "57587740-c87e-4e8d-b443-290e2b519cd3",
+      "variant_sku": "BN180",
+      "variant_name": "Barra 28mm Cromada - 1,80 Mts",
+      "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+      "product_master_sku": "BN",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "33.87"
+    },
+    {
+      "product_variant_id": "cf102523-a978-4532-bfc5-5cc0d5a2c14d",
+      "variant_sku": "BN220",
+      "variant_name": "Barra 28mm Cromada - 2,20 Mts",
+      "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+      "product_master_sku": "BN",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "39.76"
+    },
+    {
+      "product_variant_id": "b1bc7fdb-6401-4ac9-ad94-0ba1d4d0b2c8",
+      "variant_sku": "BN085",
+      "variant_name": "Baraa 28mm Cromada - Triceps Romana 85 Cms",
+      "product_master_id": "25b16d8e-8a6a-48b8-9cc1-ad60fd78242f",
+      "product_master_sku": "BN",
+      "product_master_name": "Barra 28 MM Cromada",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "34.55"
+    },
+    {
+      "product_variant_id": "6efaacde-b8a2-4754-98d0-66dc27cdfb2b",
+      "variant_sku": "BO120",
+      "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts",
+      "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+      "product_master_sku": "BO",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "47.35"
+    },
+    {
+      "product_variant_id": "2d60af0f-4ad5-45f3-ae6e-05f10ff82566",
+      "variant_sku": "BO120Z",
+      "variant_name": "Barra Olimpica Cromada Home - 1,20 Mts Curl Z",
+      "product_master_id": "853a5031-e92c-43ed-b126-367c3f8a5264",
+      "product_master_sku": "BOZ",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "50.13"
+    },
+    {
+      "product_variant_id": "de2b4319-628a-42a2-bbc1-0d129824a63f",
+      "variant_sku": "BO150",
+      "variant_name": "Barra Olimpica Cromada Home - 1,50 Mts",
+      "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+      "product_master_sku": "BO",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "54.31"
+    },
+    {
+      "product_variant_id": "80b643b4-b7cc-43ae-ac5c-c53759be307c",
+      "variant_sku": "BO180",
+      "variant_name": "Barra Olimpica Cromada Home - 1,80 Mts",
+      "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+      "product_master_sku": "BO",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "59.87"
+    },
+    {
+      "product_variant_id": "6c57469a-9841-44cd-9d74-a312664f4762",
+      "variant_sku": "BO220",
+      "variant_name": "Barra Olimpica Cromada Home - 2,20 Mts",
+      "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+      "product_master_sku": "BO",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "71.16"
+    },
+    {
+      "product_variant_id": "e3178388-b10b-4e5b-b292-df6ef9968485",
+      "variant_sku": "BO085",
+      "variant_name": "Barra Olimpica Cromada Home - Triceps Romana 85 Cms",
+      "product_master_id": "e85988ba-46c7-41a4-9c0d-4feb1f561292",
+      "product_master_sku": "BO",
+      "product_master_name": "Barra Olímpica Cromada - HOME",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "62.13"
+    },
+    {
+      "product_variant_id": "b8ec985c-d1d2-4c47-973c-25af8892cc7f",
+      "variant_sku": "BOR120",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+      "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+      "product_master_sku": "BOR",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "69.03"
+    },
+    {
+      "product_variant_id": "5ad606eb-73ea-498c-8964-456b5d103cbe",
+      "variant_sku": "BOR120Z",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts Curl Z",
+      "product_master_id": "71f06ad7-673b-40f2-b467-5944a54c2a43",
+      "product_master_sku": "BORZ",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "72.93"
+    },
+    {
+      "product_variant_id": "662512c7-fc73-42ae-a7b8-7edd98bd13c8",
+      "variant_sku": "BOR150",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,50 Mts",
+      "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+      "product_master_sku": "BOR",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "81.94"
+    },
+    {
+      "product_variant_id": "8f2c9607-7e65-4c7f-801c-2063619ca3e0",
+      "variant_sku": "BOR180",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 1,80 Mts",
+      "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+      "product_master_sku": "BOR",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "92.47"
+    },
+    {
+      "product_variant_id": "4e6eb3f3-fd37-4a7b-b05e-c4c32dbe68a8",
+      "variant_sku": "BOR220",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1500 lbs",
+      "product_master_id": "df5730e3-9792-4fd0-859d-d287924c58ac",
+      "product_master_sku": "BOR",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "132.14"
+    },
+    {
+      "product_variant_id": "94f3ee7d-a3fc-4ba2-a66c-63f3bbb5b061",
+      "variant_sku": "BOR220A",
+      "variant_name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts 1000 lbs",
+      "product_master_id": "5d939b8d-e4a7-4440-8a0a-c6246ef2b6f5",
+      "product_master_sku": "BORA",
+      "product_master_name": "Barra Olímpica Cromada - Con Rodaminetos y Alta carga",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "106.25"
+    },
+    {
+      "product_variant_id": "e39c87ce-09e0-4a61-b959-a602c49f3c3c",
+      "variant_sku": "BBP140",
+      "variant_name": "Barra Body Pump 28mm - 1,40 Mts",
+      "product_master_id": "15605179-b41b-4723-b3b8-15bd75a390ad",
+      "product_master_sku": "BBP140",
+      "product_master_name": "Barra Body Pump 28mm - 1,40 Mts",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "11.53"
+    },
+    {
+      "product_variant_id": "059931cb-1982-4fd4-a4f3-e2c050d79b1c",
+      "variant_sku": "BBP140B",
+      "variant_name": "Barra Body Pump 30mm - 1,40 Mts",
+      "product_master_id": "1f248e9c-397b-4d0d-9328-226a38b31089",
+      "product_master_sku": "BBPB",
+      "product_master_name": "Barras Body Pump",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "11.53"
+    },
+    {
+      "product_variant_id": "92e5a013-4497-426b-95a1-ec4e4bf548cc",
+      "variant_sku": "BTN001",
+      "variant_name": "Topes Barra Tope Barra 28 Mm",
+      "product_master_id": "9f5656ab-1d9d-4da1-ad7b-5b7c824cd68a",
+      "product_master_sku": "BTN001",
+      "product_master_name": "Topes Barra Tope Barra 28 Mm",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "0.93"
+    },
+    {
+      "product_variant_id": "9cc6c815-7103-4054-8f1b-b3a345d5a76e",
+      "variant_sku": "BTN002",
+      "variant_name": "Tope Barra 30 Mm",
+      "product_master_id": "7e892d73-a682-451c-a1d7-d62de1191e22",
+      "product_master_sku": "BTN002",
+      "product_master_name": "Tope Barra 30 Mm",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "0.93"
+    },
+    {
+      "product_variant_id": "3e5b8aff-6255-4d89-b75b-aa99e485937c",
+      "variant_sku": "BTO001",
+      "variant_name": "Tope Barra Olímpica",
+      "product_master_id": "cc297ecf-d289-433b-b438-1b5ceca40b68",
+      "product_master_sku": "BTO001",
+      "product_master_name": "Tope Barra Olímpica",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "2.10"
+    },
+    {
+      "product_variant_id": "71be5208-8fa1-485d-a992-edf4793c29e0",
+      "variant_sku": "BTO003",
+      "variant_name": "Tope Barra Olimpica Crossfit",
+      "product_master_id": "b982bfa9-3a9d-4790-9706-91aa2fe99106",
+      "product_master_sku": "BTO003",
+      "product_master_name": "Tope Barra Olimpica Crossfit",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "4.92"
+    },
+    {
+      "product_variant_id": "8bea8941-9421-48bf-8430-6c7f660e35cc",
+      "variant_sku": "BTO004",
+      "variant_name": "Tope Olimpico Crossfit Rojo",
+      "product_master_id": "9cedec55-2024-448c-8f39-109678509d84",
+      "product_master_sku": "BTO004",
+      "product_master_name": "Tope Olimpico Crossfit Rojo",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "6.17"
+    },
+    {
+      "product_variant_id": "2de8dafa-6329-4afa-8e51-f49d7eae5bd2",
+      "variant_sku": "SOP033",
+      "variant_name": "Soporte Para 8",
+      "product_master_id": "5cdb3bc4-9b1b-40f9-bba4-942fea66c81e",
+      "product_master_sku": "SOP033",
+      "product_master_name": "Soporte Para 8",
+      "category_id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+      "category_slug": "barras",
+      "price": "116.48"
+    }
+  ],
+  "price_entries": [
+    {
+      "variant_sku": "BN120",
+      "price": "24.03",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BN120Z",
+      "price": "24.03",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BN150",
+      "price": "24.59",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BN180",
+      "price": "33.87",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BN220",
+      "price": "39.76",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BN085",
+      "price": "34.55",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BO120",
+      "price": "47.35",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BO120Z",
+      "price": "50.13",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BO150",
+      "price": "54.31",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BO180",
+      "price": "59.87",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BO220",
+      "price": "71.16",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BO085",
+      "price": "62.13",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BOR120",
+      "price": "69.03",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BOR120Z",
+      "price": "72.93",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BOR150",
+      "price": "81.94",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BOR180",
+      "price": "92.47",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BOR220",
+      "price": "132.14",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BOR220A",
+      "price": "106.25",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BBP140",
+      "price": "11.53",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BBP140B",
+      "price": "11.53",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BTN001",
+      "price": "0.93",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BTN002",
+      "price": "0.93",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BTO001",
+      "price": "2.10",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BTO003",
+      "price": "4.92",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "BTO004",
+      "price": "6.17",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    },
+    {
+      "variant_sku": "SOP033",
+      "price": "116.48",
+      "currency": "EUR",
+      "price_list_id": "dd4c2b92-b788-4a5d-8281-942c56273fdb"
+    }
+  ],
+  "specs": [],
+  "variant_skus": [
+    "BBP140",
+    "BBP140B",
+    "BN085",
+    "BN120",
+    "BN120Z",
+    "BN150",
+    "BN180",
+    "BN220",
+    "BO085",
+    "BO120",
+    "BO120Z",
+    "BO150",
+    "BO180",
+    "BO220",
+    "BOR120",
+    "BOR120Z",
+    "BOR150",
+    "BOR180",
+    "BOR220",
+    "BOR220A",
+    "BTN001",
+    "BTN002",
+    "BTO001",
+    "BTO003",
+    "BTO004",
+    "SOP033"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "taskId": "APP-PLATFORM-UX-3.0-PHASE-2A-SHEET-FOCUS-REVALIDATION",
+  "viewport": "390x844",
+  "testedAt": "2026-06-03",
+  "defectUnderTest": "P2A-SHEET-001",
+  "initialFocus": {
+    "expected": "Cerrar variantes",
+    "actual": "Cerrar variantes",
+    "pass": true
+  },
+  "escapeClose": {
+    "master": "Barras Crossfit",
+    "triggerLabel": "Mostrar 8 variantes de Barras Crossfit",
+    "sheetClosed": true,
+    "activeElementIsExactTrigger": true,
+    "activeElementIsBody": false,
+    "pass": true
+  },
+  "closeButtonClose": {
+    "master": "Barras Crossfit",
+    "triggerLabel": "Mostrar 8 variantes de Barras Crossfit",
+    "sheetClosed": true,
+    "activeElementIsExactTrigger": true,
+    "activeElementIsBody": false,
+    "pass": true
+  },
+  "twoMasterSequence": [
+    {
+      "master": "Barras Crossfit - NEXO",
+      "triggerLabel": "Mostrar 6 variantes de Barras Crossfit - NEXO",
+      "closeMethod": "Escape",
+      "activeElementIsExactTrigger": true,
+      "pass": true
+    },
+    {
+      "master": "Saco Gusano",
+      "triggerLabel": "Mostrar 5 variantes de Saco Gusano",
+      "closeMethod": "Cerrar variantes button",
+      "activeElementIsExactTrigger": true,
+      "pass": true
+    }
+  ],
+  "focusTrap": {
+    "stepsSampled": 6,
+    "allStepsFocusInDialog": true,
+    "pass": true
+  }
+}

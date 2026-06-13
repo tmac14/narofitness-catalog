@@ -1,0 +1,5081 @@
+{
+  "audit_version": "1.2",
+  "agent": "agent5_page_import",
+  "workflow_mode": "manual_page_by_page",
+  "generated_at": "2026-06-12T19:32:33.499036+00:00",
+  "requested_page": 13,
+  "page_number": 13,
+  "output_dir": "temp/audit/pages/013",
+  "pdf_path": "/temp/FDL .. Tarifa Mayorista 01-Febr-2026.pdf",
+  "parsed_full_pdf": {
+    "parse_scope": "full_pdf",
+    "total_rows_parsed": 871,
+    "total_pages_with_rows": 56
+  },
+  "rows_filtered_to_page": {
+    "requested_page": 13,
+    "count": 30,
+    "source_row_indices": [
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "expected_skus": [
+      "CRO069",
+      "CRO070",
+      "CRO071",
+      "CRO072",
+      "CRO073",
+      "CRO074",
+      "CRO075",
+      "CRO076",
+      "CRO077",
+      "CRO083",
+      "CRO084",
+      "CRO085",
+      "CRO086",
+      "CRO095",
+      "CRO096",
+      "CRO097",
+      "CRO098",
+      "CRO099",
+      "CRO100",
+      "CRO127",
+      "CRO136",
+      "CRO137",
+      "CRO138",
+      "CRO139",
+      "CRO140",
+      "CRO141",
+      "CRO142",
+      "CRO143",
+      "SOP055",
+      "SOP063"
+    ]
+  },
+  "reset_before_page": true,
+  "cumulative_mode": false,
+  "confirm_executed": true,
+  "imported_pages": [
+    13
+  ],
+  "reset_summary": {
+    "tables_cleared": [
+      "catalog_exports",
+      "catalog_product_layouts",
+      "catalog_items",
+      "catalogs",
+      "supplier_price_entries",
+      "supplier_price_lists",
+      "import_rows",
+      "import_batches",
+      "product_master_specs",
+      "product_variant_specs",
+      "product_images",
+      "supplier_product_family_keys",
+      "product_variants",
+      "product_masters"
+    ],
+    "tables_preserved": [
+      "categories",
+      "taxonomy_mapping_rules",
+      "suppliers",
+      "import_profiles",
+      "spec_definitions",
+      "spec_allowed_values",
+      "units",
+      "category_spec_profiles",
+      "app_settings",
+      "brands"
+    ],
+    "categories_preserved": true,
+    "taxonomy_mapping_rules_preserved": true,
+    "reset_delete_counts": {
+      "catalog_exports": 0,
+      "catalog_product_layouts": 0,
+      "catalog_items": 0,
+      "catalogs": 0,
+      "supplier_price_entries": 91,
+      "supplier_price_lists": 3,
+      "import_rows": 91,
+      "import_batches": 3,
+      "product_master_specs": 7,
+      "product_variant_specs": 136,
+      "product_images": 0,
+      "supplier_product_family_keys": 20,
+      "product_variants": 91,
+      "product_masters": 20
+    },
+    "product_masters_count_before": 20,
+    "product_masters_count_after": 0,
+    "product_variants_count_before": 91,
+    "product_variants_count_after": 0,
+    "catalogue_items_count_before": 0,
+    "catalogue_items_count_after": 0
+  },
+  "baseline_before": {
+    "canonical_categories_count": 24,
+    "canonical_category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "mapping_rules_count": 28,
+    "product_masters_count": 0,
+    "product_variants_count": 0,
+    "catalogue_items_count": 0
+  },
+  "category_snapshot_before": {
+    "generated_at": "2026-06-12T19:32:28.646988+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "category_snapshot_after": {
+    "generated_at": "2026-06-12T19:32:33.498560+00:00",
+    "count": 24,
+    "category_slugs": [
+      "agarres",
+      "air-bike",
+      "bancos-jaulas-y-soportes",
+      "barras",
+      "bicicletas-estaticas",
+      "boxeo",
+      "cardio",
+      "ciclo-indoor",
+      "cintas-de-correr",
+      "cross-training",
+      "discos",
+      "elipticas",
+      "home",
+      "linea-a-placas",
+      "linea-convergente-a-disco",
+      "mancuernas",
+      "material-de-estudio",
+      "musculacion",
+      "racks-y-estructuras",
+      "remos",
+      "repuestos",
+      "soportes-y-mancuerneros",
+      "stepper",
+      "suelos"
+    ],
+    "categories": [
+      {
+        "id": "324c4128-dcf7-4b83-9696-8af00960d8b7",
+        "slug": "agarres",
+        "name": "Agarres",
+        "parent_slug": null
+      },
+      {
+        "id": "36cd0515-ba0b-4fa3-af96-ad4073396c2c",
+        "slug": "air-bike",
+        "name": "Air Bike",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "53e94c71-0f53-4ca5-8c24-2ee7c05a496d",
+        "slug": "bancos-jaulas-y-soportes",
+        "name": "Bancos, jaulas y soportes",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "605fb4e7-b33a-40c8-9c62-6c1fd536e776",
+        "slug": "barras",
+        "name": "Barras",
+        "parent_slug": null
+      },
+      {
+        "id": "367d5789-1295-43bc-8d13-396649ad8b19",
+        "slug": "bicicletas-estaticas",
+        "name": "Bicicletas Estáticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "fc825b2d-8590-42be-b55e-bab9dbc33425",
+        "slug": "boxeo",
+        "name": "Boxeo",
+        "parent_slug": null
+      },
+      {
+        "id": "ab35d1e5-a383-4c6f-bd72-d6e3b663c77f",
+        "slug": "cardio",
+        "name": "Cardio",
+        "parent_slug": null
+      },
+      {
+        "id": "02120c15-9551-4699-9f54-28a0777fd625",
+        "slug": "ciclo-indoor",
+        "name": "Ciclo Indoor",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "0083303f-1e09-4524-829c-2eb89e49cce4",
+        "slug": "cintas-de-correr",
+        "name": "Cintas de correr",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "slug": "cross-training",
+        "name": "Cross Training",
+        "parent_slug": null
+      },
+      {
+        "id": "2352acd2-39e9-48ab-8001-894bc48d75ae",
+        "slug": "discos",
+        "name": "Discos",
+        "parent_slug": null
+      },
+      {
+        "id": "d93749ff-3334-4178-a970-bf967402f3af",
+        "slug": "elipticas",
+        "name": "Elípticas",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e31bf177-5ac5-4906-9d33-6d784e60b589",
+        "slug": "home",
+        "name": "Home",
+        "parent_slug": null
+      },
+      {
+        "id": "55d4c978-1cc2-4029-8039-0f8a9f22a90f",
+        "slug": "linea-a-placas",
+        "name": "Linea a placas",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "b8522bdc-20a9-46c4-be6b-3a5e6545338d",
+        "slug": "linea-convergente-a-disco",
+        "name": "Linea convergente a disco",
+        "parent_slug": "musculacion"
+      },
+      {
+        "id": "259d941b-0c1c-464c-b949-7fb037732bd3",
+        "slug": "mancuernas",
+        "name": "Mancuernas",
+        "parent_slug": null
+      },
+      {
+        "id": "3cc699e6-b346-42a9-af29-066bf969cb82",
+        "slug": "material-de-estudio",
+        "name": "Material de estudio",
+        "parent_slug": null
+      },
+      {
+        "id": "b7669553-8eca-4c45-8deb-a55ac0d9d86b",
+        "slug": "musculacion",
+        "name": "Musculación",
+        "parent_slug": null
+      },
+      {
+        "id": "da421ce5-41ae-4d38-9ff8-b8434e210a9b",
+        "slug": "racks-y-estructuras",
+        "name": "Racks y Estructuras",
+        "parent_slug": null
+      },
+      {
+        "id": "564402c4-20e7-4416-8417-130f42eb0596",
+        "slug": "remos",
+        "name": "Remos",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "ca0db787-6ec3-4495-ae43-cd2e31756e86",
+        "slug": "repuestos",
+        "name": "Repuestos",
+        "parent_slug": null
+      },
+      {
+        "id": "cc604c4c-15ec-48d1-9511-9caedc4d93ab",
+        "slug": "soportes-y-mancuerneros",
+        "name": "Soportes y Mancuerneros",
+        "parent_slug": null
+      },
+      {
+        "id": "c7e4537b-80cb-4a5c-a0e6-72a0ae6e15ad",
+        "slug": "stepper",
+        "name": "Stepper",
+        "parent_slug": "cardio"
+      },
+      {
+        "id": "e08bad1d-80e5-4695-9f81-cc61b3565748",
+        "slug": "suelos",
+        "name": "Suelos",
+        "parent_slug": null
+      }
+    ]
+  },
+  "raw_extraction": {
+    "page_number": 13,
+    "source_section": {
+      "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "category_sub": null,
+      "section_brand": null
+    },
+    "lines": [
+      {
+        "line_index": 0,
+        "text": "Wall Balls Doble Costura Negro FDL",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 1,
+        "text": "Wall Ball Doble costura 3 kgs Negro FDL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 2,
+        "text": "CRO095",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 3,
+        "text": "8435657001537",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 4,
+        "text": "24,79 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 5,
+        "text": "Wall Ball Doble costura 4 kgs Negro FDL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 6,
+        "text": "CRO127",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 7,
+        "text": "8435657018344",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 8,
+        "text": "26,29 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 9,
+        "text": "Wall Ball Doble costura 5 kgs Negro FDL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 10,
+        "text": "CRO096",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 11,
+        "text": "8435657001544",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 12,
+        "text": "28,42 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 13,
+        "text": "Wall Ball Doble costura 6 kgs Negro FDL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 14,
+        "text": "CRO097",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 15,
+        "text": "8435657001551",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 16,
+        "text": "30,60 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 17,
+        "text": "Wall Ball Doble costura 7 kgs Negro FDL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 18,
+        "text": "CRO098",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 19,
+        "text": "8435657001568",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 20,
+        "text": "32,80 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 21,
+        "text": "Wall Ball Doble costura 9 kgs Negro FDL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 22,
+        "text": "CRO099",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 23,
+        "text": "8435657001575",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 24,
+        "text": "36,44 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 25,
+        "text": "Wall Ball Doble costura 12 kgs Negro FDL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 26,
+        "text": "CRO100",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 27,
+        "text": "8435657001582",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 28,
+        "text": "40,60 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 29,
+        "text": "Wall Balls Doble Costura Negro NEXO",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 30,
+        "text": "Wall Ball Doble costura 3 kgs Negro NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 31,
+        "text": "CRO136",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 32,
+        "text": "8435657018641",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 33,
+        "text": "24,79 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 34,
+        "text": "Wall Ball Doble costura 4 kgs Negro NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 35,
+        "text": "CRO142",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 36,
+        "text": "8435657018993",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 37,
+        "text": "26,29 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 38,
+        "text": "Wall Ball Doble costura 5 kgs Negro NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 39,
+        "text": "CRO137",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 40,
+        "text": "8435657018658",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 41,
+        "text": "28,42 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 42,
+        "text": "Wall Ball Doble costura 6 kgs Negro NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 43,
+        "text": "CRO138",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 44,
+        "text": "8435657018665",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 45,
+        "text": "30,60 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 46,
+        "text": "Wall Ball Doble costura 7 kgs Negro NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 47,
+        "text": "CRO139",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 48,
+        "text": "8435657018672",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 49,
+        "text": "32,80 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 50,
+        "text": "Wall Ball Doble costura 9 kgs Negro NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 51,
+        "text": "CRO140",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 52,
+        "text": "8435657018689",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 53,
+        "text": "36,44 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 54,
+        "text": "Wall Ball Doble costura 12 kgs Negro NEXO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 55,
+        "text": "CRO141",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 56,
+        "text": "8435657018696",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 57,
+        "text": "40,60 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 58,
+        "text": "Wall Balls Doble Costura Libras",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 59,
+        "text": "Wall Ball Doble costura 12& Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 60,
+        "text": "CRO083",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 61,
+        "text": "8435657001445",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 62,
+        "text": "28,30 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 63,
+        "text": "Wall Ball Doble costura 14& Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 64,
+        "text": "CRO084",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 65,
+        "text": "8435657001452",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 66,
+        "text": "29,65 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 67,
+        "text": "Wall Ball Doble costura 16& Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 68,
+        "text": "CRO085",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 69,
+        "text": "8435657001469",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 70,
+        "text": "32,34 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 71,
+        "text": "Wall Ball Doble costura 20& Negro",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 72,
+        "text": "CRO086",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 73,
+        "text": "8435657001476",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 74,
+        "text": "33,70 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 75,
+        "text": "Soporte Wall Ball",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 76,
+        "text": "Soporte Wall Ball a pared",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 77,
+        "text": "Medidas 148 x 27 x 10 cms",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 78,
+        "text": "SOP055",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 79,
+        "text": "8435657005955",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 80,
+        "text": "72,89 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 81,
+        "text": "Balones no incluidos",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 82,
+        "text": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 83,
+        "text": "Capacidad para 12 balones",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 84,
+        "text": "SOP063",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 85,
+        "text": "8435657006037",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 86,
+        "text": "114,08 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 87,
+        "text": "Power Bags Color",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 88,
+        "text": "Power Bag Color 5 kgs NARANJA",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 89,
+        "text": "CRO069",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 90,
+        "text": "8435657001315",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 91,
+        "text": "24,56 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 92,
+        "text": "Power Bag Color 10 kgs ROJO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 93,
+        "text": "CRO070",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 94,
+        "text": "8435657001322",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 95,
+        "text": "28,17 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 96,
+        "text": "Power Bag Color 15 kgs AZUL",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 97,
+        "text": "CRO071",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 98,
+        "text": "8435657001339",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 99,
+        "text": "34,18 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 100,
+        "text": "Power Bag Color 20 kgs VERDE",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 101,
+        "text": "CRO072",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 102,
+        "text": "8435657001346",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 103,
+        "text": "40,77 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 104,
+        "text": "Power Bag Color 25 kgs NEGRO",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 105,
+        "text": "CRO073",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 106,
+        "text": "8435657001353",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 107,
+        "text": "48,70 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 108,
+        "text": "Power Bag Color 30 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 109,
+        "text": "CRO143",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 110,
+        "text": "8435657019006",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 111,
+        "text": "57,95 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 112,
+        "text": "Saco Bulgaro",
+        "font_size": 8.279999732971191,
+        "line_kind": "family_header"
+      },
+      {
+        "line_index": 113,
+        "text": "Saco Bulgaro 5 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 114,
+        "text": "CRO074",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 115,
+        "text": "8435657001360",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 116,
+        "text": "29,75 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 117,
+        "text": "Saco Bulgaro 10 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 118,
+        "text": "CRO075",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 119,
+        "text": "8435657001377",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 120,
+        "text": "34,66 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 121,
+        "text": "Saco Bulgaro 15 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 122,
+        "text": "CRO076",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 123,
+        "text": "8435657001384",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 124,
+        "text": "40,78 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      },
+      {
+        "line_index": 125,
+        "text": "Saco Bulgaro 20 kgs",
+        "font_size": 7.320000171661377,
+        "line_kind": "product_line"
+      },
+      {
+        "line_index": 126,
+        "text": "CRO077",
+        "font_size": 7.320000171661377,
+        "line_kind": "sku"
+      },
+      {
+        "line_index": 127,
+        "text": "8435657001391",
+        "font_size": 7.320000171661377,
+        "line_kind": "ean"
+      },
+      {
+        "line_index": 128,
+        "text": "49,71 €",
+        "font_size": 7.320000171661377,
+        "line_kind": "price"
+      }
+    ],
+    "unparsed_candidates": []
+  },
+  "parsed_rows": [
+    {
+      "page_number": 13,
+      "source_row_index": 122,
+      "raw_line_index": 1,
+      "raw_lines": [
+        "Wall Ball Doble costura 3 kgs Negro FDL",
+        "CRO095",
+        "8435657001537",
+        "24,79 €"
+      ],
+      "raw_sku": "CRO095",
+      "normalized_sku": "CRO095",
+      "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 3 kgs Negro FDL",
+      "normalized_name": "Wall Ball Doble costura 3 kgs Negro",
+      "price": "24.79",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 123,
+      "raw_line_index": 5,
+      "raw_lines": [
+        "Wall Ball Doble costura 4 kgs Negro FDL",
+        "CRO127",
+        "8435657018344",
+        "26,29 €"
+      ],
+      "raw_sku": "CRO127",
+      "normalized_sku": "CRO127",
+      "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 4 kgs Negro FDL",
+      "normalized_name": "Wall Ball Doble costura 4 kgs Negro",
+      "price": "26.29",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 124,
+      "raw_line_index": 9,
+      "raw_lines": [
+        "Wall Ball Doble costura 5 kgs Negro FDL",
+        "CRO096",
+        "8435657001544",
+        "28,42 €"
+      ],
+      "raw_sku": "CRO096",
+      "normalized_sku": "CRO096",
+      "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 5 kgs Negro FDL",
+      "normalized_name": "Wall Ball Doble costura 5 kgs Negro",
+      "price": "28.42",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 125,
+      "raw_line_index": 13,
+      "raw_lines": [
+        "Wall Ball Doble costura 6 kgs Negro FDL",
+        "CRO097",
+        "8435657001551",
+        "30,60 €"
+      ],
+      "raw_sku": "CRO097",
+      "normalized_sku": "CRO097",
+      "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 6 kgs Negro FDL",
+      "normalized_name": "Wall Ball Doble costura 6 kgs Negro",
+      "price": "30.60",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 126,
+      "raw_line_index": 17,
+      "raw_lines": [
+        "Wall Ball Doble costura 7 kgs Negro FDL",
+        "CRO098",
+        "8435657001568",
+        "32,80 €"
+      ],
+      "raw_sku": "CRO098",
+      "normalized_sku": "CRO098",
+      "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 7 kgs Negro FDL",
+      "normalized_name": "Wall Ball Doble costura 7 kgs Negro",
+      "price": "32.80",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 127,
+      "raw_line_index": 21,
+      "raw_lines": [
+        "Wall Ball Doble costura 9 kgs Negro FDL",
+        "CRO099",
+        "8435657001575",
+        "36,44 €"
+      ],
+      "raw_sku": "CRO099",
+      "normalized_sku": "CRO099",
+      "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 9 kgs Negro FDL",
+      "normalized_name": "Wall Ball Doble costura 9 kgs Negro",
+      "price": "36.44",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 128,
+      "raw_line_index": 25,
+      "raw_lines": [
+        "Wall Ball Doble costura 12 kgs Negro FDL",
+        "CRO100",
+        "8435657001582",
+        "40,60 €"
+      ],
+      "raw_sku": "CRO100",
+      "normalized_sku": "CRO100",
+      "raw_name": "Wall Balls Doble Costura Negro FDL Wall Ball Doble costura 12 kgs Negro FDL",
+      "normalized_name": "Wall Ball Doble costura 12 kgs Negro",
+      "price": "40.60",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 129,
+      "raw_line_index": 30,
+      "raw_lines": [
+        "Wall Ball Doble costura 3 kgs Negro NEXO",
+        "CRO136",
+        "8435657018641",
+        "24,79 €"
+      ],
+      "raw_sku": "CRO136",
+      "normalized_sku": "CRO136",
+      "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 3 kgs Negro NEXO",
+      "normalized_name": "Wall Ball Doble costura 3 kgs Negro",
+      "price": "24.79",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 130,
+      "raw_line_index": 34,
+      "raw_lines": [
+        "Wall Ball Doble costura 4 kgs Negro NEXO",
+        "CRO142",
+        "8435657018993",
+        "26,29 €"
+      ],
+      "raw_sku": "CRO142",
+      "normalized_sku": "CRO142",
+      "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 4 kgs Negro NEXO",
+      "normalized_name": "Wall Ball Doble costura 4 kgs Negro",
+      "price": "26.29",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 131,
+      "raw_line_index": 38,
+      "raw_lines": [
+        "Wall Ball Doble costura 5 kgs Negro NEXO",
+        "CRO137",
+        "8435657018658",
+        "28,42 €"
+      ],
+      "raw_sku": "CRO137",
+      "normalized_sku": "CRO137",
+      "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 5 kgs Negro NEXO",
+      "normalized_name": "Wall Ball Doble costura 5 kgs Negro",
+      "price": "28.42",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 132,
+      "raw_line_index": 42,
+      "raw_lines": [
+        "Wall Ball Doble costura 6 kgs Negro NEXO",
+        "CRO138",
+        "8435657018665",
+        "30,60 €"
+      ],
+      "raw_sku": "CRO138",
+      "normalized_sku": "CRO138",
+      "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 6 kgs Negro NEXO",
+      "normalized_name": "Wall Ball Doble costura 6 kgs Negro",
+      "price": "30.60",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 133,
+      "raw_line_index": 46,
+      "raw_lines": [
+        "Wall Ball Doble costura 7 kgs Negro NEXO",
+        "CRO139",
+        "8435657018672",
+        "32,80 €"
+      ],
+      "raw_sku": "CRO139",
+      "normalized_sku": "CRO139",
+      "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 7 kgs Negro NEXO",
+      "normalized_name": "Wall Ball Doble costura 7 kgs Negro",
+      "price": "32.80",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 134,
+      "raw_line_index": 50,
+      "raw_lines": [
+        "Wall Ball Doble costura 9 kgs Negro NEXO",
+        "CRO140",
+        "8435657018689",
+        "36,44 €"
+      ],
+      "raw_sku": "CRO140",
+      "normalized_sku": "CRO140",
+      "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 9 kgs Negro NEXO",
+      "normalized_name": "Wall Ball Doble costura 9 kgs Negro",
+      "price": "36.44",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 135,
+      "raw_line_index": 54,
+      "raw_lines": [
+        "Wall Ball Doble costura 12 kgs Negro NEXO",
+        "CRO141",
+        "8435657018696",
+        "40,60 €"
+      ],
+      "raw_sku": "CRO141",
+      "normalized_sku": "CRO141",
+      "raw_name": "Wall Balls Doble Costura Negro NEXO Wall Ball Doble costura 12 kgs Negro NEXO",
+      "normalized_name": "Wall Ball Doble costura 12 kgs Negro",
+      "price": "40.60",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 136,
+      "raw_line_index": 59,
+      "raw_lines": [
+        "Wall Ball Doble costura 12& Negro",
+        "CRO083",
+        "8435657001445",
+        "28,30 €"
+      ],
+      "raw_sku": "CRO083",
+      "normalized_sku": "CRO083",
+      "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 12 lbs Negro",
+      "normalized_name": "Wall Ball Doble costura 12 lbs Negro",
+      "price": "28.30",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 137,
+      "raw_line_index": 63,
+      "raw_lines": [
+        "Wall Ball Doble costura 14& Negro",
+        "CRO084",
+        "8435657001452",
+        "29,65 €"
+      ],
+      "raw_sku": "CRO084",
+      "normalized_sku": "CRO084",
+      "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 14 lbs Negro",
+      "normalized_name": "Wall Ball Doble costura 14 lbs Negro",
+      "price": "29.65",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 138,
+      "raw_line_index": 67,
+      "raw_lines": [
+        "Wall Ball Doble costura 16& Negro",
+        "CRO085",
+        "8435657001469",
+        "32,34 €"
+      ],
+      "raw_sku": "CRO085",
+      "normalized_sku": "CRO085",
+      "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 16 lbs Negro",
+      "normalized_name": "Wall Ball Doble costura 16 lbs Negro",
+      "price": "32.34",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 139,
+      "raw_line_index": 71,
+      "raw_lines": [
+        "Wall Ball Doble costura 20& Negro",
+        "CRO086",
+        "8435657001476",
+        "33,70 €"
+      ],
+      "raw_sku": "CRO086",
+      "normalized_sku": "CRO086",
+      "raw_name": "Wall Balls Doble Costura Libras Wall Ball Doble costura 20 lbs Negro",
+      "normalized_name": "Wall Ball Doble costura 20 lbs Negro",
+      "price": "33.70",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 140,
+      "raw_line_index": 76,
+      "raw_lines": [
+        "Soporte Wall Ball a pared",
+        "Medidas 148 x 27 x 10 cms",
+        "SOP055",
+        "8435657005955",
+        "72,89 €"
+      ],
+      "raw_sku": "SOP055",
+      "normalized_sku": "SOP055",
+      "raw_name": "Soporte Wall Ball Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "normalized_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "price": "72.89",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 141,
+      "raw_line_index": 81,
+      "raw_lines": [
+        "Balones no incluidos",
+        "Soporte Wall ball y Balon Medicinal (con ruedas)",
+        "Capacidad para 12 balones",
+        "SOP063",
+        "8435657006037",
+        "114,08 €"
+      ],
+      "raw_sku": "SOP063",
+      "normalized_sku": "SOP063",
+      "raw_name": "Soporte Wall Ball Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "normalized_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "price": "114.08",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 142,
+      "raw_line_index": 88,
+      "raw_lines": [
+        "Power Bag Color 5 kgs NARANJA",
+        "CRO069",
+        "8435657001315",
+        "24,56 €"
+      ],
+      "raw_sku": "CRO069",
+      "normalized_sku": "CRO069",
+      "raw_name": "Power Bags Color Power Bag Color 5 kgs NARANJA",
+      "normalized_name": "Power Bag Color 5 kgs NARANJA",
+      "price": "24.56",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 143,
+      "raw_line_index": 92,
+      "raw_lines": [
+        "Power Bag Color 10 kgs ROJO",
+        "CRO070",
+        "8435657001322",
+        "28,17 €"
+      ],
+      "raw_sku": "CRO070",
+      "normalized_sku": "CRO070",
+      "raw_name": "Power Bags Color Power Bag Color 10 kgs ROJO",
+      "normalized_name": "Power Bag Color 10 kgs ROJO",
+      "price": "28.17",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 144,
+      "raw_line_index": 96,
+      "raw_lines": [
+        "Power Bag Color 15 kgs AZUL",
+        "CRO071",
+        "8435657001339",
+        "34,18 €"
+      ],
+      "raw_sku": "CRO071",
+      "normalized_sku": "CRO071",
+      "raw_name": "Power Bags Color Power Bag Color 15 kgs AZUL",
+      "normalized_name": "Power Bag Color 15 kgs AZUL",
+      "price": "34.18",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 145,
+      "raw_line_index": 100,
+      "raw_lines": [
+        "Power Bag Color 20 kgs VERDE",
+        "CRO072",
+        "8435657001346",
+        "40,77 €"
+      ],
+      "raw_sku": "CRO072",
+      "normalized_sku": "CRO072",
+      "raw_name": "Power Bags Color Power Bag Color 20 kgs VERDE",
+      "normalized_name": "Power Bag Color 20 kgs VERDE",
+      "price": "40.77",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 146,
+      "raw_line_index": 104,
+      "raw_lines": [
+        "Power Bag Color 25 kgs NEGRO",
+        "CRO073",
+        "8435657001353",
+        "48,70 €"
+      ],
+      "raw_sku": "CRO073",
+      "normalized_sku": "CRO073",
+      "raw_name": "Power Bags Color Power Bag Color 25 kgs NEGRO",
+      "normalized_name": "Power Bag Color 25 kgs NEGRO",
+      "price": "48.70",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 147,
+      "raw_line_index": 108,
+      "raw_lines": [
+        "Power Bag Color 30 kgs",
+        "CRO143",
+        "8435657019006",
+        "57,95 €"
+      ],
+      "raw_sku": "CRO143",
+      "normalized_sku": "CRO143",
+      "raw_name": "Power Bags Color Power Bag Color 30 kgs",
+      "normalized_name": "Power Bag Color 30 kgs",
+      "price": "57.95",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 148,
+      "raw_line_index": 113,
+      "raw_lines": [
+        "Saco Bulgaro 5 kgs",
+        "CRO074",
+        "8435657001360",
+        "29,75 €"
+      ],
+      "raw_sku": "CRO074",
+      "normalized_sku": "CRO074",
+      "raw_name": "Saco Bulgaro Saco Bulgaro 5 kgs",
+      "normalized_name": "Saco Bulgaro 5 kgs",
+      "price": "29.75",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 149,
+      "raw_line_index": 117,
+      "raw_lines": [
+        "Saco Bulgaro 10 kgs",
+        "CRO075",
+        "8435657001377",
+        "34,66 €"
+      ],
+      "raw_sku": "CRO075",
+      "normalized_sku": "CRO075",
+      "raw_name": "Saco Bulgaro Saco Bulgaro 10 kgs",
+      "normalized_name": "Saco Bulgaro 10 kgs",
+      "price": "34.66",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 150,
+      "raw_line_index": 121,
+      "raw_lines": [
+        "Saco Bulgaro 15 kgs",
+        "CRO076",
+        "8435657001384",
+        "40,78 €"
+      ],
+      "raw_sku": "CRO076",
+      "normalized_sku": "CRO076",
+      "raw_name": "Saco Bulgaro Saco Bulgaro 15 kgs",
+      "normalized_name": "Saco Bulgaro 15 kgs",
+      "price": "40.78",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    },
+    {
+      "page_number": 13,
+      "source_row_index": 151,
+      "raw_line_index": 125,
+      "raw_lines": [
+        "Saco Bulgaro 20 kgs",
+        "CRO077",
+        "8435657001391",
+        "49,71 €"
+      ],
+      "raw_sku": "CRO077",
+      "normalized_sku": "CRO077",
+      "raw_name": "Saco Bulgaro Saco Bulgaro 20 kgs",
+      "normalized_name": "Saco Bulgaro 20 kgs",
+      "price": "49.71",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "category_sub": null,
+        "section_brand": null
+      },
+      "parser_status": "ok"
+    }
+  ],
+  "taxonomy_decision": [
+    {
+      "source_row_index": 122,
+      "normalized_sku": "CRO095",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 123,
+      "normalized_sku": "CRO127",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 124,
+      "normalized_sku": "CRO096",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 125,
+      "normalized_sku": "CRO097",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 126,
+      "normalized_sku": "CRO098",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 127,
+      "normalized_sku": "CRO099",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 128,
+      "normalized_sku": "CRO100",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 129,
+      "normalized_sku": "CRO136",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 130,
+      "normalized_sku": "CRO142",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 131,
+      "normalized_sku": "CRO137",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 132,
+      "normalized_sku": "CRO138",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 133,
+      "normalized_sku": "CRO139",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 134,
+      "normalized_sku": "CRO140",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 135,
+      "normalized_sku": "CRO141",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 136,
+      "normalized_sku": "CRO083",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 137,
+      "normalized_sku": "CRO084",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 138,
+      "normalized_sku": "CRO085",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 139,
+      "normalized_sku": "CRO086",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 140,
+      "normalized_sku": "SOP055",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 141,
+      "normalized_sku": "SOP063",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 142,
+      "normalized_sku": "CRO069",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 143,
+      "normalized_sku": "CRO070",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 144,
+      "normalized_sku": "CRO071",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 145,
+      "normalized_sku": "CRO072",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 146,
+      "normalized_sku": "CRO073",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 147,
+      "normalized_sku": "CRO143",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 148,
+      "normalized_sku": "CRO074",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 149,
+      "normalized_sku": "CRO075",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 150,
+      "normalized_sku": "CRO076",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    },
+    {
+      "source_row_index": 151,
+      "normalized_sku": "CRO077",
+      "source_taxonomy_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "matched_mapping_rule": {
+        "id": "736aabdf-3ee1-4bea-82ac-73733bf0e8cb",
+        "match_type": "section_path",
+        "match_value": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+        "priority": 30,
+        "is_active": true,
+        "target_category_slug": "cross-training",
+        "confidence": 1.0
+      },
+      "mapping_rule_type": "section_path",
+      "canonical_category_slug": "cross-training",
+      "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+      "confidence": 1.0,
+      "whether_category_existed_before": true,
+      "whether_category_was_created_during_run": false,
+      "warning_if_category_not_in_seed": null,
+      "warnings": []
+    }
+  ],
+  "preview_decision": [
+    {
+      "source_row_index": 122,
+      "normalized_sku": "CRO095",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-FDL",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 123,
+      "normalized_sku": "CRO127",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-FDL",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 124,
+      "normalized_sku": "CRO096",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-FDL",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 125,
+      "normalized_sku": "CRO097",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-FDL",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 126,
+      "normalized_sku": "CRO098",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-FDL",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 127,
+      "normalized_sku": "CRO099",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-FDL",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 128,
+      "normalized_sku": "CRO100",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-FDL",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 129,
+      "normalized_sku": "CRO136",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 130,
+      "normalized_sku": "CRO142",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 131,
+      "normalized_sku": "CRO137",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 132,
+      "normalized_sku": "CRO138",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 133,
+      "normalized_sku": "CRO139",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 134,
+      "normalized_sku": "CRO140",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 135,
+      "normalized_sku": "CRO141",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-NEXO",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily",
+          "NameWeightLadder"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 136,
+      "normalized_sku": "CRO083",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-LBS",
+        "variant_axes": [
+          "peso_lb",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 137,
+      "normalized_sku": "CRO084",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-LBS",
+        "variant_axes": [
+          "peso_lb",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 138,
+      "normalized_sku": "CRO085",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-LBS",
+        "variant_axes": [
+          "peso_lb",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 139,
+      "normalized_sku": "CRO086",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-WALL-LBS",
+        "variant_axes": [
+          "peso_lb",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 140,
+      "normalized_sku": "SOP055",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "SOP055",
+        "variant_axes": [],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 141,
+      "normalized_sku": "SOP063",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "explicit_one_per_sku",
+        "grouping_confidence": 0.85,
+        "proposed_master_key": "SOP063",
+        "variant_axes": [
+          "capacidad_balones"
+        ],
+        "is_one_per_sku": true,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 142,
+      "normalized_sku": "CRO069",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-POWER-BAGS-COLOR",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 143,
+      "normalized_sku": "CRO070",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-POWER-BAGS-COLOR",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 144,
+      "normalized_sku": "CRO071",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-POWER-BAGS-COLOR",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 145,
+      "normalized_sku": "CRO072",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-POWER-BAGS-COLOR",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 146,
+      "normalized_sku": "CRO073",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-POWER-BAGS-COLOR",
+        "variant_axes": [
+          "peso_kg",
+          "color"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 147,
+      "normalized_sku": "CRO143",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-POWER-BAGS-COLOR",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 148,
+      "normalized_sku": "CRO074",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-BULGARO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 149,
+      "normalized_sku": "CRO075",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-BULGARO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 150,
+      "normalized_sku": "CRO076",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-BULGARO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    },
+    {
+      "source_row_index": 151,
+      "normalized_sku": "CRO077",
+      "taxonomy": {
+        "canonical_category_slug": "cross-training",
+        "canonical_category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "confidence": 1.0
+      },
+      "grouping": {
+        "grouping_strategy": "fdl_sku_family",
+        "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+        "grouping_confidence": 0.9,
+        "proposed_master_key": "CRO-SACO-BULGARO",
+        "variant_axes": [
+          "peso_kg"
+        ],
+        "is_one_per_sku": false,
+        "is_grouped_variant": true,
+        "suspicion_flags": [
+          "SamePageSkuFamily"
+        ]
+      },
+      "review": {
+        "review_reasons": [],
+        "blocking_reasons": [],
+        "can_confirm": true,
+        "confirm_gate": null,
+        "import_action": "new_variant",
+        "review_status": "pending"
+      }
+    }
+  ],
+  "confirm_result": {
+    "executed": true,
+    "allow_needs_review": false,
+    "rows_imported": 30,
+    "rows_blocked": 0,
+    "rows_skipped": 0,
+    "masters_created": 7,
+    "variants_created": 30,
+    "variants_updated": 0,
+    "entries_created": 30,
+    "per_row": [
+      {
+        "source_row_index": 122,
+        "sku": "CRO095",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 123,
+        "sku": "CRO127",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 124,
+        "sku": "CRO096",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 125,
+        "sku": "CRO097",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 126,
+        "sku": "CRO098",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 127,
+        "sku": "CRO099",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 128,
+        "sku": "CRO100",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 129,
+        "sku": "CRO136",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 130,
+        "sku": "CRO142",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 131,
+        "sku": "CRO137",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 132,
+        "sku": "CRO138",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 133,
+        "sku": "CRO139",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 134,
+        "sku": "CRO140",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 135,
+        "sku": "CRO141",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 136,
+        "sku": "CRO083",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 137,
+        "sku": "CRO084",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 138,
+        "sku": "CRO085",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 139,
+        "sku": "CRO086",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 140,
+        "sku": "SOP055",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 141,
+        "sku": "SOP063",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 142,
+        "sku": "CRO069",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 143,
+        "sku": "CRO070",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 144,
+        "sku": "CRO071",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 145,
+        "sku": "CRO072",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 146,
+        "sku": "CRO073",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 147,
+        "sku": "CRO143",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 148,
+        "sku": "CRO074",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 149,
+        "sku": "CRO075",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 150,
+        "sku": "CRO076",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      },
+      {
+        "source_row_index": 151,
+        "sku": "CRO077",
+        "would_confirm": false,
+        "confirm_gate": "already_imported",
+        "imported": true,
+        "review_status_after": "imported"
+      }
+    ],
+    "batch_id": "d630b75f-281a-4ed9-9bdc-1e554f8a0f5f"
+  },
+  "db_after": {
+    "masters": [
+      {
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "master_key": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "master_key": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+        "master_key": "CRO-WALL-LBS",
+        "product_master_name": "Wall Balls Doble Costura Libras",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "dcd7a920-72fa-483a-94e1-3a84b89444b8",
+        "master_key": "SOP055",
+        "product_master_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "e3e90c10-0b97-45fd-9b5f-2673ddda4110",
+        "master_key": "SOP063",
+        "product_master_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+        "master_key": "CRO-POWER-BAGS-COLOR",
+        "product_master_name": "Power Bags Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      },
+      {
+        "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+        "master_key": "CRO-SACO-BULGARO",
+        "product_master_name": "Saco Bulgaro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training"
+      }
+    ],
+    "variants": [
+      {
+        "product_variant_id": "53329bde-56e1-44d1-b698-191611bf1717",
+        "variant_sku": "CRO095",
+        "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "product_master_sku": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "24.79"
+      },
+      {
+        "product_variant_id": "165769da-19bb-4b2e-bed8-4781c8950527",
+        "variant_sku": "CRO127",
+        "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "product_master_sku": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "26.29"
+      },
+      {
+        "product_variant_id": "41ea3af7-cc95-497d-a330-5faa6b988ed8",
+        "variant_sku": "CRO096",
+        "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "product_master_sku": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "28.42"
+      },
+      {
+        "product_variant_id": "f6ed3a02-9fc0-4163-9a05-549187d380cb",
+        "variant_sku": "CRO097",
+        "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "product_master_sku": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "30.60"
+      },
+      {
+        "product_variant_id": "4794ce54-64d5-45fe-aa2b-0abfe02dce21",
+        "variant_sku": "CRO098",
+        "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "product_master_sku": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "32.80"
+      },
+      {
+        "product_variant_id": "5454f042-4b42-43dd-aa0f-5558b27daedc",
+        "variant_sku": "CRO099",
+        "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "product_master_sku": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "36.44"
+      },
+      {
+        "product_variant_id": "fa26d98e-c7ab-4660-9945-e048f95546ba",
+        "variant_sku": "CRO100",
+        "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+        "product_master_id": "dd0d0b28-09cd-42ed-a731-b72b84998492",
+        "product_master_sku": "CRO-WALL-FDL",
+        "product_master_name": "Wall Balls Doble Costura Negro FDL",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "40.60"
+      },
+      {
+        "product_variant_id": "c114cfdb-b663-4fa2-b3c7-68af94863351",
+        "variant_sku": "CRO136",
+        "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "product_master_sku": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "24.79"
+      },
+      {
+        "product_variant_id": "71127295-9ff3-4a35-ab12-f56ba1039043",
+        "variant_sku": "CRO142",
+        "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "product_master_sku": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "26.29"
+      },
+      {
+        "product_variant_id": "c0fdca8e-0107-4b61-a63b-3b38bb8ab8a5",
+        "variant_sku": "CRO137",
+        "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "product_master_sku": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "28.42"
+      },
+      {
+        "product_variant_id": "a989808f-2ecf-4833-ac37-88b8aaf8816e",
+        "variant_sku": "CRO138",
+        "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "product_master_sku": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "30.60"
+      },
+      {
+        "product_variant_id": "46d53244-a2c2-4c99-af42-605df77f42f3",
+        "variant_sku": "CRO139",
+        "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "product_master_sku": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "32.80"
+      },
+      {
+        "product_variant_id": "fcf17012-996a-400f-9298-2b2683f15789",
+        "variant_sku": "CRO140",
+        "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "product_master_sku": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "36.44"
+      },
+      {
+        "product_variant_id": "ecd0104d-677a-41a0-a413-28a5b9d22edf",
+        "variant_sku": "CRO141",
+        "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+        "product_master_id": "47b0366a-0c7d-4ccf-94b9-798caa3f6a0c",
+        "product_master_sku": "CRO-WALL-NEXO",
+        "product_master_name": "Wall Balls Doble Costura Negro NEXO",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "40.60"
+      },
+      {
+        "product_variant_id": "91a26377-5979-491c-a4c2-dd54d1404aa7",
+        "variant_sku": "CRO083",
+        "variant_name": "Wall Ball Doble costura 12 lbs Negro",
+        "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+        "product_master_sku": "CRO-WALL-LBS",
+        "product_master_name": "Wall Balls Doble Costura Libras",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "28.30"
+      },
+      {
+        "product_variant_id": "37421183-09b1-4caa-8b05-b3fa5d927ea6",
+        "variant_sku": "CRO084",
+        "variant_name": "Wall Ball Doble costura 14 lbs Negro",
+        "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+        "product_master_sku": "CRO-WALL-LBS",
+        "product_master_name": "Wall Balls Doble Costura Libras",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "29.65"
+      },
+      {
+        "product_variant_id": "604cf440-106d-4bc2-bda4-9d26c4a655ec",
+        "variant_sku": "CRO085",
+        "variant_name": "Wall Ball Doble costura 16 lbs Negro",
+        "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+        "product_master_sku": "CRO-WALL-LBS",
+        "product_master_name": "Wall Balls Doble Costura Libras",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "32.34"
+      },
+      {
+        "product_variant_id": "603072ae-b678-4c68-985c-58a19d816b06",
+        "variant_sku": "CRO086",
+        "variant_name": "Wall Ball Doble costura 20 lbs Negro",
+        "product_master_id": "ec3e4857-2818-4b05-a5c0-1e860822cec3",
+        "product_master_sku": "CRO-WALL-LBS",
+        "product_master_name": "Wall Balls Doble Costura Libras",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "33.70"
+      },
+      {
+        "product_variant_id": "16013a99-ab8e-4ad0-b42e-5dfb506275fa",
+        "variant_sku": "SOP055",
+        "variant_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+        "product_master_id": "dcd7a920-72fa-483a-94e1-3a84b89444b8",
+        "product_master_sku": "SOP055",
+        "product_master_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "72.89"
+      },
+      {
+        "product_variant_id": "46aae6fd-0fe0-4530-b454-23b6f6cfa96e",
+        "variant_sku": "SOP063",
+        "variant_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+        "product_master_id": "e3e90c10-0b97-45fd-9b5f-2673ddda4110",
+        "product_master_sku": "SOP063",
+        "product_master_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "114.08"
+      },
+      {
+        "product_variant_id": "3d2a30d9-74bc-44a7-9b93-a7437864b027",
+        "variant_sku": "CRO069",
+        "variant_name": "Power Bag Color 5 kgs NARANJA",
+        "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+        "product_master_sku": "CRO-POWER-BAGS-COLOR",
+        "product_master_name": "Power Bags Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "24.56"
+      },
+      {
+        "product_variant_id": "d09b6a83-7d0a-4b70-a2b5-f758a3e234cc",
+        "variant_sku": "CRO070",
+        "variant_name": "Power Bag Color 10 kgs ROJO",
+        "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+        "product_master_sku": "CRO-POWER-BAGS-COLOR",
+        "product_master_name": "Power Bags Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "28.17"
+      },
+      {
+        "product_variant_id": "4b11ffed-3bc3-41af-aa45-091556ab8ac6",
+        "variant_sku": "CRO071",
+        "variant_name": "Power Bag Color 15 kgs AZUL",
+        "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+        "product_master_sku": "CRO-POWER-BAGS-COLOR",
+        "product_master_name": "Power Bags Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "34.18"
+      },
+      {
+        "product_variant_id": "f1bba5c6-0559-44f3-8e75-15379740684c",
+        "variant_sku": "CRO072",
+        "variant_name": "Power Bag Color 20 kgs VERDE",
+        "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+        "product_master_sku": "CRO-POWER-BAGS-COLOR",
+        "product_master_name": "Power Bags Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "40.77"
+      },
+      {
+        "product_variant_id": "0c607647-2ba7-43df-a063-9657600146b3",
+        "variant_sku": "CRO073",
+        "variant_name": "Power Bag Color 25 kgs NEGRO",
+        "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+        "product_master_sku": "CRO-POWER-BAGS-COLOR",
+        "product_master_name": "Power Bags Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "48.70"
+      },
+      {
+        "product_variant_id": "6d5f3a77-23d3-4827-91a6-ef997b137792",
+        "variant_sku": "CRO143",
+        "variant_name": "Power Bag Color 30 kgs",
+        "product_master_id": "0e615057-ea85-4f1b-8bd2-845c4910795d",
+        "product_master_sku": "CRO-POWER-BAGS-COLOR",
+        "product_master_name": "Power Bags Color",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "57.95"
+      },
+      {
+        "product_variant_id": "81fc3020-f56f-4f3d-800b-e22eac861439",
+        "variant_sku": "CRO074",
+        "variant_name": "Saco Bulgaro 5 kgs",
+        "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+        "product_master_sku": "CRO-SACO-BULGARO",
+        "product_master_name": "Saco Bulgaro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "29.75"
+      },
+      {
+        "product_variant_id": "e1582bcb-686e-4b22-a89d-9716e0ba566e",
+        "variant_sku": "CRO075",
+        "variant_name": "Saco Bulgaro 10 kgs",
+        "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+        "product_master_sku": "CRO-SACO-BULGARO",
+        "product_master_name": "Saco Bulgaro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "34.66"
+      },
+      {
+        "product_variant_id": "ffc7f6ed-6ad4-45f2-ba52-8c3a19bfd806",
+        "variant_sku": "CRO076",
+        "variant_name": "Saco Bulgaro 15 kgs",
+        "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+        "product_master_sku": "CRO-SACO-BULGARO",
+        "product_master_name": "Saco Bulgaro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "40.78"
+      },
+      {
+        "product_variant_id": "d7a0da0a-cc6a-4bd1-92ea-9b242178bcbc",
+        "variant_sku": "CRO077",
+        "variant_name": "Saco Bulgaro 20 kgs",
+        "product_master_id": "bb4a618c-bd6f-40ac-8f00-62a9704167d4",
+        "product_master_sku": "CRO-SACO-BULGARO",
+        "product_master_name": "Saco Bulgaro",
+        "category_id": "c3a1f8c6-0923-4491-bf71-ae7bdbbfcb8a",
+        "category_slug": "cross-training",
+        "price": "49.71"
+      }
+    ],
+    "price_entries": [
+      {
+        "variant_sku": "CRO095",
+        "price": "24.79",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO127",
+        "price": "26.29",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO096",
+        "price": "28.42",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO097",
+        "price": "30.60",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO098",
+        "price": "32.80",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO099",
+        "price": "36.44",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO100",
+        "price": "40.60",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO136",
+        "price": "24.79",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO142",
+        "price": "26.29",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO137",
+        "price": "28.42",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO138",
+        "price": "30.60",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO139",
+        "price": "32.80",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO140",
+        "price": "36.44",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO141",
+        "price": "40.60",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO083",
+        "price": "28.30",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO084",
+        "price": "29.65",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO085",
+        "price": "32.34",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO086",
+        "price": "33.70",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "SOP055",
+        "price": "72.89",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "SOP063",
+        "price": "114.08",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO069",
+        "price": "24.56",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO070",
+        "price": "28.17",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO071",
+        "price": "34.18",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO072",
+        "price": "40.77",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO073",
+        "price": "48.70",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO143",
+        "price": "57.95",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO074",
+        "price": "29.75",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO075",
+        "price": "34.66",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO076",
+        "price": "40.78",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      },
+      {
+        "variant_sku": "CRO077",
+        "price": "49.71",
+        "currency": "EUR",
+        "price_list_id": "b3bd25b0-001d-4e24-9d83-c5bd962a97bf"
+      }
+    ],
+    "specs": [],
+    "variant_skus": [
+      "CRO069",
+      "CRO070",
+      "CRO071",
+      "CRO072",
+      "CRO073",
+      "CRO074",
+      "CRO075",
+      "CRO076",
+      "CRO077",
+      "CRO083",
+      "CRO084",
+      "CRO085",
+      "CRO086",
+      "CRO095",
+      "CRO096",
+      "CRO097",
+      "CRO098",
+      "CRO099",
+      "CRO100",
+      "CRO127",
+      "CRO136",
+      "CRO137",
+      "CRO138",
+      "CRO139",
+      "CRO140",
+      "CRO141",
+      "CRO142",
+      "CRO143",
+      "SOP055",
+      "SOP063"
+    ]
+  },
+  "db_after_contains_only_requested_page_products": true,
+  "unexpected_skus_from_other_pages": [],
+  "products_visible_in_app_count": 30,
+  "products_visible_in_app": [
+    {
+      "variant_sku": "CRO095",
+      "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+      "master_key": "CRO-WALL-FDL",
+      "master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_slug": "cross-training",
+      "price": "24.79"
+    },
+    {
+      "variant_sku": "CRO127",
+      "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+      "master_key": "CRO-WALL-FDL",
+      "master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_slug": "cross-training",
+      "price": "26.29"
+    },
+    {
+      "variant_sku": "CRO096",
+      "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+      "master_key": "CRO-WALL-FDL",
+      "master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_slug": "cross-training",
+      "price": "28.42"
+    },
+    {
+      "variant_sku": "CRO097",
+      "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+      "master_key": "CRO-WALL-FDL",
+      "master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_slug": "cross-training",
+      "price": "30.60"
+    },
+    {
+      "variant_sku": "CRO098",
+      "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+      "master_key": "CRO-WALL-FDL",
+      "master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_slug": "cross-training",
+      "price": "32.80"
+    },
+    {
+      "variant_sku": "CRO099",
+      "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+      "master_key": "CRO-WALL-FDL",
+      "master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_slug": "cross-training",
+      "price": "36.44"
+    },
+    {
+      "variant_sku": "CRO100",
+      "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+      "master_key": "CRO-WALL-FDL",
+      "master_name": "Wall Balls Doble Costura Negro FDL",
+      "category_slug": "cross-training",
+      "price": "40.60"
+    },
+    {
+      "variant_sku": "CRO136",
+      "variant_name": "Wall Ball Doble costura 3 kgs Negro",
+      "master_key": "CRO-WALL-NEXO",
+      "master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_slug": "cross-training",
+      "price": "24.79"
+    },
+    {
+      "variant_sku": "CRO142",
+      "variant_name": "Wall Ball Doble costura 4 kgs Negro",
+      "master_key": "CRO-WALL-NEXO",
+      "master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_slug": "cross-training",
+      "price": "26.29"
+    },
+    {
+      "variant_sku": "CRO137",
+      "variant_name": "Wall Ball Doble costura 5 kgs Negro",
+      "master_key": "CRO-WALL-NEXO",
+      "master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_slug": "cross-training",
+      "price": "28.42"
+    },
+    {
+      "variant_sku": "CRO138",
+      "variant_name": "Wall Ball Doble costura 6 kgs Negro",
+      "master_key": "CRO-WALL-NEXO",
+      "master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_slug": "cross-training",
+      "price": "30.60"
+    },
+    {
+      "variant_sku": "CRO139",
+      "variant_name": "Wall Ball Doble costura 7 kgs Negro",
+      "master_key": "CRO-WALL-NEXO",
+      "master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_slug": "cross-training",
+      "price": "32.80"
+    },
+    {
+      "variant_sku": "CRO140",
+      "variant_name": "Wall Ball Doble costura 9 kgs Negro",
+      "master_key": "CRO-WALL-NEXO",
+      "master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_slug": "cross-training",
+      "price": "36.44"
+    },
+    {
+      "variant_sku": "CRO141",
+      "variant_name": "Wall Ball Doble costura 12 kgs Negro",
+      "master_key": "CRO-WALL-NEXO",
+      "master_name": "Wall Balls Doble Costura Negro NEXO",
+      "category_slug": "cross-training",
+      "price": "40.60"
+    },
+    {
+      "variant_sku": "CRO083",
+      "variant_name": "Wall Ball Doble costura 12 lbs Negro",
+      "master_key": "CRO-WALL-LBS",
+      "master_name": "Wall Balls Doble Costura Libras",
+      "category_slug": "cross-training",
+      "price": "28.30"
+    },
+    {
+      "variant_sku": "CRO084",
+      "variant_name": "Wall Ball Doble costura 14 lbs Negro",
+      "master_key": "CRO-WALL-LBS",
+      "master_name": "Wall Balls Doble Costura Libras",
+      "category_slug": "cross-training",
+      "price": "29.65"
+    },
+    {
+      "variant_sku": "CRO085",
+      "variant_name": "Wall Ball Doble costura 16 lbs Negro",
+      "master_key": "CRO-WALL-LBS",
+      "master_name": "Wall Balls Doble Costura Libras",
+      "category_slug": "cross-training",
+      "price": "32.34"
+    },
+    {
+      "variant_sku": "CRO086",
+      "variant_name": "Wall Ball Doble costura 20 lbs Negro",
+      "master_key": "CRO-WALL-LBS",
+      "master_name": "Wall Balls Doble Costura Libras",
+      "category_slug": "cross-training",
+      "price": "33.70"
+    },
+    {
+      "variant_sku": "SOP055",
+      "variant_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "master_key": "SOP055",
+      "master_name": "Soporte Wall Ball a pared Medidas 148 x 27 x 10 cms",
+      "category_slug": "cross-training",
+      "price": "72.89"
+    },
+    {
+      "variant_sku": "SOP063",
+      "variant_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "master_key": "SOP063",
+      "master_name": "Soporte Wall ball y Balon Medicinal (con ruedas)",
+      "category_slug": "cross-training",
+      "price": "114.08"
+    },
+    {
+      "variant_sku": "CRO069",
+      "variant_name": "Power Bag Color 5 kgs NARANJA",
+      "master_key": "CRO-POWER-BAGS-COLOR",
+      "master_name": "Power Bags Color",
+      "category_slug": "cross-training",
+      "price": "24.56"
+    },
+    {
+      "variant_sku": "CRO070",
+      "variant_name": "Power Bag Color 10 kgs ROJO",
+      "master_key": "CRO-POWER-BAGS-COLOR",
+      "master_name": "Power Bags Color",
+      "category_slug": "cross-training",
+      "price": "28.17"
+    },
+    {
+      "variant_sku": "CRO071",
+      "variant_name": "Power Bag Color 15 kgs AZUL",
+      "master_key": "CRO-POWER-BAGS-COLOR",
+      "master_name": "Power Bags Color",
+      "category_slug": "cross-training",
+      "price": "34.18"
+    },
+    {
+      "variant_sku": "CRO072",
+      "variant_name": "Power Bag Color 20 kgs VERDE",
+      "master_key": "CRO-POWER-BAGS-COLOR",
+      "master_name": "Power Bags Color",
+      "category_slug": "cross-training",
+      "price": "40.77"
+    },
+    {
+      "variant_sku": "CRO073",
+      "variant_name": "Power Bag Color 25 kgs NEGRO",
+      "master_key": "CRO-POWER-BAGS-COLOR",
+      "master_name": "Power Bags Color",
+      "category_slug": "cross-training",
+      "price": "48.70"
+    },
+    {
+      "variant_sku": "CRO143",
+      "variant_name": "Power Bag Color 30 kgs",
+      "master_key": "CRO-POWER-BAGS-COLOR",
+      "master_name": "Power Bags Color",
+      "category_slug": "cross-training",
+      "price": "57.95"
+    },
+    {
+      "variant_sku": "CRO074",
+      "variant_name": "Saco Bulgaro 5 kgs",
+      "master_key": "CRO-SACO-BULGARO",
+      "master_name": "Saco Bulgaro",
+      "category_slug": "cross-training",
+      "price": "29.75"
+    },
+    {
+      "variant_sku": "CRO075",
+      "variant_name": "Saco Bulgaro 10 kgs",
+      "master_key": "CRO-SACO-BULGARO",
+      "master_name": "Saco Bulgaro",
+      "category_slug": "cross-training",
+      "price": "34.66"
+    },
+    {
+      "variant_sku": "CRO076",
+      "variant_name": "Saco Bulgaro 15 kgs",
+      "master_key": "CRO-SACO-BULGARO",
+      "master_name": "Saco Bulgaro",
+      "category_slug": "cross-training",
+      "price": "40.78"
+    },
+    {
+      "variant_sku": "CRO077",
+      "variant_name": "Saco Bulgaro 20 kgs",
+      "master_key": "CRO-SACO-BULGARO",
+      "master_name": "Saco Bulgaro",
+      "category_slug": "cross-training",
+      "price": "49.71"
+    }
+  ],
+  "blocked_rows_detail": [],
+  "status": "pass",
+  "fail_reasons": [],
+  "products_imported": [
+    "CRO069",
+    "CRO070",
+    "CRO071",
+    "CRO072",
+    "CRO073",
+    "CRO074",
+    "CRO075",
+    "CRO076",
+    "CRO077",
+    "CRO083",
+    "CRO084",
+    "CRO085",
+    "CRO086",
+    "CRO095",
+    "CRO096",
+    "CRO097",
+    "CRO098",
+    "CRO099",
+    "CRO100",
+    "CRO127",
+    "CRO136",
+    "CRO137",
+    "CRO138",
+    "CRO139",
+    "CRO140",
+    "CRO141",
+    "CRO142",
+    "CRO143",
+    "SOP055",
+    "SOP063"
+  ],
+  "products_blocked": [],
+  "products_expected_but_not_imported": [],
+  "category_warnings": [],
+  "grouping_warnings": [],
+  "review_gate_warnings": [],
+  "app_visual_check": {
+    "products_page_should_show_only_requested_page": true,
+    "expected_visible_products_count": 30,
+    "actual_visible_products_count": 30,
+    "visible_skus": [
+      "CRO069",
+      "CRO070",
+      "CRO071",
+      "CRO072",
+      "CRO073",
+      "CRO074",
+      "CRO075",
+      "CRO076",
+      "CRO077",
+      "CRO083",
+      "CRO084",
+      "CRO085",
+      "CRO086",
+      "CRO095",
+      "CRO096",
+      "CRO097",
+      "CRO098",
+      "CRO099",
+      "CRO100",
+      "CRO127",
+      "CRO136",
+      "CRO137",
+      "CRO138",
+      "CRO139",
+      "CRO140",
+      "CRO141",
+      "CRO142",
+      "CRO143",
+      "SOP055",
+      "SOP063"
+    ],
+    "visible_categories": [
+      "cross-training"
+    ],
+    "note": "Open Products page in the app after this run to visually inspect only page 13 products."
+  },
+  "diff": {
+    "inserted_masters": [
+      "CRO-WALL-FDL",
+      "CRO-WALL-NEXO",
+      "CRO-WALL-LBS",
+      "SOP055",
+      "SOP063",
+      "CRO-POWER-BAGS-COLOR",
+      "CRO-SACO-BULGARO"
+    ],
+    "inserted_variants": [
+      "CRO069",
+      "CRO070",
+      "CRO071",
+      "CRO072",
+      "CRO073",
+      "CRO074",
+      "CRO075",
+      "CRO076",
+      "CRO077",
+      "CRO083",
+      "CRO084",
+      "CRO085",
+      "CRO086",
+      "CRO095",
+      "CRO096",
+      "CRO097",
+      "CRO098",
+      "CRO099",
+      "CRO100",
+      "CRO127",
+      "CRO136",
+      "CRO137",
+      "CRO138",
+      "CRO139",
+      "CRO140",
+      "CRO141",
+      "CRO142",
+      "CRO143",
+      "SOP055",
+      "SOP063"
+    ],
+    "skipped_rows": 0,
+    "blocked_rows": [],
+    "categories_created": [],
+    "mappings_created": [],
+    "unexpected_categories": [],
+    "products_imported_but_suspicious": [
+      "CRO069",
+      "CRO070",
+      "CRO071",
+      "CRO072",
+      "CRO073",
+      "CRO074",
+      "CRO075",
+      "CRO076",
+      "CRO077",
+      "CRO083",
+      "CRO084",
+      "CRO085",
+      "CRO086",
+      "CRO095",
+      "CRO096",
+      "CRO097",
+      "CRO098",
+      "CRO099",
+      "CRO100",
+      "CRO127",
+      "CRO136",
+      "CRO137",
+      "CRO138",
+      "CRO139",
+      "CRO140",
+      "CRO141",
+      "CRO142",
+      "CRO143",
+      "SOP055",
+      "SOP063"
+    ]
+  },
+  "warnings": [],
+  "suspicious_variant_candidates": [
+    {
+      "suspicion_id": "S-0001",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        13
+      ],
+      "skus": [
+        "CRO095",
+        "CRO127",
+        "CRO096",
+        "CRO097",
+        "CRO098",
+        "CRO099",
+        "CRO100",
+        "CRO136",
+        "CRO142",
+        "CRO137",
+        "CRO138",
+        "CRO139",
+        "CRO140",
+        "CRO141",
+        "CRO083",
+        "CRO084",
+        "CRO085",
+        "CRO086",
+        "CRO069",
+        "CRO070",
+        "CRO071",
+        "CRO072",
+        "CRO073",
+        "CRO143",
+        "CRO074",
+        "CRO075",
+        "CRO076",
+        "CRO077"
+      ],
+      "current_master_keys": [
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-LBS",
+        "CRO-WALL-LBS",
+        "CRO-WALL-LBS",
+        "CRO-WALL-LBS",
+        "CRO-POWER-BAGS-COLOR",
+        "CRO-POWER-BAGS-COLOR",
+        "CRO-POWER-BAGS-COLOR",
+        "CRO-POWER-BAGS-COLOR",
+        "CRO-POWER-BAGS-COLOR",
+        "CRO-POWER-BAGS-COLOR",
+        "CRO-SACO-BULGARO",
+        "CRO-SACO-BULGARO",
+        "CRO-SACO-BULGARO",
+        "CRO-SACO-BULGARO"
+      ],
+      "expected_master_key": "CRO",
+      "grouping_reasons": [
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-LBS",
+        "cross_training_block_family:CRO-WALL-LBS",
+        "cross_training_block_family:CRO-WALL-LBS",
+        "cross_training_block_family:CRO-WALL-LBS",
+        "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+        "cross_training_block_family:CRO-SACO-BULGARO",
+        "cross_training_block_family:CRO-SACO-BULGARO",
+        "cross_training_block_family:CRO-SACO-BULGARO",
+        "cross_training_block_family:CRO-SACO-BULGARO"
+      ],
+      "possible_false_negative": true
+    },
+    {
+      "suspicion_id": "S-0002",
+      "heuristic": "SamePageSkuFamily",
+      "page_numbers": [
+        13
+      ],
+      "skus": [
+        "SOP055",
+        "SOP063"
+      ],
+      "current_master_keys": [
+        "SOP055",
+        "SOP063"
+      ],
+      "expected_master_key": "SOP",
+      "grouping_reasons": [
+        "explicit_one_per_sku",
+        "explicit_one_per_sku"
+      ],
+      "possible_false_negative": true
+    },
+    {
+      "suspicion_id": "S-0003",
+      "heuristic": "NameWeightLadder",
+      "page_numbers": [
+        13
+      ],
+      "skus": [
+        "CRO095",
+        "CRO127",
+        "CRO096",
+        "CRO097",
+        "CRO098",
+        "CRO099",
+        "CRO100",
+        "CRO136",
+        "CRO142",
+        "CRO137",
+        "CRO138",
+        "CRO139",
+        "CRO140",
+        "CRO141"
+      ],
+      "current_master_keys": [
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-FDL",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO",
+        "CRO-WALL-NEXO"
+      ],
+      "expected_master_key": null,
+      "grouping_reasons": [
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-FDL",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO",
+        "cross_training_block_family:CRO-WALL-NEXO"
+      ],
+      "possible_false_negative": true
+    }
+  ],
+  "manual_approval": {
+    "page_approved": false,
+    "note": "Page is not approved until the user gives explicit OK. Do not advance to the next page automatically."
+  }
+}
