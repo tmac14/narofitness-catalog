@@ -1,5 +1,10 @@
 node_modules/
-.cursor/
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+!.cursor/hooks.json
+!.cursor/hooks/
+!.cursor/hooks/**
 dist/
 release/
 .venv/

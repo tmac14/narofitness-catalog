@@ -1,0 +1,54 @@
+---
+description: Mandatory Runtime + Protocol header parsing and protocol routing for every Cursor session
+alwaysApply: true
+---
+
+# Runtime and Protocol Header (Mandatory)
+
+Before any change-capable action (edit, create, delete, run migrations, update control docs, commits), establish session mode from the user message or live state.
+
+## Header format (canonical)
+
+The user may declare mode at the start of any message:
+
+```text
+Runtime: ONLY_CODEX | CODEX_PLUS_CURSOR | ONLY_CURSOR
+Protocol: ORCHESTRATION | IMPLEMENTATION
+```
+
+Optional executor lines (required for `IMPLEMENTATION` under Cursor):
+
+```text
+You are Agent <id> — <role>
+Mode: Agent mode | Plan mode | QA mode | Audit mode
+Task ID: <TASK-ID>
+```
+
+Legacy alias: `Protocol: CODEX_IMPLEMENTATION` means `Runtime: ONLY_CODEX` + `Protocol: IMPLEMENTATION`.
+
+## Parsing rules
+
+1. Parse `Runtime:` and `Protocol:` case-insensitively from the **current user message** first.
+2. If either is missing, read `docs/coordination/ORCHESTRATION_STATE.md` §0 (`control_plane_runtime`, `active_protocol`).
+3. If still missing or `NONE_SELECTED_FOR_NEXT_TASK`, **stop and ask** for both values. Do not edit files, run destructive commands, or update control documents.
+4. Ask mode (`Protocol` unset, question-only) may answer read-only after recovery bootstrap; still do not edit.
+
+## Protocol routing matrix
+
+| Runtime | Protocol | Read this protocol document |
+|---|---|---|
+| `ONLY_CODEX` | `ORCHESTRATION` | `docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md` |
+| `ONLY_CODEX` | `IMPLEMENTATION` | `docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` |
+| `CODEX_PLUS_CURSOR` | `ORCHESTRATION` | `docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md` |
+| `CODEX_PLUS_CURSOR` | `IMPLEMENTATION` | `docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` |
+| `ONLY_CURSOR` | `ORCHESTRATION` | `docs/coordination/CURSOR_ORCHESTRATION_PROTOCOL.md` |
+| `ONLY_CURSOR` | `IMPLEMENTATION` | `docs/coordination/CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` |
+
+After routing, **read the selected protocol document** and follow it for the remainder of the session task. Shared gates live in `docs/coordination/TASK_EXECUTION_PROTOCOL.md`.
+
+## Hard stops
+
+- Never mix `ORCHESTRATION` and `IMPLEMENTATION` behaviors in one task without explicit user approval.
+- Never implement product code while `Protocol: ORCHESTRATION`.
+- Never orchestrate (generate batch prompts, update registry state) while `Protocol: IMPLEMENTATION` unless explicitly in scope.
+- Never invent runtime, protocol, task status, locks, or evidence.

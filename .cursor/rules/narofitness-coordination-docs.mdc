@@ -1,0 +1,18 @@
+---
+description: Rules when editing project coordination and control documentation
+globs: docs/coordination/**,AGENTS.md
+alwaysApply: false
+---
+
+# Coordination Documentation Edits
+
+When modifying files under `docs/coordination/` or `AGENTS.md`:
+
+1. Follow `docs/DOCUMENTATION_GOVERNANCE.md` — English canonical for technical prose.
+2. Update `docs/coordination/DOCUMENTATION_INVENTORY.md` when adding/removing top-level coordination `.md`/`.yaml`.
+3. Run `npm run control:validate` after material changes.
+4. Control-plane sessions may update only the limited documents listed in `AGENTS.md` without separate permission.
+5. Implementation agents must not update control docs unless task scope explicitly includes them.
+6. Keep `ORCHESTRATION_STATE.md` §0 aligned with `TASK_REGISTRY.yaml` queues and locks.
+
+Protocol documents (CORE) must stay consistent with the Runtime × Protocol matrix in `AGENTS.md`.

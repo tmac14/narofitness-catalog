@@ -25,6 +25,24 @@ When citing shell commands in prompts or stop conditions, use **only** commands 
 Run `npm run control:validate` before implementation and after material
 task-state transitions. Do not implement while it reports errors.
 
+## Cursor Workspace Rules
+
+Cursor loads enforced behavior from `.cursor/rules/*.mdc`. These rules mirror
+this file and the coordination protocols:
+
+| Rule file | Purpose |
+|---|---|
+| `narofitness-runtime-protocol-header.mdc` | Parse `Runtime` + `Protocol` header; route to protocol doc |
+| `narofitness-recovery-bootstrap.mdc` | Cold-start recovery and in-flight task continuation |
+| `narofitness-orchestration-mode.mdc` | Control-plane behavior when `Protocol: ORCHESTRATION` |
+| `narofitness-implementation-mode.mdc` | Executor behavior when `Protocol: IMPLEMENTATION` |
+| `narofitness-permanent-guardrails.mdc` | No-legacy, IMPORT-FDL gates, ownership |
+| `narofitness-coordination-docs.mdc` | Editing coordination documentation |
+
+Every Cursor session must declare `Runtime` and `Protocol` (or recover them from
+`ORCHESTRATION_STATE.md` §0) before change-capable work. Chats without context
+must run the recovery bootstrap and resume in-flight tasks from registry state.
+
 ## Runtime and Protocol Selection
 
 Before each task or session that may cause changes, the user selects:

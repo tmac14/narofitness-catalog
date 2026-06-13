@@ -1,0 +1,55 @@
+---
+description: Cold-start and in-flight task recovery — mandatory doc reads before continuing work
+alwaysApply: true
+---
+
+# Context Recovery Bootstrap
+
+Every Cursor chat must assume **zero chat history**. Recover durable project state from the repo before acting.
+
+## When to run bootstrap
+
+Run on the **first change-capable turn** of a session, and whenever the user says continue, recover, resume, or provides an executor/control-plane report without context.
+
+## Mandatory read order
+
+Read in this order (use Read tool or equivalent; do not skip):
+
+1. `AGENTS.md`
+2. `docs/coordination/ORCHESTRATION_STATE.md` — **§0 Active Execution Control** first
+3. `docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md`
+4. `docs/coordination/TASK_EXECUTION_PROTOCOL.md`
+5. `docs/coordination/TASK_REGISTRY.yaml`
+6. `docs/coordination/AGENT_REGISTRY.yaml`
+7. Selected runtime protocol (from header rule matrix)
+8. Active task packet at `docs/coordination/tasks/<Active task ID>.md` when Active task ID is not `NONE`
+9. `docs/coordination/DECISION_LOG.md` — entries referenced by the task or state
+10. `docs/coordination/EVIDENCE_INDEX.md` — when task or state references evidence
+11. `docs/ENGINEERING_STANDARDS.md` before product code changes
+12. `COMMANDS.md` before tests, builds, seeds, audits, or QA commands
+13. `docs/coordination/RUNTIME_HANDOFF_PROTOCOL.md` when `handoff_from` is not `NONE`
+
+If `handoff_from` is not `NONE`, reconcile handoff before resuming `IN_FLIGHT` work.
+
+## Continue in-flight tasks
+
+When `ORCHESTRATION_STATE.md` or `TASK_REGISTRY.yaml` `queues.in_flight` shows an active task:
+
+1. Load its task packet; confirm objective, scope, locks, dependencies, waiting state, pending evidence.
+2. Do **not** infer completion from chat; trust registry + packet + evidence only.
+3. Resume at **next safe action** recorded in state/packet — do not restart from scratch unless the packet says so.
+4. Respect `planned_write_paths`, `blocked_paths`, and active locks in the registry.
+
+## Validation gate
+
+Run `npm run control:validate` before implementation and after material state transitions. **Do not implement while it reports errors.**
+
+## Recovery verdict (report to user before acting)
+
+Use exactly one:
+
+- `RECOVERY_READY` — state coherent; next safe action known
+- `RECOVERY_NEEDS_USER_CONFIRMATION` — missing Runtime, Protocol, or user decision
+- `RECOVERY_BLOCKED` — lock conflict, registry/state mismatch, or failed validation
+
+Report: recovered runtime/protocol, active task ID + status, locks, in-flight work, pending evidence, contradictions, next safe action.
