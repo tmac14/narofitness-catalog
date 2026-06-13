@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  quality-baseline:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,24 +26,8 @@ jobs:
         run: npm run control:validate
       - name: Project control tests
         run: npm run control:test
-      - name: Frontend ESLint baseline
-        continue-on-error: true
-        run: npm run lint:frontend
-      - name: Frontend Prettier baseline
-        continue-on-error: true
-        run: npm run format:check:frontend
-      - name: Frontend TypeScript baseline
-        continue-on-error: true
-        run: npm run typecheck:frontend
-      - name: Python Ruff lint baseline
-        continue-on-error: true
-        run: npm run lint:python
-      - name: Python Ruff format baseline
-        continue-on-error: true
-        run: npm run format:check:python
-      - name: Python Pyright baseline
-        continue-on-error: true
-        run: npm run typecheck:python
+      - name: Quality gates
+        run: npm run quality:check
 
   api-tests:
     runs-on: ubuntu-latest
