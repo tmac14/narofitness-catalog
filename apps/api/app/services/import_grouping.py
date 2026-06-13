@@ -362,10 +362,74 @@ def _apply_specs_from_family_header(
     if not header:
         return
 
-    class _HeaderProbe:
-        name = header
+    _apply_shared_name_specs(
+        header,
+        common_specs=common_specs,
+        variant_specs=variant_specs,
+        grouping=grouping,
+        is_row_probe=False,
+    )
 
-    _apply_specs_from_name(_HeaderProbe(), common_specs, variant_specs, grouping)
+
+def _apply_shared_name_specs(
+    name: str,
+    *,
+    common_specs: dict[str, Any],
+    variant_specs: dict[str, Any],
+    grouping: dict[str, Any],
+    is_row_probe: bool,
+    row: ImportRow | None = None,
+    color_context: ColorExtractContext | None = None,
+) -> None:
+    attr_from_name = grouping.get("attr_from_name") or {}
+    name_for_color = name
+    name_lower = (name or "").lower()
+    color_labels = _color_labels_from_grouping(grouping)
+    color_bucket = variant_specs if is_row_probe else common_specs
+    resolved_color_context = color_context or ColorExtractContext(
+        attr_from_name_has_color="color" in attr_from_name,
+    )
+    color, unknown, color_meta = extract_color_from_name_with_meta(
+        name_for_color,
+        allowed_labels=color_labels,
+        context=resolved_color_context,
+    )
+    if color:
+        color_bucket["color"] = color
+    elif unknown and row is not None:
+        append_reason(row, f"unknown_color_value:{unknown}")
+
+    if row is not None:
+        if color_meta and color_meta.raw_candidate:
+            row.color_candidate_raw = color_meta.raw_candidate
+            row.color_extraction_source = color_meta.source
+        elif unknown:
+            row.color_candidate_raw = unknown
+            row.color_extraction_source = color_meta.source if color_meta else None
+        else:
+            row.color_candidate_raw = None
+            row.color_extraction_source = None
+
+    material_keys = attr_from_name.get("material") or []
+    if isinstance(material_keys, str):
+        material_keys = [material_keys]
+    for token in material_keys:
+        if token.lower() in name_lower:
+            common_specs["material"] = token
+            break
+
+    if "goma maciza" in name_lower and "material" not in common_specs:
+        common_specs["material"] = "Goma maciza"
+
+    casquillo_keys = attr_from_name.get("casquillo") or []
+    if isinstance(casquillo_keys, str):
+        casquillo_keys = [casquillo_keys]
+    for token in casquillo_keys:
+        if token.lower() in name_lower:
+            common_specs["casquillo"] = token
+            break
+    if "casquillo de acero" in name_lower and "casquillo" not in common_specs:
+        common_specs["casquillo"] = "Acero"
 
 
 def _has_usable_name(row: ImportRow) -> bool:
@@ -644,6 +708,8 @@ def _eligible_for_numeric_suffix_family(row: ImportRow, grouping: dict[str, Any]
 
 
 def _group_numeric_suffix_family(row: ImportRow, grouping: dict[str, Any]) -> None:
+    if not row.sku:
+        return
     sku = row.sku.upper()
     match = re.match(_numeric_suffix_family_regex(grouping), sku, re.I)
     if not match:
@@ -760,6 +826,8 @@ def _eligible_for_numeric_compound_suffix_family(row: ImportRow, grouping: dict[
 
 
 def _group_numeric_compound_suffix_family(row: ImportRow, grouping: dict[str, Any]) -> None:
+    if not row.sku:
+        return
     sku = row.sku.upper()
     match = re.match(_numeric_compound_suffix_family_regex(grouping), sku, re.I)
     if not match:
@@ -888,6 +956,8 @@ def _eligible_for_hyphen_suffix_family(row: ImportRow, grouping: dict[str, Any])
 
 
 def _group_hyphen_suffix_family(row: ImportRow, grouping: dict[str, Any]) -> None:
+    if not row.sku:
+        return
     sku = row.sku.upper()
     match = re.match(_hyphen_suffix_family_regex(grouping), sku, re.I)
     if not match:
@@ -1020,6 +1090,8 @@ def _eligible_for_cross_training_bumper_family(row: ImportRow, grouping: dict[st
 
 
 def _group_cross_training_bumper_family(row: ImportRow, grouping: dict[str, Any]) -> None:
+    if not row.sku:
+        return
     sku = row.sku.upper()
     match = re.match(_cross_training_bumper_family_regex(grouping), sku, re.I)
     if not match:
@@ -1196,6 +1268,8 @@ def _group_one_per_sku(row: ImportRow, *, fallback: bool = False) -> None:
 
 
 def _group_fdl_sku_family(row: ImportRow, grouping: dict[str, Any]) -> None:
+    if not row.sku:
+        return
     sku = row.sku.upper()
     pattern = grouping.get(
         "sku_master_regex",
@@ -1285,60 +1359,22 @@ def _apply_specs_from_name(
     variant_specs: dict[str, Any],
     grouping: dict[str, Any],
 ) -> None:
-    attr_from_name = grouping.get("attr_from_name") or {}
-    is_row_probe = isinstance(getattr(row, "sku", None), str) and bool(getattr(row, "sku", None))
-    name_for_color = _row_variant_name(row) if is_row_probe else getattr(row, "name", "")
-    name_lower = (getattr(row, "name", None) or name_for_color or "").lower()
-
-    color_labels = _color_labels_from_grouping(grouping)
-    color_bucket = variant_specs if is_row_probe else common_specs
-    color_context = ColorExtractContext(
-        family_header_raw=getattr(row, "family_header_raw", None),
-        master_name=getattr(row, "master_name", None),
-        mapped_category_slug=getattr(row, "mapped_category_slug", None),
-        attr_from_name_has_color="color" in attr_from_name,
-    )
-    color, unknown, color_meta = extract_color_from_name_with_meta(
+    is_row_probe = bool(row.sku)
+    name_for_color = _row_variant_name(row) if is_row_probe else (row.name or "")
+    _apply_shared_name_specs(
         name_for_color,
-        allowed_labels=color_labels,
-        context=color_context,
+        common_specs=common_specs,
+        variant_specs=variant_specs,
+        grouping=grouping,
+        is_row_probe=is_row_probe,
+        row=row,
+        color_context=ColorExtractContext(
+            family_header_raw=getattr(row, "family_header_raw", None),
+            master_name=getattr(row, "master_name", None),
+            mapped_category_slug=getattr(row, "mapped_category_slug", None),
+            attr_from_name_has_color="color" in (grouping.get("attr_from_name") or {}),
+        ),
     )
-    if color:
-        color_bucket["color"] = color
-    elif unknown and hasattr(row, "review_reasons"):
-        append_reason(row, f"unknown_color_value:{unknown}")
-
-    if hasattr(row, "color_candidate_raw"):
-        if color_meta and color_meta.raw_candidate:
-            row.color_candidate_raw = color_meta.raw_candidate
-            row.color_extraction_source = color_meta.source
-        elif unknown:
-            row.color_candidate_raw = unknown
-            row.color_extraction_source = color_meta.source if color_meta else None
-        else:
-            row.color_candidate_raw = None
-            row.color_extraction_source = None
-
-    material_keys = attr_from_name.get("material") or []
-    if isinstance(material_keys, str):
-        material_keys = [material_keys]
-    for token in material_keys:
-        if token.lower() in name_lower:
-            common_specs["material"] = token
-            break
-
-    if "goma maciza" in name_lower and "material" not in common_specs:
-        common_specs["material"] = "Goma maciza"
-
-    casquillo_keys = attr_from_name.get("casquillo") or []
-    if isinstance(casquillo_keys, str):
-        casquillo_keys = [casquillo_keys]
-    for token in casquillo_keys:
-        if token.lower() in name_lower:
-            common_specs["casquillo"] = token
-            break
-    if "casquillo de acero" in name_lower and "casquillo" not in common_specs:
-        common_specs["casquillo"] = "Acero"
 
     if is_row_probe:
         sc_result = extract_smart_connect(
@@ -1351,7 +1387,7 @@ def _apply_specs_from_name(
         )
         if sc_result.value is not None:
             variant_specs["smart_connect"] = sc_result.value
-        elif sc_result.skip_reason and hasattr(row, "review_reasons"):
+        elif sc_result.skip_reason:
             append_reason(row, f"smart_connect_{sc_result.skip_reason}")
 
         if "longitud_mm" not in variant_specs:
@@ -1367,7 +1403,7 @@ def _apply_specs_from_name(
             )
             if bl_result.longitud_mm is not None:
                 variant_specs["longitud_mm"] = bl_result.longitud_mm
-            elif bl_result.skip_reason == "evidence_conflict" and hasattr(row, "review_reasons"):
+            elif bl_result.skip_reason == "evidence_conflict":
                 append_reason(row, "bar_length_evidence_conflict")
 
 

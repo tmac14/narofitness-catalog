@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 import pytest
 from app.config import settings
@@ -108,7 +108,7 @@ async def test_handler_success_creates_export_and_marks_succeeded(
         job = await create_job(
             db,
             job_type=JOB_TYPE_CATALOG_EXPORT_PDF,
-            catalog_id=catalog_id,
+            catalog_id=UUID(catalog_id) if catalog_id else None,
             progress_percent=0,
             message="Exportacion PDF en cola",
         )
@@ -158,7 +158,7 @@ async def test_handler_failure_marks_failed_and_runner_continues(
         job = await create_job(
             db,
             job_type=JOB_TYPE_CATALOG_EXPORT_PDF,
-            catalog_id=catalog_id,
+            catalog_id=UUID(catalog_id) if catalog_id else None,
             progress_percent=0,
         )
         await db.commit()
@@ -221,7 +221,7 @@ async def test_download_completed_job_returns_pdf(
         job = await create_job(
             db,
             job_type=JOB_TYPE_CATALOG_EXPORT_PDF,
-            catalog_id=catalog_id,
+            catalog_id=UUID(catalog_id) if catalog_id else None,
             progress_percent=0,
         )
         await db.commit()
@@ -260,7 +260,7 @@ async def test_download_missing_file_returns_404(integration_db, api_client: Asy
         job = await create_job(
             db,
             job_type=JOB_TYPE_CATALOG_EXPORT_PDF,
-            catalog_id=catalog_id,
+            catalog_id=UUID(catalog_id) if catalog_id else None,
             progress_percent=100,
             message="done",
         )

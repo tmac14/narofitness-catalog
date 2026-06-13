@@ -181,8 +181,9 @@ async def test_confirm_mixed_brand_family(integration_db):
         assert len(variants) == 2
         by_sku = {v.sku: v for v in variants}
         assert by_sku[sku_plain].brand_id is None
-        assert by_sku[sku_nexo].brand is not None
-        assert by_sku[sku_nexo].brand.name == "NEXO"
+        nexo_brand = by_sku[sku_nexo].brand
+        assert nexo_brand is not None
+        assert nexo_brand.name == "NEXO"
 
         presentation = build_variant_table_presentation(master, variants, [])
         assert presentation.brand_summary.brand_mode == "mixed"

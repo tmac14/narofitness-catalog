@@ -13,7 +13,7 @@ def _product(
     fallback=False,
     has_variants=True,
     variant_attribute_count=2,
-    image_url="/img.jpg",
+    image_url: str | None = "/img.jpg",
     section_name="Pesas",
 ):
     selection = {"fallback_used": fallback, "fallback_reason": "Incompatible" if fallback else None}

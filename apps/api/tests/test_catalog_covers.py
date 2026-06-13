@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from io import BytesIO
 from pathlib import Path
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 import pytest
 from app.database import async_session
@@ -246,7 +246,7 @@ async def test_build_catalog_context_cover_fields(integration_db, api_client: As
         files={"file": _png_file()},
     )
     async with async_session() as session:
-        context = await build_catalog_context(session, catalog_id, for_html_preview=True)
+        context = await build_catalog_context(session, UUID(catalog_id), for_html_preview=True)
     assert context["catalog_cover_subtitle"] == "Context subtitle"
     assert context["catalog_cover_image_url"] is not None
     assert context["catalog_cover_image_url"].startswith("http://")
@@ -259,7 +259,7 @@ async def test_build_catalog_context_sections_include_category_id_and_product_co
     catalog_id = result.catalog_id
     assert catalog_id
     async with async_session() as session:
-        context = await build_catalog_context(session, catalog_id)
+        context = await build_catalog_context(session, UUID(catalog_id))
     assert context["sections"]
     for section in context["sections"]:
         assert "category_id" in section
@@ -276,7 +276,7 @@ async def test_build_catalog_context_section_cover_fields_when_override_exists(
     catalog_id = result.catalog_id
     assert catalog_id
     async with async_session() as session:
-        context = await build_catalog_context(session, catalog_id)
+        context = await build_catalog_context(session, UUID(catalog_id))
     section = next((s for s in context["sections"] if s.get("category_id")), None)
     assert section is not None
     category_id = section["category_id"]
@@ -285,7 +285,7 @@ async def test_build_catalog_context_section_cover_fields_when_override_exists(
         data={"description": "Section cover text"},
     )
     async with async_session() as session:
-        context2 = await build_catalog_context(session, catalog_id, for_html_preview=True)
+        context2 = await build_catalog_context(session, UUID(catalog_id), for_html_preview=True)
     matched = next(s for s in context2["sections"] if s.get("category_id") == category_id)
     assert matched["category_cover_description"] == "Section cover text"
     assert matched["category_cover_image_url"] is None
@@ -298,5 +298,5 @@ async def test_show_description_column_regression(integration_db, api_client: As
     detail = (await api_client.get(f"/api/v1/catalogs/{catalog_id}")).json()
     assert detail["show_description_column"] is True
     async with async_session() as session:
-        context = await build_catalog_context(session, catalog_id)
+        context = await build_catalog_context(session, UUID(catalog_id))
     assert context["show_description_column"] is True

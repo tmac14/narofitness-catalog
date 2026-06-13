@@ -96,7 +96,7 @@ def _parser_rows_from_pdf(reference_pdf, page_number: int) -> list[ImportRow]:
                 page_number=item.page_number,
                 family_header_raw=getattr(item, "family_header_raw", None),
                 variant_name_raw=getattr(item, "variant_name_raw", None),
-                taxonomy_name=getattr(item, "taxonomy_name", None),
+                taxonomy_name=getattr(item, "taxonomy_name", None) or item.name,
             )
         )
     return rows
@@ -129,7 +129,7 @@ def test_c2a_page16_mk_smoke_unit(reference_pdf):
     assert len({row.master_key for row in rows}) == 5
 
     for prefix in PAGE_16_MK_PREFIXES:
-        prefix_rows = [row for row in mk_rows if _mk_prefix(row.sku) == prefix]
+        prefix_rows = [row for row in mk_rows if row.sku and _mk_prefix(row.sku) == prefix]
         assert prefix_rows
         assert {row.master_key for row in prefix_rows} == {prefix}
         for row in prefix_rows:

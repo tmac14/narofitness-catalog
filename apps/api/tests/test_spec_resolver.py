@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from decimal import Decimal
-from types import SimpleNamespace
 from uuid import uuid4
 
 from app.services.number_display import format_number_for_display
@@ -12,22 +11,27 @@ from app.services.spec_resolver import (
     build_variant_row_spec_values,
     format_spec_display,
 )
+from tests.model_test_factories import (
+    make_product_variant,
+    make_spec_definition,
+    make_unit,
+    make_variant_spec,
+)
 
 
 def _spec_row(*, value_number: Decimal | None = None, value_text: str | None = None):
-    return SimpleNamespace(
-        allowed_value_id=None,
-        allowed_value=None,
-        value_text=value_text,
+    definition = make_spec_definition("peso_kg", label="Peso", data_type="number")
+    return make_variant_spec(
+        definition,
         value_number=value_number,
-        value_boolean=None,
+        value_text=value_text,
     )
 
 
 def _definition(*, unit_symbol: str | None = "kg"):
-    unit = SimpleNamespace(symbol=unit_symbol) if unit_symbol else None
-    return SimpleNamespace(
-        key="peso_kg",
+    unit = make_unit(symbol=unit_symbol) if unit_symbol else None
+    return make_spec_definition(
+        "peso_kg",
         label="Peso",
         data_type="number",
         unit=unit,
@@ -48,8 +52,9 @@ def test_format_number_for_display_fractions():
 
 def test_format_spec_display_with_kg_unit():
     row = _spec_row(value_number=Decimal("0.5000"))
-    unit = SimpleNamespace(symbol="kg")
-    assert format_spec_display(row, _definition(), unit) == "0.5 kg"
+    unit = make_unit(symbol="kg")
+    definition = _definition()
+    assert format_spec_display(row, definition, unit) == "0.5 kg"
     assert (
         format_spec_display(_spec_row(value_number=Decimal("5.0000")), _definition(), unit)
         == "5 kg"
@@ -61,34 +66,46 @@ def test_format_spec_display_with_kg_unit():
 
 
 def test_format_spec_display_without_unit():
-    row = _spec_row(value_number=Decimal("0.5000"))
-    assert format_spec_display(row, _definition(unit_symbol=None), None) == "0.5"
+    row = make_variant_spec(
+        make_spec_definition("capacidad_balones", label="Capacidad", data_type="number"),
+        value_number=Decimal("0.5000"),
+    )
+    definition = make_spec_definition(
+        "capacidad_balones",
+        label="Capacidad",
+        data_type="number",
+        unit=None,
+    )
+    assert format_spec_display(row, definition, None) == "0.5"
 
 
 def test_format_spec_display_other_unit():
-    row = _spec_row(value_number=Decimal("12.5000"))
-    unit = SimpleNamespace(symbol="mm")
-    assert format_spec_display(row, _definition(unit_symbol="mm"), unit) == "12.5 mm"
+    row = make_variant_spec(
+        make_spec_definition("longitud_mm", label="Longitud", data_type="number"),
+        value_number=Decimal("12.5000"),
+    )
+    unit = make_unit(symbol="mm")
+    definition = make_spec_definition(
+        "longitud_mm",
+        label="Longitud",
+        data_type="number",
+        unit=unit,
+    )
+    assert format_spec_display(row, definition, unit) == "12.5 mm"
 
 
 def test_build_variant_row_spec_values_formats_fractional_peso():
     definition_id = uuid4()
-    spec_row = SimpleNamespace(
-        spec_definition_id=definition_id,
-        spec_definition=SimpleNamespace(
-            id=definition_id,
-            key="peso_kg",
-            label="Peso",
-            data_type="number",
-            unit=SimpleNamespace(symbol="kg"),
-        ),
-        value_number=Decimal("0.5000"),
-        allowed_value_id=None,
-        allowed_value=None,
-        value_text=None,
-        value_boolean=None,
+    peso_unit = make_unit(symbol="kg")
+    definition = make_spec_definition(
+        "peso_kg",
+        label="Peso",
+        data_type="number",
+        unit=peso_unit,
+        definition_id=definition_id,
     )
-    variant = SimpleNamespace(specs=[spec_row])
+    spec_row = make_variant_spec(definition, value_number=Decimal("0.5000"))
+    variant = make_product_variant("TEST-SKU", specs=[spec_row])
     columns = [
         SpecColumn(
             key="peso_kg",

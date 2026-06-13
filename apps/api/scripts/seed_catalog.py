@@ -11,9 +11,9 @@ from pathlib import Path
 from app.services.seed_catalog import (
     DEFAULT_EFFECTIVE_DATE,
     DEFAULT_PRESENTATION_CATALOG_NAME,
-    resolve_pdf_path,
     run_seed,
 )
+from app.services.seed_paths import resolve_pdf_path
 
 
 def main() -> int:

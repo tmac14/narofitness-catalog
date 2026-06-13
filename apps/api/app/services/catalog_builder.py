@@ -74,7 +74,7 @@ def _resolve_catalog_shell(
     layout_mode: str,
     uniform_layout_id: str | None,
     sections: list[dict],
-) -> str:
+) -> str | None:
     if layout_mode == "uniform" and uniform_layout_id == "family_variant_table":
         return "supplier_table"
     layout_ids = [p["layout_id"] for s in sections for p in s.get("products", [])]
@@ -372,7 +372,7 @@ async def build_catalog_context(
             price_iva = format_spanish_eur((final * (1 + iva_rate / 100)).quantize(Decimal("0.01")))
 
         if m.id not in section_blocks.get(cat_name, {}):
-            if m.category_id not in column_cache:
+            if m.category_id is not None and m.category_id not in column_cache:
                 siblings = [
                     ci.variant for ci in catalog_items if ci.variant.product_master_id == m.id
                 ]
@@ -381,11 +381,11 @@ async def build_catalog_context(
                 )
             if m.id not in master_spec_cache:
                 master_spec_cache[m.id] = await load_printable_master_specs(db, m)
-            if m.category_id and m.category_id not in highlight_cache:
+            if m.category_id is not None and m.category_id not in highlight_cache:
                 profiles = await load_category_profiles(db, m.category_id)
                 highlight_cache[m.category_id] = master_highlight_keys_from_profiles(profiles)
 
-        variant_columns = column_cache.get(m.category_id, [])
+        variant_columns = column_cache.get(m.category_id, []) if m.category_id is not None else []
         spec_values = build_variant_row_spec_values(v, variant_columns)
         variant_row = {
             **{key: spec_values.get(key) for key in [c.key for c in variant_columns]},
@@ -422,14 +422,21 @@ async def build_catalog_context(
             master_variants = entry.get("variants", [])
             if master.id not in master_spec_cache:
                 master_spec_cache[master.id] = await load_printable_master_specs(db, master)
-            spec_cols = column_cache.get(master.category_id, [])
-            if master.category_id not in column_cache and master_variants:
-                column_cache[master.category_id] = await load_printable_variant_columns(
+            master_category_id = master.category_id
+            spec_cols = (
+                column_cache.get(master_category_id, []) if master_category_id is not None else []
+            )
+            if (
+                master_category_id is not None
+                and master_category_id not in column_cache
+                and master_variants
+            ):
+                column_cache[master_category_id] = await load_printable_variant_columns(
                     db,
-                    master.category_id,
+                    master_category_id,
                     master_variants,
                 )
-                spec_cols = column_cache[master.category_id]
+                spec_cols = column_cache[master_category_id]
             presentation = build_variant_table_presentation(master, master_variants, spec_cols)
             variants_by_sku = {variant.sku: variant for variant in master_variants}
             enriched_rows = [
@@ -448,7 +455,11 @@ async def build_catalog_context(
                 master_spec_cache[master.id],
                 for_html_preview,
                 api_base,
-                highlight_keys=highlight_cache.get(master.category_id, ()),
+                highlight_keys=(
+                    highlight_cache.get(master_category_id, ())
+                    if master_category_id is not None
+                    else ()
+                ),
                 layout_mode=layout_mode,  # type: ignore[arg-type]
                 uniform_layout_id=uniform_layout_id,
                 manual_layout_id=manual_layouts.get(master.id),
@@ -463,26 +474,22 @@ async def build_catalog_context(
                         **product_block["layout_selection"],
                     }
                 )
+        section_cat_id = section_category_ids.get(cat_name)
+        section_cover = (
+            section_covers_by_category.get(section_cat_id) if section_cat_id is not None else None
+        )
         sections.append(
             {
                 "name": cat_name,
-                "category_id": str(section_category_ids[cat_name])
-                if section_category_ids.get(cat_name)
-                else None,
+                "category_id": str(section_cat_id) if section_cat_id else None,
                 "product_count": len(products),
                 "category_cover_image_url": resolve_media_context_url(
-                    section_covers_by_category[section_category_ids[cat_name]].cover_image_path
-                    if section_category_ids.get(cat_name)
-                    and section_category_ids[cat_name] in section_covers_by_category
-                    else None,
+                    section_cover.cover_image_path if section_cover else None,
                     for_html_preview=for_html_preview,
                     api_base=api_base,
                 ),
                 "category_cover_description": (
-                    section_covers_by_category[section_category_ids[cat_name]].description
-                    if section_category_ids.get(cat_name)
-                    and section_category_ids[cat_name] in section_covers_by_category
-                    else None
+                    section_cover.description if section_cover else None
                 ),
                 "products": products,
             }

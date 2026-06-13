@@ -75,7 +75,7 @@ def test_page13_lbs_variants_normalized_not_kg(reference_pdf):
     rows = {
         r.sku: r
         for r in parse_pdf(reference_pdf)
-        if r.page_number == 13 and r.sku.startswith("CRO08")
+        if r.page_number == 13 and r.sku is not None and r.sku.startswith("CRO08")
     }
     for sku, row in rows.items():
         name = row.variant_name_raw or row.name or ""

@@ -37,24 +37,28 @@ def _spec(data_type: str, scope: str = "variant") -> SpecDefinition:
 def test_validate_number():
     payload, err = _validate_value(_spec("number"), 25)
     assert err is None
+    assert payload is not None
     assert payload["value_number"] == Decimal("25")
 
 
 def test_validate_text():
     payload, err = _validate_value(_spec("text", "master"), "Acero")
     assert err is None
+    assert payload is not None
     assert payload["value_text"] == "Acero"
 
 
 def test_validate_enum_by_label():
     payload, err = _validate_value(_spec("enum", "both"), "Negro")
     assert err is None
+    assert payload is not None
     assert payload["allowed_value_id"] is not None
 
 
 def test_reject_unknown_enum():
     payload, err = _validate_value(_spec("enum", "both"), "Magenta")
     assert payload is None
+    assert err is not None
     assert "unknown enum" in err
 
 

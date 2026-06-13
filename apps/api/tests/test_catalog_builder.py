@@ -1,25 +1,24 @@
 """Unit tests for spec_resolver and catalog_builder helpers."""
 
-from types import SimpleNamespace
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 from app.services.catalog_builder import _build_product_block, _title_lines
 from app.services.spec_resolver import (
     ResolvedSpecValue,
+    SpecColumn,
     count_variant_attributes,
     master_highlights_from_specs,
     master_subtitle_from_specs,
 )
+from tests.model_test_factories import make_brand, make_product_master
 
 
 def _master(name: str, brand: str | None = None):
-    brand_obj = SimpleNamespace(name=brand) if brand else None
-    return SimpleNamespace(
-        id="00000000-0000-0000-0000-000000000001",
-        name=name,
+    brand_obj = make_brand(brand) if brand else None
+    return make_product_master(
+        name,
+        master_id=UUID("00000000-0000-0000-0000-000000000001"),
         brand=brand_obj,
-        description=None,
-        images=[],
     )
 
 
@@ -95,8 +94,22 @@ def test_title_lines_single_when_no_split():
 
 def _variant_rows(*, multi_attr: bool = True, multi_variant: bool = True):
     columns = [
-        SimpleNamespace(key="peso_kg", label="Peso", sort_order=0),
-        SimpleNamespace(key="color", label="Color", sort_order=1),
+        SpecColumn(
+            key="peso_kg",
+            label="Peso",
+            sort_order=0,
+            spec_definition_id=uuid4(),
+            data_type="number",
+            role="variant_axis",
+        ),
+        SpecColumn(
+            key="color",
+            label="Color",
+            sort_order=1,
+            spec_definition_id=uuid4(),
+            data_type="text",
+            role="catalog_spec",
+        ),
     ]
     if not multi_variant:
         return [

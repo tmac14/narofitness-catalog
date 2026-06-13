@@ -134,6 +134,10 @@ async def confirm_import(
                 result.rows_skipped += 1
             continue
 
+        if not row.sku:
+            result.rows_skipped += 1
+            continue
+
         sku = row.sku.upper()
         spec_errors = preview_spec_hard_errors(
             definitions,
@@ -258,6 +262,12 @@ async def confirm_import(
                 await session.delete(master)
                 result.masters_created = max(0, result.masters_created - 1)
             result.variants_created = max(0, result.variants_created - 1)
+            continue
+
+        if row.price_amount is None:
+            append_reason(row, "missing_price")
+            row.review_status = "needs_review"
+            result.rows_skipped += 1
             continue
 
         session.add(

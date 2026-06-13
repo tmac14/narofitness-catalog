@@ -1,22 +1,26 @@
 """Tests for catalogue layout configuration persistence helpers."""
 
+from decimal import Decimal
 from types import SimpleNamespace
 from unittest.mock import AsyncMock
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 import pytest
 from app.services.catalog_builder import _build_product_block
 from app.services.spec_resolver import SpecColumn
+from tests.model_test_factories import (
+    make_allowed_value,
+    make_catalog_item,
+    make_product_master,
+    make_product_variant,
+    make_spec_definition,
+    make_unit,
+    make_variant_spec,
+)
 
 
 def _master(name: str = "Product"):
-    return SimpleNamespace(
-        id="00000000-0000-0000-0000-000000000001",
-        name=name,
-        description=None,
-        images=[],
-        brand=None,
-    )
+    return make_product_master(name, master_id=UUID("00000000-0000-0000-0000-000000000001"))
 
 
 def _variant_rows(*, multi_attr: bool = True, multi_variant: bool = True):
@@ -146,81 +150,43 @@ def test_build_product_block_manual_missing_override_falls_back():
 async def test_master_variant_rows_from_catalog_items():
     from app.services.catalog_layout import master_variant_rows_from_catalog_items
 
-    peso_id = uuid4()
-    color_id = uuid4()
-    variant_one = SimpleNamespace(
-        product_master_id=uuid4(),
-        master=SimpleNamespace(category_id=uuid4()),
+    peso_unit = make_unit(symbol="kg")
+    peso_def = make_spec_definition(
+        "peso_kg",
+        label="Peso",
+        data_type="number",
+        unit=peso_unit,
+        definition_id=uuid4(),
+    )
+    color_def = make_spec_definition(
+        "color",
+        label="Color",
+        data_type="enum",
+        scope="both",
+        definition_id=uuid4(),
+    )
+    rojo = make_allowed_value(color_def, value_key="rojo", label="Rojo")
+    azul = make_allowed_value(color_def, value_key="azul", label="Azul")
+    master = make_product_master("Layout product")
+    variant_one = make_product_variant(
+        "A-1",
+        master=master,
         specs=[
-            SimpleNamespace(
-                spec_definition_id=peso_id,
-                spec_definition=SimpleNamespace(
-                    id=peso_id,
-                    key="peso_kg",
-                    label="Peso",
-                    sort_order=0,
-                    is_active=True,
-                    is_printable=True,
-                    scope="variant",
-                    role="variant_axis",
-                    data_type="number",
-                    unit=SimpleNamespace(symbol="kg"),
-                ),
-                allowed_value=None,
-                allowed_value_id=None,
-                value_number=10,
-                value_text=None,
-                value_boolean=None,
-            ),
-            SimpleNamespace(
-                spec_definition_id=color_id,
-                spec_definition=SimpleNamespace(
-                    id=color_id,
-                    key="color",
-                    label="Color",
-                    sort_order=1,
-                    is_active=True,
-                    is_printable=True,
-                    scope="both",
-                    role="variant_axis",
-                    data_type="enum",
-                    unit=None,
-                ),
-                allowed_value=SimpleNamespace(label="Rojo"),
-                allowed_value_id=uuid4(),
-                value_number=None,
-                value_text=None,
-                value_boolean=None,
-            ),
+            make_variant_spec(peso_def, value_number=Decimal("10")),
+            make_variant_spec(color_def, allowed_value=rojo),
         ],
     )
-    variant_two = SimpleNamespace(
-        product_master_id=variant_one.product_master_id,
-        master=variant_one.master,
+    variant_two = make_product_variant(
+        "A-2",
+        master=master,
         specs=[
-            SimpleNamespace(
-                spec_definition_id=peso_id,
-                spec_definition=variant_one.specs[0].spec_definition,
-                allowed_value=None,
-                allowed_value_id=None,
-                value_number=12,
-                value_text=None,
-                value_boolean=None,
-            ),
-            SimpleNamespace(
-                spec_definition_id=color_id,
-                spec_definition=variant_one.specs[1].spec_definition,
-                allowed_value=SimpleNamespace(label="Azul"),
-                allowed_value_id=uuid4(),
-                value_number=None,
-                value_text=None,
-                value_boolean=None,
-            ),
+            make_variant_spec(peso_def, value_number=Decimal("12")),
+            make_variant_spec(color_def, allowed_value=azul),
         ],
     )
     items = [
-        SimpleNamespace(sort_order=0, variant=variant_one),
-        SimpleNamespace(sort_order=1, variant=variant_two),
+        make_catalog_item(variant_one, sort_order=0),
+        make_catalog_item(variant_two, sort_order=1),
     ]
 
     db = AsyncMock()

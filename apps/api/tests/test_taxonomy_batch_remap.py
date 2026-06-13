@@ -100,6 +100,7 @@ async def test_remap_clears_unmapped_after_confirmed_rule(integration_db):
 
     assert result.mapped_count == 1
     assert row.mapped_category_slug == fixture["expected_mapped_slug"]
+    assert row.mapped_category_confidence is not None
     assert float(row.mapped_category_confidence) == fixture["expected_confidence"]
     assert "unmapped_category" not in (row.review_reasons or [])
 

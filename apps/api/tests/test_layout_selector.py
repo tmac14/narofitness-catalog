@@ -21,12 +21,13 @@ def test_registry_has_three_layouts():
         "single_standard",
         "variant_row_wide",
         "variant_grid_50_50",
+        "family_variant_table",
     }
 
 
 def test_list_layouts_serializable():
     items = list_layouts()
-    assert len(items) == 3
+    assert len(items) == 4
     assert all("id" in item and "compatible_with" in item for item in items)
 
 

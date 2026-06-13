@@ -84,7 +84,7 @@ def test_migration_005_background_jobs_revision():
             revisions[rev] = {"down_revision": namespace.get("down_revision"), "path": path.name}
     referenced = {info["down_revision"] for info in revisions.values() if info["down_revision"]}
     heads = [rev for rev in revisions if rev not in referenced]
-    assert heads == ["006_variant_brand_id"]
+    assert heads == ["007_product_image_source"]
     assert revisions["005_background_jobs"]["path"] == "005_background_jobs.py"
     assert "background_jobs" in (VERSIONS_DIR / "005_background_jobs.py").read_text(
         encoding="utf-8"

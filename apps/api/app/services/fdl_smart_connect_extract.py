@@ -109,7 +109,7 @@ def _embedded_feature_allowed(ctx: SmartConnectExtractContext, residual_name: st
         return False
     if not _EMBEDDED_SUFFIX_RE.match(residual_name):
         return False
-    return _EMBEDDED_MODEL_NUMERIC_RE.match(residual_name)
+    return bool(_EMBEDDED_MODEL_NUMERIC_RE.match(residual_name))
 
 
 def extract_smart_connect(ctx: SmartConnectExtractContext) -> SmartConnectExtractResult:

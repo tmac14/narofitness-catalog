@@ -88,7 +88,7 @@ def _group_fixture_rows() -> dict[str, ImportRow]:
     apply_grouping(rows, {"grouping": FDL_GROUPING_CONFIG})
     for row in rows:
         row.review_status = resolve_review_status(row)
-    return {row.sku: row for row in rows}
+    return {row.sku: row for row in rows if row.sku is not None}
 
 
 def test_page14_fixture_saco_gusano_separate_from_power_bag():

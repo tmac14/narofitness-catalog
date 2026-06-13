@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from uuid import UUID
+
 import pytest
 from app.database import async_session
 from app.main import app
@@ -93,7 +95,7 @@ async def test_build_catalog_context_includes_show_description_column(
     )
 
     async with async_session() as session:
-        context = await build_catalog_context(session, catalog_id)
+        context = await build_catalog_context(session, UUID(catalog_id))
 
     assert context["show_description_column"] is False
     assert context["show_iva_column"] is False
@@ -124,7 +126,7 @@ async def test_show_iva_column_unchanged_by_description_column(
     assert detail["show_description_column"] is False
 
     async with async_session() as session:
-        context = await build_catalog_context(session, catalog_id)
+        context = await build_catalog_context(session, UUID(catalog_id))
 
     assert context["show_iva_column"] is True
     assert context["show_description_column"] is False

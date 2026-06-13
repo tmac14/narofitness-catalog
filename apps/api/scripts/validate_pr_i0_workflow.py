@@ -237,15 +237,20 @@ async def run_validation(pdf_path: Path) -> dict:
         )
         rule = await session.get(TaxonomyMappingRule, confirm_result.rule_id)
 
-    rule_is_seeded_full_path = (rule.match_type, rule.match_value) in seed_values
-    if rule.match_type != MATCH_SECTION_PATH:
-        warnings.append(f"Confirmed rule match_type expected section_path, got {rule.match_type}")
-    if rule.match_value != cross_raw_path:
-        warnings.append("Confirmed rule match_value does not match discovered raw path")
-    if rule_is_seeded_full_path:
-        warnings.append(
-            "Confirmed rule match_value matches a seeded default (unexpected for full PDF path)"
-        )
+    if rule is None:
+        warnings.append("Confirmed mapping rule not found after confirm")
+    else:
+        rule_is_seeded_full_path = (rule.match_type, rule.match_value) in seed_values
+        if rule.match_type != MATCH_SECTION_PATH:
+            warnings.append(
+                f"Confirmed rule match_type expected section_path, got {rule.match_type}"
+            )
+        if rule.match_value != cross_raw_path:
+            warnings.append("Confirmed rule match_value does not match discovered raw path")
+        if rule_is_seeded_full_path:
+            warnings.append(
+                "Confirmed rule match_value matches a seeded default (unexpected for full PDF path)"
+            )
 
     if material_raw_path:
         async with async_session() as session:

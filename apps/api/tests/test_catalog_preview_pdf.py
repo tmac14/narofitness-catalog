@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from io import BytesIO
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 import fitz
 import pytest
@@ -151,11 +151,11 @@ async def test_preview_pdf_includes_catalogue_cover_content(
     assert response.status_code == 200
     doc = fitz.open(stream=response.content, filetype="pdf")
     try:
-        first_page_text = doc[0].get_text().strip()
+        first_page_text = str(doc[0].get_text()).strip()
         assert "Portada Preview QA" not in first_page_text
         assert "Edición Preview 2026" not in first_page_text
         assert doc.page_count >= 2
-        second_page_text = doc[1].get_text()
+        second_page_text = str(doc[1].get_text())
         assert second_page_text.strip()
     finally:
         doc.close()
@@ -176,7 +176,7 @@ async def test_preview_pdf_category_cover_can_increase_page_count(
     baseline_pages = int(baseline.headers["X-Total-Pages"])
 
     async with async_session() as session:
-        ctx = await build_catalog_context(session, catalog_id)
+        ctx = await build_catalog_context(session, UUID(catalog_id))
     section_ctx = next((s for s in ctx["sections"] if s.get("category_id")), None)
     assert section_ctx is not None
     category_id = section_ctx["category_id"]
@@ -198,7 +198,7 @@ async def test_preview_pdf_category_cover_can_increase_page_count(
 
     doc = fitz.open(stream=with_cover.content, filetype="pdf")
     try:
-        joined = "".join(doc[i].get_text() for i in range(min(3, doc.page_count)))
+        joined = "".join(str(doc[i].get_text()) for i in range(min(3, doc.page_count)))
         assert "Sección con portada de categoría" in joined or doc.page_count >= 2
     finally:
         doc.close()

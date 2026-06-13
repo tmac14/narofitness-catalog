@@ -37,6 +37,7 @@ from app.services.media import save_product_image
 from app.services.pricing import format_master_price_range
 from app.services.product_image_service import create_master_image_from_url, product_image_out
 from app.services.product_list import (
+    MasterVariantListBundle,
     build_master_variant_list_bundle,
     primary_master_image_url,
     variant_image_urls_by_id,
@@ -153,7 +154,7 @@ async def list_masters(
     prices_by_master: dict[UUID, list[Decimal]] = {}
     variants_by_master: dict[UUID, list] = {}
     variant_columns_by_master: dict[UUID, list] = {}
-    bundles_by_master: dict[UUID, object] = {}
+    bundles_by_master: dict[UUID, MasterVariantListBundle] = {}
     if masters:
         master_ids = [m.id for m in masters]
         master_variants = list(

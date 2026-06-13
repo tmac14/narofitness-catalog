@@ -60,6 +60,7 @@ async def test_bumper_sku_prefix_maps_to_discos(integration_db, sku: str):
 
     assert row.mapped_category_slug == "discos"
     assert row.mapped_category_id is not None
+    assert row.mapped_category_confidence is not None
     assert row.mapped_category_confidence >= 0.9
 
 

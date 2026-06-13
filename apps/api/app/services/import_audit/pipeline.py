@@ -184,7 +184,8 @@ async def run_variant_audit(
     pages_out: list[dict[str, Any]] = []
 
     pages_to_report = sorted(
-        {r.get("page_number") for r in filtered_audited} | set(page_extractions.keys())
+        {page for page in (r.get("page_number") for r in filtered_audited) if page is not None}
+        | set(page_extractions.keys())
     )
 
     rows_by_page: dict[int, list[dict[str, Any]]] = {}

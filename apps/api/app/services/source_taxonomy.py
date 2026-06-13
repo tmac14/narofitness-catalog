@@ -51,7 +51,7 @@ class SourceCategoryDiscovery:
     proposal_source: str = "none"
 
 
-def _mode_or_none(values: list) -> object | None:
+def _mode_or_none[T](values: list[T]) -> T | None:
     if not values:
         return None
     counter = Counter(values)

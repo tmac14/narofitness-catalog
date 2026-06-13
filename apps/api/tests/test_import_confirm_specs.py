@@ -209,7 +209,9 @@ async def test_confirm_dobnexo_family_specs(integration_db):
             .all()
         )
         master_by_key = {spec_defs[row.spec_definition_id].key: row for row in master_specs}
-        assert master_by_key["color"].allowed_value.label == "Negro"
+        color_spec = master_by_key["color"]
+        assert color_spec.allowed_value is not None
+        assert color_spec.allowed_value.label == "Negro"
         assert master_by_key["material"].value_text == "Goma maciza"
         assert master_by_key["casquillo"].value_text == "Acero"
 
@@ -231,6 +233,7 @@ async def test_confirm_dobnexo_family_specs(integration_db):
         for row in variant_specs:
             if row.spec_definition_id != peso_def_id:
                 continue
+            assert row.value_number is not None
             peso_by_sku[variant_by_id[row.variant_id].sku] = row.value_number
         assert peso_by_sku == {
             "DOBNEXO05N": Decimal("5"),

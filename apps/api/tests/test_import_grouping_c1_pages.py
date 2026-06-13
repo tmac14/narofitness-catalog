@@ -112,7 +112,7 @@ def _parser_rows_from_pdf(reference_pdf, page_number: int) -> list[ImportRow]:
                 page_number=item.page_number,
                 family_header_raw=getattr(item, "family_header_raw", None),
                 variant_name_raw=getattr(item, "variant_name_raw", None),
-                taxonomy_name=getattr(item, "taxonomy_name", None),
+                taxonomy_name=getattr(item, "taxonomy_name", None) or item.name,
             )
         )
     return rows

@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any, cast
 
 import fitz
 from sqlalchemy import select
@@ -31,7 +32,7 @@ class BrandSeedResult:
 
 def _lines_with_size(page: fitz.Page) -> list[tuple[str, float]]:
     lines: list[tuple[str, float]] = []
-    data = page.get_text("dict")
+    data = cast(dict[str, Any], page.get_text("dict"))
     for block in data.get("blocks", []):
         if block.get("type") != 0:
             continue

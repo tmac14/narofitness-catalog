@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from decimal import Decimal
-from types import SimpleNamespace
 from uuid import uuid4
 
 from app.services.spec_resolver import (
@@ -18,6 +17,13 @@ from app.services.spec_resolver import (
     visible_variant_columns,
 )
 from app.services.variant_representation import build_variant_table_presentation
+from tests.model_test_factories import (
+    make_product_master,
+    make_product_variant,
+    make_spec_definition,
+    make_unit,
+    make_variant_spec,
+)
 
 
 def _column(
@@ -45,42 +51,26 @@ def _spec_row(
     unit_symbol: str | None = None,
     role: str = "variant_axis",
 ):
-    unit = SimpleNamespace(symbol=unit_symbol) if unit_symbol else None
-    definition = SimpleNamespace(
-        id=uuid4(),
-        key=key,
+    unit = make_unit(symbol=unit_symbol) if unit_symbol else None
+    definition = make_spec_definition(
+        key,
         label=key,
         data_type="number" if value_number is not None else "text",
         role=role,
         unit=unit,
-        is_active=True,
-        is_printable=True,
-        sort_order=0,
-        scope="variant",
     )
-    allowed_value = None
-    return SimpleNamespace(
-        spec_definition=definition,
-        spec_definition_id=uuid4(),
+    return make_variant_spec(
+        definition,
         value_number=value_number,
         value_text=value_text,
-        value_boolean=None,
-        allowed_value_id=None,
-        allowed_value=allowed_value,
     )
 
 
 def _variant(sku: str, specs: list, *, reference_label: str | None = None):
-    return SimpleNamespace(
-        id=uuid4(),
-        sku=sku,
+    return make_product_variant(
+        sku,
         specs=specs,
         reference_label=reference_label,
-        display_name=sku,
-        raw_name=sku,
-        brand=None,
-        brand_id=None,
-        product_master_id=uuid4(),
     )
 
 
@@ -181,7 +171,7 @@ def test_build_variant_table_presentation_wall_ball_lbs_uses_peso_not_variante()
     columns = consolidate_weight_columns(
         [_column("peso_lb", "Peso (lbs)", 11), _column("color", "Color", 20, role="catalog_spec")]
     )
-    master = SimpleNamespace(id=uuid4(), name="Wall Ball")
+    master = make_product_master("Wall Ball")
     variants = [
         _variant(
             "CRO083",
@@ -206,7 +196,7 @@ def test_build_variant_table_presentation_power_bags_peso_and_color():
     columns = consolidate_weight_columns(
         [_column("peso_kg", "Peso", 10), _column("color", "Color", 20, role="catalog_spec")]
     )
-    master = SimpleNamespace(id=uuid4(), name="Power Bag")
+    master = make_product_master("Power Bag")
     variants = [
         _variant(
             "CRO069",
@@ -234,29 +224,19 @@ def test_build_variant_table_presentation_reference_label_fallback():
     columns = consolidate_weight_columns(
         [_column("peso_kg", "Peso", 10), _column("color", "Color", 20, role="catalog_spec")]
     )
-    master = SimpleNamespace(id=uuid4(), name="Family")
+    master = make_product_master("Family")
     variants = [
-        SimpleNamespace(
-            id=uuid4(),
-            sku="A",
-            display_name="A",
+        make_product_variant(
+            "A",
+            master=master,
             reference_label="5 kgs",
-            raw_name=None,
-            brand=None,
-            brand_id=None,
             specs=[],
-            product_master_id=master.id,
         ),
-        SimpleNamespace(
-            id=uuid4(),
-            sku="B",
-            display_name="B",
+        make_product_variant(
+            "B",
+            master=master,
             reference_label="10 kgs",
-            raw_name=None,
-            brand=None,
-            brand_id=None,
             specs=[],
-            product_master_id=master.id,
         ),
     ]
     presentation = build_variant_table_presentation(master, variants, columns)

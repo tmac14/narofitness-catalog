@@ -148,7 +148,9 @@ def test_c1_numeric_family_negative_unit(fixture_name: str):
             _assert_grouping_expectations(row, expected)
 
     if distinct := fixture.get("expected_distinct_master_keys"):
-        assert sorted({row.master_key for row in rows}) == sorted(distinct)
+        assert sorted(k for k in {row.master_key for row in rows} if k is not None) == sorted(
+            distinct
+        )
 
 
 def test_mh002a_suffix_letter_stays_separate():

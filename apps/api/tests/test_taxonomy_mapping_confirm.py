@@ -91,6 +91,7 @@ async def test_ignore_source_category_does_not_create_canonical_category(integra
         after_count = len((await session.execute(select(Category))).scalars().all())
 
     assert after_count == before_count
+    assert rule is not None
     assert rule.match_type == MATCH_IGNORED_PATH
     assert rule.match_value == normalize_source_category_key("MATERIAL DE ESTUDIO")
     assert rule.target_category_id is None

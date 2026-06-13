@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import importlib
 import logging
 from pathlib import Path
 
@@ -15,7 +16,7 @@ _availability_error: str | None = None
 def _probe() -> None:
     global _availability_error
     try:
-        from playwright.sync_api import sync_playwright  # noqa: F401
+        importlib.import_module("playwright.sync_api")
     except Exception as exc:
         _availability_error = (
             f"Playwright no está disponible: {exc}. "
@@ -40,7 +41,7 @@ class PlaywrightEngine:
         if _availability_error:
             return False, _availability_error
         try:
-            from playwright.sync_api import sync_playwright
+            sync_playwright = importlib.import_module("playwright.sync_api").sync_playwright
 
             with sync_playwright() as p:
                 browser = p.chromium.launch(headless=True)
@@ -54,7 +55,7 @@ class PlaywrightEngine:
         if not available:
             raise PdfEngineError(error or "Playwright no disponible")
 
-        from playwright.sync_api import sync_playwright
+        sync_playwright = importlib.import_module("playwright.sync_api").sync_playwright
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
         with sync_playwright() as p:

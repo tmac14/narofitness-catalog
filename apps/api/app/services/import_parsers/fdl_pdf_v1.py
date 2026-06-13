@@ -6,7 +6,7 @@ import re
 from dataclasses import dataclass
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
-from typing import BinaryIO
+from typing import Any, BinaryIO, cast
 
 import fitz
 
@@ -188,7 +188,7 @@ def _resolve_brand(
 def _extract_lines_with_layout(page: fitz.Page) -> list[ParsedLine]:
     lines_out: list[ParsedLine] = []
     page_width = float(page.rect.width)
-    data = page.get_text("dict")
+    data = cast(dict[str, Any], page.get_text("dict"))
     line_index = 0
     for block in data.get("blocks", []):
         if block.get("type") != 0:
@@ -465,7 +465,7 @@ def _try_parse_inline_line(
 
 def parse_pdf(source: str | Path | bytes | BinaryIO) -> list[ImportRow]:
     if isinstance(source, (str, Path)):
-        doc = fitz.open(str(source))
+        doc: fitz.Document = fitz.open(str(source))
     elif isinstance(source, bytes):
         doc = fitz.open(stream=source, filetype="pdf")
     else:
@@ -481,7 +481,8 @@ def parse_pdf(source: str | Path | bytes | BinaryIO) -> list[ImportRow]:
     active_family: FamilyBlockContext | None = None
 
     try:
-        for page_num, page in enumerate(doc):
+        for page_num in range(doc.page_count):
+            page = doc[page_num]
             page_number = page_num + 1
             lines = _extract_lines_with_layout(page)
 

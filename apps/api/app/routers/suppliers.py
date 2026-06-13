@@ -14,7 +14,7 @@ router = APIRouter(prefix="/suppliers", tags=["suppliers"])
 @router.get("", response_model=list[SupplierOut])
 async def list_suppliers(db: AsyncSession = Depends(get_db)) -> list[SupplierOut]:
     result = await db.execute(select(Supplier).order_by(Supplier.name))
-    return list(result.scalars().all())
+    return [SupplierOut.model_validate(row) for row in result.scalars().all()]
 
 
 @router.post("", response_model=SupplierOut, status_code=201)
@@ -27,7 +27,7 @@ async def create_supplier(body: SupplierCreate, db: AsyncSession = Depends(get_d
     db.add(s)
     await db.commit()
     await db.refresh(s)
-    return s
+    return SupplierOut.model_validate(s)
 
 
 @router.get("/{supplier_id}/import-profiles", response_model=list[ImportProfileOut])
@@ -39,7 +39,7 @@ async def list_profiles(
         .where(ImportProfile.supplier_id == supplier_id, ImportProfile.is_active.is_(True))
         .order_by(ImportProfile.is_default.desc(), ImportProfile.name)
     )
-    return list(result.scalars().all())
+    return [ImportProfileOut.model_validate(row) for row in result.scalars().all()]
 
 
 @router.post("/{supplier_id}/import-profiles", response_model=ImportProfileOut, status_code=201)
@@ -65,4 +65,4 @@ async def create_profile(
     db.add(profile)
     await db.commit()
     await db.refresh(profile)
-    return profile
+    return ImportProfileOut.model_validate(profile)

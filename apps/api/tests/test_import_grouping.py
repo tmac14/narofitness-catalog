@@ -101,6 +101,7 @@ def test_boc001nexo_without_explicit_signal_stays_false_family():
     apply_grouping([r], FDL_CONFIG)
     _assert_false_family(r)
     assert r.grouping_reason == "false_family:BOCNEXO"
+    assert r.grouping_confidence is not None
     assert r.grouping_confidence <= 0.4
 
 

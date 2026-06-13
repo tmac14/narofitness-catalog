@@ -82,9 +82,9 @@ def test_weasyprint_engine_renders_minimal_html(tmp_path: Path):
 
 
 def test_playwright_engine_pdf_uses_a4_print_settings(tmp_path: Path, monkeypatch):
-    try:
-        from playwright.sync_api import sync_playwright  # noqa: F401
-    except ImportError:
+    import importlib.util
+
+    if importlib.util.find_spec("playwright.sync_api") is None:
         pytest.skip("Playwright not installed")
 
     pdf_calls: list[dict] = []

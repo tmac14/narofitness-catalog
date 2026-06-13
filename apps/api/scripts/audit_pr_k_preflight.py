@@ -185,7 +185,7 @@ async def run_preflight() -> dict[str, Any]:
             continue
         skus = sorted(r.sku for r, _ in group)
         pages = sorted(
-            {getattr(r, "page_number", None) for r, _ in group if getattr(r, "page_number", None)}
+            page for page in (getattr(r, "page_number", None) for r, _ in group) if page is not None
         )
         paths = Counter(r.category_path for r, _ in group)
         slugs = Counter(getattr(r, "mapped_category_slug", None) for r, _ in group)

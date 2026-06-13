@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import importlib
 import logging
 from pathlib import Path
 
@@ -15,7 +16,7 @@ _availability_error: str | None = None
 def _probe() -> None:
     global _availability_error
     try:
-        from weasyprint import HTML  # noqa: F401
+        importlib.import_module("weasyprint")
     except Exception as exc:
         _availability_error = (
             f"WeasyPrint no está disponible: {exc}. "
@@ -41,8 +42,8 @@ class WeasyPrintEngine:
         available, error = self.is_available()
         if not available:
             raise PdfEngineError(error or "WeasyPrint no disponible")
-        from weasyprint import HTML
+        html_module = importlib.import_module("weasyprint")
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        HTML(string=request.html, base_url=request.base_url).write_pdf(str(out_path))
+        html_module.HTML(string=request.html, base_url=request.base_url).write_pdf(str(out_path))
         return out_path.read_bytes()

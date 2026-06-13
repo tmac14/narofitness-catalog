@@ -313,7 +313,7 @@ class ProductVariantPatch(BaseModel):
 class ProductMasterDetailOut(ProductMasterOut):
     images: list[ProductImageOut] = []
     specs: list[SpecValueOut] = []
-    variants: list[ProductVariantOut] = []
+    variants: list[ProductVariantOut] = []  # pyright: ignore[reportIncompatibleVariableOverride]
 
 
 class SpecValueWrite(BaseModel):

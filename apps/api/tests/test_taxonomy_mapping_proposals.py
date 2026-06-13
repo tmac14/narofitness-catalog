@@ -103,6 +103,7 @@ async def test_keyword_proposal_does_not_auto_apply_to_rows(integration_db):
         tree = await build_canonical_category_tree(session)
         flat = flatten_canonical_nodes(tree)
         slug_by_id = {n.id: n.slug for n in flat}
+        assert row.detected_category_path_raw is not None
         proposal = propose_mapping(row.detected_category_path_raw, rules, tree, slug_by_id)
 
     assert proposal.proposal_source == "existing_rule"

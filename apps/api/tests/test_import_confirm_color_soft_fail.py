@@ -20,7 +20,7 @@ from app.models import (
     Supplier,
     SupplierPriceEntry,
 )
-from app.services.import_confirm import confirm_import
+from app.services.import_confirm import ConfirmImportResult, confirm_import
 from app.services.seed_categories import seed_default_categories
 from app.services.seed_spec_definitions import seed_spec_definitions
 from sqlalchemy import select
@@ -65,7 +65,7 @@ async def _confirm_single_row(
     variant_specs: dict,
     common_specs: dict | None = None,
     review_status: str = "confirmed",
-) -> tuple[ImportRow, object]:
+) -> tuple[ImportRow, ConfirmImportResult]:
     await seed_default_categories(session)
     await seed_spec_definitions(session)
     supplier = await _ensure_supplier(session)

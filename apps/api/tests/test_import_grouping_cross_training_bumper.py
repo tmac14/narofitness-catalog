@@ -196,6 +196,7 @@ async def test_cross_training_bumper_integration(integration_db):
     for row in rows:
         assert row.mapped_category_slug == "discos"
         assert row.mapped_category_id == discos.id
+        assert row.grouping_reason is not None
         assert row.grouping_reason.startswith("cross_training_bumper_family:")
         ok, _ = can_confirm_row(row)
         assert ok

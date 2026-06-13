@@ -106,7 +106,7 @@ async def run() -> dict:
             row.review_status = resolve_review_status(row)
 
     bucket_counts: Counter[str] = Counter()
-    reason_combo: Counter[str] = Counter()
+    reason_combo: Counter[tuple[str, ...]] = Counter()
     false_family_skus: list[str] = []
     family_matched_not_blocked: list[str] = []
     auto_skus: list[str] = []

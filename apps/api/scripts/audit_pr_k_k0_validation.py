@@ -11,7 +11,7 @@ from collections import Counter
 from decimal import Decimal
 from pathlib import Path
 from types import SimpleNamespace
-from typing import Any
+from typing import Any, cast
 
 from app.database import async_session
 from app.models import (
@@ -31,6 +31,7 @@ from app.services.pricing import format_spanish_eur
 from app.services.seed_catalog import ensure_fdl_profile_grouping_config
 from app.services.seed_paths import resolve_pdf_path
 from app.services.seed_pim import seed_pim
+from app.services.spec_resolver import SpecColumn
 from app.services.taxonomy_mapper import map_row_categories
 from sqlalchemy import select
 
@@ -427,7 +428,14 @@ def _catalog_smoke(families: list[dict[str, Any]]) -> dict[str, Any]:
         description=None,
         images=[],
     )
-    block = _build_product_block(master, variant_rows, columns, [], False, "")
+    block = _build_product_block(
+        cast(ProductMaster, master),
+        variant_rows,
+        cast(list[SpecColumn], columns),
+        [],
+        False,
+        "",
+    )
     column_keys = [c["key"] for c in block.get("variant_columns") or []]
     variants = block.get("variants") or []
     tier_a_passed = (

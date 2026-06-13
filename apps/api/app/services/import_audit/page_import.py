@@ -301,7 +301,11 @@ def _build_warnings(
         grouping = prev.get("grouping") or {}
         review = prev.get("review") or {}
         if grouping.get("grouping_reason") == "one_per_sku_fallback":
-            add("one_per_sku_fallback_blocked", sku, grouping.get("grouping_reason"))
+            add(
+                "one_per_sku_fallback_blocked",
+                sku,
+                str(grouping.get("grouping_reason") or ""),
+            )
         if "low_grouping_confidence" in (review.get("blocking_reasons") or []):
             add("low_grouping_confidence", sku, "below confidence threshold")
         if "regex_fallback_1_1" in (review.get("blocking_reasons") or []):

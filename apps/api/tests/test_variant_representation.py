@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from decimal import Decimal
-from types import SimpleNamespace
 from uuid import uuid4
 
 from app.services.spec_resolver import SYNTHETIC_PESO_KEY, SpecColumn, consolidate_weight_columns
@@ -16,6 +15,14 @@ from app.services.variant_representation import (
     compute_variant_label,
     summarize_master_brand,
     variant_brand_display,
+)
+from tests.model_test_factories import (
+    make_brand,
+    make_product_master,
+    make_product_variant,
+    make_spec_definition,
+    make_unit,
+    make_variant_spec,
 )
 
 
@@ -38,32 +45,19 @@ def _spec_row(
     unit_symbol: str | None = None,
     role: str = "variant_axis",
 ):
-    unit = SimpleNamespace(symbol=unit_symbol) if unit_symbol else None
-    definition = SimpleNamespace(
-        id=uuid4(),
-        key=key,
+    unit = make_unit(symbol=unit_symbol) if unit_symbol else None
+    definition = make_spec_definition(
+        key,
         label=key,
         data_type="number" if value_number is not None else "text",
         role=role,
         unit=unit,
-        is_active=True,
-        is_printable=True,
-        sort_order=0,
-        scope="variant",
     )
-    return SimpleNamespace(
-        spec_definition=definition,
-        spec_definition_id=definition.id,
+    return make_variant_spec(
+        definition,
         value_number=value_number,
         value_text=value_text,
-        value_boolean=None,
-        allowed_value_id=None,
-        allowed_value=None,
     )
-
-
-def _brand(name: str):
-    return SimpleNamespace(name=name)
 
 
 def _variant(
@@ -73,24 +67,22 @@ def _variant(
     reference_label: str | None = None,
     brand_name: str | None = None,
     specs: list | None = None,
+    master=None,
 ):
-    variant_id = uuid4()
-    brand = _brand(brand_name) if brand_name else None
-    return SimpleNamespace(
-        id=variant_id,
-        sku=sku,
-        display_name=display_name or sku,
+    brand = make_brand(brand_name) if brand_name else None
+    return make_product_variant(
+        sku,
+        master=master,
+        display_name=display_name,
         reference_label=reference_label,
         raw_name=display_name,
         brand=brand,
-        brand_id=uuid4() if brand_name else None,
         specs=specs or [],
-        product_master_id=uuid4(),
     )
 
 
 def _master(name: str):
-    return SimpleNamespace(id=uuid4(), name=name)
+    return make_product_master(name)
 
 
 def test_summarize_master_brand_uniform_nexo():
@@ -135,7 +127,7 @@ def test_compute_variant_label_barras_commercial_detail():
             _spec_row("color", value_text="Plata", role="catalog_spec"),
         ],
     )
-    spec_values = {"peso_kg": "20 kg", "color": "Plata"}
+    spec_values: dict[str, str | None] = {"peso_kg": "20 kg", "color": "Plata"}
     label = compute_variant_label(
         variant,
         master_name=master.name,

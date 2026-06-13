@@ -206,7 +206,9 @@ def detect_suspicious_variants(
                 {
                     "suspicion_id": sid,
                     "heuristic": "NumericSuffixSplit",
-                    "page_numbers": sorted({r.get("page_number") for r in group}),
+                    "page_numbers": sorted(
+                        page for page in (r.get("page_number") for r in group) if page is not None
+                    ),
                     "skus": [r.get("normalized_sku") for r in group],
                     "current_master_keys": [r.get("proposed_master_key") for r in group],
                     "expected_master_key": prefix,
@@ -248,7 +250,9 @@ def detect_suspicious_variants(
             {
                 "suspicion_id": sid,
                 "heuristic": "NameWeightLadder",
-                "page_numbers": sorted({r.get("page_number") for r in group}),
+                "page_numbers": sorted(
+                    page for page in (r.get("page_number") for r in group) if page is not None
+                ),
                 "skus": [r.get("normalized_sku") for r in group],
                 "current_master_keys": [r.get("proposed_master_key") for r in group],
                 "expected_master_key": None,
@@ -313,7 +317,9 @@ def build_groups_detected(audited_rows: list[dict[str, Any]]) -> list[dict[str, 
                 "proposed_master_key": master_key,
                 "member_count": len(members),
                 "skus": [m.get("normalized_sku") for m in members],
-                "pages": sorted({m.get("page_number") for m in members}),
+                "pages": sorted(
+                    page for page in (m.get("page_number") for m in members) if page is not None
+                ),
                 "grouping_reason": members[0].get("grouping_reason"),
                 "variant_axes": members[0].get("variant_axes") or [],
                 "all_confirmable": all(

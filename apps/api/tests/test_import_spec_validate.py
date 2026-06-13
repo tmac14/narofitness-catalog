@@ -62,6 +62,6 @@ def test_dobnexo_extracts_common_specs_from_name():
     )
     apply_grouping([row], FDL_CONFIG)
     assert row.parsed_variant_specs_raw.get("peso_kg") == 5
-    assert row.parsed_common_specs_raw.get("color") == "Negro"
+    assert row.parsed_variant_specs_raw.get("color") == "Negro"
     assert row.parsed_common_specs_raw.get("material") == "Goma maciza"
     assert row.parsed_common_specs_raw.get("casquillo") == "Acero"

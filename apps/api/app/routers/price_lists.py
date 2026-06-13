@@ -20,7 +20,7 @@ async def list_price_lists(db: AsyncSession = Depends(get_db)) -> list[PriceList
     result = await db.execute(
         select(SupplierPriceList).order_by(SupplierPriceList.imported_at.desc())
     )
-    return list(result.scalars().all())
+    return [PriceListOut.model_validate(row) for row in result.scalars().all()]
 
 
 def _filter_diff_items(
@@ -102,7 +102,8 @@ async def diff_lists(
         pb = b.get(sku)
         price_a = pa[2] if pa else None
         price_b = pb[2] if pb else None
-        name = (pa or pb)[0] if (pa or pb) else sku
+        label_row = pa or pb
+        name = label_row[0] if label_row is not None else sku
         delta_abs = delta_pct = None
         change_type = "both"
         if pa and not pb:

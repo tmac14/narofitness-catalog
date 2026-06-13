@@ -1,6 +1,7 @@
 """Unit tests for PIM spec model constraints."""
 
-from app.models.entities import SpecDefinition, Unit
+from app.models.entities import ProductMasterSpec, SpecDefinition, Unit
+from sqlalchemy import Table
 
 
 def test_spec_definition_unique_key():
@@ -17,13 +18,7 @@ def test_spec_definition_required_fields():
 
 
 def test_master_spec_unique_constraint():
-    {c.name for c in SpecDefinition.__table__.constraints}
-    # UniqueConstraint on key is represented; master spec uniqueness is on product_master_specs
-    from app.models.entities import ProductMasterSpec
-
-    uq = [
-        c.name
-        for c in ProductMasterSpec.__table__.constraints
-        if getattr(c, "name", None) == "uq_master_spec"
-    ]
+    table = ProductMasterSpec.__table__
+    assert isinstance(table, Table)
+    uq = [c.name for c in table.constraints if getattr(c, "name", None) == "uq_master_spec"]
     assert uq, "Expected uq_master_spec constraint on product_master_specs"
