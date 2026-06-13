@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "sku": "MPS005",
+      "name": "Mancuernas Pro Style 5 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "MPS010",
+      "name": "Mancuernas Pro Style 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_grouping": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS",
+    "min_grouping_confidence": 0.85,
+    "forbidden_grouping_reasons": ["explicit_one_per_sku", "one_per_sku_fallback"]
+  },
+  "expected_variant_specs": {
+    "MPS005": {"peso_kg": 5},
+    "MPS010": {"peso_kg": 10}
+  }
+}

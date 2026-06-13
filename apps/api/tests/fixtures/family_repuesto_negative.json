@@ -1,0 +1,14 @@
+{
+  "rows": [
+    {
+      "sku": "REPUESTO-806",
+      "name": "Repuesto tornillo disco",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_grouping": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REPUESTO-806",
+    "forbidden_grouping_reasons": ["numeric_suffix_family:DOP"]
+  }
+}

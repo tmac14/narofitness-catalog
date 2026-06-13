@@ -1,0 +1,34 @@
+{
+  "source_paths": [
+    "CARDIO > REMO",
+    "CARDIO > CINTA",
+    "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+    "MATERIAL DE ESTUDIO"
+  ],
+  "sample_rows": [
+    {
+      "sku": "REM002",
+      "normalized_name": "Air Rower 2,0 (NO smart conect)",
+      "category_path": "CARDIO > REMO",
+      "source_row_index": 8
+    },
+    {
+      "sku": "CIN001",
+      "normalized_name": "Cinta Curva sin Motor",
+      "category_path": "CARDIO > CINTA",
+      "source_row_index": 10
+    },
+    {
+      "sku": "CRO110",
+      "normalized_name": "Slam Ball - Negro",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "source_row_index": 101
+    },
+    {
+      "sku": "LIB001",
+      "normalized_name": "Manual de usuario",
+      "category_path": "MATERIAL DE ESTUDIO",
+      "source_row_index": 200
+    }
+  ]
+}

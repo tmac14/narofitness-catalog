@@ -1,0 +1,9 @@
+{% if p.layout_id == "family_variant_table" and catalog_shell != "supplier_table" %}
+{% include "_layouts/variant_row_wide.html" %}
+{% elif p.layout_id %}
+{% include "_layouts/" ~ p.layout_id ~ ".html" %}
+{% elif p.has_variants %}
+{% include "_layouts/variant_grid_50_50.html" %}
+{% else %}
+{% include "_layouts/single_standard.html" %}
+{% endif %}

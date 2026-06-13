@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "sku": "MK004",
+      "name": "Kettelbells Vinilo 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "MKCA004",
+      "name": "Kettelbells Competición Premium 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_subcategory_slug": "cross-training",
+  "expected_distinct_master_keys": ["MK", "MKCA"],
+  "expected_by_sku": {
+    "MK004": {
+      "grouping_reason": "numeric_suffix_family:MK",
+      "master_key": "MK"
+    },
+    "MKCA004": {
+      "grouping_reason": "numeric_suffix_family:MKCA",
+      "master_key": "MKCA"
+    }
+  }
+}

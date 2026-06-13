@@ -1,0 +1,11 @@
+{
+  "expected_roots": [
+    { "slug": "cardio", "level": 0 },
+    { "slug": "cross-training", "level": 0 },
+    { "slug": "material-de-estudio", "level": 0 }
+  ],
+  "expected_subcategories": [
+    { "slug": "remos", "level": 1, "parent_slug": "cardio" },
+    { "slug": "cintas-de-correr", "level": 1, "parent_slug": "cardio" }
+  ]
+}

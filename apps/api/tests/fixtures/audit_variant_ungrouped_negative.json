@@ -1,0 +1,54 @@
+{
+  "description": "MP weight ladder split into one-per-sku — suspicious NumericSuffixSplit",
+  "rows": [
+    {
+      "source_row_index": 10,
+      "page_number": 52,
+      "normalized_sku": "MP005",
+      "normalized_name": "Mancuerna Premium 5 kgs",
+      "proposed_master_key": "MP005",
+      "grouping_reason": "one_per_sku_fallback",
+      "grouping_strategy": "fdl_sku_family",
+      "inferred_attributes": {
+        "variant_specs": {},
+        "common_specs": {},
+        "variant_axes": ["peso_kg"]
+      },
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": "MANCUERNAS",
+        "section_brand": null
+      },
+      "review_reasons": ["regex_fallback_1_1", "low_grouping_confidence"],
+      "blocking_reasons": ["regex_fallback_1_1", "low_grouping_confidence"],
+      "final_decision": { "can_confirm": false, "review_status": "needs_review" }
+    },
+    {
+      "source_row_index": 11,
+      "page_number": 52,
+      "normalized_sku": "MP010",
+      "normalized_name": "Mancuerna Premium 10 kgs",
+      "proposed_master_key": "MP010",
+      "grouping_reason": "one_per_sku_fallback",
+      "grouping_strategy": "fdl_sku_family",
+      "inferred_attributes": {
+        "variant_specs": {},
+        "common_specs": {},
+        "variant_axes": ["peso_kg"]
+      },
+      "source_section": {
+        "category_main": "DISCOS Y BARRAS",
+        "category_sub": "MANCUERNAS",
+        "section_brand": null
+      },
+      "review_reasons": ["regex_fallback_1_1", "low_grouping_confidence"],
+      "blocking_reasons": ["regex_fallback_1_1", "low_grouping_confidence"],
+      "final_decision": { "can_confirm": false, "review_status": "needs_review" }
+    }
+  ],
+  "expected": {
+    "suspicious_heuristics": ["NumericSuffixSplit", "RegexFamilyMismatch"],
+    "failure_domain": "grouping_failure",
+    "possible_false_negatives_min": 1
+  }
+}

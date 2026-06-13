@@ -1,0 +1,7 @@
+IVA_KEY = "iva_disclaimer"
+DEFAULT_IVA = "Los precios indicados no incluyen el IVA"
+LOGO_KEY = "catalog_logo_path"
+TEMPLATE_KEY = "catalog_template"
+IVA_RATE_KEY = "iva_rate_percent"
+DEFAULT_IVA_RATE = "21"
+DEFAULT_TEMPLATE = "branded"

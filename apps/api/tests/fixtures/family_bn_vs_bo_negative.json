@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "sku": "BN120",
+      "name": "Barra 28Mm Cromada - 1,20 Mts",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "BO120",
+      "name": "Barra Olimpica Cromada Home - 1,20 Mts",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_subcategory_slug": "barras",
+  "expected_distinct_master_keys": ["BN", "BO"],
+  "expected_by_sku": {
+    "BN120": {
+      "grouping_reason": "numeric_suffix_family:BN",
+      "master_key": "BN"
+    },
+    "BO120": {
+      "grouping_reason": "numeric_suffix_family:BO",
+      "master_key": "BO"
+    }
+  }
+}

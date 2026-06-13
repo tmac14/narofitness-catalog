@@ -5,6 +5,10 @@ line-length = 100
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I", "UP", "B", "SIM"]
 
+[tool.ruff.lint.per-file-ignores]
+"apps/api/app/routers/**" = ["B008"]
+"apps/api/scripts/**" = ["E402"]
+
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"

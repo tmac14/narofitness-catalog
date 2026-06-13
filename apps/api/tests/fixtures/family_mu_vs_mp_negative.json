@@ -1,0 +1,19 @@
+{
+  "rows": [
+    {
+      "sku": "MU010",
+      "name": "Mancuerna Uretano 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "MP010",
+      "name": "Mancuerna Premium 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_grouping": {
+    "forbidden_grouping_reasons": ["explicit_one_per_sku"]
+  },
+  "expected_distinct_master_keys": ["MU", "MP"]
+}

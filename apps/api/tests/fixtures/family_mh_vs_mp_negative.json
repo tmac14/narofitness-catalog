@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "sku": "MH010",
+      "name": "Mancuerna Hexagonal 10 kgs",
+      "category_path": "MANCUERNAS"
+    },
+    {
+      "sku": "MP010",
+      "name": "Mancuerna Premium 10 kgs",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_distinct_master_keys": ["MH", "MP"],
+  "expected_by_sku": {
+    "MH010": {
+      "grouping_reason": "numeric_suffix_family:MH",
+      "master_key": "MH"
+    },
+    "MP010": {
+      "grouping_reason": "numeric_suffix_family:MP",
+      "master_key": "MP"
+    }
+  },
+  "phase": "C1"
+}

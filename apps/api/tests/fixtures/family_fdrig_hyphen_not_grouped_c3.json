@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "sku": "FDRig-3",
+      "name": "Jaula Rigida 3 Metros",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_by_sku": {
+    "FDRig-3": {
+      "forbidden_grouping_reasons": ["hyphen_suffix_family:"]
+    }
+  },
+  "note": "Configurator hyphen SKUs must not enter MPS-R hyphen tier"
+}

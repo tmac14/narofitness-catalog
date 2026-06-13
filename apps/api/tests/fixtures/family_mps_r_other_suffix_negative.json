@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "sku": "MPS010-X",
+      "name": "Pro Style 10 kgs (Test)",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_by_sku": {
+    "MPS010-X": {
+      "forbidden_grouping_reasons": ["hyphen_suffix_family:", "numeric_suffix_family:MPS"]
+    }
+  }
+}

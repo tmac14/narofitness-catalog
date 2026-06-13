@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "sku": "BOR120",
+      "name": "Barra Olimpica Cromada Alta Carga - 1,20 Mts",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "BOR220",
+      "name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_subcategory_slug": "barras",
+  "expected_grouping": {
+    "grouping_reason": "numeric_suffix_family:BOR",
+    "master_key": "BOR",
+    "min_grouping_confidence": 0.85
+  },
+  "expected_variant_specs": {
+    "BOR120": {"longitud_mm": 1200},
+    "BOR220": {"longitud_mm": 2200}
+  }
+}

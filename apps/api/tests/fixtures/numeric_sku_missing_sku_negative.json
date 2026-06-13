@@ -1,0 +1,14 @@
+{
+  "rows": [
+    {
+      "sku": null,
+      "name": "Product without SKU",
+      "category_path": "CARDIO > BICI"
+    }
+  ],
+  "expected_grouping": {
+    "grouping_reason": "missing_sku",
+    "forbidden_grouping_reasons": ["explicit_one_per_sku"],
+    "required_review_reasons": ["missing_sku", "low_grouping_confidence"]
+  }
+}

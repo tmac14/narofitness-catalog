@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "sku": "MU005",
+      "name": "Mancuerna Uretano 5 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "MU010",
+      "name": "Mancuerna Uretano 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_grouping": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU",
+    "min_grouping_confidence": 0.85,
+    "forbidden_grouping_reasons": ["explicit_one_per_sku", "one_per_sku_fallback"]
+  },
+  "expected_variant_specs": {
+    "MU005": {"peso_kg": 5},
+    "MU010": {"peso_kg": 10}
+  }
+}

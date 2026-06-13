@@ -1,0 +1,19 @@
+{
+  "rows": [
+    {
+      "sku": "MPS002-R",
+      "name": "Mancuerna Premium 2 kgs Rojo",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_grouping": {
+    "forbidden_grouping_reasons": ["numeric_suffix_family:MPS", "numeric_compound_suffix_family:"]
+  },
+  "expected_by_sku": {
+    "MPS002-R": {
+      "forbidden_grouping_reasons": ["numeric_suffix_family:MPS"]
+    }
+  },
+  "note": "MPS-R reserved for C3; hyphen SKU must not match numeric suffix tier"
+}

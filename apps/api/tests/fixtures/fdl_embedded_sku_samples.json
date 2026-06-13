@@ -1,0 +1,47 @@
+{
+  "positive_tokens": [
+    "FDRig-3",
+    "FDRig-4",
+    "FDTorre-4",
+    "FDTorre.WM-7",
+    "FDMonkey-6",
+    "FDMonkey.WM-3",
+    "FDRig.WM-6",
+    "RAMPA40-1",
+    "MPS002-R",
+    "MPS025-R",
+    "PK036",
+    "DOBMINI",
+    "DOBNEXO05N",
+    "REPUESTO-123"
+  ],
+  "negative_tokens": [
+    "6Uds",
+    "NEXO",
+    "FDL",
+    "5",
+    "kgs",
+    "2,70)",
+    "PLEGABLE",
+    "REFERENCIAS",
+    "Dominadas"
+  ],
+  "trailing_samples": [
+    {
+      "raw_line": "- PK022 x 2Ud (J-cups) FDRig-3",
+      "expected_sku": "FDRIG-3",
+      "expected_remainder_prefix": "- PK022 x 2Ud (J-cups)"
+    },
+    {
+      "raw_line": "Mancuernas Pro Style 5 kgs (Rojo) MPS005-R",
+      "expected_sku": "MPS005-R",
+      "expected_remainder_prefix": "Mancuernas Pro Style 5 kgs (Rojo)"
+    },
+    {
+      "raw_line": "Rampa 40 mm (1mts lineal) (Medidas 1mts x 40mm x 25 cms) RAMPA40-1",
+      "expected_sku": "RAMPA40-1",
+      "expected_remainder_prefix": "Rampa 40 mm"
+    }
+  ],
+  "target_pages": [24, 25, 26, 27, 30, 38]
+}

@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "sku": "BIC010",
+      "name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "category_path": "CARDIO > BICI"
+    },
+    {
+      "sku": "BIC011",
+      "name": "Bicicleta estática modelo X",
+      "category_path": "CARDIO > BICIS"
+    }
+  ],
+  "expected_subcategory_slug": "bicicletas-estaticas"
+}

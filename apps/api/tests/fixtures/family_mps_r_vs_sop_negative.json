@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "sku": "MPS010-R",
+      "name": "Mancuerna Pro Style 10 kgs (Rojo)",
+      "category_path": "MANCUERNAS"
+    },
+    {
+      "sku": "SOP007",
+      "name": "Soporte Mancuernas Para 6 Pares (Medidas 1,50 X 0,84 X 0,60 Mts)",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_distinct_master_keys": ["MPS-R", "SOP007"],
+  "expected_by_sku": {
+    "MPS010-R": {
+      "grouping_reason": "hyphen_suffix_family:MPS-R",
+      "master_key": "MPS-R",
+      "forbidden_grouping_reasons": ["numeric_suffix_family:"]
+    },
+    "SOP007": {
+      "forbidden_grouping_reasons": ["hyphen_suffix_family:", "numeric_suffix_family:"]
+    }
+  }
+}

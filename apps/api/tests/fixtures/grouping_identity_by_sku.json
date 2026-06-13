@@ -1,0 +1,3486 @@
+{
+  "AGA001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA001"
+  },
+  "AGA002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA002"
+  },
+  "AGA003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA003"
+  },
+  "AGA004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA004"
+  },
+  "AGA005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA005"
+  },
+  "AGA006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA006"
+  },
+  "AGA007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA007"
+  },
+  "AGA008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA008"
+  },
+  "AGA009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA009"
+  },
+  "AGA010": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA010"
+  },
+  "AGA011": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA011"
+  },
+  "AGA012": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA012"
+  },
+  "AGA013": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "AGA013"
+  },
+  "BBP140": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BBP140"
+  },
+  "BBP140B": {
+    "grouping_reason": "fdl_sku_family:BBPB",
+    "master_key": "BBPB"
+  },
+  "BIC002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BIC002"
+  },
+  "BIC006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BIC006"
+  },
+  "BIC007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BIC007"
+  },
+  "BIC008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BIC008"
+  },
+  "BIC009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BIC009"
+  },
+  "BIC010": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BIC010"
+  },
+  "BN085": {
+    "grouping_reason": "numeric_suffix_family:BN",
+    "master_key": "BN"
+  },
+  "BN120": {
+    "grouping_reason": "numeric_suffix_family:BN",
+    "master_key": "BN"
+  },
+  "BN120Z": {
+    "grouping_reason": "fdl_sku_family:BNZ",
+    "master_key": "BNZ"
+  },
+  "BN150": {
+    "grouping_reason": "numeric_suffix_family:BN",
+    "master_key": "BN"
+  },
+  "BN180": {
+    "grouping_reason": "numeric_suffix_family:BN",
+    "master_key": "BN"
+  },
+  "BN220": {
+    "grouping_reason": "numeric_suffix_family:BN",
+    "master_key": "BN"
+  },
+  "BO085": {
+    "grouping_reason": "numeric_suffix_family:BO",
+    "master_key": "BO"
+  },
+  "BO120": {
+    "grouping_reason": "numeric_suffix_family:BO",
+    "master_key": "BO"
+  },
+  "BO120Z": {
+    "grouping_reason": "fdl_sku_family:BOZ",
+    "master_key": "BOZ"
+  },
+  "BO150": {
+    "grouping_reason": "numeric_suffix_family:BO",
+    "master_key": "BO"
+  },
+  "BO180": {
+    "grouping_reason": "numeric_suffix_family:BO",
+    "master_key": "BO"
+  },
+  "BO220": {
+    "grouping_reason": "numeric_suffix_family:BO",
+    "master_key": "BO"
+  },
+  "BOC001": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC001NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC002": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC002NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC003": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC003NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC004": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC004NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC005": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC005NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC006": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC006NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC007": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC007NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC008": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT",
+    "master_key": "BOC-BARRAS-CROSSFIT"
+  },
+  "BOC008NEXO": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC009": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC010": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOC011": {
+    "grouping_reason": "cross_training_block_family:BOC-BARRAS-CROSSFIT-NEXO",
+    "master_key": "BOC-BARRAS-CROSSFIT-NEXO"
+  },
+  "BOD001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOD001"
+  },
+  "BOD002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOD002"
+  },
+  "BOD003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOD003"
+  },
+  "BOH000": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOH000"
+  },
+  "BOH140": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOH140"
+  },
+  "BOH160": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOH160"
+  },
+  "BOH200": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOH200"
+  },
+  "BOH200NEXO": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOH200NEXO"
+  },
+  "BOR120": {
+    "grouping_reason": "numeric_suffix_family:BOR",
+    "master_key": "BOR"
+  },
+  "BOR120Z": {
+    "grouping_reason": "fdl_sku_family:BORZ",
+    "master_key": "BORZ"
+  },
+  "BOR150": {
+    "grouping_reason": "numeric_suffix_family:BOR",
+    "master_key": "BOR"
+  },
+  "BOR180": {
+    "grouping_reason": "numeric_suffix_family:BOR",
+    "master_key": "BOR"
+  },
+  "BOR220": {
+    "grouping_reason": "numeric_suffix_family:BOR",
+    "master_key": "BOR"
+  },
+  "BOR220A": {
+    "grouping_reason": "fdl_sku_family:BORA",
+    "master_key": "BORA"
+  },
+  "BOX001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOX001"
+  },
+  "BOX002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOX002"
+  },
+  "BOX003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOX003"
+  },
+  "BOX004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOX004"
+  },
+  "BOX005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BOX005"
+  },
+  "BTN001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BTN001"
+  },
+  "BTN002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BTN002"
+  },
+  "BTO001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BTO001"
+  },
+  "BTO003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BTO003"
+  },
+  "BTO004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "BTO004"
+  },
+  "CIN001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CIN001"
+  },
+  "CIN002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CIN002"
+  },
+  "CIN003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CIN003"
+  },
+  "CIN004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CIN004"
+  },
+  "CIN005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CIN005"
+  },
+  "COL001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL001"
+  },
+  "COL002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL002"
+  },
+  "COL004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL004"
+  },
+  "COL005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL005"
+  },
+  "COL007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL007"
+  },
+  "COL008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL008"
+  },
+  "COL009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL009"
+  },
+  "COL013": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL013"
+  },
+  "COL015": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL015"
+  },
+  "COL016": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL016"
+  },
+  "COL017": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL017"
+  },
+  "COL018": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL018"
+  },
+  "COL019": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "COL019"
+  },
+  "CORNER40": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "CORNER40"
+  },
+  "CRO001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO001"
+  },
+  "CRO002": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+    "master_key": "CRO-WALL-COLOR"
+  },
+  "CRO003": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+    "master_key": "CRO-WALL-COLOR"
+  },
+  "CRO004": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+    "master_key": "CRO-WALL-COLOR"
+  },
+  "CRO005": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+    "master_key": "CRO-WALL-COLOR"
+  },
+  "CRO006": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+    "master_key": "CRO-WALL-COLOR"
+  },
+  "CRO007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO007"
+  },
+  "CRO008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO008"
+  },
+  "CRO013": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO013"
+  },
+  "CRO014": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO014"
+  },
+  "CRO015": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO015"
+  },
+  "CRO016": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO016"
+  },
+  "CRO017": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO017"
+  },
+  "CRO018": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO018"
+  },
+  "CRO019": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO019"
+  },
+  "CRO020": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO020"
+  },
+  "CRO021": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO021"
+  },
+  "CRO022": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO022"
+  },
+  "CRO023": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-COLOR",
+    "master_key": "CRO-WALL-COLOR"
+  },
+  "CRO024": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO024"
+  },
+  "CRO025": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO025"
+  },
+  "CRO027": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO027"
+  },
+  "CRO028": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO028"
+  },
+  "CRO029": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO029"
+  },
+  "CRO030": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO030"
+  },
+  "CRO031": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO031"
+  },
+  "CRO042": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO042"
+  },
+  "CRO050": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO050"
+  },
+  "CRO051": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO051"
+  },
+  "CRO052": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO052"
+  },
+  "CRO054": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO054"
+  },
+  "CRO055": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO055"
+  },
+  "CRO056": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO056"
+  },
+  "CRO057": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO057"
+  },
+  "CRO058": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO058"
+  },
+  "CRO059": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO059"
+  },
+  "CRO060": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO060"
+  },
+  "CRO061": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO061"
+  },
+  "CRO062": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO062"
+  },
+  "CRO063": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO063"
+  },
+  "CRO069": {
+    "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+    "master_key": "CRO-POWER-BAGS-COLOR"
+  },
+  "CRO070": {
+    "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+    "master_key": "CRO-POWER-BAGS-COLOR"
+  },
+  "CRO071": {
+    "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+    "master_key": "CRO-POWER-BAGS-COLOR"
+  },
+  "CRO072": {
+    "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+    "master_key": "CRO-POWER-BAGS-COLOR"
+  },
+  "CRO073": {
+    "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+    "master_key": "CRO-POWER-BAGS-COLOR"
+  },
+  "CRO074": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+    "master_key": "CRO-SACO-BULGARO"
+  },
+  "CRO075": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+    "master_key": "CRO-SACO-BULGARO"
+  },
+  "CRO076": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+    "master_key": "CRO-SACO-BULGARO"
+  },
+  "CRO077": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-BULGARO",
+    "master_key": "CRO-SACO-BULGARO"
+  },
+  "CRO080": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO080"
+  },
+  "CRO081": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO081"
+  },
+  "CRO083": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+    "master_key": "CRO-WALL-LBS"
+  },
+  "CRO084": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+    "master_key": "CRO-WALL-LBS"
+  },
+  "CRO085": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+    "master_key": "CRO-WALL-LBS"
+  },
+  "CRO086": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-LBS",
+    "master_key": "CRO-WALL-LBS"
+  },
+  "CRO088": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO088"
+  },
+  "CRO089": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO089"
+  },
+  "CRO090": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO090"
+  },
+  "CRO094": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO094"
+  },
+  "CRO095": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+    "master_key": "CRO-WALL-FDL"
+  },
+  "CRO096": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+    "master_key": "CRO-WALL-FDL"
+  },
+  "CRO097": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+    "master_key": "CRO-WALL-FDL"
+  },
+  "CRO098": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+    "master_key": "CRO-WALL-FDL"
+  },
+  "CRO099": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+    "master_key": "CRO-WALL-FDL"
+  },
+  "CRO100": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+    "master_key": "CRO-WALL-FDL"
+  },
+  "CRO101": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO101"
+  },
+  "CRO102": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO102"
+  },
+  "CRO103": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO103"
+  },
+  "CRO104": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO104"
+  },
+  "CRO105": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO105"
+  },
+  "CRO106": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO106"
+  },
+  "CRO106NEXO": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO106NEXO"
+  },
+  "CRO107": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+    "master_key": "CRO-SACO-GUSANO"
+  },
+  "CRO107NEXO": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+    "master_key": "CRO-SACO-GUSANO"
+  },
+  "CRO108": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+    "master_key": "CRO-SACO-GUSANO"
+  },
+  "CRO108NEXO": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+    "master_key": "CRO-SACO-GUSANO"
+  },
+  "CRO109": {
+    "grouping_reason": "cross_training_block_family:CRO-BARRAS-CROSSFIT-NEXO",
+    "master_key": "CRO-BARRAS-CROSSFIT-NEXO"
+  },
+  "CRO110": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO111": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO112": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO113": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO114": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO115": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO115"
+  },
+  "CRO116": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO117": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO118": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO119": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO120": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO122": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO123": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO124": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO125": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO126": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO126"
+  },
+  "CRO127": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-FDL",
+    "master_key": "CRO-WALL-FDL"
+  },
+  "CRO128": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO128"
+  },
+  "CRO131": {
+    "grouping_reason": "cross_training_block_family:CRO-SACO-GUSANO",
+    "master_key": "CRO-SACO-GUSANO"
+  },
+  "CRO132": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO132"
+  },
+  "CRO133": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "CRO133"
+  },
+  "CRO134": {
+    "grouping_reason": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "master_key": "CRO-SLAM-NEGRO"
+  },
+  "CRO136": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+    "master_key": "CRO-WALL-NEXO"
+  },
+  "CRO137": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+    "master_key": "CRO-WALL-NEXO"
+  },
+  "CRO138": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+    "master_key": "CRO-WALL-NEXO"
+  },
+  "CRO139": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+    "master_key": "CRO-WALL-NEXO"
+  },
+  "CRO140": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+    "master_key": "CRO-WALL-NEXO"
+  },
+  "CRO141": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+    "master_key": "CRO-WALL-NEXO"
+  },
+  "CRO142": {
+    "grouping_reason": "cross_training_block_family:CRO-WALL-NEXO",
+    "master_key": "CRO-WALL-NEXO"
+  },
+  "CRO143": {
+    "grouping_reason": "cross_training_block_family:CRO-POWER-BAGS-COLOR",
+    "master_key": "CRO-POWER-BAGS-COLOR"
+  },
+  "DBP001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "DBP001"
+  },
+  "DBP001B": {
+    "grouping_reason": "fdl_sku_family:DBPB",
+    "master_key": "DBPB"
+  },
+  "DBP002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "DBP002"
+  },
+  "DBP002B": {
+    "grouping_reason": "fdl_sku_family:DBPB",
+    "master_key": "DBPB"
+  },
+  "DBP005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "DBP005"
+  },
+  "DBP005B": {
+    "grouping_reason": "fdl_sku_family:DBPB",
+    "master_key": "DBPB"
+  },
+  "DNG001": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG"
+  },
+  "DNG002": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG"
+  },
+  "DNG005": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG"
+  },
+  "DNG010": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG"
+  },
+  "DNG015": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG"
+  },
+  "DNG020": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG"
+  },
+  "DNG025": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG"
+  },
+  "DOB005": {
+    "grouping_reason": "cross_training_bumper_family:DOB",
+    "master_key": "DOB"
+  },
+  "DOB010": {
+    "grouping_reason": "cross_training_bumper_family:DOB",
+    "master_key": "DOB"
+  },
+  "DOB015": {
+    "grouping_reason": "cross_training_bumper_family:DOB",
+    "master_key": "DOB"
+  },
+  "DOB020": {
+    "grouping_reason": "cross_training_bumper_family:DOB",
+    "master_key": "DOB"
+  },
+  "DOB025": {
+    "grouping_reason": "cross_training_bumper_family:DOB",
+    "master_key": "DOB"
+  },
+  "DOB3C005": {
+    "grouping_reason": "cross_training_bumper_family:DOB3C",
+    "master_key": "DOB3C"
+  },
+  "DOB3C010": {
+    "grouping_reason": "cross_training_bumper_family:DOB3C",
+    "master_key": "DOB3C"
+  },
+  "DOB3C015": {
+    "grouping_reason": "cross_training_bumper_family:DOB3C",
+    "master_key": "DOB3C"
+  },
+  "DOB3C020": {
+    "grouping_reason": "cross_training_bumper_family:DOB3C",
+    "master_key": "DOB3C"
+  },
+  "DOB3C025": {
+    "grouping_reason": "cross_training_bumper_family:DOB3C",
+    "master_key": "DOB3C"
+  },
+  "DOBC005": {
+    "grouping_reason": "cross_training_bumper_family:DOBC",
+    "master_key": "DOBC"
+  },
+  "DOBC010": {
+    "grouping_reason": "cross_training_bumper_family:DOBC",
+    "master_key": "DOBC"
+  },
+  "DOBC015": {
+    "grouping_reason": "cross_training_bumper_family:DOBC",
+    "master_key": "DOBC"
+  },
+  "DOBC020": {
+    "grouping_reason": "cross_training_bumper_family:DOBC",
+    "master_key": "DOBC"
+  },
+  "DOBC025": {
+    "grouping_reason": "cross_training_bumper_family:DOBC",
+    "master_key": "DOBC"
+  },
+  "DOBCC005": {
+    "grouping_reason": "cross_training_bumper_family:DOBCC",
+    "master_key": "DOBCC"
+  },
+  "DOBCC010": {
+    "grouping_reason": "cross_training_bumper_family:DOBCC",
+    "master_key": "DOBCC"
+  },
+  "DOBCC015": {
+    "grouping_reason": "cross_training_bumper_family:DOBCC",
+    "master_key": "DOBCC"
+  },
+  "DOBCC020": {
+    "grouping_reason": "cross_training_bumper_family:DOBCC",
+    "master_key": "DOBCC"
+  },
+  "DOBCC025": {
+    "grouping_reason": "cross_training_bumper_family:DOBCC",
+    "master_key": "DOBCC"
+  },
+  "DOBF005": {
+    "grouping_reason": "cross_training_bumper_family:DOBF",
+    "master_key": "DOBF"
+  },
+  "DOBF010": {
+    "grouping_reason": "cross_training_bumper_family:DOBF",
+    "master_key": "DOBF"
+  },
+  "DOBF015": {
+    "grouping_reason": "cross_training_bumper_family:DOBF",
+    "master_key": "DOBF"
+  },
+  "DOBF020": {
+    "grouping_reason": "cross_training_bumper_family:DOBF",
+    "master_key": "DOBF"
+  },
+  "DOBF025": {
+    "grouping_reason": "cross_training_bumper_family:DOBF",
+    "master_key": "DOBF"
+  },
+  "DOBF050": {
+    "grouping_reason": "cross_training_bumper_family:DOBF",
+    "master_key": "DOBF"
+  },
+  "DOBHT005": {
+    "grouping_reason": "cross_training_bumper_family:DOBHT",
+    "master_key": "DOBHT"
+  },
+  "DOBHT010": {
+    "grouping_reason": "cross_training_bumper_family:DOBHT",
+    "master_key": "DOBHT"
+  },
+  "DOBHT015": {
+    "grouping_reason": "cross_training_bumper_family:DOBHT",
+    "master_key": "DOBHT"
+  },
+  "DOBHT020": {
+    "grouping_reason": "cross_training_bumper_family:DOBHT",
+    "master_key": "DOBHT"
+  },
+  "DOBHT025": {
+    "grouping_reason": "cross_training_bumper_family:DOBHT",
+    "master_key": "DOBHT"
+  },
+  "DOBMINI": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "DOBMINI"
+  },
+  "DOBN005": {
+    "grouping_reason": "cross_training_bumper_family:DOBN",
+    "master_key": "DOBN"
+  },
+  "DOBN010": {
+    "grouping_reason": "cross_training_bumper_family:DOBN",
+    "master_key": "DOBN"
+  },
+  "DOBN015": {
+    "grouping_reason": "cross_training_bumper_family:DOBN",
+    "master_key": "DOBN"
+  },
+  "DOBN020": {
+    "grouping_reason": "cross_training_bumper_family:DOBN",
+    "master_key": "DOBN"
+  },
+  "DOBN025": {
+    "grouping_reason": "cross_training_bumper_family:DOBN",
+    "master_key": "DOBN"
+  },
+  "DOBNEXO05C": {
+    "grouping_reason": "fdl_sku_family:DOBNEXOC",
+    "master_key": "DOBNEXOC"
+  },
+  "DOBNEXO05N": {
+    "grouping_reason": "fdl_sku_family:DOBNEXON",
+    "master_key": "DOBNEXON"
+  },
+  "DOBNEXO10C": {
+    "grouping_reason": "fdl_sku_family:DOBNEXOC",
+    "master_key": "DOBNEXOC"
+  },
+  "DOBNEXO10N": {
+    "grouping_reason": "fdl_sku_family:DOBNEXON",
+    "master_key": "DOBNEXON"
+  },
+  "DOBNEXO15C": {
+    "grouping_reason": "fdl_sku_family:DOBNEXOC",
+    "master_key": "DOBNEXOC"
+  },
+  "DOBNEXO15N": {
+    "grouping_reason": "fdl_sku_family:DOBNEXON",
+    "master_key": "DOBNEXON"
+  },
+  "DOBNEXO20C": {
+    "grouping_reason": "fdl_sku_family:DOBNEXOC",
+    "master_key": "DOBNEXOC"
+  },
+  "DOBNEXO20N": {
+    "grouping_reason": "fdl_sku_family:DOBNEXON",
+    "master_key": "DOBNEXON"
+  },
+  "DOBNEXO25C": {
+    "grouping_reason": "fdl_sku_family:DOBNEXOC",
+    "master_key": "DOBNEXOC"
+  },
+  "DOBNEXO25N": {
+    "grouping_reason": "fdl_sku_family:DOBNEXON",
+    "master_key": "DOBNEXON"
+  },
+  "DOP001": {
+    "grouping_reason": "numeric_suffix_family:DOP",
+    "master_key": "DOP"
+  },
+  "DOP002": {
+    "grouping_reason": "numeric_suffix_family:DOP",
+    "master_key": "DOP"
+  },
+  "DOP005": {
+    "grouping_reason": "numeric_suffix_family:DOP",
+    "master_key": "DOP"
+  },
+  "DOP010": {
+    "grouping_reason": "numeric_suffix_family:DOP",
+    "master_key": "DOP"
+  },
+  "DOP015": {
+    "grouping_reason": "numeric_suffix_family:DOP",
+    "master_key": "DOP"
+  },
+  "DOP020": {
+    "grouping_reason": "numeric_suffix_family:DOP",
+    "master_key": "DOP"
+  },
+  "DOP025": {
+    "grouping_reason": "numeric_suffix_family:DOP",
+    "master_key": "DOP"
+  },
+  "DOP4A001": {
+    "grouping_reason": "numeric_suffix_family:DOP4A",
+    "master_key": "DOP4A"
+  },
+  "DOP4A002": {
+    "grouping_reason": "numeric_suffix_family:DOP4A",
+    "master_key": "DOP4A"
+  },
+  "DOP4A005": {
+    "grouping_reason": "numeric_suffix_family:DOP4A",
+    "master_key": "DOP4A"
+  },
+  "DOP4A010": {
+    "grouping_reason": "numeric_suffix_family:DOP4A",
+    "master_key": "DOP4A"
+  },
+  "DOP4A015": {
+    "grouping_reason": "numeric_suffix_family:DOP4A",
+    "master_key": "DOP4A"
+  },
+  "DOP4A020": {
+    "grouping_reason": "numeric_suffix_family:DOP4A",
+    "master_key": "DOP4A"
+  },
+  "DOP4A025": {
+    "grouping_reason": "numeric_suffix_family:DOP4A",
+    "master_key": "DOP4A"
+  },
+  "DOPH001": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH"
+  },
+  "DOPH002": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH"
+  },
+  "DOPH005": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH"
+  },
+  "DOPH010": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH"
+  },
+  "DOPH015": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH"
+  },
+  "DOPH020": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH"
+  },
+  "DOPH025": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH"
+  },
+  "ELA001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA001"
+  },
+  "ELA002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA002"
+  },
+  "ELA003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA003"
+  },
+  "ELA004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA004"
+  },
+  "ELA005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA005"
+  },
+  "ELA006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA006"
+  },
+  "ELA007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA007"
+  },
+  "ELA008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA008"
+  },
+  "ELA009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA009"
+  },
+  "ELA010": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA010"
+  },
+  "ELA011": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA011"
+  },
+  "ELA015": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA015"
+  },
+  "ELA016": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA016"
+  },
+  "ELA017": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA017"
+  },
+  "ELA018": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA018"
+  },
+  "ELA019": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA019"
+  },
+  "ELA020": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA020"
+  },
+  "ELA021": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA021"
+  },
+  "ELA022": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA022"
+  },
+  "ELA023": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA023"
+  },
+  "ELA024": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA024"
+  },
+  "ELA025": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA025"
+  },
+  "ELA026": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA026"
+  },
+  "ELA027": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA027"
+  },
+  "ELA028": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA028"
+  },
+  "ELA029": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA029"
+  },
+  "ELA030": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA030"
+  },
+  "ELA032": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA032"
+  },
+  "ELA033": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA033"
+  },
+  "ELA034": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA034"
+  },
+  "ELA036": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA036"
+  },
+  "ELA039": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA039"
+  },
+  "ELA040": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA040"
+  },
+  "ELA044": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA044"
+  },
+  "ELA045": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA045"
+  },
+  "ELA046": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA046"
+  },
+  "ELA047": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA047"
+  },
+  "ELA048": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA048"
+  },
+  "ELA049": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA049"
+  },
+  "ELA051": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA051"
+  },
+  "ELA053": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA053"
+  },
+  "ELA054": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA054"
+  },
+  "ELA055": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA055"
+  },
+  "ELA056": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA056"
+  },
+  "ELA057": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA057"
+  },
+  "ELA058": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA058"
+  },
+  "ELA059": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA059"
+  },
+  "ELA060": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA060"
+  },
+  "ELA061": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA061"
+  },
+  "ELA062": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA062"
+  },
+  "ELA063": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ELA063"
+  },
+  "ESC003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "ESC003"
+  },
+  "FDMONKEY-3": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY-3"
+  },
+  "FDMONKEY-4": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY-4"
+  },
+  "FDMONKEY-6": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY-6"
+  },
+  "FDMONKEY-7": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY-7"
+  },
+  "FDMONKEY.WM-3": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY.WM-3"
+  },
+  "FDMONKEY.WM-4": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY.WM-4"
+  },
+  "FDMONKEY.WM-6": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY.WM-6"
+  },
+  "FDMONKEY.WM-7": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDMONKEY.WM-7"
+  },
+  "FDRIG-3": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG-3"
+  },
+  "FDRIG-4": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG-4"
+  },
+  "FDRIG-6": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG-6"
+  },
+  "FDRIG-7": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG-7"
+  },
+  "FDRIG.WM-3": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG.WM-3"
+  },
+  "FDRIG.WM-4": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG.WM-4"
+  },
+  "FDRIG.WM-6": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG.WM-6"
+  },
+  "FDRIG.WM-7": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDRIG.WM-7"
+  },
+  "FDTORRE-4": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDTORRE-4"
+  },
+  "FDTORRE-6": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDTORRE-6"
+  },
+  "FDTORRE-7": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDTORRE-7"
+  },
+  "FDTORRE.WM-4": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDTORRE.WM-4"
+  },
+  "FDTORRE.WM-6": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDTORRE.WM-6"
+  },
+  "FDTORRE.WM-7": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "FDTORRE.WM-7"
+  },
+  "JBP28": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "JBP28"
+  },
+  "JBP30": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "JBP30"
+  },
+  "JBPL28": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "JBPL28"
+  },
+  "JBPL30": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "JBPL30"
+  },
+  "JMH01010": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMH01020": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMH01025": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMH01030": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMH01035": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMH01040": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMH01045": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMH01050": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010"
+  },
+  "JMP01020": {
+    "grouping_reason": "numeric_compound_suffix_family:JMP",
+    "master_key": "JMP010"
+  },
+  "JMP01025": {
+    "grouping_reason": "numeric_compound_suffix_family:JMP",
+    "master_key": "JMP010"
+  },
+  "JMP01030": {
+    "grouping_reason": "numeric_compound_suffix_family:JMP",
+    "master_key": "JMP010"
+  },
+  "JMP01035": {
+    "grouping_reason": "numeric_compound_suffix_family:JMP",
+    "master_key": "JMP010"
+  },
+  "JMP01040": {
+    "grouping_reason": "numeric_compound_suffix_family:JMP",
+    "master_key": "JMP010"
+  },
+  "JMP01045": {
+    "grouping_reason": "numeric_compound_suffix_family:JMP",
+    "master_key": "JMP010"
+  },
+  "JMP01050": {
+    "grouping_reason": "numeric_compound_suffix_family:JMP",
+    "master_key": "JMP010"
+  },
+  "JMU01020": {
+    "grouping_reason": "numeric_compound_suffix_family:JMU",
+    "master_key": "JMU010"
+  },
+  "JMU01025": {
+    "grouping_reason": "numeric_compound_suffix_family:JMU",
+    "master_key": "JMU010"
+  },
+  "JMU01030": {
+    "grouping_reason": "numeric_compound_suffix_family:JMU",
+    "master_key": "JMU010"
+  },
+  "JMU01035": {
+    "grouping_reason": "numeric_compound_suffix_family:JMU",
+    "master_key": "JMU010"
+  },
+  "JMU01040": {
+    "grouping_reason": "numeric_compound_suffix_family:JMU",
+    "master_key": "JMU010"
+  },
+  "JMU01045": {
+    "grouping_reason": "numeric_compound_suffix_family:JMU",
+    "master_key": "JMU010"
+  },
+  "JMU01050": {
+    "grouping_reason": "numeric_compound_suffix_family:JMU",
+    "master_key": "JMU010"
+  },
+  "MBPR010": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR012": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR015": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR017": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR020": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR025": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR030": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR035": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR040": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPR045": {
+    "grouping_reason": "numeric_suffix_family:MBPR",
+    "master_key": "MBPR"
+  },
+  "MBPZ010": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ012": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ015": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ017": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ020": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ025": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ030": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ035": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ040": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MBPZ045": {
+    "grouping_reason": "numeric_suffix_family:MBPZ",
+    "master_key": "MBPZ"
+  },
+  "MH001": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH002": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH002A": {
+    "grouping_reason": "fdl_sku_family:MHA",
+    "master_key": "MHA"
+  },
+  "MH003": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH004": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH005": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH006": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH007": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH007A": {
+    "grouping_reason": "fdl_sku_family:MHA",
+    "master_key": "MHA"
+  },
+  "MH008": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH009": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH010": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH012": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH015": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH017": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH020": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH022": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH025": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH027": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH030": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH032": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH035": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH037": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH040": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH042": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH045": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH047": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH050": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH052": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH055": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH057": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MH060": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH"
+  },
+  "MK002": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK004": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK006": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK008": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK010": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK012": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK016": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK020": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK024": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK028": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MK032": {
+    "grouping_reason": "numeric_suffix_family:MK",
+    "master_key": "MK"
+  },
+  "MKA004": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA006": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA008": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA010": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA012": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA016": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA020": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA024": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA028": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKA032": {
+    "grouping_reason": "numeric_suffix_family:MKA",
+    "master_key": "MKA"
+  },
+  "MKCA004": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA006": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA008": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA010": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA012": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA014": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA016": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA020": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA024": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA028": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA032": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA036": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA040": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCA044": {
+    "grouping_reason": "numeric_suffix_family:MKCA",
+    "master_key": "MKCA"
+  },
+  "MKCL004": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL006": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL008": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL010": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL012": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL014": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL016": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL020": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL024": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL028": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL032": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL036": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL040": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKCL044": {
+    "grouping_reason": "numeric_suffix_family:MKCL",
+    "master_key": "MKCL"
+  },
+  "MKI004": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKI008": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKI012": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKI016": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKI020": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKI024": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKI028": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKI032": {
+    "grouping_reason": "numeric_suffix_family:MKI",
+    "master_key": "MKI"
+  },
+  "MKN002": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN004": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN006": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN008": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN010": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN012": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN016": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN020": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN024": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MKN028": {
+    "grouping_reason": "numeric_suffix_family:MKN",
+    "master_key": "MKN"
+  },
+  "MP002": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP005": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP007": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP010": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP012": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP015": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP017": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP020": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP022": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP025": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP027": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP030": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP032": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP035": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP037": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP040": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP042": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP045": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP047": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MP050": {
+    "grouping_reason": "numeric_suffix_family:MP",
+    "master_key": "MP"
+  },
+  "MPS002": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS002-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS005": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS005-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS007": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS007-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS010": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS010-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS012": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS012-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS015": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS015-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS017": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS017-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS020": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS020-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS022": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS022-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS025": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS025-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS027": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS027-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS030": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS030-R": {
+    "grouping_reason": "hyphen_suffix_family:MPS-R",
+    "master_key": "MPS-R"
+  },
+  "MPS032": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS035": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS037": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS040": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS042": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS045": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS047": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MPS050": {
+    "grouping_reason": "numeric_suffix_family:MPS",
+    "master_key": "MPS"
+  },
+  "MTX001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MTX001"
+  },
+  "MTX002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MTX002"
+  },
+  "MTX003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MTX003"
+  },
+  "MTX004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MTX004"
+  },
+  "MTX005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MTX005"
+  },
+  "MTX006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MTX006"
+  },
+  "MTX007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MTX007"
+  },
+  "MU002": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU005": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU007": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU010": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU012": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU015": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU017": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU020": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU022": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU025": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU027": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU030": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU032": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU035": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU037": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU040": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU042": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU045": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU047": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MU050": {
+    "grouping_reason": "numeric_suffix_family:MU",
+    "master_key": "MU"
+  },
+  "MVC000": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC000"
+  },
+  "MVC001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC001"
+  },
+  "MVC002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC002"
+  },
+  "MVC003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC003"
+  },
+  "MVC004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC004"
+  },
+  "MVC005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC005"
+  },
+  "MVC006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC006"
+  },
+  "MVC007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC007"
+  },
+  "MVC008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC008"
+  },
+  "MVC009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC009"
+  },
+  "MVC010": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC010"
+  },
+  "MVC015": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "MVC015"
+  },
+  "PK001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK001"
+  },
+  "PK002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK002"
+  },
+  "PK003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK003"
+  },
+  "PK004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK004"
+  },
+  "PK005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK005"
+  },
+  "PK006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK006"
+  },
+  "PK007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK007"
+  },
+  "PK008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK008"
+  },
+  "PK009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK009"
+  },
+  "PK010": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK010"
+  },
+  "PK011": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK011"
+  },
+  "PK012": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK012"
+  },
+  "PK013": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK013"
+  },
+  "PK015": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK015"
+  },
+  "PK018": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK018"
+  },
+  "PK019": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK019"
+  },
+  "PK022": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK022"
+  },
+  "PK026": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK026"
+  },
+  "PK027": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK027"
+  },
+  "PK028": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK028"
+  },
+  "PK030": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK030"
+  },
+  "PK032": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK032"
+  },
+  "PK033": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK033"
+  },
+  "PK036": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "PK036"
+  },
+  "RAMPA40-1": {
+    "grouping_reason": "one_per_sku_fallback",
+    "master_key": "RAMPA40-1"
+  },
+  "REB005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB005"
+  },
+  "REB031": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB031"
+  },
+  "REB032": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB032"
+  },
+  "REB033": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB033"
+  },
+  "REB042": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB042"
+  },
+  "REB043": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB043"
+  },
+  "REB044": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB044"
+  },
+  "REB045": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB045"
+  },
+  "REB046": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB046"
+  },
+  "REB050": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB050"
+  },
+  "REB053": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB053"
+  },
+  "REB054": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB054"
+  },
+  "REB149": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB149"
+  },
+  "REB150": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB150"
+  },
+  "REB151": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB151"
+  },
+  "REB152": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB152"
+  },
+  "REB153": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB153"
+  },
+  "REB154": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB154"
+  },
+  "REB155": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB155"
+  },
+  "REB156": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB156"
+  },
+  "REB157": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB157"
+  },
+  "REB161": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB161"
+  },
+  "REB162": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB162"
+  },
+  "REB163": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB163"
+  },
+  "REB164": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB164"
+  },
+  "REB165": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB165"
+  },
+  "REB169": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB169"
+  },
+  "REB172": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB172"
+  },
+  "REB182": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB182"
+  },
+  "REB187": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB187"
+  },
+  "REB189": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB189"
+  },
+  "REB190": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB190"
+  },
+  "REB191": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB191"
+  },
+  "REB192": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB192"
+  },
+  "REB194": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB194"
+  },
+  "REB195": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB195"
+  },
+  "REB196": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB196"
+  },
+  "REB199": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB199"
+  },
+  "REB201": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB201"
+  },
+  "REB202": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB202"
+  },
+  "REB203": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB203"
+  },
+  "REB204": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB204"
+  },
+  "REB205": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB205"
+  },
+  "REB207": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB207"
+  },
+  "REB208": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB208"
+  },
+  "REB209": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB209"
+  },
+  "REB210": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB210"
+  },
+  "REB211": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB211"
+  },
+  "REB212": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB212"
+  },
+  "REB213": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB213"
+  },
+  "REB214": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB214"
+  },
+  "REB215": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB215"
+  },
+  "REB216": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB216"
+  },
+  "REB217": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB217"
+  },
+  "REB218": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB218"
+  },
+  "REB219": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB219"
+  },
+  "REB220": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB220"
+  },
+  "REB221": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB221"
+  },
+  "REB222": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REB222"
+  },
+  "REM002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REM002"
+  },
+  "REM003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REM003"
+  },
+  "REM004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REM004"
+  },
+  "REM005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REM005"
+  },
+  "REPUESTO-805": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REPUESTO-805"
+  },
+  "REPUESTO-806": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "REPUESTO-806"
+  },
+  "SKI002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SKI002"
+  },
+  "SKI004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SKI004"
+  },
+  "SKI005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SKI005"
+  },
+  "SKI008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SKI008"
+  },
+  "SKI009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SKI009"
+  },
+  "SKI010": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SKI010"
+  },
+  "SKI011": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SKI011"
+  },
+  "SOP002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP002"
+  },
+  "SOP003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP003"
+  },
+  "SOP004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP004"
+  },
+  "SOP007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP007"
+  },
+  "SOP008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP008"
+  },
+  "SOP009": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP009"
+  },
+  "SOP012": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP012"
+  },
+  "SOP013": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP013"
+  },
+  "SOP019": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP019"
+  },
+  "SOP020": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP020"
+  },
+  "SOP021": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP021"
+  },
+  "SOP022": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP022"
+  },
+  "SOP023": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP023"
+  },
+  "SOP025": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP025"
+  },
+  "SOP026": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP026"
+  },
+  "SOP027": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP027"
+  },
+  "SOP028": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP028"
+  },
+  "SOP029": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP029"
+  },
+  "SOP030": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP030"
+  },
+  "SOP033": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP033"
+  },
+  "SOP034": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP034"
+  },
+  "SOP035": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP035"
+  },
+  "SOP036": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP036"
+  },
+  "SOP038": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP038"
+  },
+  "SOP039": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP039"
+  },
+  "SOP040": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP040"
+  },
+  "SOP041": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP041"
+  },
+  "SOP042": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP042"
+  },
+  "SOP043": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP043"
+  },
+  "SOP044": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP044"
+  },
+  "SOP045": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP045"
+  },
+  "SOP046": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP046"
+  },
+  "SOP047": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP047"
+  },
+  "SOP048": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP048"
+  },
+  "SOP049": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP049"
+  },
+  "SOP050": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP050"
+  },
+  "SOP052": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP052"
+  },
+  "SOP053": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP053"
+  },
+  "SOP054": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP054"
+  },
+  "SOP055": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP055"
+  },
+  "SOP056": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP056"
+  },
+  "SOP057": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP057"
+  },
+  "SOP058": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP058"
+  },
+  "SOP059": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP059"
+  },
+  "SOP060": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP060"
+  },
+  "SOP061": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP061"
+  },
+  "SOP062": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP062"
+  },
+  "SOP063": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP063"
+  },
+  "SOP064": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP064"
+  },
+  "SOP065": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP065"
+  },
+  "SOP067": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP067"
+  },
+  "SOP068": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "SOP068"
+  },
+  "TRI001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "TRI001"
+  },
+  "TRI002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "TRI002"
+  },
+  "TRI003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "TRI003"
+  },
+  "TRI004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "TRI004"
+  },
+  "TRI005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "TRI005"
+  },
+  "TRI006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "TRI006"
+  },
+  "TRI007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "TRI007"
+  },
+  "VAR001": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR001"
+  },
+  "VAR002": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR002"
+  },
+  "VAR003": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR003"
+  },
+  "VAR004": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR004"
+  },
+  "VAR005": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR005"
+  },
+  "VAR006": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR006"
+  },
+  "VAR007": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR007"
+  },
+  "VAR008": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR008"
+  },
+  "VAR013": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR013"
+  },
+  "VAR014": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR014"
+  },
+  "VAR015": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR015"
+  },
+  "VAR016": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR016"
+  },
+  "VAR017": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR017"
+  },
+  "VAR018": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR018"
+  },
+  "VAR020": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR020"
+  },
+  "VAR021": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR021"
+  },
+  "VAR022": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR022"
+  },
+  "VAR023": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR023"
+  },
+  "VAR024": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR024"
+  },
+  "VAR026": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR026"
+  },
+  "VAR028": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR028"
+  },
+  "VAR029": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR029"
+  },
+  "VAR030": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR030"
+  },
+  "VAR031": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR031"
+  },
+  "VAR032": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR032"
+  },
+  "VAR034": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR034"
+  },
+  "VAR035": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR035"
+  },
+  "VAR036": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR036"
+  },
+  "VAR037": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR037"
+  },
+  "VAR040JH": {
+    "grouping_reason": "fdl_sku_family:VARJH",
+    "master_key": "VARJH"
+  },
+  "VAR042": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR042"
+  },
+  "VAR043": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR043"
+  },
+  "VAR044": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR044"
+  },
+  "VAR054N": {
+    "grouping_reason": "fdl_sku_family:VARN",
+    "master_key": "VARN"
+  },
+  "VAR055": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR055"
+  },
+  "VAR059": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR059"
+  },
+  "VAR060": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR060"
+  },
+  "VAR061": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR061"
+  },
+  "VAR062": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR062"
+  },
+  "VAR063": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR063"
+  },
+  "VAR064": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR064"
+  },
+  "VAR065": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR065"
+  },
+  "VAR069": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR069"
+  },
+  "VAR070": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR070"
+  },
+  "VAR071": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR071"
+  },
+  "VAR072": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR072"
+  },
+  "VAR073": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR073"
+  },
+  "VAR076JH": {
+    "grouping_reason": "fdl_sku_family:VARJH",
+    "master_key": "VARJH"
+  },
+  "VAR077JH": {
+    "grouping_reason": "fdl_sku_family:VARJH",
+    "master_key": "VARJH"
+  },
+  "VAR078JH": {
+    "grouping_reason": "fdl_sku_family:VARJH",
+    "master_key": "VARJH"
+  },
+  "VAR085": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR085"
+  },
+  "VAR086": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR086"
+  },
+  "VAR087": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR087"
+  },
+  "VAR088": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR088"
+  },
+  "VAR089": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR089"
+  },
+  "VAR090": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR090"
+  },
+  "VAR091": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR091"
+  },
+  "VAR092": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR092"
+  },
+  "VAR093": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR093"
+  },
+  "VAR094": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR094"
+  },
+  "VAR095": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR095"
+  },
+  "VAR096": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR096"
+  },
+  "VAR097": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR097"
+  },
+  "VAR098": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR098"
+  },
+  "VAR099": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR099"
+  },
+  "VAR100": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR100"
+  },
+  "VAR101": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR101"
+  },
+  "VAR102": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR102"
+  },
+  "VAR103": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR103"
+  },
+  "VAR104": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR104"
+  },
+  "VAR105": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR105"
+  },
+  "VAR106": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR106"
+  },
+  "VAR107": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR107"
+  },
+  "VAR108": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR108"
+  },
+  "VAR109": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR109"
+  },
+  "VAR110": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR110"
+  },
+  "VAR111": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR111"
+  },
+  "VAR113": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR113"
+  },
+  "VAR114": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR114"
+  },
+  "VAR115": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR115"
+  },
+  "VAR116": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR116"
+  },
+  "VAR117": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR117"
+  },
+  "VAR118": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR118"
+  },
+  "VAR124": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR124"
+  },
+  "VAR125": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR125"
+  },
+  "VAR126": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR126"
+  },
+  "VAR127": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR127"
+  },
+  "VAR128": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR128"
+  },
+  "VAR129": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR129"
+  },
+  "VAR130": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR130"
+  },
+  "VAR131": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR131"
+  },
+  "VAR132": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR132"
+  },
+  "VAR133": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR133"
+  },
+  "VAR134JH": {
+    "grouping_reason": "fdl_sku_family:VARJH",
+    "master_key": "VARJH"
+  },
+  "VAR136": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR136"
+  },
+  "VAR137": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR137"
+  },
+  "VAR138": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR138"
+  },
+  "VAR139": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR139"
+  },
+  "VAR140": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR140"
+  },
+  "VAR141": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR141"
+  },
+  "VAR142": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR142"
+  },
+  "VAR143": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR143"
+  },
+  "VAR144": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR144"
+  },
+  "VAR145": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR145"
+  },
+  "VAR146": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR146"
+  },
+  "VAR151": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR151"
+  },
+  "VAR152": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR152"
+  },
+  "VAR153": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR153"
+  },
+  "VAR154": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR154"
+  },
+  "VAR155": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR155"
+  },
+  "VAR157": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR157"
+  },
+  "VAR159": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR159"
+  },
+  "VAR163": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR163"
+  },
+  "VAR164": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR164"
+  },
+  "VAR165": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR165"
+  },
+  "VAR166": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR166"
+  },
+  "VAR167": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR167"
+  },
+  "VAR168": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR168"
+  },
+  "VAR169": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR169"
+  },
+  "VAR170": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR170"
+  },
+  "VAR171": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR171"
+  },
+  "VAR172": {
+    "grouping_reason": "explicit_one_per_sku",
+    "master_key": "VAR172"
+  }
+}

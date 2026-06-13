@@ -1,0 +1,120 @@
+{
+  "source_filename": "FDL-test-dobnexo.pdf",
+  "parser_key": "fdl_pdf_v1",
+  "parser_version": "1.0",
+  "effective_date": "2026-02-01",
+  "detected_category_path_raw": "CROSSTRAINING Y ENTRENAMIENTO FUNCIONAL",
+  "family_header_raw_name": "Disco Bumper Negro NEXO - Goma Maciza Negro (casquillo de acero)",
+  "rows": [
+    {
+      "source_row_index": 142,
+      "raw_name": "Disco Bumper NEXO Negro - 5 kgs",
+      "normalized_name": "Disco Bumper NEXO Negro - 5 kgs",
+      "sku": "DOBNEXO05N",
+      "ean": "8435657018573",
+      "price_amount": "19.55",
+      "currency": "EUR",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper NEXO",
+      "reference_label": "5 kgs",
+      "brand_raw": "NEXO",
+      "grouping_confidence": 0.95,
+      "grouping_reason": "fdl_sku_family:DOBNEXON",
+      "parsed_variant_specs_raw": { "peso_kg": 5 },
+      "parsed_common_specs_raw": {
+        "color": "Negro",
+        "material": "Goma maciza",
+        "casquillo": "Acero"
+      },
+      "review_status": "confirmed"
+    },
+    {
+      "source_row_index": 143,
+      "raw_name": "Disco Bumper NEXO Negro - 10 kgs",
+      "normalized_name": "Disco Bumper NEXO Negro - 10 kgs",
+      "sku": "DOBNEXO10N",
+      "ean": "8435657018580",
+      "price_amount": "26.56",
+      "currency": "EUR",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper NEXO",
+      "reference_label": "10 kgs",
+      "brand_raw": "NEXO",
+      "grouping_confidence": 0.95,
+      "grouping_reason": "fdl_sku_family:DOBNEXON",
+      "parsed_variant_specs_raw": { "peso_kg": 10 },
+      "parsed_common_specs_raw": {
+        "color": "Negro",
+        "material": "Goma maciza",
+        "casquillo": "Acero"
+      },
+      "review_status": "confirmed"
+    },
+    {
+      "source_row_index": 144,
+      "raw_name": "Disco Bumper NEXO Negro - 15 kgs",
+      "normalized_name": "Disco Bumper NEXO Negro - 15 kgs",
+      "sku": "DOBNEXO15N",
+      "ean": "8435657018597",
+      "price_amount": "36.84",
+      "currency": "EUR",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper NEXO",
+      "reference_label": "15 kgs",
+      "brand_raw": "NEXO",
+      "grouping_confidence": 0.95,
+      "grouping_reason": "fdl_sku_family:DOBNEXON",
+      "parsed_variant_specs_raw": { "peso_kg": 15 },
+      "parsed_common_specs_raw": {
+        "color": "Negro",
+        "material": "Goma maciza",
+        "casquillo": "Acero"
+      },
+      "review_status": "confirmed"
+    },
+    {
+      "source_row_index": 145,
+      "raw_name": "Disco Bumper NEXO Negro - 20 kgs",
+      "normalized_name": "Disco Bumper NEXO Negro - 20 kgs",
+      "sku": "DOBNEXO20N",
+      "ean": "8435657018603",
+      "price_amount": "46.30",
+      "currency": "EUR",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper NEXO",
+      "reference_label": "20 kgs",
+      "brand_raw": "NEXO",
+      "grouping_confidence": 0.95,
+      "grouping_reason": "fdl_sku_family:DOBNEXON",
+      "parsed_variant_specs_raw": { "peso_kg": 20 },
+      "parsed_common_specs_raw": {
+        "color": "Negro",
+        "material": "Goma maciza",
+        "casquillo": "Acero"
+      },
+      "review_status": "confirmed"
+    },
+    {
+      "source_row_index": 146,
+      "raw_name": "Disco Bumper NEXO Negro - 25 kgs",
+      "normalized_name": "Disco Bumper NEXO Negro - 25 kgs",
+      "sku": "DOBNEXO25N",
+      "ean": "8435657018610",
+      "price_amount": "55.10",
+      "currency": "EUR",
+      "master_key": "DOBNEXON",
+      "master_name": "Disco Bumper NEXO",
+      "reference_label": "25 kgs",
+      "brand_raw": "NEXO",
+      "grouping_confidence": 0.95,
+      "grouping_reason": "fdl_sku_family:DOBNEXON",
+      "parsed_variant_specs_raw": { "peso_kg": 25 },
+      "parsed_common_specs_raw": {
+        "color": "Negro",
+        "material": "Goma maciza",
+        "casquillo": "Acero"
+      },
+      "review_status": "confirmed"
+    }
+  ]
+}

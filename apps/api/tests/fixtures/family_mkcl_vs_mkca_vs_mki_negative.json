@@ -1,0 +1,21 @@
+{
+  "rows": [
+    {
+      "sku": "MKCL004",
+      "name": "Kettelbells Competición 4 kgs con logo",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "MKCA004",
+      "name": "Kettelbells Competición Premium 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "MKI004",
+      "name": "Kettlebel Iron 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_subcategory_slug": "cross-training",
+  "expected_distinct_master_keys": ["MKCL", "MKCA", "MKI"]
+}

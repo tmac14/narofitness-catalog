@@ -1,0 +1,277 @@
+/* PDF export density — scoped to catalogue-pdf-render only (preview iframe unchanged) */
+
+.catalogue-pdf-render {
+  --pdf-font-category: 8.5pt;
+  --pdf-font-brand: 7.5pt;
+  --pdf-font-product-header: 7pt;
+  --pdf-font-product-subtitle: 6.5pt;
+  --pdf-font-table-head: 6.5pt;
+  --pdf-font-body: 6.5pt;
+  --pdf-font-sku-ean: 7.5pt;
+  --pdf-font-price: 7.5pt;
+  --pdf-font-desc: 6.5pt;
+  --pdf-font-legal: 5.5pt;
+  --pdf-cell-padding-y: 1.5pt;
+  --pdf-cell-padding-x: 2pt;
+  --pdf-image-width-simple: 22mm;
+  --pdf-image-height-simple: 16.5mm;
+  --pdf-image-width-family: 20mm;
+  --pdf-image-height-family: 15mm;
+}
+
+body.catalogue-pdf-render {
+  font-size: var(--pdf-font-body);
+}
+
+/* Cover pages — print density */
+.catalogue-pdf-render .catalog-page--cover-classic .catalog-cover-classic {
+  min-height: 250mm;
+  padding: 12mm 15mm;
+}
+
+.catalogue-pdf-render .catalog-cover-title {
+  font-size: 20pt;
+}
+
+.catalogue-pdf-render .catalog-cover-subtitle {
+  font-size: 10pt;
+}
+
+.catalogue-pdf-render .catalog-cover-date {
+  font-size: 7pt;
+}
+
+.catalogue-pdf-render .catalog-page--cover-full-bleed {
+  width: 210mm;
+  height: 297mm;
+  padding: 0;
+}
+
+.catalogue-pdf-render .category-cover-image-wrap {
+  height: 85mm;
+  max-height: none;
+}
+
+.catalogue-pdf-render .category-cover-image-wrap--fallback {
+  height: 18mm;
+}
+
+.catalogue-pdf-render .category-cover-body {
+  padding: 4pt 6pt 6pt;
+}
+
+.catalogue-pdf-render .category-cover-title {
+  font-size: 11pt;
+}
+
+.catalogue-pdf-render .category-cover-description {
+  font-size: 7pt;
+}
+
+.catalogue-pdf-render .category-cover-count {
+  font-size: 6.5pt;
+}
+
+.catalogue-pdf-render .supplier-section-header--compact {
+  font-size: 7pt;
+  padding: 2pt 4pt;
+  margin-top: 3pt;
+}
+
+/* Section / brand / product headers */
+.catalogue-pdf-render .supplier-section-header {
+  font-size: var(--pdf-font-category);
+  padding: 2pt 4pt;
+  margin-top: 4pt;
+}
+
+.catalogue-pdf-render .supplier-section-header:first-of-type {
+  margin-top: 0;
+}
+
+.catalogue-pdf-render .supplier-brand-header {
+  font-size: var(--pdf-font-brand);
+  padding: 2pt 4pt;
+}
+
+.catalogue-pdf-render .supplier-family-header td {
+  font-size: var(--pdf-font-product-header);
+  padding: 2pt 4pt;
+}
+
+.catalogue-pdf-render .supplier-family-variant-label-cell {
+  font-size: var(--pdf-font-body);
+  line-height: 1.25;
+}
+
+.catalogue-pdf-render .supplier-family-brand-cell {
+  font-size: var(--pdf-font-body);
+  white-space: nowrap;
+}
+
+.catalogue-pdf-render .supplier-family-header .supplier-family-subtitle {
+  font-size: var(--pdf-font-product-subtitle);
+}
+
+/* Tables */
+.catalogue-pdf-render .supplier-catalog-table {
+  margin-bottom: 3pt;
+}
+
+.catalogue-pdf-render .supplier-col-header th {
+  font-size: var(--pdf-font-table-head);
+  padding: var(--pdf-cell-padding-y) var(--pdf-cell-padding-x);
+  line-height: 1.15;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-col-header th.supplier-simple-info-cell {
+  font-size: var(--pdf-font-table-head);
+  padding-left: 3pt;
+}
+
+/* Column widths — print (A4 ~180mm content; image 4:3 @ 22mm) */
+.catalogue-pdf-render .supplier-catalog-table--simple col.col-image { width: 22mm; }
+.catalogue-pdf-render .supplier-catalog-table--simple col.col-sku { width: 20%; }
+.catalogue-pdf-render .supplier-catalog-table--simple col.col-ean { width: 17%; }
+.catalogue-pdf-render .supplier-catalog-table--simple col.col-price { width: 13%; }
+.catalogue-pdf-render .supplier-catalog-table--simple col.col-desc { width: 30%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--with-iva col.col-price-iva { width: 12%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--with-iva col.col-desc { width: 22%; }
+
+/* Simple table without description — wider SKU/EAN/price */
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc col.col-image { width: 24mm; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc col.col-sku { width: 26%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc col.col-ean { width: 22%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc col.col-price { width: 14%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc.supplier-catalog-table--with-iva col.col-image { width: 22mm; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc.supplier-catalog-table--with-iva col.col-sku { width: 24%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc.supplier-catalog-table--with-iva col.col-ean { width: 20%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc.supplier-catalog-table--with-iva col.col-price { width: 13%; }
+.catalogue-pdf-render .supplier-catalog-table--simple.supplier-catalog-table--no-desc.supplier-catalog-table--with-iva col.col-price-iva { width: 12%; }
+
+.catalogue-pdf-render .supplier-catalog-table--family col.col-sku { width: 18%; }
+.catalogue-pdf-render .supplier-catalog-table--family col.col-ean { width: 16%; }
+.catalogue-pdf-render .supplier-catalog-table--family col.col-price { width: 12%; }
+.catalogue-pdf-render .supplier-catalog-table--family col.col-image { width: 18%; }
+.catalogue-pdf-render .supplier-catalog-table--family.supplier-family-cols-1 col.col-variant { width: 36%; }
+.catalogue-pdf-render .supplier-catalog-table--family.supplier-family-cols-2 col.col-variant { width: 18%; }
+.catalogue-pdf-render .supplier-catalog-table--family.supplier-family-cols-3 col.col-variant { width: 12%; }
+.catalogue-pdf-render .supplier-catalog-table--family.supplier-family-cols-4 col.col-variant { width: 9%; }
+.catalogue-pdf-render .supplier-catalog-table--family.supplier-family-cols-5 col.col-variant { width: 7%; }
+.catalogue-pdf-render .supplier-catalog-table--family.supplier-catalog-table--with-iva col.col-price-iva { width: 10%; }
+.catalogue-pdf-render .supplier-catalog-table--family.supplier-catalog-table--with-iva col.col-image { width: 16%; }
+
+/* Simple product cells */
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-image-cell {
+  padding: 2pt;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-image-cell img {
+  width: 100%;
+  max-width: var(--pdf-image-width-simple);
+  max-height: var(--pdf-image-height-simple);
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-row .supplier-simple-ref-cell,
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-row .supplier-simple-ean-cell {
+  padding: var(--pdf-cell-padding-y) var(--pdf-cell-padding-x) var(--pdf-cell-padding-y) 3pt;
+  font-size: var(--pdf-font-sku-ean);
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-row .supplier-simple-ref-cell,
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-row .supplier-simple-ean-cell {
+  font-variant-numeric: tabular-nums;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-row .supplier-simple-price-cell {
+  padding: var(--pdf-cell-padding-y) var(--pdf-cell-padding-x);
+  font-size: var(--pdf-font-price);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--simple .supplier-simple-row .supplier-simple-info-cell {
+  font-size: var(--pdf-font-desc);
+  line-height: 1.3;
+  padding: var(--pdf-cell-padding-y) 3pt;
+}
+
+.catalogue-pdf-render .supplier-simple-price-value {
+  font-size: var(--pdf-font-price);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.catalogue-pdf-render .supplier-simple-highlight {
+  font-size: 6pt;
+  padding: 0.5pt 2pt;
+}
+
+.catalogue-pdf-render .supplier-simple-description {
+  font-size: 6pt;
+  margin-top: 1pt;
+}
+
+.catalogue-pdf-render .supplier-empty-cell {
+  font-size: var(--pdf-font-desc);
+}
+
+/* Family variant cells */
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-variant-row td {
+  padding: var(--pdf-cell-padding-y) var(--pdf-cell-padding-x);
+  font-size: var(--pdf-font-body);
+  line-height: 1.25;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-family-spec-cell {
+  font-size: var(--pdf-font-body);
+}
+
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-variant-row .supplier-family-ref-cell,
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-variant-row .supplier-family-ean-cell {
+  padding: var(--pdf-cell-padding-y) var(--pdf-cell-padding-x) var(--pdf-cell-padding-y) 3pt;
+  font-size: var(--pdf-font-sku-ean);
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-variant-row .supplier-family-ref-cell,
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-variant-row .supplier-family-ean-cell {
+  font-variant-numeric: tabular-nums;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-variant-row .supplier-family-price-cell {
+  font-size: var(--pdf-font-price);
+  padding: var(--pdf-cell-padding-y) var(--pdf-cell-padding-x);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-family-image-cell {
+  padding: 2pt;
+}
+
+.catalogue-pdf-render .supplier-catalog-table--family .supplier-family-image-cell img {
+  width: 100%;
+  max-width: var(--pdf-image-width-family);
+  max-height: var(--pdf-image-height-family);
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.catalogue-pdf-render .legal {
+  margin-top: 8pt;
+  font-size: var(--pdf-font-legal);
+}

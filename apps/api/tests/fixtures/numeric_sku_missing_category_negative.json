@@ -1,0 +1,13 @@
+{
+  "rows": [
+    {
+      "sku": "BIC010",
+      "name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "category_path": "UNKNOWN SECTION > NO RULE"
+    }
+  ],
+  "expected_grouping": {
+    "forbidden_grouping_reasons": ["explicit_one_per_sku"],
+    "required_review_reasons": ["unmapped_category", "regex_fallback_1_1", "low_grouping_confidence"]
+  }
+}

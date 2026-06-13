@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "sku": "CIN001",
+      "name": "Cinta Curva sin Motor",
+      "category_path": "CARDIO > CINTA"
+    },
+    {
+      "sku": "CIN002",
+      "name": "Cinta Air Plus Magnetic (Smart Conect)",
+      "category_path": "CARDIO > CINTA"
+    }
+  ],
+  "expected_subcategory_slug": "cintas-de-correr"
+}

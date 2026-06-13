@@ -1,0 +1,7 @@
+{
+  "source_path": "CARDIO > REMO",
+  "target_subcategory_slug": "remos",
+  "expected_mapped_slug": "remos",
+  "expected_confidence": 1.0,
+  "should_clear_unmapped": true
+}

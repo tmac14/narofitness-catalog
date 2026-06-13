@@ -1,0 +1,140 @@
+{
+  "rows": [
+    {
+      "sku": "BIC007",
+      "name": "Bicicleta AirPlus Xpaert Magnetica Roja (Si Smart Conect)",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_value": true,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "BIC008",
+      "name": "Bicicleta AirPlus Cycle (Smart Conect)",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_value": true,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "BIC010",
+      "name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_value": false,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "BIC002",
+      "name": "Bicicleta Air Bike (NO smart conect)",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_value": false,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "REPUESTO-806",
+      "name": "Consola Bluetooth AB-1000 SMART CONECT",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_value": null,
+      "expected_skip_reason": "commercial_identity"
+    },
+    {
+      "sku": "REPUESTO-805",
+      "name": "Consola Bluetooth AB-1 SMART CONECT",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_value": null,
+      "expected_skip_reason": "commercial_identity"
+    },
+    {
+      "sku": "REM004",
+      "name": "Air Rower 2,0 (SI smart conect)",
+      "category_path": "CARDIO > REMO",
+      "mapped_category_slug": "remos",
+      "expected_value": true,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "REM005",
+      "name": "AirPlus Rower (Si Smart connect)",
+      "category_path": "CARDIO > REMO",
+      "mapped_category_slug": "remos",
+      "expected_value": true,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "REM002",
+      "name": "Air Rower 2,0 (NO smart conect)",
+      "category_path": "CARDIO > REMO",
+      "mapped_category_slug": "remos",
+      "expected_value": false,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "CIN002",
+      "name": "Air Plus Magnetic (Smart Conect)",
+      "category_path": "CARDIO > CINTA",
+      "mapped_category_slug": "cintas-de-correr",
+      "expected_value": true,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "SKI009",
+      "name": "AirPlus Ski Trainer 200 Smart Connect",
+      "category_path": "CARDIO > SKI",
+      "mapped_category_slug": "cardio",
+      "expected_value": true,
+      "expected_skip_reason": null
+    },
+    {
+      "sku": "ESC003",
+      "name": "Escaladora Climber 3.0 (Smart Conect)",
+      "category_path": "CARDIO > CLIMBER",
+      "mapped_category_slug": "cardio",
+      "expected_value": true,
+      "expected_skip_reason": null
+    }
+  ],
+  "synthetic_negatives": [
+    {
+      "name": "Cardio Widget Smart Connect",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_skip_reason": "ambiguous"
+    },
+    {
+      "name": "AirPlus Ski Trainer Smart Connect",
+      "category_path": "CARDIO > SKI",
+      "mapped_category_slug": "cardio",
+      "expected_skip_reason": "ambiguous"
+    },
+    {
+      "name": "Smart Connect Adapter",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_skip_reason": "commercial_identity"
+    },
+    {
+      "name": "Consola Bluetooth AB-1 Smart Connect",
+      "sku": "CNS001",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_skip_reason": "commercial_identity"
+    },
+    {
+      "name": "Model 200 Smart Connect",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "mapped_category_slug": "cross-training",
+      "expected_skip_reason": "ambiguous"
+    },
+    {
+      "name": "REPUESTO-999 Consola Bluetooth (NO smart conect)",
+      "sku": "REPUESTO-999",
+      "category_path": "CARDIO > BICI",
+      "mapped_category_slug": "bicicletas-estaticas",
+      "expected_skip_reason": "commercial_identity"
+    }
+  ]
+}

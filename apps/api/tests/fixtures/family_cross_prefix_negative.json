@@ -1,0 +1,18 @@
+{
+  "rows": [
+    {
+      "sku": "BN120",
+      "name": "Barra Olímpica 28 MM - 120 cm",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "BOR120",
+      "name": "Barra Olímpica Recta 28 MM - 120 cm",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_grouping": {
+    "forbidden_grouping_reasons": ["numeric_suffix_family:BN", "numeric_suffix_family:BOR"]
+  },
+  "expected_distinct_master_keys": ["BN120", "BOR120"]
+}

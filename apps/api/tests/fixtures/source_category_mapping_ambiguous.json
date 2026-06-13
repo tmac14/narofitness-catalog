@@ -1,0 +1,8 @@
+{
+  "source_path": "AMBIGUOUS > PATH",
+  "rows": [
+    { "sku": "AMB001", "mapped_category_slug": "remos" },
+    { "sku": "AMB002", "mapped_category_slug": "cintas-de-correr" }
+  ],
+  "expected_mapping_status": "ambiguous"
+}

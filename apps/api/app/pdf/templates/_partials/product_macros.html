@@ -1,0 +1,66 @@
+{% macro product_titles(p) %}
+<div class="product-block__titles">
+  <h2 class="product-block__title-line1">{{ p.title_line1 or p.master_name }}</h2>
+  {% if p.title_line2 %}
+  <h2 class="product-block__title-line2">{{ p.title_line2 }}</h2>
+  {% endif %}
+  {% if p.master_highlights %}
+  <div class="product-block__highlights">
+    {% for item in p.master_highlights %}
+    <span class="product-block__highlight">{{ item.label }}: {{ item.value }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro product_visual(p) %}
+<div class="product-block__visual">
+  {% if p.image_url %}
+  <img class="product-block__image" src="{{ p.image_url }}" alt="" />
+  {% elif p.placeholder_url %}
+  <img class="product-block__image product-block__image--placeholder" src="{{ p.placeholder_url }}" alt="" />
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro product_description(p) %}
+{% if p.description_lines %}
+<div class="product-block__description">
+  {% for line in p.description_lines %}
+  <p>{{ line }}</p>
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro variant_table(p) %}
+<table class="variant-table" cellpadding="0" cellspacing="0">
+  <thead>
+    <tr>
+      {% for column in p.variant_columns or [] %}
+      <th{% if loop.first %} class="variant-table__weight"{% endif %}>{{ column.label }}</th>
+      {% endfor %}
+      <th>Ref.</th>
+      <th class="variant-table__col-price">Precio</th>
+      {% if show_iva_column %}
+      <th class="variant-table__col-iva">PVP + IVA ({{ iva_rate_percent }}%)</th>
+      {% endif %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for v in p.variants %}
+    <tr>
+      {% for column in p.variant_columns or [] %}
+      <td{% if loop.first %} class="variant-table__weight"{% endif %}>{{ v[column.key] or "—" }}</td>
+      {% endfor %}
+      <td>{{ v.sku }}</td>
+      <td class="variant-table__price">{{ v.price_display }}</td>
+      {% if show_iva_column %}
+      <td class="variant-table__price">{{ v.price_iva_display or "—" }}</td>
+      {% endif %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endmacro %}

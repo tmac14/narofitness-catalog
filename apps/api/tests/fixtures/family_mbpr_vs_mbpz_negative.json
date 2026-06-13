@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "sku": "MBPR010",
+      "name": "Disco Bumper Hexagonal 10 kgs",
+      "category_path": "MANCUERNAS"
+    },
+    {
+      "sku": "MBPZ010",
+      "name": "Disco Bumper Hexagonal 10 kgs",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_distinct_master_keys": ["MBPR", "MBPZ"],
+  "expected_by_sku": {
+    "MBPR010": {
+      "grouping_reason": "numeric_suffix_family:MBPR",
+      "master_key": "MBPR"
+    },
+    "MBPZ010": {
+      "grouping_reason": "numeric_suffix_family:MBPZ",
+      "master_key": "MBPZ"
+    }
+  }
+}

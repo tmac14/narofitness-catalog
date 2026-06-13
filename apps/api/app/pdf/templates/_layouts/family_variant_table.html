@@ -1,0 +1,7 @@
+{% from "_partials/supplier_table_macros.html" import supplier_simple_product_block, supplier_family_variant_rows %}
+{% set price_label = supplier_price_column_label or "P.V.P." %}
+{% if p.has_variants %}
+{{ supplier_family_variant_rows(p, price_label, show_iva_column) }}
+{% else %}
+{{ supplier_simple_product_block(p, price_label, show_iva_column, show_description_column) }}
+{% endif %}

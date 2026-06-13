@@ -1,0 +1,34 @@
+{% from "_partials/product_macros.html" import product_titles, product_visual, product_description %}
+<article class="product-block product-block--single" data-layout="single_standard">
+  <table class="product-block__layout product-block__layout--single" role="presentation" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="product-block__left">
+        {{ product_titles(p) }}
+        {{ product_visual(p) }}
+        {{ product_description(p) }}
+      </td>
+      <td class="product-block__right">
+        <table class="variant-table variant-table--single" cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Ref.</th>
+              <th class="variant-table__col-price">Precio</th>
+              {% if show_iva_column %}
+              <th class="variant-table__col-iva">PVP + IVA ({{ iva_rate_percent }}%)</th>
+              {% endif %}
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ p.sku }}</td>
+              <td class="variant-table__price">{{ p.price_display }}</td>
+              {% if show_iva_column %}
+              <td class="variant-table__price">{{ p.price_iva_display or "—" }}</td>
+              {% endif %}
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</article>

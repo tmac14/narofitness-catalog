@@ -1,0 +1,28 @@
+{
+  "source_filename": "FDL-test-cro107nexo.pdf",
+  "parser_key": "fdl_pdf_v1",
+  "parser_version": "1.0",
+  "effective_date": "2026-02-01",
+  "detected_category_path_raw": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+  "rows": [
+    {
+      "source_row_index": 410,
+      "raw_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+      "normalized_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+      "sku": "CRO107NEXO",
+      "ean": null,
+      "price_amount": "142.00",
+      "currency": "EUR",
+      "master_key": "CRONEXO",
+      "master_name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+      "reference_label": null,
+      "brand_raw": "NEXO",
+      "grouping_confidence": 0.4,
+      "grouping_reason": "false_family:CRONEXO",
+      "parsed_variant_specs_raw": {},
+      "parsed_common_specs_raw": {},
+      "review_status": "needs_review",
+      "review_reasons": ["false_family_pattern", "low_grouping_confidence"]
+    }
+  ]
+}

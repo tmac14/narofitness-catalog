@@ -1,0 +1,165 @@
+{
+  "positive_rows": [
+    {
+      "sku": "BBP140",
+      "name": "Barra Body Pump 28mm - 1,40 Mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_longitud_mm": 1400,
+      "expected_source": "name_meters"
+    },
+    {
+      "sku": "BBP140B",
+      "name": "Barra Body Pump Kit",
+      "family_header_raw": "Barra Body Pump 1,40 mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_longitud_mm": 1400,
+      "expected_source": "header_meters"
+    },
+    {
+      "sku": "BN120Z",
+      "name": "Barra 28Mm Cromada Curl - 1,20 Mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_longitud_mm": 1200,
+      "expected_source": "name_meters"
+    },
+    {
+      "sku": "BO120Z",
+      "name": "Barra Olimpica Cromada Home Curl - 1,20 Mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_longitud_mm": 1200,
+      "expected_source": "name_meters"
+    },
+    {
+      "sku": "BOR120Z",
+      "name": "Barra Olimpica Cromada Alta Carga Curl - 1,20 Mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_longitud_mm": 1200,
+      "expected_source": "name_meters"
+    },
+    {
+      "sku": "BOR220A",
+      "name": "Barra Olimpica Cromada Alta Carga - 2,20 Mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_longitud_mm": 2200,
+      "expected_source": "name_meters"
+    }
+  ],
+  "negative_rows": [
+    {
+      "sku": "BTN001",
+      "name": "Topes Barra Tope Barra 28 Mm",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "BTN002",
+      "name": "Tope Barra 30 Mm",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "BTO001",
+      "name": "Tope Barra Olímpica",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "BTO003",
+      "name": "Tope Barra Olimpica Crossfit",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "BTO004",
+      "name": "Tope Olimpico Crossfit Rojo",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "SOP033",
+      "name": "Soporte Barra Pared",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "SOP042",
+      "name": "Soporte a pared para 6",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "VAR028",
+      "name": "Protector de Cuello 45 cms, Funda Nylon",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "VAR113",
+      "name": "Protector de Cuello ergonomico Azul",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "VAR129",
+      "name": "Protector de cuello Rojo",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    },
+    {
+      "sku": "VAR159",
+      "name": "Protector de cuello Negro",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "accessory"
+    }
+  ],
+  "conflict_rows": [
+    {
+      "sku": "BN120Z",
+      "name": "Barra Curl - 1,50 Mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "evidence_conflict"
+    },
+    {
+      "sku": "BOR220A",
+      "name": "Barra Alta Carga - 1,80 Mts",
+      "family_header_raw": "Barra 2,20 mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "evidence_conflict"
+    },
+    {
+      "sku": "BBP140",
+      "name": "Barra Body Pump 1,20 Mts - 1,40 Mts",
+      "category_path": "DISCOS Y BARRAS",
+      "mapped_category_slug": "barras",
+      "expected_skip_reason": "evidence_conflict"
+    }
+  ],
+  "cross_training_rows": [
+    {
+      "sku": "BOC001",
+      "name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "mapped_category_slug": "cross-training",
+      "expected_skip_reason": "cross_training"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "description": "DOBNEXO family correctly grouped — should not be suspicious",
+  "rows": [
+    {
+      "source_row_index": 1,
+      "page_number": 45,
+      "normalized_sku": "DOBNEXO05N",
+      "normalized_name": "Disco Bumper NEXO Negro - 5 kgs",
+      "proposed_master_key": "DOBNEXON",
+      "grouping_reason": "fdl_sku_family:DOBNEXON",
+      "grouping_strategy": "fdl_sku_family",
+      "inferred_attributes": {
+        "variant_specs": { "peso_kg": 5 },
+        "common_specs": {},
+        "variant_axes": ["peso_kg"]
+      },
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO FUNCIONAL",
+        "category_sub": null,
+        "section_brand": "NEXO"
+      },
+      "review_reasons": [],
+      "blocking_reasons": [],
+      "final_decision": { "can_confirm": true, "review_status": "pending" }
+    },
+    {
+      "source_row_index": 2,
+      "page_number": 45,
+      "normalized_sku": "DOBNEXO10N",
+      "normalized_name": "Disco Bumper NEXO Negro - 10 kgs",
+      "proposed_master_key": "DOBNEXON",
+      "grouping_reason": "fdl_sku_family:DOBNEXON",
+      "grouping_strategy": "fdl_sku_family",
+      "inferred_attributes": {
+        "variant_specs": { "peso_kg": 10 },
+        "common_specs": {},
+        "variant_axes": ["peso_kg"]
+      },
+      "source_section": {
+        "category_main": "CROSSTRAINING Y ENTRENAMIENTO FUNCIONAL",
+        "category_sub": null,
+        "section_brand": "NEXO"
+      },
+      "review_reasons": [],
+      "blocking_reasons": [],
+      "final_decision": { "can_confirm": true, "review_status": "pending" }
+    }
+  ],
+  "expected": {
+    "suspicious_count": 0,
+    "groups_count": 1,
+    "false_negatives": 0
+  }
+}

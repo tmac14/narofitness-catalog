@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "sku": "MKA004",
+      "name": "Kettlebell agarre acero 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "MKA016",
+      "name": "Kettlebell agarre acero 16 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_subcategory_slug": "cross-training",
+  "expected_grouping": {
+    "grouping_reason_prefix": "numeric_suffix_family:MKA",
+    "master_key": "MKA",
+    "min_grouping_confidence": 0.85,
+    "forbidden_grouping_reasons": ["explicit_one_per_sku", "one_per_sku_fallback"]
+  },
+  "expected_variant_specs": {
+    "MKA004": {"peso_kg": 4},
+    "MKA016": {"peso_kg": 16}
+  }
+}

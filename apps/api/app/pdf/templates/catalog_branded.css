@@ -1,0 +1,36 @@
+@page { size: A4; margin: 1.5cm; }
+body { font-family: "Montserrat", Arial, Helvetica, sans-serif; color: #1a1a1a; font-size: 10pt; margin: 0; background: #fff; }
+.catalog-wrap {
+  box-sizing: border-box;
+}
+@media screen {
+  .catalog-wrap {
+    padding: 1.5rem 2rem 2.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
+@media print {
+  .catalog-wrap {
+    padding: 0;
+  }
+}
+.cover { text-align: center; page-break-after: always; padding-top: 4cm; }
+.cover .logo { max-height: 80px; margin-bottom: 1.5rem; }
+.cover h1 { font-size: 28pt; margin: 0.5rem 0; }
+.toc { page-break-after: always; }
+.toc ul { list-style: none; padding: 0; }
+.toc li { margin: 0.35rem 0; }
+.category-block { margin-bottom: 1.5rem; }
+.category-block > h2 {
+  font-size: 13pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 2px solid #222;
+  padding-bottom: 0.25rem;
+  margin: 0 0 1rem;
+}
+.product-list {
+  margin-top: 0.5rem;
+}
+.legal { margin-top: 2rem; font-size: 8pt; font-style: italic; text-align: center; }

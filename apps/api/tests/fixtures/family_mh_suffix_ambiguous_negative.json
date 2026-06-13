@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "sku": "MH002",
+      "name": "Mancuerna Hexagonal 2 kgs",
+      "category_path": "MANCUERNAS"
+    },
+    {
+      "sku": "MH002A",
+      "name": "Mancuerna Hexagonal 2 kgs",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_distinct_master_keys": ["MH", "MHA"],
+  "expected_by_sku": {
+    "MH002": {
+      "grouping_reason": "numeric_suffix_family:MH",
+      "master_key": "MH"
+    },
+    "MH002A": {
+      "grouping_reason_prefix": "fdl_sku_family:",
+      "master_key": "MHA"
+    }
+  },
+  "phase": "C1",
+  "note": "MH002 groups to MH; MH002A stays on suffix-letter path (MHA) and must not merge"
+}

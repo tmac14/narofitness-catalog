@@ -1,0 +1,325 @@
+{# Subtitle only when it is not the commercial brand (brand shown in section group header). #}
+
+{% macro supplier_family_header_subtitle(p) %}
+
+{% set subtitle = p.family_subtitle or p.title_line2 %}
+
+{% set brand = (p.brand_display or p.brand or "")|trim %}
+
+{% if subtitle and (not brand or subtitle|trim|lower != brand|lower) %}
+
+<span class="supplier-family-subtitle"> — {{ subtitle }}</span>
+
+{% endif %}
+
+{% endmacro %}
+
+
+
+{# Master header: title + brand_display (uniform / mixed / none) — never a single variant brand. #}
+
+{% macro supplier_family_header_content(p) %}
+
+{{ p.family_title or p.title_line1 or p.master_name }}
+
+{% set header_brand = p.brand_display or p.brand %}
+
+{% if header_brand %}
+
+<span class="supplier-family-brand-display"> — {{ header_brand }}</span>
+
+{% endif %}
+
+{{ supplier_family_header_subtitle(p) }}
+
+{% endmacro %}
+
+
+
+{% macro supplier_family_spec_cell_class(column) %}
+
+supplier-family-spec-cell{% if column.key == 'brand' %} supplier-family-brand-cell{% elif column.key == 'variant_label' %} supplier-family-variant-label-cell{% endif %}
+
+{% endmacro %}
+
+
+
+{# Column widths via CSS: screen in _supplier_table_styles.css, print in _supplier_table_print.css #}
+
+{% macro supplier_simple_colgroup(show_iva, show_description=true) %}
+
+<colgroup>
+
+  <col class="col-image" />
+
+  <col class="col-sku" />
+
+  <col class="col-ean" />
+
+  <col class="col-price" />
+
+  {% if show_iva %}<col class="col-price-iva" />{% endif %}
+
+  {% if show_description %}<col class="col-desc" />{% endif %}
+
+</colgroup>
+
+{% endmacro %}
+
+
+
+{% macro supplier_family_colgroup(p, show_iva) %}
+
+<colgroup>
+
+  {% for column in p.variant_columns or [] %}
+
+  <col class="col-variant col-variant--{{ column.key }}" />
+
+  {% endfor %}
+
+  <col class="col-sku" />
+
+  <col class="col-ean" />
+
+  <col class="col-price" />
+
+  {% if show_iva %}<col class="col-price-iva" />{% endif %}
+
+  <col class="col-image" />
+
+</colgroup>
+
+{% endmacro %}
+
+
+
+{# simple_product_block — 1:1 products (Imagen | SKU | EAN | P.V.P. | [Descripción]) #}
+
+{% macro supplier_simple_product_block(p, price_label, show_iva, show_description=true) %}
+
+{% set v = p.variants[0] %}
+
+{% set total_cols = 4 + (1 if show_iva else 0) + (1 if show_description else 0) %}
+
+<tbody class="supplier-family-block supplier-simple-block">
+
+  <tr class="supplier-family-header">
+
+    <td colspan="{{ total_cols }}">
+
+      {{ supplier_family_header_content(p) }}
+
+    </td>
+
+  </tr>
+
+  <tr class="supplier-col-header supplier-simple-col-header">
+
+    <th class="supplier-simple-image-cell supplier-col-header-image" aria-hidden="true">&nbsp;</th>
+
+    <th class="supplier-simple-ref-cell">SKU</th>
+
+    <th class="supplier-simple-ean-cell">EAN</th>
+
+    <th class="supplier-simple-price-cell">{{ price_label }}</th>
+
+    {% if show_iva %}
+
+    <th class="supplier-simple-price-cell">PVP + IVA ({{ iva_rate_percent }}%)</th>
+
+    {% endif %}
+
+    {% if show_description %}
+
+    <th class="supplier-simple-info-cell">Descripción</th>
+
+    {% endif %}
+
+  </tr>
+
+  <tr class="supplier-simple-row">
+
+    <td class="supplier-simple-image-cell">
+
+      {% if p.image_url %}
+
+      <img src="{{ p.image_url }}" alt="" />
+
+      {% elif p.placeholder_url %}
+
+      <img src="{{ p.placeholder_url }}" alt="" />
+
+      {% endif %}
+
+    </td>
+
+    <td class="supplier-simple-ref-cell">{{ v.sku }}</td>
+
+    <td class="supplier-simple-ean-cell">{{ v.ean or "—" }}</td>
+
+    <td class="supplier-simple-price-cell">
+
+      <div class="supplier-simple-price-value">{{ v.price_display }}</div>
+
+    </td>
+
+    {% if show_iva %}
+
+    <td class="supplier-simple-price-cell">
+
+      <div class="supplier-simple-price-value">{{ v.price_iva_display or "—" }}</div>
+
+    </td>
+
+    {% endif %}
+
+    {% if show_description %}
+
+    <td class="supplier-simple-info-cell">
+
+      {% if p.master_highlights %}
+
+      <div class="supplier-simple-highlights">
+
+        {% for item in p.master_highlights %}
+
+        <span class="supplier-simple-highlight">{{ item.label }}: {{ item.value }}</span>
+
+        {% endfor %}
+
+      </div>
+
+      {% endif %}
+
+      {% if p.description_lines %}
+
+      <div class="supplier-simple-description">
+
+        {% for line in p.description_lines[:2] %}
+
+        <p>{{ line }}</p>
+
+        {% endfor %}
+
+      </div>
+
+      {% endif %}
+
+      {% if not p.master_highlights and not p.description_lines %}
+
+      <span class="supplier-empty-cell">—</span>
+
+      {% endif %}
+
+    </td>
+
+    {% endif %}
+
+  </tr>
+
+</tbody>
+
+{% endmacro %}
+
+
+
+{# family_variant_table — dynamic variant_columns + SKU | EAN | P.V.P. | Imagen familia #}
+
+{% macro supplier_family_variant_rows(p, price_label, show_iva) %}
+
+{% set variants = p.variants %}
+
+{% set rowspan = variants|length %}
+
+{% set variant_cols = p.variant_columns or [] %}
+
+{% set spec_cols = variant_cols|length %}
+
+{% set total_cols = spec_cols + 3 + (1 if show_iva else 0) + 1 %}
+
+<tbody class="supplier-family-block supplier-family-variant-block">
+
+  <tr class="supplier-family-header">
+
+    <td colspan="{{ total_cols }}">
+
+      {{ supplier_family_header_content(p) }}
+
+    </td>
+
+  </tr>
+
+  <tr class="supplier-col-header supplier-family-col-header">
+
+    {% for column in variant_cols %}
+
+    <th class="{{ supplier_family_spec_cell_class(column) }}">{{ column.label }}</th>
+
+    {% endfor %}
+
+    <th class="supplier-family-ref-cell">SKU</th>
+
+    <th class="supplier-family-ean-cell">EAN</th>
+
+    <th class="supplier-family-price-cell">{{ price_label }}</th>
+
+    {% if show_iva %}
+
+    <th class="supplier-family-price-cell">PVP + IVA ({{ iva_rate_percent }}%)</th>
+
+    {% endif %}
+
+    <th class="supplier-family-image-cell supplier-col-header-image" aria-hidden="true">&nbsp;</th>
+
+  </tr>
+
+  {% for v in variants %}
+
+  <tr class="supplier-variant-row">
+
+    {% for column in variant_cols %}
+
+    <td class="{{ supplier_family_spec_cell_class(column) }}">{{ v[column.key] or "—" }}</td>
+
+    {% endfor %}
+
+    <td class="supplier-family-ref-cell">{{ v.sku }}</td>
+
+    <td class="supplier-family-ean-cell">{{ v.ean or "—" }}</td>
+
+    <td class="supplier-family-price-cell">{{ v.price_display }}</td>
+
+    {% if show_iva %}
+
+    <td class="supplier-family-price-cell">{{ v.price_iva_display or "—" }}</td>
+
+    {% endif %}
+
+    {% if loop.first %}
+
+    <td class="supplier-family-image-cell" rowspan="{{ rowspan }}">
+
+      {% if p.image_url %}
+
+      <img src="{{ p.image_url }}" alt="" />
+
+      {% elif p.placeholder_url %}
+
+      <img src="{{ p.placeholder_url }}" alt="" />
+
+      {% endif %}
+
+    </td>
+
+    {% endif %}
+
+  </tr>
+
+  {% endfor %}
+
+</tbody>
+
+{% endmacro %}
+
+

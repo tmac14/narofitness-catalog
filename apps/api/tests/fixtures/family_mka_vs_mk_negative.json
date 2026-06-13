@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "sku": "MKA004",
+      "name": "Kettlebell agarre acero 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "MK004",
+      "name": "Kettelbells Vinilo 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_subcategory_slug": "cross-training",
+  "expected_distinct_master_keys": ["MKA", "MK"],
+  "expected_by_sku": {
+    "MKA004": {
+      "grouping_reason": "numeric_suffix_family:MKA",
+      "master_key": "MKA"
+    },
+    "MK004": {
+      "grouping_reason": "numeric_suffix_family:MK",
+      "master_key": "MK"
+    }
+  }
+}

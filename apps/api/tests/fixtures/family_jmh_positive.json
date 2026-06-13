@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "sku": "JMH01020",
+      "name": "Mancuerna Hexagonal Pro Style 20 kgs",
+      "category_path": "MANCUERNAS"
+    },
+    {
+      "sku": "JMH01030",
+      "name": "Mancuerna Hexagonal Pro Style 30 kgs",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_grouping": {
+    "grouping_reason": "numeric_compound_suffix_family:JMH",
+    "master_key": "JMH010",
+    "min_grouping_confidence": 0.85
+  },
+  "expected_variant_specs": {
+    "JMH01020": {"peso_kg": 20},
+    "JMH01030": {"peso_kg": 30}
+  }
+}

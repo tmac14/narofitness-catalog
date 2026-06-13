@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "sku": "REM002",
+      "name": "Remo Air Rower 2,0 (NO smart conect)",
+      "category_path": "CARDIO > REMO"
+    },
+    {
+      "sku": "REM004",
+      "name": "Remo Air Rower 2,0 (SI smart conect)",
+      "category_path": "CARDIO > REMO"
+    }
+  ],
+  "expected_subcategory_slug": "remos"
+}

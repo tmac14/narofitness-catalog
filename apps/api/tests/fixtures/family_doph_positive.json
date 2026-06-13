@@ -1,0 +1,20 @@
+{
+  "rows": [
+    {
+      "sku": "DOPH005",
+      "name": "Disco Olimpico Hexagonal 5 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "DOPH010",
+      "name": "Disco Olimpico Hexagonal 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_subcategory_slug": "discos",
+  "expected_grouping": {
+    "grouping_reason": "numeric_suffix_family:DOPH",
+    "master_key": "DOPH",
+    "min_grouping_confidence": 0.85
+  }
+}

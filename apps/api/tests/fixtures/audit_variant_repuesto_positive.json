@@ -1,0 +1,53 @@
+{
+  "description": "REPUESTO-805/806 explicit 1:1 on same page — not SamePageSkuFamily",
+  "rows": [
+    {
+      "source_row_index": 100,
+      "page_number": 3,
+      "normalized_sku": "REPUESTO-805",
+      "normalized_name": "Consola Bluetooth AB-1 SMART CONECT",
+      "proposed_master_key": "REPUESTO-805",
+      "grouping_reason": "explicit_one_per_sku",
+      "grouping_strategy": "fdl_sku_family",
+      "inferred_attributes": {
+        "variant_specs": {},
+        "common_specs": {},
+        "variant_axes": []
+      },
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "BICI",
+        "section_brand": "XEBEX"
+      },
+      "review_reasons": [],
+      "blocking_reasons": [],
+      "final_decision": { "can_confirm": true, "review_status": "pending" }
+    },
+    {
+      "source_row_index": 101,
+      "page_number": 3,
+      "normalized_sku": "REPUESTO-806",
+      "normalized_name": "Consola Bluetooth AB-1000 SMART CONECT",
+      "proposed_master_key": "REPUESTO-806",
+      "grouping_reason": "explicit_one_per_sku",
+      "grouping_strategy": "fdl_sku_family",
+      "inferred_attributes": {
+        "variant_specs": {},
+        "common_specs": {},
+        "variant_axes": []
+      },
+      "source_section": {
+        "category_main": "CARDIO",
+        "category_sub": "BICI",
+        "section_brand": "XEBEX"
+      },
+      "review_reasons": [],
+      "blocking_reasons": [],
+      "final_decision": { "can_confirm": true, "review_status": "pending" }
+    }
+  ],
+  "expected": {
+    "suspicious_count": 0,
+    "forbidden_heuristics": ["SamePageSkuFamily"]
+  }
+}

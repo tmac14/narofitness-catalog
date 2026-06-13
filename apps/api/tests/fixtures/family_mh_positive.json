@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "sku": "MH005",
+      "name": "Mancuerna Hexagonal 5 kgs",
+      "category_path": "MANCUERNAS"
+    },
+    {
+      "sku": "MH010",
+      "name": "Mancuerna Hexagonal 10 kgs",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_grouping": {
+    "grouping_reason": "numeric_suffix_family:MH",
+    "master_key": "MH",
+    "min_grouping_confidence": 0.85,
+    "forbidden_grouping_reasons": ["explicit_one_per_sku", "one_per_sku_fallback"]
+  },
+  "expected_variant_specs": {
+    "MH005": {"peso_kg": 5},
+    "MH010": {"peso_kg": 10}
+  }
+}

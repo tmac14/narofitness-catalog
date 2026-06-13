@@ -1,0 +1,10 @@
+{
+  "rows": [
+    {
+      "sku": "ELI001",
+      "name": "Elíptica AirPlus",
+      "category_path": "CARDIO > ELIPTICA"
+    }
+  ],
+  "expected_subcategory_slug": "elipticas"
+}

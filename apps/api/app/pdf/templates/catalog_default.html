@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <title>{{ catalog_name }}</title>
+  <style>
+    {% include "catalog.css" %}
+    {% include "_product_styles.css" %}
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <h1>{{ catalog_name }}</h1>
+    <p class="date">Generado: {{ generated_at }}</p>
+  </section>
+
+  <main class="catalog-wrap">
+  {% for category in categories %}
+  <section class="category">
+    <h2>{{ category.name }}</h2>
+    <div class="product-list">
+      {% for p in category.products %}
+      {% include "_product_block.html" %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <footer>
+    <p>{{ iva_disclaimer }}</p>
+  </footer>
+  </main>
+</body>
+</html>

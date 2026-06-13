@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "sku": "MKA004",
+      "name": "Kettlebell agarre acero 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "CRO001",
+      "name": "Cuerda de saltar 2,5 mts",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "SOP012",
+      "name": "Soporte para discos",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_subcategory_slug": "cross-training",
+  "expected_by_sku": {
+    "MKA004": {
+      "grouping_reason": "numeric_suffix_family:MKA",
+      "master_key": "MKA"
+    },
+    "CRO001": {
+      "grouping_reason_prefix": "explicit_one_per_sku"
+    },
+    "SOP012": {
+      "grouping_reason_prefix": "explicit_one_per_sku"
+    }
+  },
+  "expected_distinct_master_keys": ["MKA", "CRO001", "SOP012"]
+}

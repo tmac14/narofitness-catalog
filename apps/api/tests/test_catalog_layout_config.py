@@ -1,0 +1,233 @@
+"""Tests for catalogue layout configuration persistence helpers."""
+
+from types import SimpleNamespace
+from unittest.mock import AsyncMock
+from uuid import uuid4
+
+import pytest
+from app.services.catalog_builder import _build_product_block
+from app.services.spec_resolver import SpecColumn
+
+
+def _master(name: str = "Product"):
+    return SimpleNamespace(
+        id="00000000-0000-0000-0000-000000000001",
+        name=name,
+        description=None,
+        images=[],
+        brand=None,
+    )
+
+
+def _variant_rows(*, multi_attr: bool = True, multi_variant: bool = True):
+    if not multi_variant:
+        return [
+            {
+                "sku": "A-1",
+                "peso_kg": "10 kg",
+                "color": "Rojo" if multi_attr else None,
+                "price_display": "10,00 €",
+                "sort_order": 0,
+                "_variant_images": [],
+            }
+        ]
+    return [
+        {
+            "sku": "A-1",
+            "peso_kg": "8 kg",
+            "color": "Rosa" if multi_attr else None,
+            "price_display": "10,00 €",
+            "sort_order": 0,
+            "_variant_images": [],
+        },
+        {
+            "sku": "A-2",
+            "peso_kg": "12 kg",
+            "color": "Azul" if multi_attr else None,
+            "price_display": "12,00 €",
+            "sort_order": 1,
+            "_variant_images": [],
+        },
+    ]
+
+
+def _columns():
+    return [
+        SpecColumn(
+            key="peso_kg",
+            label="Peso",
+            sort_order=0,
+            spec_definition_id=uuid4(),
+            data_type="number",
+            role="variant_axis",
+        ),
+        SpecColumn(
+            key="color",
+            label="Color",
+            sort_order=1,
+            spec_definition_id=uuid4(),
+            data_type="enum",
+            role="catalog_spec",
+        ),
+    ]
+
+
+def test_build_product_block_automatic_multi_attribute():
+    block = _build_product_block(
+        _master(), _variant_rows(multi_attr=True), _columns(), [], False, ""
+    )
+    assert block["layout_id"] == "variant_row_wide"
+    assert block["layout_selection"]["selection_mode"] == "automatic"
+    assert not block["layout_selection"]["fallback_used"]
+
+
+def test_build_product_block_uniform_fallback_when_incompatible():
+    block = _build_product_block(
+        _master(),
+        _variant_rows(multi_attr=True),
+        _columns(),
+        [],
+        False,
+        "",
+        layout_mode="uniform",
+        uniform_layout_id="single_standard",
+    )
+    assert block["layout_id"] == "variant_row_wide"
+    assert block["layout_selection"]["fallback_used"]
+    assert block["layout_selection"]["requested_layout_id"] == "single_standard"
+
+
+def test_build_product_block_uniform_applies_to_compatible_single():
+    block = _build_product_block(
+        _master(),
+        _variant_rows(multi_variant=False),
+        _columns(),
+        [],
+        False,
+        "",
+        layout_mode="uniform",
+        uniform_layout_id="single_standard",
+    )
+    assert block["layout_id"] == "single_standard"
+    assert not block["layout_selection"]["fallback_used"]
+
+
+def test_build_product_block_manual_override():
+    block = _build_product_block(
+        _master(),
+        _variant_rows(multi_attr=False),
+        _columns(),
+        [],
+        False,
+        "",
+        layout_mode="manual",
+        manual_layout_id="variant_row_wide",
+    )
+    assert block["layout_id"] == "variant_row_wide"
+    assert block["layout_selection"]["requested_layout_id"] == "variant_row_wide"
+
+
+def test_build_product_block_manual_missing_override_falls_back():
+    block = _build_product_block(
+        _master(),
+        _variant_rows(multi_attr=False),
+        _columns(),
+        [],
+        False,
+        "",
+        layout_mode="manual",
+        manual_layout_id=None,
+    )
+    assert block["layout_id"] == "variant_grid_50_50"
+    assert block["layout_selection"]["fallback_used"]
+
+
+@pytest.mark.asyncio
+async def test_master_variant_rows_from_catalog_items():
+    from app.services.catalog_layout import master_variant_rows_from_catalog_items
+
+    peso_id = uuid4()
+    color_id = uuid4()
+    variant_one = SimpleNamespace(
+        product_master_id=uuid4(),
+        master=SimpleNamespace(category_id=uuid4()),
+        specs=[
+            SimpleNamespace(
+                spec_definition_id=peso_id,
+                spec_definition=SimpleNamespace(
+                    id=peso_id,
+                    key="peso_kg",
+                    label="Peso",
+                    sort_order=0,
+                    is_active=True,
+                    is_printable=True,
+                    scope="variant",
+                    role="variant_axis",
+                    data_type="number",
+                    unit=SimpleNamespace(symbol="kg"),
+                ),
+                allowed_value=None,
+                allowed_value_id=None,
+                value_number=10,
+                value_text=None,
+                value_boolean=None,
+            ),
+            SimpleNamespace(
+                spec_definition_id=color_id,
+                spec_definition=SimpleNamespace(
+                    id=color_id,
+                    key="color",
+                    label="Color",
+                    sort_order=1,
+                    is_active=True,
+                    is_printable=True,
+                    scope="both",
+                    role="variant_axis",
+                    data_type="enum",
+                    unit=None,
+                ),
+                allowed_value=SimpleNamespace(label="Rojo"),
+                allowed_value_id=uuid4(),
+                value_number=None,
+                value_text=None,
+                value_boolean=None,
+            ),
+        ],
+    )
+    variant_two = SimpleNamespace(
+        product_master_id=variant_one.product_master_id,
+        master=variant_one.master,
+        specs=[
+            SimpleNamespace(
+                spec_definition_id=peso_id,
+                spec_definition=variant_one.specs[0].spec_definition,
+                allowed_value=None,
+                allowed_value_id=None,
+                value_number=12,
+                value_text=None,
+                value_boolean=None,
+            ),
+            SimpleNamespace(
+                spec_definition_id=color_id,
+                spec_definition=variant_one.specs[1].spec_definition,
+                allowed_value=SimpleNamespace(label="Azul"),
+                allowed_value_id=uuid4(),
+                value_number=None,
+                value_text=None,
+                value_boolean=None,
+            ),
+        ],
+    )
+    items = [
+        SimpleNamespace(sort_order=0, variant=variant_one),
+        SimpleNamespace(sort_order=1, variant=variant_two),
+    ]
+
+    db = AsyncMock()
+    db.execute = AsyncMock(
+        return_value=SimpleNamespace(scalars=lambda: SimpleNamespace(all=lambda: []))
+    )
+
+    state = await master_variant_rows_from_catalog_items(db, items)
+    assert state["has_variants"] is True
+    assert state["variant_attribute_count"] == 2

@@ -1,0 +1,98 @@
+{
+  "block_titles": [
+    "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero)",
+    "Disco Olimpico Bumper Competicion Casquillo de Acero",
+    "Disco Olimpico Bumper Color Fraccional",
+    "Soporte Discos Bumper",
+    "Disco Olimpico Bumper Mini",
+    "Slam Ball -  Negro",
+    "Wall Balls Doble Costura Color kgs"
+  ],
+  "rows": [
+    {
+      "sku": "DOBHT005",
+      "name": "Disco Bumper Hi Temp 5  kgs  (Numero Color)",
+      "variant_name_raw": "Disco Bumper Hi Temp 5  kgs  (Numero Color)",
+      "family_header_raw": "Disco Olimpico Bumper  Hi-Temp (Casquillo de Acero)",
+      "family_block_id": "p12:l0:CROSSTRAINING",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "DOBCC025",
+      "name": "Disco Bumper Competicion 25 kgs",
+      "variant_name_raw": "Disco Bumper Competicion 25 kgs",
+      "family_header_raw": "Disco Olimpico Bumper Competicion Casquillo de Acero",
+      "family_block_id": "p12:l21:CROSSTRAINING",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "DOBF005",
+      "name": "Disco Bumper Color Fraccional 0,5 kgs",
+      "variant_name_raw": "Disco Bumper Color Fraccional 0,5 kgs",
+      "family_header_raw": "Disco Olimpico Bumper Color Fraccional",
+      "family_block_id": "p12:l42:CROSSTRAINING",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "SOP025",
+      "name": "Soporte Discos Bumper Sopote para juego de Discos Bumper",
+      "variant_name_raw": "Sopote para juego de  Discos Bumper",
+      "family_header_raw": "Soporte Discos Bumper",
+      "family_block_id": "p12:l67:CROSSTRAINING",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "DOBMINI",
+      "name": "Juego Disco Olimpico Bumper Mini",
+      "variant_name_raw": "Juego Disco Olimpico Bumper Mini (2x0,25kgs + 2x0,5kgs + 2x0,75kgs + 2x1kg)",
+      "family_header_raw": "Disco Olimpico Bumper Mini",
+      "family_block_id": "p12:l73:CROSSTRAINING",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "CRO110",
+      "name": "Slam Ball 6 kgs Negro",
+      "variant_name_raw": "Slam Ball 6 kgs Negro",
+      "family_header_raw": "Slam Ball -  Negro",
+      "family_block_id": "p12:l79:CROSSTRAINING",
+      "taxonomy_name": "Slam Ball -  Negro Slam Ball 6 kgs Negro",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "CRO002",
+      "name": "Wall Ball 2 kgs",
+      "variant_name_raw": "Wall Ball 2 kgs",
+      "family_header_raw": "Wall Balls Doble Costura Color kgs",
+      "family_block_id": "p12:l140:CROSSTRAINING",
+      "taxonomy_name": "Wall Balls Doble Costura Color kgs Wall Ball 2 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_master_keys": {
+    "DOBHT005": "DOBHT",
+    "DOBCC025": "DOBCC",
+    "DOBF005": "DOBF",
+    "SOP025": "SOP025",
+    "DOBMINI": "DOBMINI",
+    "CRO110": "CRO-SLAM-NEGRO",
+    "CRO002": "CRO-WALL-COLOR"
+  },
+  "expected_grouping_reasons": {
+    "DOBHT005": "cross_training_bumper_family:DOBHT",
+    "DOBCC025": "cross_training_bumper_family:DOBCC",
+    "DOBF005": "cross_training_bumper_family:DOBF",
+    "SOP025": "explicit_one_per_sku",
+    "DOBMINI": "explicit_one_per_sku",
+    "CRO110": "cross_training_block_family:CRO-SLAM-NEGRO",
+    "CRO002": "cross_training_block_family:CRO-WALL-COLOR"
+  },
+  "expected_category_slugs": {
+    "DOBHT005": "discos",
+    "DOBCC025": "discos",
+    "DOBF005": "discos",
+    "SOP025": "soportes-y-mancuerneros",
+    "DOBMINI": "discos",
+    "CRO110": "cross-training",
+    "CRO002": "cross-training"
+  }
+}

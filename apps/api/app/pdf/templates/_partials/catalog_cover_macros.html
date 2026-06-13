@@ -1,0 +1,43 @@
+{# Catalogue and category cover pages for supplier_table shell #}
+
+{% macro catalog_cover_page(catalog_name, generated_at, logo_url, cover_image_url, cover_subtitle) %}
+<section class="catalog-page catalog-page--cover{% if cover_image_url %} catalog-page--cover-has-image catalog-page--cover-full-bleed{% else %} catalog-page--cover-classic{% endif %}">
+  {% if cover_image_url %}
+  <img class="catalog-cover-full-bleed-image" src="{{ cover_image_url }}" alt="" />
+  {% else %}
+  <div class="catalog-cover-classic">
+    {% if logo_url %}
+    <img class="catalog-cover-logo" src="{{ logo_url }}" alt="Logo" />
+    {% endif %}
+    <div class="catalog-cover-text">
+      <h1 class="catalog-cover-title">{{ catalog_name }}</h1>
+      {% if cover_subtitle %}
+      <p class="catalog-cover-subtitle">{{ cover_subtitle }}</p>
+      {% endif %}
+      <p class="catalog-cover-date">{{ generated_at }}</p>
+    </div>
+  </div>
+  {% endif %}
+</section>
+{% endmacro %}
+
+{% macro category_cover_page(section) %}
+<section class="catalog-page catalog-page--category-cover">
+  {% if section.category_cover_image_url %}
+  <div class="category-cover-image-wrap">
+    <img class="category-cover-image" src="{{ section.category_cover_image_url }}" alt="" />
+  </div>
+  {% else %}
+  <div class="category-cover-image-wrap category-cover-image-wrap--fallback" aria-hidden="true"></div>
+  {% endif %}
+  <div class="category-cover-body">
+    <h2 class="category-cover-title">{{ section.name }}</h2>
+    {% if section.category_cover_description %}
+    <p class="category-cover-description">{{ section.category_cover_description }}</p>
+    {% endif %}
+    {% if section.product_count is not none and section.product_count > 0 %}
+    <p class="category-cover-count">{{ section.product_count }} producto{% if section.product_count != 1 %}s{% endif %}</p>
+    {% endif %}
+  </div>
+</section>
+{% endmacro %}

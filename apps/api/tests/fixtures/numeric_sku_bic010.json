@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "sku": "BIC010",
+      "name": "Bicileta Air Bike 1000 Eco (NO smart conect)",
+      "category_path": "CARDIO > BICI"
+    }
+  ],
+  "expected_subcategory_slug": "bicicletas-estaticas",
+  "expected_grouping": {
+    "grouping_reason": "explicit_one_per_sku",
+    "min_grouping_confidence": 0.85,
+    "forbidden_review_reasons": ["regex_fallback_1_1", "low_grouping_confidence"]
+  }
+}

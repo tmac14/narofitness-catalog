@@ -1,0 +1,54 @@
+{
+  "rows": [
+    {
+      "sku": "DOBN005",
+      "name": "Disco Bumper Negro 3.0 - 5 kgs",
+      "variant_name_raw": "Disco Bumper Negro 3.0 - 5 kgs",
+      "family_header_raw": "Disco Bumper Negro 3.0 - Goma Maciza Negro (Casquillo de Acero)",
+      "family_block_id": "p11:l22:DOBN",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "DOB010",
+      "name": "Disco Bumper Negro 10 kgs",
+      "variant_name_raw": "Disco Bumper Negro 10 kgs",
+      "family_header_raw": "Disco Bumper Goma Maciza Negro (Casquillo de Acero)",
+      "family_block_id": "p11:l40:DOB",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "DOB3C015",
+      "name": "Disco Bumper COLOR 3.0 - 15 kgs",
+      "variant_name_raw": "Disco Bumper COLOR 3.0 - 15 kgs",
+      "family_header_raw": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero)",
+      "family_block_id": "p11:l60:DOB3C",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "DOBC020",
+      "name": "Disco Bumper Color 20 kgs - Azul",
+      "variant_name_raw": "Disco Bumper Color 20 kgs - Azul",
+      "family_header_raw": "Disco Bumper Color NEXO - Goma Maciza Color (casquillo de acero)",
+      "family_block_id": "p11:l80:DOBC",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_subcategory_slug": "discos",
+  "expected_grouping": {
+    "grouping_reason_prefix": "cross_training_bumper_family:",
+    "min_grouping_confidence": 0.85,
+    "forbidden_grouping_reasons": ["one_per_sku_fallback", "explicit_one_per_sku"]
+  },
+  "expected_master_keys": {
+    "DOBN005": "DOBN",
+    "DOB010": "DOB",
+    "DOB3C015": "DOB3C",
+    "DOBC020": "DOBC"
+  },
+  "expected_variant_specs": {
+    "DOBN005": { "peso_kg": 5, "color": "Negro" },
+    "DOB010": { "peso_kg": 10, "color": "Negro" },
+    "DOB3C015": { "peso_kg": 15 },
+    "DOBC020": { "peso_kg": 20, "color": "Azul" }
+  }
+}

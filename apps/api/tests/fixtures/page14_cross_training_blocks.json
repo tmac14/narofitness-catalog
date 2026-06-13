@@ -1,0 +1,125 @@
+{
+  "block_titles": [
+    "Soporte Power Bag / Saco Bulgaro",
+    "Saco Gusano",
+    "Barras Crossfit",
+    "Barras Crossfit - NEXO"
+  ],
+  "rows": [
+    {
+      "sku": "SOP028",
+      "name": "Soporte Power Bag 5 sacos",
+      "variant_name_raw": "Soporte Power Bag 5 sacos",
+      "family_header_raw": "Soporte Power Bag / Saco Bulgaro",
+      "family_block_id": "p14:l1:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Soporte Power Bag / Saco Bulgaro Soporte Power Bag 5 sacos"
+    },
+    {
+      "sku": "SOP029",
+      "name": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "variant_name_raw": "Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos",
+      "family_header_raw": "Soporte Power Bag / Saco Bulgaro",
+      "family_block_id": "p14:l1:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Soporte Power Bag / Saco Bulgaro Rack Power Bag y Saco Bulgaro Premium (Grande) - 10 Sacos"
+    },
+    {
+      "sku": "CRO107",
+      "name": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "variant_name_raw": "Saco Gusano 2 personas - 160x30cms (60kgs)",
+      "family_header_raw": "Saco Gusano",
+      "family_block_id": "p14:l10:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs)"
+    },
+    {
+      "sku": "CRO131",
+      "name": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "variant_name_raw": "Saco Gusano 3 personas - 240x30,5cms (100kgs)",
+      "family_header_raw": "Saco Gusano",
+      "family_block_id": "p14:l10:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Saco Gusano Saco Gusano 3 personas - 240x30,5cms (100kgs)"
+    },
+    {
+      "sku": "CRO108",
+      "name": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "variant_name_raw": "Saco Gusano 4 personas - 336x30,5cms (163kgs)",
+      "family_header_raw": "Saco Gusano",
+      "family_block_id": "p14:l10:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Saco Gusano Saco Gusano 4 personas - 336x30,5cms (163kgs)"
+    },
+    {
+      "sku": "CRO107NEXO",
+      "name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO",
+      "variant_name_raw": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+      "raw_name": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+      "family_header_raw": "Saco Gusano",
+      "family_block_id": "p14:l10:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Saco Gusano Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO"
+    },
+    {
+      "sku": "BOC001",
+      "name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+      "variant_name_raw": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA",
+      "family_header_raw": "Barras Crossfit",
+      "family_block_id": "p14:l32:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA"
+    },
+    {
+      "sku": "BOC004",
+      "name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+      "variant_name_raw": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA",
+      "family_header_raw": "Barras Crossfit",
+      "family_block_id": "p14:l32:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Barras Crossfit Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA"
+    },
+    {
+      "sku": "BOC006",
+      "name": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+      "variant_name_raw": "Barra Tecnica 10 Kgs - 2 Mts AZUL",
+      "family_header_raw": "Barras Crossfit",
+      "family_block_id": "p14:l32:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Barras Crossfit Barra Tecnica 10 Kgs - 2 Mts AZUL"
+    },
+    {
+      "sku": "BOC001NEXO",
+      "name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO",
+      "variant_name_raw": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO NEXO",
+      "family_header_raw": "Barras Crossfit - NEXO",
+      "family_block_id": "p14:l37:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm PLATA - LOGO NEXO"
+    },
+    {
+      "sku": "BOC004NEXO",
+      "name": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO",
+      "variant_name_raw": "Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO NEXO",
+      "raw_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO NEXO",
+      "family_header_raw": "Barras Crossfit - NEXO",
+      "family_block_id": "p14:l37:CROSSTRAINING_Y_ENTRENAMIENTO__FUNCIONAL",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL",
+      "taxonomy_name": "Barras Crossfit - NEXO Barra 2,20 Mts - 20 kgs - 6 Rod - 1500 lbs Agarre 28 mm NEGRA - LOGO NEXO"
+    }
+  ],
+  "expected_master_keys": {
+    "SOP028": "SOP028",
+    "SOP029": "SOP029",
+    "CRO107": "CRO-SACO-GUSANO",
+    "CRO131": "CRO-SACO-GUSANO",
+    "CRO108": "CRO-SACO-GUSANO",
+    "CRO107NEXO": "CRO-SACO-GUSANO",
+    "BOC001": "BOC-BARRAS-CROSSFIT",
+    "BOC004": "BOC-BARRAS-CROSSFIT",
+    "BOC006": "BOC-BARRAS-CROSSFIT",
+    "BOC001NEXO": "BOC-BARRAS-CROSSFIT-NEXO",
+    "BOC004NEXO": "BOC-BARRAS-CROSSFIT-NEXO"
+  }
+}

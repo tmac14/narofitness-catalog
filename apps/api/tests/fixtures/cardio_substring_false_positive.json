@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "sku": "VAR120NEXO",
+      "name": "Saco con remo integrado para entrenamiento",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "CRO100",
+      "name": "Wall Ball con cinta de resistencia",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "PK001",
+      "name": "Soporte tipo bici para rack",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "forbidden_subcategory_slugs": [
+    "remos",
+    "cintas-de-correr",
+    "elipticas",
+    "bicicletas-estaticas"
+  ]
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <title>{{ catalog_name }}</title>
+
+  <style>
+
+    {% include "_supplier_table_styles.css" %}
+
+    {% include "_supplier_table_print.css" %}
+
+  </style>
+
+</head>
+
+<body{% if catalog_render_density == 'print' %} class="catalogue-pdf-render"{% endif %}>
+
+  {% from "_partials/catalog_cover_macros.html" import catalog_cover_page, category_cover_page %}
+
+  {{ catalog_cover_page(catalog_name, generated_at, logo_url, catalog_cover_image_url, catalog_cover_subtitle) }}
+
+
+
+  <main class="catalog-wrap catalog-page--products">
+
+  {% from "_partials/supplier_table_macros.html" import supplier_simple_colgroup, supplier_family_colgroup %}
+
+  {% for section in sections %}
+
+  {% set section_cover_desc = section.category_cover_description|default('', true)|trim %}
+
+  {% set has_category_cover = section.category_cover_image_url or section_cover_desc %}
+
+  {% if has_category_cover %}
+
+  {{ category_cover_page(section) }}
+
+  {% endif %}
+
+  <div class="supplier-section-header{% if has_category_cover %} supplier-section-header--compact{% endif %}">{{ section.name }}</div>
+
+  {% if section.brand_groups %}
+
+  {% for group in section.brand_groups %}
+
+  <div class="supplier-brand-header">{{ group.brand }}</div>
+
+  {% for p in group.products %}
+
+  {% set family_spec_cols = p.variant_columns|length if p.variant_columns else 0 %}
+
+  <table class="supplier-catalog-table{% if p.has_variants %} supplier-catalog-table--family supplier-family-cols-{{ family_spec_cols }}{% else %} supplier-catalog-table--simple{% if not show_description_column %} supplier-catalog-table--no-desc{% endif %}{% endif %}{% if show_iva_column %} supplier-catalog-table--with-iva{% endif %}" cellpadding="0" cellspacing="0">
+
+    {% if p.has_variants %}{{ supplier_family_colgroup(p, show_iva_column) }}{% else %}{{ supplier_simple_colgroup(show_iva_column, show_description_column) }}{% endif %}
+
+    {% include "_layouts/family_variant_table.html" %}
+
+  </table>
+
+  {% endfor %}
+
+  {% endfor %}
+
+  {% else %}
+
+  {% for p in section.products %}
+
+  {% set family_spec_cols = p.variant_columns|length if p.variant_columns else 0 %}
+
+  <table class="supplier-catalog-table{% if p.has_variants %} supplier-catalog-table--family supplier-family-cols-{{ family_spec_cols }}{% else %} supplier-catalog-table--simple{% if not show_description_column %} supplier-catalog-table--no-desc{% endif %}{% endif %}{% if show_iva_column %} supplier-catalog-table--with-iva{% endif %}" cellpadding="0" cellspacing="0">
+
+    {% if p.has_variants %}{{ supplier_family_colgroup(p, show_iva_column) }}{% else %}{{ supplier_simple_colgroup(show_iva_column, show_description_column) }}{% endif %}
+
+    {% include "_layouts/family_variant_table.html" %}
+
+  </table>
+
+  {% endfor %}
+
+  {% endif %}
+
+  {% endfor %}
+
+
+
+  <footer class="legal">{{ iva_disclaimer }}</footer>
+
+  </main>
+
+</body>
+
+</html>
+

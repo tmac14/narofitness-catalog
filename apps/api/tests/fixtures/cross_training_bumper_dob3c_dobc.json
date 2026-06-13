@@ -1,0 +1,19 @@
+{
+  "rows": [
+    {
+      "sku": "DOB3C005",
+      "name": "Disco Bumper Negro 3.0 - Goma Maciza COLOR (casquillo de acero) Disco Bumper COLOR 3.0 - 5 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "DOBC005",
+      "name": "Disco Bumper Color 5 kgs - Gris",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_distinct_master_keys": ["DOB3C", "DOBC"],
+  "expected_grouping": {
+    "grouping_reason_prefix": "cross_training_bumper_family:",
+    "min_grouping_confidence": 0.85
+  }
+}

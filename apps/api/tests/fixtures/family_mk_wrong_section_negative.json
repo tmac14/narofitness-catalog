@@ -1,0 +1,16 @@
+{
+  "rows": [
+    {
+      "sku": "MK004",
+      "name": "Kettelbells Vinilo 4 kgs",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "cross-training",
+  "expected_by_sku": {
+    "MK004": {
+      "grouping_reason": "explicit_one_per_sku",
+      "master_key": "MK004"
+    }
+  }
+}

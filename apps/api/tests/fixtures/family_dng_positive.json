@@ -1,0 +1,20 @@
+{
+  "rows": [
+    {
+      "sku": "DNG005",
+      "name": "Disco Normal Goma 5 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "DNG010",
+      "name": "Disco Normal Goma 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_subcategory_slug": "discos",
+  "expected_grouping": {
+    "grouping_reason": "numeric_suffix_family:DNG",
+    "master_key": "DNG",
+    "min_grouping_confidence": 0.85
+  }
+}

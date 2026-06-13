@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <title>{{ catalog_name }}</title>
+  <style>
+    {% include "catalog_branded.css" %}
+    {% include "_product_styles.css" %}
+  </style>
+</head>
+<body>
+  <section class="cover">
+    {% if logo_url %}<img class="logo" src="{{ logo_url }}" alt="Logo" />{% endif %}
+    <h1>{{ catalog_name }}</h1>
+    <p class="date">{{ generated_at }}</p>
+  </section>
+
+  <main class="catalog-wrap">
+  {% if toc %}
+  <section class="toc">
+    <h2>Índice</h2>
+    <ul>
+      {% for entry in toc %}
+      <li><a href="#{{ entry.anchor }}">{{ entry.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% for section in sections %}
+  <section class="category-block" id="cat-{{ loop.index0 }}">
+    <h2>{{ section.name }}</h2>
+    <div class="product-list">
+      {% for p in section.products %}
+      {% include "_product_block.html" %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <footer class="legal">{{ iva_disclaimer }}</footer>
+  </main>
+</body>
+</html>

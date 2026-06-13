@@ -1,0 +1,31 @@
+{
+  "rows": [
+    {
+      "sku": "MKI004",
+      "name": "Kettlebel Iron 4 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "MKI008",
+      "name": "Kettlebel Iron 8 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    },
+    {
+      "sku": "MKI032",
+      "name": "Kettlebel Iron 32 kgs",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_subcategory_slug": "cross-training",
+  "expected_grouping": {
+    "grouping_reason_prefix": "numeric_suffix_family:MKI",
+    "master_key": "MKI",
+    "min_grouping_confidence": 0.85,
+    "forbidden_grouping_reasons": ["explicit_one_per_sku", "one_per_sku_fallback"]
+  },
+  "expected_variant_specs": {
+    "MKI004": {"peso_kg": 4},
+    "MKI008": {"peso_kg": 8},
+    "MKI032": {"peso_kg": 32}
+  }
+}

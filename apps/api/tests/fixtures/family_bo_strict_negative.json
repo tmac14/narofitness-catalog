@@ -1,0 +1,14 @@
+{
+  "rows": [
+    {
+      "sku": "BOC001NEXO",
+      "name": "Boca de Lobo NEXO - 1 kg",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_grouping": {
+    "grouping_reason_prefix": "false_family:",
+    "forbidden_grouping_reasons": ["numeric_suffix_family:BO", "explicit_one_per_sku"],
+    "not_confirmable_even_with_allow_needs_review": true
+  }
+}

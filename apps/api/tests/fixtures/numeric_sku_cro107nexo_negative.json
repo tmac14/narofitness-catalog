@@ -1,0 +1,17 @@
+{
+  "rows": [
+    {
+      "sku": "CRO107NEXO",
+      "name": "Saco Gusano 2 personas - 160x30cms (60kgs) - LOGO NEXO",
+      "category_path": "CROSSTRAINING Y ENTRENAMIENTO  FUNCIONAL"
+    }
+  ],
+  "expected_grouping": {
+    "grouping_reason_prefix": "false_family:",
+    "max_grouping_confidence": 0.4,
+    "required_review_reasons": ["false_family_pattern", "low_grouping_confidence"],
+    "forbidden_grouping_reasons": ["explicit_one_per_sku"],
+    "forbidden_variant_specs": ["peso_kg"],
+    "not_confirmable_even_with_allow_needs_review": true
+  }
+}

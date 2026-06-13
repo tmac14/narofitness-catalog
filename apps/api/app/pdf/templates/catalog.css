@@ -1,0 +1,56 @@
+@page {
+  size: A4;
+  margin: 1.5cm;
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  color: #1a1a1a;
+  margin: 0;
+  background: #fff;
+}
+
+.catalog-wrap {
+  box-sizing: border-box;
+}
+
+@media screen {
+  .catalog-wrap {
+    padding: 1.5rem 2rem 2.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
+
+@media print {
+  .catalog-wrap {
+    padding: 0;
+  }
+}
+
+.cover {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 30%;
+}
+
+.cover h1 {
+  font-size: 22pt;
+}
+
+.category > h2 {
+  font-size: 13pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 2px solid #222;
+  margin-top: 1em;
+  margin-bottom: 0.35em;
+}
+
+footer {
+  margin-top: 2cm;
+  font-size: 8pt;
+  text-align: center;
+  color: #666;
+}

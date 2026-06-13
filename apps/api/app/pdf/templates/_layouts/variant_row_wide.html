@@ -1,0 +1,15 @@
+{% from "_partials/product_macros.html" import product_titles, product_visual, product_description, variant_table %}
+<article class="product-block product-block--variants product-block--row-wide" data-layout="variant_row_wide">
+  <table class="product-block__layout product-block__layout--row-wide" role="presentation" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="product-block__left">
+        {{ product_titles(p) }}
+        {{ product_visual(p) }}
+        {{ product_description(p) }}
+      </td>
+      <td class="product-block__right">
+        {{ variant_table(p) }}
+      </td>
+    </tr>
+  </table>
+</article>

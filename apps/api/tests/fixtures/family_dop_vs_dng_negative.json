@@ -1,0 +1,18 @@
+{
+  "rows": [
+    {
+      "sku": "DOP010",
+      "name": "Disco Olimpico Premium 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    },
+    {
+      "sku": "DNG010",
+      "name": "Disco Normal Goma 10 kgs",
+      "category_path": "DISCOS Y BARRAS"
+    }
+  ],
+  "expected_grouping": {
+    "forbidden_grouping_reasons": ["explicit_one_per_sku"]
+  },
+  "expected_distinct_master_keys": ["DOP", "DNG"]
+}

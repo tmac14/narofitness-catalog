@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "sku": "JMU01020",
+      "name": "Mancuerna Uretano Pro Style 20 kgs",
+      "category_path": "MANCUERNAS"
+    },
+    {
+      "sku": "MU020",
+      "name": "Mancuerna Uretano 20 kgs",
+      "category_path": "MANCUERNAS"
+    }
+  ],
+  "expected_subcategory_slug": "mancuernas",
+  "expected_distinct_master_keys": ["JMU010", "MU"],
+  "expected_by_sku": {
+    "JMU01020": {
+      "grouping_reason": "numeric_compound_suffix_family:JMU",
+      "master_key": "JMU010"
+    },
+    "MU020": {
+      "grouping_reason": "numeric_suffix_family:MU",
+      "master_key": "MU"
+    }
+  }
+}
