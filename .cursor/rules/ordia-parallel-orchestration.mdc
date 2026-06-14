@@ -1,0 +1,50 @@
+---
+description: Parallel orchestration — agent owners, locks, path safety, and batch intents
+alwaysApply: false
+---
+
+# Parallel Orchestration (Ordia 0.15+)
+
+Use when running **multiple in-flight tasks** or preparing a parallel batch.
+
+## Before starting parallel work
+
+1. Read [`{controlRoot}/NAVIGATION.md`](docs/control/NAVIGATION.md) and [`AGENT_REGISTRY.yaml`](docs/control/AGENT_REGISTRY.yaml).
+2. Assign each task `owner` to a registered agent id **before** `READY_FOR_IMPLEMENTATION`.
+3. Declare non-overlapping `planned_write_paths` per task; use prefix paths (`src/api/`, not single files when possible).
+4. Run `ordia task summary` — review collisions and owner counts.
+
+## Locks CLI
+
+```powershell
+ordia task lock list
+ordia task lock add --task <ID> --path <prefix/>
+ordia task lock release --task <ID> --path <prefix/>
+```
+
+- Locks are enforced at edit time by Cursor hooks (foreign lock → deny).
+- Release locks when the task leaves `IN_FLIGHT` or scope changes.
+
+## Strict parallel paths
+
+When `ordia.yaml` sets `enforcement.strictParallelPaths: true`, hooks **deny** edits that overlap a peer's `planned_write_paths` (not only locks).
+
+## Mutual exclusion groups
+
+Agents with the same `excludes` group must not hold in-flight tasks on overlapping scopes. Validator errors on conflict.
+
+## Workflow intents
+
+| Intent | When |
+|--------|------|
+| `orchestrate_batch` | Single batch with parallel safety checklist |
+| `orchestrate_parallel` | Multi-task from `ready_for_parallel` queue |
+| `confirm_locks` | Pre-flight before implementation |
+
+```powershell
+ordia prompt emit --intent orchestrate_parallel --task <ID>
+```
+
+## UI/UX parallel work
+
+When `planned_write_paths` ⊆ frontend scopes, prefer `implement_ui` or `implement_ux` over `implement_feature`.

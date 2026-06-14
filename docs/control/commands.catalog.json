@@ -1,0 +1,599 @@
+{
+  "meta": {
+    "version": 1,
+    "profile": "narofitness",
+    "generatedBy": "ordia init --sync-commands"
+  },
+  "sections": [
+    {
+      "id": "audit",
+      "title": "Audits",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "audit:api1",
+          "description": "npm script `audit:api1`",
+          "command": "npm run audit:api1",
+          "layer": "L3",
+          "domain": "audit"
+        },
+        {
+          "name": "audit:baseline",
+          "description": "npm script `audit:baseline`",
+          "command": "npm run audit:baseline",
+          "layer": "L3",
+          "domain": "audit"
+        },
+        {
+          "name": "audit:category-contamination",
+          "description": "npm script `audit:category-contamination`",
+          "command": "npm run audit:category-contamination",
+          "layer": "L3",
+          "domain": "audit"
+        },
+        {
+          "name": "audit:page-import",
+          "description": "npm script `audit:page-import`",
+          "command": "npm run audit:page-import",
+          "layer": "L3",
+          "domain": "audit"
+        },
+        {
+          "name": "audit:page-import:purge",
+          "description": "npm script `audit:page-import:purge`",
+          "command": "npm run audit:page-import:purge",
+          "layer": "L3",
+          "domain": "audit"
+        },
+        {
+          "name": "audit:report",
+          "description": "npm script `audit:report`",
+          "command": "npm run audit:report",
+          "layer": "L3",
+          "domain": "audit"
+        },
+        {
+          "name": "audit:variants",
+          "description": "npm script `audit:variants`",
+          "command": "npm run audit:variants",
+          "layer": "L3",
+          "domain": "audit"
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "title": "Database",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "db:migrate",
+          "description": "npm script `db:migrate`",
+          "command": "npm run db:migrate",
+          "layer": "L3",
+          "domain": "db"
+        },
+        {
+          "name": "db:reset:full",
+          "description": "npm script `db:reset:full`",
+          "command": "npm run db:reset:full",
+          "layer": "L3",
+          "domain": "db"
+        },
+        {
+          "name": "db:reset:full:wipe",
+          "description": "npm script `db:reset:full:wipe`",
+          "command": "npm run db:reset:full:wipe",
+          "layer": "L3",
+          "domain": "db"
+        },
+        {
+          "name": "db:revision",
+          "description": "npm script `db:revision`",
+          "command": "npm run db:revision",
+          "layer": "L3",
+          "domain": "db"
+        },
+        {
+          "name": "db:seed:fresh",
+          "description": "npm script `db:seed:fresh`",
+          "command": "npm run db:seed:fresh",
+          "layer": "L3",
+          "domain": "db"
+        },
+        {
+          "name": "db:seed:pim",
+          "description": "npm script `db:seed:pim`",
+          "command": "npm run db:seed:pim",
+          "layer": "L3",
+          "domain": "db"
+        },
+        {
+          "name": "db:seed:stress",
+          "description": "npm script `db:seed:stress`",
+          "command": "npm run db:seed:stress",
+          "layer": "L3",
+          "domain": "db"
+        },
+        {
+          "name": "db:seed:stress:fresh",
+          "description": "npm script `db:seed:stress:fresh`",
+          "command": "npm run db:seed:stress:fresh",
+          "layer": "L3",
+          "domain": "db"
+        }
+      ]
+    },
+    {
+      "id": "desktop",
+      "title": "Desktop",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "desktop:build",
+          "description": "npm script `desktop:build`",
+          "command": "npm run desktop:build",
+          "layer": "L3",
+          "domain": "desktop"
+        },
+        {
+          "name": "desktop:electron",
+          "description": "npm script `desktop:electron`",
+          "command": "npm run desktop:electron",
+          "layer": "L3",
+          "domain": "desktop"
+        },
+        {
+          "name": "desktop:install",
+          "description": "npm script `desktop:install`",
+          "command": "npm run desktop:install",
+          "layer": "L3",
+          "domain": "desktop"
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "title": "Development servers",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "dev:fresh",
+          "description": "npm script `dev:fresh`",
+          "command": "npm run dev:fresh",
+          "layer": "L3",
+          "domain": "dev"
+        },
+        {
+          "name": "dev:fresh:wipe",
+          "description": "npm script `dev:fresh:wipe`",
+          "command": "npm run dev:fresh:wipe",
+          "layer": "L3",
+          "domain": "dev"
+        },
+        {
+          "name": "dev:web",
+          "description": "npm script `dev:web`",
+          "command": "npm run dev:web",
+          "layer": "L3",
+          "domain": "dev"
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "title": "Docker",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "docker:down",
+          "description": "npm script `docker:down`",
+          "command": "npm run docker:down",
+          "layer": "L3",
+          "domain": "docker"
+        },
+        {
+          "name": "docker:logs",
+          "description": "npm script `docker:logs`",
+          "command": "npm run docker:logs",
+          "layer": "L3",
+          "domain": "docker"
+        },
+        {
+          "name": "docker:logs:api",
+          "description": "npm script `docker:logs:api`",
+          "command": "npm run docker:logs:api",
+          "layer": "L3",
+          "domain": "docker"
+        },
+        {
+          "name": "docker:rebuild",
+          "description": "npm script `docker:rebuild`",
+          "command": "npm run docker:rebuild",
+          "layer": "L3",
+          "domain": "docker"
+        },
+        {
+          "name": "docker:rebuild:prod",
+          "description": "npm script `docker:rebuild:prod`",
+          "command": "npm run docker:rebuild:prod",
+          "layer": "L3",
+          "domain": "docker"
+        },
+        {
+          "name": "docker:restart",
+          "description": "npm script `docker:restart`",
+          "command": "npm run docker:restart",
+          "layer": "L3",
+          "domain": "docker"
+        },
+        {
+          "name": "docker:up",
+          "description": "npm script `docker:up`",
+          "command": "npm run docker:up",
+          "layer": "L3",
+          "domain": "docker"
+        },
+        {
+          "name": "docker:up:prod",
+          "description": "npm script `docker:up:prod`",
+          "command": "npm run docker:up:prod",
+          "layer": "L3",
+          "domain": "docker"
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "frontend:app",
+          "description": "npm script `frontend:app`",
+          "command": "npm run frontend:app",
+          "layer": "L3",
+          "domain": "frontend"
+        },
+        {
+          "name": "frontend:stop",
+          "description": "npm script `frontend:stop`",
+          "command": "npm run frontend:stop",
+          "layer": "L3",
+          "domain": "frontend"
+        },
+        {
+          "name": "frontend:web",
+          "description": "npm script `frontend:web`",
+          "command": "npm run frontend:web",
+          "layer": "L3",
+          "domain": "frontend"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "title": "Command discovery",
+      "layer": "L1",
+      "commands": [
+        {
+          "name": "help:coverage",
+          "description": "npm script `help:coverage`",
+          "command": "npm run help:coverage",
+          "layer": "L1",
+          "domain": "help"
+        }
+      ]
+    },
+    {
+      "id": "pack",
+      "title": "Packaging",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "pack:api",
+          "description": "npm script `pack:api`",
+          "command": "npm run pack:api",
+          "layer": "L3",
+          "domain": "pack"
+        },
+        {
+          "name": "pack:postgres",
+          "description": "npm script `pack:postgres`",
+          "command": "npm run pack:postgres",
+          "layer": "L3",
+          "domain": "pack"
+        },
+        {
+          "name": "pack:release",
+          "description": "npm script `pack:release`",
+          "command": "npm run pack:release",
+          "layer": "L3",
+          "domain": "pack"
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "Typecheck",
+      "layer": "L2",
+      "commands": [
+        {
+          "name": "format:check:frontend",
+          "description": "npm script `format:check:frontend`",
+          "command": "npm run format:check:frontend",
+          "layer": "L2",
+          "domain": "format"
+        },
+        {
+          "name": "format:check:python",
+          "description": "npm script `format:check:python`",
+          "command": "npm run format:check:python",
+          "layer": "L2",
+          "domain": "format"
+        },
+        {
+          "name": "lint:frontend",
+          "description": "npm script `lint:frontend`",
+          "command": "npm run lint:frontend",
+          "layer": "L2",
+          "domain": "lint"
+        },
+        {
+          "name": "lint:python",
+          "description": "npm script `lint:python`",
+          "command": "npm run lint:python",
+          "layer": "L2",
+          "domain": "lint"
+        },
+        {
+          "name": "quality:baseline",
+          "description": "npm script `quality:baseline`",
+          "command": "npm run quality:baseline",
+          "layer": "L2",
+          "domain": "quality"
+        },
+        {
+          "name": "quality:check",
+          "description": "npm script `quality:check`",
+          "command": "npm run quality:check",
+          "layer": "L2",
+          "domain": "quality"
+        },
+        {
+          "name": "quality:install:python",
+          "description": "npm script `quality:install:python`",
+          "command": "npm run quality:install:python",
+          "layer": "L2",
+          "domain": "quality"
+        },
+        {
+          "name": "typecheck:frontend",
+          "description": "npm script `typecheck:frontend`",
+          "command": "npm run typecheck:frontend",
+          "layer": "L2",
+          "domain": "typecheck"
+        },
+        {
+          "name": "typecheck:python",
+          "description": "npm script `typecheck:python`",
+          "command": "npm run typecheck:python",
+          "layer": "L2",
+          "domain": "typecheck"
+        }
+      ]
+    },
+    {
+      "id": "root",
+      "title": "Root",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "dev",
+          "description": "npm script `dev`",
+          "command": "npm run dev",
+          "layer": "L3",
+          "domain": "other"
+        },
+        {
+          "name": "setup",
+          "description": "npm script `setup`",
+          "command": "npm run setup",
+          "layer": "L3",
+          "domain": "other"
+        }
+      ]
+    },
+    {
+      "id": "spike",
+      "title": "Spike",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "spike:pdf",
+          "description": "npm script `spike:pdf`",
+          "command": "npm run spike:pdf",
+          "layer": "L3",
+          "domain": "spike"
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "title": "Tests",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "test:api",
+          "description": "npm script `test:api`",
+          "command": "npm run test:api",
+          "layer": "L3",
+          "domain": "test"
+        },
+        {
+          "name": "test:api:full",
+          "description": "npm script `test:api:full`",
+          "command": "npm run test:api:full",
+          "layer": "L3",
+          "domain": "test"
+        },
+        {
+          "name": "test:api:integration",
+          "description": "npm script `test:api:integration`",
+          "command": "npm run test:api:integration",
+          "layer": "L3",
+          "domain": "test"
+        }
+      ]
+    },
+    {
+      "id": "tunnel",
+      "title": "Tunnels",
+      "layer": "L3",
+      "commands": [
+        {
+          "name": "tunnel:start",
+          "description": "npm script `tunnel:start`",
+          "command": "npm run tunnel:start",
+          "layer": "L3",
+          "domain": "tunnel"
+        },
+        {
+          "name": "tunnel:stop",
+          "description": "npm script `tunnel:stop`",
+          "command": "npm run tunnel:stop",
+          "layer": "L3",
+          "domain": "tunnel"
+        }
+      ]
+    }
+  ],
+  "quickFlows": [],
+  "workflowIntents": [
+    {
+      "goal": "Recover session after context loss",
+      "intent": "recover",
+      "emitCommand": "ordia prompt emit --intent recover"
+    },
+    {
+      "goal": "Runtime handoff between control planes",
+      "intent": "handoff",
+      "emitCommand": "ordia prompt emit --intent handoff"
+    },
+    {
+      "goal": "Generate next executor prompt batch",
+      "intent": "orchestrate_batch",
+      "emitCommand": "ordia prompt emit --intent orchestrate_batch"
+    },
+    {
+      "goal": "Plan parallel executor batch from ready_for_parallel queue",
+      "intent": "orchestrate_parallel",
+      "emitCommand": "ordia prompt emit --intent orchestrate_parallel"
+    },
+    {
+      "goal": "Evaluate agent plan submission",
+      "intent": "evaluate_plan",
+      "emitCommand": "ordia prompt emit --intent evaluate_plan"
+    },
+    {
+      "goal": "Evaluate executor implementation report",
+      "intent": "evaluate_report",
+      "emitCommand": "ordia prompt emit --intent evaluate_report"
+    },
+    {
+      "goal": "Create new task packet and registry entry",
+      "intent": "task_create",
+      "emitCommand": "ordia prompt emit --intent task_create"
+    },
+    {
+      "goal": "Resume in-flight task at next safe action",
+      "intent": "task_resume",
+      "emitCommand": "ordia prompt emit --intent task_resume"
+    },
+    {
+      "goal": "Discovery and diagnosis phase",
+      "intent": "discover",
+      "emitCommand": "ordia prompt emit --intent discover"
+    },
+    {
+      "goal": "Plan Mode — options and recommendation",
+      "intent": "plan",
+      "emitCommand": "ordia prompt emit --intent plan"
+    },
+    {
+      "goal": "User approval for UNIFIED implementation slice",
+      "intent": "approve_implementation",
+      "emitCommand": "ordia prompt emit --intent approve_implementation"
+    },
+    {
+      "goal": "Approve model tier for task",
+      "intent": "approve_model",
+      "emitCommand": "ordia prompt emit --intent approve_model"
+    },
+    {
+      "goal": "Confirm parallel-safety locks",
+      "intent": "confirm_locks",
+      "emitCommand": "ordia prompt emit --intent confirm_locks"
+    },
+    {
+      "goal": "Generic approved implementation",
+      "intent": "implement",
+      "emitCommand": "ordia prompt emit --intent implement"
+    },
+    {
+      "goal": "Implement new feature",
+      "intent": "implement_feature",
+      "emitCommand": "ordia prompt emit --intent implement_feature"
+    },
+    {
+      "goal": "Modify existing feature (scoped change)",
+      "intent": "modify_feature",
+      "emitCommand": "ordia prompt emit --intent modify_feature"
+    },
+    {
+      "goal": "Implement UI components and visual changes",
+      "intent": "implement_ui",
+      "emitCommand": "ordia prompt emit --intent implement_ui"
+    },
+    {
+      "goal": "Implement UX flow, copy, and usability improvements",
+      "intent": "implement_ux",
+      "emitCommand": "ordia prompt emit --intent implement_ux"
+    },
+    {
+      "goal": "Fix bug with root-cause focus",
+      "intent": "fix_bug",
+      "emitCommand": "ordia prompt emit --intent fix_bug"
+    },
+    {
+      "goal": "Scoped refactor without behavior change",
+      "intent": "refactor",
+      "emitCommand": "ordia prompt emit --intent refactor"
+    },
+    {
+      "goal": "Continue work in progress",
+      "intent": "continue_wip",
+      "emitCommand": "ordia prompt emit --intent continue_wip"
+    },
+    {
+      "goal": "Run validation gates",
+      "intent": "validate",
+      "emitCommand": "ordia prompt emit --intent validate"
+    },
+    {
+      "goal": "QA pass (read-only visual/behavioral)",
+      "intent": "qa",
+      "emitCommand": "ordia prompt emit --intent qa"
+    },
+    {
+      "goal": "Read-only audit",
+      "intent": "audit",
+      "emitCommand": "ordia prompt emit --intent audit"
+    },
+    {
+      "goal": "Task closure gate (RUNTIME-D006)",
+      "intent": "close_task",
+      "emitCommand": "ordia prompt emit --intent close_task"
+    }
+  ]
+}

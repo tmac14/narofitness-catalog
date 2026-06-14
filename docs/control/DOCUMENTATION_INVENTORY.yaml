@@ -1,0 +1,36 @@
+# Machine-readable documentation inventory (validator + ordia doctor)
+schema_version: 1
+profile: "narofitness"
+updated_at: "2026-06-14"
+control_root: docs/control
+
+coordination:
+  - docs/control/MODEL_REGISTRY.yaml
+  - docs/control/NAVIGATION.md
+  - docs/control/TASK_REGISTRY.yaml
+  - docs/control/AGENT_REGISTRY.yaml
+  - docs/control/ORCHESTRATION_STATE.md
+  - docs/control/PROFILE.md
+  - docs/control/DECISION_LOG.md
+  - docs/control/EVIDENCE_INDEX.md
+  - docs/control/ADOPTION_REPORT.md
+  - docs/control/commands.catalog.json
+  - docs/control/COMMANDS.md
+  - docs/control/DOCUMENTATION_INVENTORY.md
+  - docs/control/DOCUMENTATION_INVENTORY.yaml
+  - docs/control/adoption.checklist.yaml
+
+protocols:
+  - docs/control/protocols/CURSOR_ORCHESTRATION.md
+  - docs/control/protocols/CURSOR_IMPLEMENTATION.md
+  - docs/control/protocols/CODEX_ORCHESTRATION.md
+  - docs/control/protocols/CODEX_IMPLEMENTATION.md
+  - docs/control/protocols/TASK_EXECUTION.md
+  - docs/control/protocols/RECOVERY_RUNBOOK.md
+  - docs/control/protocols/RUNTIME_HANDOFF.md
+
+tasks:
+  - docs/control/tasks/TASK_PACKET_TEMPLATE.md
+
+workflows:
+  - docs/control/workflows/intents.overlay.yaml

@@ -1,0 +1,23 @@
+---
+description: Profile-specific guardrails for narofitness — extend portable Ordia rules
+alwaysApply: true
+---
+
+# Profile guardrails (narofitness)
+
+Portable Ordia rules apply to all profiles. This file captures **profile-specific** constraints for `narofitness`.
+
+## Product scope
+
+- Primary product roots: see `ordia.yaml` → `enforcement.productRoots`
+- Do not edit paths outside approved scope without an explicit task packet
+
+## Commands and validation
+
+- Closure gate: `ordia validate --project` (see `ordia.yaml` → `closure.validator`)
+- Prefer `ordia task summary` before resuming in-flight work
+- Use `ordia task transition` for registry/state updates after material status changes
+
+## Profile notes
+
+- (Add team conventions, forbidden paths, release gates, and model-tier policy here.)

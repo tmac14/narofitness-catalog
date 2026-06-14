@@ -1,0 +1,28 @@
+schema_version: 1
+updated_at: "2026-06-14"
+authority:
+  purpose: "Ordia task registry — status, dependencies, locks, parallel safety."
+  summary_source: "docs/control/ORCHESTRATION_STATE.md"
+
+queues:
+  in_flight: []
+  ready_for_parallel: []
+  planning_pending: []
+  locks_pending: []
+  model_tier_pending: []
+  waiting_for_user_decision: []
+  waiting_for_agent_report: []
+  validation_pending: []
+
+tasks: []
+locks: []
+
+# schema_example (commented — required fields for validate_tasks):
+# tasks:
+#   - id: EXAMPLE-001
+#     status: IN_FLIGHT
+#     owner: orchestrator
+#     runtime: ONLY_CURSOR
+#     protocol: IMPLEMENTATION
+#     planned_write_paths:
+#       - apps/example/src/main.ts

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "C:/Python313/python.exe .cursor/hooks/session_start.py",
+        "timeout": 15
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "C:/Python313/python.exe .cursor/hooks/validate_runtime_header.py",
+        "timeout": 10,
+        "failClosed": true
+      },
+      {
+        "command": "C:/Python313/python.exe .cursor/hooks/check_model_tier.py",
+        "timeout": 10
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "C:/Python313/python.exe .cursor/hooks/guard_mode_before_edit.py",
+        "matcher": "Write|StrReplace|Delete|Edit",
+        "timeout": 10,
+        "failClosed": true
+      }
+    ],
+    "preCompact": [
+      {
+        "command": "C:/Python313/python.exe .cursor/hooks/log_model_context.py",
+        "timeout": 10
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "C:/Python313/python.exe .cursor/hooks/log_model_context.py",
+        "timeout": 10
+      }
+    ]
+  }
+}

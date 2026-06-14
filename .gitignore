@@ -27,3 +27,4 @@ temp/cloudflare-tunnels/
 temp/wheel-audit/
 temp/*.pdf
 temp/ordia-restore-*/
+.cursor/session-protocol.json

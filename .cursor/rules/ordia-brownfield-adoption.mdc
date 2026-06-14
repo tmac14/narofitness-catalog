@@ -1,0 +1,44 @@
+---
+description: Brownfield adoption — audit, scaffold, sync, and validate existing repositories
+alwaysApply: false
+---
+
+# Brownfield Adoption
+
+Use when Ordia is added to an **existing** repository (not greenfield).
+
+## One-command flow
+
+```powershell
+ordia adopt --profile <id> --template monorepo
+```
+
+Pipeline: `docs audit` → `init --skip-existing` → `cursor sync` → `validate --project`.
+
+## Manual steps (equivalent)
+
+1. **Audit** — `ordia docs audit --write-report --write-inventory`
+2. **Review** — `{controlRoot}/ADOPTION_REPORT.md` (gaps, suggested `ordia.yaml`, uncataloged scripts)
+3. **Scaffold** — `ordia init --skip-existing --with-cursor --with-docs --audit-docs`
+4. **Commands** — `ordia init --sync-commands` when `package.json` exists
+5. **Sync** — `ordia cursor sync`
+6. **Validate** — `ordia validate --project`
+7. **Checklist** — `{controlRoot}/adoption.checklist.yaml` (mark steps complete)
+
+## Product roots
+
+Align `enforcement.productRoots` in `ordia.yaml` with audit `suggested_product_roots` (`src/`, `apps/`, `packages/`).
+
+## Do not
+
+- Overwrite existing `ordia.yaml` without `--force` on init
+- Skip `ADOPTION_REPORT.md` review on large repos
+- Install Cursor hooks without `ordia doctor` after adoption
+
+## Doctor follow-up
+
+```powershell
+ordia doctor
+```
+
+Warns when `ADOPTION_REPORT.md` is stale or adoption checklist items remain open.

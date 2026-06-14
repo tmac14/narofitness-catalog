@@ -22,8 +22,12 @@ jobs:
         run: npm ci --prefix apps/desktop
       - name: Install Python dependencies
         run: pip install -r apps/api/requirements.txt -r apps/api/requirements-dev.txt
-      - name: Hygiene audit
-        run: python scripts/audit_no_ordia.py --check
+      - name: Install Ordia
+        run: pip install ordia-core==0.18.0
+      - name: Ordia control plane
+        run: |
+          ordia doctor
+          ordia validate --project
       - name: Quality gates
         run: npm run quality:check
 

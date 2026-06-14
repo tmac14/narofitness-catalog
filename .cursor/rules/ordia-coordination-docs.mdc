@@ -1,0 +1,18 @@
+---
+description: Rules when editing project coordination and control documentation
+globs: docs/control/**,docs/coordination/**,docs/control/protocols/**,docs/control/tasks/**,AGENTS.md,ordia.yaml
+alwaysApply: false
+---
+
+# Coordination Documentation Edits
+
+When modifying files under the project control store (`ordia.yaml` → `control.root`, e.g. `docs/control/` or `docs/coordination/`) or `AGENTS.md`:
+
+1. Follow `docs/DOCUMENTATION_GOVERNANCE.md` when present — English canonical for technical prose.
+2. Update `{controlRoot}/DOCUMENTATION_INVENTORY.md` when adding/removing top-level coordination `.md`/`.yaml` (when that file exists).
+3. Run `ordia validate --project` after material changes.
+4. Control-plane sessions may update only the limited documents listed in `AGENTS.md` without separate permission.
+5. Implementation agents must not update control docs unless task scope explicitly includes them.
+6. Keep `{controlRoot}/ORCHESTRATION_STATE.md` §0 aligned with `{controlRoot}/TASK_REGISTRY.yaml` queues and locks.
+
+Protocol documents (CORE) must stay consistent with the Runtime × Protocol matrix in `AGENTS.md`.

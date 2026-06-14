@@ -1,0 +1,69 @@
+# Ordia greenfield template — render with ordia init
+version: "0.3"
+profile: "narofitness"
+
+control:
+  root: docs/control
+  state: ORCHESTRATION_STATE.md
+  taskRegistry: TASK_REGISTRY.yaml
+  agentRegistry: AGENT_REGISTRY.yaml
+  decisionLog: DECISION_LOG.md
+  evidenceIndex: EVIDENCE_INDEX.md
+  taskPackets: tasks
+  projectProfile: PROFILE.md
+
+commands:
+  catalog: commands.catalog.json
+  profileDoc: COMMANDS.md
+  npmPackage: package.json
+  validateOnControlCheck: false
+
+session:
+  runtimes:
+    - ONLY_CODEX
+    - CODEX_PLUS_CURSOR
+    - ONLY_CURSOR
+  protocols:
+    - ORCHESTRATION
+    - IMPLEMENTATION
+  modes:
+    - MULTI_CHAT
+    - UNIFIED
+
+enforcement:
+  productRoots:
+    - "apps/"
+  controlRoots:
+    - docs/control/
+    - docs/ordia/
+    - .cursor/rules/
+    - .cursor/hooks/
+    - AGENTS.md
+    - ordia.yaml
+  qaEvidenceRoots:
+    - temp/qa/
+  orchestrationBlocksProduct: true
+  unifiedRequiresApproval: true
+
+closure:
+  validator: ordia validate --project
+  # strict: true   # uncomment to promote closure warnings to errors
+
+# tasks:
+#   maxInFlightPerOwner: 1
+#   strictInFlightLimits: false
+
+profileExtensions:
+  validateInventory: true
+  inventoryDoc: DOCUMENTATION_INVENTORY.md
+  cursorRules:
+    - .cursor/rules/profile-narofitness-guardrails.mdc
+
+workflows:
+  overlay: docs/control/workflows/intents.overlay.yaml
+
+models:
+  registry: docs/control/MODEL_REGISTRY.yaml
+  telemetryRoot: temp/qa/model-usage
+  defaultTier: T1
+  requireApprovalAbove: T1

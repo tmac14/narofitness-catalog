@@ -1,0 +1,68 @@
+schema_version: 1
+updated_at: "2026-06-14"
+authority:
+  purpose: "Agent capability and topology registry — six generic parallel roles."
+
+operational_identity_count: 6
+
+control_plane_runtimes:
+  - id: "Cursor Control Plane"
+    role: "Cursor control-plane orchestrator"
+    cursor_agent: true
+    multi_chat: true
+    protocols:
+      - "docs/control/protocols/CURSOR_ORCHESTRATION.md"
+      - "docs/control/protocols/CURSOR_IMPLEMENTATION.md"
+      - "docs/control/protocols/TASK_EXECUTION.md"
+      - "docs/control/protocols/RECOVERY_RUNBOOK.md"
+      - "docs/control/protocols/RUNTIME_HANDOFF.md"
+  - id: "Codex Control Plane"
+    role: "Codex orchestrator (ONLY_CODEX / CODEX_PLUS_CURSOR)"
+    cursor_agent: false
+    multi_chat: false
+    protocols:
+      - "docs/control/protocols/CODEX_ORCHESTRATION.md"
+      - "docs/control/protocols/CODEX_IMPLEMENTATION.md"
+      - "docs/control/protocols/TASK_EXECUTION.md"
+      - "docs/control/protocols/RECOVERY_RUNBOOK.md"
+      - "docs/control/protocols/RUNTIME_HANDOFF.md"
+
+agents:
+  - id: agent-backend
+    role: "API and service implementation"
+    scopes: ["apps/api/", "src/api/", "packages/api/"]
+    max_in_flight: 1
+    runtime: ONLY_CURSOR
+    protocol: IMPLEMENTATION
+  - id: agent-frontend
+    role: "UI components and client code"
+    scopes: ["apps/web/", "src/ui/", "packages/ui/"]
+    max_in_flight: 1
+    runtime: ONLY_CURSOR
+    protocol: IMPLEMENTATION
+  - id: agent-data
+    role: "Database migrations and data layer"
+    scopes: ["db/", "migrations/", "packages/data/"]
+    max_in_flight: 1
+    excludes: infra-data
+    runtime: ONLY_CURSOR
+    protocol: IMPLEMENTATION
+  - id: agent-infra
+    role: "Docker, CI, tunnels, and infrastructure"
+    scopes: ["docker/", ".github/", "infra/"]
+    max_in_flight: 1
+    excludes: infra-data
+    runtime: ONLY_CURSOR
+    protocol: IMPLEMENTATION
+  - id: agent-qa
+    role: "QA evidence and read-only validation"
+    scopes: ["temp/qa/"]
+    max_in_flight: 2
+    runtime: ONLY_CURSOR
+    protocol: IMPLEMENTATION
+  - id: agent-docs
+    role: "Documentation and control-plane prose"
+    scopes: ["docs/", "docs/control/"]
+    max_in_flight: 1
+    runtime: ONLY_CURSOR
+    protocol: IMPLEMENTATION
