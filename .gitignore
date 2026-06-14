@@ -32,3 +32,4 @@ packaging/postgres/lib/
 apps/desktop/release/
 temp/cloudflare-tunnels/
 temp/wheel-audit/
+temp/*.pdf
