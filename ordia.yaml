@@ -1,19 +1,18 @@
-# Ordia project manifest — Narofitness reference implementation
-# Spec: docs/ordia/SPEC_v0.8.md · Program: docs/ordia/IMPROVEMENT_PLAN_v0.8.md (CLOSED)
-# Manifest schema: v0.2 (see docs/ordia/SPEC_v0.2.md) · Optional commands: ORDIA-D016 (v0.3 additive)
+# Ordia manifest — Narofitness catalog (Ordia consumer, not an Ordia monorepo)
+# Spec: docs/ordia/SPEC_v0.8.md · Manifest schema v0.3 (commands.profileDoc)
 
-version: "0.2"
+version: "0.3"
 profile: narofitness
 
 control:
-  root: docs/coordination
+  root: docs/control
   state: ORCHESTRATION_STATE.md
   taskRegistry: TASK_REGISTRY.yaml
   agentRegistry: AGENT_REGISTRY.yaml
   decisionLog: DECISION_LOG.md
   evidenceIndex: EVIDENCE_INDEX.md
   taskPackets: tasks
-  projectProfile: AGENTS.md
+  projectProfile: PROFILE.md
 
 session:
   runtimes:
@@ -31,14 +30,11 @@ enforcement:
   productRoots:
     - apps/
   controlRoots:
-    - docs/coordination/
+    - docs/control/
     - docs/ordia/
-    - packages/ordia-core/
-    - packages/ordia-cursor/
     - .cursor/rules/
     - .cursor/hooks/
     - AGENTS.md
-    - COMMANDS.md
     - ordia.yaml
   qaEvidenceRoots:
     - temp/qa/
@@ -49,15 +45,16 @@ closure:
   validator: npm run control:validate
 
 commands:
-  catalog: scripts/commands.catalog.json
+  catalog: commands.catalog.json
+  profileDoc: COMMANDS.md
   npmPackage: package.json
   validateOnControlCheck: true
 
 models:
-  registry: docs/coordination/MODEL_REGISTRY.yaml
+  registry: docs/control/MODEL_REGISTRY.yaml
   telemetryRoot: temp/qa/model-usage
   defaultTier: T1
   requireApprovalAbove: T1
 
 workflows:
-  overlay: docs/coordination/workflows/intents.narofitness.yaml
+  overlay: docs/control/workflows/intents.narofitness.yaml

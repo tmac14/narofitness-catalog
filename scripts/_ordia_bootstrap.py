@@ -17,7 +17,6 @@ def ensure_ordia_core() -> Path | None:
     root = Path(__file__).resolve().parents[1]
     for candidate in (
         root.parent / "ordia-package" / "packages" / "ordia-core",
-        root / "packages" / "ordia-core",
     ):
         if (candidate / "ordia" / "config.py").is_file():
             core_str = str(candidate)

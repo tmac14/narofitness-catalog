@@ -34,7 +34,7 @@ Every document under `docs/**` has one lifecycle class:
 | Scope | Authority |
 |-------|-----------|
 | Full `docs/**` tree | [`docs/docs_inventory.yaml`](docs_inventory.yaml) + `python scripts/audit_docs_inventory.py --check` |
-| Coordination subset | [`coordination/DOCUMENTATION_INVENTORY.md`](coordination/DOCUMENTATION_INVENTORY.md) |
+| Coordination subset | [`control/DOCUMENTATION_INVENTORY.md`](control/DOCUMENTATION_INVENTORY.md) |
 | Navigation | [`docs/README.md`](README.md) |
 
 ## 3. Authority
@@ -64,7 +64,8 @@ explicitly designated otherwise.
 
 Every npm script cited in task packets, protocols, or agent prompts must appear in:
 
-- `scripts/commands.catalog.json` (profile catalog), and
+- `docs/control/commands.catalog.json` (profile catalog), and
+- `docs/control/COMMANDS.md`.
 - `COMMANDS.md` (human-readable overlay).
 
 Validate sync: `npm run help:validate` · `ordia commands validate` · `npm run help:coverage`.

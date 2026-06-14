@@ -38,7 +38,7 @@ Ensure workspace root is the project directory before editing.
 
 ## Autonomy
 
-Iterate within scope until Definition of Done: targeted tests, regressions, build, metrics, QA as required. Use **only** commands from `COMMANDS.md`.
+Iterate within scope until Definition of Done: targeted tests, regressions, build, metrics, QA as required. Use **only** commands documented in `{controlRoot}/COMMANDS.md` (or `{controlRoot}/{commands.profileDoc}` from the manifest).
 
 ## Forbidden
 
@@ -60,7 +60,7 @@ When the user declares `Session: UNIFIED` with `Runtime: ONLY_CURSOR` + `Protoco
 
 Unified exceptions to the Forbidden list above:
 
-- **PLAN and CLOSE phases:** limited control-document updates are in scope per `AGENTS.md` and RUNTIME-D006.
+- **PLAN and CLOSE phases:** limited control-document updates are in scope per `docs/control/PROFILE.md` and RUNTIME-D006.
 - **CLOSE phase:** run the closure checklist in `{controlRoot}/TASK_EXECUTION_PROTOCOL.md` before marking `VALIDATED`.
 - **Report evaluation:** the user evaluates in the same chat; do not wait for a separate control-plane chat unless the user switches to multi-chat.
 

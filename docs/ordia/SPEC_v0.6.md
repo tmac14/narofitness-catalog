@@ -12,7 +12,7 @@ v0.6 hardens Ordia from a **reference-ready portable baseline** (v0.5) into a
 a full **package documentation tree**, and a portable **command registry**
 subsystem with CLI help and catalog validation.
 
-Narofitness remains the reference profile. Flat `docs/coordination/*_PROTOCOL.md`
+Narofitness remains the reference profile. Flat `docs/control/*_PROTOCOL.md`
 files stay a **profile exception** until an explicit migration task (`ORDIA-D007`).
 
 ## 2. Truth and integrity (Slice 1)
@@ -137,7 +137,7 @@ python scripts/ordia_cli.py commands validate
 - PyPI / Cursor marketplace **publish execution** (checklist only — see [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md))
 - Full `docs/` tree cleanup and Spanish doc migration (Workstreams E — Slices 7–8)
 - Shell/git hook guard implementation (`ORDIA-D018` — spike only)
-- Renaming Narofitness `docs/coordination/`
+- Renaming Narofitness `docs/control/`
 - Separate `ordia` repository (`ORDIA-D010` — monorepo until publish sign-off)
 
 ## 10. Post-v0.6

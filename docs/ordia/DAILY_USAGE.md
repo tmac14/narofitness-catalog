@@ -1,7 +1,7 @@
 # Ordia — Daily Usage Guide
 
 **Audience:** control-plane operators, implementers, and anyone running AI-assisted work in an Ordia-enabled repo  
-**Canonical commands:** repo-root [`COMMANDS.md`](../../COMMANDS.md) · CLI detail: [ordia-core CLI manual](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/CLI.md)  
+**Canonical commands:** [`docs/control/COMMANDS.md`](../control/COMMANDS.md) · CLI detail: [ordia-core CLI manual](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/CLI.md)  
 **Version:** v0.8 (workflow intents + model routing)
 
 ---
@@ -37,8 +37,8 @@ Paste the full output into the chat. It includes header, recovery checklist, and
 
 **Manual bootstrap** (if you prefer reading state yourself):
 
-1. `docs/coordination/ORCHESTRATION_STATE.md` §0
-2. Active task packet under `docs/coordination/tasks/`
+1. `docs/control/ORCHESTRATION_STATE.md` §0
+2. Active task packet under `docs/control/tasks/`
 3. `npm run control:validate` before change-capable edits
 
 ---
@@ -245,7 +245,7 @@ Re-run `ordia init --with-cursor --force` only when you intentionally rescaffold
 ### Greenfield vs Narofitness profile paths
 
 Greenfield: `{controlRoot}` = `docs/control/` (default).  
-Narofitness reference: `docs/coordination/` per `ordia.yaml`. Always read manifest first.
+Narofitness reference: `docs/control/` per `ordia.yaml`. Always read manifest first.
 
 ### Strict model validation
 

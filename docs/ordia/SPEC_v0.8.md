@@ -17,7 +17,7 @@ v0.8 adds a **portable workflow intent layer**: stable taxonomy of development a
 | Daily guide | [DAILY_USAGE.md](./DAILY_USAGE.md) |
 | Core module | `packages/ordia-core/ordia/workflows/` |
 | CLI | `ordia workflow list\|describe`, `ordia prompt emit\|header` |
-| Profile overlay | `docs/coordination/workflows/intents.narofitness.yaml` |
+| Profile overlay | `docs/control/workflows/intents.narofitness.yaml` |
 | Catalog | `workflowIntents[]` in `scripts/commands.catalog.json` |
 | Hooks | Warn-only unknown `intent:` (`workflow_intents_lite.py`) |
 | Tests | `scripts/test_ordia_workflows.py` |

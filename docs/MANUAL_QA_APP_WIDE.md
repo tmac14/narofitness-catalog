@@ -7,7 +7,7 @@ Complements:
 - [MANUAL_QA_BUILDER_UI.md](./MANUAL_QA_BUILDER_UI.md) â€” catalogue builder (Agent 1A)
 - [MANUAL_QA_PRESENTATION_BUILDER.md](./MANUAL_QA_PRESENTATION_BUILDER.md) â€” presentation/PDF functional QA (Agent 1A)
 
-Coordination reference: [docs/coordination/APP_WIDE_UX_SCOPE.md](./coordination/APP_WIDE_UX_SCOPE.md)
+Coordination reference: [docs/control/APP_WIDE_UX_SCOPE.md](./control/APP_WIDE_UX_SCOPE.md)
 
 **Verdict context (Agent 1B):** Iterations 1â€“5 accepted **pending this user manual QA pass**. Target user: a **non-technical person** who may not be fast or intuitive with software.
 
@@ -500,7 +500,7 @@ If you hit these, note **â€œmatches known issue KN-xâ€** in your report
 | CAT-3 | Delete opens accessible dialog (not browser `confirm`) |
 | Shared primitives | `LoadingPage` busy state; `PageHeader` decorative icons hidden; dialog close focus-visible |
 
-**Postâ€“Iteration 6 gate:** Agent 1A catalogue smoke/regression on shared surfaces â€” see [APP_WIDE_UX_SCOPE.md](./coordination/APP_WIDE_UX_SCOPE.md).
+**Postâ€“Iteration 6 gate:** Agent 1A catalogue smoke/regression on shared surfaces â€” see [APP_WIDE_UX_SCOPE.md](./control/APP_WIDE_UX_SCOPE.md).
 
 ---
 
@@ -574,5 +574,5 @@ Report blockers to Agent 3; route PDF output issues to **Agent 6**, not Agent 1B
 ## Related documents
 
 - [MANUAL_QA_BUILDER_UI.md](./MANUAL_QA_BUILDER_UI.md) â€” catalogue builder QA (Agent 1A)
-- [docs/coordination/APP_WIDE_UX_SCOPE.md](./coordination/APP_WIDE_UX_SCOPE.md) â€” Agent 1B scope and implementation record
-- [docs/coordination/tasks/APP-STATUS-BAR-MANUAL-QA.md](./coordination/tasks/APP-STATUS-BAR-MANUAL-QA.md) â€” pending Status Bar QA gate
+- [docs/control/APP_WIDE_UX_SCOPE.md](./control/APP_WIDE_UX_SCOPE.md) â€” Agent 1B scope and implementation record
+- [docs/control/tasks/APP-STATUS-BAR-MANUAL-QA.md](./control/tasks/APP-STATUS-BAR-MANUAL-QA.md) â€” pending Status Bar QA gate

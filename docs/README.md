@@ -14,7 +14,7 @@ the canonical language for technical docs (`ORDIA-D019`).
 | Zone | Path | Purpose |
 |------|------|---------|
 | **Ordia** | [`ordia/`](ordia/) | Ordia product specs, improvement plans, publish checklist |
-| **Coordination** | [`coordination/`](coordination/) | Live Narofitness control plane (state, registry, protocols, tasks) |
+| **Coordination** | [`control/`](control/) | Live Narofitness control plane (state, registry, protocols, tasks) |
 | **Design** | [`design/`](design/) | Product design system |
 | **Product** | [`product/`](product/) | English functional and technical specs |
 | **QA index** | [`qa/`](qa/) | Manual QA checklist index |
@@ -42,25 +42,25 @@ Package manuals (wheel): `packages/ordia-core/docs/` — copied to greenfield vi
 
 ---
 
-## Coordination (`docs/coordination/`)
+## Coordination (`docs/control/`)
 
 **Start here for agents:**
 
 | Document | Role |
 |----------|------|
-| [ORCHESTRATION_STATE.md](coordination/ORCHESTRATION_STATE.md) | Live execution control |
-| [TASK_REGISTRY.yaml](coordination/TASK_REGISTRY.yaml) | Tasks, locks, dependencies |
-| [TASK_EXECUTION_PROTOCOL.md](coordination/TASK_EXECUTION_PROTOCOL.md) | Universal gates |
-| [CONTROL_PLANE_RECOVERY_RUNBOOK.md](coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md) | Context-loss recovery |
-| [DOCUMENTATION_INVENTORY.md](coordination/DOCUMENTATION_INVENTORY.md) | Coordination lifecycle inventory |
+| [ORCHESTRATION_STATE.md](control/ORCHESTRATION_STATE.md) | Live execution control |
+| [TASK_REGISTRY.yaml](control/TASK_REGISTRY.yaml) | Tasks, locks, dependencies |
+| [TASK_EXECUTION_PROTOCOL.md](control/TASK_EXECUTION_PROTOCOL.md) | Universal gates |
+| [CONTROL_PLANE_RECOVERY_RUNBOOK.md](control/CONTROL_PLANE_RECOVERY_RUNBOOK.md) | Context-loss recovery |
+| [DOCUMENTATION_INVENTORY.md](control/DOCUMENTATION_INVENTORY.md) | Coordination lifecycle inventory |
 
 **Protocols:** `CODEX_*`, `CURSOR_*`, `RUNTIME_HANDOFF`, `IMPORT_FDL_MVP_PAGE_AUDIT`
 
-**Active tracks:** see backlogs and roadmaps in `coordination/` (import, UX 3.0, API, etc.)
+**Active tracks:** see backlogs and roadmaps in `control/` (import, UX 3.0, API, etc.)
 
-**Task packets:** [`coordination/tasks/`](coordination/tasks/) — resumable work units
+**Task packets:** [`control/tasks/`](control/tasks/) — resumable work units
 
-**Contracts:** [`coordination/contracts/`](coordination/contracts/)
+**Contracts:** [`control/contracts/`](control/contracts/)
 
 ---
 
@@ -103,5 +103,5 @@ Evidence index entries point to archived paths where applicable.
 | Path | Role |
 |------|------|
 | [`AGENTS.md`](../AGENTS.md) | Agent control plane entry |
-| [`COMMANDS.md`](../COMMANDS.md) | npm command catalog (profile overlay) |
+| [`COMMANDS.md`](control/COMMANDS.md) | npm command catalog (profile overlay) |
 | [`ordia.yaml`](../ordia.yaml) | Ordia project manifest |

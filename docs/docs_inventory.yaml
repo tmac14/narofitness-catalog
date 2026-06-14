@@ -63,145 +63,145 @@ rules:
     category: ordia-spec-historical
 
   # --- Coordination core ---
-  - pattern: "docs/coordination/ORCHESTRATION_STATE.md"
+  - pattern: "docs/control/ORCHESTRATION_STATE.md"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md"
+  - pattern: "docs/control/CONTROL_PLANE_RECOVERY_RUNBOOK.md"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/TASK_EXECUTION_PROTOCOL.md"
+  - pattern: "docs/control/TASK_EXECUTION_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/TASK_REGISTRY.yaml"
+  - pattern: "docs/control/TASK_REGISTRY.yaml"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/AGENT_REGISTRY.yaml"
+  - pattern: "docs/control/AGENT_REGISTRY.yaml"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/MODEL_REGISTRY.yaml"
+  - pattern: "docs/control/MODEL_REGISTRY.yaml"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/DECISION_LOG.md"
+  - pattern: "docs/control/DECISION_LOG.md"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/EVIDENCE_INDEX.md"
+  - pattern: "docs/control/EVIDENCE_INDEX.md"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/TASK_HISTORY.md"
+  - pattern: "docs/control/TASK_HISTORY.md"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/DOCUMENTATION_INVENTORY.md"
+  - pattern: "docs/control/DOCUMENTATION_INVENTORY.md"
     lifecycle: CORE
     language: English
     category: coordination-core
-  - pattern: "docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md"
+  - pattern: "docs/control/CODEX_ORCHESTRATION_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-protocol
-  - pattern: "docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md"
+  - pattern: "docs/control/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-protocol
-  - pattern: "docs/coordination/CURSOR_ORCHESTRATION_PROTOCOL.md"
+  - pattern: "docs/control/CURSOR_ORCHESTRATION_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-protocol
-  - pattern: "docs/coordination/CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md"
+  - pattern: "docs/control/CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-protocol
-  - pattern: "docs/coordination/RUNTIME_HANDOFF_PROTOCOL.md"
+  - pattern: "docs/control/RUNTIME_HANDOFF_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-protocol
-  - pattern: "docs/coordination/IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md"
+  - pattern: "docs/control/IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-protocol
-  - pattern: "docs/coordination/AGENT_TOPOLOGY_PROTOCOL.md"
+  - pattern: "docs/control/AGENT_TOPOLOGY_PROTOCOL.md"
     lifecycle: CORE
     language: English
     category: coordination-governance
-  - pattern: "docs/coordination/LEGACY_CONTEXT_MIGRATION_MAP.md"
+  - pattern: "docs/control/LEGACY_CONTEXT_MIGRATION_MAP.md"
     lifecycle: CORE
     language: English
     category: coordination-governance
 
   # --- Coordination active tracks ---
-  - pattern: "docs/coordination/AGENT_TOPOLOGY_REVIEW.md"
+  - pattern: "docs/control/AGENT_TOPOLOGY_REVIEW.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-track
-  - pattern: "docs/coordination/API_DEPENDENCY_BACKLOG.md"
+  - pattern: "docs/control/API_DEPENDENCY_BACKLOG.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-backlog
-  - pattern: "docs/coordination/UI_BACKEND_CONTRACTS.md"
+  - pattern: "docs/control/UI_BACKEND_CONTRACTS.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-backlog
-  - pattern: "docs/coordination/TRANSVERSAL_BACKLOG.md"
+  - pattern: "docs/control/TRANSVERSAL_BACKLOG.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-backlog
-  - pattern: "docs/coordination/IMPORT_PARSER_BACKLOG.md"
+  - pattern: "docs/control/IMPORT_PARSER_BACKLOG.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-backlog
-  - pattern: "docs/coordination/CATALOG_PRESENTATION_BACKLOG.md"
+  - pattern: "docs/control/CATALOG_PRESENTATION_BACKLOG.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-backlog
-  - pattern: "docs/coordination/APP_PLATFORM_UX_3.0_ROADMAP.md"
+  - pattern: "docs/control/APP_PLATFORM_UX_3.0_ROADMAP.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-track
-  - pattern: "docs/coordination/APP_WIDE_UX_SCOPE.md"
+  - pattern: "docs/control/APP_WIDE_UX_SCOPE.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-track
-  - pattern: "docs/coordination/IMPORT_FDL_FULL_QUALITY_PLAN.md"
+  - pattern: "docs/control/IMPORT_FDL_FULL_QUALITY_PLAN.md"
     lifecycle: ACTIVE
     language: English
     category: coordination-track
-  - pattern: "docs/coordination/SOURCE_CATALOG_*"
+  - pattern: "docs/control/SOURCE_CATALOG_*"
     lifecycle: PAUSED_CONTEXT
     language: English
     category: coordination-paused
 
   # --- Coordination workflow overlays (Ordia profile intents) ---
-  - pattern: "docs/coordination/workflows/**"
+  - pattern: "docs/control/workflows/**"
     lifecycle: ACTIVE
     language: English
     category: coordination-workflows
 
   # --- Coordination tasks, contracts, fixtures ---
-  - pattern: "docs/coordination/tasks/README.md"
+  - pattern: "docs/control/tasks/README.md"
     lifecycle: CORE
     language: English
     category: coordination-tasks-index
-  - pattern: "docs/coordination/tasks/TASK_PACKET_TEMPLATE.md"
+  - pattern: "docs/control/tasks/TASK_PACKET_TEMPLATE.md"
     lifecycle: CORE
     language: English
     category: coordination-tasks-template
-  - pattern: "docs/coordination/tasks/**"
+  - pattern: "docs/control/tasks/**"
     lifecycle: ACTIVE
     language: English
     category: coordination-task-packet
-  - pattern: "docs/coordination/contracts/**"
+  - pattern: "docs/control/contracts/**"
     lifecycle: ACTIVE
     language: English
     category: coordination-contract
-  - pattern: "docs/coordination/fixtures/**"
+  - pattern: "docs/control/fixtures/**"
     lifecycle: ACTIVE
     language: English
     category: coordination-fixture

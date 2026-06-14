@@ -151,8 +151,8 @@ The dark app theme must **not** be forced into A4 PDF export. Future branded PDF
 - [`apps/desktop/src/theme/narofitness-tokens.css`](../../apps/desktop/src/theme/narofitness-tokens.css)
 - [`apps/desktop/src/index.css`](../../apps/desktop/src/index.css)
 - [`apps/desktop/tailwind.config.cjs`](../../apps/desktop/tailwind.config.cjs)
-- [`docs/coordination/TASK_HISTORY.md`](../coordination/TASK_HISTORY.md) — durable closure and recovery history
-- [`docs/coordination/APP_WIDE_UX_SCOPE.md`](../coordination/APP_WIDE_UX_SCOPE.md) — Theme v2 implementation record
+- [`docs/control/TASK_HISTORY.md`](../control/TASK_HISTORY.md) — durable closure and recovery history
+- [`docs/control/APP_WIDE_UX_SCOPE.md`](../control/APP_WIDE_UX_SCOPE.md) — Theme v2 implementation record
 
 **Coordination closure (Agent 3, 2026-06-08):** Phases A–E complete; Agent 1A smoke PASS; 70/70 tests; PDF/export untouched (Agent 6). Presentation features (`show_description_column`, covers, paginated preview) are **out of scope** for v2 theme — separate Agent 2 → 6 → 1A/4 track.
 

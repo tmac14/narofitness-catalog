@@ -13,7 +13,7 @@ hooks, rules, and validators without requiring `pip install ordia-core`. Core
 protocol templates ship with `@ordia/core` and install into
 `{control.root}/protocols/`.
 
-Narofitness remains the reference profile: flat `docs/coordination/*_PROTOCOL.md`
+Narofitness remains the reference profile: flat `docs/control/*_PROTOCOL.md`
 files are a **profile exception** until an explicit migration task (`ORDIA-D007`).
 
 ## 2. Greenfield target layout
@@ -131,7 +131,7 @@ Pass flags after `--` when using npm scripts.
 
 - PyPI / Cursor marketplace publish (see Slice 5 publish checklist)
 - Full Codex-only hook parity (`ORDIA-D012` — validator + prompt contract)
-- Renaming Narofitness `docs/coordination/`
+- Renaming Narofitness `docs/control/`
 - Separate `ordia` repository (`ORDIA-D010` — monorepo until publish)
 
 ## 11. Post-v0.5

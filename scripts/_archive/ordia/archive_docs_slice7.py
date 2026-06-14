@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 ARCHIVE_HEADER = """\
 > **Status: ARCHIVED** — Ordia v0.6 Workstream E (E-03b/c), {date}.
-> Historical program closeout; active control plane lives under `docs/coordination/`.
+> Historical program closeout; active control plane lives under `docs/control/`.
 
 """
 
@@ -29,7 +29,7 @@ TASK_MOVES = [
 
 PR_K_HEADER = """\
 > **Status: ARCHIVED** — Ordia v0.6 Workstream E (E-03c), {date}.
-> Import design history; see active import track in `docs/coordination/IMPORT_PARSER_BACKLOG.md`.
+> Import design history; see active import track in `docs/control/IMPORT_PARSER_BACKLOG.md`.
 
 """
 

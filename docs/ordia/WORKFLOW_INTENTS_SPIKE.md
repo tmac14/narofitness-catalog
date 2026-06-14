@@ -58,7 +58,7 @@ Overlay path (optional in `ordia.yaml`):
 
 ```yaml
 workflows:
-  overlay: docs/coordination/workflows/intents.narofitness.yaml
+  overlay: docs/control/workflows/intents.narofitness.yaml
 ```
 
 Additional intents: `import_regression`, `import_page_audit`, `topology_review`.

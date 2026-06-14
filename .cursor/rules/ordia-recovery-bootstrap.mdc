@@ -9,7 +9,7 @@ Every Cursor chat must assume **zero chat history**. Recover durable project sta
 
 ## Control store paths (manifest-driven)
 
-Read `ordia.yaml` first. Let **`{controlRoot}`** = `control.root` from the manifest (greenfield default: `docs/control/`; reference profiles may use `docs/coordination/`).
+Read `ordia.yaml` first. Let **`{controlRoot}`** = `control.root` from the manifest (greenfield default: `docs/control/`).
 
 | Artifact | Path |
 |---|---|
@@ -24,8 +24,10 @@ Read `ordia.yaml` first. Let **`{controlRoot}`** = `control.root` from the manif
 | Model tier profile | `{controlRoot}/MODEL_REGISTRY.yaml` (ORDIA-D022) |
 | Runtime protocols | `{controlRoot}/protocols/` when present (`ORDIA-D007`); else `{controlRoot}/*_PROTOCOL.md` (profile legacy layout) |
 | Handoff protocol | `{controlRoot}/RUNTIME_HANDOFF_PROTOCOL.md` when present |
+| Project profile | `{controlRoot}/{projectProfile}` from manifest (`PROFILE.md` default) |
+| Command overlay | `{controlRoot}/{commands.profileDoc}` when `commands:` is configured (`COMMANDS.md` default) |
 
-Product specs remain under `docs/ordia/` when present. Project profile: `AGENTS.md`.
+Product specs remain under `docs/ordia/` when present. Root **`AGENTS.md`** is Ordia bootstrap only (not the domain profile).
 
 ## When to run bootstrap
 
@@ -37,20 +39,21 @@ Run on the **first change-capable turn** of a session, and whenever the user say
 
 Read in this order (use Read tool or equivalent; do not skip):
 
-1. `ordia.yaml` — resolve `{controlRoot}` and `enforcement.productRoots`
-2. `AGENTS.md`
-3. `{controlRoot}/ORCHESTRATION_STATE.md` — **§0 Active Execution Control** first (include `session_mode` when present)
-4. `{controlRoot}/CONTROL_PLANE_RECOVERY_RUNBOOK.md` when the file exists
-5. `{controlRoot}/TASK_EXECUTION_PROTOCOL.md` when the file exists
-6. `{controlRoot}/TASK_REGISTRY.yaml`
-7. `{controlRoot}/AGENT_REGISTRY.yaml`
-8. Selected runtime protocol (from header rule matrix; paths under `{controlRoot}`)
-9. Active task packet at `{controlRoot}/tasks/<Active task ID>.md` when Active task ID is not `NONE`
-10. `{controlRoot}/DECISION_LOG.md` — entries referenced by the task or state
-11. `{controlRoot}/EVIDENCE_INDEX.md` — when task or state references evidence
-12. `docs/ENGINEERING_STANDARDS.md` before product code changes when the file exists
-13. `COMMANDS.md` before tests, builds, seeds, audits, or QA commands when the file exists
-14. `{controlRoot}/RUNTIME_HANDOFF_PROTOCOL.md` when `handoff_from` is not `NONE`
+1. `ordia.yaml` — resolve `{controlRoot}`, `{projectProfile}`, and `enforcement.productRoots`
+2. `{controlRoot}/ORCHESTRATION_STATE.md` — **§0 Active Execution Control** first (include `session_mode` when present)
+3. `{controlRoot}/{projectProfile}` — domain profile (agents, guardrails, tracks)
+4. Root `AGENTS.md` when present — Ordia bootstrap pointers only
+5. `{controlRoot}/CONTROL_PLANE_RECOVERY_RUNBOOK.md` when the file exists
+6. `{controlRoot}/TASK_EXECUTION_PROTOCOL.md` when the file exists
+7. `{controlRoot}/TASK_REGISTRY.yaml`
+8. `{controlRoot}/AGENT_REGISTRY.yaml`
+9. Selected runtime protocol (from header rule matrix; paths under `{controlRoot}`)
+10. Active task packet at `{controlRoot}/tasks/<Active task ID>.md` when Active task ID is not `NONE`
+11. `{controlRoot}/DECISION_LOG.md` — entries referenced by the task or state
+12. `{controlRoot}/EVIDENCE_INDEX.md` — when task or state references evidence
+13. `docs/ENGINEERING_STANDARDS.md` before product code changes when the file exists
+14. `{controlRoot}/{commands.profileDoc}` before tests, builds, seeds, audits, or QA commands when configured
+15. `{controlRoot}/RUNTIME_HANDOFF_PROTOCOL.md` when `handoff_from` is not `NONE`
 
 If `handoff_from` is not `NONE`, reconcile handoff before resuming `IN_FLIGHT` work.
 

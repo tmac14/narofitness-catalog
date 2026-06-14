@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Valida sincronización entre package.json y scripts/commands.catalog.json
+ * Valida sincronización entre package.json y docs/control/commands.catalog.json
  */
 
 import fs from 'node:fs';
@@ -8,7 +8,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const catalogPath = path.join(repoRoot, 'scripts', 'commands.catalog.json');
+const catalogPath = path.join(repoRoot, 'docs', 'control', 'commands.catalog.json');
 const packagePath = path.join(repoRoot, 'package.json');
 
 const EXCLUDED_SCRIPTS = new Set(['help', 'help:validate', 'help:list']);

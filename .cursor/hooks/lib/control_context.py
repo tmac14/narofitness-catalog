@@ -28,7 +28,7 @@ LEGACY_PROTOCOL = "CODEX_IMPLEMENTATION"
 SESSION_FILENAME = "session-protocol.json"
 STATE_RELATIVE = Path("docs/control/ORCHESTRATION_STATE.md")
 STATE_CONTROL_RELATIVE = Path("docs/control/ORCHESTRATION_STATE.md")
-STATE_LEGACY_RELATIVE = Path("docs/coordination/ORCHESTRATION_STATE.md")
+STATE_LEGACY_RELATIVE = Path("docs/control/ORCHESTRATION_STATE.md")
 
 _ORDIA_CONFIG_CACHE: dict[str, Any] = {}
 
@@ -121,7 +121,7 @@ MODEL_TIER_APPROVAL_RE = re.compile(r"\bAPPROVE\s+MODEL\s+(T[0-3])\b", re.I)
 MODEL_TIER_HEADER_RE = re.compile(r"^\s*Model tier:\s*(T[0-3])\b", re.I | re.M)
 
 CONTROL_DOC_MARKERS = (
-    "docs/coordination/",
+    "docs/control/",
     "docs/control/",
     ".cursor/rules/",
     ".cursor/hooks/",
@@ -257,7 +257,7 @@ def model_registry_path(root: Path) -> Path:
             return lite_registry(root, config)
         if hasattr(config, "models_registry_path"):
             return config.models_registry_path
-    return root / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
+    return root / "docs" / "control" / "MODEL_REGISTRY.yaml"
 
 
 def model_telemetry_path(root: Path) -> Path:
@@ -294,7 +294,7 @@ def task_registry_path(root: Path) -> Path:
             return config.state_path.parent / "TASK_REGISTRY.yaml"
         if hasattr(config, "task_registry_path"):
             return config.task_registry_path
-    return root / "docs" / "coordination" / "TASK_REGISTRY.yaml"
+    return root / "docs" / "control" / "TASK_REGISTRY.yaml"
 
 
 def load_task_registry_entry(root: Path, task_id: str | None) -> dict[str, Any] | None:

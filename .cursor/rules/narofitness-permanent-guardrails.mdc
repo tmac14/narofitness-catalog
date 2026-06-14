@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Permanent Guardrails
 
-Apply in every runtime and protocol. Details in `AGENTS.md` and `docs/ENGINEERING_STANDARDS.md`.
+Apply in every runtime and protocol. Details in `docs/control/PROFILE.md` and `docs/ENGINEERING_STANDARDS.md`.
 
 ## Product and data
 
@@ -29,7 +29,7 @@ Track: `rows_importable`, `rows_blocked`, `masters_created`, `variants_created`,
 
 ## Agent ownership
 
-Use `docs/coordination/AGENT_REGISTRY.yaml`. Do not edit outside assigned agent scope. Agent 2A and Agent 2B never run concurrently.
+Use `docs/control/AGENT_REGISTRY.yaml`. Do not edit outside assigned agent scope. Agent 2A and Agent 2B never run concurrently.
 
 ## Paused work
 

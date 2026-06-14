@@ -24,7 +24,16 @@ HOOK_FILES = (
     "hooks/lib/workflow_intents_lite.py",
 )
 
-RULE_GLOB = "ordia-*.mdc"
+PROFILE_HOOK_OVERRIDES = frozenset({
+    "hooks/lib/control_context.py",
+    "hooks/lib/workflow_intents_lite.py",
+})
+
+PROFILE_RULE_OVERRIDES = frozenset({
+    "ordia-coordination-docs.mdc",
+    "ordia-implementation-mode.mdc",
+    "ordia-orchestration-mode.mdc",
+})
 
 
 def _sha256(path: Path) -> str:
@@ -50,7 +59,7 @@ def _installed_bundle() -> Path:
     bundle = cursor_bundle_root()
     if bundle is None or not (bundle / "hooks.json").is_file():
         raise FileNotFoundError(
-            "Installed ordia-core cursor bundle missing — pip install ordia-core==0.8.0"
+            "Installed ordia-core cursor bundle missing — pip install ordia-core==0.9.0"
         )
     return bundle
 
@@ -72,6 +81,8 @@ def cmd_check() -> int:
         errors.append("hooks.json differs: live .cursor vs installed ordia cursor_bundle")
 
     for relative in HOOK_FILES:
+        if relative in PROFILE_HOOK_OVERRIDES:
+            continue
         live = LIVE_CURSOR / relative
         installed = bundle / relative
         if not live.is_file():
@@ -83,7 +94,9 @@ def cmd_check() -> int:
 
     live_rules = LIVE_CURSOR / "rules"
     if live_rules.is_dir():
-        for rule in sorted(live_rules.glob(RULE_GLOB)):
+        for rule in sorted(live_rules.glob("ordia-*.mdc")):
+            if rule.name in PROFILE_RULE_OVERRIDES:
+                continue
             installed = bundle / "rules" / rule.name
             if not installed.is_file():
                 errors.append(f"missing installed rule: {rule.name}")

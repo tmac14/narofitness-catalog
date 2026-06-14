@@ -29,7 +29,7 @@
 | Repo | Role |
 |---|---|
 | **`ordia-package.git`** | Product: `packages/ordia-core`, `packages/ordia-cursor`, Ordia scripts, CI, `docs/ordia/` |
-| **`narofitness-catalog.git`** | Reference app: `ordia.yaml` profile, `.cursor/` live, `docs/coordination/`, **pip** `ordia-core==0.8.0` |
+| **`narofitness-catalog.git`** | Reference app: `ordia.yaml` profile, `.cursor/` live, `docs/control/`, **pip** `ordia-core==0.8.0` |
 
 Monorepo vendoring of `packages/ordia-*` in catalog is **removed** post-split.
 

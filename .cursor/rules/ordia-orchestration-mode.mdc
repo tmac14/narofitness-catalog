@@ -18,7 +18,7 @@ Applies when session protocol is `ORCHESTRATION` (any runtime).
 
 - Read and synthesize context; evaluate plans and reports
 - Create task packets, prompts, and validation requests
-- Update limited control documents per `AGENTS.md` after **material** state transitions:
+- Update limited control documents per `docs/control/PROFILE.md` after **material** state transitions:
   `ORCHESTRATION_STATE.md`, `TASK_REGISTRY.yaml`, active task packet,
   `EVIDENCE_INDEX.md`, explicit decisions in `DECISION_LOG.md`
 - Record locks, parallel-safety decisions, and waiting states

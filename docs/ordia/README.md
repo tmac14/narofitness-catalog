@@ -64,7 +64,7 @@ npm run ordia:doctor                      # setup health
 | Document | Purpose |
 |----------|---------|
 | **[DAILY_USAGE.md](./DAILY_USAGE.md)** | ⭐ Practical guide + edge cases |
-| [`COMMANDS.md`](../../COMMANDS.md) | Canonical npm commands |
+| [`COMMANDS.md`](../control/COMMANDS.md) | Canonical npm commands |
 | [`AGENTS.md`](../../AGENTS.md) | Project control plane entry |
 | [`CLI.md`](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/CLI.md) | Every CLI flag |
 
@@ -92,7 +92,7 @@ npm run ordia:doctor                      # setup health
 | — | [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md) | PyPI / marketplace gates |
 | — | [Historical specs (v0.1–v0.4)](../archive/ordia/specs/) | Archived — traceability only |
 
-Decisions: `ORDIA-D001`–`ORDIA-D024` in [`docs/coordination/DECISION_LOG.md`](../coordination/DECISION_LOG.md).
+Decisions: `ORDIA-D001`–`ORDIA-D024` in [`docs/control/DECISION_LOG.md`](../control/DECISION_LOG.md).
 
 ---
 
@@ -117,7 +117,7 @@ Local development: `pip install -e ../ordia-package/packages/ordia-core`
 | You are… | Read first |
 |----------|------------|
 | **Developer starting a session** | [DAILY_USAGE.md](./DAILY_USAGE.md) |
-| **Control plane / orchestrator** | `docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md` or `CURSOR_ORCHESTRATION_PROTOCOL.md` |
+| **Control plane / orchestrator** | `docs/control/CODEX_ORCHESTRATION_PROTOCOL.md` or `CURSOR_ORCHESTRATION_PROTOCOL.md` |
 | **Implementer (Cursor agent)** | `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` + emitted prompt |
 | **Implementer (Codex)** | `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` + pasted emit block |
 | **Adopting Ordia elsewhere** | [GREENFIELD.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/GREENFIELD.md) |
@@ -140,7 +140,7 @@ Local development: `pip install -e ../ordia-package/packages/ordia-core`
 ```text
 ordia.yaml                    # manifest — start here
 docs/ordia/                   # product docs (you are here)
-docs/coordination/            # live control plane (Narofitness profile)
+docs/control/            # live control plane (Narofitness profile)
 .cursor/hooks/ + .cursor/rules/   # Cursor enforcement
 scripts/ordia_cli.py          # npm → pip ordia CLI wrapper
 # ordia-core: pip install ordia-core==0.8.0 (see ordia-package repo)

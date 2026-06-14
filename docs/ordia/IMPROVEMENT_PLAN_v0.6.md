@@ -27,7 +27,7 @@ workstreams**, estimated **6–8 implementation slices**.
 | **P1 — Package excellence** | `ordia-core` ships extensive docs; tests cover strict paths | ≥ 70 control/ordia tests; package-data in wheel |
 | **P2 — Platform & hygiene** | Ordia Commands framework; `docs/` cleanup program complete | Command catalog validates; docs inventory 100% classified |
 
-**Non-goals for v0.6:** execute PyPI/marketplace publish (use [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md)); rename Narofitness `docs/coordination/`; product code in `apps/**`.
+**Non-goals for v0.6:** execute PyPI/marketplace publish (use [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md)); rename Narofitness `docs/control/`; product code in `apps/**`.
 
 ---
 
@@ -94,7 +94,7 @@ Greenfield / reference:
 
 docs/ (repo):
   docs/README.md                → topology map (ordia | coordination | product | archive)
-  docs/coordination/DOCUMENTATION_INVENTORY.md → covers ALL docs/** (not coordination-only)
+  docs/control/DOCUMENTATION_INVENTORY.md → covers ALL docs/** (not coordination-only)
   docs/ordia/templates/         → DELETED (single source: packages/ordia-core/ordia/templates/)
   docs/archive/                 → historical closeouts, migrated Spanish docs (explicit headers)
 ```
@@ -342,7 +342,7 @@ conflicts with current English-canonical governance.
 |---|---|
 | **Deliverable** | `docs/README.md` — map: |
 | | `docs/ordia/` — Ordia product specs & plans |
-| | `docs/coordination/` — live control plane (Narofitness profile) |
+| | `docs/control/` — live control plane (Narofitness profile) |
 | | `docs/design/` — product design system |
 | | `docs/archive/` — **NEW** — historical, closeouts, migrated docs |
 | | Root-level product docs — status per file |
@@ -353,11 +353,11 @@ conflicts with current English-canonical governance.
 | Batch | Paths | Action |
 |---|---|---|
 | **E-3a DELETE** | `docs/ordia/templates/**` | Delete (**ORDIA-D021** / A-01) |
-| **E-3b ARCHIVE** | `docs/coordination/tasks/RUNTIME-SYMMETRY-PR*.md`, `PROTOCOL-HARDENING-PR*.md`, completed program closeouts | Move → `docs/archive/coordination/tasks/` with `Status: ARCHIVED` header |
-| **E-3c ARCHIVE** | `docs/coordination/PR-K-family-regex-design.md` | Move → `docs/archive/coordination/` (inventory already ARCHIVE_CANDIDATE) |
+| **E-3b ARCHIVE** | `docs/control/tasks/RUNTIME-SYMMETRY-PR*.md`, `PROTOCOL-HARDENING-PR*.md`, completed program closeouts | Move → `docs/archive/coordination/tasks/` with `Status: ARCHIVED` header |
+| **E-3c ARCHIVE** | `docs/control/PR-K-family-regex-design.md` | Move → `docs/archive/coordination/` (inventory already ARCHIVE_CANDIDATE) |
 | **E-3d MIGRATE** | Spanish root docs: `ANALISIS_FUNCIONAL.md`, `ARQUITECTURA_TECNICA.md` | **ORDIA-D019:** translate → `docs/product/FUNCTIONAL_ANALYSIS.md`, `docs/product/TECHNICAL_ARCHITECTURE.md`; archive originals → `docs/archive/product/es/` |
 | **E-3e CONSOLIDATE** | Manual QA docs (`MANUAL_QA_*.md`) | Single index `docs/qa/MANUAL_QA_INDEX.md`; keep files ACTIVE with cross-links |
-| **E-3f REVIEW** | `docs/coordination/contracts/**` | Per-contract lifecycle when owning task VALIDATED; mark ARCHIVE_CANDIDATE if superseded |
+| **E-3f REVIEW** | `docs/control/contracts/**` | Per-contract lifecycle when owning task VALIDATED; mark ARCHIVE_CANDIDATE if superseded |
 | **E-3g FIX** | Stale SPEC §Next sections (v0.2, v0.3) | Add "Historical" banner or trim |
 | **E-3h DEDUP** | Duplicate path entries (Windows `\` vs `/`) | Normalize links to forward slashes |
 
@@ -471,7 +471,7 @@ Slice 8 (P2):     E-03d–h, E-04, E-05, D-01–D-03
 Optional:         D-04 shell guard spike
 ```
 
-**Parallel safety:** Slices 1–4 (package) avoid mass `docs/coordination/` moves.
+**Parallel safety:** Slices 1–4 (package) avoid mass `docs/control/` moves.
 Slice 7–8 (cleanup) require **orchestration lock** on `docs/**` — no concurrent
 task editing coordination docs.
 
@@ -639,7 +639,7 @@ scripts/test_ordia*.py
 docs/ordia/**
 docs/README.md                  (new)
 docs/archive/**                 (new)
-docs/coordination/DOCUMENTATION_INVENTORY.md
+docs/control/DOCUMENTATION_INVENTORY.md
 docs/DOCUMENTATION_GOVERNANCE.md
 AGENTS.md                       (Ordia section + links)
 COMMANDS.md                     (ordia section + taxonomy note)
@@ -652,7 +652,7 @@ ordia.yaml                      (commands section if D-016 approved)
 apps/**                         product code
 IMPORT-FDL / UX30 tracks        unless docs-only cleanup
 PyPI/marketplace publish execution
-Renaming docs/coordination/
+Renaming docs/control/
 Full shell hook guard           unless D-018 approved
 ```
 
@@ -712,4 +712,4 @@ Return: verdict, files changed, tests run, metrics, risks, scope confirmation.
 | [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md) | Post-v0.6 publish execution |
 | [CODEX_ENFORCEMENT_SPIKE.md](./CODEX_ENFORCEMENT_SPIKE.md) | Codex MVE (unchanged) |
 | [../DOCUMENTATION_GOVERNANCE.md](../DOCUMENTATION_GOVERNANCE.md) | Cleanup policy |
-| [../../COMMANDS.md](../../COMMANDS.md) | Reference command catalog |
+| [../control/COMMANDS.md](../control/COMMANDS.md) | Reference command catalog |

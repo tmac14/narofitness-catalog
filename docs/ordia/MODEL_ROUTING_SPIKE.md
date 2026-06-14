@@ -51,7 +51,7 @@ All agent hooks receive base fields:
 
 ## 4. Tier → model map (Narofitness profile)
 
-See [`docs/coordination/MODEL_REGISTRY.yaml`](../coordination/MODEL_REGISTRY.yaml).
+See [`docs/control/MODEL_REGISTRY.yaml`](../control/MODEL_REGISTRY.yaml).
 
 | Tier | Cursor (reference) | Codex (reference) | Cost band |
 |------|---------------------|-------------------|-----------|

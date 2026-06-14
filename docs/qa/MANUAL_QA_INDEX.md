@@ -9,6 +9,6 @@
 | [MANUAL_QA_BUILDER_UI.md](../MANUAL_QA_BUILDER_UI.md) | Catalogue builder UI and flows | Agent 1A |
 | [MANUAL_QA_PRESENTATION_BUILDER.md](../MANUAL_QA_PRESENTATION_BUILDER.md) | Presentation/PDF functional QA | Agent 1A |
 
-**Coordination:** [APP_WIDE_UX_SCOPE.md](../coordination/APP_WIDE_UX_SCOPE.md) · evidence under `temp/qa/`
+**Coordination:** [APP_WIDE_UX_SCOPE.md](../control/APP_WIDE_UX_SCOPE.md) · evidence under `temp/qa/`
 
 When adding a new manual QA doc, link it here and add a rule in `docs/docs_inventory.yaml`.

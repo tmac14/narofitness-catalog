@@ -52,7 +52,7 @@ def _resolve_overlay(root: Path) -> Path | None:
         candidate = root / rel.replace("\\", "/")
         return candidate if candidate.is_file() else None
     profile = str(doc.get("profile") or "default").strip()
-    for control_root in ("docs/control", "docs/coordination"):
+    for control_root in ("docs/control", "docs/control"):
         candidate = root / control_root / "workflows" / f"intents.{profile}.yaml"
         if candidate.is_file():
             return candidate

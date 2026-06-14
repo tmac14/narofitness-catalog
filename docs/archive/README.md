@@ -10,4 +10,4 @@
 | [`ordia/qa/`](ordia/qa/) | Ordia v0.5–v0.7 QA evidence reports |
 
 Do not edit archived files except to fix broken links. Active control plane:
-[`docs/coordination/`](../coordination/) · active Ordia specs [`docs/ordia/`](../ordia/).
+[`docs/control/`](../control/) · active Ordia specs [`docs/ordia/`](../ordia/).

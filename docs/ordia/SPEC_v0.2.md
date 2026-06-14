@@ -31,7 +31,7 @@ version: "0.2"                    # required
 profile: <string>                 # required — project profile id
 
 control:                            # required
-  root: docs/coordination         # control store directory
+  root: docs/control         # control store directory
   state: ORCHESTRATION_STATE.md
   taskRegistry: TASK_REGISTRY.yaml
   agentRegistry: AGENT_REGISTRY.yaml
@@ -91,7 +91,7 @@ uses default paths (v0.1 layout).
 ## 5. Reference implementation
 
 Narofitness profile: `ordia.yaml` at repo root with `profile: narofitness` and
-existing `docs/coordination/` paths.
+existing `docs/control/` paths.
 
 ## 6. Historical note
 

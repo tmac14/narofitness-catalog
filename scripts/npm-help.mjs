@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * npm run help — referencia CLI de comandos NaroCatalog.
- * Fuente: scripts/commands.catalog.json + package.json
+ * Fuente: docs/control/commands.catalog.json + package.json
  */
 
 import fs from 'node:fs';
@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const catalogPath = path.join(repoRoot, 'scripts', 'commands.catalog.json');
+const catalogPath = path.join(repoRoot, 'docs', 'control', 'commands.catalog.json');
 const packagePath = path.join(repoRoot, 'package.json');
 
 const useColor = Boolean(process.stdout.isTTY && !process.env.NO_COLOR);
@@ -102,7 +102,7 @@ function printOverview(catalog) {
   title('NaroCatalog — comandos npm');
   line(paint('  npm run help -- <comando>   detalle de un comando', c.dim));
   line(paint('  npm run help -- list        lista plana (o npm run help:list)', c.dim));
-  line(paint('  Documentación: COMMANDS.md', c.dim));
+  line(paint('  Documentación: docs/control/COMMANDS.md', c.dim));
 
   title('Flujos rápidos');
   for (const flow of catalog.quickFlows ?? []) {

@@ -21,16 +21,23 @@ class OrdiaConfigTests(unittest.TestCase):
         config = load_ordia_config(root)
         self.assertIsNotNone(config)
         assert config is not None
-        self.assertEqual(config.version, "0.2")
+        self.assertEqual(config.version, "0.3")
         self.assertEqual(config.profile, "narofitness")
         self.assertTrue(config.state_path.is_file())
+        self.assertEqual(
+            config.project_profile_path.resolve(),
+            (root / "docs" / "control" / "PROFILE.md").resolve(),
+        )
+        catalog_path = config.commands_catalog_path()
+        assert catalog_path is not None
+        self.assertTrue(catalog_path.is_file())
 
     def test_product_and_control_paths(self) -> None:
         root = Path(__file__).resolve().parents[1]
         config = load_ordia_config(root)
         assert config is not None
         self.assertTrue(is_product_path("apps/desktop/src/App.tsx", config))
-        self.assertFalse(is_product_path("docs/coordination/TASK_REGISTRY.yaml", config))
+        self.assertFalse(is_product_path("docs/control/TASK_REGISTRY.yaml", config))
         self.assertTrue(is_control_path("ordia.yaml", config))
         self.assertTrue(is_control_path("docs/ordia/SPEC_v0.2.md", config))
 

@@ -15,7 +15,12 @@ DEFAULT_CONTROL = {
     "decisionLog": "DECISION_LOG.md",
     "evidenceIndex": "EVIDENCE_INDEX.md",
     "taskPackets": "tasks",
-    "projectProfile": "AGENTS.md",
+    "projectProfile": "PROFILE.md",
+}
+
+DEFAULT_COMMANDS = {
+    "catalog": "commands.catalog.json",
+    "profileDoc": "COMMANDS.md",
 }
 
 DEFAULT_ENFORCEMENT = {
@@ -40,7 +45,10 @@ class OrdiaManifestConfig:
     __slots__ = (
         "root",
         "profile",
+        "control_root_rel",
         "state_path",
+        "project_profile_path",
+        "commands_profile_doc_path",
         "product_roots",
         "control_roots",
         "qa_evidence_roots",
@@ -56,9 +64,24 @@ class OrdiaManifestConfig:
         self.root = root.resolve()
         self.profile = str(raw.get("profile", "default"))
         control = raw.get("control") if isinstance(raw.get("control"), dict) else {}
-        control_root = str(control.get("root", DEFAULT_CONTROL["root"]))
+        self.control_root_rel = str(control.get("root", DEFAULT_CONTROL["root"])).replace("\\", "/")
+        control_dir = self.root / self.control_root_rel
         state_name = str(control.get("state", DEFAULT_CONTROL["state"]))
-        self.state_path = self.root / control_root / state_name
+        self.state_path = control_dir / state_name
+        profile_rel = str(control.get("projectProfile", DEFAULT_CONTROL["projectProfile"])).replace("\\", "/")
+        profile_candidate = control_dir / profile_rel
+        if profile_rel == "AGENTS.md" and not profile_candidate.is_file() and (self.root / "AGENTS.md").is_file():
+            self.project_profile_path = self.root / "AGENTS.md"
+        else:
+            self.project_profile_path = profile_candidate
+        commands = raw.get("commands") if isinstance(raw.get("commands"), dict) else {}
+        profile_doc = str(commands.get("profileDoc", "")).strip()
+        if profile_doc:
+            self.commands_profile_doc_path = control_dir / profile_doc.replace("\\", "/")
+        elif commands.get("catalog"):
+            self.commands_profile_doc_path = control_dir / DEFAULT_COMMANDS["profileDoc"]
+        else:
+            self.commands_profile_doc_path = None
         enforcement = raw.get("enforcement") if isinstance(raw.get("enforcement"), dict) else {}
         self.product_roots = _normalize_roots(
             enforcement.get("productRoots", DEFAULT_ENFORCEMENT["productRoots"])
@@ -239,11 +262,16 @@ def is_qa_evidence_path(path: str, config: OrdiaManifestConfig) -> bool:
 
 def control_root_hint(root: Path, config: OrdiaManifestConfig | None = None) -> str:
     if config is not None:
-        try:
-            return config.state_path.parent.relative_to(root.resolve()).as_posix()
-        except ValueError:
-            pass
+        return config.control_root_rel.rstrip("/")
     return "docs/control"
+
+
+def project_profile_path(root: Path, config: OrdiaManifestConfig) -> Path:
+    return config.project_profile_path
+
+
+def commands_profile_doc_path(root: Path, config: OrdiaManifestConfig) -> Path | None:
+    return config.commands_profile_doc_path
 
 
 def models_registry_path(root: Path, config: OrdiaManifestConfig) -> Path:

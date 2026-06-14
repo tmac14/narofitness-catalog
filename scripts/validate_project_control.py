@@ -54,7 +54,7 @@ def _session_declared_profile(root: Path) -> str | None:
 
 def _narofitness_options(root: Path) -> ProjectValidationOptions:
     config = load_ordia_config(root)
-    control_root = config.control_root if config else ROOT / "docs" / "coordination"
+    control_root = config.control_root if config else ROOT / "docs" / "control"
     return ProjectValidationOptions(
         profile_cursor_rules=NAROFITNESS_PROFILE_RULES,
         require_cursor_workspace=True,

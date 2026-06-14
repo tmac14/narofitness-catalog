@@ -63,7 +63,7 @@ Ordia profile: <matches ordia.yaml profile>
 ```
 
 **Routing:** Read protocol from `{controlRoot}/protocols/CODEX_IMPLEMENTATION.md` or
-`CODEX_ORCHESTRATION.md` (greenfield), or flat `docs/coordination/*_PROTOCOL.md`
+`CODEX_ORCHESTRATION.md` (greenfield), or flat `docs/control/*_PROTOCOL.md`
 (Narofitness profile exception per `ORDIA-D007`).
 
 **Control-plane identity:** Codex orchestrator — not Agent 1A–6 unless explicitly
@@ -127,11 +127,11 @@ None of these replace the validator; they reduce header omission rate.
 
 | Runtime | Control root | Validator | Protocol docs |
 |---|---|---|---|
-| `ONLY_CODEX` | `docs/coordination/` | `npm run control:validate` | Flat `*_PROTOCOL.md` |
+| `ONLY_CODEX` | `docs/control/` | `npm run control:validate` | Flat `*_PROTOCOL.md` |
 | `CODEX_PLUS_CURSOR` | same | same + Cursor hooks | Both paths |
 
-Codex orchestration protocol: `docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md`  
-Codex implementation protocol: `docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
+Codex orchestration protocol: `docs/control/CODEX_ORCHESTRATION_PROTOCOL.md`  
+Codex implementation protocol: `docs/control/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
 
 Greenfield copies portable templates from `packages/ordia-core/ordia/protocols/`.
 

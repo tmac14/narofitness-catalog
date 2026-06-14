@@ -14,7 +14,7 @@ v0.7 adds **model tier routing**: recommend tier per task, user approval gate, C
 | Area | Path |
 |------|------|
 | Spike | [MODEL_ROUTING_SPIKE.md](./MODEL_ROUTING_SPIKE.md) |
-| Registry | `docs/coordination/MODEL_REGISTRY.yaml` |
+| Registry | `docs/control/MODEL_REGISTRY.yaml` |
 | Core module | `packages/ordia-core/ordia/model_routing/` |
 | Hooks | `check_model_tier.py`, `log_model_context.py` |
 | CLI | `ordia model recommend`, `ordia model usage-template` |

@@ -40,7 +40,7 @@ class ControlContextTests(unittest.TestCase):
 
     def test_is_product_code_path(self) -> None:
         self.assertTrue(control_context.is_product_code_path("apps/desktop/src/App.tsx"))
-        self.assertFalse(control_context.is_product_code_path("docs/coordination/ORCHESTRATION_STATE.md"))
+        self.assertFalse(control_context.is_product_code_path("docs/control/ORCHESTRATION_STATE.md"))
 
     def test_unified_blocks_product_without_approval(self) -> None:
         session = {
@@ -95,7 +95,7 @@ class ControlContextTests(unittest.TestCase):
         }
         blocked, _ = control_context.product_edit_blocked(
             session,
-            "docs/coordination/TASK_REGISTRY.yaml",
+            "docs/control/TASK_REGISTRY.yaml",
             ROOT,
         )
         self.assertFalse(blocked)
@@ -218,8 +218,8 @@ class GuardHookTests(unittest.TestCase):
     def test_model_selection_reminder_when_tier_approved(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            registry_src = ROOT / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
-            registry_dest = root / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
+            registry_src = ROOT / "docs" / "control" / "MODEL_REGISTRY.yaml"
+            registry_dest = root / "docs" / "control" / "MODEL_REGISTRY.yaml"
             registry_dest.parent.mkdir(parents=True)
             registry_dest.write_text(registry_src.read_text(encoding="utf-8"), encoding="utf-8")
             control_context.save_session(
@@ -239,7 +239,7 @@ class GuardHookTests(unittest.TestCase):
     def test_model_selection_reminder_when_task_unapproved(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            state_dir = root / "docs" / "coordination"
+            state_dir = root / "docs" / "control"
             state_dir.mkdir(parents=True)
             (state_dir / "ORCHESTRATION_STATE.md").write_text(
                 "\n".join(
@@ -258,8 +258,8 @@ class GuardHookTests(unittest.TestCase):
     def test_recovery_context_includes_model_reminder(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            registry_src = ROOT / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
-            registry_dest = root / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
+            registry_src = ROOT / "docs" / "control" / "MODEL_REGISTRY.yaml"
+            registry_dest = root / "docs" / "control" / "MODEL_REGISTRY.yaml"
             registry_dest.parent.mkdir(parents=True)
             registry_dest.write_text(registry_src.read_text(encoding="utf-8"), encoding="utf-8")
             control_context.save_session(
@@ -277,7 +277,7 @@ class GuardHookTests(unittest.TestCase):
     def test_persist_session_from_state_sets_active_task_id(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            state_dir = root / "docs" / "coordination"
+            state_dir = root / "docs" / "control"
             state_dir.mkdir(parents=True)
             (state_dir / "ORCHESTRATION_STATE.md").write_text(
                 "\n".join(
@@ -311,8 +311,8 @@ class ModelTierHookE2ETests(unittest.TestCase):
         module = self._load_hook_module("check_model_tier_test", "check_model_tier.py")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            registry_src = ROOT / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
-            registry_dest = root / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
+            registry_src = ROOT / "docs" / "control" / "MODEL_REGISTRY.yaml"
+            registry_dest = root / "docs" / "control" / "MODEL_REGISTRY.yaml"
             registry_dest.parent.mkdir(parents=True)
             registry_dest.write_text(registry_src.read_text(encoding="utf-8"), encoding="utf-8")
             control_context.save_session(
@@ -347,8 +347,8 @@ class ModelTierHookE2ETests(unittest.TestCase):
         module = self._load_hook_module("check_model_tier_auto_test", "check_model_tier.py")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            registry_src = ROOT / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
-            registry_dest = root / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
+            registry_src = ROOT / "docs" / "control" / "MODEL_REGISTRY.yaml"
+            registry_dest = root / "docs" / "control" / "MODEL_REGISTRY.yaml"
             registry_dest.parent.mkdir(parents=True)
             registry_dest.write_text(registry_src.read_text(encoding="utf-8"), encoding="utf-8")
             control_context.save_session(
@@ -384,11 +384,11 @@ class ModelTierHookE2ETests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "ordia.yaml").write_text(
-                'version: "0.2"\nprofile: test\ncontrol:\n  root: docs/coordination\n'
+                'version: "0.2"\nprofile: test\ncontrol:\n  root: docs/control\n'
                 'models:\n  telemetryRoot: temp/qa/model-usage\n',
                 encoding="utf-8",
             )
-            state_dir = root / "docs" / "coordination"
+            state_dir = root / "docs" / "control"
             state_dir.mkdir(parents=True)
             (state_dir / "ORCHESTRATION_STATE.md").write_text(
                 "- Active task ID: `APP-TEST-3`\n",
@@ -421,11 +421,11 @@ class ModelTierHookE2ETests(unittest.TestCase):
         module = self._load_hook_module("check_model_tier_min_test", "check_model_tier.py")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            registry_src = ROOT / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
-            registry_dest = root / "docs" / "coordination" / "MODEL_REGISTRY.yaml"
+            registry_src = ROOT / "docs" / "control" / "MODEL_REGISTRY.yaml"
+            registry_dest = root / "docs" / "control" / "MODEL_REGISTRY.yaml"
             registry_dest.parent.mkdir(parents=True)
             registry_dest.write_text(registry_src.read_text(encoding="utf-8"), encoding="utf-8")
-            state_dir = root / "docs" / "coordination"
+            state_dir = root / "docs" / "control"
             (state_dir / "TASK_REGISTRY.yaml").write_text(
                 "\n".join(
                     [
@@ -469,7 +469,7 @@ class ModelTierHookE2ETests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "ordia.yaml").write_text(
-                'version: "0.2"\nprofile: test\ncontrol:\n  root: docs/coordination\n'
+                'version: "0.2"\nprofile: test\ncontrol:\n  root: docs/control\n'
                 'models:\n  telemetryRoot: temp/qa/model-usage\n',
                 encoding="utf-8",
             )

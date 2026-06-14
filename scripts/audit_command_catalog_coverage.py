@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CATALOG = ROOT / "scripts" / "commands.catalog.json"
+DEFAULT_CATALOG = ROOT / "docs" / "control" / "commands.catalog.json"
 DEFAULT_PACKAGE = ROOT / "package.json"
 
 EXCLUDED_SCRIPTS = frozenset({"help", "help:validate", "help:list"})
