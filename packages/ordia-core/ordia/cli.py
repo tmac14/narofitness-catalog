@@ -100,13 +100,18 @@ def _package_docs_root() -> Path:
     return Path(__file__).resolve().parent.parent / "docs"
 
 
-def _product_docs_root() -> Path | None:
-    repo = _repo_root()
-    repo_ordia = repo / "docs" / "ordia"
-    if repo_ordia.is_dir() and (repo_ordia / "README.md").is_file():
-        return repo_ordia
+def _bundled_product_docs_root() -> Path | None:
     bundled = Path(__file__).resolve().parent / "product_docs"
     return bundled if bundled.is_dir() else None
+
+
+def _product_docs_root(from_repo_docs: bool = False) -> Path | None:
+    if from_repo_docs:
+        repo = _repo_root()
+        repo_ordia = repo / "docs" / "ordia"
+        if repo_ordia.is_dir() and (repo_ordia / "README.md").is_file():
+            return repo_ordia
+    return _bundled_product_docs_root()
 
 
 PRODUCT_DOC_NAMES = (
@@ -119,8 +124,8 @@ PRODUCT_DOC_NAMES = (
 )
 
 
-def _install_product_docs(target: Path) -> list[Path]:
-    src_root = _product_docs_root()
+def _install_product_docs(target: Path, *, from_repo_docs: bool = False) -> list[Path]:
+    src_root = _product_docs_root(from_repo_docs=from_repo_docs)
     if src_root is None:
         return []
     dest = target / "docs" / "ordia"
@@ -179,7 +184,7 @@ def cmd_init(args: argparse.Namespace) -> int:
     protocol_written = _install_protocol_templates(target, profile, product_root)
     written.extend(protocol_written)
 
-    product_written = _install_product_docs(target)
+    product_written = _install_product_docs(target, from_repo_docs=getattr(args, "from_repo_docs", False))
     written.extend(product_written)
 
     if args.with_cursor:
@@ -193,7 +198,8 @@ def cmd_init(args: argparse.Namespace) -> int:
     for path in written:
         print(f"- wrote {path.relative_to(target)}")
     if product_written:
-        print("- installed product documentation under docs/ordia/")
+        source = "repo docs/ordia/" if getattr(args, "from_repo_docs", False) else "bundled product_docs/"
+        print(f"- installed portable product documentation under docs/ordia/ (from {source})")
     if args.with_cursor:
         print("- installed .cursor hooks and ordia rules")
     if getattr(args, "with_docs", False):
@@ -647,7 +653,12 @@ def build_parser() -> argparse.ArgumentParser:
     init_parser.add_argument(
         "--with-docs",
         action="store_true",
-        help="Copy full ordia-core package documentation to docs/ordia/package/",
+        help="Copy ordia-core package manuals to docs/ordia/package/ (technical docs)",
+    )
+    init_parser.add_argument(
+        "--from-repo-docs",
+        action="store_true",
+        help="Copy live docs/ordia/ from reference repo instead of bundled portable product_docs (reference only)",
     )
     init_parser.add_argument("--force", action="store_true", help="Allow init when ordia.yaml exists")
     init_parser.set_defaults(func=cmd_init)

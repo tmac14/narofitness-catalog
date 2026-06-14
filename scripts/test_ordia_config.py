@@ -46,13 +46,14 @@ class OrdiaConfigTests(unittest.TestCase):
     def test_fallback_without_manifest(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            control = root / "docs" / "coordination"
+            control = root / "docs" / "control"
             control.mkdir(parents=True)
             (control / "ORCHESTRATION_STATE.md").write_text("# state\n", encoding="utf-8")
             config = load_ordia_config(root)
             self.assertIsNotNone(config)
             assert config is not None
             self.assertEqual(config.profile, "default")
+            self.assertEqual(config.control_root.resolve(), control.resolve())
 
 
 if __name__ == "__main__":

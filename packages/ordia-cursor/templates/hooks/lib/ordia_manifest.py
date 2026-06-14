@@ -8,7 +8,7 @@ from typing import Any
 ORDIA_FILENAME = "ordia.yaml"
 
 DEFAULT_CONTROL = {
-    "root": "docs/coordination",
+    "root": "docs/control",
     "state": "ORCHESTRATION_STATE.md",
     "taskRegistry": "TASK_REGISTRY.yaml",
     "agentRegistry": "AGENT_REGISTRY.yaml",
@@ -21,7 +21,8 @@ DEFAULT_CONTROL = {
 DEFAULT_ENFORCEMENT = {
     "productRoots": ["apps/"],
     "controlRoots": [
-        "docs/coordination/",
+        "docs/control/",
+        "docs/ordia/",
         ".cursor/rules/",
         ".cursor/hooks/",
         "AGENTS.md",

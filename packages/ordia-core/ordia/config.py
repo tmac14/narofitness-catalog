@@ -16,11 +16,12 @@ SUPPORTED_VERSIONS = {"0.2", "0.3"}
 DEFAULT_ENFORCEMENT = {
     "productRoots": ["apps/"],
     "controlRoots": [
-        "docs/coordination/",
+        "docs/control/",
+        "docs/ordia/",
         ".cursor/rules/",
         ".cursor/hooks/",
         "AGENTS.md",
-        "COMMANDS.md",
+        "ordia.yaml",
     ],
     "qaEvidenceRoots": ["temp/qa/"],
     "orchestrationBlocksProduct": True,
@@ -28,7 +29,7 @@ DEFAULT_ENFORCEMENT = {
 }
 
 DEFAULT_CONTROL = {
-    "root": "docs/coordination",
+    "root": "docs/control",
     "state": "ORCHESTRATION_STATE.md",
     "taskRegistry": "TASK_REGISTRY.yaml",
     "agentRegistry": "AGENT_REGISTRY.yaml",
@@ -140,7 +141,7 @@ class OrdiaConfig:
         self.commands_validate_on_control_check = bool(commands.get("validateOnControlCheck", False))
 
         models = raw.get("models") if isinstance(raw.get("models"), dict) else {}
-        registry_rel = str(models.get("registry", "docs/coordination/MODEL_REGISTRY.yaml")).strip()
+        registry_rel = str(models.get("registry", "docs/control/MODEL_REGISTRY.yaml")).strip()
         self.models_registry_path = self.root / registry_rel.replace("\\", "/")
         telemetry_rel = str(models.get("telemetryRoot", "temp/qa/model-usage")).strip()
         self.models_telemetry_root = self.root / telemetry_rel.replace("\\", "/")
@@ -169,7 +170,7 @@ def find_ordia_root(start: Path | None = None) -> Path | None:
     for directory in (current, *current.parents):
         if (directory / ORDIA_FILENAME).is_file():
             return directory
-        for control_root_name in ("docs/coordination", "docs/control"):
+        for control_root_name in ("docs/control", "docs/coordination"):
             if (directory / control_root_name / DEFAULT_CONTROL["state"]).is_file():
                 return directory
     return None
@@ -194,7 +195,7 @@ def load_ordia_config(root: Path | None = None) -> OrdiaConfig | None:
         if not isinstance(data, dict):
             return None
         return OrdiaConfig(base, data)
-    for control_root_name in ("docs/coordination", "docs/control"):
+    for control_root_name in ("docs/control", "docs/coordination"):
         state = base / control_root_name / DEFAULT_CONTROL["state"]
         if state.is_file():
             control = {**DEFAULT_CONTROL, "root": control_root_name}

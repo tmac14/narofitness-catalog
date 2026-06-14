@@ -2,53 +2,43 @@
 
 **Status:** ACTIVE — workflow intents and prompt standardization  
 **Decision:** `ORDIA-D023`  
-**Date:** 2026-06-14  
 **Builds on:** [SPEC_v0.6.md](./SPEC_v0.6.md) · [SPEC_v0.7.md](./SPEC_v0.7.md)
 
 ## Summary
 
-v0.8 adds a **portable workflow intent layer**: stable taxonomy of development actions, CLI emission of standardized prompts (header + body + checklist), and `workflowIntents[]` in the command catalog parallel to `quickFlows[]`.
+Portable **workflow intent** layer: taxonomy of actions, CLI prompt emission, optional profile overlay.
 
-## Deliverables
+## Deliverables (core wheel)
 
 | Area | Path |
 |------|------|
-| Spike | [WORKFLOW_INTENTS_SPIKE.md](./WORKFLOW_INTENTS_SPIKE.md) |
-| Daily guide | [DAILY_USAGE.md](./DAILY_USAGE.md) |
-| Core module | `packages/ordia-core/ordia/workflows/` |
+| Core module | `ordia/workflows/` |
+| Base intents | `ordia/workflows/intents.yaml` |
 | CLI | `ordia workflow list\|describe`, `ordia prompt emit\|header` |
-| Profile overlay | `docs/coordination/workflows/intents.narofitness.yaml` |
-| Catalog | `workflowIntents[]` in `scripts/commands.catalog.json` |
 | Hooks | Warn-only unknown `intent:` (`workflow_intents_lite.py`) |
-| Tests | `scripts/test_ordia_workflows.py` |
 
-## Intent taxonomy (core)
+## Profile overlay (not in wheel)
 
-| Category | Count | Examples |
-|----------|-------|----------|
-| control | 7 | `recover`, `orchestrate_batch`, `task_resume` |
-| planning | 5 | `plan`, `approve_model`, `confirm_locks` |
-| work | 5 | `implement_feature`, `fix_bug`, `continue_wip` |
-| quality | 4 | `qa`, `audit`, `close_task`, `validate` |
+Optional YAML referenced from `ordia.yaml`:
 
-Profile overlay adds domain intents (e.g. `import_regression`) — not shipped in core wheel.
+```yaml
+workflows:
+  overlay: {controlRoot}/workflows/intents.<profile>.yaml
+```
 
-## Emitted prompt structure
+Domain intents (import regression, audit tracks, etc.) belong **only** in the profile repo overlay — never in `ordia/workflows/intents.yaml`.
 
-1. Ordia session header (`Runtime`, `Protocol`, profile, model tier)
-2. Ordia intent block (`intent:`, `task:`, `agent:`, `mode:`)
-3. Prompt body (template + task packet context)
-4. Validation checklist + expected deliverable (incl. Model usage)
+## Intent categories (core)
+
+| Category | Examples |
+|----------|----------|
+| control | `recover`, `orchestrate_batch`, `task_resume` |
+| planning | `plan`, `approve_model`, `confirm_locks` |
+| work | `implement_feature`, `fix_bug`, `continue_wip` |
+| quality | `qa`, `audit`, `close_task`, `validate` |
 
 ## Non-goals
 
 - Automatic agent transport
 - Hard deny on invalid intent (v0.8 warn-only)
 - Domain intents in core wheel
-- Full protocol templating (entrypoints only)
-
-See WORKFLOW_INTENTS_SPIKE §7.
-
-## Closure
-
-Program slice **CLOSED** — see [IMPROVEMENT_PLAN_v0.8.md](./IMPROVEMENT_PLAN_v0.8.md).

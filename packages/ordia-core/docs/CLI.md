@@ -86,7 +86,8 @@ ordia init [options]
 | `--template` | `minimal` | `minimal` or `monorepo` |
 | `--product-root` | `src/` | Product enforcement root (`apps/` for monorepo template) |
 | `--with-cursor` | off | Install `.cursor/hooks` + ordia rules from ordia-cursor bundle |
-| `--with-docs` | off | Copy full `ordia-core/docs/` → `docs/ordia/package/` (`ORDIA-D020`) |
+| `--with-docs` | off | Copy package manuals → `docs/ordia/package/` (technical docs) |
+| `--from-repo-docs` | off | **Reference repos only** — copy live `docs/ordia/` instead of bundled portable `product_docs/` |
 | `--force` | off | Overwrite scaffold when `ordia.yaml` already exists |
 
 ### Behavior
@@ -94,9 +95,10 @@ ordia init [options]
 1. Renders `ordia.yaml` from template with `{{PROFILE}}`, `{{PRODUCT_ROOT}}`, `{{DATE}}`
 2. Copies template tree (excluding template's raw `ordia.yaml`) into target
 3. Installs six protocol templates → `docs/control/protocols/`
-4. Copies `SPEC_v0.2.md`, `SPEC_v0.5.md`, `README.md` → `docs/ordia/` (if absent)
-5. If `--with-cursor`: substitutes `{PYTHON}` in `hooks.json` with `sys.executable`
-6. If `--with-docs`: mirrors package documentation for offline reading
+4. Copies **portable** product docs from bundled `ordia/product_docs/` → `docs/ordia/` (no profile task packets or overlays)
+5. If `--from-repo-docs`: step 4 uses the reference repo's live `docs/ordia/` instead (opt-in)
+6. If `--with-cursor`: substitutes `{PYTHON}` in `hooks.json` with `sys.executable`
+7. If `--with-docs`: mirrors package documentation → `docs/ordia/package/`
 
 ### Examples
 

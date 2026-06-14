@@ -56,6 +56,10 @@ class DocsInventoryTests(unittest.TestCase):
         dup = ROOT / "docs" / "ordia" / "templates"
         self.assertFalse(dup.exists(), f"duplicate template tree must not exist: {dup}")
 
+    def test_no_nested_monorepo_minimal_in_package(self) -> None:
+        nested = ROOT / "packages" / "ordia-core" / "ordia" / "templates" / "monorepo" / "minimal"
+        self.assertFalse(nested.exists(), f"nested monorepo/minimal must not exist: {nested}")
+
 
 if __name__ == "__main__":
     unittest.main()

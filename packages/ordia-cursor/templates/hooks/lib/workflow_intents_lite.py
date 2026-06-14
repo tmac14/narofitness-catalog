@@ -51,9 +51,12 @@ def _resolve_overlay(root: Path) -> Path | None:
     if rel:
         candidate = root / rel.replace("\\", "/")
         return candidate if candidate.is_file() else None
-    profile = str(doc.get("profile") or "narofitness").strip()
-    candidate = root / "docs" / "coordination" / "workflows" / f"intents.{profile}.yaml"
-    return candidate if candidate.is_file() else None
+    profile = str(doc.get("profile") or "default").strip()
+    for control_root in ("docs/control", "docs/coordination"):
+        candidate = root / control_root / "workflows" / f"intents.{profile}.yaml"
+        if candidate.is_file():
+            return candidate
+    return None
 
 
 def validate_intent_in_prompt(root: Path, prompt: str) -> str | None:

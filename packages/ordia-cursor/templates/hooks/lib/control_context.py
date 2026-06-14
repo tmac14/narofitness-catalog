@@ -26,8 +26,9 @@ VALID_SESSION_MODES = {"MULTI_CHAT", "UNIFIED", "NONE"}
 NONE_SELECTED = "NONE_SELECTED_FOR_NEXT_TASK"
 LEGACY_PROTOCOL = "CODEX_IMPLEMENTATION"
 SESSION_FILENAME = "session-protocol.json"
-STATE_RELATIVE = Path("docs/coordination/ORCHESTRATION_STATE.md")
+STATE_RELATIVE = Path("docs/control/ORCHESTRATION_STATE.md")
 STATE_CONTROL_RELATIVE = Path("docs/control/ORCHESTRATION_STATE.md")
+STATE_LEGACY_RELATIVE = Path("docs/coordination/ORCHESTRATION_STATE.md")
 
 _ORDIA_CONFIG_CACHE: dict[str, Any] = {}
 
@@ -136,7 +137,9 @@ def _has_control_state(candidate: Path) -> bool:
         return True
     if (candidate / STATE_RELATIVE).is_file():
         return True
-    return (candidate / STATE_CONTROL_RELATIVE).is_file()
+    if (candidate / STATE_LEGACY_RELATIVE).is_file():
+        return True
+    return False
 
 
 def find_project_root(explicit: str | None = None) -> Path:
