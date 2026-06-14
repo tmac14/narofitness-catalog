@@ -31,3 +31,4 @@ packaging/postgres/lib/
 .DS_Store
 apps/desktop/release/
 temp/cloudflare-tunnels/
+temp/wheel-audit/
