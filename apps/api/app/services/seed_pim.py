@@ -1,4 +1,4 @@
-"""Orchestrator for PIM reference data seeding."""
+"""Run PIM reference data seeding."""
 
 from __future__ import annotations
 

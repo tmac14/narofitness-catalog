@@ -21,11 +21,9 @@ jobs:
       - name: Install desktop tooling
         run: npm ci --prefix apps/desktop
       - name: Install Python dependencies
-        run: pip install -r apps/api/requirements.txt -r apps/api/requirements-dev.txt -r scripts/requirements-control.txt
-      - name: Project control validation
-        run: npm run control:validate
-      - name: Project control tests
-        run: npm run control:test
+        run: pip install -r apps/api/requirements.txt -r apps/api/requirements-dev.txt
+      - name: Hygiene audit
+        run: python scripts/audit_no_ordia.py --check
       - name: Quality gates
         run: npm run quality:check
 

@@ -1,4 +1,4 @@
-> **Status: ARCHIVED** — Ordia v0.6 Workstream E (E-03d / ORDIA-D019), 2026-06-14.
+> **Status: ARCHIVED** — Documentation program v0.6 Workstream E (E-03d / DOC-D019), 2026-06-14.
 > Canonical English: `docs/product/FUNCTIONAL_ANALYSIS.md` and `docs/product/TECHNICAL_ARCHITECTURE.md`.
 
 # Análisis funcional — Generador de catálogos FDL (NaroCatalog)

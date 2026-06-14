@@ -1,6 +1,6 @@
 # Manual QA index
 
-**Status:** ACTIVE — Ordia v0.6 Workstream E (E-03e)  
+**Status:** ACTIVE — Documentation program v0.6 Workstream E (E-03e)  
 **Purpose:** Single entry point for manual QA checklists across the desktop app.
 
 | Document | Scope | Agent / owner |

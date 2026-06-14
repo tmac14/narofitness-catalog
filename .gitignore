@@ -1,10 +1,4 @@
 node_modules/
-.cursor/*
-!.cursor/rules/
-!.cursor/rules/**
-!.cursor/hooks.json
-!.cursor/hooks/
-!.cursor/hooks/**
 dist/
 release/
 .venv/
@@ -22,7 +16,6 @@ htmlcov/
 data/
 packaging/dist/
 packaging/build/
-packages/ordia-core/build/
 packages/**/dist/
 packaging/.cache/
 packaging/postgres/bin/
@@ -33,3 +26,4 @@ apps/desktop/release/
 temp/cloudflare-tunnels/
 temp/wheel-audit/
 temp/*.pdf
+temp/ordia-restore-*/

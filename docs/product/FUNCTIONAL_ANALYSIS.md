@@ -1,6 +1,6 @@
 # Functional Analysis — FDL Catalog Generator (NaroCatalog)
 
-**Status:** ACTIVE — canonical English product spec (`ORDIA-D019`)  
+**Status:** ACTIVE — canonical English product spec (`DOC-D019`)  
 **Archived Spanish source:** [`docs/archive/product/es/ANALISIS_FUNCIONAL.md`](../archive/product/es/ANALISIS_FUNCIONAL.md)  
 **Related:** [TECHNICAL_ARCHITECTURE.md](./TECHNICAL_ARCHITECTURE.md) · [API.md](../API.md)
 

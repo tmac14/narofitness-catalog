@@ -1,4 +1,4 @@
-"""Page-by-page import sandbox audit orchestrator."""
+"""Page-by-page import sandbox audit runner."""
 
 from __future__ import annotations
 

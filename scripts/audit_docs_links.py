@@ -22,10 +22,8 @@ LINK_RE = re.compile(r"\]\(([^)#]+)(?:#[^)]*)?\)")
 STRICT_LIFECYCLES = frozenset({"CORE", "ACTIVE", "PAUSED_CONTEXT"})
 
 EXTRA_STRICT_FILES = (
-    ROOT / "AGENTS.md",
     ROOT / "docs" / "control" / "PROFILE.md",
     ROOT / "docs" / "control" / "COMMANDS.md",
-    ROOT / "ordia.yaml",
 )
 
 

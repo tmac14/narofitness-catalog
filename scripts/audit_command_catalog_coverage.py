@@ -9,17 +9,17 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CATALOG = ROOT / "docs" / "control" / "commands.catalog.json"
+DEFAULT_CATALOG = ROOT / "scripts" / "commands.catalog.json"
 DEFAULT_PACKAGE = ROOT / "package.json"
 
 EXCLUDED_SCRIPTS = frozenset({"help", "help:validate", "help:list"})
 
-L1_PREFIXES = ("ordia", "control:")
+L1_PREFIXES = ()
 L2_PREFIXES = ("quality:", "lint:", "typecheck:", "format:")
 
 
 def _layer(name: str) -> str:
-    if name == "ordia" or name.startswith(L1_PREFIXES):
+    if L1_PREFIXES and name.startswith(L1_PREFIXES):
         return "L1"
     if name.startswith(L2_PREFIXES):
         return "L2"

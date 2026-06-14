@@ -1,6 +1,6 @@
 # Archived Spanish product documentation
 
-**Status: ARCHIVED zone** — originals preserved after English migration (`ORDIA-D019`).
+**Status: ARCHIVED zone** — originals preserved after English migration (`DOC-D019`).
 
 | Document | Canonical English |
 |----------|-------------------|

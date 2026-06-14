@@ -1,4 +1,4 @@
-"""Orchestrate PDF import: parse → taxonomy → grouping → review → stage."""
+"""Run PDF import: parse -> taxonomy -> grouping -> review -> stage."""
 
 from __future__ import annotations
 

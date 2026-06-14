@@ -1,4 +1,4 @@
-"""Orchestrate full-PDF parse + pipeline trace for variant detection audit."""
+"""Run full-PDF parse and pipeline trace for variant detection audit."""
 
 from __future__ import annotations
 

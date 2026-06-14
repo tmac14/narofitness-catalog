@@ -1,6 +1,6 @@
 # Technical Architecture — NaroCatalog
 
-**Status:** ACTIVE — canonical English architecture spec (`ORDIA-D019`)  
+**Status:** ACTIVE — canonical English architecture spec (`DOC-D019`)  
 **Archived Spanish source:** [`docs/archive/product/es/ARQUITECTURA_TECNICA.md`](../archive/product/es/ARQUITECTURA_TECNICA.md)  
 **Related:** [FUNCTIONAL_ANALYSIS.md](./FUNCTIONAL_ANALYSIS.md) · [API.md](../API.md)
 

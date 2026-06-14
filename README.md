@@ -26,30 +26,12 @@ Aplicación de escritorio para importar tarifas mayoristas PDF, gestionar produc
 
 ## Requisitos
 
-Project control and engineering:
-
-- [Agent and runtime guide](AGENTS.md) — select `Runtime` + `Protocol` before each task
-- [Cursor workspace rules](.cursor/rules/) — enforced runtime, recovery, and guardrail behavior
-- [Engineering standards](docs/ENGINEERING_STANDARDS.md)
-- [Control plane recovery runbook](docs/control/CONTROL_PLANE_RECOVERY_RUNBOOK.md)
-- [Live orchestration state](docs/control/ORCHESTRATION_STATE.md)
-- [Task registry](docs/control/TASK_REGISTRY.yaml)
-
-
 
 - Docker Desktop (desarrollo)
 
 - Node.js 20+ (scripts raíz + UI)
 
 - Python 3.12+ (spikes locales)
-
-For project-control validation on a fresh machine:
-
-```powershell
-npm run control:install
-npm run control:validate
-```
-
 
 
 ## Comandos desde la raíz
