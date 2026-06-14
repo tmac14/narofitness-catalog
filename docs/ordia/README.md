@@ -66,16 +66,16 @@ npm run ordia:doctor                      # setup health
 | **[DAILY_USAGE.md](./DAILY_USAGE.md)** | ⭐ Practical guide + edge cases |
 | [`COMMANDS.md`](../../COMMANDS.md) | Canonical npm commands |
 | [`AGENTS.md`](../../AGENTS.md) | Project control plane entry |
-| [`packages/ordia-core/docs/CLI.md`](../../packages/ordia-core/docs/CLI.md) | Every CLI flag |
+| [`CLI.md`](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/CLI.md) | Every CLI flag |
 
 ### Understand the system
 
 | Document | Purpose |
 |----------|---------|
-| [`packages/ordia-core/docs/README.md`](../../packages/ordia-core/docs/README.md) | Package manual index |
-| [`packages/ordia-core/docs/ARCHITECTURE.md`](../../packages/ordia-core/docs/ARCHITECTURE.md) | Layers & data flow |
-| [`packages/ordia-core/docs/HOOKS_AND_RULES.md`](../../packages/ordia-core/docs/HOOKS_AND_RULES.md) | Cursor enforcement |
-| [`packages/ordia-core/docs/GREENFIELD.md`](../../packages/ordia-core/docs/GREENFIELD.md) | Bootstrap new projects |
+| [Package manual index](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/README.md) | Package manual index |
+| [ARCHITECTURE.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/ARCHITECTURE.md) | Layers & data flow |
+| [HOOKS_AND_RULES.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/HOOKS_AND_RULES.md) | Cursor enforcement |
+| [GREENFIELD.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/GREENFIELD.md) | Bootstrap new projects |
 
 ### Specs & decisions
 
@@ -92,21 +92,23 @@ npm run ordia:doctor                      # setup health
 | — | [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md) | PyPI / marketplace gates |
 | — | [Historical specs (v0.1–v0.4)](../archive/ordia/specs/) | Archived — traceability only |
 
-Decisions: `ORDIA-D001`–`ORDIA-D023` in [`docs/coordination/DECISION_LOG.md`](../coordination/DECISION_LOG.md).
+Decisions: `ORDIA-D001`–`ORDIA-D024` in [`docs/coordination/DECISION_LOG.md`](../coordination/DECISION_LOG.md).
 
 ---
 
-## 🧩 Packages
+## Packages
 
 | Package | Role |
 |---------|------|
-| [`packages/ordia-core`](../../packages/ordia-core/) | Manifest, CLI, validator, workflows, protocol templates |
-| [`packages/ordia-cursor`](../../packages/ordia-cursor/) | Cursor hooks + rules template bundle |
+| [`ordia-core` on PyPI](https://pypi.org/project/ordia-core/) | Manifest, CLI, validator, workflows, embedded cursor bundle |
+| [`ordia-package` repo](https://github.com/tmac14/ordia-package) | Product source + `@ordia/cursor` npm stub |
 
 ```powershell
-python -m pip install -e packages/ordia-core
+pip install ordia-core==0.8.0
 ordia init --with-cursor --with-docs --directory ../my-greenfield
 ```
+
+Local development: `pip install -e ../ordia-package/packages/ordia-core`
 
 ---
 
@@ -118,8 +120,8 @@ ordia init --with-cursor --with-docs --directory ../my-greenfield
 | **Control plane / orchestrator** | `docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md` or `CURSOR_ORCHESTRATION_PROTOCOL.md` |
 | **Implementer (Cursor agent)** | `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` + emitted prompt |
 | **Implementer (Codex)** | `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` + pasted emit block |
-| **Adopting Ordia elsewhere** | [`GREENFIELD.md`](../../packages/ordia-core/docs/GREENFIELD.md) |
-| **Maintainer / release** | [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md) + [CHANGELOG](../../packages/ordia-core/docs/CHANGELOG.md) |
+| **Adopting Ordia elsewhere** | [GREENFIELD.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/GREENFIELD.md) |
+| **Maintainer / release** | [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md) + [CHANGELOG](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/CHANGELOG.md) |
 
 ---
 
@@ -140,9 +142,8 @@ ordia.yaml                    # manifest — start here
 docs/ordia/                   # product docs (you are here)
 docs/coordination/            # live control plane (Narofitness profile)
 .cursor/hooks/ + .cursor/rules/   # Cursor enforcement
-packages/ordia-core/          # portable Python package
-packages/ordia-cursor/        # hook/rule templates for greenfield
-scripts/ordia_cli.py          # npm → ordia CLI wrapper
+scripts/ordia_cli.py          # npm → pip ordia CLI wrapper
+# ordia-core: pip install ordia-core==0.8.0 (see ordia-package repo)
 ```
 
 ---

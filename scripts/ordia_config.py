@@ -1,4 +1,4 @@
-"""Shim — re-export Ordia config from packages/ordia-core."""
+"""Shim — re-export Ordia config from pip ordia-core."""
 
 from __future__ import annotations
 

@@ -1,1 +1,2 @@
 PyYAML>=6.0,<7
+ordia-core==0.8.0

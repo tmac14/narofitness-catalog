@@ -1,6 +1,6 @@
 # Ordia Specification v0.2
 
-> **Historical spec** — manifest schema details in [packages/ordia-core/docs/MANIFEST.md](../../packages/ordia-core/docs/MANIFEST.md). Active baseline: [SPEC_v0.6.md](./SPEC_v0.6.md).
+> **Historical spec** — manifest schema details in [MANIFEST.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/MANIFEST.md). Active baseline: [SPEC_v0.6.md](./SPEC_v0.6.md).
 
 **Status:** HISTORICAL — project manifest schema  
 **Decision:** `ORDIA-D002`  
@@ -96,6 +96,6 @@ existing `docs/coordination/` paths.
 ## 6. Historical note
 
 v0.3 CLI goals are implemented in v0.6 (`ordia init`, `validate`, `doctor`, `help`, `commands validate`).
-See [SPEC_v0.6.md](./SPEC_v0.6.md) and [packages/ordia-core/docs/CLI.md](../../packages/ordia-core/docs/CLI.md).
+See [SPEC_v0.6.md](./SPEC_v0.6.md) and [CLI.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/CLI.md).
 
 See [SPEC v0.1 (archived)](../archive/ordia/specs/SPEC_v0.1.md) for product identity and extraction roadmap.

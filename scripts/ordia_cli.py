@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shim entrypoint for Ordia CLI (packages/ordia-core)."""
+"""Shim entrypoint for Ordia CLI (pip ordia-core)."""
 
 from __future__ import annotations
 

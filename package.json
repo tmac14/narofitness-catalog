@@ -58,7 +58,7 @@
     "typecheck:python": "pyright",
     "quality:baseline": "node scripts/run-quality-baseline.mjs",
     "quality:check": "node scripts/run-quality-baseline.mjs --strict",
-    "control:test": "python scripts/test_validate_project_control.py && python scripts/test_control_hooks.py && python scripts/test_ordia_config.py && python scripts/test_ordia_manifest.py && python scripts/test_ordia_cli.py && python scripts/test_ordia_validator.py && python scripts/test_ordia_bundle_drift.py && python scripts/test_ordia_greenfield.py && python scripts/test_ordia_doc_links.py && python scripts/test_ordia_wheel.py && python scripts/test_ordia_slice4_coverage.py && python scripts/test_ordia_commands.py && python scripts/test_ordia_command_coverage.py && python scripts/test_ordia_docs_inventory.py && python scripts/test_ordia_docs_slice8.py && python scripts/test_ordia_model_routing.py && python scripts/test_ordia_workflows.py && python scripts/test_ordia_package_boundary.py",
+    "control:test": "python scripts/test_validate_project_control.py && python scripts/test_control_hooks.py && python scripts/test_ordia_config.py && python scripts/test_ordia_manifest.py && python scripts/ordia_cli.py doctor && python scripts/check_ordia_cursor_bundle_drift.py --check",
     "ordia": "python scripts/ordia_cli.py",
     "ordia:init": "python scripts/ordia_cli.py init",
     "ordia:validate": "python scripts/ordia_cli.py validate",

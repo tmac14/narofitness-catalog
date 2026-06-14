@@ -1,7 +1,7 @@
 # Ordia — Daily Usage Guide
 
 **Audience:** control-plane operators, implementers, and anyone running AI-assisted work in an Ordia-enabled repo  
-**Canonical commands:** repo-root [`COMMANDS.md`](../../COMMANDS.md) · CLI detail: [`packages/ordia-core/docs/CLI.md`](../../packages/ordia-core/docs/CLI.md)  
+**Canonical commands:** repo-root [`COMMANDS.md`](../../COMMANDS.md) · CLI detail: [ordia-core CLI manual](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/CLI.md)  
 **Version:** v0.8 (workflow intents + model routing)
 
 ---
@@ -236,8 +236,8 @@ v0.8+ CLI reconfigures stdout to UTF-8. If output still garbles, redirect to fil
 
 ```powershell
 npm run ordia:doctor
-python -m pip install -e packages/ordia-core
-python scripts/sync_ordia_cursor_bundle.py --sync   # if bundle drift
+pip install ordia-core==0.8.0
+python scripts/check_ordia_cursor_bundle_drift.py --check   # if bundle drift vs live .cursor/
 ```
 
 Re-run `ordia init --with-cursor --force` only when you intentionally rescaffold hooks.
@@ -271,13 +271,13 @@ Use before closing model-routing workstreams; promotes missing Model usage to er
 
 | Topic | Document |
 |-------|----------|
-| Architecture | [`packages/ordia-core/docs/ARCHITECTURE.md`](../../packages/ordia-core/docs/ARCHITECTURE.md) |
-| Hooks & rules | [`packages/ordia-core/docs/HOOKS_AND_RULES.md`](../../packages/ordia-core/docs/HOOKS_AND_RULES.md) |
+| Architecture | [ARCHITECTURE.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/ARCHITECTURE.md) |
+| Hooks & rules | [HOOKS_AND_RULES.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/HOOKS_AND_RULES.md) |
 | Workflow intents spec | [WORKFLOW_INTENTS_SPIKE.md](./WORKFLOW_INTENTS_SPIKE.md) |
 | Model routing | [MODEL_ROUTING_SPIKE.md](./MODEL_ROUTING_SPIKE.md) |
 | Codex without hooks | [CODEX_ENFORCEMENT_SPIKE.md](./CODEX_ENFORCEMENT_SPIKE.md) |
-| Greenfield bootstrap | [`packages/ordia-core/docs/GREENFIELD.md`](../../packages/ordia-core/docs/GREENFIELD.md) |
-| Narofitness profile | [`packages/ordia-core/docs/REFERENCE_PROFILE.md`](../../packages/ordia-core/docs/REFERENCE_PROFILE.md) |
+| Greenfield bootstrap | [GREENFIELD.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/GREENFIELD.md) |
+| Narofitness profile | [REFERENCE_PROFILE.md](https://github.com/tmac14/ordia-package/blob/main/packages/ordia-core/docs/REFERENCE_PROFILE.md) |
 
 ---
 
