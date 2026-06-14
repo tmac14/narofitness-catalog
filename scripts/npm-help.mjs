@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * npm run help — referencia CLI de comandos NaroCatalog.
- * Fuente: scripts/commands.catalog.json + package.json
+ * Fuente: docs/control/commands.catalog.json + package.json
  */
 
 import fs from 'node:fs';
@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const catalogPath = path.join(repoRoot, 'scripts', 'commands.catalog.json');
+const catalogPath = path.join(repoRoot, 'docs', 'control', 'commands.catalog.json');
 const packagePath = path.join(repoRoot, 'package.json');
 
 const useColor = Boolean(process.stdout.isTTY && !process.env.NO_COLOR);

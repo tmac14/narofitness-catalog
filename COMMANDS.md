@@ -13,10 +13,10 @@ Fuente de verdad: `package.json` (raíz) y `apps/desktop/package.json`.
 | `npm run help` | Flujos rápidos, URLs locales e índice por categoría |
 | `npm run help -- dev` | Detalle de un comando (descripción, flags, ejemplos, script subyacente) |
 | `npm run help -- list` | Lista plana de todos los comandos documentados (`npm run help:list` equivalente) |
-| `npm run help:validate` | Comprueba que `package.json` y `scripts/commands.catalog.json` están sincronizados |
+| `npm run help:validate` | Comprueba que `package.json` y `docs/control/commands.catalog.json` están sincronizados |
 | `npm run help:coverage` | Informe L1/L2/L3 de cobertura del catálogo vs `package.json` |
 
-Datos del CLI: [commands.catalog.json](scripts/commands.catalog.json). Al añadir o cambiar un script npm, actualizar este archivo, el catálogo JSON y ejecutar `npm run help:validate`.
+Datos del CLI: [docs/control/commands.catalog.json](docs/control/commands.catalog.json). Al añadir o cambiar un script npm, ejecutar `ordia init --sync-commands --skip-existing` y `npm run help:validate`.
 
 ---
 

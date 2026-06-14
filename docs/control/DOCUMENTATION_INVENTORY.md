@@ -35,7 +35,12 @@ Top-level coordination and adoption docs. Update when adding/removing `.md`/`.ya
 
 ## Workflows
 
-- `docs/control/workflows/intents.overlay.yaml`
+- `docs/control/workflows/intents.narofitness.yaml`
+
+## Cursor rules (profile)
+
+- `.cursor/rules/narofitness-permanent-guardrails.mdc`
+- `.cursor/rules/profile-narofitness-guardrails.mdc`
 
 ## Repository docs (sample)
 

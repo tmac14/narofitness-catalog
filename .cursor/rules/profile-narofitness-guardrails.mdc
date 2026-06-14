@@ -5,19 +5,37 @@ alwaysApply: true
 
 # Profile guardrails (narofitness)
 
-Portable Ordia rules apply to all profiles. This file captures **profile-specific** constraints for `narofitness`.
+Portable Ordia rules apply to all profiles. Domain constraints live in `narofitness-permanent-guardrails.mdc`. This file captures **profile operations** for `narofitness`.
 
 ## Product scope
 
-- Primary product roots: see `ordia.yaml` → `enforcement.productRoots`
-- Do not edit paths outside approved scope without an explicit task packet
+- Product roots: `apps/` (blocked for orchestration sessions per `ordia.yaml`)
+- Control roots: `docs/control/`, `docs/ordia/`, `.cursor/`, `AGENTS.md`, `ordia.yaml`
+- Monorepo layout: `apps/api/` (FastAPI), `apps/desktop/` (Electron + Vite), `packaging/`, `scripts/`
 
 ## Commands and validation
 
-- Closure gate: `ordia validate --project` (see `ordia.yaml` → `closure.validator`)
-- Prefer `ordia task summary` before resuming in-flight work
-- Use `ordia task transition` for registry/state updates after material status changes
+- Closure gate: `npm run ordia:validate` → `ordia validate --project`
+- Health check: `npm run ordia:doctor`
+- Emit prompts: `npm run ordia:prompt -- emit --intent <ID> --task <TASK-ID>`
+- Recovery bootstrap: `npm run ordia:prompt-recover`
+- Task state: `npm run ordia:task-summary` / `npm run ordia:task-transition -- --task <ID> --status <STATUS>`
+- Catalog: `docs/control/commands.catalog.json` + `docs/control/COMMANDS.md`
 
-## Profile notes
+## Active tracks (project priority — not enforced by ordia-core)
 
-- (Add team conventions, forbidden paths, release gates, and model-tier policy here.)
+| Track | Status | Planning doc |
+|-------|--------|--------------|
+| `SOURCE-CATALOG-DUAL-PATH` | Active top data priority | `docs/product/planning/SOURCE_CATALOG_DUAL_PATH_PLAN.md` |
+| `APP-PLATFORM-UX-3.0` | Phase 2B/2C sequence pending UX30-D7 | `docs/product/planning/APP_PLATFORM_UX_3.0_ROADMAP.md` |
+| `IMPORT-FDL-FULL-QUALITY` | **PAUSED / DEFERRED** | `docs/product/planning/IMPORT_FDL_FULL_QUALITY_PLAN.md` |
+
+## Session defaults
+
+```text
+Runtime: ONLY_CURSOR
+Protocol: ORCHESTRATION
+Ordia profile: narofitness
+```
+
+Declare headers before change-capable work. Recovery reads `docs/control/NAVIGATION.md` and `ORCHESTRATION_STATE.md` §0.

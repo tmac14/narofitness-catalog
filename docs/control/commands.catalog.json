@@ -2,7 +2,8 @@
   "meta": {
     "version": 1,
     "profile": "narofitness",
-    "generatedBy": "ordia init --sync-commands"
+    "generatedBy": "ordia init --sync-commands",
+    "locale": "es"
   },
   "sections": [
     {
@@ -58,6 +59,20 @@
           "command": "npm run audit:variants",
           "layer": "L3",
           "domain": "audit"
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Control plane adapters",
+      "layer": "L1",
+      "commands": [
+        {
+          "name": "control:validate",
+          "description": "Closure alias — ordia validate --project",
+          "command": "npm run control:validate",
+          "layer": "L1",
+          "domain": "ordia"
         }
       ]
     },
@@ -286,6 +301,80 @@
       ]
     },
     {
+      "id": "ordia",
+      "title": "Ordia control plane",
+      "layer": "L1",
+      "commands": [
+        {
+          "name": "ordia:doctor",
+          "description": "Check Ordia setup, hooks, and dependencies",
+          "command": "npm run ordia:doctor",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:model-recommend",
+          "description": "Recommend model tier for task",
+          "command": "npm run ordia:model-recommend",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:prompt",
+          "description": "Emit standardized prompt blocks",
+          "command": "npm run ordia:prompt",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:prompt-recover",
+          "description": "Emit recovery bootstrap prompt block",
+          "command": "npm run ordia:prompt-recover",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:task-lock",
+          "description": "Manage parallel-safety locks",
+          "command": "npm run ordia:task-lock",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:task-summary",
+          "description": "Summarize in-flight tasks, active state, and locks",
+          "command": "npm run ordia:task-summary",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:task-transition",
+          "description": "Update task status, queues, and ORCHESTRATION_STATE",
+          "command": "npm run ordia:task-transition",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:validate",
+          "description": "Validate manifest and control-plane registries",
+          "command": "npm run ordia:validate",
+          "layer": "L1",
+          "domain": "ordia"
+        },
+        {
+          "name": "ordia:workflow-list",
+          "description": "List workflow intents (core + profile overlay)",
+          "command": "npm run ordia:workflow-list",
+          "layer": "L1",
+          "domain": "ordia"
+        }
+      ],
+      "notes": [
+        "Primary validation: ordia validate --project",
+        "Closure gate: npm run ordia:validate (ordia.yaml)"
+      ]
+    },
+    {
       "id": "pack",
       "title": "Packaging",
       "layer": "L3",
@@ -468,7 +557,48 @@
       ]
     }
   ],
-  "quickFlows": [],
+  "quickFlows": [
+    {
+      "goal": "Primera instalación",
+      "command": "setup"
+    },
+    {
+      "goal": "Desarrollo diario (Electron)",
+      "command": "dev"
+    },
+    {
+      "goal": "Desarrollo en navegador",
+      "command": "dev:web"
+    },
+    {
+      "goal": "Reset BD + PDF + app",
+      "command": "dev:fresh"
+    },
+    {
+      "goal": "Demo remota (tunnel)",
+      "command": "docker:up → tunnel:start",
+      "commands": [
+        "docker:up",
+        "tunnel:start"
+      ]
+    },
+    {
+      "goal": "Tests API unitarios",
+      "command": "test:api"
+    },
+    {
+      "goal": "Instalador Windows",
+      "command": "pack:release"
+    },
+    {
+      "goal": "Validar plano de control Ordia",
+      "command": "ordia:validate"
+    },
+    {
+      "goal": "Recuperar sesion Ordia",
+      "command": "ordia:prompt-recover"
+    }
+  ],
   "workflowIntents": [
     {
       "goal": "Recover session after context loss",
@@ -595,5 +725,52 @@
       "intent": "close_task",
       "emitCommand": "ordia prompt emit --intent close_task"
     }
+  ],
+  "localUrls": {
+    "api": "http://127.0.0.1:8000/docs",
+    "ui": "http://127.0.0.1:5173",
+    "postgresHostPort": 5433
+  },
+  "desktopCommands": [
+    {
+      "name": "dev:app",
+      "prefix": "apps/desktop",
+      "description": "Vite + Electron (wait-on solo :5173; API verificada antes por script raíz)."
+    },
+    {
+      "name": "dev:web",
+      "prefix": "apps/desktop",
+      "description": "Solo Vite."
+    },
+    {
+      "name": "ui",
+      "prefix": "apps/desktop",
+      "description": "Alias de Vite (usado por tunnel:start)."
+    },
+    {
+      "name": "build",
+      "prefix": "apps/desktop",
+      "description": "Build producción Vite → dist/."
+    },
+    {
+      "name": "test",
+      "prefix": "apps/desktop",
+      "description": "Vitest unitarios frontend."
+    },
+    {
+      "name": "electron",
+      "prefix": "apps/desktop",
+      "description": "Electron modo producción (UI buildeada)."
+    },
+    {
+      "name": "format",
+      "prefix": "apps/desktop",
+      "description": "Aplicar formato Prettier a archivos desktop."
+    }
+  ],
+  "catalogRules": [
+    "No inventar comandos. Proponer al usuario y actualizar COMMANDS.md + docs/control/commands.catalog.json.",
+    "Validacion / QA / auditoria: citar comandos exactos de COMMANDS.md en prompts y stop conditions.",
+    "Al anadir un script npm: ordia init --sync-commands --skip-existing y npm run help:validate."
   ]
 }

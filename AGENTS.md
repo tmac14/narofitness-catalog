@@ -6,7 +6,15 @@ Ordia bootstrap — read the project profile under the control store before chan
 - **Navigation map:** **`{controlRoot}/NAVIGATION.md`** — linked control-plane index
 - Project profile: **`{controlRoot}/PROFILE.md`** (domain agents, guardrails, tracks)
 - Control store: `docs/control/`
-- Validate: `ordia validate --project` (optional npm wrapper: `npm run ordia:validate`)
+- Validate: `npm run ordia:validate` (`ordia validate --project`)
+
+## Active tracks (project priority)
+
+| Track | Status |
+|-------|--------|
+| `SOURCE-CATALOG-DUAL-PATH` | Active data priority |
+| `APP-PLATFORM-UX-3.0` | Phase 2B validated; UX30-D7 pending |
+| `IMPORT-FDL-FULL-QUALITY` | **PAUSED / DEFERRED** |
 
 Declare before change-capable work:
 

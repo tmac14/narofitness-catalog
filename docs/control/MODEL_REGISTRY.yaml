@@ -1,6 +1,6 @@
 # Greenfield profile — Ordia model tier overlay (ORDIA-D022)
 schema_version: 1
-profile: default
+profile: narofitness
 updated_at: "2026-06-14"
 
 default_tier: T1

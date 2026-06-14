@@ -1,8 +1,0 @@
-# Profile workflow overlay — extends core intents from ordia-core wheel
-schema_version: 1
-profile: "narofitness"
-intents: []
-# Example:
-# intents:
-#   - id: recover
-#     body_hint: "Profile-specific recovery notes for narofitness."

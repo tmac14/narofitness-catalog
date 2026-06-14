@@ -1,40 +1,45 @@
-# Ordia fresh install test (post-cleanup)
+# Ordia fresh install test (post-adoption)
 
-Manual script to verify `ordia-core` 0.9.1 can re-bootstrap control plane on a clean Narofitness tree.
+Manual script to verify `ordia-core` **0.18.0** can re-bootstrap or refresh the control plane on Narofitness.
 
-**Do not run on main without a dedicated branch.**
+**Run on a dedicated branch** unless intentionally refreshing `main`.
 
 ## Preconditions
 
-- Narofitness repo passes `python scripts/audit_no_ordia.py --check`
-- Restore bundle available at `temp/ordia-restore-*/` (local, gitignored)
+- `pip install ordia-core==0.18.0`
+- Narofitness has `ordia.yaml` and `docs/control/` (brownfield adopt path) **or** a clean tree for greenfield `ordia init`
 
-## Steps
+## Steps (brownfield refresh)
 
 1. Create branch: `git checkout -b test/ordia-fresh-install`
-2. Install wheel: `pip install ordia-core==0.9.1`
-3. Init scaffold:
+2. Refresh scaffold:
    ```powershell
-   ordia init --template monorepo --profile narofitness --with-cursor --directory .
+   ordia init --template monorepo --profile narofitness --with-cursor --with-docs --skip-existing --directory .
+   ordia init --sync-commands --skip-existing --directory .
+   ordia cursor sync --directory .
    ```
-4. Verify generated layout:
-   - `docs/control/protocols/` contains **7** protocol files (includes `RUNTIME_HANDOFF.md`)
-   - `docs/control/tasks/TASK_PACKET_TEMPLATE.md` exists
-   - `.cursor/hooks.json` + five `ordia-*.mdc` rules (no domain guardrails unless added manually)
-5. Compare diff against `temp/ordia-restore-*/RESTORE_README.md` inventory
-6. Optional: merge profile registries and waiting task packets from restore bundle
-7. Run `ordia validate --project` and `npm run help:validate` after merging profile content
-8. Discard branch or commit only if adopting Ordia again
+3. Verify layout:
+   - `docs/control/protocols/` — **7** protocol files (includes `RUNTIME_HANDOFF.md`)
+   - `.cursor/hooks.json` + **8** rules (7 `ordia-*` + `profile-narofitness-guardrails` + `narofitness-permanent-guardrails`)
+   - `docs/control/workflows/intents.narofitness.yaml` — domain intents present
+4. Gates:
+   ```powershell
+   ordia validate --project
+   ordia doctor
+   npm run help:validate
+   npm run ordia:validate
+   ```
+5. Discard branch or merge only if adopting a newer ordia-core release
 
-## Expected vs restore
+## Expected on main (2026-06-14)
 
-| Artifact | Fresh init | Restore bundle |
-|----------|------------|----------------|
-| `ordia.yaml` | Generated stub | `root/ordia.yaml` snapshot |
-| Registries | Empty templates | Populated YAML from `control-plane/` |
-| Task packets | Template only | Full `in-flight/waiting-task-packets/` |
-| Domain guardrails | Manual | `cursor/rules/narofitness-permanent-guardrails.mdc` |
+| Artifact | State |
+|----------|-------|
+| `ordia.yaml` | Profile `narofitness`, closure `npm run ordia:validate` |
+| Registries | Empty queues; Narofitness-scoped AGENT_REGISTRY |
+| Domain guardrails | `narofitness-permanent-guardrails.mdc` + `profile-narofitness-guardrails.mdc` |
+| Catalog | `docs/control/commands.catalog.json` (canonical) |
 
 ## Rollback
 
-`git checkout main` and delete untracked init artifacts if test fails.
+`git checkout main` and discard test-branch changes if validation fails.

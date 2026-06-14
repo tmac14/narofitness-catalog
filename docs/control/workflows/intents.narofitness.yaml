@@ -1,0 +1,48 @@
+# Narofitness domain workflow intents — merges with ordia-core portable intents
+schema_version: 1
+profile: "narofitness"
+updated_at: "2026-06-14"
+
+intents:
+  - id: import_regression
+    category: quality
+    title: Run IMPORT-FDL regression pages 11–14
+    runtimes: [ONLY_CURSOR, ONLY_CODEX, CODEX_PLUS_CURSOR]
+    protocol: IMPLEMENTATION
+    mode: Agent
+    template: quality.md
+    requires_task: true
+    related_commands: ["audit:page-import", "test:api", "ordia:validate"]
+    end_state: VALIDATION_PENDING
+    body_hint: >
+      Execute mandatory regression pages 11, 12, 13, 14. Compare metrics against
+      baseline; attach evidence under temp/qa/. Track IMPORT-FDL-FULL-QUALITY is
+      paused unless the user explicitly reprioritized import work.
+
+  - id: import_page_audit
+    category: quality
+    title: IMPORT-FDL MVP page audit (single page)
+    runtimes: [ONLY_CURSOR, ONLY_CODEX, CODEX_PLUS_CURSOR]
+    protocol: IMPLEMENTATION
+    mode: Agent
+    template: quality.md
+    requires_task: true
+    related_commands: ["audit:page-import", "ordia:validate"]
+    end_state: VALIDATION_PENDING
+    body_hint: >
+      Follow docs/product/planning/IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md for the
+      target page. Produce page-level audit evidence; no productive SKU/page hardcodes.
+
+  - id: topology_review
+    category: control
+    title: Review agent topology and parallel-safety for next batch
+    runtimes: [ONLY_CURSOR, ONLY_CODEX, CODEX_PLUS_CURSOR]
+    protocol: ORCHESTRATION
+    mode: null
+    template: control.md
+    requires_task: false
+    related_commands: ["ordia:task-summary", "ordia:workflow-list", "ordia validate --project"]
+    end_state: NEXT_PROMPT_READY
+    body_hint: >
+      Read AGENT_REGISTRY.yaml and TASK_REGISTRY.yaml. Confirm scopes, locks, and
+      ready_for_parallel queue before emitting implementation prompts.

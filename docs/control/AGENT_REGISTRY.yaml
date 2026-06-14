@@ -1,7 +1,7 @@
 schema_version: 1
 updated_at: "2026-06-14"
 authority:
-  purpose: "Agent capability and topology registry — six generic parallel roles."
+  purpose: "Narofitness agent capability and topology — API, desktop, data, infra, QA, docs."
 
 operational_identity_count: 6
 
@@ -29,27 +29,27 @@ control_plane_runtimes:
 
 agents:
   - id: agent-backend
-    role: "API and service implementation"
-    scopes: ["apps/api/", "src/api/", "packages/api/"]
+    role: "FastAPI API and domain services"
+    scopes: ["apps/api/"]
     max_in_flight: 1
     runtime: ONLY_CURSOR
     protocol: IMPLEMENTATION
   - id: agent-frontend
-    role: "UI components and client code"
-    scopes: ["apps/web/", "src/ui/", "packages/ui/"]
+    role: "Electron + Vite desktop UI"
+    scopes: ["apps/desktop/"]
     max_in_flight: 1
     runtime: ONLY_CURSOR
     protocol: IMPLEMENTATION
   - id: agent-data
-    role: "Database migrations and data layer"
-    scopes: ["db/", "migrations/", "packages/data/"]
+    role: "Alembic migrations, seeds, import data layer"
+    scopes: ["apps/api/alembic/", "apps/api/scripts/", "apps/api/app/db/"]
     max_in_flight: 1
     excludes: infra-data
     runtime: ONLY_CURSOR
     protocol: IMPLEMENTATION
   - id: agent-infra
-    role: "Docker, CI, tunnels, and infrastructure"
-    scopes: ["docker/", ".github/", "infra/"]
+    role: "Docker, CI, packaging, tunnels, dev automation"
+    scopes: ["docker-compose.yml", "docker-compose.dev.yml", ".github/", "packaging/", "scripts/"]
     max_in_flight: 1
     excludes: infra-data
     runtime: ONLY_CURSOR

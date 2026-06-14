@@ -33,4 +33,23 @@ tasks:
   - docs/control/tasks/TASK_PACKET_TEMPLATE.md
 
 workflows:
-  - docs/control/workflows/intents.overlay.yaml
+  - docs/control/workflows/intents.narofitness.yaml
+
+cursor_rules:
+  - .cursor/rules/narofitness-permanent-guardrails.mdc
+  - .cursor/rules/profile-narofitness-guardrails.mdc
+
+ordia_product:
+  - docs/ordia/README.md
+  - docs/ordia/DAILY_USAGE.md
+  - docs/ordia/TASK_WALKTHROUGH.md
+  - docs/ordia/SPEC_v0.2.md
+  - docs/ordia/SPEC_v0.6.md
+  - docs/ordia/SPEC_v0.7.md
+  - docs/ordia/SPEC_v0.8.md
+
+ordia_package:
+  - docs/ordia/package/README.md
+  - docs/ordia/package/COMMANDS.md
+  - docs/ordia/package/CLI.md
+  - docs/ordia/package/MANIFEST.md

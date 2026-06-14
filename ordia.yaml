@@ -16,7 +16,7 @@ commands:
   catalog: commands.catalog.json
   profileDoc: COMMANDS.md
   npmPackage: package.json
-  validateOnControlCheck: false
+  validateOnControlCheck: true
 
 session:
   runtimes:
@@ -46,7 +46,7 @@ enforcement:
   unifiedRequiresApproval: true
 
 closure:
-  validator: ordia validate --project
+  validator: npm run ordia:validate
   # strict: true   # uncomment to promote closure warnings to errors
 
 # tasks:
@@ -58,9 +58,10 @@ profileExtensions:
   inventoryDoc: DOCUMENTATION_INVENTORY.md
   cursorRules:
     - .cursor/rules/profile-narofitness-guardrails.mdc
+    - .cursor/rules/narofitness-permanent-guardrails.mdc
 
 workflows:
-  overlay: docs/control/workflows/intents.overlay.yaml
+  overlay: docs/control/workflows/intents.narofitness.yaml
 
 models:
   registry: docs/control/MODEL_REGISTRY.yaml

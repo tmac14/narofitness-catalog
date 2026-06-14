@@ -14,9 +14,9 @@ Live coordination state. Update after material task-state transitions.
 - handoff_at: `NONE`
 - handoff_reason: `NONE`
 - Active task ID: `NONE`
-- Active objective: none
-- Waiting for: user to select Runtime and Protocol for first task
-- Next safe action: define first task in TASK_REGISTRY.yaml and task packet
+- Active objective: Ordia 0.18.0 control plane operational — ready for first Narofitness task
+- Waiting for: user to select runtime, protocol, and first task slice
+- Next safe action: define task in TASK_REGISTRY.yaml + task packet, or resume an active track from PROFILE.md
 
 ## 1. In-flight summary
 

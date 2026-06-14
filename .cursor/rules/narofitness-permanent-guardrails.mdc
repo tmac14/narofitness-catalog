@@ -1,0 +1,49 @@
+---
+description: Narofitness domain guardrails — product, import, agent ownership, paused work
+alwaysApply: true
+---
+
+# Narofitness permanent guardrails
+
+Canonical engineering rules: `docs/ENGINEERING_STANDARDS.md`. This rule enforces **domain constraints** for orchestration and implementation sessions.
+
+## Product and data
+
+- No legacy compatibility or fallback paths unless explicitly approved in a task packet.
+- No productive hardcodes by SKU, page, or one-off catalog row.
+- Code, tests, logs, and commit messages use English; user-visible UI copy uses Spanish.
+- API routes under `/api/v1`; JSON fields use `snake_case`.
+- Schema and migration changes require explicit approval.
+
+## IMPORT-FDL
+
+- Track `IMPORT-FDL-FULL-QUALITY` is **PAUSED / DEFERRED** unless the user explicitly reprioritizes it.
+- When import work resumes: mandatory regression pages **11, 12, 13, 14** and the **65-page** full-catalog gate.
+- Preserve full-catalog metric parity on importer changes.
+- Separate focus pages, regression pages, and full gate in tests and evidence.
+
+## Agent ownership
+
+- Respect `docs/control/AGENT_REGISTRY.yaml` scopes:
+  - `agent-backend` → `apps/api/`
+  - `agent-frontend` → `apps/desktop/`
+  - `agent-data` → `apps/api/` migrations and data layer
+  - `agent-infra` → `docker/`, `.github/`, `packaging/`, `scripts/`
+- `agent-data` and `agent-infra` are mutually exclusive (`infra-data` group).
+- Default implementation sessions: `ONLY_CURSOR` + `IMPLEMENTATION` unless the task packet specifies otherwise.
+
+## Paused / deferred work
+
+- Do not reactivate paused tracks (`IMPORT-FDL-FULL-QUALITY`, frozen UX QA, deferred backlog items) without explicit user instruction.
+- Live priorities: `docs/control/PROFILE.md` and `docs/product/planning/`.
+
+## Frontend (when in scope)
+
+- Mobile and tablet are first-class; preserve responsive layout, a11y, and empty/loading/error states.
+- Shared UI primitives require a per-file lock before edit.
+- Do not compress dense desktop tables into unusable mobile layouts.
+
+## Validation
+
+- Closure gate: `ordia validate --project` (`npm run ordia:validate`).
+- Never mark work `VALIDATED` while mandatory evidence is pending.
