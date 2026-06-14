@@ -161,6 +161,34 @@ Protocol: IMPLEMENTATION
 → Control plane evaluates ACCEPT, updates registry, NEXT_PROMPT_READY or CLOSED
 ```
 
+### 5.1 Unified session mode (optional — `Session: UNIFIED`)
+
+When the user explicitly selects unified mode (`RUNTIME-D005`), **one chat** may
+combine control-plane and executor responsibilities:
+
+| Phase | Allowed | Blocked |
+|---|---|---|
+| Plan / orchestrate | Read state, synthesize, update limited control docs after material transitions, present implementation plan for approval | Product code edits |
+| After user `APPROVE IMPLEMENTATION` | Assigned agent implements under `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` | New orchestration batches without user request |
+| Report | Return executor report; user evaluates in same chat | Mark QA-pending work closed without evidence |
+
+Header example:
+
+```text
+Runtime: ONLY_CURSOR
+Protocol: IMPLEMENTATION
+Session: UNIFIED
+You are Agent 1B — Global UX/UI
+Task ID: APP-PLATFORM-UX-3.0-PHASE-2D
+```
+
+**Hard gate:** never start product-code edits in unified mode until the user
+explicitly approves the presented implementation plan or slice.
+
+**Closure (`RUNTIME-D006`):** after QA `ACCEPT`, execute the closure checklist in
+`TASK_EXECUTION_PROTOCOL.md` §9 — evidence index, task packet, registry/state,
+lock release, `npm run control:validate` — before marking `VALIDATED`.
+
 ## 6. Per-Agent Sequencing
 
 Never send two dependent actions to the same agent in one response.
@@ -236,7 +264,10 @@ Every executor prompt must include:
 ```
 Runtime: ONLY_CURSOR
 Protocol: IMPLEMENTATION
+Model tier: T2 (approved)
 ```
+
+Run `ordia model recommend --task <ID>` and include the **Model recommendation** block before `READY_FOR_IMPLEMENTATION`. User approves with `APPROVE MODEL T*`. Record `model_tier` / `model_approval` in the task packet. Never assume Auto or a specific model without approval **except Cursor rate-limit Auto Mode** (see `docs/ordia/MODEL_ROUTING_SPIKE.md` §8).
 
 ## 9. Required IMPORT-FDL Page Model
 
@@ -295,6 +326,7 @@ Minimum required implementation output:
 7. No-legacy/no-hardcode confirmation.
 8. Risks and follow-ups.
 9. Exact reason and pending canonical command for anything not executed.
+10. **Model usage** — model slug, token counts (prompt/completion/total), economic rating (`light/leve`, `medium/mediana`, `heavy/pesada`); template: `ordia model usage-template`.
 
 ## 11. Plan Mode Prompt Structure
 
@@ -411,7 +443,28 @@ See `RUNTIME_HANDOFF_PROTOCOL.md` when switching control-plane runtime mid-proje
 
 Codex orchestration counterpart: `CODEX_ORCHESTRATION_PROTOCOL.md`.
 
-## 20. Canonical Operational Commands
+## 20. Workflow intents (ORDIA-D023)
+
+Standardized control-plane and executor prompts via `ordia prompt emit --intent <ID> --task <TASK-ID>`.
+List: `npm run ordia:workflow:list` · describe: `ordia workflow describe <ID>`.
+
+| Intent | Protocol / mode | Maps to |
+|--------|-----------------|---------|
+| `recover` | ORCHESTRATION | Recovery bootstrap (§0) |
+| `handoff` | ORCHESTRATION | `RUNTIME_HANDOFF_PROTOCOL.md` |
+| `orchestrate_batch` | ORCHESTRATION | §9–13 executor prompt generation |
+| `evaluate_plan` / `evaluate_report` | ORCHESTRATION | §11–12 verdicts |
+| `task_create` / `task_resume` | ORCHESTRATION | Registry + task packet lifecycle |
+| `discover` / `plan` | ORCHESTRATION or Plan | §10 planning gates |
+| `approve_implementation` / `approve_model` / `confirm_locks` | user → session | Gates before IMPLEMENTATION |
+| `implement*` / `fix_bug` / `refactor` / `continue_wip` | IMPLEMENTATION Agent | Executor prompts |
+| `validate` / `qa` / `audit` / `close_task` | mixed | Validation + closure §9 |
+
+Profile overlay (Narofitness): `import_regression`, `import_page_audit`, `topology_review` — see `docs/coordination/workflows/intents.narofitness.yaml`.
+
+Optional header line: `Ordia intent: <ID>` (warn-only validation in hooks when unknown).
+
+## 21. Canonical Operational Commands
 
 `COMMANDS.md` is the canonical command reference. See
 `CODEX_ORCHESTRATION_PROTOCOL.md` §19 for the quick map.

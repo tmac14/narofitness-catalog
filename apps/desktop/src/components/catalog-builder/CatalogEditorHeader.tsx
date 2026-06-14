@@ -11,6 +11,8 @@ type Props = {
   showPreview: boolean;
   exportingPdf: boolean;
   exportWarnings?: number;
+  /** When true, Preview/Export are registered in the top bar — hide duplicates from tablet up. */
+  hideInlineRouteActions?: boolean;
   onTogglePreview: () => void;
   onExportPdf: () => void;
 };
@@ -21,6 +23,7 @@ export function CatalogEditorHeader({
   showPreview,
   exportingPdf,
   exportWarnings = 0,
+  hideInlineRouteActions = false,
   onTogglePreview,
   onExportPdf,
 }: Props) {
@@ -68,14 +71,22 @@ export function CatalogEditorHeader({
                   {exportWarnings} avisos exportación
                 </Badge>
               )}
-              <Button type="button" variant="secondary" onClick={onTogglePreview}>
-                <Eye className="h-4 w-4" />
-                Vista previa
-              </Button>
-              <Button type="button" disabled={exportingPdf} onClick={onExportPdf}>
-                <FileDown className="h-4 w-4" />
-                {exportingPdf ? CATALOG_PDF_EXPORT_PREPARING_LABEL : "Exportar PDF"}
-              </Button>
+              <div
+                className={cn(
+                  "flex flex-wrap items-center gap-2",
+                  hideInlineRouteActions && "sm:hidden",
+                )}
+                data-testid="catalog-editor-header-route-actions"
+              >
+                <Button type="button" variant="secondary" onClick={onTogglePreview}>
+                  <Eye className="h-4 w-4" />
+                  Vista previa
+                </Button>
+                <Button type="button" disabled={exportingPdf} onClick={onExportPdf}>
+                  <FileDown className="h-4 w-4" />
+                  {exportingPdf ? CATALOG_PDF_EXPORT_PREPARING_LABEL : "Exportar PDF"}
+                </Button>
+              </div>
             </>
           )}
         </div>

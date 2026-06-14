@@ -1,0 +1,82 @@
+# Narofitness profile — Ordia model tier overlay (ORDIA-D022)
+# Maps portable tiers T0–T3 to runtime-specific model slugs.
+# Update when Cursor/Codex rename models; core tier logic stays in ordia-core.
+
+schema_version: 1
+profile: narofitness
+updated_at: "2026-06-14"
+
+default_tier: T1
+require_approval_above: T1
+
+cost_bands:
+  T0: minimal
+  T1: low
+  T2: medium
+  T3: high
+
+# Deliverable economic rating (English + Spanish labels for executor reports)
+economic_ratings:
+  T0: { en: light, es: leve }
+  T1: { en: light, es: leve }
+  T2: { en: medium, es: mediana }
+  T3: { en: heavy, es: pesada }
+
+economic_rating_by_band:
+  minimal: { en: light, es: leve }
+  low: { en: light, es: leve }
+  medium: { en: medium, es: mediana }
+  high: { en: heavy, es: pesada }
+
+track_minimums:
+  IMPORT-FDL-FULL-QUALITY: T2
+  APP-PLATFORM-UX-3.0: T2
+  PROJECT-CONTROL: T1
+
+cursor:
+  T0:
+    primary: auto
+    note: Read-only orchestration and recovery
+  T1:
+    primary: auto
+    fallback: composer-2.5-fast
+    note: Routine implementation; Cursor Auto preferred for economy
+  T2:
+    primary: composer-2.5
+    fallback: auto
+    note: Multi-file features and responsive QA
+  T3:
+    primary: claude-sonnet-4-6
+    fallback: composer-2.5
+    note: Import regressions, architecture, closure-critical work only
+
+codex:
+  T0:
+    primary: gpt-5-mini
+    note: Read-only and light orchestration
+  T1:
+    primary: gpt-5-mini
+    note: Small scoped implementation
+  T2:
+    primary: gpt-5-codex
+    note: Multi-file implementation
+  T3:
+    primary: gpt-5.3-codex
+    note: High-stakes import and validation
+
+# Map model slug substrings to tier for mismatch detection (first match wins, highest tier)
+model_slug_tiers:
+  - pattern: "*opus*"
+    tier: T3
+  - pattern: "*5.3*"
+    tier: T3
+  - pattern: "*sonnet*"
+    tier: T2
+  - pattern: "*codex*"
+    tier: T2
+  - pattern: "*composer*"
+    tier: T2
+  - pattern: "*mini*"
+    tier: T1
+  - pattern: "auto"
+    tier: T1

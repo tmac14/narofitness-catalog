@@ -219,6 +219,11 @@ before/after metrics whenever the environment permits.
 
 ## 9. Implementation Prompt Structure
 
+Before `READY_FOR_IMPLEMENTATION`, include **Model recommendation** from
+`ordia model recommend --task <ID>`. User approves with `APPROVE MODEL T*`.
+Remind Codex executors to select the recommended model in the UI. Record
+`model_tier` / `model_approval` in the task packet (`ORDIA-D022`).
+
 Every implementation prompt includes:
 
 1. Agent and specific role.
@@ -253,7 +258,8 @@ Minimum required implementation output:
 6. Scope confirmation.
 7. No-legacy/no-hardcode confirmation.
 8. Risks and follow-ups.
-9. Exact reason and pending canonical command for anything not executed.
+9. **Model usage** (mandatory in every deliverable; tier approval required before change-capable work above T0; ORDIA-D022).
+10. Exact reason and pending canonical command for anything not executed.
 
 ## 10. Plan Mode Prompt Structure
 
@@ -674,7 +680,30 @@ Quick map:
 When a report says a required command could not run, respond with the exact
 pending command and its documented preconditions, never a generic description.
 
-## 20. Runtime and Protocol Change
+## 20. Workflow intents (ORDIA-D023)
+
+Standardized control-plane and executor prompts via `ordia prompt emit --intent <ID> --task <TASK-ID>`.
+List: `npm run ordia:workflow:list` · describe: `ordia workflow describe <ID>`.
+
+Paste the **full emitted block** into Codex chats — Codex has no hook surface; the prompt contract is the enforcement layer (`ORDIA-D012`).
+
+| Intent | Protocol / mode | Maps to |
+|--------|-----------------|---------|
+| `recover` | ORCHESTRATION | Recovery bootstrap (§0) |
+| `handoff` | ORCHESTRATION | `RUNTIME_HANDOFF_PROTOCOL.md` |
+| `orchestrate_batch` | ORCHESTRATION | §10 executor prompt generation |
+| `evaluate_plan` / `evaluate_report` | ORCHESTRATION | Plan/report verdicts |
+| `task_create` / `task_resume` | ORCHESTRATION | Registry + task packet lifecycle |
+| `discover` / `plan` | ORCHESTRATION or Plan | Planning gates |
+| `approve_implementation` / `approve_model` / `confirm_locks` | user → session | Gates before IMPLEMENTATION |
+| `implement*` / `fix_bug` / `refactor` / `continue_wip` | IMPLEMENTATION Agent | Direct Codex or Cursor executor prompts |
+| `validate` / `qa` / `audit` / `close_task` | mixed | Validation + closure |
+
+Profile overlay (Narofitness): `import_regression`, `import_page_audit`, `topology_review` — see `docs/coordination/workflows/intents.narofitness.yaml`.
+
+Optional header line: `Ordia intent: <ID>` (Cursor hooks warn when unknown; Codex relies on pasted block).
+
+## 21. Runtime and Protocol Change
 
 To delegate implementation to Cursor executors under `CODEX_PLUS_CURSOR`, continue
 using this protocol and generate executor prompts per §10.

@@ -5,10 +5,11 @@ Update this file when the user asks for a coordination refresh and after
 material task-state transitions under the limited permission in `AGENTS.md`.
 Do not mark QA-pending work as closed.
 
-**Last updated:** 2026-06-13
+**Last updated:** 2026-06-14
 **Primary control plane:** none selected (awaiting next task)
-**Program completed:** PROTOCOL-HARDENING PR-19–PR-24 — `IMPLEMENTED_AND_VALIDATED`
-**Previous program:** RUNTIME-SYMMETRY PR-11–PR-18 — `IMPLEMENTED_AND_VALIDATED`
+**Program completed:** ORDIA-D022 Model Tier Routing v0.7 — `VALIDATED` (2026-06-14)
+**Previous program:** PROTOCOL-HARDENING PR-19–PR-25 — `IMPLEMENTED_AND_VALIDATED` (PR-25: UNIFIED hook enforcement)
+**Previous program (older):** RUNTIME-SYMMETRY PR-11–PR-18 — `IMPLEMENTED_AND_VALIDATED`
 **Source docs:** `AGENTS.md`, `docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md`, `docs/coordination/TASK_EXECUTION_PROTOCOL.md`, `docs/coordination/TASK_REGISTRY.yaml`, `docs/coordination/AGENT_REGISTRY.yaml`, `docs/coordination/DECISION_LOG.md`, `docs/coordination/EVIDENCE_INDEX.md`, selected execution protocol, `COMMANDS.md`
 
 ## 0. Active Execution Control
@@ -18,30 +19,21 @@ context loss. It records execution control, not a silent change to project
 priorities or workstream status.
 
 - Recovery status: `RECOVERY_READY`
-- control_plane_runtime: `NONE_SELECTED_FOR_NEXT_TASK`
-- active_protocol: `NONE_SELECTED_FOR_NEXT_TASK`
+- control_plane_runtime: `ONLY_CURSOR`
+- active_protocol: `ORCHESTRATION`
+- session_mode: `UNIFIED` (RUNTIME-D005; closure completed per RUNTIME-D006)
 - handoff_from: `NONE`
 - handoff_at: `NONE`
 - handoff_reason: `NONE`
-- Active protocol: `NONE_SELECTED_FOR_NEXT_TASK`
+- Active protocol: `ORCHESTRATION`
 - Active task ID: `NONE`
-- Active task status: `READY_FOR_NEXT_SELECTION`
-- Active objective: wait for the next explicitly selected task and protocol
-- Allowed scope: limited control updates only until the next task is selected
-- Blocked scope: all change-capable work outside the limited control update
-  permission until the user selects the next task and protocol
-- Active locks: none
-- Work in flight by active control plane: none
-- Waiting for: explicit next task selection and protocol
-- Pending evidence: none
-- Last completed task:
-  `PUBLIC-ASSETS-ROOT-AND-LOGO-PROMOTION` — `VALIDATED`
-- Last validated evidence: `EVID-PUBLIC-001` — root `public/` layout, promoted
-  logos, Vite `publicDir`, `appAssets` registry; full desktop tests/build/control
-  validation passed
-- Next safe action: select the next explicit task with `Runtime` + `Protocol`
-  per `AGENTS.md`; open choices include `UX30-D7` or the next
-  `IMPORT-FDL-FULL-QUALITY` task
+- Active task status: `APP-PLATFORM-UX-3.0-PHASE-2D` — **VALIDATED** (2026-06-14)
+- Active objective: none — Phase 2 list track complete
+- Blocked scope: Phase 3 UX30 until user/orchestration gate
+- Waiting for: user decision on next UX30 Phase 3 slice (or other active track)
+- Last completed task: `APP-PLATFORM-UX-3.0-PHASE-2D` — **VALIDATED**
+- Last completed program: `ORDIA-D022` Model Tier Routing v0.7 — **VALIDATED** (2026-06-14)
+- Next safe action: select next UX30 Phase 3 slice or `IMPORT-FDL-FULL-QUALITY-NEXT`
 
 ### Limited Control-Update Permission
 
@@ -57,13 +49,22 @@ workstreams, inferred decisions, or QA closure.
 - Task/lock/dependency authority: `docs/coordination/TASK_REGISTRY.yaml`
 - Agent capability/topology authority:
   `docs/coordination/AGENT_REGISTRY.yaml`
-- Active task packet: none
+- Active task packet: `docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2D.md`
 - Planning and parallel-safety gate:
   `docs/coordination/TASK_EXECUTION_PROTOCOL.md`
-- Active locks: none
-- Parallel execution: deny by default until registry checks pass
+- Active locks: none (Phase 2D locks released 2026-06-14)
+- Parallel execution: no active UI locks; IMPORT-FDL track independent
 - Canonical control check: `npm run control:validate`
-- Known pending decisions: `UX30-D7`
+- Known pending decisions: UX30 Phase 3 slice selection (user/orchestration gate)
+
+### Ordia — Model Tier Routing (ORDIA-D022)
+
+- **Status:** `VALIDATED` — program closed 2026-06-14
+- **Decision:** `ORDIA-D022` — tiers T0–T3, recommend + approve, warn-only enforcement
+- **Closeout packet:** `docs/coordination/tasks/ORDIA-D022-MODEL-ROUTING-V07-CLOSEOUT.md`
+- **Evidence:** `EVID-ORDIA-D022-001`
+- **Spike / policy:** `docs/ordia/MODEL_ROUTING_SPIKE.md`
+- **Deferred (v0.8+):** hard deny, auto-switch, billing API reconciliation
 
 ## 1. Active Priority
 
@@ -81,8 +82,10 @@ Two tracks are active in parallel:
 
 - `APP-PLATFORM-UX-3.0 - Touch-first responsive redesign`
 - UI priority: absolute priority for frontend UX/UI work.
-- Current phase: `Phase 2 next slice` — `NEEDS_DECISION` (UX30-D7: 2B vs 2C).
-- Phase 2A: `IMPLEMENTED / VALIDATED` — all P2A locks `RELEASED`.
+- Current phase: **Phase 2 complete** (2A–2D **VALIDATED**, 2026-06-14).
+- Phase 2D: `VALIDATED` — shared list primitives; locks released.
+- Phase 2C: `VALIDATED` — locks released.
+- Phase 2B: `VALIDATED` — locks released.
 - Phase 1: `IMPLEMENTED / VALIDATED` — lock `LOCK-UX30-P1-SHELL` — `RELEASED`.
 - Phase 0: `IMPLEMENTED / VALIDATED` — QA `UX30_PHASE0_QA_PASS_WITH_NOTES`.
 - Primary owner: Agent 1B for app-wide UX/UI.
@@ -165,22 +168,17 @@ Batch map:
 Authoritative details: `docs/coordination/TASK_REGISTRY.yaml`.
 
 - In flight: none.
-- Waiting for user decision:
-  - `APP-PLATFORM-UX-3.0-PHASE-2-NEXT` - resolve `UX30-D7`.
-  - `IMPORT-FDL-FULL-QUALITY-NEXT` - select the next data/import task.
-- Waiting for agent report: none recorded.
-- Ready for safe parallel launch: none.
-- Active locks: none.
-- Agent availability: verify before every assignment; no Cursor agent is
-  recorded as in flight in the task registry.
+- Ready for implementation: none.
+- Validation pending: none.
+- Waiting for agent report: none.
+- Last validated: `APP-PLATFORM-UX-3.0-PHASE-2D` — `EVID-UX30-P2D-001`.
 
 ## 7. Next Recommended Action
 
 - Select exactly one next task and protocol.
 - Sequential modernization status: PR-06 is closed; the next sequential
   modernization task has not been explicitly started.
-- Available active-track decisions: UX Phase 2 sequence (`UX30-D7`) or the next
-  `IMPORT-FDL-FULL-QUALITY` task.
+- Available active-track next step: user decision — **UX30 Phase 3** slice or `IMPORT-FDL-FULL-QUALITY-NEXT`.
 - Do not reactivate paused ProductDetail / PDF / Preview / Page15 QA.
 
 ## 8. Acceptance Criteria
@@ -202,8 +200,7 @@ Authoritative details: `docs/coordination/TASK_REGISTRY.yaml`.
 - Do not interrupt or reassign Agent 2/5 from `IMPORT-FDL-FULL-QUALITY`
 - Do not start `Page15`
 - Do not restart `ProductDetail` QA or `PDF` QA
-- Do not start APP-PLATFORM-UX-3.0 Phase 2B/2C/2D without P2A QA and new Agent 3 locks
-- Do not start Phase 2B/2C/2D implementation without UX30-D7 decision and new Agent 3 locks
+- Do not start APP-PLATFORM-UX-3.0 **Phase 3** without approved plan and orchestration gate (Phase 2 complete — 2A–2D **VALIDATED**)
 - Do not edit UX 3.0 shell paths without a new Agent 3 lock
 - Do not let Agent 1B edit catalogue-builder-owned files without explicit handoff
 - Do not let Agent 1B edit shared frontend files without an Agent 3 lock
@@ -260,13 +257,11 @@ Next page:
 ## 12. APP-PLATFORM-UX-3.0
 
 - Track: `APP-PLATFORM-UX-3.0 - Touch-first responsive redesign`
-- Status: `PHASE2A_CLOSED_LOCKS_RELEASED / BLOCKED` (2B/2C/2D)
-- Primary owner: Agent 1B - Global UX/UI
-- Completed: PLAN, P0, P1, P2A full cycle (impl + QA + lock release)
-- Next task: `APP-PLATFORM-UX-3.0-PHASE-2-SEQUENCE-DECISION` (UX30-D7)
-- Active locks: **none**
-- Phase 2B/2C: `PLANNED / NOT_AUTHORIZED` — **BLOCKED**
-- Phase 2D: `DEFERRED / NOT_AUTHORIZED` — **BLOCKED**
+- Status: `PHASE2_COMPLETE / PHASE3_GATE_OPEN`
+- Completed: P0, P1, P2A, P2B, P2C, **P2D** — **VALIDATED**
+- Next task: **UX30 Phase 3** — awaiting user/orchestration gate
+- Phase 2 list track: **COMPLETE** (2026-06-14)
+- Phase 3: unblocked — slice selection pending
 - Decision UX30-D6: mobile/tablet cards + variant Sheet; desktop table; no ProductDetail duplication
 - Phase 7 deferred: P7-N1 min/close clicks; P7-N2 TitleBar drag manual QA
 
@@ -310,7 +305,44 @@ P1-SHELL-001: **CLOSED**. P7-N1/P7-N2 deferred to Phase 7.
 | `LOCK-UX30-P2A-HOOK` | **RELEASED** | `useDataViewMode.ts` |
 | `LOCK-UX30-P2A-PRODUCTS-TESTS` | **RELEASED** | incl. `useDataViewMode.test.ts` (delivered) |
 
-P2A-SHEET-001: **CLOSED**. Phase 2B/2C: **BLOCKED** pending UX30-D7. Phase 2D: **DEFERRED**.
+P2A-SHEET-001: **CLOSED**. UX30-D7: **DECIDED** → Phase 2B then 2C. Phase 2B: **VALIDATED** (2026-06-13). Phase 2C: **VALIDATED** (2026-06-13). Phase 2D: **VALIDATED** (2026-06-14).
+
+### Phase 2B locks (RELEASED 2026-06-13)
+
+| Lock ID | Status | QA |
+|---------|--------|-----|
+| `LOCK-UX30-P2B-SUPPLIERS-PAGE` | **RELEASED** | `UX30_PHASE2B_QA_PASS_WITH_NOTES` |
+| `LOCK-UX30-P2B-CATEGORIES-PAGE` | **RELEASED** | Categories tree + overflow menu |
+| `LOCK-UX30-P2B-SCOPED-CSS` | **RELEASED** | scoped suppliers/categories CSS |
+| `LOCK-UX30-P2B-COMPONENTS` | **RELEASED** | card/tree components |
+| `LOCK-UX30-P2B-TESTS` | **RELEASED** | 12/12 P2B tests |
+
+P2B-N1/P2B-N2: **non-blocking P2** — deferred follow-up.
+
+P2A–P2C: **VALIDATED** (2026-06-13). **UX30-D8 DECIDED → 2D-FULL** (2026-06-13).
+
+### Phase 2D locks (RELEASED 2026-06-14)
+
+| Lock ID | Status | QA |
+|---------|--------|-----|
+| `LOCK-UX30-P2D-RESPONSIVE-LIST` | **RELEASED** | `UX30_PHASE2D_QA_PASS_WITH_NOTES` |
+| `LOCK-UX30-P2D-PRODUCTS-LIST` | **RELEASED** | Products migration |
+| `LOCK-UX30-P2D-SUPPLIERS-LIST` | **RELEASED** | ImportProfile migration |
+| `LOCK-UX30-P2D-PRICELISTS-LIST` | **RELEASED** | PriceDiff + toolbar |
+| `LOCK-UX30-P2D-SCOPED-CSS` | **RELEASED** | responsive-data-card CSS |
+
+P2D-N1/P2D-N2/P2D-N3: **non-blocking P2** — deferred follow-up.
+
+P2A–P2D: **VALIDATED** (2026-06-14). Phase 2 list track **COMPLETE**.
+
+### UX30-D8 (DECIDED — Phase 2D scope)
+
+User selected **2D-FULL**: full consolidation of shared list primitives across
+Products, Suppliers profiles, and Price Lists diff. Categories tree out of scope.
+
+### UX30-D7 (DECIDED — Phase 2 sequence)
+
+User selected **Phase 2B** (Suppliers + Categories) before Phase 2C (Price Lists). Recorded 2026-06-13.
 
 ### UX30-D6 (DECIDED — Phase 2A)
 

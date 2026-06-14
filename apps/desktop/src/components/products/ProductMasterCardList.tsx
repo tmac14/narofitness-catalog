@@ -3,6 +3,7 @@ import type { MasterSortKey, ProductMaster, SortDirection } from "@/lib/api";
 import { ProductMasterCard } from "@/components/products/ProductMasterCard";
 import { hasMultipleVariants } from "@/components/products/productMasterCardMeta";
 import { ProductVariantExpandSheet } from "@/components/products/ProductVariantExpandSheet";
+import { ResponsiveDataCardList } from "@/components/responsive/list";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { ArrowDown, ArrowUp } from "lucide-react";
@@ -93,7 +94,7 @@ export function ProductMasterCardList({
   return (
     <div className="product-master-card-list">
       <ProductMasterCardListSortBar sortBy={sortBy} sortDir={sortDir} onSort={onSort} />
-      <ul className="product-master-card-list__items flex flex-col gap-0">
+      <ResponsiveDataCardList>
         {items.map((master, index) => (
           <li key={master.id}>
             <ProductMasterCard
@@ -107,7 +108,7 @@ export function ProductMasterCardList({
             />
           </li>
         ))}
-      </ul>
+      </ResponsiveDataCardList>
       <ProductVariantExpandSheet
         master={sheetMaster}
         open={sheetMaster != null}

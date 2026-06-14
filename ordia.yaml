@@ -1,0 +1,63 @@
+# Ordia project manifest — Narofitness reference implementation
+# Spec: docs/ordia/SPEC_v0.8.md · Program: docs/ordia/IMPROVEMENT_PLAN_v0.8.md (CLOSED)
+# Manifest schema: v0.2 (see docs/ordia/SPEC_v0.2.md) · Optional commands: ORDIA-D016 (v0.3 additive)
+
+version: "0.2"
+profile: narofitness
+
+control:
+  root: docs/coordination
+  state: ORCHESTRATION_STATE.md
+  taskRegistry: TASK_REGISTRY.yaml
+  agentRegistry: AGENT_REGISTRY.yaml
+  decisionLog: DECISION_LOG.md
+  evidenceIndex: EVIDENCE_INDEX.md
+  taskPackets: tasks
+  projectProfile: AGENTS.md
+
+session:
+  runtimes:
+    - ONLY_CODEX
+    - CODEX_PLUS_CURSOR
+    - ONLY_CURSOR
+  protocols:
+    - ORCHESTRATION
+    - IMPLEMENTATION
+  modes:
+    - MULTI_CHAT
+    - UNIFIED
+
+enforcement:
+  productRoots:
+    - apps/
+  controlRoots:
+    - docs/coordination/
+    - docs/ordia/
+    - packages/ordia-core/
+    - packages/ordia-cursor/
+    - .cursor/rules/
+    - .cursor/hooks/
+    - AGENTS.md
+    - COMMANDS.md
+    - ordia.yaml
+  qaEvidenceRoots:
+    - temp/qa/
+  orchestrationBlocksProduct: true
+  unifiedRequiresApproval: true
+
+closure:
+  validator: npm run control:validate
+
+commands:
+  catalog: scripts/commands.catalog.json
+  npmPackage: package.json
+  validateOnControlCheck: true
+
+models:
+  registry: docs/coordination/MODEL_REGISTRY.yaml
+  telemetryRoot: temp/qa/model-usage
+  defaultTier: T1
+  requireApprovalAbove: T1
+
+workflows:
+  overlay: docs/coordination/workflows/intents.narofitness.yaml

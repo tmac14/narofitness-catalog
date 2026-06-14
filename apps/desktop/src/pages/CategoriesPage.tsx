@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { toast } from "sonner";
 import { FolderTree } from "lucide-react";
 import {
@@ -10,9 +10,6 @@ import {
 } from "@/lib/api";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Select } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/EmptyState";
 import { ErrorState } from "@/components/ErrorState";
@@ -26,53 +23,32 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import {
+  CategoryFormCard,
+  flatCategories,
+} from "@/components/categories/CategoryFormCard";
+import { CategoryTree } from "@/components/categories/CategoryTree";
+import { BREAKPOINT_PX } from "@/lib/responsive/breakpoints";
+import { classifyPlatformWidth } from "@/lib/responsive/platform";
 
-function CategoryNode({
-  node,
-  onEdit,
-  onDelete,
-  onAddChild,
-}: {
-  node: Category;
-  onEdit: (c: Category) => void;
-  onDelete: (id: string, name: string) => void;
-  onAddChild: (parentId: string) => void;
-}) {
-  return (
-    <li className="ml-4 mb-2">
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="font-medium">{node.name}</span>
-        <Button type="button" variant="secondary" size="sm" onClick={() => onEdit(node)}>
-          Editar
-        </Button>
-        <Button type="button" variant="secondary" size="sm" onClick={() => onAddChild(node.id)}>
-          + Hijo
-        </Button>
-        <Button
-          type="button"
-          variant="outline"
-          size="sm"
-          className="text-destructive border-destructive/30 hover:bg-destructive/10"
-          onClick={() => onDelete(node.id, node.name)}
-        >
-          Eliminar
-        </Button>
-      </div>
-      {node.children?.length > 0 && (
-        <ul className="list-none pl-0 mt-2 border-l border-border ml-2">
-          {node.children.map((ch) => (
-            <CategoryNode
-              key={ch.id}
-              node={ch}
-              onEdit={onEdit}
-              onDelete={onDelete}
-              onAddChild={onAddChild}
-            />
-          ))}
-        </ul>
-      )}
-    </li>
-  );
+function getViewportWidth(): number {
+  if (typeof window === "undefined") return BREAKPOINT_PX.desktopMin;
+  return window.innerWidth;
+}
+
+function getServerViewportWidth(): number {
+  return BREAKPOINT_PX.desktopMin;
+}
+
+function subscribeViewport(onStoreChange: () => void): () => void {
+  if (typeof window === "undefined") return () => {};
+  window.addEventListener("resize", onStoreChange);
+  return () => window.removeEventListener("resize", onStoreChange);
+}
+
+function useDefaultTreeExpanded(): boolean {
+  const width = useSyncExternalStore(subscribeViewport, getViewportWidth, getServerViewportWidth);
+  return classifyPlatformWidth(width) !== "mobile";
 }
 
 export default function CategoriesPage() {
@@ -85,6 +61,7 @@ export default function CategoriesPage() {
   const [deleteTarget, setDeleteTarget] = useState<{ id: string; name: string } | null>(null);
   const [deleting, setDeleting] = useState(false);
   const showSkeleton = useDelayedLoading(loading);
+  const defaultTreeExpanded = useDefaultTreeExpanded();
 
   function refresh(): void {
     setFetchError(false);
@@ -103,18 +80,6 @@ export default function CategoriesPage() {
     }, 0);
     return () => window.clearTimeout(timer);
   }, []);
-
-  function flat(
-    nodes: Category[],
-    depth = 0,
-    acc: { id: string; name: string; depth: number }[] = [],
-  ) {
-    for (const n of nodes) {
-      acc.push({ id: n.id, name: n.name, depth });
-      if (n.children?.length) flat(n.children, depth + 1, acc);
-    }
-    return acc;
-  }
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -143,12 +108,18 @@ export default function CategoriesPage() {
     setEditingId(c.id);
     setName(c.name);
     setParentId(c.parent_id ?? "");
+    window.setTimeout(() => {
+      document.getElementById("cat-name")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
   }
 
   function onAddChild(pid: string) {
     setEditingId(null);
     setName("");
     setParentId(pid);
+    window.setTimeout(() => {
+      document.getElementById("cat-name")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
   }
 
   function requestDelete(id: string, categoryName: string) {
@@ -170,7 +141,7 @@ export default function CategoriesPage() {
     }
   }
 
-  const allCats = flat(tree);
+  const allCats = flatCategories(tree);
 
   return (
     <div>
@@ -180,62 +151,22 @@ export default function CategoriesPage() {
         icon={FolderTree}
       />
 
-      <Card className="mb-6">
-        <CardHeader>
-          <CardTitle>{editingId ? "Editar categoría" : "Nueva categoría"}</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <form
-            onSubmit={(event) => {
-              void onSubmit(event);
-            }}
-            className="max-w-md space-y-4"
-          >
-            <div className="space-y-2">
-              <Label htmlFor="cat-name">Nombre *</Label>
-              <Input
-                id="cat-name"
-                required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="cat-parent">Categoría padre (opcional)</Label>
-              <Select
-                id="cat-parent"
-                value={parentId}
-                onChange={(e) => setParentId(e.target.value)}
-              >
-                <option value="">— Raíz —</option>
-                {allCats
-                  .filter((c) => c.id !== editingId)
-                  .map((c) => (
-                    <option key={c.id} value={c.id}>
-                      {`${"— ".repeat(c.depth)}${c.name}`}
-                    </option>
-                  ))}
-              </Select>
-            </div>
-            <div className="flex gap-2">
-              <Button type="submit">{editingId ? "Guardar" : "Crear"}</Button>
-              {editingId && (
-                <Button
-                  type="button"
-                  variant="secondary"
-                  onClick={() => {
-                    setEditingId(null);
-                    setName("");
-                    setParentId("");
-                  }}
-                >
-                  Cancelar
-                </Button>
-              )}
-            </div>
-          </form>
-        </CardContent>
-      </Card>
+      <CategoryFormCard
+        editingId={editingId}
+        name={name}
+        parentId={parentId}
+        allCats={allCats}
+        onNameChange={setName}
+        onParentIdChange={setParentId}
+        onSubmit={(event) => {
+          void onSubmit(event);
+        }}
+        onCancelEdit={() => {
+          setEditingId(null);
+          setName("");
+          setParentId("");
+        }}
+      />
 
       {showSkeleton ? (
         <FormSkeleton />
@@ -244,7 +175,7 @@ export default function CategoriesPage() {
           title="No se pudieron cargar las categorías"
           description="Compruebe la conexión con la aplicación e inténtelo de nuevo."
           action={
-            <Button type="button" size="sm" variant="secondary" onClick={refresh}>
+            <Button type="button" variant="secondary" className="min-h-11" onClick={refresh}>
               Reintentar
             </Button>
           }
@@ -262,17 +193,13 @@ export default function CategoriesPage() {
                 description="Créelas aquí o impórtelas desde un PDF."
               />
             ) : (
-              <ul className="list-none pl-0">
-                {tree.map((n) => (
-                  <CategoryNode
-                    key={n.id}
-                    node={n}
-                    onEdit={onEdit}
-                    onDelete={requestDelete}
-                    onAddChild={onAddChild}
-                  />
-                ))}
-              </ul>
+              <CategoryTree
+                nodes={tree}
+                defaultExpanded={defaultTreeExpanded}
+                onEdit={onEdit}
+                onDelete={requestDelete}
+                onAddChild={onAddChild}
+              />
             )}
           </CardContent>
         </Card>
@@ -288,12 +215,18 @@ export default function CategoriesPage() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
-            <Button type="button" variant="secondary" onClick={() => setDeleteTarget(null)}>
+            <Button
+              type="button"
+              variant="secondary"
+              className="min-h-11"
+              onClick={() => setDeleteTarget(null)}
+            >
               Cancelar
             </Button>
             <Button
               type="button"
               variant="destructive"
+              className="min-h-11"
               disabled={deleting}
               onClick={() => {
                 void confirmDelete();

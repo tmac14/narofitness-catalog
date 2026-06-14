@@ -16,6 +16,7 @@ allowed_statuses:
   - APPROVED
   - LOCKS_PENDING
   - LOCKS_CONFIRMED
+  - MODEL_TIER_APPROVED
   - READY_FOR_IMPLEMENTATION
   - IN_FLIGHT
   - IMPLEMENTED
@@ -47,8 +48,8 @@ active_locks: []
 queues:
   in_flight: []
   ready_for_parallel: []
+  model_tier_pending: []
   waiting_for_user_decision:
-    - "APP-PLATFORM-UX-3.0-PHASE-2-NEXT"
     - "IMPORT-FDL-FULL-QUALITY-NEXT"
     - "SOURCE-CATALOG-DUAL-PATH-1-PHASE-1A"
     - "PRODUCT-DETAIL-UX-V2-QA"
@@ -130,32 +131,150 @@ tasks:
     waiting_for: null
     next_safe_action: "No action; controls are active for future tasks"
 
-  - id: "APP-PLATFORM-UX-3.0-PHASE-2-NEXT"
+  - id: "APP-PLATFORM-UX-3.0-PHASE-2B"
     track: "APP-PLATFORM-UX-3.0"
-    title: "Select next Phase 2 slice"
-    runtime: "ONLY_CODEX"
-    protocol: "NONE"
-    owner: "Unassigned"
-    validator: "Unassigned"
-    status: "WAITING_FOR_USER_DECISION"
-    priority: "ACTIVE_UI_TRACK"
+    title: "Suppliers and Categories responsive list surfaces"
+    runtime: "ONLY_CURSOR"
+    protocol: "IMPLEMENTATION"
+    owner: "Agent 1B - Global UX/UI"
+    validator: "Agent 1A - Catalogue UI QA"
+    status: "VALIDATED"
+    model_usage_grandfathered: true
+    priority: "COMPLETED_SLICE"
     gates:
-      discovery: "NOT_STARTED"
-      plan: "NOT_STARTED"
-      locks: "NOT_STARTED"
-      ready_for_implementation: "BLOCKED_BY_DECISION"
-    task_packet: "docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2-NEXT.md"
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "RELEASED_AFTER_VALIDATION"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2B.md"
     dependencies:
       - "APP-PLATFORM-UX-3.0-PHASE-2A"
-    dependents: []
-    decisions_required:
-      - "UX30-D7"
+    dependents:
+      - "APP-PLATFORM-UX-3.0-PHASE-2C"
+    decisions_required: []
     planned_write_paths: []
     blocked_paths: []
     locks: []
-    parallel_safety: "NOT_READY"
-    waiting_for: "User decision: Phase 2B or Phase 2C"
-    next_safe_action: "Resolve UX30-D7, then create Plan Mode task packet"
+    parallel_safety: "COMPLETE"
+    waiting_for: null
+    next_safe_action: "No action; locks released"
+
+  - id: "APP-PLATFORM-UX-3.0-PHASE-2C"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "Price Lists responsive comparison surface"
+    runtime: "ONLY_CURSOR"
+    protocol: "IMPLEMENTATION"
+    owner: "Agent 1B - Global UX/UI"
+    validator: "Agent 1A - Catalogue UI QA"
+    status: "VALIDATED"
+    model_usage_grandfathered: true
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "RELEASED_AFTER_VALIDATION"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2C.md"
+    dependencies:
+      - "APP-PLATFORM-UX-3.0-PHASE-2B"
+    dependents:
+      - "APP-PLATFORM-UX-3.0-PHASE-2D"
+    decisions_required: []
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "COMPLETE"
+    waiting_for: null
+    next_safe_action: "No action; locks released"
+
+  - id: "APP-PLATFORM-UX-3.0-PHASE-2D"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "Shared list primitives — full consolidation (2A–2C consumers)"
+    runtime: "ONLY_CURSOR"
+    protocol: "IMPLEMENTATION"
+    owner: "Agent 1B - Global UX/UI"
+    validator: "Agent 1A - Catalogue UI QA"
+    status: "VALIDATED"
+    model_usage_grandfathered: true
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "RELEASED_AFTER_VALIDATION"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2D.md"
+    dependencies:
+      - "APP-PLATFORM-UX-3.0-PHASE-2C"
+    dependents: []
+    decisions_required: []
+    planned_write_paths: []
+    blocked_paths:
+      - "apps/desktop/src/pages/ProductDetail*"
+      - "apps/desktop/src/components/catalog-builder/**"
+      - "apps/desktop/src/pages/CategoriesPage.tsx"
+      - "apps/desktop/src/components/categories/**"
+      - "apps/desktop/src/components/products/ProductVariantExpandSheet.tsx"
+      - "apps/desktop/src/lib/api.ts"
+      - "apps/api/**"
+      - "migrations/**"
+    locks: []
+    parallel_safety: "COMPLETE"
+    waiting_for: null
+    next_safe_action: "No action; locks released — Phase 2 list track complete"
+
+  - id: "APP-PLATFORM-UX-3.0-PHASE-2D-NEXT"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "Select Phase 2D scope (shared list primitives)"
+    runtime: "ONLY_CURSOR"
+    protocol: "ORCHESTRATION"
+    owner: "Cursor Control Plane"
+    validator: "User"
+    status: "CLOSED"
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "NOT_APPLICABLE"
+      locks: "NOT_APPLICABLE"
+      ready_for_implementation: "NOT_APPLICABLE"
+    task_packet: "docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2D-NEXT.md"
+    dependencies:
+      - "APP-PLATFORM-UX-3.0-PHASE-2C"
+    dependents:
+      - "APP-PLATFORM-UX-3.0-PHASE-2D"
+    decisions_required: []
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "COMPLETE"
+    waiting_for: null
+    next_safe_action: "No action; UX30-D8 decided 2D-FULL"
+
+  - id: "APP-PLATFORM-UX-3.0-PHASE-2-NEXT"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "Select next Phase 2 slice"
+    runtime: "ONLY_CURSOR"
+    protocol: "ORCHESTRATION"
+    owner: "Cursor Control Plane"
+    validator: "User"
+    status: "CLOSED"
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "NOT_APPLICABLE"
+      locks: "NOT_APPLICABLE"
+      ready_for_implementation: "NOT_APPLICABLE"
+    task_packet: "docs/coordination/tasks/APP-PLATFORM-UX-3.0-PHASE-2-NEXT.md"
+    dependencies:
+      - "APP-PLATFORM-UX-3.0-PHASE-2A"
+    dependents:
+      - "APP-PLATFORM-UX-3.0-PHASE-2B"
+    decisions_required: []
+    planned_write_paths: []
+    blocked_paths: []
+    locks: []
+    parallel_safety: "COMPLETE"
+    waiting_for: null
+    next_safe_action: "No action; UX30-D7 decided Phase 2B"
 
   - id: "APP-PLATFORM-UX-3.0-PHASE-2A"
     track: "APP-PLATFORM-UX-3.0"
@@ -165,6 +284,7 @@ tasks:
     owner: "Agent 1B - Global UX/UI"
     validator: "Agent 1A - Catalogue UI QA"
     status: "VALIDATED"
+    model_usage_grandfathered: true
     priority: "COMPLETED_SLICE"
     gates:
       discovery: "COMPLETE"
@@ -174,7 +294,7 @@ tasks:
     task_packet: null
     dependencies: []
     dependents:
-      - "APP-PLATFORM-UX-3.0-PHASE-2-NEXT"
+      - "APP-PLATFORM-UX-3.0-PHASE-2B"
     decisions_required: []
     planned_write_paths: []
     blocked_paths: []
@@ -182,6 +302,39 @@ tasks:
     parallel_safety: "COMPLETE"
     waiting_for: null
     next_safe_action: "No action; locks released"
+
+  - id: "APP-CHROME-3.1-TOPBAR-PALETTE-CONTEXT-ACTIONS"
+    track: "APP-PLATFORM-UX-3.0"
+    title: "App Chrome 3.1 command palette and contextual top-bar route actions"
+    runtime: "ONLY_CURSOR"
+    protocol: "IMPLEMENTATION"
+    owner: "Agent 1A - Catalogue Builder UI/UX"
+    validator: "Automated desktop tests/build and web visual smoke"
+    status: "VALIDATED"
+    model_usage_grandfathered: true
+    priority: "COMPLETED_SLICE"
+    gates:
+      discovery: "COMPLETE"
+      plan: "APPROVED"
+      locks: "CONFIRMED_NONE_REQUIRED"
+      ready_for_implementation: "PASSED"
+    task_packet: "docs/coordination/tasks/APP-CHROME-3.1-TOPBAR-PALETTE-CONTEXT-ACTIONS.md"
+    dependencies:
+      - "APP-CHROME-3.0-MAIN-TOPBAR-BRAND-SYSTEM"
+    dependents: []
+    decisions_required: []
+    planned_write_paths:
+      - "apps/desktop/src/pages/CatalogEditorPage.tsx"
+      - "apps/desktop/src/components/catalog-builder/CatalogEditorHeader.tsx"
+      - "apps/desktop/src/lib/catalogEditorHeaderRouteActions.test.tsx"
+    blocked_paths:
+      - "apps/api/**"
+      - "migrations/**"
+      - "importer/**"
+    locks: []
+    parallel_safety: "COMPLETE"
+    waiting_for: null
+    next_safe_action: "No action; validated. Optional web smoke on catalog editor top-bar actions."
 
   - id: "APP-CHROME-3.0-MAIN-TOPBAR-BRAND-SYSTEM"
     track: "APP-PLATFORM-UX-3.0"
@@ -191,6 +344,7 @@ tasks:
     owner: "Codex"
     validator: "Automated desktop tests/build and web visual smoke"
     status: "VALIDATED"
+    model_usage_grandfathered: true
     priority: "COMPLETED_SLICE"
     gates:
       discovery: "COMPLETE"
@@ -199,7 +353,8 @@ tasks:
       ready_for_implementation: "PASSED"
     task_packet: "docs/coordination/tasks/APP-CHROME-3.0-MAIN-TOPBAR-BRAND-SYSTEM.md"
     dependencies: []
-    dependents: []
+    dependents:
+      - "APP-CHROME-3.1-TOPBAR-PALETTE-CONTEXT-ACTIONS"
     decisions_required: []
     planned_write_paths:
       - "apps/desktop/src/components/**"
@@ -226,6 +381,7 @@ tasks:
     owner: "Codex"
     validator: "Automated desktop tests/build and control validation"
     status: "VALIDATED"
+    model_usage_grandfathered: true
     priority: "COMPLETED_SLICE"
     gates:
       discovery: "COMPLETE"
@@ -261,6 +417,7 @@ tasks:
     validator: "Agent 5 - FDL import audit"
     status: "WAITING_FOR_USER_DECISION"
     priority: "ACTIVE_DATA_TRACK"
+    model_tier_min: "T3"
     gates:
       discovery: "NOT_STARTED"
       plan: "NOT_STARTED"

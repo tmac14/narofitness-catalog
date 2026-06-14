@@ -25,7 +25,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AppTopBar } from "@/components/AppTopBar";
+import { AppCommandPalette } from "@/components/AppCommandPalette";
 import { StatusBarProvider } from "@/context/StatusBarContext";
+import { CommandPaletteProvider } from "@/context/CommandPaletteContext";
+import { TopBarRouteActionsProvider } from "@/context/TopBarRouteActionsContext";
 import { AppStatusBar } from "@/components/status-bar/AppStatusBar";
 import {
   isNavActive,
@@ -240,13 +243,16 @@ export default function Layout() {
 
   return (
     <StatusBarProvider>
-      <div className="flex h-dvh min-w-[360px] flex-col overflow-hidden bg-background">
-        <a href="#main-content" className="skip-link">
-          Saltar al contenido principal
-        </a>
-        <AppTopBar />
-        <div className="flex min-h-0 flex-1 flex-col">
-          <div className="flex min-h-0 flex-1 min-w-0">
+      <TopBarRouteActionsProvider>
+        <CommandPaletteProvider>
+          <div className="flex h-dvh min-w-[360px] flex-col overflow-hidden bg-background">
+            <a href="#main-content" className="skip-link">
+              Saltar al contenido principal
+            </a>
+            <AppTopBar />
+            <AppCommandPalette />
+            <div className="flex min-h-0 flex-1 flex-col">
+              <div className="flex min-h-0 flex-1 min-w-0">
             {/* Desktop / wide: full sidebar */}
             <nav
               aria-label="Navegación principal"
@@ -328,16 +334,18 @@ export default function Layout() {
                 </div>
               </main>
             </div>
-          </div>
+              </div>
 
-          <MobileBottomNav
-            pathname={loc.pathname}
-            moreOpen={moreOpen}
-            onMoreOpenChange={setMoreOpen}
-          />
-          <AppStatusBar />
-        </div>
-      </div>
+              <MobileBottomNav
+                pathname={loc.pathname}
+                moreOpen={moreOpen}
+                onMoreOpenChange={setMoreOpen}
+              />
+              <AppStatusBar />
+            </div>
+          </div>
+        </CommandPaletteProvider>
+      </TopBarRouteActionsProvider>
     </StatusBarProvider>
   );
 }

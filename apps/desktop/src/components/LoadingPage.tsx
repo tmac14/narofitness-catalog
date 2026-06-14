@@ -207,7 +207,7 @@ export function CatalogEditorSkeleton() {
 export function TwoColumnSkeleton() {
   return (
     <BusyRegion label="Cargando contenido">
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-4 lg:grid-cols-2">
         {[1, 2].map((i) => (
           <Card key={i}>
             <CardHeader>

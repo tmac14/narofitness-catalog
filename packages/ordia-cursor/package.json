@@ -1,0 +1,16 @@
+{
+  "name": "@ordia/cursor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ordia Cursor adapter — rules and hooks template bundle",
+  "files": [
+    "templates/**"
+  ],
+  "keywords": [
+    "ordia",
+    "cursor",
+    "orchestration",
+    "agent-control"
+  ],
+  "license": "UNLICENSED"
+}

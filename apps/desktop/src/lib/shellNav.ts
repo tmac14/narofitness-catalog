@@ -9,6 +9,7 @@ import {
   Settings,
   Truck,
 } from "lucide-react";
+import type { CommandPaletteItem } from "@/lib/commandPalette";
 
 export type ShellNavItem = {
   to: string;
@@ -42,4 +43,18 @@ export function isNavActive(pathname: string, to: string): boolean {
 export function resolveActiveNavLabel(pathname: string): string {
   const active = SHELL_NAV_ALL.find((item) => isNavActive(pathname, item.to));
   return active?.label ?? "NaroCatalog";
+}
+
+/** Build command-palette navigation items from the shell nav registry. */
+export function buildShellNavPaletteCommands(
+  onNavigate: (to: string) => void,
+): CommandPaletteItem[] {
+  return SHELL_NAV_ALL.map((item) => ({
+    id: `nav:${item.to}`,
+    label: item.label,
+    group: "nav" as const,
+    icon: item.icon,
+    keywords: [item.label, item.to, item.mobileLabel ?? ""].filter(Boolean),
+    onSelect: () => onNavigate(item.to),
+  }));
 }

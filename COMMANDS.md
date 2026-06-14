@@ -14,6 +14,7 @@ Fuente de verdad: `package.json` (raíz) y `apps/desktop/package.json`.
 | `npm run help -- dev` | Detalle de un comando (descripción, flags, ejemplos, script subyacente) |
 | `npm run help -- list` | Lista plana de todos los comandos documentados (`npm run help:list` equivalente) |
 | `npm run help:validate` | Comprueba que `package.json` y `scripts/commands.catalog.json` están sincronizados |
+| `npm run help:coverage` | Informe L1/L2/L3 de cobertura del catálogo vs `package.json` |
 
 Datos del CLI: [scripts/commands.catalog.json](scripts/commands.catalog.json). Al añadir o cambiar un script npm, actualizar este archivo, el catálogo JSON y ejecutar `npm run help:validate`.
 
@@ -115,9 +116,13 @@ Requisito: API local en `:8000` (`npm run docker:up`).
 
 | Comando | Qué hace |
 |---------|----------|
-| `npm run tunnel:start` | Tunnel público API + UI. Vite en `:3014` por defecto. **Sin Electron.** |
+| `npm run tunnel:start` | Tunnel público API + UI. Vite en `:3014` por defecto. **Sin Electron.** Detiene frontend previo (incl. `npm run dev`). **Conserva otros `cloudflared`** (p. ej. tunnel al `:3000` del host). |
+| `npm run tunnel:start -- -KeepDev` | Igual, pero **no mata** un `npm run dev` / `dev:app` / `dev:web` en `:5173`. |
 | `npm run tunnel:start -- -UiPort 4014` | Tunnel con otro puerto local. |
-| `npm run tunnel:stop` | Detiene tunnels y frontend; limpia `temp/cloudflare-tunnels/state.json`. |
+| `npm run tunnel:start -- -KeepDev -UiPort 4014` | Conservar dev local y usar otro puerto para el tunnel. |
+| `npm run tunnel:start -- -StopAllTunnels` | Limpieza agresiva: también mata otros `cloudflared` del workspace. |
+| `npm run tunnel:stop` | Detiene tunnels Narofitness y frontend; limpia `temp/cloudflare-tunnels/state.json`. **Conserva otros `cloudflared`.** |
+| `npm run tunnel:stop -- -StopAllTunnels` | Igual, pero también mata otros `cloudflared` del workspace. |
 
 Estado en `temp/cloudflare-tunnels/state.json`. Requiere `cloudflared` instalado.
 
@@ -130,6 +135,20 @@ Estado en `temp/cloudflare-tunnels/state.json`. Requiere `cloudflared` instalado
 | Instalar dependencia mínima del validador de control | `npm run control:install` |
 | Validar registros, tareas, decisiones, locks, estado vivo e inventario documental | `npm run control:validate` |
 | Verificar que el cargador YAML de control rechaza claves duplicadas | `npm run control:test` |
+
+| Ordia (control portable) | Comando |
+|--------------------------|---------|
+| CLI Ordia (subcomandos: init, validate, doctor, help, commands) | `npm run ordia -- <subcomando>` |
+| Scaffold greenfield (`ordia.yaml` + control store mínimo) | `npm run ordia:init -- --profile <id>` |
+| Validar manifest Ordia | `npm run ordia:validate` |
+| Validar manifest + control completo del repo | `npm run ordia:validate -- --project` |
+| Validar control + Model usage estricto | `npm run ordia:validate:strict-model` |
+| Recomendar tier de modelo para tarea | `npm run ordia -- model recommend --task <TASK-ID>` |
+| Plantilla sección Model usage (entregables) | `npm run ordia -- model usage-template` |
+| Listar workflow intents | `npm run ordia:workflow:list` |
+| Emitir prompt estandarizado | `npm run ordia:prompt -- emit --intent <ID> --task <TASK-ID>` |
+| Solo header de sesión | `npm run ordia:prompt -- header --intent <ID> --task <TASK-ID>` |
+| Diagnóstico de setup Ordia | `npm run ordia:doctor` |
 
 | Comando | Qué hace |
 |---------|----------|

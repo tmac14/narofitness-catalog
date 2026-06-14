@@ -57,6 +57,36 @@ class RuntimeFieldTests(TestCase):
         validate_runtime_fields(text, set(), validation)
         self.assertTrue(any("control_plane_runtime is invalid" in error for error in validation.errors))
 
+    def test_accepts_valid_session_mode(self) -> None:
+        validation = Validation()
+        text = "\n".join(
+            [
+                "- control_plane_runtime: `ONLY_CURSOR`",
+                "- active_protocol: `ORCHESTRATION`",
+                "- session_mode: `UNIFIED` (RUNTIME-D005)",
+                "- handoff_from: `NONE`",
+                "- handoff_at: `NONE`",
+                "- handoff_reason: `NONE`",
+            ]
+        )
+        validate_runtime_fields(text, {"RUNTIME-D005"}, validation)
+        self.assertEqual(validation.errors, [])
+
+    def test_rejects_invalid_session_mode(self) -> None:
+        validation = Validation()
+        text = "\n".join(
+            [
+                "- control_plane_runtime: `ONLY_CURSOR`",
+                "- active_protocol: `ORCHESTRATION`",
+                "- session_mode: `INVALID_MODE`",
+                "- handoff_from: `NONE`",
+                "- handoff_at: `NONE`",
+                "- handoff_reason: `NONE`",
+            ]
+        )
+        validate_runtime_fields(text, set(), validation)
+        self.assertTrue(any("session_mode is invalid" in error for error in validation.errors))
+
 
 class TaskRuntimeProtocolTests(TestCase):
     def test_accepts_valid_runtime_protocol_pair(self) -> None:

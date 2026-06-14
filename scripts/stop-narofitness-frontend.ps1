@@ -1,7 +1,13 @@
 param(
-    [int[]]$Ports = @(5173, 3014, 4014),
+    [int[]]$Ports,
+    [switch]$KeepDev,
+    [switch]$KeepOtherTunnels,
     [switch]$Quiet
 )
+
+if (-not $Ports) {
+    $Ports = if ($KeepDev) { @(3014, 4014) } else { @(5173, 3014, 4014) }
+}
 
 $ErrorActionPreference = "Stop"
 $Root = (Split-Path -Parent $PSScriptRoot).TrimEnd("\")
@@ -37,6 +43,54 @@ function Get-ListenerProcessIdsFromNetstat {
     })
 }
 
+function Test-IsNarofitnessDevRoot {
+    param(
+        [string]$Name,
+        [string]$Command
+    )
+
+    $name = ([string]$Name).ToLowerInvariant()
+    $command = ([string]$Command).ToLowerInvariant()
+
+    if ($name -eq "electron.exe" -and $command -match "node_env=development") {
+        return $true
+    }
+    if ($name -ne "node.exe") {
+        return $false
+    }
+    if ($command -match "run dev\b|dev:app|dev:web") {
+        return $true
+    }
+    if ($command -match "concurrently" -and $command -match "5173") {
+        return $true
+    }
+    if ($command -match "vite" -and $command -match "--port(?:=|\s+)5173") {
+        return $true
+    }
+    return $false
+}
+
+function Get-ProtectedDevProcessIds {
+    param([array]$AllProcesses)
+
+    $protected = [System.Collections.Generic.HashSet[int]]::new()
+    foreach ($process in $AllProcesses) {
+        if (Test-IsNarofitnessDevRoot -Name $process.Name -Command $process.CommandLine) {
+            [void]$protected.Add([int]$process.ProcessId)
+        }
+    }
+    do {
+        $added = $false
+        foreach ($process in $AllProcesses) {
+            if ($protected.Contains([int]$process.ParentProcessId) -and -not $protected.Contains([int]$process.ProcessId)) {
+                [void]$protected.Add([int]$process.ProcessId)
+                $added = $true
+            }
+        }
+    } while ($added)
+    return $protected
+}
+
 # First stop processes explicitly registered by tunnel:start.
 if (Test-Path $StatePath) {
     try {
@@ -56,10 +110,22 @@ if (Test-Path $StatePath) {
 try {
     $allProcesses = @(Get-CimInstance Win32_Process -ErrorAction Stop)
     $rootNeedle = $Root.ToLowerInvariant()
+    $protectedDevIds = if ($KeepDev) {
+        Get-ProtectedDevProcessIds -AllProcesses $allProcesses
+    } else {
+        [System.Collections.Generic.HashSet[int]]::new()
+    }
     $candidateIds = @(
         $allProcesses | Where-Object {
+            $processId = [int]$_.ProcessId
+            if ($KeepDev -and $protectedDevIds.Contains($processId)) {
+                return $false
+            }
             $name = ([string]$_.Name).ToLowerInvariant()
             $command = ([string]$_.CommandLine).ToLowerInvariant()
+            if ($KeepOtherTunnels -and $name -eq "cloudflared.exe") {
+                return $false
+            }
             $isFrontendProcess = $name -in @("node.exe", "electron.exe", "cloudflared.exe")
             $belongsToWorkspace = $command.Contains($rootNeedle)
             $isFrontendProcess -and $belongsToWorkspace

@@ -1,0 +1,15 @@
+schema_version: 1
+updated_at: "{{DATE}}"
+authority:
+  purpose: "Ordia task registry — status, dependencies, locks, parallel safety."
+  summary_source: "docs/control/ORCHESTRATION_STATE.md"
+
+queues:
+  in_flight: []
+  ready_for_parallel: []
+  waiting_for_user_decision: []
+  waiting_for_agent_report: []
+  validation_pending: []
+
+tasks: []
+locks: []

@@ -274,7 +274,20 @@ Codex must report:
 6. Scope confirmation.
 7. No-legacy/no-hardcode confirmation.
 8. Risks, follow-ups, and exact remaining work.
-9. Final waiting or completion state.
+9. **Model usage** (mandatory — every prompt/task deliverable; ORDIA-D022) — model slug, token counts, economic rating (`light/leve`, `medium/mediana`, `heavy/pesada`); template: `ordia model usage-template`.
+10. Final waiting or completion state.
+
+## 14.1 Workflow intents (ORDIA-D023)
+
+Start implementation, QA, or audit work by pasting the output of:
+
+```powershell
+npm run ordia:prompt -- emit --intent <ID> --task <TASK-ID>
+```
+
+Common intents: `implement`, `implement_feature`, `fix_bug`, `refactor`, `continue_wip`, `qa`, `audit`, `validate`. List: `npm run ordia:workflow:list`. Optional header: `Ordia intent: <ID>`.
+
+**QA / Audit:** emit with `--intent qa` or `--intent audit`; read-only — no product-code edits.
 
 ## 15. Protocol and Runtime Change
 

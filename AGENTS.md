@@ -1,5 +1,18 @@
 # AGENTS
 
+## Ordia (project control system)
+
+Narofitness implements **[Ordia](docs/ordia/README.md)** — durable agent
+orchestration and implementation control (**Ordia v0.8**; baseline
+[SPEC v0.8](docs/ordia/SPEC_v0.8.md) · [SPEC v0.6](docs/ordia/SPEC_v0.6.md)). Project manifest: [`ordia.yaml`](ordia.yaml).
+Domain guardrails and tracks are the **project profile** layered on Ordia core.
+Product decisions: `ORDIA-D001`–`ORDIA-D023` in `docs/coordination/DECISION_LOG.md`.
+Active plan: [IMPROVEMENT_PLAN_v0.8.md](docs/ordia/IMPROVEMENT_PLAN_v0.8.md) (**CLOSED**).
+
+Validate: `npm run ordia:validate` (manifest) · `npm run ordia:validate -- --project` · `npm run control:validate` (full registry).
+
+**Workflow intents (ORDIA-D023):** emit standardized session prompts with `npm run ordia:prompt -- emit --intent <ID> --task <TASK-ID>` (list: `npm run ordia:workflow:list`). See [DAILY_USAGE.md](docs/ordia/DAILY_USAGE.md).
+
 ## Project Control Plane
 
 The Narofitness/PIM project supports three runtimes. Before suggesting,
@@ -32,12 +45,12 @@ this file and the coordination protocols:
 
 | Rule file | Purpose |
 |---|---|
-| `narofitness-runtime-protocol-header.mdc` | Parse `Runtime` + `Protocol` header; route to protocol doc |
-| `narofitness-recovery-bootstrap.mdc` | Cold-start recovery and in-flight task continuation |
-| `narofitness-orchestration-mode.mdc` | Control-plane behavior when `Protocol: ORCHESTRATION` |
-| `narofitness-implementation-mode.mdc` | Executor behavior when `Protocol: IMPLEMENTATION` |
-| `narofitness-permanent-guardrails.mdc` | No-legacy, IMPORT-FDL gates, ownership |
-| `narofitness-coordination-docs.mdc` | Editing coordination documentation |
+| `ordia-runtime-protocol-header.mdc` | Parse `Runtime` + `Protocol` header; route to protocol doc |
+| `ordia-recovery-bootstrap.mdc` | Cold-start recovery and in-flight task continuation |
+| `ordia-orchestration-mode.mdc` | Control-plane behavior when `Protocol: ORCHESTRATION` |
+| `ordia-implementation-mode.mdc` | Executor behavior when `Protocol: IMPLEMENTATION` |
+| `narofitness-permanent-guardrails.mdc` | Narofitness project profile — IMPORT-FDL gates, ownership |
+| `ordia-coordination-docs.mdc` | Editing coordination documentation |
 
 Every Cursor session must declare `Runtime` and `Protocol` (or recover them from
 `ORCHESTRATION_STATE.md` §0) before change-capable work. Chats without context
@@ -51,6 +64,8 @@ Before each task or session that may cause changes, the user selects:
 Runtime: ONLY_CODEX | CODEX_PLUS_CURSOR | ONLY_CURSOR
 Protocol: ORCHESTRATION | IMPLEMENTATION
 ```
+
+Optional header line: `Model tier: T2` (after user `APPROVE MODEL T*`).
 
 | Runtime | Protocol | Control plane | Executor | Protocol document |
 |---|---|---|---|---|
@@ -72,6 +87,36 @@ Rules:
 Legacy alias: `Protocol: CODEX_IMPLEMENTATION` means `Runtime: ONLY_CODEX` +
 `Protocol: IMPLEMENTATION`.
 
+### Unified session mode (`Session: UNIFIED`)
+
+Optional third header line for `ONLY_CURSOR` when the user wants **one chat**
+for orchestration and implementation (see `RUNTIME-D005`):
+
+```text
+Runtime: ONLY_CURSOR
+Protocol: IMPLEMENTATION
+Session: UNIFIED
+You are Agent <id> — <role>
+Task ID: <TASK-ID>
+```
+
+Rules:
+
+- Multi-chat (control plane + separate executor chats) remains the **default**.
+- `Session: UNIFIED` requires **explicit user selection**; never assume it.
+- The agent may plan, update limited control documents after material task-state
+  transitions, and prepare implementation — but **must not edit product code**
+  until the user explicitly approves the implementation slice
+  (e.g. `APPROVE IMPLEMENTATION`, `adelante`, `ejecuta`).
+- After user approval, execute as the assigned agent under
+  `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md`.
+- Evaluation of implementation/QA reports happens in the same chat; no transport
+  to a separate control-plane chat is required unless the user prefers it.
+- **Closure parity (`RUNTIME-D006`):** when QA is accepted, run the full closure
+  sequence in the same session — index evidence, update task packet, release
+  locks in `TASK_REGISTRY.yaml`, update `ORCHESTRATION_STATE.md`, run
+  `npm run control:validate`. Do not mark `VALIDATED` without this sequence.
+
 ## Control Plane Authority
 
 Authorized control-plane identities may update the limited control documents
@@ -82,8 +127,15 @@ listed below after material task-state transitions:
 - **Cursor Control Plane** — `Runtime: ONLY_CURSOR` with
   `Protocol: ORCHESTRATION`
 
-Implementation agents (Agent 1A–6) must **not** update control documents unless
-explicitly in scope.
+**Unified session exception (`Session: UNIFIED`, RUNTIME-D005):** when the user
+explicitly selects unified mode under `ONLY_CURSOR`, the same chat may update
+limited control documents during **PLAN** and **CLOSE** phases even when
+`Protocol: IMPLEMENTATION` is declared — including the full RUNTIME-D006 closure
+sequence after QA `ACCEPT`. Product-code edits remain blocked until the user
+approves the implementation slice.
+
+Implementation agents (Agent 1A–6) in **multi-chat executor chats** must **not**
+update control documents unless explicitly in scope.
 
 ## Limited Control Update Permission
 

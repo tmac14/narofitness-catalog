@@ -25,6 +25,25 @@ export const PRODUCTS_LIST_VIEW_POLICY: UseDataViewModeOptions = {
   hasRowDetail: true,
 };
 
+/**
+ * Suppliers import-profiles panel — cards ≤1023px, table ≥1024px (UX30-D6).
+ * columnCount: 5 (not 3) so tablePolicy treats tablet as tooWide and returns cards
+ * until desktop; the real profile table has 3 columns.
+ */
+export const SUPPLIERS_PROFILES_VIEW_POLICY: UseDataViewModeOptions = {
+  columnCount: 5,
+  complexity: "simple",
+  hasRowDetail: false,
+};
+
+/** Price list diff — cards ≤1023px, table ≥1024px; 6-column comparison semantics. */
+export const PRICE_LIST_DIFF_VIEW_POLICY: UseDataViewModeOptions = {
+  columnCount: 6,
+  complexity: "moderate",
+  requiresComparison: true,
+  hasRowDetail: false,
+};
+
 export function computeDataViewModeFromWidth(
   widthPx: number,
   options: UseDataViewModeOptions,

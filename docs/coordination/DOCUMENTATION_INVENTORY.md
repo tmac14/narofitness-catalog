@@ -2,12 +2,16 @@
 
 Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 
+**Full-tree map:** [`docs/README.md`](../README.md) · machine rules: [`docs/docs_inventory.yaml`](../docs_inventory.yaml) · audit: `python scripts/audit_docs_inventory.py --check`
+
 ## Summary
 
 - The approved five-file legacy coordination batch was fully consolidated and
   removed through validated PR-04.
 - Core control documents, including all canonical execution protocols and
   runtime-symmetry protocols, are English.
+- Completed program closeouts (RUNTIME-SYMMETRY PR-11–18, PROTOCOL-HARDENING PR-24)
+  and PR-K import design history are **archived** under `docs/archive/coordination/`.
 - Remaining active, paused-context, and archive-candidate documents require
   their own explicit lifecycle decisions.
 
@@ -23,6 +27,13 @@ Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 | `EVIDENCE_INDEX.md` | CORE | English | Keep; backfill durable reports |
 | `tasks/**` | CORE | English | Keep; add resumable task packets |
 | `AGENT_REGISTRY.yaml` | CORE | English | Keep |
+| `MODEL_REGISTRY.yaml` | CORE | English | Keep; Ordia model tier profile (ORDIA-D022) |
+| `docs/ordia/MODEL_ROUTING_SPIKE.md` | CORE | English | Keep; model tier routing spike + rate-limit policy (ORDIA-D022) |
+| `docs/ordia/WORKFLOW_INTENTS_SPIKE.md` | CORE | English | Keep; workflow intents spike (ORDIA-D023) |
+| `docs/ordia/SPEC_v0.7.md` | CORE | English | Keep; v0.7 model routing spec |
+| `docs/ordia/SPEC_v0.8.md` | CORE | English | Keep; v0.8 workflow intents spec |
+| `docs/ordia/IMPROVEMENT_PLAN_v0.8.md` | CORE | English | Keep; CLOSED v0.8 program |
+| `docs/coordination/workflows/intents.narofitness.yaml` | ACTIVE | English | Keep; Narofitness workflow intent overlay (ORDIA-D023) |
 | `AGENT_TOPOLOGY_PROTOCOL.md` | CORE | English | Keep |
 | `AGENT_TOPOLOGY_REVIEW.md` | ACTIVE | English | Keep until topology decisions close |
 | `TASK_HISTORY.md` | CORE | English | Keep as durable milestone/recovery index |
@@ -35,6 +46,10 @@ Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 | `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` | CORE | English | Keep as canonical Cursor executor implementation protocol |
 | `RUNTIME_HANDOFF_PROTOCOL.md` | CORE | English | Keep as canonical runtime handoff protocol |
 | `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` | CORE | English | Keep as canonical direct-implementation protocol |
+| `docs/ordia/DAILY_USAGE.md` | CORE | English | Keep; daily usage guide + edge cases (ORDIA-D023 era) |
+| `docs/ordia/README.md` | CORE | English | Keep; Ordia landing index |
+| `docs/ordia/**` | CORE | English | Keep; Ordia product specs, plans, spikes |
+| `ordia.yaml` | CORE | English | Keep; Ordia project manifest (schema v0.2; see `docs/ordia/SPEC_v0.2.md`) |
 | `LEGACY_CONTEXT_MIGRATION_MAP.md` | CORE | English | Keep as the PR-03/PR-04 consolidation and removal certificate |
 | `API_DEPENDENCY_BACKLOG.md` | ACTIVE | English | Keep until contracts/tasks are migrated |
 | `UI_BACKEND_CONTRACTS.md` | ACTIVE | English | Keep |
@@ -49,7 +64,8 @@ Canonical lifecycle inventory after PR-04 legacy coordination cleanup.
 | `SOURCE_CATALOG_PHASE0_DECISIONS.md` | PAUSED_CONTEXT | English | Keep |
 | `SOURCE_CATALOG_PHASE1A_BATCH_PLAN.md` | PAUSED_CONTEXT | English | Keep |
 | `SOURCE_CATALOG_PHASE1A_PAUSE_CHECKPOINT.md` | PAUSED_CONTEXT | English | Keep |
-| `PR-K-family-regex-design.md` | ARCHIVE_CANDIDATE | English | Preserve until import-history backfill is complete |
+| `docs/archive/coordination/**` | ARCHIVED | English | Historical closeouts; do not edit |
+| `docs/archive/coordination/PR-K-family-regex-design.md` | ARCHIVED | English | Import design history (was ARCHIVE_CANDIDATE) |
 | `contracts/**` | ACTIVE | Mostly English | Review individually when owning task closes |
 
 ## Cleanup State

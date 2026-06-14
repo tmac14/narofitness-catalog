@@ -1,0 +1,267 @@
+# Documentation inventory rules — Ordia v0.6 Workstream E (E-01)
+# First matching rule wins. Patterns use forward slashes relative to repo root.
+
+rules:
+  # --- Archive zone ---
+  - pattern: "docs/archive/**"
+    lifecycle: ARCHIVED
+    language: English
+    category: archive
+
+  # --- Ordia product specs ---
+  - pattern: "docs/ordia/README.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-index
+  - pattern: "docs/ordia/DAILY_USAGE.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-guide
+  - pattern: "docs/ordia/SPEC_v0.6.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-spec-baseline
+  - pattern: "docs/ordia/SPEC_v0.7.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-spec-active
+  - pattern: "docs/ordia/SPEC_v0.8.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-spec-active
+  - pattern: "docs/ordia/SPEC_v0.5.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-spec-historical
+  - pattern: "docs/ordia/IMPROVEMENT_PLAN_v0.8.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-plan-active
+  - pattern: "docs/ordia/IMPROVEMENT_PLAN_v0.6.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-plan-historical
+  - pattern: "docs/ordia/PUBLISH_CHECKLIST.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-publish
+  - pattern: "docs/ordia/CODEX_ENFORCEMENT_SPIKE.md"
+    lifecycle: ACTIVE
+    language: English
+    category: ordia-spike
+  - pattern: "docs/ordia/MODEL_ROUTING_SPIKE.md"
+    lifecycle: ACTIVE
+    language: English
+    category: ordia-spike
+  - pattern: "docs/ordia/WORKFLOW_INTENTS_SPIKE.md"
+    lifecycle: ACTIVE
+    language: English
+    category: ordia-spike
+  - pattern: "docs/ordia/SPEC_v0.2.md"
+    lifecycle: CORE
+    language: English
+    category: ordia-spec-historical
+
+  # --- Coordination core ---
+  - pattern: "docs/coordination/ORCHESTRATION_STATE.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/CONTROL_PLANE_RECOVERY_RUNBOOK.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/TASK_EXECUTION_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/TASK_REGISTRY.yaml"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/AGENT_REGISTRY.yaml"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/MODEL_REGISTRY.yaml"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/DECISION_LOG.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/EVIDENCE_INDEX.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/TASK_HISTORY.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/DOCUMENTATION_INVENTORY.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-core
+  - pattern: "docs/coordination/CODEX_ORCHESTRATION_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-protocol
+  - pattern: "docs/coordination/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-protocol
+  - pattern: "docs/coordination/CURSOR_ORCHESTRATION_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-protocol
+  - pattern: "docs/coordination/CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-protocol
+  - pattern: "docs/coordination/RUNTIME_HANDOFF_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-protocol
+  - pattern: "docs/coordination/IMPORT_FDL_MVP_PAGE_AUDIT_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-protocol
+  - pattern: "docs/coordination/AGENT_TOPOLOGY_PROTOCOL.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-governance
+  - pattern: "docs/coordination/LEGACY_CONTEXT_MIGRATION_MAP.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-governance
+
+  # --- Coordination active tracks ---
+  - pattern: "docs/coordination/AGENT_TOPOLOGY_REVIEW.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-track
+  - pattern: "docs/coordination/API_DEPENDENCY_BACKLOG.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-backlog
+  - pattern: "docs/coordination/UI_BACKEND_CONTRACTS.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-backlog
+  - pattern: "docs/coordination/TRANSVERSAL_BACKLOG.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-backlog
+  - pattern: "docs/coordination/IMPORT_PARSER_BACKLOG.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-backlog
+  - pattern: "docs/coordination/CATALOG_PRESENTATION_BACKLOG.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-backlog
+  - pattern: "docs/coordination/APP_PLATFORM_UX_3.0_ROADMAP.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-track
+  - pattern: "docs/coordination/APP_WIDE_UX_SCOPE.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-track
+  - pattern: "docs/coordination/IMPORT_FDL_FULL_QUALITY_PLAN.md"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-track
+  - pattern: "docs/coordination/SOURCE_CATALOG_*"
+    lifecycle: PAUSED_CONTEXT
+    language: English
+    category: coordination-paused
+
+  # --- Coordination workflow overlays (Ordia profile intents) ---
+  - pattern: "docs/coordination/workflows/**"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-workflows
+
+  # --- Coordination tasks, contracts, fixtures ---
+  - pattern: "docs/coordination/tasks/README.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-tasks-index
+  - pattern: "docs/coordination/tasks/TASK_PACKET_TEMPLATE.md"
+    lifecycle: CORE
+    language: English
+    category: coordination-tasks-template
+  - pattern: "docs/coordination/tasks/**"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-task-packet
+  - pattern: "docs/coordination/contracts/**"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-contract
+  - pattern: "docs/coordination/fixtures/**"
+    lifecycle: ACTIVE
+    language: English
+    category: coordination-fixture
+
+  # --- Design ---
+  - pattern: "docs/design/**"
+    lifecycle: ACTIVE
+    language: English
+    category: design
+
+  # --- Root docs/ product & governance ---
+  - pattern: "docs/DOCUMENTATION_GOVERNANCE.md"
+    lifecycle: CORE
+    language: English
+    category: governance
+  - pattern: "docs/ENGINEERING_STANDARDS.md"
+    lifecycle: CORE
+    language: English
+    category: governance
+  - pattern: "docs/docs_inventory.yaml"
+    lifecycle: CORE
+    language: English
+    category: governance-tooling
+  - pattern: "docs/README.md"
+    lifecycle: CORE
+    language: English
+    category: docs-index
+  - pattern: "docs/product/**"
+    lifecycle: ACTIVE
+    language: English
+    category: product
+  - pattern: "docs/qa/**"
+    lifecycle: ACTIVE
+    language: English
+    category: product-qa-index
+  - pattern: "docs/archive/product/**"
+    lifecycle: ARCHIVED
+    language: Spanish
+    category: product-legacy-es
+  - pattern: "docs/API.md"
+    lifecycle: ACTIVE
+    language: English
+    category: product-api
+  - pattern: "docs/BUILDER_BACKEND_DEPENDENCIES.md"
+    lifecycle: ACTIVE
+    language: English
+    category: product-builder
+  - pattern: "docs/CATALOG_LAYOUTS.md"
+    lifecycle: ACTIVE
+    language: English
+    category: product-catalog
+  - pattern: "docs/STRESS_CATALOG_SEED.md"
+    lifecycle: ACTIVE
+    language: English
+    category: product-data
+  - pattern: "docs/SPIKE_RESULTS.md"
+    lifecycle: ARCHIVE_CANDIDATE
+    language: English
+    category: product-spike
+  - pattern: "docs/MANUAL_QA_*"
+    lifecycle: ACTIVE
+    language: English
+    category: product-qa-manual

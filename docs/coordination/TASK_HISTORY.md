@@ -17,6 +17,7 @@ current execution state.
 | Legacy documentation cleanup | Validated | `EVID-CTRL-007`; approved five-file batch removed with zero residual references and valid canonical recovery |
 | Quality tooling foundations and baseline | Validated | `EVID-CTRL-008`; six audit-only quality checks configured, debt measured, strict YAML control added, PR-06 through PR-10 boundaries fixed |
 | Runtime symmetry (PR-11–PR-18) | Validated | `EVID-CTRL-010`; Only Codex / Codex+Cursor / Only Cursor; shared neutral docs; Cursor Control Plane; handoff protocol |
+| Ordia model tier routing v0.7 (ORDIA-D022) | Validated | `EVID-ORDIA-D022-001`; tiers T0–T3, hooks, validator, rate limits; closeout `ORDIA-D022-MODEL-ROUTING-V07-CLOSEOUT.md` |
 
 ## Import / PIM Milestones
 
@@ -63,9 +64,13 @@ current execution state.
 | Phase 0 foundations | Validated | Breakpoints/tokens safe; locks released |
 | Phase 1 shell/navigation | Validated | Responsive navigation and accessibility correction complete |
 | Phase 2A Products | Validated | Responsive cards/sheet; focus restoration validated |
+| Phase 2B Suppliers + Categories | Validated | `EVID-UX30-P2B-001`; P2B-N1/N2 non-blocking P2 |
+| Phase 2C Price Lists | Validated | `EVID-UX30-P2C-001`; P2C-N1/N2 non-blocking P2 |
+| Phase 2D shared list primitives | Validated | `EVID-UX30-P2D-001`; P2D-N1/N2/N3 non-blocking P2; Phase 2 list track complete |
 | App Chrome 3.0 top bar | Validated | Brand lockup, local fonts, route context; `APP-CHROME-3.0-MAIN-TOPBAR-BRAND-SYSTEM` |
+| App Chrome 3.1 palette + route actions | Validated | Command palette, top-bar route-actions API, catalog Preview/Export wiring; `APP-CHROME-3.1-TOPBAR-PALETTE-CONTEXT-ACTIONS` |
 | Root public assets + logo promotion | Validated | Canonical `public/` tree, 17 logos promoted; `PUBLIC-ASSETS-ROOT-AND-LOGO-PROMOTION` |
-| Next Phase 2 slice | Waiting for user decision | `UX30-D7`: Phase 2B vs Phase 2C |
+| Next UX30 slice | Waiting for user decision | Phase 2 complete; Phase 3 gate open |
 
 ## Paused / Recoverable Tracks
 

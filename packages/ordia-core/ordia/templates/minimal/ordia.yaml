@@ -1,0 +1,49 @@
+# Ordia greenfield template — render with ordia init
+version: "0.2"
+profile: "{{PROFILE}}"
+
+control:
+  root: docs/control
+  state: ORCHESTRATION_STATE.md
+  taskRegistry: TASK_REGISTRY.yaml
+  agentRegistry: AGENT_REGISTRY.yaml
+  decisionLog: DECISION_LOG.md
+  evidenceIndex: EVIDENCE_INDEX.md
+  taskPackets: tasks
+  projectProfile: AGENTS.md
+
+session:
+  runtimes:
+    - ONLY_CODEX
+    - CODEX_PLUS_CURSOR
+    - ONLY_CURSOR
+  protocols:
+    - ORCHESTRATION
+    - IMPLEMENTATION
+  modes:
+    - MULTI_CHAT
+    - UNIFIED
+
+enforcement:
+  productRoots:
+    - "{{PRODUCT_ROOT}}"
+  controlRoots:
+    - docs/control/
+    - docs/ordia/
+    - .cursor/rules/
+    - .cursor/hooks/
+    - AGENTS.md
+    - ordia.yaml
+  qaEvidenceRoots:
+    - temp/qa/
+  orchestrationBlocksProduct: true
+  unifiedRequiresApproval: true
+
+closure:
+  validator: npm run ordia:validate
+
+models:
+  registry: docs/control/MODEL_REGISTRY.yaml
+  telemetryRoot: temp/qa/model-usage
+  defaultTier: T1
+  requireApprovalAbove: T1

@@ -1,0 +1,73 @@
+---
+description: Mandatory Runtime + Protocol header parsing and protocol routing for every Cursor session
+alwaysApply: true
+---
+
+# Runtime and Protocol Header (Mandatory)
+
+Before any change-capable action (edit, create, delete, run migrations, update control docs, commits), establish session mode from the user message or live state.
+
+## Control store (`ordia.yaml`)
+
+Resolve **`{controlRoot}`** from `ordia.yaml` → `control.root` before reading live state or protocols.
+
+## Header format (canonical)
+
+The user may declare mode at the start of any message:
+
+```text
+Runtime: ONLY_CODEX | CODEX_PLUS_CURSOR | ONLY_CURSOR
+Protocol: ORCHESTRATION | IMPLEMENTATION
+```
+
+Optional executor lines (required for `IMPLEMENTATION` under Cursor):
+
+```text
+You are Agent <id> — <role>
+Mode: Agent mode | Plan mode | QA mode | Audit mode
+Task ID: <TASK-ID>
+Model tier: T2   (optional — after APPROVE MODEL T*)
+Ordia intent: implement_feature   (optional — ORDIA-D023; emit via ordia prompt emit)
+Session: UNIFIED   (optional — same-chat orchestration + implementation; RUNTIME-D005)
+Ordia profile: <id>   (optional — must match ordia.yaml profile when both declared)
+```
+
+Legacy alias: `Protocol: CODEX_IMPLEMENTATION` means `Runtime: ONLY_CODEX` + `Protocol: IMPLEMENTATION`.
+
+## Unified session (`Session: UNIFIED`)
+
+When present with `Runtime: ONLY_CURSOR` + `Protocol: IMPLEMENTATION`:
+
+- Read `{controlRoot}/CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` (or `{controlRoot}/protocols/CURSOR_IMPLEMENTATION.md`) for execution; apply unified rules from `{controlRoot}/CURSOR_ORCHESTRATION_PROTOCOL.md` §5.1 for planning and approval gates.
+- **Hard stop:** no product-code edits until the user explicitly approves the implementation plan/slice.
+- **Closure parity (`RUNTIME-D006`):** after QA `ACCEPT`, run evidence index, task packet, registry/state, lock release, and project validator before `VALIDATED`.
+
+## Parsing rules
+
+1. Parse `Runtime:` and `Protocol:` case-insensitively from the **current user message** first.
+2. If either is missing, read `{controlRoot}/ORCHESTRATION_STATE.md` §0 (`control_plane_runtime`, `active_protocol`).
+3. If still missing or `NONE_SELECTED_FOR_NEXT_TASK`, **stop and ask** for both values. Do not edit files, run destructive commands, or update control documents.
+4. Ask mode (`Protocol` unset, question-only) may answer read-only after recovery bootstrap; still do not edit.
+
+## Protocol routing matrix
+
+Paths below use **`{controlRoot}`** from `ordia.yaml`. Prefer `{controlRoot}/protocols/<name>.md` when that directory exists (`ORDIA-D007`).
+
+| Runtime | Protocol | Read this protocol document |
+|---|---|---|
+| `ONLY_CODEX` | `ORCHESTRATION` | `{controlRoot}/CODEX_ORCHESTRATION_PROTOCOL.md` |
+| `ONLY_CODEX` | `IMPLEMENTATION` | `{controlRoot}/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` |
+| `CODEX_PLUS_CURSOR` | `ORCHESTRATION` | `{controlRoot}/CODEX_ORCHESTRATION_PROTOCOL.md` |
+| `CODEX_PLUS_CURSOR` | `IMPLEMENTATION` | `{controlRoot}/CODEX_SELF_IMPLEMENTATION_PROTOCOL.md` |
+| `ONLY_CURSOR` | `ORCHESTRATION` | `{controlRoot}/CURSOR_ORCHESTRATION_PROTOCOL.md` |
+| `ONLY_CURSOR` | `IMPLEMENTATION` | `{controlRoot}/CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md` |
+
+After routing, **read the selected protocol document** and follow it for the remainder of the session task. Shared gates live in `{controlRoot}/TASK_EXECUTION_PROTOCOL.md` when present.
+
+## Hard stops
+
+- Never mix `ORCHESTRATION` and `IMPLEMENTATION` behaviors in one task without explicit user approval — **`Session: UNIFIED` (RUNTIME-D005) is explicit approval** for sequential phases in one chat.
+- Never implement product code while `Protocol: ORCHESTRATION`.
+- Never implement product code in UNIFIED mode until the user explicitly approves the implementation slice (`APPROVE IMPLEMENTATION` or equivalent).
+- Never orchestrate (generate batch prompts, update registry state) while `Protocol: IMPLEMENTATION` unless explicitly in scope — **UNIFIED PLAN and CLOSE phases are in scope** per RUNTIME-D005/D006 and `AGENTS.md`.
+- Never invent runtime, protocol, task status, locks, or evidence.

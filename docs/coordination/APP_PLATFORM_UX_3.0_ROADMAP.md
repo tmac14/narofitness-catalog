@@ -22,14 +22,16 @@
 | **Phase 0** | **`IMPLEMENTED` / `VALIDATED`** — QA **`PASS_WITH_NOTES`** |
 | **Phase 1** | **`IMPLEMENTED` / `VALIDATED`** — QA **`PASS_WITH_NOTES`** |
 | **Phase 2A** | **`IMPLEMENTED` / `VALIDATED`** — QA **`PASS`** |
-| **Current phase** | **Phase 2 — next slice** — **`NEEDS_DECISION`** (2B vs 2C sequence) |
+| **Current phase** | **Phase 3 — next slice** — **`NEEDS_DECISION`** (Phase 2 complete) |
 | **Phase 1 decisions** | **UX30-D1**, **UX30-D4** — **`DECIDED`** (2026-06-12) |
 | **Phase 2A decision** | **UX30-D6** — Products cards/sheet — **`DECIDED`** (user-approved) |
 | **Phase 0 locks** | **RELEASED** (2026-06-12) |
 | **Phase 1 locks** | **`LOCK-UX30-P1-SHELL`** — **RELEASED** (2026-06-12) |
 | **Phase 2A locks** | **RELEASED** (2026-06-12) — see § Phase 2A |
-| **Phase 2B/2C** | **`PLANNED` / `NOT_AUTHORIZED`** — **BLOCKED** |
-| **Phase 2D** | **`DEFERRED` / `NOT_AUTHORIZED`** — **BLOCKED** |
+| **Phase 2B** | **`VALIDATED`** (2026-06-13) |
+| **Phase 2C** | **`VALIDATED`** (2026-06-13) |
+| **Phase 2D** | **`VALIDATED`** (2026-06-14) — Phase 2 list track **COMPLETE** |
+| **Phase 3** | **`PLANNED` / `NOT_AUTHORIZED`** — awaiting slice selection |
 
 ### Phase 2A verification (Agent 1A QA)
 
@@ -84,10 +86,10 @@
 | **0** | Foundations (tokens, responsive primitives) | **`IMPLEMENTED` / `VALIDATED`** — locks **RELEASED** |
 | **1** | Shell / navigation | **`IMPLEMENTED` / `VALIDATED`** — lock **RELEASED** |
 | **2A** | Products responsive list | **`IMPLEMENTED` / `VALIDATED`** — locks **RELEASED** |
-| **2B** | Suppliers / Categories | **`PLANNED` / `NOT_AUTHORIZED`** |
-| **2C** | PriceLists | **`PLANNED` / `NOT_AUTHORIZED`** |
-| **2D** | Shared list primitives | **`DEFERRED` / `NOT_AUTHORIZED`** |
-| 3 | Forms & detail surfaces | Not locked yet |
+| **2B** | Suppliers / Categories | **`VALIDATED`** (2026-06-13) |
+| **2C** | PriceLists | **`VALIDATED`** (2026-06-13) |
+| **2D** | Shared list primitives | **`VALIDATED`** (2026-06-14) — Phase 2 list track **COMPLETE** |
+| **3** | Forms & detail surfaces | **`PLANNED` / `NOT_AUTHORIZED`** — awaiting slice selection |
 | 4 | Import flows | Not locked yet — **needs user decision** (mobile Import Review scope) |
 | 5 | Catalogue surfaces | Not locked yet — **needs user decision** (mobile Catalog Editor scope) |
 | 6 | Polish & a11y hardening | Not locked yet |
@@ -172,16 +174,16 @@ Future shell edits require a **new Agent 3 lock** per task.
 
 ## Phase 2 plan — APPROVED_WITH_NOTES (2026-06-12)
 
-Phase 2 split into sub-phases **2A–2D**. **2A** complete; **2B/2C/2D** not authorized.
+Phase 2 split into sub-phases **2A–2D**. **2A–2D** complete; Phase 2 list track **COMPLETE** (2026-06-14).
 
 | Sub-phase | Surface | Status |
 |-----------|---------|--------|
 | **2A** | Products responsive list | **`IMPLEMENTED` / `VALIDATED`** |
-| **2B** | Suppliers / Categories | **`PLANNED` / `NOT_AUTHORIZED`** — **BLOCKED** |
-| **2C** | PriceLists | **`PLANNED` / `NOT_AUTHORIZED`** — **BLOCKED** |
-| **2D** | Shared list primitives | **`DEFERRED` / `NOT_AUTHORIZED`** — **BLOCKED** |
+| **2B** | Suppliers / Categories | **`VALIDATED`** (2026-06-13) |
+| **2C** | PriceLists | **`VALIDATED`** (2026-06-13) |
+| **2D** | Shared list primitives | **`VALIDATED`** (2026-06-14) |
 
-**Next UI gate:** User decision — **Phase 2B** (Suppliers/Categories) vs **Phase 2C** (PriceLists) sequence. No implementation until locks registered.
+**Next UI gate:** User decision — **Phase 3** slice selection. No implementation until plan approved and locks registered.
 
 ---
 
@@ -219,10 +221,8 @@ Future Products responsive edits require a **new Agent 3 lock** per task.
 
 | Item | Reason |
 |------|--------|
-| Phase 2B Suppliers/Categories locks | **NOT_AUTHORIZED** |
-| Phase 2C PriceLists locks | **NOT_AUTHORIZED** |
-| Phase 2D shared primitives | **DEFERRED / NOT_AUTHORIZED** |
-| ProductDetail / Import / Dashboard / Settings | Out of P2A scope |
+| Phase 3 UX30 slice | **NOT_AUTHORIZED** — awaiting user/orchestration gate |
+| ProductDetail / Import / Dashboard / Settings | Out of Phase 2 scope |
 | Catalogue Builder lock | Agent 1A default ownership — no 1B lock |
 | `components/ui/**` wildcard | Per-file lock only when needed |
 | Preview / Export frontend | Agent 1A — Agent 6 advisory only |

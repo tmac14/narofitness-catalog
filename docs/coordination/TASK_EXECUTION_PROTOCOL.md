@@ -42,6 +42,7 @@ DISCOVERY
 -> PLAN_READY
 -> APPROVED
 -> LOCKS_CONFIRMED
+-> MODEL_TIER_APPROVED (change-capable work above T0; ORDIA-D022)
 -> READY_FOR_IMPLEMENTATION
 -> IN_FLIGHT
 -> IMPLEMENTED
@@ -52,8 +53,8 @@ DISCOVERY
 
 Rules:
 
-- No implementation before `APPROVED`, `LOCKS_CONFIRMED`, and
-  `READY_FOR_IMPLEMENTATION`.
+- No implementation before `APPROVED`, `LOCKS_CONFIRMED`, `MODEL_TIER_APPROVED`
+  (when recommended tier is above T0), and `READY_FOR_IMPLEMENTATION`.
 - A small task may use a concise plan, but diagnosis, scope, validation, and
   approval must still be explicit in its task packet.
 - The user's instruction may count as plan approval only when it explicitly
@@ -173,7 +174,32 @@ transition:
 npm run control:validate
 ```
 
-## 9. Minimum State Transition Update
+## 9. Task Closure Gate (RUNTIME-D006)
+
+Every runtime and session mode — including `Session: UNIFIED` — must execute
+this sequence **before** marking a task `VALIDATED` or `CLOSED`. QA `ACCEPT`
+(or `ACCEPT_WITH_NOTES` when evidence is complete) is the entry gate.
+
+| Step | Action |
+|---|---|
+| 1 | Confirm QA verdict is `ACCEPT` or equivalent with complete mandatory evidence |
+| 2 | Update `EVIDENCE_INDEX.md` with durable evidence pointers |
+| 3 | Update the active task packet (status, evidence, next safe action) |
+| 4 | Update `TASK_REGISTRY.yaml` — status, lock release, queue moves |
+| 5 | Update `ORCHESTRATION_STATE.md` §0 summary |
+| 6 | Run `npm run control:validate` — must PASS |
+
+Rules:
+
+- `IMPLEMENTED` is not `VALIDATED`; do not skip steps because the work "looks done".
+- Unified sessions run the same sequence in the same chat — no separate control-plane chat required.
+- Multi-chat runtimes: the control plane runs steps 2–6 after evaluating the executor/QA report.
+- Codex-only paths follow the same checklist under `Protocol: ORCHESTRATION`.
+
+CTRL-D005 (separate executor and validator when practical) applies during QA;
+UNIFIED may use sequential agents in one chat when that is the user's chosen mode.
+
+## 10. Minimum State Transition Update
 
 After a material transition:
 
@@ -185,7 +211,7 @@ After a material transition:
 These files require normal documentation permission except for the limited
 control-update permission explicitly defined in `AGENTS.md`.
 
-## 10. Required Final State
+## 11. Required Final State
 
 Every orchestration response or direct implementation result must end with a
 clear state and next action:

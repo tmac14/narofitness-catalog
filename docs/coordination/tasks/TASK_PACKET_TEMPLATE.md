@@ -8,6 +8,10 @@
 - Validator:
 - Status:
 - Priority:
+- model_tier_min: (optional registry override, e.g. T2)
+- preferred_intent: (optional workflow intent id — ORDIA-D023, e.g. implement_feature)
+- model_tier: (approved tier after user APPROVE MODEL T*)
+- model_approval: (user phrase / date)
 - Created:
 - Last updated:
 

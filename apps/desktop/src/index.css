@@ -436,40 +436,71 @@
     background-color: hsl(var(--row-hover-bg));
   }
 
-  .product-master-card-list__items {
+  .responsive-data-card-list__items {
     @apply divide-y divide-border/70;
   }
 
-  .product-master-card {
+  .responsive-data-card {
     @apply flex flex-col gap-3 px-4 py-4;
   }
 
-  .product-master-card--even {
+  .responsive-data-card--even {
     @apply bg-card;
   }
 
-  .product-master-card--odd {
+  .responsive-data-card--odd {
     @apply bg-muted/30;
   }
 
-  .product-master-card__header {
+  .responsive-data-card--only_a {
+    background-color: hsl(var(--row-info-a-bg));
+  }
+
+  .responsive-data-card--only_b {
+    background-color: hsl(var(--row-info-b-bg));
+  }
+
+  .responsive-data-card__header {
     @apply flex items-start gap-3;
   }
 
-  .product-master-card__meta {
+  .responsive-data-card__header--stacked {
+    @apply block space-y-1;
+  }
+
+  .responsive-meta-grid {
     @apply grid gap-2 text-sm;
   }
 
-  .product-master-card__meta-row {
+  .responsive-meta-row {
     @apply grid grid-cols-[5.5rem_minmax(0,1fr)] items-center gap-2;
   }
 
-  .product-master-card__meta-row dt {
+  .responsive-meta-row dt {
     @apply text-xs font-medium uppercase tracking-wide text-muted-foreground;
   }
 
-  .product-master-card__meta-row dd {
+  .responsive-meta-row dd {
     @apply min-w-0;
+  }
+
+  .responsive-data-card__footer {
+    @apply flex flex-wrap items-center gap-2;
+  }
+
+  .responsive-data-card__actions {
+    @apply flex flex-wrap items-center gap-2;
+  }
+
+  .responsive-data-card__icon-actions [aria-label="Ver origen PDF"] {
+    min-width: var(--touch-target-min);
+    min-height: var(--touch-target-min);
+    width: var(--touch-target-min);
+    height: var(--touch-target-min);
+  }
+
+  .product-master-card__title-block {
+    @apply min-w-0 flex-1;
   }
 
   .product-master-card__category {
@@ -486,17 +517,6 @@
 
   .product-master-card__category-single {
     @apply text-sm font-medium text-foreground;
-  }
-
-  .product-master-card__actions {
-    @apply flex flex-wrap items-center gap-2;
-  }
-
-  .product-master-card__icon-actions [aria-label="Ver origen PDF"] {
-    min-width: var(--touch-target-min);
-    min-height: var(--touch-target-min);
-    width: var(--touch-target-min);
-    height: var(--touch-target-min);
   }
 
   .product-variant-card {
@@ -540,6 +560,23 @@
     min-height: var(--touch-target-min);
     width: var(--touch-target-min);
     height: var(--touch-target-min);
+  }
+
+  .category-tree-node {
+    @apply mb-1;
+  }
+
+  .category-tree-node__children {
+    @apply ml-2 mt-1 pl-2;
+  }
+
+  .category-tree-node__menu-btn {
+    min-width: var(--touch-target-min);
+    min-height: var(--touch-target-min);
+  }
+
+  .price-lists-toolbar__filters {
+    @apply w-full;
   }
 
   .app-status-bar {
@@ -671,35 +708,6 @@
     }
   }
 
-  .app-topbar__context {
-    display: none;
-    min-width: 0;
-    justify-content: center;
-    padding-inline: 0.5rem;
-  }
-
-  @media (min-width: 640px) {
-    .app-topbar__context {
-      display: flex;
-    }
-  }
-
-  .app-topbar__route-label {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 0.8125rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: var(--nr-text-muted);
-  }
-
-  @media (min-width: 1024px) {
-    .app-topbar__route-label {
-      font-size: 0.875rem;
-    }
-  }
-
   .app-topbar__control-btn:focus-visible {
     outline: none;
     box-shadow:
@@ -707,35 +715,44 @@
       0 0 0 4px hsl(var(--ring));
   }
 
+  .app-topbar__drag-spacer {
+    align-self: stretch;
+    min-height: 1px;
+  }
+
+  .app-topbar__actions {
+    min-width: 0;
+  }
+
+  .app-topbar__route-actions:empty {
+    display: none;
+  }
+
+  .app-topbar__palette-trigger {
+    width: var(--topbar-palette-trigger-width);
+    min-width: var(--topbar-palette-trigger-min-width);
+    max-width: min(var(--topbar-palette-trigger-width), 42vw);
+    justify-content: space-between;
+  }
+
+  @media (max-width: 639px) {
+    .app-topbar__palette-trigger {
+      width: auto;
+      min-width: var(--topbar-palette-trigger-min-width);
+      max-width: none;
+    }
+  }
+
+  .app-command-palette .app-command-palette__results {
+    scrollbar-gutter: stable;
+  }
+
   .brand-lockup {
     display: flex;
     min-width: 0;
     align-items: center;
-    gap: 10px;
     user-select: text;
     -webkit-user-select: text;
-  }
-
-  .brand-lockup__mark {
-    flex-shrink: 0;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.375rem;
-    object-fit: cover;
-  }
-
-  @media (min-width: 1024px) {
-    .brand-lockup__mark {
-      width: 2.25rem;
-      height: 2.25rem;
-    }
-  }
-
-  .brand-lockup__text {
-    display: flex;
-    min-width: 0;
-    flex-direction: column;
-    gap: 3px;
   }
 
   .brand-lockup__title {
@@ -769,38 +786,40 @@
     color: var(--brand-lockup-catalog);
   }
 
-  .brand-lockup__subtitle {
+  .brand-lockup__byline {
     display: none;
-    margin: 0;
-    font-family: Rajdhani, system-ui, sans-serif;
-    font-size: 0.5625rem;
+    font-size: 0.6875rem;
     font-weight: 500;
-    line-height: 1;
     letter-spacing: 0.22em;
-    white-space: nowrap;
+    text-transform: none;
   }
 
   @media (min-width: 640px) and (orientation: landscape) {
-    .brand-lockup__subtitle {
-      display: block;
-      font-size: 0.59375rem;
+    .brand-lockup__byline {
+      display: inline;
+      font-size: 0.71875rem;
     }
   }
 
   @media (min-width: 1024px) {
-    .brand-lockup__subtitle {
-      display: block;
-      font-size: 0.625rem;
+    .brand-lockup__byline {
+      display: inline;
+      font-size: 0.75rem;
     }
   }
 
-  .brand-lockup__subtitle-by {
+  .brand-lockup__byline-sep {
+    color: var(--brand-lockup-by);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-lockup__byline-by {
     color: var(--brand-lockup-by);
     text-transform: lowercase;
   }
 
-  .brand-lockup__subtitle-brand {
-    margin-left: 0.35em;
+  .brand-lockup__byline-brand {
     color: var(--brand-lockup-narofitness);
     text-transform: uppercase;
   }

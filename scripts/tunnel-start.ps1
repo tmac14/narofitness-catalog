@@ -2,8 +2,18 @@ param(
     [ValidateRange(1024, 65535)]
     [int]$UiPort = 3014,
     [ValidateRange(10, 120)]
-    [int]$TimeoutSeconds = 45
+    [int]$TimeoutSeconds = 45,
+    [switch]$KeepDev,
+    [switch]$StopAllTunnels
 )
+
+$stopFrontendArgs = @{ Quiet = $true }
+if ($KeepDev) {
+    $stopFrontendArgs.KeepDev = $true
+}
+if (-not $StopAllTunnels) {
+    $stopFrontendArgs.KeepOtherTunnels = $true
+}
 
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $PSScriptRoot
@@ -24,7 +34,7 @@ trap {
             Stop-Process -Id $managedProcess.Id -Force -ErrorAction SilentlyContinue
         }
     }
-    & (Join-Path $PSScriptRoot "stop-narofitness-frontend.ps1") -Quiet
+    & (Join-Path $PSScriptRoot "stop-narofitness-frontend.ps1") @stopFrontendArgs
     Remove-Item -LiteralPath $StatePath -Force -ErrorAction SilentlyContinue
     [Console]::Error.WriteLine("ERROR: $message")
     exit 1
@@ -131,7 +141,13 @@ function Get-ListeningProcessId {
 
 New-Item -ItemType Directory -Force -Path $RuntimeDir | Out-Null
 
-& (Join-Path $PSScriptRoot "stop-narofitness-frontend.ps1") -Quiet
+if ($KeepDev) {
+    Write-Host "==> Conservando npm run dev en ejecucion (-KeepDev)." -ForegroundColor DarkGray
+}
+if (-not $StopAllTunnels) {
+    Write-Host "==> Conservando otros tunnels cloudflared (-KeepOtherTunnels por defecto)." -ForegroundColor DarkGray
+}
+& (Join-Path $PSScriptRoot "stop-narofitness-frontend.ps1") @stopFrontendArgs
 Remove-Item -LiteralPath $StatePath -Force -ErrorAction SilentlyContinue
 
 try {

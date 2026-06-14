@@ -22,6 +22,8 @@ htmlcov/
 data/
 packaging/dist/
 packaging/build/
+packages/ordia-core/build/
+packages/**/dist/
 packaging/.cache/
 packaging/postgres/bin/
 packaging/postgres/lib/

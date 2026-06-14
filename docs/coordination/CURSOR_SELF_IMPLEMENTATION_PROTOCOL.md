@@ -27,7 +27,10 @@ You are Agent [X] — [role].
 ```
 
 Do not mix orchestration and implementation in one chat without explicit user
-approval.
+approval. When the user selects **`Session: UNIFIED`** (`RUNTIME-D005`), unified
+mode is authorized: plan and orchestrate in the same chat, but **do not edit
+product code** until the user explicitly approves the implementation slice
+(e.g. `APPROVE IMPLEMENTATION`).
 
 ## 2. Objective
 
@@ -225,7 +228,7 @@ Implementation is not validated without:
 
 ## 14. Required Final Report
 
-Return this report to the user for handoff to the control plane:
+Return this report for evaluation:
 
 1. **Verdict:** `IMPLEMENTED_AND_VALIDATED` | `IMPLEMENTED_VALIDATION_PENDING` | `BLOCKED`
 2. **Agent identity and mode**
@@ -237,17 +240,51 @@ Return this report to the user for handoff to the control plane:
 8. No-legacy/no-hardcode confirmation
 9. Risks, follow-ups, and exact remaining work
 
+10. **Model usage** (mandatory — every prompt/task deliverable; ORDIA-D022):
+
+```markdown
+## Model usage
+- **Model used:** composer-2.5 (Cursor)
+- **Approved tier:** T2
+- **Tokens — prompt:** 12,400 (est.) | **completion:** 3,200 (est.) | **total:** 15,600 (est.)
+- **Context peak:** 85% (hook) / unknown (Codex)
+- **Economic rating:** medium (mediana) — scale: light/leve · medium/mediana · heavy/pesada
+- **Tier escalation:** none | T1->T2 (reason)
+- **Cost note:** within band | exceeded (justify)
+```
+
+Template command: `ordia model usage-template`
+
+### Multi-chat (`ONLY_CURSOR` default)
+
+Return the report to the user for handoff to the Cursor Control Plane (Chat A).
 Do not decide the next orchestration step. Wait for control-plane evaluation.
+
+### Unified session (`Session: UNIFIED`)
+
+Return the report to the user for evaluation in the **same chat**. After QA
+`ACCEPT`, execute the RUNTIME-D006 closure checklist in
+`TASK_EXECUTION_PROTOCOL.md` before marking `VALIDATED` — do not defer closure
+to a separate control-plane chat unless the user switches to multi-chat.
 
 ## 15. Handoff to Control Plane
 
 After reporting:
 
 - do not generate prompts for other agents;
-- do not update `TASK_REGISTRY.yaml` or live state;
 - do not start the next batch;
+
+### Multi-chat only
+
+- do not update `TASK_REGISTRY.yaml` or live state;
 - return the report to Chat A (Cursor Control Plane) or the active Codex
   orchestrator.
+
+### Unified session (`Session: UNIFIED`)
+
+- **EXECUTE phase:** do not update registry or live state (report only).
+- **CLOSE phase (after QA ACCEPT):** update control documents per RUNTIME-D006
+  and `AGENTS.md` limited control-update permission.
 
 For runtime switches, see `RUNTIME_HANDOFF_PROTOCOL.md`.
 

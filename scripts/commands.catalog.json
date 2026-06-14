@@ -9,12 +9,167 @@
     { "goal": "Tests API unitarios", "command": "test:api" },
     { "goal": "Instalador Windows", "command": "pack:release" }
   ],
+  "workflowIntents": [
+    {
+      "goal": "Recuperar sesión tras pérdida de contexto",
+      "intent": "recover",
+      "emitCommand": "npm run ordia:prompt -- emit --intent recover",
+      "relatedCommands": ["control:validate"]
+    },
+    {
+      "goal": "Implementar feature aprobada",
+      "intent": "implement_feature",
+      "emitCommand": "npm run ordia:prompt -- emit --intent implement_feature --task <TASK-ID>",
+      "relatedCommands": ["ordia:model:recommend", "control:validate"]
+    },
+    {
+      "goal": "Corregir bug",
+      "intent": "fix_bug",
+      "emitCommand": "npm run ordia:prompt -- emit --intent fix_bug --task <TASK-ID>",
+      "relatedCommands": ["ordia:model:recommend", "control:validate"]
+    },
+    {
+      "goal": "Plan Mode — diagnóstico y plan",
+      "intent": "plan",
+      "emitCommand": "npm run ordia:prompt -- emit --intent plan --task <TASK-ID>",
+      "relatedCommands": []
+    },
+    {
+      "goal": "Aprobar tier de modelo",
+      "intent": "approve_model",
+      "emitCommand": "npm run ordia:prompt -- emit --intent approve_model --task <TASK-ID>",
+      "relatedCommands": ["ordia:model:recommend"]
+    },
+    {
+      "goal": "Generar prompt executor (orquestación)",
+      "intent": "orchestrate_batch",
+      "emitCommand": "npm run ordia:prompt -- emit --intent orchestrate_batch --task <TASK-ID>",
+      "relatedCommands": ["ordia:model:recommend", "ordia:prompt"]
+    },
+    {
+      "goal": "QA read-only",
+      "intent": "qa",
+      "emitCommand": "npm run ordia:prompt -- emit --intent qa --task <TASK-ID>",
+      "relatedCommands": []
+    },
+    {
+      "goal": "Cerrar tarea (RUNTIME-D006)",
+      "intent": "close_task",
+      "emitCommand": "npm run ordia:prompt -- emit --intent close_task --task <TASK-ID>",
+      "relatedCommands": ["control:validate", "ordia:validate:strict-model"]
+    },
+    {
+      "goal": "IMPORT-FDL regression batch",
+      "intent": "import_regression",
+      "emitCommand": "npm run ordia:prompt -- emit --intent import_regression --task <TASK-ID>",
+      "relatedCommands": ["ordia:model:recommend", "control:validate"]
+    }
+  ],
   "localUrls": {
     "api": "http://127.0.0.1:8000/docs",
     "ui": "http://127.0.0.1:5173",
     "postgresHostPort": 5433
   },
   "sections": [
+    {
+      "id": "ordia",
+      "title": "Ordia (control portable)",
+      "commands": [
+        {
+          "name": "ordia",
+          "description": "Ordia CLI entrypoint (init, validate, doctor, help, commands).",
+          "examples": ["npm run ordia -- help --list", "npm run ordia -- commands validate"],
+          "underlyingScript": "scripts/ordia_cli.py",
+          "related": ["ordia:init", "ordia:validate", "ordia:doctor"]
+        },
+        {
+          "name": "ordia:init",
+          "description": "Scaffold ordia.yaml and minimal control store for a greenfield repo.",
+          "examples": [
+            "npm run ordia:init -- --profile demo",
+            "npm run ordia:init -- --with-cursor --with-docs"
+          ],
+          "underlyingScript": "scripts/ordia_cli.py init",
+          "flags": [
+            { "name": "--with-cursor", "description": "Install Cursor hooks and ordia rules" },
+            { "name": "--with-docs", "description": "Copy ordia-core package docs to docs/ordia/package/" },
+            { "name": "--template", "description": "Scaffold template (minimal | monorepo)" },
+            { "name": "--force", "description": "Allow init when ordia.yaml already exists" }
+          ],
+          "related": ["ordia:validate", "ordia:doctor"]
+        },
+        {
+          "name": "ordia:validate",
+          "description": "Validate ordia.yaml manifest and optional full project control checks.",
+          "examples": [
+            "npm run ordia:validate",
+            "npm run ordia:validate -- --project",
+            "npm run ordia:validate -- --strict-closure"
+          ],
+          "underlyingScript": "scripts/ordia_cli.py validate",
+          "flags": [
+            { "name": "--project", "description": "Run manifest-driven registry/state validation" },
+            { "name": "--strict-profile", "description": "Fail when session profile mismatches ordia.yaml" },
+            { "name": "--strict-closure", "description": "Fail when VALIDATED tasks miss closure evidence" },
+            { "name": "--strict-model-report", "description": "Fail when VALIDATED tasks lack Model usage evidence" }
+          ],
+          "related": ["control:validate", "ordia:doctor"]
+        },
+        {
+          "name": "ordia:validate:strict-model",
+          "description": "Project validation with strict Model usage evidence gate (ORDIA-D022).",
+          "examples": ["npm run ordia:validate:strict-model"],
+          "underlyingScript": "scripts/ordia_cli.py validate --project --strict-model-report",
+          "related": ["ordia:validate", "ordia:model:usage-template"]
+        },
+        {
+          "name": "ordia:model:recommend",
+          "description": "Recommend Ordia model tier for a task (ORDIA-D022).",
+          "examples": [
+            "npm run ordia -- model recommend --task APP-PLATFORM-UX-3.0-PHASE-2C",
+            "npm run ordia -- model recommend --task IMPORT-FDL-FULL-QUALITY-NEXT --json"
+          ],
+          "underlyingScript": "scripts/ordia_cli.py model recommend",
+          "related": ["ordia:model:usage-template", "ordia:validate"]
+        },
+        {
+          "name": "ordia:model:usage-template",
+          "description": "Print canonical Model usage section for executor deliverables.",
+          "examples": ["npm run ordia -- model usage-template"],
+          "underlyingScript": "scripts/ordia_cli.py model usage-template",
+          "related": ["ordia:model:recommend"]
+        },
+        {
+          "name": "ordia:workflow:list",
+          "description": "List Ordia workflow intents (ORDIA-D023).",
+          "examples": [
+            "npm run ordia:workflow:list",
+            "npm run ordia -- workflow list --category work",
+            "npm run ordia -- workflow describe implement_feature"
+          ],
+          "underlyingScript": "scripts/ordia_cli.py workflow list",
+          "related": ["ordia:prompt"]
+        },
+        {
+          "name": "ordia:prompt",
+          "description": "Emit standardized Ordia prompt blocks (header + body + checklist).",
+          "examples": [
+            "npm run ordia:prompt -- emit --intent recover",
+            "npm run ordia:prompt -- emit --intent implement_feature --task APP-PLATFORM-UX-3.0-PHASE-2D",
+            "npm run ordia:prompt -- header --intent plan --task <TASK-ID>"
+          ],
+          "underlyingScript": "scripts/ordia_cli.py prompt",
+          "related": ["ordia:workflow:list", "ordia:model:recommend"]
+        },
+        {
+          "name": "ordia:doctor",
+          "description": "Check Ordia setup: manifest, PyYAML, Cursor hooks, and ordia-core availability.",
+          "examples": ["npm run ordia:doctor"],
+          "underlyingScript": "scripts/ordia_cli.py doctor",
+          "related": ["ordia:init", "ordia:validate", "control:install"]
+        }
+      ]
+    },
     {
       "id": "dev",
       "title": "Desarrollo",
@@ -243,20 +398,30 @@
           "requires": ["npm run docker:up", "cloudflared instalado"],
           "examples": [
             "npm run tunnel:start",
-            "npm run tunnel:start -- -UiPort 4014"
+            "npm run tunnel:start -- -KeepDev",
+            "npm run tunnel:start -- -UiPort 4014",
+            "npm run tunnel:start -- -StopAllTunnels"
           ],
           "underlyingScript": "scripts/tunnel-start.ps1",
           "flags": [
             { "name": "-UiPort", "default": "3014", "description": "Puerto local de Vite" },
-            { "name": "-TimeoutSeconds", "default": "45", "description": "Timeout de arranque" }
+            { "name": "-TimeoutSeconds", "default": "45", "description": "Timeout de arranque" },
+            { "name": "-KeepDev", "description": "No detiene npm run dev / dev:app / dev:web en :5173" },
+            { "name": "-StopAllTunnels", "description": "También mata otros cloudflared del workspace (por defecto se conservan)" }
           ],
           "related": ["tunnel:stop", "docker:up", "frontend:stop"]
         },
         {
           "name": "tunnel:stop",
-          "description": "Detiene tunnels y frontend; limpia temp/cloudflare-tunnels/state.json.",
-          "examples": ["npm run tunnel:stop"],
+          "description": "Detiene tunnels Narofitness y frontend; limpia temp/cloudflare-tunnels/state.json. Conserva otros cloudflared por defecto.",
+          "examples": [
+            "npm run tunnel:stop",
+            "npm run tunnel:stop -- -StopAllTunnels"
+          ],
           "underlyingScript": "scripts/tunnel-stop.ps1",
+          "flags": [
+            { "name": "-StopAllTunnels", "description": "También mata otros cloudflared del workspace" }
+          ],
           "related": ["tunnel:start", "frontend:stop"]
         }
       ]
@@ -282,6 +447,13 @@
           "description": "Verificar que el cargador YAML de control rechaza claves duplicadas.",
           "examples": ["npm run control:test"],
           "related": ["control:validate"]
+        },
+        {
+          "name": "help:coverage",
+          "description": "Informe de cobertura L1/L2/L3 del catálogo vs package.json (Ordia v0.6).",
+          "examples": ["npm run help:coverage"],
+          "underlyingScript": "scripts/audit_command_catalog_coverage.py",
+          "related": ["help:validate", "ordia:validate"]
         },
         {
           "name": "test:api",

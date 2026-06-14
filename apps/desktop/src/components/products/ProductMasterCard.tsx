@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChevronRight, Eye, ImageIcon, MoreVertical } from "lucide-react";
+import { ChevronRight, Eye, ImageIcon } from "lucide-react";
 
 import { API_BASE, type ProductMaster } from "@/lib/api";
 import {
@@ -18,11 +18,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
+  ResponsiveCardHeader,
+  ResponsiveDataCard,
+  ResponsiveMetaGrid,
+  ResponsiveMetaRow,
+  ResponsiveTouchMenuTrigger,
+} from "@/components/responsive/list";
+import {
   isMixedBrandMaster,
   masterBrandDisplay,
   masterBrandTitle,
 } from "@/lib/variantRepresentation";
-import { cn } from "@/lib/utils";
 
 function CategoryStack({
   parent,
@@ -66,32 +72,24 @@ export function ProductMasterCard({
   const brandLabel = masterBrandDisplay(master);
 
   return (
-    <article
-      className={cn(
-        "product-master-card",
-        index % 2 === 0 ? "product-master-card--even" : "product-master-card--odd",
-      )}
-    >
-      <div className="product-master-card__header">
+    <ResponsiveDataCard index={index}>
+      <ResponsiveCardHeader>
         {imageSrc ? (
           <img
             src={imageSrc}
             alt=""
-            className="product-master-card__image h-12 w-12 shrink-0 rounded border border-border bg-muted/30 object-contain"
+            className="h-12 w-12 shrink-0 rounded border border-border bg-muted/30 object-contain"
           />
         ) : (
           <div
-            className="product-master-card__image flex h-12 w-12 shrink-0 items-center justify-center rounded border border-dashed border-border bg-muted/20 text-muted-foreground"
+            className="flex h-12 w-12 shrink-0 items-center justify-center rounded border border-dashed border-border bg-muted/20 text-muted-foreground"
             aria-hidden="true"
           >
             <ImageIcon className="h-5 w-5" />
           </div>
         )}
-        <div className="product-master-card__title-block min-w-0 flex-1">
-          <h3
-            className="product-master-card__title line-clamp-2 text-sm font-medium"
-            title={master.name}
-          >
+        <div className="product-master-card__title-block">
+          <h3 className="line-clamp-2 text-sm font-medium" title={master.name}>
             {master.name}
           </h3>
           {priceLabel !== "—" ? (
@@ -104,43 +102,36 @@ export function ProductMasterCard({
             </Badge>
           ) : null}
         </div>
-      </div>
+      </ResponsiveCardHeader>
 
-      <dl className="product-master-card__meta">
-        <div className="product-master-card__meta-row">
-          <dt>Referencia</dt>
-          <dd
+      <ResponsiveMetaGrid>
+        <ResponsiveMetaRow label="Referencia">
+          <span
             className="font-mono text-xs font-bold text-primary"
             title={(master.references ?? []).join(", ") || undefined}
           >
             {parentReference(master)}
-          </dd>
-        </div>
-        <div className="product-master-card__meta-row">
-          <dt>Marca</dt>
-          <dd>
-            {brandLabel ? (
-              <Badge
-                variant={isMixedBrandMaster(master) ? "outline" : "secondary"}
-                className="max-w-full truncate font-normal"
-                title={masterBrandTitle(master)}
-              >
-                {brandLabel}
-              </Badge>
-            ) : (
-              <span className="text-muted-foreground">—</span>
-            )}
-          </dd>
-        </div>
-        <div className="product-master-card__meta-row">
-          <dt>Categoría</dt>
-          <dd>
-            <CategoryStack parent={master.category_parent_name} sub={master.category_sub_name} />
-          </dd>
-        </div>
-      </dl>
+          </span>
+        </ResponsiveMetaRow>
+        <ResponsiveMetaRow label="Marca">
+          {brandLabel ? (
+            <Badge
+              variant={isMixedBrandMaster(master) ? "outline" : "secondary"}
+              className="max-w-full truncate font-normal"
+              title={masterBrandTitle(master)}
+            >
+              {brandLabel}
+            </Badge>
+          ) : (
+            <span className="text-muted-foreground">—</span>
+          )}
+        </ResponsiveMetaRow>
+        <ResponsiveMetaRow label="Categoría">
+          <CategoryStack parent={master.category_parent_name} sub={master.category_sub_name} />
+        </ResponsiveMetaRow>
+      </ResponsiveMetaGrid>
 
-      <div className="product-master-card__actions">
+      <div className="responsive-data-card__actions">
         {showVariantsToggle ? (
           <Button
             type="button"
@@ -155,7 +146,7 @@ export function ProductMasterCard({
           </Button>
         ) : null}
 
-        <div className="product-master-card__icon-actions flex shrink-0 items-center gap-0.5">
+        <div className="responsive-data-card__icon-actions flex shrink-0 items-center gap-0.5">
           <ProductSourcePageTrigger
             source_page={master.source_page}
             source_pages={master.source_pages}
@@ -163,15 +154,7 @@ export function ProductMasterCard({
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button
-                type="button"
-                variant="ghost"
-                size="icon"
-                className="product-master-card__menu-btn h-11 w-11 shrink-0 text-muted-foreground hover:text-foreground"
-                aria-label={`Más acciones para ${master.name}`}
-              >
-                <MoreVertical className="h-5 w-5" aria-hidden="true" />
-              </Button>
+              <ResponsiveTouchMenuTrigger ariaLabel={`Más acciones para ${master.name}`} />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               <DropdownMenuItem asChild>
@@ -184,6 +167,6 @@ export function ProductMasterCard({
           </DropdownMenu>
         </div>
       </div>
-    </article>
+    </ResponsiveDataCard>
   );
 }

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Truck } from "lucide-react";
+import { ArrowLeft, Truck } from "lucide-react";
 import { listImportProfiles, listSuppliers, type ImportProfile, type Supplier } from "@/lib/api";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,24 +18,26 @@ import { ErrorState } from "@/components/ErrorState";
 import { TwoColumnSkeleton } from "@/components/LoadingPage";
 import { Badge } from "@/components/ui/badge";
 import { useDelayedLoading } from "@/hooks/useDelayedLoading";
+import {
+  SUPPLIERS_PROFILES_VIEW_POLICY,
+  useDataViewMode,
+} from "@/hooks/useDataViewMode";
+import { ImportProfileCardList } from "@/components/suppliers/ImportProfileCardList";
+import { parserLabel } from "@/components/suppliers/parserLabels";
+import { cn } from "@/lib/utils";
 
-const PARSER_LABELS: Record<string, string> = {
-  fdl_pdf: "PDF FDL",
-  generic_pdf: "PDF genérico",
-};
-
-function parserLabel(key: string): string {
-  return PARSER_LABELS[key] ?? key.replace(/_/g, " ");
-}
+type DetailView = "list" | "profiles";
 
 export default function SuppliersPage() {
   const [suppliers, setSuppliers] = useState<Supplier[]>([]);
   const [profiles, setProfiles] = useState<ImportProfile[]>([]);
   const [selected, setSelected] = useState("");
+  const [detailView, setDetailView] = useState<DetailView>("list");
   const [loading, setLoading] = useState(true);
   const [fetchError, setFetchError] = useState(false);
   const [profilesError, setProfilesError] = useState(false);
   const showSkeleton = useDelayedLoading(loading);
+  const { showTable } = useDataViewMode(SUPPLIERS_PROFILES_VIEW_POLICY);
 
   const loadSuppliers = useCallback(() => {
     setLoading(true);
@@ -71,7 +73,104 @@ export default function SuppliersPage() {
     return () => window.clearTimeout(timer);
   }, [selected]);
 
+  useEffect(() => {
+    if (showTable) {
+      setDetailView("list");
+    }
+  }, [showTable]);
+
   const selectedSupplier = suppliers.find((s) => s.id === selected);
+
+  const showMasterPanel = showTable || detailView === "list";
+  const showProfilesPanel = showTable || detailView === "profiles";
+
+  function handleSelectSupplier(id: string) {
+    setSelected(id);
+    if (!showTable) {
+      setDetailView("profiles");
+    }
+  }
+
+  function retryLoadProfiles() {
+    setProfilesError(false);
+    void listImportProfiles(selected)
+      .then(setProfiles)
+      .catch(() => setProfilesError(true));
+  }
+
+  function renderProfilesContent() {
+    if (profilesError) {
+      return (
+        <ErrorState
+          title="No se pudieron cargar los perfiles"
+          description="Compruebe la conexión e inténtelo de nuevo."
+          action={
+            <Button
+              type="button"
+              variant="secondary"
+              className="min-h-11"
+              onClick={retryLoadProfiles}
+            >
+              Reintentar
+            </Button>
+          }
+          className="py-8"
+        />
+      );
+    }
+
+    if (!selected) {
+      return (
+        <EmptyState
+          icon={Truck}
+          title="Seleccione un proveedor"
+          description="Elija un proveedor de la lista para ver sus perfiles."
+          className="py-8"
+        />
+      );
+    }
+
+    if (profiles.length === 0) {
+      return (
+        <EmptyState
+          icon={Truck}
+          title="Sin perfiles"
+          description={`El proveedor ${selectedSupplier?.name} no tiene perfiles de importación configurados.`}
+          action={
+            <Button asChild variant="secondary" className="min-h-11">
+              <Link to="/import">Ir a importar tarifa</Link>
+            </Button>
+          }
+          className="py-8"
+        />
+      );
+    }
+
+    if (showTable) {
+      return (
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Nombre</TableHead>
+              <TableHead>Formato</TableHead>
+              <TableHead>Por defecto</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {profiles.map((p) => (
+              <TableRow key={p.id}>
+                <TableCell className="font-medium">{p.name}</TableCell>
+                <TableCell>{parserLabel(p.parser_key)}</TableCell>
+                <TableCell>{p.is_default && <Badge variant="success">Sí</Badge>}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      );
+    }
+
+    return <ImportProfileCardList profiles={profiles} />;
+  }
 
   return (
     <div>
@@ -80,7 +179,7 @@ export default function SuppliersPage() {
         description="Consulte los proveedores y sus perfiles de importación. Para importar una tarifa, vaya a Importar tarifa."
         icon={Truck}
       >
-        <Button asChild size="sm">
+        <Button asChild className="min-h-11">
           <Link to="/import">Importar tarifa</Link>
         </Button>
       </PageHeader>
@@ -92,116 +191,73 @@ export default function SuppliersPage() {
           title="No se pudieron cargar los proveedores"
           description="Compruebe la conexión con la aplicación e inténtelo de nuevo."
           action={
-            <Button type="button" size="sm" variant="secondary" onClick={loadSuppliers}>
+            <Button type="button" variant="secondary" className="min-h-11" onClick={loadSuppliers}>
               Reintentar
             </Button>
           }
         />
       ) : (
-        <div className="grid gap-4 md:grid-cols-2">
-          <Card>
-            <CardHeader>
-              <CardTitle>Proveedores</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-2">
-              {suppliers.length === 0 ? (
-                <EmptyState
-                  icon={Truck}
-                  title="Sin proveedores"
-                  description="No hay proveedores configurados en el sistema."
-                  className="py-8"
-                />
-              ) : (
-                <div className="space-y-2" role="group" aria-label="Lista de proveedores">
-                  {suppliers.map((s) => (
-                    <Button
-                      key={s.id}
-                      type="button"
-                      aria-pressed={selected === s.id}
-                      aria-controls="supplier-profiles-panel"
-                      variant={selected === s.id ? "default" : "secondary"}
-                      className="w-full justify-start"
-                      onClick={() => setSelected(s.id)}
-                    >
-                      {s.name} ({s.code})
-                    </Button>
-                  ))}
-                </div>
-              )}
-            </CardContent>
-          </Card>
-
-          <Card id="supplier-profiles-panel">
-            <CardHeader>
-              <CardTitle>
-                {selectedSupplier
-                  ? `Perfiles de ${selectedSupplier.name}`
-                  : "Perfiles de importación"}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              {profilesError ? (
-                <ErrorState
-                  title="No se pudieron cargar los perfiles"
-                  description="Compruebe la conexión e inténtelo de nuevo."
-                  action={
-                    <Button
-                      type="button"
-                      size="sm"
-                      variant="secondary"
-                      onClick={() => {
-                        setProfilesError(false);
-                        void listImportProfiles(selected)
-                          .then(setProfiles)
-                          .catch(() => setProfilesError(true));
-                      }}
-                    >
-                      Reintentar
-                    </Button>
-                  }
-                  className="py-8"
-                />
-              ) : !selected ? (
-                <EmptyState
-                  icon={Truck}
-                  title="Seleccione un proveedor"
-                  description="Elija un proveedor de la lista de la izquierda para ver sus perfiles."
-                  className="py-8"
-                />
-              ) : profiles.length === 0 ? (
-                <EmptyState
-                  icon={Truck}
-                  title="Sin perfiles"
-                  description={`El proveedor ${selectedSupplier?.name} no tiene perfiles de importación configurados.`}
-                  action={
-                    <Button asChild size="sm" variant="secondary">
-                      <Link to="/import">Ir a importar tarifa</Link>
-                    </Button>
-                  }
-                  className="py-8"
-                />
-              ) : (
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Nombre</TableHead>
-                      <TableHead>Formato</TableHead>
-                      <TableHead>Por defecto</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {profiles.map((p) => (
-                      <TableRow key={p.id}>
-                        <TableCell className="font-medium">{p.name}</TableCell>
-                        <TableCell>{parserLabel(p.parser_key)}</TableCell>
-                        <TableCell>{p.is_default && <Badge variant="success">Sí</Badge>}</TableCell>
-                      </TableRow>
+        <div className="grid gap-4 lg:grid-cols-2">
+          {showMasterPanel ? (
+            <Card className={cn(!showTable && detailView === "list" && "col-span-full")}>
+              <CardHeader>
+                <CardTitle>Proveedores</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                {suppliers.length === 0 ? (
+                  <EmptyState
+                    icon={Truck}
+                    title="Sin proveedores"
+                    description="No hay proveedores configurados en el sistema."
+                    className="py-8"
+                  />
+                ) : (
+                  <div className="space-y-2" role="group" aria-label="Lista de proveedores">
+                    {suppliers.map((s) => (
+                      <Button
+                        key={s.id}
+                        type="button"
+                        aria-pressed={selected === s.id}
+                        aria-controls="supplier-profiles-panel"
+                        variant={selected === s.id ? "default" : "secondary"}
+                        className="min-h-11 w-full justify-start"
+                        onClick={() => handleSelectSupplier(s.id)}
+                      >
+                        {s.name} ({s.code})
+                      </Button>
                     ))}
-                  </TableBody>
-                </Table>
-              )}
-            </CardContent>
-          </Card>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          ) : null}
+
+          {showProfilesPanel ? (
+            <Card
+              id="supplier-profiles-panel"
+              className={cn(!showTable && detailView === "profiles" && "col-span-full")}
+            >
+              <CardHeader className="space-y-3">
+                {!showTable && detailView === "profiles" ? (
+                  <Button
+                    type="button"
+                    variant="secondary"
+                    className="min-h-11 w-fit gap-2"
+                    onClick={() => setDetailView("list")}
+                  >
+                    <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden="true" />
+                    Proveedores
+                  </Button>
+                ) : null}
+                <CardTitle>
+                  {selectedSupplier
+                    ? `Perfiles de ${selectedSupplier.name}`
+                    : "Perfiles de importación"}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>{renderProfilesContent()}</CardContent>
+            </Card>
+          ) : null}
         </div>
       )}
     </div>

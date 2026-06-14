@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "sonner";
-import { AlertCircle, AlertTriangle, Loader2, Trash2 } from "lucide-react";
+import { AlertCircle, AlertTriangle, Eye, FileDown, Loader2, Trash2 } from "lucide-react";
 import {
   addCatalogItem,
   bulkAddCatalogItems,
@@ -48,6 +48,7 @@ import {
   type SaveCatalogOptionsConfig,
 } from "@/lib/exportPdf";
 import { useStatusBar } from "@/context/useStatusBar";
+import { useRegisterTopBarRouteActions } from "@/context/useRegisterTopBarRouteActions";
 import {
   applySortOrderUpdates,
   buildSortOrderUpdates,
@@ -390,6 +391,40 @@ export default function CatalogEditorPage() {
 
     await continueExportPreflight();
   }
+
+  const handleTogglePreview = useCallback(() => {
+    if (showPreview) setShowPreview(false);
+    else {
+      setShowPreview(true);
+      if (previewState === "idle" || previewState === "error") {
+        refreshPreview();
+      } else if (previewStale || previewState === "stale") {
+        setPreviewState("stale");
+      }
+    }
+  }, [previewState, previewStale, showPreview]);
+
+  useRegisterTopBarRouteActions(
+    showPreview || !catalog
+      ? []
+      : [
+          {
+            id: "preview",
+            label: "Vista previa",
+            icon: Eye,
+            onClick: handleTogglePreview,
+          },
+          {
+            id: "export-pdf",
+            label: "Exportar PDF",
+            icon: FileDown,
+            onClick: () => {
+              void handleExportPdf();
+            },
+            disabled: exportingPdf,
+          },
+        ],
+  );
 
   async function saveLineOrder() {
     if (!id || !catalog || savingOrder) return;
@@ -983,17 +1018,8 @@ export default function CatalogEditorPage() {
           showPreview={showPreview}
           exportingPdf={exportingPdf}
           exportWarnings={exportWarnings}
-          onTogglePreview={() => {
-            if (showPreview) setShowPreview(false);
-            else {
-              setShowPreview(true);
-              if (previewState === "idle" || previewState === "error") {
-                refreshPreview();
-              } else if (previewStale || previewState === "stale") {
-                setPreviewState("stale");
-              }
-            }
-          }}
+          hideInlineRouteActions={!showPreview}
+          onTogglePreview={handleTogglePreview}
           onExportPdf={() => {
             void handleExportPdf();
           }}

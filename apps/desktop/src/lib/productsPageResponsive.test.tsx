@@ -47,7 +47,7 @@ describe("ProductsPage responsive cards and sheet", () => {
     const html = renderToStaticMarkup(
       <ProductMasterCard master={makeMaster()} index={0} onOpenVariants={() => {}} />,
     );
-    expect(html).toContain("product-master-card");
+    expect(html).toContain("responsive-data-card");
     expect(html).toContain("Responsive test product");
     expect(html).toContain("10,00 €");
     expect(html).not.toContain("<table");

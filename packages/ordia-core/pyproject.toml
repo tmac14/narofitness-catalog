@@ -1,0 +1,25 @@
+[project]
+name = "ordia-core"
+version = "0.8.0"
+description = "Ordia durable agent orchestration and implementation control"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "LicenseRef-Proprietary"
+dependencies = ["pyyaml"]
+
+[project.scripts]
+ordia = "ordia.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ordia*"]
+
+[tool.setuptools.package-data]
+ordia = ["templates/**/*", "protocols/*.md", "commands/*.json", "workflows/**/*", "product_docs/*.md"]
+
+[tool.setuptools.data-files]
+"share/doc/ordia-core" = ["docs/*.md"]

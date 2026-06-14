@@ -2,469 +2,95 @@
 
 from __future__ import annotations
 
-import re
+import json
 import sys
-from collections import defaultdict
 from pathlib import Path
-from typing import Any
-
-try:
-    import yaml
-    from yaml.constructor import ConstructorError
-    from yaml.resolver import BaseResolver
-except ImportError:
-    print(
-        "ERROR: PyYAML is required for project-control validation. "
-        "Install the approved control-tooling dependencies first.",
-        file=sys.stderr,
-    )
-    raise SystemExit(2)
-
 
 ROOT = Path(__file__).resolve().parents[1]
-COORDINATION = ROOT / "docs" / "coordination"
-TASK_REGISTRY_PATH = COORDINATION / "TASK_REGISTRY.yaml"
-AGENT_REGISTRY_PATH = COORDINATION / "AGENT_REGISTRY.yaml"
-DECISION_LOG_PATH = COORDINATION / "DECISION_LOG.md"
-STATE_PATH = COORDINATION / "ORCHESTRATION_STATE.md"
-INVENTORY_PATH = COORDINATION / "DOCUMENTATION_INVENTORY.md"
+sys.path.insert(0, str(ROOT / "scripts"))
 
-ACTIVE_STATUSES = {
-    "DISCOVERY",
-    "PLAN_READY",
-    "APPROVED",
-    "LOCKS_PENDING",
-    "LOCKS_CONFIRMED",
-    "READY_FOR_IMPLEMENTATION",
-    "IN_FLIGHT",
-    "IMPLEMENTED",
-    "VALIDATION_PENDING",
-    "WAITING_FOR_AGENT_REPORT",
-}
-PACKET_REQUIRED_STATUSES = ACTIVE_STATUSES | {"WAITING_FOR_USER_DECISION", "PAUSED"}
-QUEUE_STATUS = {
-    "in_flight": {"IN_FLIGHT", "IMPLEMENTED"},
-    "ready_for_parallel": {"READY_FOR_IMPLEMENTATION"},
-    "waiting_for_user_decision": {"WAITING_FOR_USER_DECISION", "PAUSED"},
-    "waiting_for_agent_report": {"WAITING_FOR_AGENT_REPORT"},
-    "validation_pending": {"VALIDATION_PENDING"},
-}
-DECISION_ID = re.compile(r"^[A-Z][A-Z0-9-]*-D\d+$")
-VALID_RUNTIMES = {
-    "ONLY_CODEX",
-    "CODEX_PLUS_CURSOR",
-    "ONLY_CURSOR",
-    "NONE_SELECTED_FOR_NEXT_TASK",
-}
-VALID_PROTOCOLS = {
-    "ORCHESTRATION",
-    "IMPLEMENTATION",
-    "NONE_SELECTED_FOR_NEXT_TASK",
-}
-VALID_TASK_RUNTIMES = {
-    "ONLY_CODEX",
-    "CODEX_PLUS_CURSOR",
-    "ONLY_CURSOR",
-}
-VALID_TASK_PROTOCOLS = {
-    "ORCHESTRATION",
-    "IMPLEMENTATION",
-    "NONE",
-}
-VALID_RUNTIME_PROTOCOL_PAIRS = {
-    ("ONLY_CODEX", "ORCHESTRATION"),
-    ("ONLY_CODEX", "IMPLEMENTATION"),
-    ("CODEX_PLUS_CURSOR", "ORCHESTRATION"),
-    ("CODEX_PLUS_CURSOR", "IMPLEMENTATION"),
-    ("ONLY_CURSOR", "ORCHESTRATION"),
-    ("ONLY_CURSOR", "IMPLEMENTATION"),
-}
-LEGACY_TASK_PROTOCOL = "CODEX_IMPLEMENTATION"
-REQUIRED_CURSOR_RULES = [
-    ".cursor/rules/narofitness-runtime-protocol-header.mdc",
-    ".cursor/rules/narofitness-recovery-bootstrap.mdc",
-    ".cursor/rules/narofitness-orchestration-mode.mdc",
-    ".cursor/rules/narofitness-implementation-mode.mdc",
+from _ordia_bootstrap import ensure_ordia_core
+
+ensure_ordia_core()
+
+from ordia.config import load_ordia_config  # noqa: E402
+from ordia.validator.project import (  # noqa: E402
+    ProjectValidationOptions,
+    Validation,
+    parse_yaml_document,
+    validate_cursor_workspace as _validate_cursor_workspace_impl,
+    validate_project,
+    validate_runtime_fields,
+    validate_task_runtime_protocol,
+)
+
+# Re-export for scripts/test_validate_project_control.py
+__all__ = [
+    "Validation",
+    "parse_yaml_document",
+    "validate_runtime_fields",
+    "validate_task_runtime_protocol",
+    "validate_cursor_workspace",
+    "validate_project",
+]
+
+NAROFITNESS_PROFILE_RULES = [
     ".cursor/rules/narofitness-permanent-guardrails.mdc",
-    ".cursor/rules/narofitness-coordination-docs.mdc",
-]
-REQUIRED_CURSOR_HOOKS = [
-    ".cursor/hooks.json",
-    ".cursor/hooks/session_start.py",
-    ".cursor/hooks/validate_runtime_header.py",
-    ".cursor/hooks/guard_mode_before_edit.py",
-    ".cursor/hooks/lib/control_context.py",
 ]
 
 
-class UniqueKeySafeLoader(yaml.SafeLoader):
-    """Reject duplicate mapping keys instead of silently accepting the last value."""
-
-
-def construct_unique_mapping(
-    loader: UniqueKeySafeLoader, node: yaml.MappingNode, deep: bool = False
-) -> dict[Any, Any]:
-    mapping: dict[Any, Any] = {}
-    for key_node, value_node in node.value:
-        key = loader.construct_object(key_node, deep=deep)
-        if key in mapping:
-            raise ConstructorError(
-                "while constructing a mapping",
-                node.start_mark,
-                f"found duplicate key {key!r}",
-                key_node.start_mark,
-            )
-        mapping[key] = loader.construct_object(value_node, deep=deep)
-    return mapping
-
-
-UniqueKeySafeLoader.add_constructor(BaseResolver.DEFAULT_MAPPING_TAG, construct_unique_mapping)
-
-
-class Validation:
-    def __init__(self) -> None:
-        self.errors: list[str] = []
-        self.warnings: list[str] = []
-
-    def error(self, message: str) -> None:
-        self.errors.append(message)
-
-    def warn(self, message: str) -> None:
-        self.warnings.append(message)
-
-
-def parse_yaml_document(text: str, source: str, validation: Validation) -> dict[str, Any]:
+def _session_declared_profile(root: Path) -> str | None:
+    session_file = root / ".cursor" / "session-protocol.json"
+    if not session_file.is_file():
+        return None
     try:
-        data = yaml.load(text, Loader=UniqueKeySafeLoader)
-    except yaml.YAMLError as exc:
-        validation.error(f"Cannot load YAML {source}: {exc}")
-        return {}
-    if not isinstance(data, dict):
-        validation.error(f"YAML root must be a mapping: {source}")
-        return {}
-    return data
+        data = json.loads(session_file.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if isinstance(data, dict) and data.get("ordia_profile"):
+        return str(data["ordia_profile"])
+    return None
 
 
-def load_yaml(path: Path, validation: Validation) -> dict[str, Any]:
-    source = str(path.relative_to(ROOT))
-    try:
-        text = path.read_text(encoding="utf-8")
-    except (OSError, UnicodeError) as exc:
-        validation.error(f"Cannot load YAML {source}: {exc}")
-        return {}
-    return parse_yaml_document(text, source, validation)
-
-
-def existing_repo_path(value: str) -> bool:
-    normalized = value.rstrip("/")
-    if any(token in normalized for token in ("*", "<", ">")):
-        return True
-    return (ROOT / normalized).exists()
-
-
-def markdown_table_ids(path: Path) -> set[str]:
-    text = path.read_text(encoding="utf-8")
-    return {
-        match.group(1)
-        for match in re.finditer(r"^\|\s*([A-Z][A-Z0-9-]*-D\d+)\s*\|", text, re.MULTILINE)
-    }
-
-
-def validate_task_runtime_protocol(task_id: str, task: dict[str, Any], result: Validation) -> None:
-    runtime = task.get("runtime")
-    protocol = task.get("protocol")
-
-    if protocol == LEGACY_TASK_PROTOCOL:
-        result.warn(
-            f"{task_id}: legacy protocol {LEGACY_TASK_PROTOCOL!r}; migrate to "
-            f"runtime: ONLY_CODEX and protocol: IMPLEMENTATION"
-        )
-        if not runtime:
-            runtime = "ONLY_CODEX"
-        protocol = "IMPLEMENTATION"
-
-    if not runtime:
-        result.error(f"{task_id}: missing runtime field")
-        return
-    if runtime not in VALID_TASK_RUNTIMES:
-        result.error(f"{task_id}: invalid runtime {runtime!r}")
-        return
-
-    if not protocol:
-        result.error(f"{task_id}: missing protocol field")
-        return
-    if protocol not in VALID_TASK_PROTOCOLS:
-        result.error(f"{task_id}: invalid protocol {protocol!r}")
-        return
-
-    if protocol == "NONE":
-        return
-
-    pair = (str(runtime), str(protocol))
-    if pair not in VALID_RUNTIME_PROTOCOL_PAIRS:
-        result.error(f"{task_id}: invalid runtime/protocol pair {pair}")
-
-
-def validate_tasks(registry: dict[str, Any], decision_ids: set[str], result: Validation) -> None:
-    tasks = registry.get("tasks", [])
-    if not isinstance(tasks, list):
-        result.error("TASK_REGISTRY tasks must be a list")
-        return
-
-    task_by_id: dict[str, dict[str, Any]] = {}
-    for task in tasks:
-        if not isinstance(task, dict) or not task.get("id"):
-            result.error("Every registry task must be a mapping with an id")
-            continue
-        task_id = str(task["id"])
-        if task_id in task_by_id:
-            result.error(f"Duplicate task id: {task_id}")
-        task_by_id[task_id] = task
-
-    allowed_statuses = set(registry.get("allowed_statuses", []))
-    for task_id, task in task_by_id.items():
-        status = task.get("status")
-        if status not in allowed_statuses:
-            result.error(f"{task_id}: unsupported status {status!r}")
-
-        for dependency in task.get("dependencies", []):
-            if dependency not in task_by_id:
-                result.error(f"{task_id}: unknown dependency {dependency}")
-
-        packet = task.get("task_packet")
-        if status in PACKET_REQUIRED_STATUSES and not packet:
-            result.error(f"{task_id}: status {status} requires a task packet")
-        if packet and not existing_repo_path(str(packet)):
-            result.error(f"{task_id}: missing task packet {packet}")
-
-        for decision in task.get("decisions_required", []):
-            if DECISION_ID.match(str(decision)) and decision not in decision_ids:
-                result.error(f"{task_id}: unknown decision {decision}")
-
-        validate_task_runtime_protocol(task_id, task, result)
-
-    queues = registry.get("queues", {})
-    queued_tasks: dict[str, str] = {}
-    for queue, allowed in QUEUE_STATUS.items():
-        entries = queues.get(queue, [])
-        if not isinstance(entries, list):
-            result.error(f"Queue {queue} must be a list")
-            continue
-        for task_id in entries:
-            if task_id not in task_by_id:
-                result.error(f"Queue {queue}: unknown task {task_id}")
-                continue
-            if task_id in queued_tasks:
-                result.error(f"Task {task_id} appears in queues {queued_tasks[task_id]} and {queue}")
-            queued_tasks[task_id] = queue
-            status = task_by_id[task_id].get("status")
-            if status not in allowed:
-                result.error(f"Queue {queue}: {task_id} has incompatible status {status}")
-
-    for task_id, task in task_by_id.items():
-        if task.get("status") in ACTIVE_STATUSES and task_id not in queued_tasks:
-            result.error(f"{task_id}: active status is not represented in a queue")
-
-    in_flight = [task_by_id[task_id] for task_id in queues.get("in_flight", []) if task_id in task_by_id]
-    owners: dict[str, list[str]] = defaultdict(list)
-    for task in in_flight:
-        owner = str(task.get("owner", ""))
-        if not owner or owner == "Unassigned":
-            result.error(f"{task['id']}: in-flight task has no assigned owner")
-        owners[owner].append(str(task["id"]))
-    for owner, task_ids in owners.items():
-        if len(task_ids) > 1:
-            result.warn(f"Owner {owner} has multiple in-flight tasks: {', '.join(task_ids)}")
-
-    exact_writes: dict[str, str] = {}
-    for task in in_flight:
-        for path in task.get("planned_write_paths", []):
-            path = str(path)
-            if "*" in path or path.endswith("/"):
-                continue
-            if path in exact_writes:
-                result.error(f"Write-path collision: {path} in {exact_writes[path]} and {task['id']}")
-            exact_writes[path] = str(task["id"])
-
-    active_locks = registry.get("active_locks", [])
-    if not isinstance(active_locks, list):
-        result.error("active_locks must be a list")
-    else:
-        for lock in active_locks:
-            if not isinstance(lock, dict):
-                result.error("Each active lock must be a mapping")
-                continue
-            task_id = lock.get("task_id")
-            if task_id not in task_by_id:
-                result.error(f"Active lock references unknown task: {task_id}")
-            elif task_by_id[task_id].get("status") not in ACTIVE_STATUSES:
-                result.error(f"Active lock belongs to non-active task: {task_id}")
-
-
-def validate_agents(
-    registry: dict[str, Any], agent_registry: dict[str, Any], result: Validation
-) -> None:
-    agents = agent_registry.get("agents", [])
-    if not isinstance(agents, list):
-        result.error("AGENT_REGISTRY agents must be a list")
-        return
-    ids = [str(agent.get("id")) for agent in agents if isinstance(agent, dict)]
-    if len(ids) != len(set(ids)):
-        result.error("AGENT_REGISTRY contains duplicate agent ids")
-    if agent_registry.get("operational_identity_count") != len(ids):
-        result.error("operational_identity_count does not match the registered agent count")
-
-    assignments = registry.get("agent_pool", {}).get("current_assignments", {})
-    control_plane_ids = {
-        str(runtime.get("id"))
-        for runtime in agent_registry.get("control_plane_runtimes", [])
-        if isinstance(runtime, dict) and runtime.get("id")
-    }
-    if not control_plane_ids:
-        legacy = agent_registry.get("orchestrator", {})
-        if isinstance(legacy, dict) and legacy.get("id"):
-            control_plane_ids = {str(legacy["id"])}
-    valid_owners = set(ids) | control_plane_ids
-    task_ids = {str(task.get("id")) for task in registry.get("tasks", []) if isinstance(task, dict)}
-    for owner, task_id in assignments.items():
-        if owner not in valid_owners:
-            result.error(f"Current assignment uses unknown owner: {owner}")
-        if task_id not in task_ids:
-            result.error(f"Current assignment references unknown task: {task_id}")
-
-
-def validate_authority_paths(registry: dict[str, Any], agent_registry: dict[str, Any], result: Validation) -> None:
-    for source, values in (("TASK_REGISTRY", registry), ("AGENT_REGISTRY", agent_registry)):
-        for key, path in values.get("authority", {}).items():
-            if key == "purpose":
-                continue
-            if isinstance(path, str) and not existing_repo_path(path):
-                result.error(f"{source} authority path is missing: {path}")
-
-
-def validate_control_plane_protocols(agent_registry: dict[str, Any], result: Validation) -> None:
-    runtimes = agent_registry.get("control_plane_runtimes", [])
-    if not isinstance(runtimes, list):
-        result.error("AGENT_REGISTRY control_plane_runtimes must be a list")
-        return
-    for runtime in runtimes:
-        if not isinstance(runtime, dict):
-            result.error("Each control_plane_runtime must be a mapping")
-            continue
-        protocols = runtime.get("protocols", [])
-        if not isinstance(protocols, list):
-            result.error(f"control_plane_runtime {runtime.get('id')}: protocols must be a list")
-            continue
-        for path in protocols:
-            if isinstance(path, str) and not existing_repo_path(path):
-                result.error(f"control_plane_runtime {runtime.get('id')}: missing protocol {path}")
-
-
-def _state_field(text: str, field: str) -> str | None:
-    match = re.search(rf"- {re.escape(field)}: `([^`]+)`", text)
-    return match.group(1) if match else None
-
-
-def validate_runtime_fields(text: str, decision_ids: set[str], result: Validation) -> None:
-    runtime = _state_field(text, "control_plane_runtime")
-    protocol = _state_field(text, "active_protocol")
-    handoff_from = _state_field(text, "handoff_from")
-    handoff_at = _state_field(text, "handoff_at")
-    handoff_reason = _state_field(text, "handoff_reason")
-
-    for label, value in (
-        ("control_plane_runtime", runtime),
-        ("active_protocol", protocol),
-        ("handoff_from", handoff_from),
-        ("handoff_at", handoff_at),
-        ("handoff_reason", handoff_reason),
-    ):
-        if value is None:
-            result.error(f"ORCHESTRATION_STATE does not declare {label}")
-
-    if runtime and runtime not in VALID_RUNTIMES:
-        result.error(f"ORCHESTRATION_STATE control_plane_runtime is invalid: {runtime}")
-    if protocol and protocol not in VALID_PROTOCOLS:
-        result.error(f"ORCHESTRATION_STATE active_protocol is invalid: {protocol}")
-
-    if handoff_from and handoff_from != "NONE":
-        if not handoff_at or handoff_at == "NONE":
-            result.error("ORCHESTRATION_STATE handoff_from is set but handoff_at is missing")
-        if not handoff_reason or handoff_reason == "NONE":
-            result.error("ORCHESTRATION_STATE handoff_from is set but handoff_reason is missing")
-        if not any(decision_id.startswith("RUNTIME-D") for decision_id in decision_ids):
-            result.warn("ORCHESTRATION_STATE records a handoff but no RUNTIME-D decision is logged")
-
-
-def validate_state(registry: dict[str, Any], decision_ids: set[str], result: Validation) -> None:
-    text = STATE_PATH.read_text(encoding="utf-8")
-    validate_runtime_fields(text, decision_ids, result)
-    match = re.search(r"- Active task ID: `([^`]+)`", text)
-    if not match:
-        result.error("ORCHESTRATION_STATE does not declare Active task ID")
-        return
-    state_task = match.group(1)
-    in_flight = registry.get("queues", {}).get("in_flight", [])
-    if state_task == "NONE" and in_flight:
-        result.error("Live state says Active task ID NONE while tasks are in flight")
-    elif state_task != "NONE" and state_task not in in_flight:
-        result.error(f"Live state active task {state_task} is not in the in-flight queue")
+def _narofitness_options(root: Path) -> ProjectValidationOptions:
+    config = load_ordia_config(root)
+    control_root = config.control_root if config else ROOT / "docs" / "coordination"
+    return ProjectValidationOptions(
+        profile_cursor_rules=NAROFITNESS_PROFILE_RULES,
+        require_cursor_workspace=True,
+        validate_inventory=True,
+        inventory_path=str(control_root / "DOCUMENTATION_INVENTORY.md"),
+        session_profile=_session_declared_profile(root),
+    )
 
 
 def validate_cursor_workspace(result: Validation) -> None:
-    for relative_path in REQUIRED_CURSOR_RULES:
-        if not (ROOT / relative_path).is_file():
-            result.error(f"Missing required Cursor rule: {relative_path}")
-    for relative_path in REQUIRED_CURSOR_HOOKS:
-        if not (ROOT / relative_path).is_file():
-            result.error(f"Missing required Cursor hook: {relative_path}")
-    try:
-        import subprocess
-
-        tracked_output = subprocess.run(
-            ["git", "ls-files", "--error-unmatch", ".cursor/session-protocol.json"],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        if tracked_output.returncode == 0:
-            result.warn(".cursor/session-protocol.json is tracked; it should remain gitignored")
-    except OSError:
-        pass
-
-
-def validate_inventory(result: Validation) -> None:
-    text = INVENTORY_PATH.read_text(encoding="utf-8")
-    covered = set(re.findall(r"`([^`]+\.(?:md|yaml))`", text, re.IGNORECASE))
-    files = {
-        path.name
-        for path in COORDINATION.iterdir()
-        if path.is_file() and path.suffix.lower() in {".md", ".yaml"}
-    }
-    missing = sorted(files - covered - {INVENTORY_PATH.name})
-    if missing:
-        result.error("Unclassified top-level coordination documents: " + ", ".join(missing))
+    """Backward-compatible wrapper for tests."""
+    _validate_cursor_workspace_impl(ROOT, _narofitness_options(ROOT), result)
 
 
 def main() -> int:
-    result = Validation()
-    registry = load_yaml(TASK_REGISTRY_PATH, result)
-    agent_registry = load_yaml(AGENT_REGISTRY_PATH, result)
+    config = load_ordia_config(ROOT)
+    result = validate_project(ROOT, config, _narofitness_options(ROOT))
 
-    if registry and agent_registry:
-        decision_ids = markdown_table_ids(DECISION_LOG_PATH)
-        validate_tasks(registry, decision_ids, result)
-        validate_agents(registry, agent_registry, result)
-        validate_authority_paths(registry, agent_registry, result)
-        validate_control_plane_protocols(agent_registry, result)
-        validate_state(registry, decision_ids, result)
-        validate_cursor_workspace(result)
-        validate_inventory(result)
+    registry = {}
+    agent_registry = {}
+    if config is not None:
+        try:
+            import yaml
+
+            if config.task_registry_path.is_file():
+                registry = yaml.safe_load(config.task_registry_path.read_text(encoding="utf-8")) or {}
+            if config.agent_registry_path.is_file():
+                agent_registry = yaml.safe_load(config.agent_registry_path.read_text(encoding="utf-8")) or {}
+        except Exception:
+            pass
 
     print("Project control validation")
-    print(f"- tasks: {len(registry.get('tasks', [])) if registry else 0}")
-    print(f"- operational agents: {len(agent_registry.get('agents', [])) if agent_registry else 0}")
+    print(f"- tasks: {len(registry.get('tasks', [])) if isinstance(registry, dict) else 0}")
+    print(
+        f"- operational agents: {len(agent_registry.get('agents', [])) if isinstance(agent_registry, dict) else 0}"
+    )
     print(f"- warnings: {len(result.warnings)}")
     print(f"- errors: {len(result.errors)}")
     for warning in result.warnings:
@@ -475,6 +101,34 @@ def main() -> int:
     if result.errors:
         print("RESULT: FAIL")
         return 1
+
+    if config is not None and config.commands_validate_on_control_check and config.commands_catalog:
+        from ordia.commands.catalog import resolve_catalog_paths, validate_catalog_sync
+
+        catalog_path, package_path = resolve_catalog_paths(ROOT, config)
+        catalog_errors, count = validate_catalog_sync(ROOT, catalog_path, package_path, config=config)
+        if catalog_errors:
+            print(f"- command catalog errors: {len(catalog_errors)}")
+            for error in catalog_errors:
+                print(f"ERROR: {error}")
+            print("RESULT: FAIL")
+            return 1
+        print(f"- command catalog: {count} root commands in sync")
+
+    if config is not None and config.profile == "narofitness":
+        from audit_docs_links import audit_strict_links
+
+        link_errors, link_checked = audit_strict_links()
+        if link_errors:
+            print(f"- documentation link errors: {len(link_errors)} (checked {link_checked})")
+            for error in link_errors[:10]:
+                print(f"ERROR: {error}")
+            if len(link_errors) > 10:
+                print(f"ERROR: ... and {len(link_errors) - 10} more link errors")
+            print("RESULT: FAIL")
+            return 1
+        print(f"- documentation links: {link_checked} checked, 0 broken")
+
     print("RESULT: PASS")
     return 0
 

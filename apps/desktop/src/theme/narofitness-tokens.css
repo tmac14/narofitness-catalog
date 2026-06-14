@@ -95,6 +95,9 @@
   --brand-lockup-catalog: #76b82a;
   --brand-lockup-by: #8a8f86;
   --brand-lockup-narofitness: #c9d1c3;
+  --topbar-action-gap: 0.375rem;
+  --topbar-palette-trigger-min-width: 4.5rem;
+  --topbar-palette-trigger-width: 18rem;
 
   /* UX 3.0 responsive / touch foundations (Phase 0) — non-visual until consumed */
   --touch-target-min: 2.75rem; /* 44px — WCAG 2.5.5 recommended minimum */

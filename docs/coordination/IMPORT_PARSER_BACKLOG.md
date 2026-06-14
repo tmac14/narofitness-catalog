@@ -209,6 +209,6 @@ DOBHT redundant Variante removed; PESO covers weight tokens; LOGO/NEXO noise str
 - [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md)
 - [PR-PAGE11-CROSSTRAINING-BUMPER_CONTRACT_SUMMARY.md](./contracts/PR-PAGE11-CROSSTRAINING-BUMPER_CONTRACT_SUMMARY.md)
 - [PR-REPUESTO_CONTRACT_SUMMARY.md](./contracts/PR-REPUESTO_CONTRACT_SUMMARY.md)
-- [PR-K-family-regex-design.md](./PR-K-family-regex-design.md)
+- [PR-K-family-regex-design.md](../archive/coordination/PR-K-family-regex-design.md) (archived design history)
 - [TASK_REGISTRY.yaml](./TASK_REGISTRY.yaml)
 - [AGENT_REGISTRY.yaml](./AGENT_REGISTRY.yaml)

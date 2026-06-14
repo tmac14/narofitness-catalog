@@ -10,9 +10,9 @@ Aplicación de escritorio para importar tarifas mayoristas PDF, gestionar produc
 
 
 
-- [Análisis funcional](docs/ANALISIS_FUNCIONAL.md)
+- [Functional analysis](docs/product/FUNCTIONAL_ANALYSIS.md)
 
-- [Arquitectura técnica](docs/ARQUITECTURA_TECNICA.md)
+- [Technical architecture](docs/product/TECHNICAL_ARCHITECTURE.md)
 
 - [API REST](docs/API.md)
 

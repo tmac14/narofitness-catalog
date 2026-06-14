@@ -7,7 +7,7 @@ direct implementation behavior after chat or context loss.
 
 1. Read `AGENTS.md` — confirm active `Runtime` and `Protocol`.
 2. Read `docs/coordination/ORCHESTRATION_STATE.md`, starting with
-   `Active Execution Control`.
+   `Active Execution Control` (note `session_mode` when present).
 3. Read this runbook.
 4. Read `docs/coordination/TASK_EXECUTION_PROTOCOL.md`.
 5. Read `docs/coordination/TASK_REGISTRY.yaml`.
@@ -17,6 +17,7 @@ direct implementation behavior after chat or context loss.
    - **Codex** + `Protocol: IMPLEMENTATION` → `CODEX_SELF_IMPLEMENTATION_PROTOCOL.md`
    - **Cursor Control Plane** + `Protocol: ORCHESTRATION` → `CURSOR_ORCHESTRATION_PROTOCOL.md`
    - **Cursor executor** + `Protocol: IMPLEMENTATION` → `CURSOR_SELF_IMPLEMENTATION_PROTOCOL.md`
+   - **`session_mode: UNIFIED`** (RUNTIME-D005) → also read `CURSOR_ORCHESTRATION_PROTOCOL.md` §5.1 and `TASK_EXECUTION_PROTOCOL.md` §9 (closure gate); determine current phase (PLAN / EXECUTE / QA / CLOSE) before product-code edits
 8. Read `docs/coordination/TASK_HISTORY.md` when recovering completed,
    paused, or resumable work.
 9. Read the active task packet under `docs/coordination/tasks/`, when one
@@ -85,9 +86,10 @@ After recovery, use exactly one status:
   missing.
 - `RECOVERY_BLOCKED`: conflicting evidence, locks, or scope prevent safe work.
 
-Before acting, report the recovered protocol/task, active tracks, locks/work in
-flight, dependency status, parallel-safety decision, pending evidence,
-contradictions, and next safe action.
+Before acting, report the recovered protocol/task, `session_mode` (if set),
+UNIFIED phase (if applicable), active tracks, locks/work in flight, dependency
+status, parallel-safety decision, pending evidence, contradictions, and next
+safe action.
 
 ## 6. Task Completion
 

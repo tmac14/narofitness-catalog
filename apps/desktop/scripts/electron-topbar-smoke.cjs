@@ -15,7 +15,6 @@ async function main() {
       minimizeBtn: !!document.querySelector('[aria-label="Minimizar"]'),
       closeBtn: !!document.querySelector('[aria-label="Cerrar"]'),
       brandTitle: document.querySelector('.brand-lockup__title')?.innerText?.trim(),
-      routeLabel: document.querySelector('.app-topbar__route-label')?.innerText?.trim(),
       topbarHeight: getComputedStyle(document.querySelector('.app-topbar')).height,
     }))()`,
     returnByValue: true,
