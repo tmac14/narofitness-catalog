@@ -20,7 +20,7 @@ Live coordination state. Update after material task-state transitions.
   - `PHASE-2-PARITY` — slices **31–33 VALIDATED** (email ≤15 MB + archive typography)
   - `PHASE-3` — slices **22, 34–37 VALIDATED** (intake shell + export delivery workflow)
 - Last closed: `SOURCE-CATALOG-DP-OUTPUT-DELIVERY` (**VALIDATED** 2026-06-15)
-- Next safe action: **visual QA** on Adaptation Studio in desktop app; optional production parity polish
+- Next safe action: **visual QA** on Adaptation Studio in desktop app — **PASS** 2026-06-15 (intake → studio → preview 11.31 MB → approve → final export)
 - Product plan: [ADAPTATION_OUTPUT_DELIVERY_PLAN.md](../product/planning/ADAPTATION_OUTPUT_DELIVERY_PLAN.md)
 
 ## 1. In-flight summary

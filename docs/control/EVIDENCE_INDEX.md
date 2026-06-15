@@ -74,4 +74,4 @@
 | EVID-SC-DP-SLICE-34-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | export list + PDF/manifest download APIs | apps/api/tests/test_adaptation_export_delivery_workflow.py |
 | EVID-SC-DP-SLICE-35-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | ephemeral TTL + cleanup sweeper | apps/api/tests/test_adaptation_export_delivery_workflow.py |
 | EVID-SC-DP-SLICE-36-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | Adaptation Studio UI typecheck | apps/desktop/src/pages/AdaptationStudioPage.tsx |
-| EVID-SC-DP-SLICE-37-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | approval + final export workflow | apps/api/tests/test_adaptation_export_delivery_workflow.py |
+| EVID-VISUAL-ADAPTATION-DELIVERY-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | E2E UI: intake → email preview 11.31 MB → approve → final | manual QA 2026-06-15 |
