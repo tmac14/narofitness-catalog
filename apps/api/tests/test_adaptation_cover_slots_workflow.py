@@ -6,14 +6,12 @@ from uuid import UUID
 
 import fitz
 import pytest
-from httpx import ASGITransport, AsyncClient
-
 from app.config import settings
 from app.database import async_session
 from app.main import app
 from app.services.background_jobs import get_job
 from app.services.job_handlers.catalog_adaptation_preview import handle_catalog_adaptation_preview
-from app.services.job_handlers.source_document_analyze import handle_source_document_analyze
+from httpx import ASGITransport, AsyncClient
 from tests.test_catalog_adaptation_preview_job import _create_project
 
 

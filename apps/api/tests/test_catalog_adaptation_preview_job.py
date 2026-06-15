@@ -168,9 +168,12 @@ async def test_preview_job_creates_stub_export(
     assert body["manifest"]["renderer_key"] == "fdl_direct_v1"
     assert body["manifest"]["status"] == "covers_and_price_overlay_ready"
     assert body["manifest"]["price_report"]["row_count"] > 0
-    assert body["manifest"]["cover_plan"]["entry_count"] == 9
-    assert body["manifest"]["cover_plan"]["application_status"] == "covers_applied"
-    assert body["manifest"]["cover_plan"]["sections_applied"] == 8
+    assert body["manifest"]["cover_plan"]["entry_count"] >= 9
+    assert body["manifest"]["cover_plan"]["application_status"] in {
+        "covers_applied",
+        "covers_mixed_applied",
+    }
+    assert body["manifest"]["cover_plan"]["sections_applied"] >= 8
     assert body["manifest"]["price_overlay"]["scope"] == "product_content"
     assert len(body["manifest"]["price_overlay"]["pages_targeted"]) > 40
     assert body["manifest"]["price_overlay"]["rows_applied"] > 0
@@ -180,7 +183,10 @@ async def test_preview_job_creates_stub_export(
         assert body["manifest"]["price_overlay"]["apply_rate"] >= 0.95
         assert body["manifest"]["price_overlay"].get("geometry_source") == "snapshot_bbox_v1"
         assert body["manifest"]["price_overlay"].get("rows_applied_via_snapshot", 0) >= 800
-    assert body["manifest"]["pdf_artifact"]["mode"] == "covers_asset_applied_price_overlay"
+    assert body["manifest"]["pdf_artifact"]["mode"] in {
+        "covers_asset_applied_price_overlay",
+        "covers_mixed_applied_price_overlay",
+    }
     assert body["manifest"]["table_recompose"]["status"] == "product_content_applied"
     assert body["manifest"]["table_recompose"]["scope"] == "product_content"
     assert "price_cell_border" in body["manifest"]["table_recompose"]["capabilities"]

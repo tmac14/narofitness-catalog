@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImagePlus, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
@@ -26,17 +26,22 @@ export function AdaptationCoversPanel({ projectId }: Props) {
   const [libraryItems, setLibraryItems] = useState<{ relative_path: string; url: string; filename: string }[]>([]);
   const fileInputs = useRef<Record<string, HTMLInputElement | null>>({});
 
-  const refresh = useCallback(async () => {
-    const payload = await getAdaptationCoverSlots(projectId);
-    setSlots(payload.slots);
-    setPrependMain(payload.prepend_main_cover);
-  }, [projectId]);
-
   useEffect(() => {
-    void refresh().catch((error) => {
-      toast.error(error instanceof Error ? error.message : "No se pudieron cargar las portadas");
-    });
-  }, [refresh]);
+    let cancelled = false;
+    void getAdaptationCoverSlots(projectId)
+      .then((payload) => {
+        if (cancelled) return;
+        setSlots(payload.slots);
+        setPrependMain(payload.prepend_main_cover);
+      })
+      .catch((error) => {
+        if (cancelled) return;
+        toast.error(error instanceof Error ? error.message : "No se pudieron cargar las portadas");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [projectId]);
 
   const handleUpload = async (slotId: string, file: File) => {
     setBusySlot(slotId);

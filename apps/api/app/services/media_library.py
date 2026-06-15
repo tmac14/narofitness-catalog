@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-from pathlib import Path
-
 from app.services.media import ALLOWED_EXTENSIONS, data_root, media_url
 
 MAX_LIBRARY_ITEMS = 200

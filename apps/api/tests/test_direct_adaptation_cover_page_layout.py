@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import fitz
-
 from app.services.direct_adaptation.cover_page_layout import apply_cover_page_layout
 
 
