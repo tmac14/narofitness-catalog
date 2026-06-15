@@ -13,6 +13,7 @@ import fitz
 
 from app.models.entities import SourceDocument
 from app.services.import_parsers.fdl_pdf_v1 import parse_pdf
+from app.services.source_document_cover_pages import detect_cover_pages
 from app.services.source_document_geometry import (
     bbox_list,
     geometry_meta,
@@ -26,7 +27,7 @@ from app.services.source_document_image_geometry import (
 )
 
 ANALYZER_KEY = "fdl_semantic_v1"
-ANALYZER_VERSION = "0.3.0"
+ANALYZER_VERSION = "0.4.0"
 PROFILE_FDL_KEY = "fdl_wholesale_tariff"
 PROFILE_FDL_VERSION = "1.0.0"
 PROFILE_UNKNOWN_KEY = "unknown"
@@ -202,6 +203,10 @@ def build_analysis_snapshot(source: SourceDocument, pdf_bytes: bytes) -> dict[st
                 )
 
             role = "product_content" if page_rows else "unknown"
+            if not page_rows and page_number == 1:
+                role = "main_cover_candidate"
+            elif not page_rows:
+                role = "section_cover_candidate"
             pages.append(
                 {
                     "page_number": page_number,
@@ -217,6 +222,8 @@ def build_analysis_snapshot(source: SourceDocument, pdf_bytes: bytes) -> dict[st
             )
     finally:
         doc.close()
+
+    cover_pages = detect_cover_pages(page_count=source.page_count, rows_by_page=rows_by_page)
 
     geometry_resolve_rate = (
         round(price_slots_resolved / price_slots_total, 4) if price_slots_total else 0.0
@@ -243,6 +250,7 @@ def build_analysis_snapshot(source: SourceDocument, pdf_bytes: bytes) -> dict[st
             "config_fingerprint": analyzer_config_fingerprint(),
         },
         "pages": pages,
+        "cover_pages": cover_pages,
         "geometry_summary": {
             "method": geometry_meta()["method"],
             "source": geometry_meta()["source"],

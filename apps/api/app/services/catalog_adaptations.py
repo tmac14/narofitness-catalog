@@ -93,6 +93,7 @@ async def create_adaptation_project(
         profile_key=profile_key,
         profile_version=profile_version,
         source_sha256=source.sha256,
+        snapshot_json=snapshot.snapshot_json,
     )
     recipe = CatalogAdaptationRecipeVersion(
         project_id=project.id,

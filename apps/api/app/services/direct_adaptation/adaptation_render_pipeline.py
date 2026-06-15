@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from app.models.entities import SourceDocument
+from app.services.direct_adaptation.cover_page_layout import apply_cover_page_layout
 from app.services.direct_adaptation.image_recompose import apply_image_recompose
 from app.services.direct_adaptation.main_cover_replace import apply_main_cover_replace
 from app.services.direct_adaptation.output_delivery import (
@@ -30,8 +31,9 @@ def render_fdl_adaptation_pdf(
     output_delivery: ResolvedOutputDelivery,
     extra_asset_roots: list[Path] | None = None,
 ) -> tuple[bytes, dict[str, Any]]:
+    layout_output, layout_result = apply_cover_page_layout(pdf_bytes, recipe_json)
     main_output, main_result = apply_main_cover_replace(
-        pdf_bytes,
+        layout_output,
         recipe_json,
         project_name=project_name,
         extra_asset_roots=extra_asset_roots,
@@ -42,6 +44,7 @@ def render_fdl_adaptation_pdf(
         extra_asset_roots=extra_asset_roots,
     )
     render_result = merge_cover_apply_results(main_result, section_result)
+    render_result["cover_page_layout"] = layout_result
     output = section_output
 
     if snapshot_json is not None:

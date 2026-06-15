@@ -642,6 +642,7 @@ class SourceDocumentCapabilitiesOut(BaseModel):
     validation_status: str
     profile_match_status: str | None = None
     workflows: SourceDocumentWorkflowCapabilities
+    cover_pages: dict[str, Any] | None = None
     note: str
 
 
@@ -731,4 +732,43 @@ class CatalogAdaptationApprovalOut(BaseModel):
 
 class CatalogAdaptationExportListResponse(BaseModel):
     items: list[CatalogAdaptationExportOut]
+    total: int
+
+
+class AdaptationCoverSlotOut(BaseModel):
+    slot_id: str
+    role: str
+    source_page_number: int
+    target_page_number: int
+    prepend_page: bool = False
+    section_key: str | None = None
+    section_label: str | None = None
+    confidence: float | None = None
+    detection_note: str | None = None
+    asset_path: str | None = None
+    asset_sha256: str | None = None
+    asset_url: str | None = None
+    asset_status: str
+
+
+class AdaptationCoverSlotsOut(BaseModel):
+    project_id: str
+    page_offset: int
+    prepend_main_cover: bool
+    detection_method: str | None = None
+    slots: list[AdaptationCoverSlotOut]
+
+
+class AdaptationCoverLibraryAssignRequest(BaseModel):
+    relative_path: str
+
+
+class MediaLibraryImageOut(BaseModel):
+    relative_path: str
+    url: str
+    filename: str
+
+
+class MediaLibraryImagesOut(BaseModel):
+    items: list[MediaLibraryImageOut]
     total: int

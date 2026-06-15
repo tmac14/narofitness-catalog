@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { CheckCircle2, Download, Loader2, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import { AdaptationCoversPanel } from "@/components/adaptation/AdaptationCoversPanel";
 import { PageHeader } from "@/components/PageHeader";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -323,6 +324,8 @@ export default function AdaptationStudioPage() {
           </CardContent>
         </Card>
       </div>
+
+      {projectId && <AdaptationCoversPanel projectId={projectId} />}
 
       <Card>
         <CardHeader>

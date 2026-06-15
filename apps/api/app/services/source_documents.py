@@ -149,6 +149,7 @@ def source_document_capabilities(doc: SourceDocument, snapshot: object | None = 
     }
     note = "Phase 1A — intake only; workflow capabilities arrive in later batches"
     profile_status = None
+    cover_pages = None
     if snapshot is not None:
         from app.models.entities import DocumentAnalysisSnapshot
 
@@ -159,6 +160,7 @@ def source_document_capabilities(doc: SourceDocument, snapshot: object | None = 
             workflows["direct_adaptation"] = "direct.fdl_v1" in caps
             workflows["pim_import"] = "import.fdl_v1" in caps
             note = "Capabilities derived from latest analysis snapshot"
+            cover_pages = snapshot.snapshot_json.get("cover_pages")
     return {
         "source_document_id": str(doc.id),
         "sha256": doc.sha256,
@@ -166,5 +168,6 @@ def source_document_capabilities(doc: SourceDocument, snapshot: object | None = 
         "validation_status": doc.validation_status,
         "profile_match_status": profile_status,
         "workflows": workflows,
+        "cover_pages": cover_pages if snapshot is not None else None,
         "note": note,
     }

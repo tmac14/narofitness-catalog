@@ -1012,6 +1012,32 @@ export type SourceDocumentCapabilities = {
     analysis: boolean;
   };
   note: string;
+  cover_pages?: SourceDocumentCoverPages | null;
+};
+
+export type SourceDocumentCoverPages = {
+  method?: string;
+  page_offset?: number;
+  main?: {
+    slot_id: string;
+    role: string;
+    source_page_number: number;
+    target_page_number: number;
+    prepend_page: boolean;
+    detection_note?: string;
+  };
+  sections?: {
+    slot_id: string;
+    source_page_number: number;
+    target_page_number: number;
+    section_key?: string;
+    section_label?: string;
+    detection_note?: string;
+  }[];
+  summary?: {
+    section_cover_count?: number;
+    prepend_main_cover?: boolean;
+  };
 };
 
 export type AdaptationProjectOut = {
@@ -1158,6 +1184,71 @@ export async function downloadAdaptationExport(
   if (!res.ok) throw new Error(await readErrorMessage(res));
   return res.blob();
 }
+
+export type AdaptationCoverSlot = {
+  slot_id: string;
+  role: string;
+  source_page_number: number;
+  target_page_number: number;
+  prepend_page: boolean;
+  section_key: string | null;
+  section_label: string | null;
+  confidence: number | null;
+  detection_note: string | null;
+  asset_path: string | null;
+  asset_sha256: string | null;
+  asset_url: string | null;
+  asset_status: string;
+};
+
+export type AdaptationCoverSlotsOut = {
+  project_id: string;
+  page_offset: number;
+  prepend_main_cover: boolean;
+  detection_method: string | null;
+  slots: AdaptationCoverSlot[];
+};
+
+export type MediaLibraryImage = {
+  relative_path: string;
+  url: string;
+  filename: string;
+};
+
+export async function getAdaptationCoverSlots(projectId: string) {
+  return request<AdaptationCoverSlotsOut>(`/catalog-adaptations/${projectId}/cover-slots`);
+}
+
+export async function uploadAdaptationCoverSlot(projectId: string, slotId: string, file: File) {
+  const fd = new FormData();
+  fd.append("file", file);
+  return request<AdaptationCoverSlotsOut>(
+    `/catalog-adaptations/${projectId}/cover-slots/${slotId}/upload`,
+    { method: "POST", body: fd },
+  );
+}
+
+export async function assignAdaptationCoverFromLibrary(
+  projectId: string,
+  slotId: string,
+  relativePath: string,
+) {
+  return request<AdaptationCoverSlotsOut>(
+    `/catalog-adaptations/${projectId}/cover-slots/${slotId}/assign-media`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ relative_path: relativePath }),
+    },
+  );
+}
+
+export async function listAdaptationMediaLibrary() {
+  return request<{ items: MediaLibraryImage[]; total: number }>(
+    "/catalog-adaptations/media-library/images",
+  );
+}
+
 export async function listPriceLists() {
   return request<
     { id: string; source_filename: string; imported_at: string; supplier_id: string }[]

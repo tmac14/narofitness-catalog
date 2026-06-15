@@ -4,12 +4,14 @@ from __future__ import annotations
 
 from uuid import UUID
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, File, HTTPException, Query, UploadFile
 from fastapi.responses import FileResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database import get_db
 from app.schemas import (
+    AdaptationCoverLibraryAssignRequest,
+    AdaptationCoverSlotsOut,
     AdaptationJobRequest,
     CatalogAdaptationApprovalCreateRequest,
     CatalogAdaptationApprovalOut,
@@ -17,6 +19,13 @@ from app.schemas import (
     CatalogAdaptationExportOut,
     CatalogAdaptationProjectOut,
     JobOut,
+    MediaLibraryImagesOut,
+)
+from app.services.adaptation_covers import (
+    AdaptationCoverSlotError,
+    assign_adaptation_cover_from_library,
+    get_adaptation_cover_slots,
+    upload_adaptation_cover_slot,
 )
 from app.services.adaptation_approvals import (
     AdaptationApprovalInvalidError,
@@ -37,6 +46,7 @@ from app.services.catalog_adaptations import (
 from app.services.direct_adaptation.parity_audit import build_parity_report
 from app.services.job_paths import media_type_for_path
 from app.services.job_presenter import job_to_out
+from app.services.media_library import list_media_library_images
 
 router = APIRouter(prefix="/catalog-adaptations", tags=["catalog-adaptations"])
 
@@ -81,6 +91,12 @@ def _resolve_export_artifact_path(row, *, artifact: str) -> str | None:
     if artifact == "manifest":
         return row.artifact_path
     return row.pdf_artifact_path or row.artifact_path
+
+
+@router.get("/media-library/images", response_model=MediaLibraryImagesOut)
+async def list_adaptation_media_library_images() -> MediaLibraryImagesOut:
+    items = list_media_library_images()
+    return MediaLibraryImagesOut(items=items, total=len(items))
 
 
 @router.get("/{project_id}", response_model=CatalogAdaptationProjectOut)
@@ -225,6 +241,61 @@ async def download_adaptation_export(
         media_type=media_type_for_path(file_path),
         filename=file_path.name,
     )
+
+
+@router.get("/{project_id}/cover-slots", response_model=AdaptationCoverSlotsOut)
+async def get_adaptation_cover_slots_endpoint(
+    project_id: UUID,
+    db: AsyncSession = Depends(get_db),
+) -> AdaptationCoverSlotsOut:
+    try:
+        payload = await get_adaptation_cover_slots(db, project_id)
+    except AdaptationCoverSlotError as exc:
+        raise HTTPException(409, str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from exc
+    return AdaptationCoverSlotsOut.model_validate(payload)
+
+
+@router.post("/{project_id}/cover-slots/{slot_id}/upload", response_model=AdaptationCoverSlotsOut)
+async def upload_adaptation_cover_slot_endpoint(
+    project_id: UUID,
+    slot_id: str,
+    file: UploadFile = File(...),
+    db: AsyncSession = Depends(get_db),
+) -> AdaptationCoverSlotsOut:
+    try:
+        payload = await upload_adaptation_cover_slot(
+            db, project_id=project_id, slot_id=slot_id, upload=file
+        )
+        await db.commit()
+    except AdaptationCoverSlotError as exc:
+        raise HTTPException(409, str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from exc
+    return AdaptationCoverSlotsOut.model_validate(payload)
+
+
+@router.post("/{project_id}/cover-slots/{slot_id}/assign-media", response_model=AdaptationCoverSlotsOut)
+async def assign_adaptation_cover_media_endpoint(
+    project_id: UUID,
+    slot_id: str,
+    body: AdaptationCoverLibraryAssignRequest,
+    db: AsyncSession = Depends(get_db),
+) -> AdaptationCoverSlotsOut:
+    try:
+        payload = await assign_adaptation_cover_from_library(
+            db,
+            project_id=project_id,
+            slot_id=slot_id,
+            library_relative_path=body.relative_path,
+        )
+        await db.commit()
+    except AdaptationCoverSlotError as exc:
+        raise HTTPException(409, str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from exc
+    return AdaptationCoverSlotsOut.model_validate(payload)
 
 
 @router.get("/{project_id}/parity-report")

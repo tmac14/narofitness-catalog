@@ -140,6 +140,32 @@ export default function SourceDocumentIntakePage() {
                   {capabilities.workflows.pim_import && <Badge>Importación PIM</Badge>}
                   {capabilities.workflows.analysis && <Badge variant="outline">Análisis</Badge>}
                 </div>
+                {capabilities.cover_pages && (
+                  <div className="space-y-2 rounded-md border p-3">
+                    <p className="font-medium">Portadas detectadas en el PDF</p>
+                    {capabilities.cover_pages.main && (
+                      <p className="text-xs text-muted-foreground">
+                        Portada principal: página {capabilities.cover_pages.main.target_page_number}
+                        {capabilities.cover_pages.main.prepend_page
+                          ? " (se insertará página previa; la página 1 del PDF tiene contenido)"
+                          : " (página 1 vacía en el origen)"}
+                      </p>
+                    )}
+                    {(capabilities.cover_pages.sections?.length ?? 0) > 0 && (
+                      <ul className="space-y-1 text-xs text-muted-foreground">
+                        {capabilities.cover_pages.sections?.map((section) => (
+                          <li key={section.slot_id}>
+                            {section.section_label ?? section.section_key ?? "Categoría"} · PDF
+                            pág. {section.source_page_number}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    <p className="text-xs text-muted-foreground">
+                      Podrás asignar imágenes a cada portada en el estudio de adaptación.
+                    </p>
+                  </div>
+                )}
               </>
             )}
             {step === "ready" && capabilities && (

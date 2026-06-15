@@ -5,7 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from app.config import settings
-
+from app.services.media import data_root
 
 def _monorepo_root() -> Path | None:
     here = Path(__file__).resolve()
@@ -21,6 +21,7 @@ def cover_asset_search_roots() -> list[Path]:
     if settings.adaptation_assets_root:
         roots.append(Path(settings.adaptation_assets_root))
     roots.append(Path(settings.data_dir) / "adaptation_assets")
+    roots.append(data_root())
     monorepo = _monorepo_root()
     if monorepo is not None:
         roots.append(monorepo)
