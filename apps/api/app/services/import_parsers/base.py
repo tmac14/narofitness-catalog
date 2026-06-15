@@ -92,6 +92,8 @@ class ImportRow:
     product_capacity_count: float | None = None
     color_candidate_raw: str | None = None
     color_extraction_source: str | None = None
+    price_bbox: tuple[float, float, float, float] | None = None
+    row_bbox: tuple[float, float, float, float] | None = None
 
     def to_dict(self) -> dict:
         return {

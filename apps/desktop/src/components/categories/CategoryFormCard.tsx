@@ -25,12 +25,12 @@ export function CategoryFormCard({
   onCancelEdit: () => void;
 }) {
   return (
-    <Card className="mb-6">
+    <Card className="ux30-categories-form-card mb-6">
       <CardHeader>
         <CardTitle>{editingId ? "Editar categoría" : "Nueva categoría"}</CardTitle>
       </CardHeader>
       <CardContent>
-        <form onSubmit={onSubmit} className="max-w-md space-y-4">
+        <form onSubmit={onSubmit} className="ux30-categories-form w-full max-w-md space-y-4">
           <div className="space-y-2">
             <Label htmlFor="cat-name">Nombre *</Label>
             <Input
@@ -38,7 +38,7 @@ export function CategoryFormCard({
               required
               value={name}
               onChange={(e) => onNameChange(e.target.value)}
-              className="min-h-11"
+              className="min-h-11 w-full"
             />
           </div>
           <div className="space-y-2">
@@ -47,7 +47,7 @@ export function CategoryFormCard({
               id="cat-parent"
               value={parentId}
               onChange={(e) => onParentIdChange(e.target.value)}
-              className="min-h-11"
+              className="min-h-11 w-full"
             >
               <option value="">— Raíz —</option>
               {allCats
@@ -59,12 +59,17 @@ export function CategoryFormCard({
                 ))}
             </Select>
           </div>
-          <div className="flex flex-wrap gap-2">
-            <Button type="submit" className="min-h-11">
+          <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap">
+            <Button type="submit" className="min-h-11 w-full sm:w-auto">
               {editingId ? "Guardar" : "Crear"}
             </Button>
             {editingId ? (
-              <Button type="button" variant="secondary" className="min-h-11" onClick={onCancelEdit}>
+              <Button
+                type="button"
+                variant="secondary"
+                className="min-h-11 w-full sm:w-auto"
+                onClick={onCancelEdit}
+              >
                 Cancelar
               </Button>
             ) : null}

@@ -52,3 +52,9 @@ services:
 
       - ./temp:/temp:ro
 
+      - .:/repo-root:ro
+
+    environment:
+
+      ADAPTATION_ASSETS_ROOT: /repo-root
+

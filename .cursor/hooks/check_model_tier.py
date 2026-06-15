@@ -26,6 +26,8 @@ from lib.control_context import (  # noqa: E402
 
     emit_json,
 
+    extract_active_model,
+
     is_change_capable_prompt,
 
     load_full_session,
@@ -99,9 +101,7 @@ def _main() -> int:
     root = workspace_root_from_input(payload, __file__)
 
     prompt = str(payload.get("prompt") or "")
-
-    active_model = str(payload.get("model") or "")
-
+    active_model = extract_active_model(payload) or str(payload.get("model") or "").strip() or None
     intent_warning = validate_intent_in_prompt(root, prompt)
 
 
@@ -171,6 +171,34 @@ def _main() -> int:
 
 
     session = load_full_session(root)
+
+    if session and active_model:
+
+        save_session(
+
+            root,
+
+            session["runtime"],
+
+            session["protocol"],
+
+            "beforeSubmitPrompt:model",
+
+            session_mode=session.get("session_mode"),
+
+            implementation_approved=session.get("implementation_approved"),
+
+            active_model=active_model,
+
+            active_task_id=session.get("active_task_id"),
+
+            approved_model_tier=session.get("approved_model_tier"),
+
+            model_tier_approved=session.get("model_tier_approved"),
+
+        )
+
+        session = load_full_session(root) or session
 
     if not session:
 

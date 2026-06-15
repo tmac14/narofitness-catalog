@@ -83,6 +83,8 @@ async def run_preview_pipeline(
     supplier_id: UUID,
     filename: str,
     effective_date: date | None = None,
+    source_document_id: UUID | None = None,
+    analysis_snapshot_id: UUID | None = None,
 ) -> tuple[ImportBatch, list[ImportRowOut], dict[str, int], dict[str, int]]:
     parser = get_parser(profile.parser_key)
     rows = parser(content)
@@ -108,6 +110,8 @@ async def run_preview_pipeline(
         parser_key=profile.parser_key,
         effective_date=effective_date,
         row_counts={**stats, **{f"action_{k}": v for k, v in action_stats.items()}},
+        source_document_id=source_document_id,
+        analysis_snapshot_id=analysis_snapshot_id,
     )
     await bulk_insert_rows(session, batch.id, rows)
     await session.commit()

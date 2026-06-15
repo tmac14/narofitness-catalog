@@ -28,6 +28,7 @@ import {
   flatCategories,
 } from "@/components/categories/CategoryFormCard";
 import { CategoryTree } from "@/components/categories/CategoryTree";
+import { usePlatform } from "@/hooks/useDataViewMode";
 import { BREAKPOINT_PX } from "@/lib/responsive/breakpoints";
 import { classifyPlatformWidth } from "@/lib/responsive/platform";
 
@@ -52,6 +53,7 @@ function useDefaultTreeExpanded(): boolean {
 }
 
 export default function CategoriesPage() {
+  const platform = usePlatform();
   const [tree, setTree] = useState<Category[]>([]);
   const [name, setName] = useState("");
   const [parentId, setParentId] = useState<string>("");
@@ -144,7 +146,7 @@ export default function CategoriesPage() {
   const allCats = flatCategories(tree);
 
   return (
-    <div>
+    <div className="ux30-categories-page" data-ux30-platform={platform}>
       <PageHeader
         title="Categorías"
         description="Organice productos en un árbol jerárquico."
@@ -175,7 +177,7 @@ export default function CategoriesPage() {
           title="No se pudieron cargar las categorías"
           description="Compruebe la conexión con la aplicación e inténtelo de nuevo."
           action={
-            <Button type="button" variant="secondary" className="min-h-11" onClick={refresh}>
+            <Button type="button" variant="secondary" className="min-h-11 w-full sm:w-auto" onClick={refresh}>
               Reintentar
             </Button>
           }
@@ -214,11 +216,11 @@ export default function CategoriesPage() {
               subcategorías.
             </DialogDescription>
           </DialogHeader>
-          <DialogFooter>
+          <DialogFooter className="flex flex-col gap-2 sm:flex-row sm:justify-end">
             <Button
               type="button"
               variant="secondary"
-              className="min-h-11"
+              className="min-h-11 w-full sm:w-auto"
               onClick={() => setDeleteTarget(null)}
             >
               Cancelar
@@ -226,7 +228,7 @@ export default function CategoriesPage() {
             <Button
               type="button"
               variant="destructive"
-              className="min-h-11"
+              className="min-h-11 w-full sm:w-auto"
               disabled={deleting}
               onClick={() => {
                 void confirmDelete();

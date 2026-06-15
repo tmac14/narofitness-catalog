@@ -5,6 +5,7 @@ Top-level coordination and adoption docs. Update when adding/removing `.md`/`.ya
 ## Coordination docs
 
 - `docs/control/NAVIGATION.md`
+- `docs/control/ORDIA_OPERATIONS.md`
 - `docs/control/TASK_REGISTRY.yaml`
 - `docs/control/AGENT_REGISTRY.yaml`
 - `docs/control/MODEL_REGISTRY.yaml`
@@ -32,6 +33,25 @@ Top-level coordination and adoption docs. Update when adding/removing `.md`/`.ya
 ## Task packets
 
 - `docs/control/tasks/TASK_PACKET_TEMPLATE.md`
+- `docs/control/tasks/APP-PLATFORM-UX30-D7-CLOSURE.md`
+- `docs/control/tasks/APP-PLATFORM-UX30-PHASE-3-SLICE-SELECTION.md`
+- `docs/control/tasks/APP-PLATFORM-UX30-P3-SETTINGS.md`
+- `docs/control/tasks/APP-PLATFORM-UX30-P3-DASHBOARD.md`
+- `docs/control/tasks/APP-PLATFORM-UX30-P3-CATEGORIES.md`
+- `docs/control/tasks/APP-PLATFORM-UX30-P3-CLOSURE.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-SLICE-SELECTION.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1A.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1B-SLICE-SELECTION.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1B-JOBS-SUBJECT.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1C-SLICE-SELECTION.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1C-ANALYSIS-SNAPSHOT.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1D-SLICE-SELECTION.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1D-IMPORT-LINK.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE1-CLOSURE.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE2A-SLICE-SELECTION.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE2A-ADAPTATION-PROJECT.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE2B-SLICE-SELECTION.md`
+- `docs/control/tasks/SOURCE-CATALOG-DP-PHASE2B-PREVIEW-JOB.md`
 
 ## Workflows
 

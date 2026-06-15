@@ -1,6 +1,6 @@
 # SOURCE-CATALOG-DUAL-PATH-1 - Direct Adaptation and PIM Import
 
-**Status:** `ACTIVE TRACK / PHASE-1A-PAUSED-RECOVERABLE`
+**Status:** `ACTIVE TRACK / PHASE-1-COMPLETE / PHASE-2-IN-PROGRESS`
 
 **Recorded:** 2026-06-11
 
@@ -405,7 +405,8 @@ modified. From the source-document page, the user may start the other path later
 ### Separate workspaces
 
 - **Adaptation Studio:** source pages, recipe controls, preview, QA flags,
-  price report, approve/export.
+  price report, **output profile** (email vs archive), **delivery mode**
+  (persist vs ephemeral download), approve/export.
 - **Import Review:** parsed rows, grouping, taxonomy, specs, blocked rows,
   confirm.
 - **PIM Catalog Builder:** existing DB-backed product selection and presentation.
@@ -460,7 +461,11 @@ primarily by the render manifest fingerprint plus semantic validation metrics.
 | Image preservation | Expected source image groups represented; no border overlap/cropping |
 | Geometry | No detected text/cell overflow or invalid page bounds |
 | Determinism | Same manifest inputs produce the same semantic output metrics |
+| Output size | `email_optimized` ≤15 MB; `archive_quality` informational size + semantic gates |
 | Approval | Required for the exact preview/render tuple before final export |
+
+See [ADAPTATION_OUTPUT_DELIVERY_PLAN.md](./ADAPTATION_OUTPUT_DELIVERY_PLAN.md) for
+dual output profiles and persist/ephemeral delivery.
 
 ### PIM import gates
 
@@ -497,9 +502,7 @@ success cannot be used as proof that an import is correct, and vice versa.
 Do not begin these phases until the active priority is complete or the user
 explicitly reprioritizes the track.
 
-**Current progress:** Phase 0 completed on 2026-06-11. Phase 1A private immutable
-source intake is locked and awaits explicit user confirmation before product
-implementation. See [SOURCE_CATALOG_PHASE0_DECISIONS.md](./SOURCE_CATALOG_PHASE0_DECISIONS.md).
+**Current progress:** Phase 0 completed 2026-06-11. Phase 1 **COMPLETE** 2026-06-14. **Phase 2 Preview MVP COMPLETE** 2026-06-14 (2A–2N + parity audit). **PHASE-2-PARITY** and **Phase 3** authorized in parallel (hybrid track, SC-DP-SLICE-20).
 
 ### Phase 0 - Contract and prototype capture
 
@@ -538,6 +541,12 @@ Owner: Agent 6 + Agent 2
 Exit gate: reproduce the accepted 65-page FDL direct output from a stored source
 with deterministic metrics and zero PIM writes.
 
+**Status (2026-06-14):** Preview MVP **COMPLETE** (`phase2_preview_mvp_pass`).
+Semantic reproduction continues under sub-track **PHASE-2-PARITY** with
+`GET .../parity-report`. Output size target is **≤15 MB** (`email_optimized`);
+the legacy ~134 MB prototype is **archive_quality** reference only, not a gate.
+Dual profile + delivery-mode plan: [ADAPTATION_OUTPUT_DELIVERY_PLAN.md](./ADAPTATION_OUTPUT_DELIVERY_PLAN.md).
+
 ### Phase 3 - Dual-path intake UX
 
 Owner: App UX agent + Agent 4
@@ -545,6 +554,9 @@ Owner: App UX agent + Agent 4
 - Add **Nuevo catálogo desde PDF** intake and source-document detail.
 - Show detected capabilities and the two separate workflow actions.
 - Build Adaptation Studio shell and connect jobs, preview, QA, approval, export.
+- Surface **output profile** (email ≤15 MB vs archive quality) and **delivery
+  mode** (persist vs ephemeral download) per
+  [ADAPTATION_OUTPUT_DELIVERY_PLAN.md](./ADAPTATION_OUTPUT_DELIVERY_PLAN.md).
 - Preserve existing Import Review semantics.
 
 Exit gate: user can launch either path from one source and clearly understand
@@ -622,6 +634,10 @@ or bypass review/approval gates for convenience.
 - `DP-10`: No productive page/SKU/one-row hardcodes are introduced.
 - `DP-11`: FDL importer regressions pages `11/12/13/14` remain PASS.
 - `DP-12`: A second supplier profile proves the architecture is not FDL-specific.
+- `DP-13`: User selects `email_optimized` or `archive_quality` before generation.
+- `DP-14`: User selects `persist` or ephemeral download for preview; finals persist.
+- `DP-15`: `email_optimized` FDL output ≤15 MB or explicit `size_budget_exceeded`.
+- `DP-16`: Approval tuple includes `output_profile`; ephemeral previews not approvable.
 
 ## 18. Decisions Intentionally Deferred
 
@@ -645,3 +661,4 @@ rule, profile-driven support model, and cross-path isolation are not deferred.
 - [FDL_DIRECT_ADAPTATION_BASELINE.md](./contracts/FDL_DIRECT_ADAPTATION_BASELINE.md)
 - [SOURCE_DOCUMENT_ANALYSIS_V1_CONTRACT.md](./contracts/SOURCE_DOCUMENT_ANALYSIS_V1_CONTRACT.md)
 - [BACKGROUND_JOBS_RECONCILIATION_SOURCE_CATALOG.md](./contracts/BACKGROUND_JOBS_RECONCILIATION_SOURCE_CATALOG.md)
+- [ADAPTATION_OUTPUT_DELIVERY_PLAN.md](./ADAPTATION_OUTPUT_DELIVERY_PLAN.md)

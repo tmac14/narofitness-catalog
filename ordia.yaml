@@ -46,7 +46,7 @@ enforcement:
   unifiedRequiresApproval: true
 
 closure:
-  validator: npm run ordia:validate
+  validator: python -m ordia.cli validate --project
   # strict: true   # uncomment to promote closure warnings to errors
 
 # tasks:

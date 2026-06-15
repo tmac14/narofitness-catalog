@@ -19,6 +19,7 @@ from app.services.job_constants import (
     JOB_STATUS_RUNNING,
     JOB_STATUS_SUCCEEDED,
     KNOWN_JOB_TYPES,
+    SUBJECT_TYPE_CATALOG,
     TERMINAL_JOB_STATUSES,
 )
 
@@ -40,15 +41,26 @@ async def create_job(
     *,
     job_type: str,
     catalog_id: UUID | None = None,
+    subject_type: str | None = None,
+    subject_id: UUID | None = None,
     metadata: dict[str, Any] | None = None,
     message: str | None = None,
     progress_percent: int | None = None,
     expires_at: datetime | None = None,
 ) -> BackgroundJob:
+    resolved_subject_type = subject_type
+    resolved_subject_id = subject_id
+    if catalog_id is not None:
+        if resolved_subject_type is None:
+            resolved_subject_type = SUBJECT_TYPE_CATALOG
+        if resolved_subject_id is None:
+            resolved_subject_id = catalog_id
     job = BackgroundJob(
         job_type=job_type,
         status=JOB_STATUS_QUEUED,
         catalog_id=catalog_id,
+        subject_type=resolved_subject_type,
+        subject_id=resolved_subject_id,
         job_metadata=metadata or {},
         message=message,
         progress_percent=progress_percent,
@@ -75,6 +87,8 @@ async def list_jobs(
     status: str | None = None,
     job_type: str | None = None,
     catalog_id: UUID | None = None,
+    subject_type: str | None = None,
+    subject_id: UUID | None = None,
     active_only: bool = False,
     limit: int = 20,
 ) -> list[BackgroundJob]:
@@ -92,6 +106,10 @@ async def list_jobs(
         stmt = stmt.where(BackgroundJob.job_type == job_type)
     if catalog_id:
         stmt = stmt.where(BackgroundJob.catalog_id == catalog_id)
+    if subject_type:
+        stmt = stmt.where(BackgroundJob.subject_type == subject_type)
+    if subject_id:
+        stmt = stmt.where(BackgroundJob.subject_id == subject_id)
     result = await db.execute(stmt)
     return list(result.scalars().all())
 
@@ -143,6 +161,27 @@ async def find_active_catalog_export_job(
         .where(
             BackgroundJob.catalog_id == catalog_id,
             BackgroundJob.job_type == JOB_TYPE_CATALOG_EXPORT_PDF,
+            BackgroundJob.status.in_(ACTIVE_JOB_STATUSES),
+        )
+        .order_by(BackgroundJob.created_at.desc())
+        .limit(1)
+    )
+    return result.scalar_one_or_none()
+
+
+async def find_active_subject_job(
+    db: AsyncSession,
+    *,
+    subject_type: str,
+    subject_id: UUID,
+    job_type: str,
+) -> BackgroundJob | None:
+    result = await db.execute(
+        select(BackgroundJob)
+        .where(
+            BackgroundJob.subject_type == subject_type,
+            BackgroundJob.subject_id == subject_id,
+            BackgroundJob.job_type == job_type,
             BackgroundJob.status.in_(ACTIVE_JOB_STATUSES),
         )
         .order_by(BackgroundJob.created_at.desc())

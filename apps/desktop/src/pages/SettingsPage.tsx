@@ -20,6 +20,8 @@ import { Button } from "@/components/ui/button";
 import { FormSkeleton } from "@/components/LoadingPage";
 import { ErrorState } from "@/components/ErrorState";
 import { useDelayedLoading } from "@/hooks/useDelayedLoading";
+import { usePlatform } from "@/hooks/useDataViewMode";
+import { cn } from "@/lib/utils";
 import {
   Dialog,
   DialogContent,
@@ -31,7 +33,11 @@ import {
 
 const isPackaged = typeof window !== "undefined" && !import.meta.env.DEV;
 
+const touchFieldClass = "min-h-11 w-full";
+const touchButtonClass = "min-h-11 w-full sm:w-auto";
+
 export default function SettingsPage() {
+  const platform = usePlatform();
   const [settings, setSettings] = useState<AppSettings | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(false);
@@ -90,7 +96,7 @@ export default function SettingsPage() {
 
   if (loading && showSkeleton) {
     return (
-      <div>
+      <div className="ux30-settings-page" data-ux30-platform={platform}>
         <PageHeader
           title="Configuración"
           description="Ajustes de catálogo PDF, IVA y copias de seguridad."
@@ -105,7 +111,7 @@ export default function SettingsPage() {
   }
 
   return (
-    <div>
+    <div className="ux30-settings-page" data-ux30-platform={platform}>
       <PageHeader
         title="Configuración"
         description="Ajustes de catálogo PDF, IVA y copias de seguridad."
@@ -117,13 +123,19 @@ export default function SettingsPage() {
           title="No se pudo cargar la configuración"
           description="Compruebe la conexión con la aplicación e inténtelo de nuevo."
           action={
-            <Button type="button" size="sm" variant="secondary" onClick={loadSettings}>
+            <Button
+              type="button"
+              size="sm"
+              variant="secondary"
+              className={touchButtonClass}
+              onClick={loadSettings}
+            >
               Reintentar
             </Button>
           }
         />
       ) : settings ? (
-        <Card className="mb-6">
+        <Card className="ux30-settings-card mb-6">
           <CardHeader>
             <CardTitle>Catálogo PDF</CardTitle>
             <CardDescription>Texto legal, IVA y plantilla de exportación.</CardDescription>
@@ -133,12 +145,13 @@ export default function SettingsPage() {
               onSubmit={(event) => {
                 void onSave(event);
               }}
-              className="space-y-4 max-w-xl"
+              className="ux30-settings-form w-full max-w-xl space-y-4"
             >
               <div className="space-y-2">
                 <Label htmlFor="iva-disclaimer">Texto legal IVA (pie de catálogo PDF)</Label>
                 <Textarea
                   id="iva-disclaimer"
+                  className={cn(touchFieldClass, "min-h-[5.5rem]")}
                   value={settings.iva_disclaimer}
                   onChange={(e) => setSettings({ ...settings, iva_disclaimer: e.target.value })}
                 />
@@ -148,7 +161,7 @@ export default function SettingsPage() {
                 <Input
                   id="iva-rate"
                   type="number"
-                  className="w-24"
+                  className={cn(touchFieldClass, "sm:max-w-[6rem]")}
                   value={settings.iva_rate_percent}
                   onChange={(e) => setSettings({ ...settings, iva_rate_percent: e.target.value })}
                 />
@@ -161,6 +174,7 @@ export default function SettingsPage() {
                 <Label htmlFor="template">Plantilla PDF</Label>
                 <Select
                   id="template"
+                  className={touchFieldClass}
                   value={settings.catalog_template}
                   onChange={(e) => setSettings({ ...settings, catalog_template: e.target.value })}
                 >
@@ -181,6 +195,7 @@ export default function SettingsPage() {
                   id="logo"
                   type="file"
                   accept="image/*"
+                  className={cn(touchFieldClass, "cursor-pointer py-2")}
                   onChange={(e) => {
                     const f = e.target.files?.[0];
                     if (!f) return;
@@ -190,13 +205,15 @@ export default function SettingsPage() {
                   }}
                 />
               </div>
-              <Button type="submit">Guardar</Button>
+              <Button type="submit" className={touchButtonClass}>
+                Guardar
+              </Button>
             </form>
           </CardContent>
         </Card>
       ) : null}
 
-      <Card className="mb-6">
+      <Card className="ux30-settings-card mb-6">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Database className="h-4 w-4" aria-hidden="true" />
@@ -204,9 +221,10 @@ export default function SettingsPage() {
           </CardTitle>
           <CardDescription>Exporta base de datos e imágenes en un ZIP.</CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="ux30-settings-backup space-y-4">
           <Button
             type="button"
+            className={touchButtonClass}
             onClick={() => {
               void (async () => {
                 try {
@@ -228,6 +246,7 @@ export default function SettingsPage() {
               ref={restoreInputRef}
               type="file"
               accept=".zip"
+              className={cn(touchFieldClass, "cursor-pointer py-2")}
               onChange={(e) => {
                 const f = e.target.files?.[0];
                 if (!f) return;
@@ -240,7 +259,7 @@ export default function SettingsPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="ux30-settings-card">
         <CardHeader>
           <CardTitle>Datos de la aplicación</CardTitle>
         </CardHeader>
@@ -285,15 +304,22 @@ export default function SettingsPage() {
               onChange={(e) => setRestoreConfirm(e.target.value)}
               placeholder="RESTAURAR"
               autoComplete="off"
+              className={touchFieldClass}
             />
           </div>
-          <DialogFooter>
-            <Button type="button" variant="secondary" onClick={() => setRestoreOpen(false)}>
+          <DialogFooter className="flex flex-col gap-2 sm:flex-row sm:justify-end">
+            <Button
+              type="button"
+              variant="secondary"
+              className={touchButtonClass}
+              onClick={() => setRestoreOpen(false)}
+            >
               Cancelar
             </Button>
             <Button
               type="button"
               variant="destructive"
+              className={touchButtonClass}
               disabled={restoreConfirm !== "RESTAURAR" || !pendingRestoreFile}
               onClick={() => {
                 void confirmRestore();

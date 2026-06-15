@@ -167,6 +167,34 @@ def read_stdin_json() -> dict[str, Any]:
     return data if isinstance(data, dict) else {}
 
 
+def extract_hook_event(payload: dict[str, Any]) -> str:
+    for key in ("hook_event_name", "hookEventName", "event"):
+        value = payload.get(key)
+        if value:
+            return str(value)
+    return "unknown"
+
+
+def extract_active_model(payload: dict[str, Any]) -> str | None:
+    for key in ("model", "active_model", "activeModel"):
+        value = payload.get(key)
+        if value:
+            slug = str(value).strip()
+            if slug and slug.lower() not in {"default", "auto"}:
+                return slug
+    return None
+
+
+def resolve_telemetry_model(payload: dict[str, Any], session: dict[str, Any]) -> tuple[str | None, str]:
+    direct = extract_active_model(payload)
+    if direct:
+        return direct, "hook_payload"
+    session_model = session.get("active_model")
+    if session_model:
+        return str(session_model), "session_protocol"
+    return None, "unknown"
+
+
 def workspace_root_from_input(payload: dict[str, Any], hook_file: str | None = None) -> Path:
     roots = payload.get("workspace_roots") or payload.get("workspaceRoots") or []
     if isinstance(roots, list) and roots:
@@ -691,6 +719,7 @@ def save_session(
     approved_model_tier: str | None = None,
     model_tier_approved: bool | None = None,
     active_task_id: str | None = None,
+    active_model: str | None = None,
 ) -> dict[str, Any]:
     existing = load_full_session(root)
     resolved_mode = session_mode or (existing or {}).get("session_mode")
@@ -738,6 +767,18 @@ def save_session(
         payload["active_task_id"] = active_task_id
     elif existing and existing.get("active_task_id"):
         payload["active_task_id"] = str(existing["active_task_id"])
+    if active_model:
+        slug = str(active_model).strip()
+        if slug and slug.lower() not in {"default", "auto"}:
+            payload["active_model"] = slug
+            payload["active_model_at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+            payload["active_model_source"] = source
+    elif existing and existing.get("active_model"):
+        payload["active_model"] = existing["active_model"]
+        if existing.get("active_model_at"):
+            payload["active_model_at"] = existing["active_model_at"]
+        if existing.get("active_model_source"):
+            payload["active_model_source"] = existing["active_model_source"]
     path = session_path(root)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")

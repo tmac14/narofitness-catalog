@@ -4,6 +4,7 @@ from decimal import Decimal
 from typing import Any
 
 from sqlalchemy import (
+    BigInteger,
     Boolean,
     Date,
     DateTime,
@@ -350,6 +351,15 @@ class ImportBatch(Base):
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     created_by: Mapped[str | None] = mapped_column(String(128))
     notes: Mapped[str | None] = mapped_column(Text)
+    source_document_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("source_documents.id"), nullable=True, index=True
+    )
+    analysis_snapshot_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("document_analysis_snapshots.id"),
+        nullable=True,
+        index=True,
+    )
 
     rows: Mapped[list["ImportRow"]] = relationship(
         back_populates="batch", cascade="all, delete-orphan"
@@ -582,6 +592,8 @@ class BackgroundJob(Base):
     catalog_id: Mapped[uuid.UUID | None] = mapped_column(
         UUID(as_uuid=True), ForeignKey("catalogs.id", ondelete="SET NULL"), nullable=True
     )
+    subject_type: Mapped[str | None] = mapped_column(String(64), nullable=True, index=True)
+    subject_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True, index=True)
     job_metadata: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, default=dict)
     cancel_requested: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
@@ -590,3 +602,191 @@ class BackgroundJob(Base):
     expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
     catalog: Mapped["Catalog | None"] = relationship()
+
+
+class SourceDocument(Base):
+    __tablename__ = "source_documents"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=new_uuid)
+    sha256: Mapped[str] = mapped_column(String(64), unique=True, nullable=False, index=True)
+    original_filename: Mapped[str] = mapped_column(String(512), nullable=False)
+    storage_key: Mapped[str] = mapped_column(String(1024), unique=True, nullable=False)
+    mime_type: Mapped[str] = mapped_column(String(128), nullable=False, default="application/pdf")
+    byte_size: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    page_count: Mapped[int] = mapped_column(Integer, nullable=False)
+    validation_status: Mapped[str] = mapped_column(String(32), nullable=False, default="valid")
+    validation_error: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    created_by: Mapped[str | None] = mapped_column(String(128))
+
+
+class DocumentAnalysisSnapshot(Base):
+    __tablename__ = "document_analysis_snapshots"
+    __table_args__ = (
+        UniqueConstraint(
+            "source_document_id",
+            "analyzer_key",
+            "analyzer_version",
+            "config_fingerprint",
+            name="uq_document_analysis_snapshot_contract",
+        ),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=new_uuid)
+    source_document_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("source_documents.id"), nullable=False, index=True
+    )
+    snapshot_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False, index=True)
+    analyzer_key: Mapped[str] = mapped_column(String(128), nullable=False)
+    analyzer_version: Mapped[str] = mapped_column(String(32), nullable=False)
+    config_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    profile_key: Mapped[str] = mapped_column(String(128), nullable=False)
+    profile_version: Mapped[str] = mapped_column(String(32), nullable=False)
+    profile_match_status: Mapped[str] = mapped_column(String(64), nullable=False)
+    snapshot_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    source_document: Mapped["SourceDocument"] = relationship()
+
+
+class CatalogAdaptationProject(Base):
+    __tablename__ = "catalog_adaptation_projects"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=new_uuid)
+    source_document_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("source_documents.id"), nullable=False, index=True
+    )
+    analysis_snapshot_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("document_analysis_snapshots.id"),
+        nullable=True,
+    )
+    name: Mapped[str] = mapped_column(String(512), nullable=False)
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="draft")
+    profile_key: Mapped[str] = mapped_column(String(128), nullable=False)
+    profile_version: Mapped[str] = mapped_column(String(32), nullable=False)
+    active_recipe_version_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey(
+            "catalog_adaptation_recipe_versions.id",
+            name="fk_catalog_adaptation_projects_active_recipe_version_id",
+            use_alter=True,
+        ),
+        nullable=True,
+    )
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
+    created_by: Mapped[str | None] = mapped_column(String(128))
+
+    source_document: Mapped["SourceDocument"] = relationship()
+    analysis_snapshot: Mapped["DocumentAnalysisSnapshot | None"] = relationship()
+    recipe_versions: Mapped[list["CatalogAdaptationRecipeVersion"]] = relationship(
+        back_populates="project",
+        cascade="all, delete-orphan",
+        foreign_keys="CatalogAdaptationRecipeVersion.project_id",
+    )
+    exports: Mapped[list["CatalogAdaptationExport"]] = relationship(
+        back_populates="project",
+        cascade="all, delete-orphan",
+    )
+
+
+class CatalogAdaptationRecipeVersion(Base):
+    __tablename__ = "catalog_adaptation_recipe_versions"
+    __table_args__ = (
+        UniqueConstraint(
+            "project_id",
+            "version_number",
+            name="uq_catalog_adaptation_recipe_project_version",
+        ),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=new_uuid)
+    project_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("catalog_adaptation_projects.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    version_number: Mapped[int] = mapped_column(Integer, nullable=False)
+    schema_version: Mapped[str] = mapped_column(String(64), nullable=False)
+    recipe_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    recipe_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    project: Mapped["CatalogAdaptationProject"] = relationship(
+        back_populates="recipe_versions",
+        foreign_keys=[project_id],
+    )
+
+
+class CatalogAdaptationExport(Base):
+    __tablename__ = "catalog_adaptation_exports"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=new_uuid)
+    project_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("catalog_adaptation_projects.id"),
+        nullable=False,
+        index=True,
+    )
+    recipe_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("catalog_adaptation_recipe_versions.id"),
+        nullable=False,
+    )
+    job_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("background_jobs.id", ondelete="SET NULL"),
+        nullable=True,
+        index=True,
+    )
+    export_kind: Mapped[str] = mapped_column(String(32), nullable=False, default="preview")
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="stub_completed")
+    manifest_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    manifest_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    artifact_path: Mapped[str | None] = mapped_column(String(1024))
+    pdf_artifact_path: Mapped[str | None] = mapped_column(String(1024))
+    output_profile: Mapped[str] = mapped_column(String(32), nullable=False, default="email_optimized")
+    delivery_mode: Mapped[str] = mapped_column(String(32), nullable=False, default="persist")
+    expires_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    project: Mapped["CatalogAdaptationProject"] = relationship(back_populates="exports")
+    recipe_version: Mapped["CatalogAdaptationRecipeVersion"] = relationship()
+
+
+class CatalogAdaptationApproval(Base):
+    __tablename__ = "catalog_adaptation_approvals"
+    __table_args__ = (
+        UniqueConstraint("project_id", name="uq_catalog_adaptation_approvals_project"),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=new_uuid)
+    project_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("catalog_adaptation_projects.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    recipe_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("catalog_adaptation_recipe_versions.id"),
+        nullable=False,
+    )
+    export_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("catalog_adaptation_exports.id", ondelete="CASCADE"),
+        nullable=False,
+    )
+    manifest_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    output_profile: Mapped[str] = mapped_column(String(32), nullable=False)
+    renderer_version: Mapped[str] = mapped_column(String(32), nullable=False)
+    approved_by: Mapped[str | None] = mapped_column(String(128))
+    approval_note: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    project: Mapped["CatalogAdaptationProject"] = relationship()
+    export: Mapped["CatalogAdaptationExport"] = relationship()

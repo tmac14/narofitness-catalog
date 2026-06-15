@@ -26,11 +26,13 @@ services:
       DATABASE_URL: postgresql+asyncpg://narocatalog:narocatalog@postgres:5432/narocatalog
       DATA_DIR: /data
       CORS_ORIGINS: "*"
+      ADAPTATION_ASSETS_ROOT: /repo-root
     # Explicit prod command — never --reload (avoids multiprocessing fork storms).
     command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
     volumes:
       - api_data:/data
       - ./temp:/temp:ro
+      - .:/repo-root:ro
     depends_on:
       postgres:
         condition: service_healthy

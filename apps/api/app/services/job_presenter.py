@@ -25,6 +25,8 @@ def job_to_out(job: BackgroundJob) -> JobOut:
         error_message=job.error_message,
         catalog_id=job.catalog_id,
         catalog_name=catalog_name or metadata.get("catalog_name"),
+        subject_type=job.subject_type,
+        subject_id=job.subject_id,
         created_at=job.created_at,
         started_at=job.started_at,
         finished_at=job.finished_at,

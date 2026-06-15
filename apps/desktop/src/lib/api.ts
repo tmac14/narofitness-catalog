@@ -986,7 +986,178 @@ export async function createCatalogPdfExportJob(catalogId: string) {
   return request<JobOut>(`/catalogs/${catalogId}/exports/pdf/jobs`, { method: "POST" });
 }
 
-// Price lists
+// Source documents & catalog adaptation
+export type SourceDocumentOut = {
+  id: string;
+  sha256: string;
+  original_filename: string;
+  mime_type: string;
+  byte_size: number;
+  page_count: number;
+  validation_status: string;
+  validation_error: string | null;
+  created_at: string;
+  created_by: string | null;
+};
+
+export type SourceDocumentCapabilities = {
+  source_document_id: string;
+  sha256: string;
+  page_count: number;
+  validation_status: string;
+  profile_match_status: string | null;
+  workflows: {
+    direct_adaptation: boolean;
+    pim_import: boolean;
+    analysis: boolean;
+  };
+  note: string;
+};
+
+export type AdaptationProjectOut = {
+  id: string;
+  source_document_id: string;
+  analysis_snapshot_id: string | null;
+  name: string;
+  status: string;
+  profile_key: string;
+  profile_version: string;
+  active_recipe_version_id: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type AdaptationOutputDeliveryManifest = {
+  profile?: string;
+  delivery_mode?: string;
+  byte_length?: number;
+  within_budget?: boolean;
+  encode_pass?: string;
+  budget_bytes?: number;
+  soft_warn_bytes?: number;
+  soft_warn_triggered?: boolean;
+};
+
+export type AdaptationExportManifest = {
+  output_delivery?: AdaptationOutputDeliveryManifest;
+  [key: string]: unknown;
+};
+
+export type AdaptationExportOut = {
+  id: string;
+  project_id: string;
+  recipe_version_id: string;
+  job_id: string | null;
+  export_kind: string;
+  status: string;
+  manifest_fingerprint: string;
+  manifest: AdaptationExportManifest;
+  artifact_path: string | null;
+  pdf_artifact_path: string | null;
+  output_profile: string;
+  delivery_mode: string;
+  expires_at: string | null;
+  created_at: string;
+};
+
+export type AdaptationJobRequest = {
+  output_profile?: "email_optimized" | "archive_quality";
+  delivery_mode?: "persist" | "ephemeral";
+  ephemeral_ttl_seconds?: number;
+};
+
+export async function uploadSourceDocument(file: File) {
+  const fd = new FormData();
+  fd.append("file", file);
+  return request<SourceDocumentOut>("/source-documents", { method: "POST", body: fd });
+}
+
+export async function startSourceDocumentAnalysis(sourceDocumentId: string) {
+  return request<JobOut>(`/source-documents/${sourceDocumentId}/analysis-jobs`, { method: "POST" });
+}
+
+export async function getSourceDocumentCapabilities(sourceDocumentId: string) {
+  return request<SourceDocumentCapabilities>(`/source-documents/${sourceDocumentId}/capabilities`);
+}
+
+export async function createAdaptationFromSource(sourceDocumentId: string, name?: string) {
+  return request<AdaptationProjectOut>(`/source-documents/${sourceDocumentId}/adaptations`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name }),
+  });
+}
+
+export async function getAdaptationProject(projectId: string) {
+  return request<AdaptationProjectOut>(`/catalog-adaptations/${projectId}`);
+}
+
+export async function listAdaptationExports(projectId: string) {
+  return request<{ items: AdaptationExportOut[]; total: number }>(
+    `/catalog-adaptations/${projectId}/exports`,
+  );
+}
+
+export async function createAdaptationPreviewJob(projectId: string, body?: AdaptationJobRequest) {
+  return request<JobOut>(`/catalog-adaptations/${projectId}/preview-jobs`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body ?? {}),
+  });
+}
+
+export async function createAdaptationExportJob(projectId: string, body?: AdaptationJobRequest) {
+  return request<JobOut>(`/catalog-adaptations/${projectId}/export-jobs`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body ?? {}),
+  });
+}
+
+export async function approveAdaptationExport(
+  projectId: string,
+  body: { export_id: string; approved_by?: string; approval_note?: string },
+) {
+  return request<{
+    id: string;
+    project_id: string;
+    export_id: string;
+    output_profile: string;
+    renderer_version: string;
+  }>(`/catalog-adaptations/${projectId}/approvals`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+}
+
+export async function getAdaptationApproval(projectId: string) {
+  return request<{
+    id: string;
+    project_id: string;
+    export_id: string;
+    output_profile: string;
+    renderer_version: string;
+  }>(`/catalog-adaptations/${projectId}/approvals/latest`);
+}
+
+export async function getAdaptationParityReport(projectId: string) {
+  return request<{ parity_score: number; production_parity_pass: boolean }>(
+    `/catalog-adaptations/${projectId}/parity-report`,
+  );
+}
+
+export async function downloadAdaptationExport(
+  projectId: string,
+  exportId: string,
+  artifact: "pdf" | "manifest" = "pdf",
+) {
+  const res = await fetch(
+    `${V1}/catalog-adaptations/${projectId}/exports/${exportId}/download?artifact=${artifact}`,
+  );
+  if (!res.ok) throw new Error(await readErrorMessage(res));
+  return res.blob();
+}
 export async function listPriceLists() {
   return request<
     { id: string; source_filename: string; imported_at: string; supplier_id: string }[]

@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Dashboard from "@/pages/Dashboard";
 import ImportPage from "@/pages/ImportPage";
+import SourceDocumentIntakePage from "@/pages/SourceDocumentIntakePage";
+import AdaptationStudioPage from "@/pages/AdaptationStudioPage";
 import ProductsPage from "@/pages/ProductsPage";
 import ProductDetailPage from "@/pages/ProductDetailPage";
 import CatalogsPage from "@/pages/CatalogsPage";
@@ -17,6 +19,8 @@ export default function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/suppliers" element={<SuppliersPage />} />
         <Route path="/import" element={<ImportPage />} />
+        <Route path="/catalog-from-pdf" element={<SourceDocumentIntakePage />} />
+        <Route path="/adaptations/:projectId" element={<AdaptationStudioPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<ProductDetailPage />} />
         <Route path="/categories" element={<CategoriesPage />} />

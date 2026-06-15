@@ -27,7 +27,7 @@ Portable Ordia rules apply to all profiles. Domain constraints live in `narofitn
 | Track | Status | Planning doc |
 |-------|--------|--------------|
 | `SOURCE-CATALOG-DUAL-PATH` | Active top data priority | `docs/product/planning/SOURCE_CATALOG_DUAL_PATH_PLAN.md` |
-| `APP-PLATFORM-UX-3.0` | Phase 2B/2C sequence pending UX30-D7 | `docs/product/planning/APP_PLATFORM_UX_3.0_ROADMAP.md` |
+| `APP-PLATFORM-UX-3.0` | Phase 2 **COMPLETE** (2A–2D); UX30-D7 **DECIDED** (2B→2C) | `docs/product/planning/APP_PLATFORM_UX_3.0_ROADMAP.md` — **Phase 3** slice next |
 | `IMPORT-FDL-FULL-QUALITY` | **PAUSED / DEFERRED** | `docs/product/planning/IMPORT_FDL_FULL_QUALITY_PLAN.md` |
 
 ## Session defaults

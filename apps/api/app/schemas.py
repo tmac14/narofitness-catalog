@@ -45,6 +45,8 @@ class ImportPreviewResponse(BaseModel):
     filename: str
     supplier_id: UUID
     import_profile_id: UUID
+    source_document_id: UUID | None = None
+    analysis_snapshot_id: UUID | None = None
     total_rows: int
     stats: dict[str, int]
     action_stats: dict[str, int] = Field(default_factory=dict)
@@ -85,6 +87,8 @@ class ImportBatchOut(BaseModel):
     completed_at: datetime | None = None
     created_by: str | None = None
     notes: str | None = None
+    source_document_id: UUID | None = None
+    analysis_snapshot_id: UUID | None = None
 
     model_config = {"from_attributes": True}
 
@@ -592,6 +596,8 @@ class JobOut(BaseModel):
     error_message: str | None = None
     catalog_id: UUID | None = None
     catalog_name: str | None = None
+    subject_type: str | None = None
+    subject_id: UUID | None = None
     created_at: datetime
     started_at: datetime | None = None
     finished_at: datetime | None = None
@@ -608,3 +614,121 @@ class JobListResponse(BaseModel):
 class JobCancelResponse(BaseModel):
     job: JobOut
     cancelled: bool
+
+
+class SourceDocumentOut(BaseModel):
+    id: UUID
+    sha256: str
+    original_filename: str
+    mime_type: str
+    byte_size: int
+    page_count: int
+    validation_status: str
+    validation_error: str | None
+    created_at: datetime
+    created_by: str | None
+
+
+class SourceDocumentWorkflowCapabilities(BaseModel):
+    direct_adaptation: bool
+    pim_import: bool
+    analysis: bool
+
+
+class SourceDocumentCapabilitiesOut(BaseModel):
+    source_document_id: str
+    sha256: str
+    page_count: int
+    validation_status: str
+    profile_match_status: str | None = None
+    workflows: SourceDocumentWorkflowCapabilities
+    note: str
+
+
+class DocumentAnalysisSnapshotOut(BaseModel):
+    id: UUID
+    source_document_id: UUID
+    snapshot_fingerprint: str
+    analyzer_key: str
+    analyzer_version: str
+    profile_key: str
+    profile_version: str
+    profile_match_status: str
+    created_at: datetime
+    snapshot: dict[str, Any]
+
+
+class CatalogAdaptationCreateRequest(BaseModel):
+    name: str | None = None
+
+
+class CatalogAdaptationRecipeVersionOut(BaseModel):
+    id: UUID
+    project_id: UUID
+    version_number: int
+    schema_version: str
+    recipe_fingerprint: str
+    recipe: dict[str, Any]
+    created_at: datetime
+
+
+class CatalogAdaptationProjectOut(BaseModel):
+    id: UUID
+    source_document_id: UUID
+    analysis_snapshot_id: UUID | None
+    name: str
+    status: str
+    profile_key: str
+    profile_version: str
+    active_recipe_version_id: UUID | None
+    active_recipe: CatalogAdaptationRecipeVersionOut | None = None
+    created_at: datetime
+    updated_at: datetime
+    created_by: str | None = None
+
+
+class CatalogAdaptationExportOut(BaseModel):
+    id: UUID
+    project_id: UUID
+    recipe_version_id: UUID
+    job_id: UUID | None
+    export_kind: str
+    status: str
+    manifest_fingerprint: str
+    manifest: dict[str, Any]
+    artifact_path: str | None
+    pdf_artifact_path: str | None
+    output_profile: str
+    delivery_mode: str
+    expires_at: datetime | None = None
+    created_at: datetime
+
+
+class AdaptationJobRequest(BaseModel):
+    output_profile: str | None = None
+    delivery_mode: str | None = None
+    ephemeral_ttl_seconds: int | None = None
+
+
+class CatalogAdaptationApprovalCreateRequest(BaseModel):
+    export_id: UUID
+    approved_by: str | None = None
+    approval_note: str | None = None
+
+
+class CatalogAdaptationApprovalOut(BaseModel):
+    id: UUID
+    project_id: UUID
+    recipe_version_id: UUID
+    export_id: UUID
+    manifest_fingerprint: str
+    output_profile: str
+    renderer_version: str
+    approved_by: str | None
+    approval_note: str | None
+    created_at: datetime
+
+
+class CatalogAdaptationExportListResponse(BaseModel):
+    items: list[CatalogAdaptationExportOut]
+    total: int

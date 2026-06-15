@@ -77,3 +77,9 @@ export function useDataViewMode(options: UseDataViewModeOptions): DataViewModeRe
   const width = useSyncExternalStore(subscribeViewport, getViewportWidth, getServerViewportWidth);
   return computeDataViewModeFromWidth(width, options);
 }
+
+/** Current UX30 platform band from viewport width (forms, toolbars, layout). */
+export function usePlatform(): Platform {
+  const width = useSyncExternalStore(subscribeViewport, getViewportWidth, getServerViewportWidth);
+  return classifyPlatformWidth(width);
+}

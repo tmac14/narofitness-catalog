@@ -26,6 +26,16 @@ export function jobTitle(job: JobOut): string {
   if (job.job_type === "catalog_export_pdf") {
     return catalogName ? `Exportar PDF — ${catalogName}` : "Exportar PDF";
   }
+  if (job.job_type === "catalog_adaptation_preview") {
+    const profile =
+      typeof job.metadata.output_profile === "string" ? job.metadata.output_profile : null;
+    return profile ? `Vista previa adaptación (${profile})` : "Vista previa adaptación";
+  }
+  if (job.job_type === "catalog_adaptation_export") {
+    const profile =
+      typeof job.metadata.output_profile === "string" ? job.metadata.output_profile : null;
+    return profile ? `Exportación final (${profile})` : "Exportación final adaptación";
+  }
 
   return catalogName ?? job.message ?? job.job_type;
 }

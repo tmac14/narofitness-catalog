@@ -1,0 +1,1 @@
+"""Direct adaptation renderer package."""

@@ -48,7 +48,7 @@ export function DashboardKpiCard({
     return (
       <Link
         to={href}
-        className="block h-full rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        className="ux30-dashboard-kpi-link block h-full min-h-11 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
         {content}
       </Link>

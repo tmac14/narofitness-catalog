@@ -21,8 +21,10 @@ import { DashboardProcessModule } from "@/components/dashboard/DashboardProcessM
 import { DashboardSystemAlert } from "@/components/dashboard/DashboardSystemAlert";
 import { DashboardRecommendations } from "@/components/dashboard/DashboardRecommendations";
 import { cn } from "@/lib/utils";
+import { usePlatform } from "@/hooks/useDataViewMode";
 
 export default function Dashboard() {
+  const platform = usePlatform();
   const { health, activeJobs, recentTerminalJob, jobsError, setPanelOpen } = useStatusBar();
   const { kpis, recentPriceLists, recentCatalogs, catalogs, recentJobs, loading, errors, refresh } =
     useDashboardData();
@@ -73,7 +75,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="dashboard-page">
+    <div className="dashboard-page ux30-dashboard-page" data-ux30-platform={platform}>
       <DashboardHero
         statusSummary={statusSummary}
         connected={connected}

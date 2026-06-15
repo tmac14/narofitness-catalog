@@ -11,7 +11,7 @@ export function ResponsiveTouchMenuTrigger({
 }: {
   ariaLabel: string;
   className?: string;
-  children: ReactNode;
+  children?: ReactNode;
 }) {
   return (
     <Button

@@ -31,6 +31,8 @@ async def create_batch(
     parser_version: str = PARSER_VERSION,
     effective_date: date | None = None,
     row_counts: dict | None = None,
+    source_document_id: UUID | None = None,
+    analysis_snapshot_id: UUID | None = None,
 ) -> ImportBatch:
     batch = ImportBatch(
         supplier_id=supplier_id,
@@ -41,6 +43,8 @@ async def create_batch(
         effective_date=effective_date,
         status="preview",
         row_counts=row_counts or {},
+        source_document_id=source_document_id,
+        analysis_snapshot_id=analysis_snapshot_id,
     )
     session.add(batch)
     await session.flush()

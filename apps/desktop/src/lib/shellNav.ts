@@ -1,6 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 import {
   BookOpen,
+  FileText,
   FileUp,
   FolderTree,
   GitCompare,
@@ -21,6 +22,7 @@ export type ShellNavItem = {
 /** Single source of truth — all eight destinations, order preserved for desktop. */
 export const SHELL_NAV_PRIMARY: ShellNavItem[] = [
   { to: "/", label: "Inicio", icon: LayoutDashboard },
+  { to: "/catalog-from-pdf", label: "Catálogo desde PDF", mobileLabel: "Desde PDF", icon: FileText },
   { to: "/import", label: "Importar tarifa", mobileLabel: "Importar", icon: FileUp },
   { to: "/products", label: "Productos", icon: Package },
   { to: "/catalogs", label: "Catálogos", icon: BookOpen },

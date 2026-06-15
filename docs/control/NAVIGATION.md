@@ -13,7 +13,8 @@ This map links every coordination artifact. Resolve `{controlRoot}` from `ordia.
 | 1 | Read [AGENTS.md](../../AGENTS.md) — declare Runtime + Protocol |
 | 2 | Read [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md) §0 — live session |
 | 3 | Read [PROFILE.md](./PROFILE.md) — agents and guardrails |
-| 4 | Run `ordia validate --project` before change-capable work |
+| 4 | Read [ORDIA_OPERATIONS.md](./ORDIA_OPERATIONS.md) — **Narofitness Ordia playbook** |
+| 5 | Run `ordia validate --project` before change-capable work |
 
 **Brownfield:** see [ADOPTION_REPORT.md](./ADOPTION_REPORT.md) after `ordia adopt`.
 
@@ -27,6 +28,7 @@ This map links every coordination artifact. Resolve `{controlRoot}` from `ordia.
 | [TASK_REGISTRY.yaml](./TASK_REGISTRY.yaml) | Tasks, queues, locks, in-flight |
 | [AGENT_REGISTRY.yaml](./AGENT_REGISTRY.yaml) | Parallel agent topology and scopes |
 | [PROFILE.md](./PROFILE.md) | Domain profile, tracks, guardrails |
+| [ORDIA_OPERATIONS.md](./ORDIA_OPERATIONS.md) | Narofitness Ordia playbook (full capability map) |
 | [COMMANDS.md](./COMMANDS.md) | L2/L3 project commands overlay |
 | [commands.catalog.json](./commands.catalog.json) | Machine-readable command catalog |
 

@@ -31,11 +31,11 @@ Permanent rules: `.cursor/rules/narofitness-permanent-guardrails.mdc` and [ENGIN
 
 | Track ID | Status | Next safe action |
 |----------|--------|------------------|
-| `SOURCE-CATALOG-DUAL-PATH` | Active data priority | Read planning doc; create task packet when user selects slice |
-| `APP-PLATFORM-UX-3.0` | Phase 2B **VALIDATED**; UX30-D7 pending | User decision on 2B vs 2C sequence |
+| `SOURCE-CATALOG-DUAL-PATH` | Phase 1 **COMPLETE**; Phase 2A–2B **VALIDATED** | `discover` Phase 2C FDL renderer |
+| `APP-PLATFORM-UX-3.0` | Phase 3 authorized slices **VALIDATED**; closure complete | Deferred: ProductDetail, Import Phase 4 |
 | `IMPORT-FDL-FULL-QUALITY` | **PAUSED / DEFERRED** | Do not resume without explicit user instruction |
 
-Orchestration state: [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md) §0 — recovery status `RECOVERY_READY`, awaiting first task selection.
+Orchestration state: [ORCHESTRATION_STATE.md](./ORCHESTRATION_STATE.md) §0 — Phase 3 closure **VALIDATED**; next: SOURCE-CATALOG-DUAL-PATH discover.
 
 ## Workflow intents (profile overlay)
 

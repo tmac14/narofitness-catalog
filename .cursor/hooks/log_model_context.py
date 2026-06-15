@@ -12,10 +12,12 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / ".cursor" / "hooks"))
 
 from lib.control_context import (  # noqa: E402
+    extract_hook_event,
     load_full_session,
     model_telemetry_path,
     read_state_fields,
     read_stdin_json,
+    resolve_telemetry_model,
     workspace_root_from_input,
 )
 
@@ -31,33 +33,40 @@ def main() -> int:
     try:
         payload = read_stdin_json()
         root = workspace_root_from_input(payload, __file__)
-        event = str(payload.get("hook_event_name") or payload.get("event") or "unknown")
+        event = extract_hook_event(payload)
         session = load_full_session(root) or {}
         state_fields = read_state_fields(root)
         active_task_id = session.get("active_task_id") or state_fields.get("active_task_id")
+        model, model_source = resolve_telemetry_model(payload, session)
         record = {
             "timestamp": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
             "event": event,
-            "model": payload.get("model"),
-            "conversation_id": payload.get("conversation_id"),
-            "generation_id": payload.get("generation_id"),
+            "model": model,
+            "model_source": model_source,
+            "conversation_id": payload.get("conversation_id") or payload.get("conversationId"),
+            "generation_id": payload.get("generation_id") or payload.get("generationId"),
             "approved_model_tier": session.get("approved_model_tier"),
             "model_tier_approved": session.get("model_tier_approved"),
             "active_task_id": active_task_id,
+            "session_mode": session.get("session_mode") or state_fields.get("session_mode"),
         }
         if event == "preCompact":
             record.update(
                 {
-                    "context_usage_percent": payload.get("context_usage_percent"),
-                    "context_tokens": payload.get("context_tokens"),
-                    "context_window_size": payload.get("context_window_size"),
+                    "context_usage_percent": payload.get("context_usage_percent")
+                    or payload.get("contextUsagePercent"),
+                    "context_tokens": payload.get("context_tokens") or payload.get("contextTokens"),
+                    "context_window_size": payload.get("context_window_size")
+                    or payload.get("contextWindowSize"),
+                    "trigger": payload.get("trigger"),
                 }
             )
         if event == "sessionEnd":
             record.update(
                 {
-                    "duration_ms": payload.get("duration_ms"),
+                    "duration_ms": payload.get("duration_ms") or payload.get("durationMs"),
                     "reason": payload.get("reason"),
+                    "final_status": payload.get("final_status") or payload.get("finalStatus"),
                 }
             )
         _append_event(root, record)

@@ -12,8 +12,8 @@ Ordia bootstrap — read the project profile under the control store before chan
 
 | Track | Status |
 |-------|--------|
-| `SOURCE-CATALOG-DUAL-PATH` | Active data priority |
-| `APP-PLATFORM-UX-3.0` | Phase 2B validated; UX30-D7 pending |
+| `SOURCE-CATALOG-DUAL-PATH` | Phase 1 **COMPLETE**; Phase 2A–2B **VALIDATED** |
+| `APP-PLATFORM-UX-3.0` | Phase 3 authorized slices **VALIDATED**; closure complete | Deferred: ProductDetail, Import Phase 4 |
 | `IMPORT-FDL-FULL-QUALITY` | **PAUSED / DEFERRED** |
 
 Declare before change-capable work:

@@ -2,11 +2,11 @@
 
 Discovery and planning reference for **App UX agent — App-Wide Accessible UX/UI Agent**. Defines what is outside the catalogue builder (Catalog UI agent) and how App UX agent should begin work.
 
-**Last updated:** 2026-06-12 (Agent 3 — APP-PLATFORM-UX-3.0 Phase 1 **VALIDATED**)
+**Last updated:** 2026-06-14 (Phase 3 authorized slices **VALIDATED**; closure `APP-PLATFORM-UX30-P3-CLOSURE`)
 
 **Owner:** App UX agent. Agent 3 tracks shared-file locks.
 
-**Active UI track:** [APP_PLATFORM_UX_3.0_ROADMAP.md](./APP_PLATFORM_UX_3.0_ROADMAP.md) — Phase 2A **`VALIDATED`**; **no active locks**; next gate **UX30-D7** (2B vs 2C).
+**Active UI track:** [APP_PLATFORM_UX_3.0_ROADMAP.md](./APP_PLATFORM_UX_3.0_ROADMAP.md) — Phase 3 authorized slices **VALIDATED** (Settings, Dashboard, Categories form); deferred: ProductDetail (paused), Import (Phase 4).
 
 **Parallel (protected):** [IMPORT_FDL_FULL_QUALITY_PLAN.md](./IMPORT_FDL_FULL_QUALITY_PLAN.md) — Agents 2/5.
 
@@ -50,17 +50,32 @@ Discovery and planning reference for **App UX agent — App-Wide Accessible UX/U
 
 **QA evidence:** `temp/qa/ux30-phase2a-products/UX30_PHASE2A_PRODUCTS_QA_REPORT.md`
 
-## APP-PLATFORM-UX-3.0 — Phase 2 next slice (`NEEDS_DECISION`)
+## APP-PLATFORM-UX-3.0 — Phase 2 (`COMPLETE`)
 
 | Sub-phase | Status |
 |-----------|--------|
-| 2B Suppliers/Categories | **`PLANNED` / `NOT_AUTHORIZED`** — **BLOCKED** |
-| 2C PriceLists | **`PLANNED` / `NOT_AUTHORIZED`** — **BLOCKED** |
-| 2D Shared primitives | **`DEFERRED` / `NOT_AUTHORIZED`** — **BLOCKED** |
+| 2A Products | **`VALIDATED`** |
+| 2B Suppliers/Categories | **`VALIDATED`** (2026-06-13) — first per **UX30-D7** |
+| 2C PriceLists | **`VALIDATED`** (2026-06-13) — second per **UX30-D7** |
+| 2D Shared primitives | **`VALIDATED`** (2026-06-14) |
 
-**Decision required:** **UX30-D7** — implement 2B before 2C, or vice versa.
+**Decision UX30-D7:** **`DECIDED`** (2026-06-14) — sequence **2B → 2C**. Closure: `APP-PLATFORM-UX30-D7-CLOSURE`.
+
+**Next gate:** Phase 3 authorized slices **COMPLETE** (2026-06-14). Deferred: ProductDetail, ImportPage (Phase 4). Next priority: **SOURCE-CATALOG-DUAL-PATH**.
 
 **Roadmap:** [APP_PLATFORM_UX_3.0_ROADMAP.md](./APP_PLATFORM_UX_3.0_ROADMAP.md)
+
+## APP-PLATFORM-UX-3.0 — Phase 3 Forms (AUTHORIZED SLICES CLOSED)
+
+| Slice | Task | Status |
+|-------|------|--------|
+| Settings | `APP-PLATFORM-UX30-P3-SETTINGS` | **VALIDATED** (2026-06-14) |
+| Dashboard | `APP-PLATFORM-UX30-P3-DASHBOARD` | **VALIDATED** (2026-06-14) |
+| Categories form | `APP-PLATFORM-UX30-P3-CATEGORIES` | **VALIDATED** (2026-06-14) |
+
+**Closure:** `APP-PLATFORM-UX30-P3-CLOSURE` — decision **UX30-P3-CLOSURE** (authorized slices complete).
+
+**Deferred:** `ProductDetailPage` (PROD-DETAIL-UX-V2 paused); `ImportPage` (Phase 4 — UX30-D2 undecided).
 
 ---
 

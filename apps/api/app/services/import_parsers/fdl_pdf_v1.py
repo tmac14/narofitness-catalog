@@ -25,6 +25,7 @@ from app.services.import_brand_resolution import (
 )
 from app.services.import_master_naming import fix_fdl_name_typos
 from app.services.import_name_cleanup import clean_product_name
+from app.services.source_document_geometry import merge_bboxes
 from app.services.import_parsers.base import ImportRow, RowStatus
 from app.services.import_review import attach_parser_reasons
 from app.services.seed_brands import KNOWN_BRAND_TOKENS
@@ -264,6 +265,9 @@ def _finalize_product(
     if price is None:
         return None
 
+    price_bbox = buffer[price_idx].bbox
+    row_bbox = merge_bboxes([line.bbox for line in buffer])
+
     sku: str | None = None
     ean: str | None = None
     variant_parts: list[str] = []
@@ -367,11 +371,13 @@ def _finalize_product(
         product_note_raw=product_note_raw,
         product_capacity_raw=product_capacity_raw,
         product_capacity_count=product_capacity_count,
+        price_bbox=price_bbox,
+        row_bbox=row_bbox,
     )
 
 
 def _try_parse_inline_line(
-    line: str,
+    parsed: ParsedLine,
     category_main: str | None,
     category_sub: str | None,
     section_brand: str | None,
@@ -380,6 +386,7 @@ def _try_parse_inline_line(
     seen_skus: set[str],
 ) -> ImportRow | None:
     """Parse 'Name ... SKU EAN 12,34 €' on a single line."""
+    line = parsed.text
     m = re.search(r"([\d.]+,\d{2})\s*€\s*$", line)
     if not m:
         return None
@@ -460,6 +467,8 @@ def _try_parse_inline_line(
         price_amount=price,
         raw_lines=[line],
         page_number=page_number,
+        price_bbox=parsed.bbox,
+        row_bbox=parsed.bbox,
     )
 
 
@@ -567,7 +576,7 @@ def parse_pdf(source: str | Path | bytes | BinaryIO) -> list[ImportRow]:
 
                 if PRICE_RE.search(text) and "€" in text and len(text) > 40:
                     inline = _try_parse_inline_line(
-                        text,
+                        parsed,
                         category_main,
                         category_sub,
                         section_brand,

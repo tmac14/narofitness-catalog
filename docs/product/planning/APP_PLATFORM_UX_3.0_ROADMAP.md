@@ -22,7 +22,7 @@
 | **Phase 0** | **`IMPLEMENTED` / `VALIDATED`** — QA **`PASS_WITH_NOTES`** |
 | **Phase 1** | **`IMPLEMENTED` / `VALIDATED`** — QA **`PASS_WITH_NOTES`** |
 | **Phase 2A** | **`IMPLEMENTED` / `VALIDATED`** — QA **`PASS`** |
-| **Current phase** | **Phase 3 — next slice** — **`NEEDS_DECISION`** (Phase 2 complete) |
+| **Current phase** | **Phase 3 — authorized slices VALIDATED** (2026-06-14); deferred: ProductDetail (paused), Import (Phase 4 / UX30-D2) |
 | **Phase 1 decisions** | **UX30-D1**, **UX30-D4** — **`DECIDED`** (2026-06-12) |
 | **Phase 2A decision** | **UX30-D6** — Products cards/sheet — **`DECIDED`** (user-approved) |
 | **Phase 0 locks** | **RELEASED** (2026-06-12) |
@@ -31,7 +31,7 @@
 | **Phase 2B** | **`VALIDATED`** (2026-06-13) |
 | **Phase 2C** | **`VALIDATED`** (2026-06-13) |
 | **Phase 2D** | **`VALIDATED`** (2026-06-14) — Phase 2 list track **COMPLETE** |
-| **Phase 3** | **`PLANNED` / `NOT_AUTHORIZED`** — awaiting slice selection |
+| **Phase 3** | **`AUTHORIZED_SLICES_VALIDATED`** (2026-06-14) — Settings, Dashboard, Categories form; ProductDetail/Import deferred |
 
 ### Phase 2A verification (Catalog UI agent QA)
 
@@ -89,7 +89,7 @@
 | **2B** | Suppliers / Categories | **`VALIDATED`** (2026-06-13) |
 | **2C** | PriceLists | **`VALIDATED`** (2026-06-13) |
 | **2D** | Shared list primitives | **`VALIDATED`** (2026-06-14) — Phase 2 list track **COMPLETE** |
-| **3** | Forms & detail surfaces | **`PLANNED` / `NOT_AUTHORIZED`** — awaiting slice selection |
+| **3** | Forms & detail surfaces | **`AUTHORIZED_SLICES_VALIDATED`** (2026-06-14) — Settings, Dashboard, Categories form; ProductDetail paused; Import → Phase 4 |
 | 4 | Import flows | Not locked yet — **needs user decision** (mobile Import Review scope) |
 | 5 | Catalogue surfaces | Not locked yet — **needs user decision** (mobile Catalog Editor scope) |
 | 6 | Polish & a11y hardening | Not locked yet |
@@ -103,7 +103,7 @@
 
 | Agent | Owns | Blocked from |
 |-------|------|--------------|
-| **App UX agent** | App-wide responsive UX; Phase 0–2A **shipped**; Phase 2B/2C planning pending user decision | `catalog-builder/**`, PreviewWorkspace, export UI, `lib/api.ts`, ProductDetail |
+| **App UX agent** | App-wide responsive UX; Phase 0–3 authorized slices **shipped**; deferred: ProductDetail, Import Phase 4 | `catalog-builder/**`, PreviewWorkspace, export UI, `lib/api.ts`, ProductDetail |
 | **Catalog UI agent** | `CatalogsPage`, `CatalogEditorPage`, `components/catalog-builder/**`, PreviewWorkspace, export-dialog UI | Backend, `api.ts` |
 | **Agent 4** | `lib/api.ts`, hooks, types — **only after `CONFIRMED` contract** | Visual/design work |
 | **Agent 6** | PDF/print renderer, export parity — **advisory** on preview/export | Catalog UI agent frontend files; automatic frontend ownership |
@@ -183,7 +183,7 @@ Phase 2 split into sub-phases **2A–2D**. **2A–2D** complete; Phase 2 list tr
 | **2C** | PriceLists | **`VALIDATED`** (2026-06-13) |
 | **2D** | Shared list primitives | **`VALIDATED`** (2026-06-14) |
 
-**Next UI gate:** User decision — **Phase 3** slice selection. No implementation until plan approved and locks registered.
+**Next UI gate:** Phase 3 authorized slices **COMPLETE** (2026-06-14). Deferred: ProductDetail (PROD-DETAIL-UX-V2 paused), ImportPage (Phase 4 — UX30-D2). Next active priority: **SOURCE-CATALOG-DUAL-PATH** when user authorizes data track.
 
 ---
 
@@ -221,8 +221,10 @@ Future Products responsive edits require a **new Agent 3 lock** per task.
 
 | Item | Reason |
 |------|--------|
-| Phase 3 UX30 slice | **NOT_AUTHORIZED** — awaiting user/planning gate |
-| ProductDetail / Import / Dashboard / Settings | Out of Phase 2 scope |
+| Phase 3 UX30 slice | **AUTHORIZED_SLICES_VALIDATED** (Settings, Dashboard, Categories form) — closure `APP-PLATFORM-UX30-P3-CLOSURE` |
+| ProductDetail | **PAUSED** — PROD-DETAIL-UX-V2; do not reactivate without user instruction |
+| ImportPage | **Deferred to Phase 4** — blocked until UX30-D2 |
+| Dashboard / Settings | **VALIDATED** (P3 slices 2026-06-14) |
 | Catalogue Builder lock | Catalog UI agent default ownership — no 1B lock |
 | `components/ui/**` wildcard | Per-file lock only when needed |
 | Preview / Export frontend | Catalog UI agent — Agent 6 advisory only |
@@ -266,7 +268,7 @@ Future Products responsive edits require a **new Agent 3 lock** per task.
 | **UX30-D2** | **Import Review** mobile scope (read-only vs inline edit) | Phase 4 |
 | **UX30-D3** | **Catalog Editor** mobile scope (read-only vs full edit) | Phase 5 |
 | **UX30-D5** | **Visual regression** automation strategy (tooling, scope, CI) | Phase 7 |
-| **UX30-D7** | **Phase 2B vs 2C** implementation sequence | Phase 2 next slice |
+| **UX30-D7** | **Phase 2B vs 2C** implementation sequence | ~~Phase 2 next slice~~ **`DECIDED`** (2026-06-14) |
 
 ---
 
@@ -288,17 +290,18 @@ Future Products responsive edits require a **new Agent 3 lock** per task.
 
 ---
 
-## Phase 2 next slice — decision gate (`NEEDS_DECISION`)
+## Phase 2 next slice — decision gate (`DECIDED`)
 
 **Task:** `APP-PLATFORM-UX-3.0-PHASE-2-SEQUENCE-DECISION`  
-**Status:** **`BLOCKED`** — awaiting user decision **UX30-D7**
+**Closure task:** `APP-PLATFORM-UX30-D7-CLOSURE` — **`VALIDATED`** (2026-06-14)  
+**Decision UX30-D7:** **`DECIDED`** — implement **2B before 2C** (retrospective; both sub-phases already **VALIDATED** 2026-06-13)
 
-| Option | Surface | Notes |
-|--------|---------|-------|
-| **2B** | Suppliers + Categories | Simpler list surfaces; pattern reuse from P2A |
-| **2C** | PriceLists | Distinct table semantics; may benefit from 2D primitives later |
+| Option | Surface | Outcome |
+|--------|---------|---------|
+| **2B** | Suppliers + Categories | **VALIDATED** (2026-06-13) — shipped first per UX30-D7 |
+| **2C** | PriceLists | **VALIDATED** (2026-06-13) — shipped second per UX30-D7 |
 
-**No locks, no implementation** until user selects sequence and Agent 3 registers locks.
+**Phase 2 list track:** **COMPLETE** (2A–2D). **Next gate:** Phase 3 slice selection — no new list-surface implementation until Phase 3 plan approved and locks registered.
 
 ### Protected parallel tracks
 
@@ -320,7 +323,7 @@ Future Products responsive edits require a **new Agent 3 lock** per task.
 | Shell (`Layout`/`TitleBar`) | 1B vs 1A catalogue entry | Nav breaks builder routes | P1 **VALIDATED**; per-task lock on re-edit |
 | Phase 2A Products vs ProductDetail | 1B vs paused PROD-DETAIL | Accidental detail refactor | P2A locks exclude ProductDetail*; UX30-D6 no duplication |
 | Phase 2A index.css vs catalogue | 1B vs 1A preview theme | Global CSS drift | LOCK scope: Products list rules only |
-| Phase 2 list/table surfaces | 1B vs 1A catalogue tables | Scope creep into builder | P2A **VALIDATED**; 1A owns catalog-builder; P2B/2C await UX30-D7 |
+| Phase 2 list/table surfaces | 1B vs 1A catalogue tables | Scope creep into builder | P2A–2D **VALIDATED**; UX30-D7 **DECIDED**; Phase 3 next |
 | Bottom nav vs status bar | 1B vs SHARED-4 | Overlap/z-index | Reuse status bar zone; no duplicate chrome |
 | Hover-only patterns | 1B vs touch | Mobile unusable | UX30-D4: no hover-only actions |
 

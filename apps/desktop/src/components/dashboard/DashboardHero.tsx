@@ -45,11 +45,11 @@ export function DashboardHero({
           <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">{statusSummary}</p>
         </div>
 
-        <div className="flex shrink-0 flex-wrap gap-2">
-          <Button asChild size="sm">
+        <div className="flex w-full shrink-0 flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap">
+          <Button asChild className="min-h-11 w-full sm:w-auto">
             <Link to={primaryAction.to}>{primaryAction.label}</Link>
           </Button>
-          <Button asChild variant="secondary" size="sm">
+          <Button asChild variant="secondary" className="min-h-11 w-full sm:w-auto">
             <Link to={secondaryAction.to}>{secondaryAction.label}</Link>
           </Button>
         </div>
