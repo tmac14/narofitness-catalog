@@ -145,21 +145,25 @@ export default function SourceDocumentIntakePage() {
                     <p className="font-medium">Portadas detectadas en el PDF</p>
                     {capabilities.cover_pages.main && (
                       <p className="text-xs text-muted-foreground">
-                        Portada principal: página {capabilities.cover_pages.main.target_page_number}
+                        <strong>Portada principal:</strong> página{" "}
+                        {capabilities.cover_pages.main.target_page_number}
                         {capabilities.cover_pages.main.prepend_page
-                          ? " (se insertará página previa; la página 1 del PDF tiene contenido)"
-                          : " (página 1 vacía en el origen)"}
+                          ? " (añadiremos una página nueva al inicio porque la página 1 ya tiene productos)"
+                          : " (página 1 sin productos en el documento original)"}
                       </p>
                     )}
                     {(capabilities.cover_pages.sections?.length ?? 0) > 0 && (
-                      <ul className="space-y-1 text-xs text-muted-foreground">
-                        {capabilities.cover_pages.sections?.map((section) => (
-                          <li key={section.slot_id}>
-                            {section.section_label ?? section.section_key ?? "Categoría"} · PDF
-                            pág. {section.source_page_number}
-                          </li>
-                        ))}
-                      </ul>
+                      <div className="space-y-1 text-xs text-muted-foreground">
+                        <p className="font-medium text-foreground">Portadas de categoría:</p>
+                        <ul className="space-y-1">
+                          {capabilities.cover_pages.sections?.map((section) => (
+                            <li key={section.slot_id}>
+                              {section.section_label ?? section.section_key ?? "Categoría"} ·
+                              página {section.source_page_number}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     )}
                     <p className="text-xs text-muted-foreground">
                       Podrás asignar imágenes a cada portada en el estudio de adaptación.

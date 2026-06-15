@@ -75,3 +75,5 @@
 | EVID-SC-DP-SLICE-35-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | ephemeral TTL + cleanup sweeper | apps/api/tests/test_adaptation_export_delivery_workflow.py |
 | EVID-SC-DP-SLICE-36-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | Adaptation Studio UI typecheck | apps/desktop/src/pages/AdaptationStudioPage.tsx |
 | EVID-VISUAL-ADAPTATION-DELIVERY-001 | SOURCE-CATALOG-DP-OUTPUT-DELIVERY | PASS | E2E UI: intake → email preview 11.31 MB → approve → final | manual QA 2026-06-15 |
+| EVID-SC-DP-COVER-DETECTION-MVP-001 | SOURCE-CATALOG-DP-COVER-DETECTION-MVP | PASS | cover detection 5/5 + E2E assign/preview 6/6; FDL baseline pages | apps/api/tests/test_source_document_cover_pages.py |
+| EVID-SC-DP-COVER-UI-MVP-001 | SOURCE-CATALOG-DP-COVER-DETECTION-MVP | PASS | Spanish studio UX; main vs category panels; typecheck PASS | apps/desktop/src/components/adaptation/AdaptationCoversPanel.tsx |

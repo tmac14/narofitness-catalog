@@ -738,6 +738,8 @@ class CatalogAdaptationExportListResponse(BaseModel):
 class AdaptationCoverSlotOut(BaseModel):
     slot_id: str
     role: str
+    cover_type: str | None = None
+    role_label: str | None = None
     source_page_number: int
     target_page_number: int
     prepend_page: bool = False

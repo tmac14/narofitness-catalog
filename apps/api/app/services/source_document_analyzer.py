@@ -27,7 +27,7 @@ from app.services.source_document_image_geometry import (
 )
 
 ANALYZER_KEY = "fdl_semantic_v1"
-ANALYZER_VERSION = "0.4.0"
+ANALYZER_VERSION = "0.5.0"
 PROFILE_FDL_KEY = "fdl_wholesale_tariff"
 PROFILE_FDL_VERSION = "1.0.0"
 PROFILE_UNKNOWN_KEY = "unknown"
@@ -223,7 +223,11 @@ def build_analysis_snapshot(source: SourceDocument, pdf_bytes: bytes) -> dict[st
     finally:
         doc.close()
 
-    cover_pages = detect_cover_pages(page_count=source.page_count, rows_by_page=rows_by_page)
+    cover_pages = detect_cover_pages(
+        page_count=source.page_count,
+        rows_by_page=rows_by_page,
+        profile_key=profile.get("key") if isinstance(profile, dict) else None,
+    )
 
     geometry_resolve_rate = (
         round(price_slots_resolved / price_slots_total, 4) if price_slots_total else 0.0

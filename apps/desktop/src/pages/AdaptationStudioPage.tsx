@@ -4,6 +4,14 @@ import { CheckCircle2, Download, Loader2, Sparkles } from "lucide-react";
 import { toast } from "sonner";
 import { AdaptationCoversPanel } from "@/components/adaptation/AdaptationCoversPanel";
 import { PageHeader } from "@/components/PageHeader";
+import {
+  formatAdaptationProjectStatus,
+  formatDeliveryMode,
+  formatExportKind,
+  formatExportStatus,
+  formatOutputProfile,
+  formatParityScore,
+} from "@/lib/adaptationUiLabels";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -180,8 +188,8 @@ export default function AdaptationStudioPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title={project?.name ?? "Adaptation Studio"}
-        description="Genera vistas previas o exportación final eligiendo perfil de salida y modo de entrega."
+        title={project?.name ?? "Estudio de adaptación"}
+        description="Personaliza las portadas, genera una vista previa y exporta el catálogo final."
       />
 
       <div className="grid gap-4 lg:grid-cols-2">
@@ -261,12 +269,16 @@ export default function AdaptationStudioPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Estado y QA</CardTitle>
+            <CardTitle className="text-base">Estado del proyecto</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-sm">
             <div className="flex flex-wrap gap-2">
-              <Badge variant="outline">Estado: {project?.status}</Badge>
-              {parityScore != null && <Badge variant="secondary">Parity {parityScore}</Badge>}
+              <Badge variant="outline">
+                {formatAdaptationProjectStatus(project?.status)}
+              </Badge>
+              {parityScore != null && (
+                <Badge variant="secondary">{formatParityScore(parityScore)}</Badge>
+              )}
               {hasApproval && (
                 <Badge className="gap-1">
                   <CheckCircle2 className="h-3 w-3" />
@@ -277,8 +289,9 @@ export default function AdaptationStudioPage() {
             {latestPreview && (
               <div className="space-y-1 rounded-md border p-3">
                 <p>
-                  Última preview: <strong>{latestPreview.output_profile}</strong> ·{" "}
-                  {latestPreview.delivery_mode}
+                  Última vista previa: <strong>{formatOutputProfile(latestPreview.output_profile)}</strong>
+                  {" · "}
+                  {formatDeliveryMode(latestPreview.delivery_mode)}
                 </p>
                 {deliveryBytes != null && (
                   <p>
@@ -301,7 +314,7 @@ export default function AdaptationStudioPage() {
                     onClick={() => void approveLatestPersistPreview()}
                     disabled={busy || latestPreview.delivery_mode !== "persist" || hasApproval}
                   >
-                    Aprobar preview
+                    Aprobar vista previa
                   </Button>
                 </div>
               </div>
@@ -311,11 +324,12 @@ export default function AdaptationStudioPage() {
               disabled={busy || !hasApproval}
               className="w-full"
             >
-              Exportación final (persist)
+              Generar exportación final
             </Button>
             {latestFinal && (
               <p className="text-xs text-muted-foreground">
-                Final generado: {latestFinal.output_profile} ·{" "}
+                Última exportación final: {formatOutputProfile(latestFinal.output_profile)}
+                {" · "}
                 {latestFinal.manifest?.output_delivery?.byte_length
                   ? formatBytes(latestFinal.manifest.output_delivery.byte_length)
                   : "—"}
@@ -336,9 +350,10 @@ export default function AdaptationStudioPage() {
           {exports.map((entry) => (
             <div key={entry.id} className="flex flex-wrap items-center justify-between gap-2 border-b py-2">
               <span>
-                {entry.export_kind} · {entry.output_profile} · {entry.delivery_mode}
+                {formatExportKind(entry.export_kind)} · {formatOutputProfile(entry.output_profile)} ·{" "}
+                {formatDeliveryMode(entry.delivery_mode)}
               </span>
-              <Badge variant="outline">{entry.status}</Badge>
+              <Badge variant="outline">{formatExportStatus(entry.status)}</Badge>
             </div>
           ))}
         </CardContent>

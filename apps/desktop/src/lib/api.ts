@@ -1188,6 +1188,8 @@ export async function downloadAdaptationExport(
 export type AdaptationCoverSlot = {
   slot_id: string;
   role: string;
+  cover_type: string | null;
+  role_label: string | null;
   source_page_number: number;
   target_page_number: number;
   prepend_page: boolean;
